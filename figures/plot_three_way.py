@@ -14,10 +14,14 @@ scored; they are reported separately.
 """
 from __future__ import annotations
 
+from pathlib import Path as _P
+
 import numpy as np
 
 import rater_lib as rl
 import plot_human_vs_llm as _plot  # weighted_kappa, icc_2_1, spearman
+
+_OUT = _P(__file__).resolve().parent / "output"
 
 DIMS = {"B": rl.B_ITEMS, "E": rl.E_ITEMS, "D": rl.D_ITEMS}
 ITEM_MAX_TOTAL = {
@@ -40,20 +44,19 @@ def build_pairs() -> list[dict]:
     Every unpaired assay is logged. Returns dicts with keys:
     stem, assay_name, human{B,E,D}, llm{B,E,D}|None, ana{B,E,D}|None.
     """
-    hitl = rl.load_hitl()
-    ana = rl.parse_ana_docx()
+    raters = rl.load_raters()
     pairs = []
     for stem in rl.PAPER_STEMS:
-        if stem not in hitl:
-            print(f"  no HITL scores for {stem}")
+        if stem not in raters or not raters[stem].get("rater2"):
+            print(f"  no rater-2 scores for {stem}")
             continue
-        human_assays = hitl[stem]["assays"]
+        human_assays = raters[stem]["rater2"]
         llm_assays = rl.load_consensus_items(stem)
         h2l = dict(rl.pair_assays(
             [{"name": a["assay_name"]} for a in human_assays],
             [{"assay_name": a["assay_name"]} for a in llm_assays],
         ))
-        ana_assays = ana.get(stem, [])
+        ana_assays = raters[stem].get("rater1", [])
         h2a = dict(rl.pair_assays(
             [{"name": a["assay_name"]} for a in human_assays],
             [{"assay_name": a["assay_name"]} for a in ana_assays],
@@ -130,9 +133,7 @@ def print_report(pairs: list[dict]) -> None:
 
 # ------------------------------------------------------------------ figure ---
 import matplotlib.pyplot as plt
-from pathlib import Path as _P
 
-_OUT = _P(__file__).resolve().parent / "output"
 OUT_PNG = _OUT / "human_vs_llm_three_way.png"
 DIM_FULL = {"B": "Behavioural complexity", "E": "Environmental complexity", "D": "Recording duration"}
 DIM_COLOUR = {"B": "#7B2FBE", "E": "#E6550D", "D": "#3a7acf"}

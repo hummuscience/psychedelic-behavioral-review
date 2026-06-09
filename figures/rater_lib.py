@@ -17,6 +17,7 @@ CONSENSUS_DIR = ROOT / "results_v2_full_consensus"
 DOCLING_DIR = ROOT / "pdfs"
 ANA_DOCX = ROOT / "scoring_guide_ana_version4.docx"
 HITL_JSON = ROOT / "human_scores_hitl.json"
+RATERS_JSON = ROOT / "raters.json"
 
 B_ITEMS = ["B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8"]
 E_ITEMS = ["E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8"]
@@ -52,6 +53,21 @@ def load_hitl() -> dict:
     if not HITL_JSON.exists():
         return {}
     with open(HITL_JSON) as fh:
+        return json.load(fh)
+
+
+def load_raters() -> dict:
+    """Return the combined two-rater scores for the inter-rater comparison.
+
+    Reads raters.json, the single source of truth for the comparison:
+        {stem: {paper_num, rater1: [...], rater2: [...]}}
+    rater1 was formerly parsed live from the scoring-guide docx; rater2 was the
+    HITL file. Regenerate raters.json with build_raters_json.py when either
+    upstream source changes.
+    """
+    if not RATERS_JSON.exists():
+        return {}
+    with open(RATERS_JSON) as fh:
         return json.load(fh)
 
 

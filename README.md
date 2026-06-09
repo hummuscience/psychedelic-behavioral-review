@@ -97,7 +97,8 @@ PRISMA accounting.
 | `results_v2_full_consensus/*.json` | One judge-consensus record per paper (287 papers): scored assays, dosing, sex, age, evidence |
 | `paper_registry.json` | Canonical per-paper metadata (DOI, title, authors, year, journal) |
 | `prisma_accounting.csv` | PRISMA flow: every screened record with its disposition |
-| `human_scores_hitl.json` | Human-in-the-loop rater scores used for LLM validation |
+| `human_scores_hitl.json` | Rater 2's raw human-in-the-loop scores |
+| `raters.json` | Combined two-rater scores (`rater1`, `rater2` per paper/assay) — the single source for the inter-rater comparison (`figures/plot_three_way.py`); regenerate with `pipeline/build_raters_json.py` |
 | `scoring_guide_ana_v2.docx`, `scoring_guide_ana_version4.docx` | Human rater scoring guides (also inputs to the validation figures) |
 | `results/{sex_all,age_all}.csv` | Extracted demographics |
 | `results/{assay_catalog,paper_assays}.json` | Normalised assay catalog |
