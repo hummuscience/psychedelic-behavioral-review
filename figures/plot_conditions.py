@@ -27,10 +27,12 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import numpy as np
 
-HERE = Path(__file__).parent
-CONS = HERE / "results_v2_full_consensus"
-REG = HERE / "paper_registry.json"
-OUT_PNG = HERE.parent / "translational_psychiatry" / "conditions.png"
+HERE = Path(__file__).resolve().parent
+DATA = HERE.parent / "data"
+OUTDIR = HERE / "output"
+CONS = DATA / "results_v2_full_consensus"
+REG = DATA / "paper_registry.json"
+OUT_PNG = OUTDIR / "conditions.png"
 OUT_PDF = OUT_PNG.with_suffix(".pdf")
 
 # Match the original supplementary figure palette.

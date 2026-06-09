@@ -28,10 +28,12 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy import stats as sst
 
-HERE = Path(__file__).parent
-CONS = HERE / "results_v2_full_consensus"
-REG = HERE / "paper_registry.json"
-OUT_PNG = HERE.parent / "translational_psychiatry" / "score_timelines.png"
+HERE = Path(__file__).resolve().parent
+DATA = HERE.parent / "data"
+OUTDIR = HERE / "output"
+CONS = DATA / "results_v2_full_consensus"
+REG = DATA / "paper_registry.json"
+OUT_PNG = OUTDIR / "score_timelines.png"
 OUT_PDF = OUT_PNG.with_suffix(".pdf")
 
 # Match dashboard cube.md TIMELINE_DIMS colours.

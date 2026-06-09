@@ -21,10 +21,12 @@ from docx.oxml.ns import qn
 import matplotlib.pyplot as plt
 import numpy as np
 
-DOCX = Path("scoring_guide_ana_v2.docx")
-CONSENSUS_DIR = Path("results_v2_full_consensus")
-OUT_PNG = Path("human_vs_llm.png")
-OUT_PER_ASSAY = Path("human_vs_llm_per_assay.png")
+_DATA = Path(__file__).resolve().parent.parent / "data"
+_OUT = Path(__file__).resolve().parent / "output"
+DOCX = _DATA / "scoring_guide_ana_v2.docx"
+CONSENSUS_DIR = _DATA / "results_v2_full_consensus"
+OUT_PNG = _OUT / "human_vs_llm.png"
+OUT_PER_ASSAY = _OUT / "human_vs_llm_per_assay.png"
 
 # Item → score column index mapping in the consensus JSON. Names follow the
 # B1_..., E1_..., D1_... prefix pattern.

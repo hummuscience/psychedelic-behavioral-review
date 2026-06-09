@@ -18,10 +18,12 @@ import matplotlib.pyplot as plt  # type: ignore[import-not-found]
 import numpy as np  # type: ignore[import-not-found]
 from matplotlib.patches import Patch  # type: ignore[import-not-found]
 
-HERE = Path(__file__).parent
-CONSENSUS = HERE / "results_v2_full_consensus"
-OUT_PNG = HERE.parent / "translational_psychiatry" / "dose_distribution.png"
-OUT_PDF = HERE.parent / "translational_psychiatry" / "dose_distribution.pdf"
+HERE = Path(__file__).resolve().parent
+DATA = HERE.parent / "data"
+OUTDIR = HERE / "output"
+CONSENSUS = DATA / "results_v2_full_consensus"
+OUT_PNG = OUTDIR / "dose_distribution.png"
+OUT_PDF = OUTDIR / "dose_distribution.pdf"
 
 # psilocin is the active metabolite; pool with psilocybin
 PSILOCYBIN_ALIASES = {"psilocybin", "psilocin"}

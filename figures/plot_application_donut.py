@@ -19,9 +19,11 @@ from pathlib import Path
 
 import matplotlib.pyplot as plt
 
-HERE = Path(__file__).parent
-CONS = HERE / "results_v2_full_consensus"
-OUT_PNG = HERE.parent / "translational_psychiatry" / "application_donut.png"
+HERE = Path(__file__).resolve().parent
+DATA = HERE.parent / "data"
+OUTDIR = HERE / "output"
+CONS = DATA / "results_v2_full_consensus"
+OUT_PNG = OUTDIR / "application_donut.png"
 OUT_PDF = OUT_PNG.with_suffix(".pdf")
 
 # Slice order (large→small) and colour palette. Eight slices because the

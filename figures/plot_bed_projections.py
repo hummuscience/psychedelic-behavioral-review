@@ -20,10 +20,12 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.colors import Normalize
 
-HERE = Path(__file__).parent
-CONS = HERE / "results_v2_full_consensus"
-REG = HERE / "paper_registry.json"
-OUT_PNG = HERE.parent / "translational_psychiatry" / "bed_projections.png"
+HERE = Path(__file__).resolve().parent
+DATA = HERE.parent / "data"
+OUTDIR = HERE / "output"
+CONS = DATA / "results_v2_full_consensus"
+REG = DATA / "paper_registry.json"
+OUT_PNG = OUTDIR / "bed_projections.png"
 OUT_PDF = OUT_PNG.with_suffix(".pdf")
 
 AXIS_MAX = 15.0

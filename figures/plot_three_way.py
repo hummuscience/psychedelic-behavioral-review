@@ -130,8 +130,10 @@ def print_report(pairs: list[dict]) -> None:
 
 # ------------------------------------------------------------------ figure ---
 import matplotlib.pyplot as plt
+from pathlib import Path as _P
 
-OUT_PNG = rl.ROOT / "human_vs_llm_three_way.png"
+_OUT = _P(__file__).resolve().parent / "output"
+OUT_PNG = _OUT / "human_vs_llm_three_way.png"
 DIM_FULL = {"B": "Behavioural complexity", "E": "Environmental complexity", "D": "Recording duration"}
 DIM_COLOUR = {"B": "#7B2FBE", "E": "#E6550D", "D": "#3a7acf"}
 
@@ -204,8 +206,8 @@ def render_figure(pairs: list[dict]) -> None:
     print(f"Wrote {OUT_PNG}")
 
 
-OUT_COMBINED = rl.ROOT / "human_vs_llm_combined.png"
-OUT_BLANDALTMAN = rl.ROOT / "inter_rater_bland_altman.png"
+OUT_COMBINED = _OUT / "human_vs_llm_combined.png"
+OUT_BLANDALTMAN = _OUT / "inter_rater_bland_altman.png"
 
 # Distinct colours for the two human raters when overlaid vs the LLM.
 RATER_COLOUR = {"human": "#1b7837", "ana": "#762a83"}   # rater 2 = green, rater 1 = purple
@@ -326,7 +328,7 @@ def render_bland_altman(pairs: list[dict]) -> None:
     print(f"Wrote {OUT_BLANDALTMAN}")
 
 
-OUT_SUPP = rl.ROOT / "supp_llm_vs_human_validation.png"
+OUT_SUPP = _OUT / "supp_llm_vs_human_validation.png"
 
 # The three pairwise comparisons, with a fixed colour per pair. The two
 # human-vs-LLM pairs share a warm palette; the human-human pair is the

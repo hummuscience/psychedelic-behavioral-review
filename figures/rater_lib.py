@@ -12,7 +12,7 @@ from pathlib import Path
 
 import plot_human_vs_llm as _plot  # proven docx + matching logic
 
-ROOT = Path(__file__).resolve().parent  # scoring/
+ROOT = Path(__file__).resolve().parent / ".." / "data"  # published datasets
 CONSENSUS_DIR = ROOT / "results_v2_full_consensus"
 DOCLING_DIR = ROOT / "pdfs"
 ANA_DOCX = ROOT / "scoring_guide_ana_version4.docx"
