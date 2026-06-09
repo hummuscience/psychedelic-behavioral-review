@@ -1,0 +1,482 @@
+{
+  "study_id": "Bazovkina2015",
+  "doi": "10.1155/2015/846589",
+  "species": "mouse",
+  "strain": "CBA/Lac, C3H/He, C57Bl/6, ICR, DBA/2J, Asn, Balb/c",
+  "age": {
+    "value": "adult",
+    "age_min_days": 70,
+    "age_max_days": 84,
+    "evidence": "Experiments were carried out on adult (10-12 weeks) male mice",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "adult (10-12 weeks) male mice of CBA/Lac, C3H/He, C57Bl/6, ICR, DBA/2J, Asn, and Balb/c inbred strains",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        1.0,
+        2.0
+      ],
+      "doses_raw": "DOI was administered intraperitoneally at doses 1.0 and 2.0 mg/kg 20 min prior to open field test; DOI (1 mg/kg, i.p.) for head-twitch",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Preferential 5-HT2A receptor agonist DOI ... was dissolved in saline and administered intraperitoneally. DOI was administered intraperitoneally at doses 1.0 and 2.0 mg/kg 20 min prior to open field test. The 5-HT2A receptor functional activity (sensitivity) was evaluated by the number of 5-HT2A receptor-mediated head-twitches induced by intraperitoneal administration of DOI (1 mg/kg).",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Paper does not mention a handling protocol.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "Two days prior to experiment the mice weighing about 25 g were isolated into individual cages to remove the group effect.",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "The mice were housed under standard laboratory conditions in a natural light-dark cycle (12 h light and 12 h dark)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Paper does not address home-cage enrichment.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "Round arena (40 cm diameter, 25 cm plastic walls), 5-min test, video-tracked with EthoStudio. Measured total distance traveled, time spent in center, amount of rearing, amount and time of grooming. Tested with DOI (1.0, 2.0 mg/kg, i.p., 20 min pre-test) in CBA/Lac mice; psychedelic-relevant arm.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "DOI ... was dissolved in saline and administered intraperitoneally",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Paper does not describe pre-test apparatus habituation.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "A mouse was placed near the wall of the arena and tested during 5 minutes.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Open field arena contains no food during the 5-min test.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Open field arena contains no water during the 5-min test.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 20,
+          "evidence": "DOI was administered intraperitoneally at doses 1.0 and 2.0 mg/kg 20 min prior to open field test",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 20,
+        "n_male": 20,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "F(2,17) = 1.5 (implies ~20 mice across 3 groups); the traveled path lengths were 986.3 ± 77.3, 1020.0 ± 57.6, and 828.9 ± 108.6 cm",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "DOI (1.0 and 2.0 mg/kg, i.p.) did not affect locomotor activity (distance traveled) in CBA/Lac mice in the open field, supporting the specificity of the 5-HT2C-mediated hypolocomotion.",
+        "statistics": "F(2,17) = 1.5, p > 0.05; path lengths 986.3 ± 77.3, 1020.0 ± 57.6, 828.9 ± 108.6 cm for 1.0 and 2.0 mg/kg DOI and control respectively",
+        "direction": "no_effect",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "both utilized doses of DOI were not effective in terms of reduction of distance traveled in the open field (F(2,17) = 1.5, p > 0.05)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "total distance traveled (cm) and time spent in the center ... amount of rearing and amount and time of grooming were measured",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only total/average values reported; no within-session time-course analysis.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No behavioural sequence or transition analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "amount of rearing and amount and time of grooming were measured by an observer",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "OFT locomotion/anxiety test; no social construct.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open field measures innate exploration/anxiety, not learning.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "video stream from the camera was analyzed ... using the original EthoStudio software (position tracking)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No PCA/clustering; univariate ANOVAs only.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "round (40 cm in diameter) arena; the plastic walls were 25 cm high",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open arena with no refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The floor of the arena was made of mat and semitransparent plastic.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in OFT.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in OFT arena.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "round (40 cm in diameter) arena",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "A mouse was placed near the wall of the arena and tested during 5 minutes.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in arena during 5-min test.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "tested during 5 minutes",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "tested during 5 minutes",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single acute test session.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline recording reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Acute testing only.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5-min session.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "Head-Twitch Response",
+      "assay_description": "DOI (1 mg/kg, i.p.) administered; head-twitches counted manually starting 5 min post-injection for 20 min in 7 inbred mouse strains.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "induced by intraperitoneal administration of DOI (1 mg/kg)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Paper does not describe habituation to HTR apparatus.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Standard freely-moving HTR observation; no restraint mentioned.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in HTR observation cage during 20-min count.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in HTR observation cage during 20-min count.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 5,
+          "evidence": "The count of head-twitches was started 5 min after the drug administration and lasted for 20 min.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 56,
+        "n_male": 56,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "F(6,63) = 12.1; n=8 per group across 7 strains",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI (1 mg/kg, i.p.) induced head-twitches in all seven mouse strains, with strain-dependent intensity. The strongest responses were in CBA/Lac (~47) and C3H/He (~45 twitches) and the weakest in Balb/c (~17). 5-HT2A and 5-HT2C functional responses correlated positively across strains (r = 0.898).",
+        "statistics": "F(6,63) = 12.1, p < 0.001; CBA/Lac 47.4 ± 4.2, C3H/He 45.0 ± 5.7, Balb/c 17.3 ± 2.6; correlation r = 0.898, p < 0.01",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Treatment of animals with DOI produced head-twitches in all investigated mouse strains, but the intensity of this 5-HT2A receptor-induced behavioral response was strain-dependent (F(6,63) = 12.1, p < 0.001).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Number of 5-HT2A receptor-mediated head-twitches.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single 20-min total count reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition/sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is explicitly excluded as ethological per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animal tested alone; no social construct.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning/memory component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-twitches counted manually as previously described.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No multivariate analysis (Pearson correlation between strain means is bivariate).",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Standard HTR observation cage (as previously described).",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter in observation cage.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported; standard HTR cage.",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in HTR setup.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single observation cage.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mouse observed alone for HTR count.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water access during 20-min HTR count.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Single 20-min observation per animal.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "The count of head-twitches was started 5 min after the drug administration and lasted for 20 min.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Acute single-day testing.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline recorded.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No post-acute follow-up.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "20-min session is far below 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Only DOI is a psychedelic per rubric; MK-212 (5-HT2C agonist) and RS102221 OFT arms are not psychedelic and are not scored as separate assays. The OFT assay scored here is the DOI arm in CBA/Lac mice.",
+    "Two assays retained: Open Field Test (DOI) and Head-Twitch Response (DOI). Candidates agreed on these paradigms.",
+    "Corrected gptoss DOI doses (0.1/0.2 mg/kg) to 1.0/2.0 mg/kg per paper text.",
+    "B5 set to None for OFT (corrected gptoss's score of 1; OFT does not target a social construct).",
+    "HTR session duration set to 20 min (15-60 bin), correcting gptoss's '2 min' reading.",
+    "B7 scored 0 (EthoStudio is centroid/position tracking per rubric)."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 1.88,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 0.68
+  },
+  "low_confidence_count": 5,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 48306,
+    "output_tokens": 6394,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

@@ -1,0 +1,1070 @@
+{
+  "study_id": "Seillier2025",
+  "doi": "10.1016/j.pnpbp.2025.111368",
+  "species": "rat",
+  "strain": "Wistar",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Male Wistar rats (225-250 g, n = 40)",
+    "confidence": "medium"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 40,
+    "n_female": null,
+    "evidence": "Male Wistar rats (225-250 g, n = 40)",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        0.1,
+        0.32,
+        1.0,
+        3.2
+      ],
+      "doses_raw": "0.1, 0.32, 1.0, or 3.2 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "On day 0, animals received an intraperitoneal (i.p.) injection of either saline (vehicle-treated group) or a single dose of psilocybin (0.1, 0.32, 1.0, or 3.2 mg/kg; n = 8 per group).",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "animals were acclimated to the procedure by measuring rectal temperature several times before the beginning of the study. To minimize stress, animals underwent indeed a 5-day habituation protocol before the beginning of the study.",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Rats were housed in two per cage at 22 ± 1°C under a 12 h light-dark cycle",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "Behavioral testing occurred in the morning during the light phase.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head-twitch response / Open Field locomotion",
+      "assay_description": "Rats placed in Open Field arena (45 × 45 × 45 cm) immediately after psilocybin/vehicle injection and recorded for 30 min. HTRs manually scored; locomotor activity (distance, velocity, mobility time, supported/unsupported rearing) tracked using EthoVision XT 15. Both HTR and locomotor measures collected in the same recording session.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "intraperitoneal (i.p.) injection of either saline or a single dose of psilocybin",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Immediately after the single injection of psilocybin or vehicle on day 0, rats were placed in an Open Field arena",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "rats were placed in an Open Field arena (45 × 45 × 45 cm) and their behavior was recorded with a camera device for 30 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Open Field arena with no food source mentioned during the 30 min recording",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Open Field arena with no water source mentioned during the 30 min recording",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Immediately after the single injection of psilocybin or vehicle on day 0, rats were placed in an Open Field arena",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 38,
+        "n_male": 38,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "n = 8 per group; except for group 0.1, 0.32 and 3.2 mg/kg in which one outlier was detected in each of them. Note that given one error video file for group 0.1 mg/kg, the latter had only n = 6",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin produced an inverted U-shaped HTR dose-response peaking at 0.32 mg/kg (0.32 and 1.0 mg/kg significantly higher than VEH). Locomotor activity (mobility time, distance, velocity, rearing) was dose-dependently decreased, with strong motor suppression at 1.0 and 3.2 mg/kg.",
+        "statistics": "HTR: H = 27.78, p < 0.0001; 0.32 vs VEH p < 0.0001, 1.0 vs VEH p < 0.01. Mobility time: F4,31 = 31.01, p < 0.0001; 1.0 and 3.2 mg/kg p < 0.0001 vs VEH. Distance: F4,31 = 16.05, p < 0.0001.",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "psilocybin-induced HTR exhibited a characteristic inverted U-shaped dose-response curve, with a maximal response at 0.32 mg/kg... psilocybin dose-dependently decreased mobility time (F4,31 = 31.01, p < 0.0001)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 3,
+          "value": "7+",
+          "evidence": "HTR, distance traveled, velocity, mobility time, supported rearing, unsupported rearing",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "a closer inspection of the time course of psilocybin-induced HTR revealed... an almost complete absence of new response after 5 min (Fig. 2B; cumulative HTR)... The time course of mobility time",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Parameters, such as supported/unsupported rearing were scored manually",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "rats were placed in an Open Field arena",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning or memory component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "using EthoVision XT 15 tracking software; HTRs manually scored",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Open Field arena (45 × 45 × 45 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open Field arena, no shelter described",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The arena was thoroughly cleaned with 70% ethanol and dried between test sessions",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Open Field arena",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "rats were placed in an Open Field arena",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in OF arena",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "recorded with a camera device for 30 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "their behavior was recorded with a camera device for 30 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Immediately after the single injection of psilocybin or vehicle on day 0",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug recording reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "single session immediately after injection",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30 min recording",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Rectal Temperature",
+      "assay_description": "Rectal probe inserted 2 cm; temperature measured at -30 min and 0 min (baseline) and every 30 min for 120 min post-injection. Measures thermoregulatory side effect (physiological), but included here as candidates flagged it; note this is a physiological not behavioural readout.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "intraperitoneal (i.p.) injection of either saline or a single dose of psilocybin",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "animals underwent indeed a 5-day habituation protocol before the beginning of the study",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "A probe was inserted 2 cm into the rectum",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "during measurements in testing room",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "during measurements in testing room",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "Rectal temperature was measured 30 min before the administration... and then every 30 min post-administration for 120 min",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 40,
+        "n_male": 40,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "n = 8 per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin dose-dependently decreased rectal temperature; 1.0 and 3.2 mg/kg significantly produced hypothermia. Max temp drop: -0.93°C at 30 min (1.0 mg/kg); -1.51°C at 60 min (3.2 mg/kg).",
+        "statistics": "AUC: F4,35 = 23.37, p < 0.0001; 1.0 mg/kg p < 0.001, 3.2 mg/kg p < 0.0001 vs VEH",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "Psilocybin dose-dependently decreased rats' body temperature (F4,35 = 23.37, p < 0.0001).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "rectal temperature only",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "every 30 min post-administration for 120 min",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "physiological measure",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual measurement",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no cognitive component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "manual probe reading",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "testing room with manual probe",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "restrained for measurement",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "n/a",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individual measurement",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Rectal temperature was measured 30 min before... every 30 min post-administration for 120 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "steady temperature readout was obtained within 10 s",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "day 0",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Rectal temperature was measured 30 min before the administration of psilocybin or vehicle (first baseline), immediately before the injection (0 min, second baseline)",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "all within 2 h post-injection",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "120 min total",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    },
+    {
+      "assay_name": "Forced Swim Test",
+      "assay_description": "Glass cylindrical tank (48 × 24 cm) with 30 cm water at 24°C. 15-min pre-test followed 24 h later by 5-min test. Performed three times: day 1 (FST 1), day 21 (FST 2), day 42 (FST 3) post-treatment. Behaviors scored manually: immobility, swimming, climbing, diving.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "intraperitoneal (i.p.) injection",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "pre-test is part of the FST protocol itself, not separate apparatus habituation",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "rats were placed into a glass cylindrical tank... The water depth was such that the rats could not support themselves with their hind paws",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in FST cylinder",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no drinking water in FST cylinder",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 1440,
+          "evidence": "FST 1 1 day after, FST 2 21 days after, FST 3 42 days post-treatment",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 40,
+        "n_male": 40,
+        "n_female": null,
+        "n_per_group_min": 7,
+        "evidence": "n = 8 per group; except for group VEH, 0.32, 1.0 and 3.2 mg/kg in which one outlier was detected in each of them",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "0.32 mg/kg psilocybin produced rapid (24 h) and sustained (up to 42 days) antidepressant-like effects: reduced immobility and increased climbing across FST 1, FST 2, and FST 3 with inverted U-shape dose response. No effect on swimming. 1.0 mg/kg increased climbing only at FST 3.",
+        "statistics": "FST 1 immobility H=19.08, p<0.0001; climbing F4,31=6.57, p<0.001. FST 2 immobility H=19.53, p<0.001; climbing H=17.95, p<0.01. FST 3 immobility F4,31=14.96, p<0.0001; climbing F4,31=15.52, p<0.0001.",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "psilocybin produced rapid antidepressant-like effects, shown by a U-shaped dose-response curve in immobility... and an inverted U-shaped dose-response curve in climbing behavior, both peaking at 0.32 mg/kg",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "immobility, swimming, climbing, and diving",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "total time per behavior over 5 min reported",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST immobility is not an ethological behaviour per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual testing in cylinder",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning/memory component scored",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "scored manually by an experimenter blind to the study",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate analyses",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "glass cylindrical tank (48 cm × 24 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "open cylinder",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "water-filled cylinder",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "cylindrical tank",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individual rats in tank",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/drinking water",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "The test and its pre-test session were performed three times: on day 1 (FST 1)... day 21 (FST 2)... day 42 (FST 3)",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "During the pre-test phase... After a 15-minute swim",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 2,
+          "value": "8-14",
+          "evidence": "Pre-tests on days 0, 20, 41 and tests on days 1, 21, 42 = 6 recording days; but only tests scored — at minimum 3 test days plus 3 pre-test days",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "pre-test sessions are part of FST procedure not pre-drug baseline (FST 1 pre-test was 4 h after psilocybin)",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "FST 2 21 days after, FST 3 42 days post-treatment",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5-minute test",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      },
+      "raw_total_note": "FST has 6 distinct days where behavior was recorded (3 pre-tests + 3 tests)"
+    },
+    {
+      "assay_name": "Sucrose Preference Test",
+      "assay_description": "Two-bottle choice paradigm in home cage. Rats single-housed during testing. 1% sucrose vs water bottles overnight on day 6 and day 7 post-treatment with bottle position switched. Sucrose preference (%) and total liquid consumption measured.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "intraperitoneal (i.p.) injection",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "From day 3 to day 5, rats were acclimated to the presence of two water bottles in their home cage for 48 h... an additional 24-hour acclimation",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "free in home cage",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "food available ad libitum",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "no water deprivation was involved",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "short_term_1to7d",
+          "value_minutes": 8640,
+          "evidence": "The Sucrose Preference Test (SPT) was performed 6 and 7 days post-psilocybin administration",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 40,
+        "n_male": 40,
+        "n_female": null,
+        "n_per_group_min": 7,
+        "evidence": "n = 8 per group; except for group 0.1, 0.32, 1.0 and 3.2 mg/kg in which one outlier was detected in each of them",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin produced inverted U-shaped dose-response in sucrose preference; 0.32 mg/kg significantly increased preference vs vehicle. No effect on total liquid consumption.",
+        "statistics": "F4,31 = 6.58, p < 0.001; 0.32 vs VEH p < 0.001. Total liquid: F4,31 = 0.88, p = 0.48",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "psilocybin produced an inverted U-shaped dose-response curve in sucrose preference, peaking at 0.32 mg/kg (F4,31 = 6.58, p < 0.001)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "sucrose preference index and total liquid consumption",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The preference indexes calculated for each night were averaged",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "consumption only",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "rats were single-housed",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "amount consumed was measured (bottle weighing)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "rats were single-housed... and presented with two regular bottles",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "home cage with standard bedding implied",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single home cage",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "rats were single-housed (for the duration of this task)",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "presented with 2 bottles, one containing a 1% sucrose solution, and the other containing fresh water",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "test day one on day 6... The procedure was repeated the following day (test day two on day 7)",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min-6 h",
+          "evidence": "2 h before the onset of the dark cycle, water bottles were replaced... amount consumed during each night was measured (overnight ~12 h consumption period, but data collected as endpoint volume)",
+          "confidence": "medium"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "day 6 and day 7 post-psilocybin",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug SPT recorded",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "performed 6 and 7 days post-psilocybin administration",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "consumed during each night (overnight measurement spans dark phase ≥6 h)",
+          "confidence": "medium"
+        },
+        "raw_total": 6
+      }
+    },
+    {
+      "assay_name": "Social Interaction Test",
+      "assay_description": "Dyadic free interaction. Two unfamiliar same-treatment rats placed simultaneously in arena (85 × 85 × 40 cm) in dimly lit room and recorded for 10 min on day 14 post-treatment. Investigative sniffing, anogenital sniffing, following, climbing over/under scored (duration and episodes) via EthoVision XT 15.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "intraperitoneal (i.p.) injection",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "13 days after psilocybin or saline injection, animals were familiarized with an arena... allowed to explore freely for 30 min",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "They were placed simultaneously in the arena",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in arena during 10-min test",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water in arena during 10-min test",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "short_term_1to7d",
+          "value_minutes": 20160,
+          "evidence": "The Social Interaction Test (SIT) was conducted 14 days post-psilocybin administration",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 39,
+        "n_male": 39,
+        "n_female": null,
+        "n_per_group_min": 7,
+        "evidence": "n = 8 per group; except for group 3.2 mg/kg in which one outlier was detected",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin produced inverted U-shaped dose-response in social interaction time, peaking at 0.32 mg/kg, which significantly increased social interaction vs vehicle. Other doses did not differ from control.",
+        "statistics": "F4,34 = 7.09, p < 0.001; 0.32 vs VEH p < 0.001",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "psilocybin produced an inverted U-shaped dose-response curve in total time spent in social interaction, peaking at 0.32 mg/kg (F4,34 = 7.09, p < 0.001)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "investigative sniffing, anogenital sniffing, following, climbing over or under; duration and episodes",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "total time over 10 min",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "investigative sniffing, anogenital sniffing, following, climbing over or under",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 3,
+          "value": "Free social interaction",
+          "evidence": "animals were tested in pairs... They were placed simultaneously in the arena",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "An experimenter blind to the study analyzed the videos offline using Ethovision XT 15 (tracking software, not classifier)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "raw_total": 6
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "arena made of black, rigid PVC foam (85 × 85 × 40 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "open arena",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "PVC foam arena, no bedding mentioned",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "open arena",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 2,
+          "value": "Free social group",
+          "evidence": "placed simultaneously in the arena",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in arena",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "recorded by a video camera for 10 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "recorded by a video camera for 10 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "conducted 14 days post-psilocybin administration",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "conducted 14 days post-psilocybin administration",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "10 min recording",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Merged candidate qwen's separate 'Open Field' assay (treating HTR and locomotion as one) with candidate glm's split HTR and Open Field locomotion entries — these are the same recording session in the same apparatus, so I followed the rubric's 'same apparatus, same session' rule and consolidated into one assay capturing both HTR and locomotor measures.",
+    "Included Rectal Temperature as a separate entry since both candidates scored it; flagged as physiological rather than behavioural but retained for consistency with candidates and because it occurs in a measurement session with manual readout.",
+    "FST D3 set to 8-14 because 3 test days + 3 pre-test days = 6 recording days; conservatively scored as 2-7 (1 point) — corrected the FST raw_total accordingly.",
+    "Housing handling = yes based on explicit 5-day rectal-temperature handling protocol described in methods."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 7.5,
+    "environmental_complexity_max": 4.09,
+    "recording_duration_max": 8.18,
+    "behavioural_complexity_mean": 3.75,
+    "environmental_complexity_mean": 1.36,
+    "recording_duration_mean": 4.09
+  },
+  "low_confidence_count": 4,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm"
+  ],
+  "judge_usage": {
+    "input_tokens": 65758,
+    "output_tokens": 12441,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

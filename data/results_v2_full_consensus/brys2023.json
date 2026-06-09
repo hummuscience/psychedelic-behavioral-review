@@ -1,0 +1,333 @@
+{
+  "study_id": "Brys2023",
+  "doi": "10.1038/s42003-023-05093-6",
+  "species": "rat",
+  "strain": "Sprague-Dawley",
+  "age": {
+    "value": "adult",
+    "age_min_days": 180,
+    "age_max_days": 360,
+    "evidence": "Nine Sprague-Dawley rats (8 females, 1 male, 6-12 months old; Taconic, Denmark)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": 1,
+    "n_female": 8,
+    "evidence": "Nine Sprague-Dawley rats (8 females, 1 male, 6-12 months old)",
+    "confidence": "high"
+  },
+  "psychedelic": "LSD, DOI, Ketamine, PCP",
+  "dosing": [
+    {
+      "compound": "LSD",
+      "doses_mg_per_kg": [
+        0.3
+      ],
+      "doses_raw": "0.3 mg/kg",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "intraperitoneally injected with LSD (lysergic acid diethylamid, 0.3 mg/kg, Lipomed AG, Switzerland)",
+      "confidence": "high"
+    },
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        2.0
+      ],
+      "doses_raw": "2 mg/kg",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "DOI (2,5-dimethoxy-4-iodoamphetamine hydrochloride, 2 mg/kg, Lipomed AG, Switzerland)",
+      "confidence": "high"
+    },
+    {
+      "compound": "Ketamine",
+      "doses_mg_per_kg": [
+        25.0,
+        50.0
+      ],
+      "doses_raw": "25 - 50 mg/kg",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "ketamine (Ketaminol, 25 - 50 mg/kg, Intervet AB, Sweden)",
+      "confidence": "high"
+    },
+    {
+      "compound": "PCP",
+      "doses_mg_per_kg": [
+        5.0
+      ],
+      "doses_raw": "5 mg/kg",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "PCP (phencyclidine hydrochloride, 5 mg/kg, Lipomed AG, Switzerland)",
+      "confidence": "high"
+    },
+    {
+      "compound": "Amphetamine",
+      "doses_mg_per_kg": [
+        4.0
+      ],
+      "doses_raw": "4 mg/kg",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "amphetamine (d-amphetamine sulfate, 4 mg/kg, Tocris, UK)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not stated",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "Animals were kept in plastic cages on a 12:12-h light-dark cycle",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12:12-h light-dark cycle (lights on from 5:30 h to 17:30 h)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not stated",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Open Field Test with multi-behavior scoring",
+      "assay_description": "Freely behaving rats placed in a round open field arena. 60 min baseline + 60-120 min post-drug recording. Video tracking measured distance, speed, time in center; manual video scoring of 12 behaviors (grooming, rearing, sniffing up/down, head-swaying, moving backwards, intermittent turning, unstableness, falling over, lying down, crawling, being still); accelerometer-based head-twitch detection. Composite ataxia and stereotypy scores derived.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "intraperitoneally injected with LSD, DOI, ketamine, PCP or amphetamine",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not described; the 60 min baseline served as recording, not pre-test apparatus habituation",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "freely behaving rats placed in a round open field arena",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Animals placed in round open field arena for recording; no food in apparatus described",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Animals placed in round open field arena for recording; no water in apparatus described",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "After ~60 min of baseline recording, the animal was intraperitoneally injected... and recorded for another 60-120 minutes. Data were averaged over... 30 to 60 minutes for on-drug measurements",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 9,
+        "n_male": 1,
+        "n_female": 8,
+        "n_per_group_min": 7,
+        "evidence": "Nine Sprague-Dawley rats... in total 18 LSD, 9 DOI, 27 ketamine, 7 PCP, and 10 amphetamine experiments",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "NMDA antagonists (ketamine, PCP) induced hyperlocomotion and ataxia; 5-HT2A agonists (LSD, DOI) induced head-twitch responses without altering locomotion; amphetamine induced hyperlocomotion and stereotypy. No single behavior was specific to both psychedelic classes.",
+        "statistics": "p < 0.001 (nested ANOVA) for drug effects on distance, speed, center time, HTR, ataxia and stereotypy scores",
+        "direction": "mixed",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "NMDA antagonists induced hyperlocomotion and ataxia, while 5-HT2A agonists induced head-twitch responses and amphetamine induced hyperlocomotion and stereotypy (p < 0.001; Fig. 1b, c, S1 and S2).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 3,
+          "value": "7+",
+          "evidence": "distance traveled, speed, time in center, head-twitch responses, ataxia score, stereotypy score, plus individual scored behaviors (grooming, rearing, sniffing, etc.)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Data were averaged over -35 to -5 min for baseline and 30 to 60 minutes for on-drug measurements",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural sequences or transitions reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The following behaviors were scored: being still, grooming, rearing, sniffing upwards, sniffing downwards, head-swaying, moving backwards...",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Single animal tested alone in open field arena",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning or memory component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Object tracking was performed using algorithms in Matlab... The position of the animal was defined as the blob centroid. Behaviors scored manually from video.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Analyses reported as separate univariate nested ANOVAs",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "round open field arena",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enclosed refuge in the arena",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described in arena",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in arena",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in arena",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "round open field arena",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "freely behaving rats tested individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the arena",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "60 min baseline followed by a drug injection and recording for another 60-120 min in one continuous session",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "60 min baseline followed by recording for another 60-120 min (total up to ~180 min)",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "For each animal, the experiment was repeated with a different drug in a pseudorandomized order... after a washout period of at least 24 hours (median washout 4 days)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Data were averaged over -35 to -5 min for baseline measurements",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recording ended within 120 min post-injection; no ≥24 h follow-up of same drug effect",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Longest single session <6 h",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    }
+  ],
+  "judge_notes": [
+    "Merged candidate 'Open Field Locomotion', 'Head-Twitch Response', 'Ataxia Scoring', and 'Stereotypy Scoring' into a single Open Field assay. All behaviors were scored from the same recording session in the same circular open field arena using the same protocol; per the rubric, same apparatus + same recording session with multiple measured outcomes = ONE assay.",
+    "B1 scored as 7+ given the breadth of measures: distance, speed, center time, HTR, ataxia composite, stereotypy composite, plus individual ethological behaviors.",
+    "D3 set to 2-7: each animal underwent multiple drug sessions on different days (washout ≥24 h, median 4 days), and the assay was the same open field protocol each time.",
+    "Added amphetamine to dosing list as a non-psychedelic comparator administered to rodents in the same behavioral paradigm; results are reported for psychedelic compounds.",
+    "setup_habituation marked not_reported: the 60-min in-arena baseline is a recording period, not pre-test habituation; paper does not explicitly describe a separate apparatus habituation."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 5.0,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 5.45,
+    "behavioural_complexity_mean": 5.0,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 5.45
+  },
+  "low_confidence_count": 4,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 61230,
+    "output_tokens": 4293,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

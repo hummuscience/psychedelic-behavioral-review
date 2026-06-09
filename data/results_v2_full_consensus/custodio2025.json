@@ -1,0 +1,1100 @@
+{
+  "study_id": "Custodio2023",
+  "doi": "10.1007/s00213-023-06482-9",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 42,
+    "age_max_days": 42,
+    "evidence": "Male C57BL/6 J mice (6 weeks of age) were used in all the tests",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male C57BL/6 J mice (6 weeks of age) were used in all the tests",
+    "confidence": "high"
+  },
+  "psychedelic": "Methallylescaline (MAL), BOD (4-methyl-2,5,β-trimethoxyphenethylamine), DOI",
+  "dosing": [
+    {
+      "compound": "Methallylescaline",
+      "doses_mg_per_kg": [
+        0.3,
+        1.0,
+        3.0,
+        30.0
+      ],
+      "doses_raw": "0.3, 1, and 3 mg·kg-1/day; 30 mg·kg-1",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "repeated",
+      "evidence": "varying doses for MAL and BOD (i.e., 0.3, 1, and 3 mg·kg-1/day)... treatment was continuously provided in the same cohorts until reaching 7th day... single high dose (30 mg·kg-1)",
+      "confidence": "high"
+    },
+    {
+      "compound": "BOD",
+      "doses_mg_per_kg": [
+        0.3,
+        1.0,
+        3.0,
+        30.0
+      ],
+      "doses_raw": "0.3, 1, and 3 mg·kg-1/day; 30 mg·kg-1",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "repeated",
+      "evidence": "varying doses for MAL and BOD (i.e., 0.3, 1, and 3 mg·kg-1/day)... single high dose (30 mg·kg-1)",
+      "confidence": "high"
+    },
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        1.0,
+        30.0
+      ],
+      "doses_raw": "1 mg·kg-1/day; 30 mg·kg-1",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "repeated",
+      "evidence": "The dose of DOI we have utilized is at 1 mg·kg-1/day... single high dose (30 mg·kg-1) of MAL, BOD, and DOI",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not stated",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "kept in groups of six per cage",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "under a 12/12 h light/dark (07:00-19:00 h light) cycle",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not stated",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head-Twitch Response",
+      "assay_description": "Following 2 min unrecorded habituation, HTR counted by two blinded observers for 10 min on Day 1 (dose-response 0.3, 1, 3 mg/kg) and repeated daily through Day 7; on Day 7 separate cohorts received ketanserin or SB-242084 (0.2 mg/kg, 15 min pre-treatment).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered intraperitoneally",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "following 2 min of habituation (unrecorded)",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice freely placed in observation chamber",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in observation chamber during 10-min test",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water in observation chamber during 10-min test",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "HTR was recorded for 10 min during the 1st day",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "HTR in mice (n = 6/group) was recorded",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "MAL and BOD induced HTR in inverted U-shaped dose-response with 1 mg/kg highest. MAL-induced HTR was blocked only by SB-242084 (5-HT2CR antagonist), whereas BOD- and DOI-induced HTR were blocked by both SB-242084 and ketanserin (5-HT2AR antagonist). No tolerance after 7 days repeated dosing.",
+        "statistics": "one-way ANOVA F(7,40)=93.5, P<0.001; F(3,20)=129, P<0.001; two-way repeated ANOVA F(3,60)=90.9, P<0.001 [treatments], F(2,60)=93.3, P<0.001 [pretreatments], F(6,60)=39.4, P<0.001 [interaction]",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "MAL... induced HTR in mice in an inverted U-shaped dose response, where 1 mg·kg-1 induced the highest response... HTR induced by MAL was only blocked by SB-242084... HTR induced by BOD was blocked by both SB-242084 and ketanserin",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "HTR count was the only reported variable",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "results were averaged for each mouse per group",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no sequential analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is a pharmacologically-induced response, not natural ethological behaviour",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "tested individually",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is a behavioural proxy for hallucinogenic effect, no learning required",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR was rated by two observers blind to treatment",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "only univariate statistics",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Standard HTR observation chamber",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no bedding described",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting material",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single observation chamber",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "mice recorded individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "recorded for 10 min during the 1st day... until reaching 7th day",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "recorded for 10 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Day 1 and Day 7 recordings",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline recording reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR test on day 7 was given 15 min after antagonist pre-treatment then drug — not ≥24 h after last drug",
+          "confidence": "medium"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "10 min sessions",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    },
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "42 × 42 × 42 cm open-field arena; 30-min session recorded with EthoVision XT. Two days habituation, then test on Day 3 after 30 mg/kg injection; repeated again after 7 days of dosing.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered intraperitoneally",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "The first 2 days served as the habituation period",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "allowed to explore the entire area",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in arena during test",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water in arena during test",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "locomotor activity was recorded following a single high dose (30 mg·kg-1)",
+          "confidence": "medium"
+        }
+      },
+      "sample_size": {
+        "n_total": 40,
+        "n_male": 40,
+        "n_female": null,
+        "n_per_group_min": 10,
+        "evidence": "Mice (n = 10)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "BOD and DOI reduced locomotor activity in the open field, effect more prominent after 7 days repeated treatment with 30 mg/kg. MAL did not significantly alter motor activity.",
+        "statistics": "two-way repeated ANOVA F(3,36)=21.5, P<0.001 [treatments], F(1,36)=41.0, P<0.001 [treatment days], F(3,36)=5.02, P=0.005 [interaction]",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "treatment with BOD and DOI reduced the motor activity of mice in the open-field... became prominent after 7 days of repeated treatment",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "locomotor activity",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "total over session",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "locomotion not ethological",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "tested alone",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "innate locomotor measure",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EthoVision XT is position tracking only",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate only",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "open-field box measuring 42 × 42 × 42 cm3",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "open-field box",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "mice placed in centre individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Day 3 acute test and again after 7 days of repeated dosing",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "explore the entire area for 30 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "On the last day (3rd day)... The test was done again after the last day of the repeated treatment (7 days)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "first 2 days served as habituation period, not baseline data",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "second test followed 7-day dosing but not ≥24 h after last dose (test done same day post-injection)",
+          "confidence": "medium"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30 min session",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Rotarod Test",
+      "assay_description": "Rotating rod at 36 rpm; 2 days training (10 min/day) then 10-min test 30 min post-injection (30 mg/kg) on Day 3 and again after 7 days repeated treatment. Latency to first fall and falling frequencies recorded.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered intraperitoneally",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Two days prior to the actual recording... the mice were trained to run in the rotating rod for 10 min",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "mice placed on rotating rod, not restrained",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food on apparatus",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water on apparatus",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "30 min after the MAL, BOD, and DOI (30 mg·kg-1)... injection",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 40,
+        "n_male": 40,
+        "n_female": null,
+        "n_per_group_min": 10,
+        "evidence": "the mice (n = 10)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "BOD and DOI increased falling frequencies, indicating impaired motor balance, prominent after 7 days repeated treatment. MAL did not significantly affect rotarod performance.",
+        "statistics": "two-way repeated ANOVA F(3,72)=17.2, P<0.001 [treatments]",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "treatment with BOD and DOI... increased the falling frequencies during the rotarod test... became prominent after 7 days of repeated treatment",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "latency to the first fall and falling frequencies were recorded",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no within-session time-course",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "motor coordination measure",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "tested alone",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "motor balance, not cognitive",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "manual measurement",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate only",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "rotating rod (Ugo Basile)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "rod surface, no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single rod apparatus",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "tested individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Day 3 acute and again after 7 days repeated treatment",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "placed on the rotating rod for 10 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "On the third day... The test was done again after the last day of the repeated treatment (7 days)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "training was for habituation, not baseline data",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not ≥24 h after last dose",
+          "confidence": "medium"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "10 min session",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    },
+    {
+      "assay_name": "Novel Object Recognition Test",
+      "assay_description": "Three-phase test in open-field box: 2-day habituation (10 min/day), 10-min familiarization with two identical objects, then 10-min discrimination with one familiar and one novel object 30 min after 30 mg/kg injection. Repeated after 7 days dosing.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered intraperitoneally",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Each mouse was placed in an open-field box for 10 min/day, for 2 consecutive days (habituation phase)",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "allowed to explore",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in arena",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water in arena",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "allowed to stay there for 30 min, for MAL, BOD, and DOI (30 mg·kg-1)... injections, before being reintroduced into the arena",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 40,
+        "n_male": 40,
+        "n_female": null,
+        "n_per_group_min": 10,
+        "evidence": "Mice (n = 10)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "MAL and BOD reduced novel-object preference after 7 days repeated treatment, indicating recognition memory deficits. Total investigation time and overall discrimination index were not significantly altered.",
+        "statistics": "two-way repeated ANOVA F(7,144)=5.67, P<0.001 [treatments × familiar/novel]",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "reduced novel-object preference (Fig. 6i) was observed in the MAL- and BOD-treated mice",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "total investigation time, discrimination index, and object preference",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "totals per phase",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "object investigation as a test, not natural behaviour scoring",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "no social component",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "evaluate learning and cognition, particularly recognition memory",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EthoVision XT tracking only",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate only",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "open-field box",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no bedding reported",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Novel objects used AS the test do not count",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "open-field box",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "tested individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "familiarization and discrimination phases; test repeated after 7 days",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "10 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "habituation 2 days, familiarization, discrimination, plus repeat after 7 days",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "habituation only, no pre-drug data",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "post-7-day test conducted 30 min after final dose, not ≥24 h",
+          "confidence": "medium"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "10 min sessions",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    },
+    {
+      "assay_name": "Y-Maze Test",
+      "assay_description": "Y-maze (45 × 10 × 20 cm); 10-min free exploration session 30 min after injection (30 mg/kg). Total arm entries and spontaneous alternation calculated. Tested acutely and again after 7 days repeated dosing.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered intraperitoneally",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "no Y-maze-specific habituation described",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "allowed to explore freely",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in maze",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water in maze",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "Each mouse was placed in one of the Y-maze... arms for 30 min (30 mg·kg-1) after the MAL, BOD, DOI, or VEH injection",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 40,
+        "n_male": 40,
+        "n_female": null,
+        "n_per_group_min": 10,
+        "evidence": "Mice (n = 10)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "MAL, BOD, and DOI reduced total arm entries and impaired spontaneous alternation, indicating spatial working memory deficits, after 7 days repeated 30 mg/kg treatment.",
+        "statistics": "two-way repeated ANOVA F(3,35)=24.9, P<0.001 [entries]; F(3,35)=27.3, P<0.001 [alternation]",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "reduction in the total number of entries in all arms (Fig. 6k) and impairments in spontaneous alternation (Fig. 6l)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "total number of arm entries and percentage of spontaneous alternation",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "totals only",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "spontaneous alternation analysis is based on the sequence of arm entries (triplets)",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "arm entries are spatial measures, not ethological acts",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "tested alone",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Spatial working memory was evaluated",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EthoVision XT tracking only",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate only",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Y-maze (45 × 10 × 20 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "Y-maze with three physically distinct arms",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "tested individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in maze",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "test conducted acutely and again after 7 days repeated treatment",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "explore freely for 10 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "The test was done again after the last day of the repeated treatment (7 days)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "test conducted same day post-injection (30 min), not ≥24 h after final dose",
+          "confidence": "medium"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "10 min session",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    }
+  ],
+  "judge_notes": [
+    "All three candidates identified the same 5 behavioural assays (HTR, OFT, Rotarod, NORT, Y-maze) — preserved as separate paradigms.",
+    "For B1_num_measures on HTR: scored 0 (single measure: twitch count) per qwen/gptoss; glm scored 1 in error (rubric says 1 measure = 0 points).",
+    "D5_followup: candidates disagreed. The paper's protocol places repeated-dose tests on the same day as the final dose (30 min after injection), so no ≥24 h post-drug recording exists; scored 0 for all assays, overriding glm.",
+    "For Y-maze B3_sequential_structure: scored 1 (alternation triplets are sequential analysis) per gptoss; this is consistent with rubric.",
+    "Sex-only (male) study; n_male totals computed from n=10/group × 4 groups for neurotoxicity assays.",
+    "DOI used at 1 mg/kg (i.p.) as positive control for HTR — clearly a psychedelic, retained in dosing list."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 4.09,
+    "behavioural_complexity_mean": 1.5,
+    "environmental_complexity_mean": 0.27,
+    "recording_duration_mean": 3.0
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 89912,
+    "output_tokens": 11309,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

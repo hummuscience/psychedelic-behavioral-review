@@ -1,0 +1,680 @@
+{
+  "study_id": "Kimmey2023",
+  "doi": "10.1111/adb.13147",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 56,
+    "age_max_days": 112,
+    "evidence": "Adult male, wild-type C57Bl/6J mice (8 -16 weeks of age, The Jackson Laboratory) were used in all studies.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Adult male, wild-type C57Bl/6J mice (8 -16 weeks of age, The Jackson Laboratory) were used in all studies.",
+    "confidence": "high"
+  },
+  "psychedelic": "TCB-2",
+  "dosing": [
+    {
+      "compound": "TCB-2",
+      "doses_mg_per_kg": [
+        0.1,
+        1.0
+      ],
+      "doses_raw": "0.1, 1.0 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "repeated",
+      "evidence": "intraperitoneal (i.p.) administration of 0.9% saline ... or TCB-2 (0.1, 1.0 mg/kg; Tocris, Bio-Techne, Minneapolis, MN) occurred 2 h after removal of the EtOH, saccharin or water bottle. This procedure was repeated over three consecutive drinking days.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "All mice were habituated to injection procedures at least 1 day prior to experimental endpoints.",
+      "confidence": "medium"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "Mice were singly housed with environmental enrichment (i.e., nestlet and shepherd shack) and food and acclimated to two bottle access",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "yes",
+      "evidence": "acclimate to a reversed 12-h light/dark cycle (lights off: 10:00 AM)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "yes",
+      "evidence": "All home cages were supplied with environmental enrichment ... Mice were singly housed with environmental enrichment (i.e., nestlet and shepherd shack)",
+      "confidence": "high"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Ethanol Two-Bottle Choice Drinking",
+      "assay_description": "Singly-housed mice given intermittent (alternating-day) 24-h home-cage access to one bottle of EtOH (escalated to 20%) and one water bottle. Bottle weights used to compute EtOH consumption (g/kg) and preference; TCB-2 (0.1, 1.0 mg/kg, i.p.) given 2 h after bottle removal during abstinence on 3 consecutive drinking days.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "intraperitoneal (i.p.) administration of ... TCB-2 (0.1, 1.0 mg/kg)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "acclimated to two bottle access by providing two 50-ml sipper tubes in the home cage ... After 1 week of water-only acclimation",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice were singly housed ... freely moving in the home cage",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "mice were given access to food and water ad libitum",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "mice were given access to food and water ad libitum; water bottle available throughout 24-h session",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1320,
+          "evidence": "TCB-2 ... occurred 2 h after removal of the EtOH ... bottle. The next drinking session followed ~22 h later (24-h abstinence cycle).",
+          "confidence": "medium"
+        }
+      },
+      "sample_size": {
+        "n_total": 12,
+        "n_male": 12,
+        "n_female": null,
+        "n_per_group_min": 12,
+        "evidence": "A subset of mice ( N = 12) maintained on intermittent 20% EtOH ... was treated with the 5-HT2AR agonist TCB-2 ... All mice tested received both treatments.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "TCB-2 (1.0 mg/kg i.p.) reduced ethanol consumption by ~44% and ethanol preference in high-preference male mice; 0.1 mg/kg had no effect. The effect was dose-dependent and partially recovered after treatment cessation. No effect on EtOH intake was seen in low-preference (<50%) mice.",
+        "statistics": "F(1,22)=60.97, p<0.0001; t(11)=12.49, p<0.0001; t(11)=7.454, p<0.0001",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "Mice treated with 1.0 mg/kg of TCB-2 displayed a substantial decrease in EtOH consumption ... and in EtOH preference relative to saline treatments ... 0.1 mg/kg TCB-2 failed to alter EtOH drinking behaviour ... EtOH consumption post-TCB-2 had recovered ... to the pre-TCB-2 level",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "EtOH consumption (g/kg), EtOH preference, and total fluid intake were reported",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bottles were weighed at the 24-h time point; only total intake reported",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural sequences",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Volitional drinking is a natural consummatory behaviour scored as intake",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice were singly housed during testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Task relies on innate preference, not learned association",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Intake measured by bottle weighing",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVAs/t-tests only",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "two 50-ml sipper tubes in the home cage",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "environmental enrichment (i.e., nestlet and shepherd shack)",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Standard home cage with bedding (implied by home-cage testing with enrichment)",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Mice were singly housed with environmental enrichment (i.e., nestlet and shepherd shack)",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "environmental enrichment (i.e., nestlet and shepherd shack)",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Standard home cage, single open arena",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice were singly housed",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "food and water were available ad libitum in the home cage during the 24-h sessions",
+          "confidence": "high"
+        },
+        "raw_total": 6
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "intermittent 24-h drinking sessions across multiple days; baseline, three treatment days, and post-TCB-2 days recorded",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 3,
+          "value": ">6 h",
+          "evidence": "24-h access to two drinking bottles",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 2,
+          "value": "8-14",
+          "evidence": "Mice were given at least 3 weeks of intermittent EtOH access prior to experimental endpoints, with bottle weights recorded each drinking day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Based on Week 4 20% EtOH drinking behaviour ... pre-TCB-2 baseline used for comparison",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "We also followed a subset of TCB-2-treated mice for two additional drinking days to assess short-term changes in EtOH consumption after the final TCB-2 administration",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Each session spanned 24 h (>6 h)",
+          "confidence": "high"
+        },
+        "raw_total": 9
+      }
+    },
+    {
+      "assay_name": "Water Two-Bottle Choice Drinking",
+      "assay_description": "EtOH-naive singly-housed mice given intermittent 24-h home-cage access to two water bottles. TCB-2 (1.0 mg/kg, i.p.) injected 2 h after bottle removal on 3 consecutive drinking days; total water intake measured.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "TCB-2 (1.0 mg/kg, intraperitoneal [i.p.])",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "acclimated to two bottle access by providing two 50-ml sipper tubes in the home cage",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice were freely moving in their home cage",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "mice were given access to food and water ad libitum",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "water bottles available throughout the 24-h session",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1320,
+          "evidence": "TCB-2 ... occurred 2 h after removal of the ... water bottle; next drinking session ~22 h later",
+          "confidence": "medium"
+        }
+      },
+      "sample_size": {
+        "n_total": 11,
+        "n_male": 11,
+        "n_female": null,
+        "n_per_group_min": 11,
+        "evidence": "Separate groups of EtOH-naïve mice underwent intermittent two-bottle choice of water ( N = 11)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "TCB-2 (1.0 mg/kg i.p.) did not alter total water consumption compared with saline in ethanol-naive mice.",
+        "statistics": "F(1,20)=0.1071, p=0.7469; t(10)=1.198, p=0.2587",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Total water intake from both bottles was unchanged by TCB-2 injections ... repeated measures two-way ANOVA, F (1, 20) = 0.1071, p = 0.7469",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Total water intake and average water intake reported",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only total 24-h intake reported",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Drinking is a natural consummatory behaviour",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice were singly housed",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Intake measured by bottle weight",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate stats only",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "Two-bottle choice performed in the home cage",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "environmental enrichment (i.e., nestlet and shepherd shack)",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Standard home cage bedding",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "nestlet provided as enrichment",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "shepherd shack and nestlet supplied",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Standard home cage",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice were singly housed",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "food and water available ad libitum during 24-h sessions",
+          "confidence": "high"
+        },
+        "raw_total": 6
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Three consecutive injection drinking days plus baseline days",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 3,
+          "value": ">6 h",
+          "evidence": "Each drinking session lasted 24 h",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "three consecutive drinking days with TCB-2/saline plus baseline days",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Within-subjects design with saline (vehicle) treatment days serving as baseline comparison",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No post-acute follow-up reported for water assay",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Each session spanned 24 h (>6 h)",
+          "confidence": "high"
+        },
+        "raw_total": 7
+      }
+    },
+    {
+      "assay_name": "Saccharin Two-Bottle Choice Drinking",
+      "assay_description": "EtOH-naive singly-housed mice given intermittent 24-h home-cage access to one bottle of 0.2% saccharin and one water bottle. TCB-2 (1.0 mg/kg, i.p.) injected 2 h after bottle removal on 3 consecutive drinking days; saccharin intake and preference measured.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "TCB-2 (1.0 mg/kg, i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "acclimated to two bottle access by providing two 50-ml sipper tubes in the home cage",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice freely moving in the home cage",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "food available ad libitum",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "water bottles present during the session",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1320,
+          "evidence": "TCB-2 ... occurred 2 h after removal of the ... saccharin ... bottle; next drinking session ~22 h later",
+          "confidence": "medium"
+        }
+      },
+      "sample_size": {
+        "n_total": 11,
+        "n_male": 11,
+        "n_female": null,
+        "n_per_group_min": 11,
+        "evidence": "Separate groups of EtOH-naïve mice underwent intermittent two-bottle choice of ... saccharin ( N = 11)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "TCB-2 (1.0 mg/kg i.p.) did not change saccharin consumption or preference compared with saline treatment.",
+        "statistics": "F(1,20)=0.1911, p=0.6666; t(10)=1.607, p=0.1392; t(10)=0.6719, p=0.5169",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "TCB-2 ... did not alter total fluid intake in mice given access to saccharin ... Preference for the saccharin-containing bottle was unchanged by TCB-2 treatment",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Total saccharin intake, average intake, and preference reported",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only total 24-h intake reported",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Saccharin drinking is a natural consummatory behaviour",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice were singly housed",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Intake measured by bottle weight",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate stats only",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "Two-bottle choice performed in the home cage",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "shepherd shack provided as enrichment",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Standard home cage bedding",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "nestlet provided",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Shepherd shack and nestlet supplied",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Standard home cage",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice were singly housed",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "food and water available ad libitum",
+          "confidence": "high"
+        },
+        "raw_total": 6
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Three consecutive drinking days with TCB-2/saline plus prior intermittent drinking days",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 3,
+          "value": ">6 h",
+          "evidence": "Each session lasted 24 h",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "three consecutive drinking days plus baseline days",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Within-subjects design with saline (vehicle) treatment days serving as baseline",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No post-acute follow-up reported",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Each recording spanned 24 h (>6 h)",
+          "confidence": "high"
+        },
+        "raw_total": 7
+      }
+    }
+  ],
+  "judge_notes": [
+    "Three candidates agreed the study contains the EtOH 2BC assay; two also split out water-only and saccharin 2BC as separate assays — kept as 3 distinct assays since they test different liquid intakes in EtOH-naive vs EtOH-experienced cohorts (different paradigms/cohorts).",
+    "Ex vivo slice electrophysiology was correctly excluded by all candidates (not a behavioural assay).",
+    "Sex set to 'male' only (study explicitly states male mice; discussion of female cycle is literature review).",
+    "Housing 'group_housing' set to 'no' because animals were SINGLY housed during behavioural testing (initial arrival group housing was changed before assays).",
+    "D3 for EtOH 2BC scored 2 (8-14 days) because mice underwent ≥3 weeks of intermittent drinking days with bottle weights recorded each drinking day (>=8 recording days). Water and saccharin assays scored as 2-7 since duration of acclimation phase not explicitly enumerated as data-collection days.",
+    "D6 scored 1 (circadian) for all 24-h sessions per rubric definition (>=6 h).",
+    "B4 ethological scored 1 across all three assays (volitional drinking treated as a natural consummatory act, following gptoss reasoning).",
+    "DOI backfilled from user-edited prisma_problems.numbers: was None, now '10.1111/adb.13147'"
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 8.18,
+    "recording_duration_max": 12.27,
+    "behavioural_complexity_mean": 2.5,
+    "environmental_complexity_mean": 8.18,
+    "recording_duration_mean": 10.46
+  },
+  "low_confidence_count": 0,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 57168,
+    "output_tokens": 8321,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

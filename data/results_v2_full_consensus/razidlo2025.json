@@ -1,0 +1,285 @@
+{
+  "study_id": "Razidlo2025",
+  "doi": "10.1021/acsptsci.5c00462",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 49,
+    "age_max_days": 63,
+    "evidence": "All C57BL/6J mice (7-9 weeks old males; The Jackson Laboratory, Maryland, USA)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Only male animals were used in this study",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        1.0,
+        3.0
+      ],
+      "doses_raw": "saline, 1 mg/kg psilocybin, 3 mg/kg psilocybin",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "received their assigned drug treatment (saline, 1 mg/kg psilocybin, 3 mg/kg psilocybin) via intraperitoneal (IP) injection, 30 min prior to fear extinction training",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Paper does not describe a handling habituation protocol.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "All C57BL/6J mice ... were housed in pairs",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "yes",
+      "evidence": "while under a 12 h artificial reverse light/dark cycle. All experiments took place during the animals' dark cycle.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Paper does not mention home-cage enrichment.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Cued Pavlovian Fear Conditioning (Acquisition, Extinction, Recall)",
+      "assay_description": "Standard fear conditioning chambers (Maze Engineers); acquisition (Context A): 4 min baseline + 8 CS-US pairings (30 s 1000 Hz tone co-terminating with 0.4 mA, 2 s footshock) + 1 min; extinction & recall (Context B): 4 min baseline + 12 CS-only trials + 1 min. Freezing scored automatically with Any-maze. Conducted in stress-naive, SPS, and CRS cohorts at 1 and 3 mg/kg psilocybin or saline given 30 min before extinction.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "received their assigned drug treatment ... via intraperitoneal (IP) injection, 30 min prior to fear extinction training",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No apparatus habituation described prior to acquisition.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Animals were freely moving in fear conditioning chambers; freezing scored via Any-maze video tracking.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food access mentioned in the fear conditioning chamber during testing.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water access mentioned in the fear conditioning chamber during testing.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "received their assigned drug treatment ... 30 min prior to fear extinction training",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 112,
+        "n_male": 112,
+        "n_female": 0,
+        "n_per_group_min": 10,
+        "evidence": "Behavioral data: saline n = 30, psilocybin 3 mg/kg n = 24, psilocybin 1 mg/kg n = 10; SPS and CRS behavioral data: n = 12 per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute psilocybin (3 mg/kg, i.p.) administered 30 min before extinction enhanced cued fear extinction and reduced freezing during extinction recall 24 h later in stress-naive mice; 1 mg/kg had no significant effect on extinction but reduced recall freezing. Psilocybin produced similar enhancement of extinction and recall in SPS- and CRS-stressed animals, rescuing stress-induced extinction deficits despite blunted HPA axis responsivity in stressed groups.",
+        "statistics": "Extinction (naive): time x treatment F(11,539)=2.738, p=0.0019; treatment F(5.063,248.1)=66.73, p=0.0152. Recall (naive): time x treatment F(22,638)=2.747, p<0.0001. SPS extinction: F(11,198)=2.869, p=0.0016; treatment F(1,18)=5.832, p=0.0266. SPS recall: treatment F(1,18)=11.99, p=0.0028. CRS extinction: F(11,242)=2.737, p=0.0024. CRS recall: F(5.803,127.7)=1.865, p=0.0942.",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Psilocybin-treated (3 mg/kg) animals displayed enhanced fear extinction compared to their saline-treated counterparts ... animals that had received either dose of psilocybin prior to extinction displayed reduced freezing during recall compared to their saline counterparts",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Freezing values displayed in this paper are the percent freezing during each 1 min trial.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Time series of freezing during cued fear extinction ... time x treatment interaction across 1-min bins within session.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioral transitions or sequences reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Conditioned freezing is not an ethological behavior per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animals tested individually; no social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "the associative learning task of fear conditioning was chosen for examination in this work",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Behavioral freezing was scored automatically using Any-maze (position-tracking system, not a behavioural classifier).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate ANOVA analyses reported.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Fear conditioning chambers ... purchased from Maze Engineers",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Chamber has no enclosed refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "the flooring consisted of stainless-steel metal bars ... a plastic mesh was placed over the metal bar flooring",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in the testing chamber.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in the testing chamber.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "square-shaped chamber - single arena.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Animals tested individually in the chamber.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water available in the chamber during testing.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Behavioral sessions were separated by 24 h (Figure 1A) - acquisition, extinction, and recall on separate days.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "Extinction/Recall: 4 min baseline + 12 CS trials (30 s each) separated by 30 s + 1 min ≈ 15 min.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Acquisition (day 1), extinction (day 2), and recall (day 3).",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Acquisition occurred prior to drug administration but in a different context; no pre-drug baseline recording in the extinction/recall context was reported.",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Extinction recall test performed 24 h after psilocybin administration.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sessions ~15 min; do not span ≥6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    }
+  ],
+  "judge_notes": [
+    "All three candidates identified a single fear conditioning assay; consolidated as one assay covering acquisition, extinction, and recall phases across stress-naive, SPS, and CRS cohorts per rubric (different phases and stress cohorts = 1 assay).",
+    "B1 scored 0 (single measure: % freezing) following majority of candidates; glm's score of 1 was inconsistent with its own evidence stating only freezing was measured.",
+    "D4 scored 0: acquisition is in a different context from extinction/recall, and no pre-drug baseline data within the extinction context were reported.",
+    "Vehicle scored 'saline' based on paper's saline control group description.",
+    "Housing handling and enrichment marked not_reported (low confidence) as paper is silent on these."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 5.45,
+    "behavioural_complexity_mean": 2.5,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 5.45
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 47073,
+    "output_tokens": 4185,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

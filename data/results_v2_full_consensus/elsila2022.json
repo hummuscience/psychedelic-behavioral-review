@@ -1,0 +1,888 @@
+{
+  "study_id": "Elsilä2022",
+  "doi": "10.1177/02698811221104641",
+  "species": "mouse",
+  "strain": "C57BL/6JRj",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 56,
+    "age_max_days": 126,
+    "evidence": "The mice (n = 30, aged 8 weeks)...; Total of 20 mice (aged 10 weeks at the time of the operation)...; The single-housed mice (n = 29, aged 18 weeks)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 109,
+    "n_female": null,
+    "evidence": "Total of 109 C57BL/6JRj male mice were used in this study.",
+    "confidence": "high"
+  },
+  "psychedelic": "LSD",
+  "dosing": [
+    {
+      "compound": "LSD",
+      "doses_mg_per_kg": [
+        0.05,
+        0.1,
+        0.2
+      ],
+      "doses_raw": "0.05, 0.1 and 0.2 mg/kg i.p.",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "LSD ... freshly dissolved in sterile saline on the day of the treatment ... 0.05, 0.1 and 0.2 mg/kg i.p. ... Injection volume of 10 ml/kg i.p. was used.",
+      "confidence": "high"
+    },
+    {
+      "compound": "d-Amphetamine",
+      "doses_mg_per_kg": [
+        3.0
+      ],
+      "doses_raw": "3.0 mg/kg d-amphetamine",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "saline and 3.0 mg/kg d-amphetamine, or 0.1 mg/kg LSD and 3.0 mg/kg d-amphetamine",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "all mice went through a 5-day habituation routine before the start of the behavioural experiment ... exposed to gradually intensifying handling",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "The mice for the ethanol and sucrose drinking, and the food consumption studies were single-housed ... The mice tested in the ICSS were initially housed in pairs, but single-housed after the surgery",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "yes",
+      "evidence": "reversed 12-h light cycle (lights off at 6 am) ... [ICSS mice] regular 12-h light cycle (lights off at 6 pm)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "yes",
+      "evidence": "The cages were provided with aspen bedding, nesting material, a plastic in-cage house and/or tube and a piece of wood.",
+      "confidence": "high"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Intermittent Ethanol Drinking (2-bottle choice)",
+      "assay_description": "Home-cage 2-bottle choice; 20% (v/v) ethanol vs water for 2 h on four consecutive days/week. Acute LSD (0.05, 0.1 mg/kg i.p.) given immediately before access on treatment day. Measured ethanol intake (g/kg, ml), water intake, total fluid intake, ethanol preference.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "treated with saline or LSD (0.05 or 0.1 mg/kg i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "habituated for the reversed light cycle, single housing and two-bottle setup for a week after arrival",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "drinking measured in their home cage; mice freely moving",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "Basic rodent chow ... and tap water were freely available.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "Water was always available in a regular drinking bottle",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "treated with saline or LSD ... and immediately given access to ethanol",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 27,
+        "n_male": 27,
+        "n_female": null,
+        "n_per_group_min": 9,
+        "evidence": "the mice (n = 27) were randomized into three treatment groups ... n = 9 for each group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute 0.1 mg/kg LSD reduced 2-h ethanol intake (-83%) and ethanol preference (-40%) compared with saline; 0.05 mg/kg had no significant effect. No prolonged effects on follow-up days.",
+        "statistics": "Intake F(2,24)=3.53, p=0.0045, Dunnett's p=0.026; Preference F(2,24)=10.03, p=0.0007, Dunnett's p=0.003; Treatment×Day F(16,192)=1.87, p=0.025",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "the LSD 0.1 mg/kg group drinking significantly less than the control group (-83%, Dunnett's test p = 0.026) ... only the 0.1 mg/kg dose of LSD significantly decreased the ethanol preference on the treatment day",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "ethanol intake (g/kg), ethanol intake (ml), water intake, total fluid intake, ethanol preference",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "ingested volumes were measured after 2 h (single total)",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no analysis of bouts or sequences reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "only intake volumes/preference scored; no scoring of natural behavioural acts",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "single-housed; mice tested alone",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "voluntary consumption; no learning/memory component required",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "intake measured by volume; water intake by weighing",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate ANOVAs reported",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "introduced to 20% (v/v) ethanol ... in their home cage",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "cages were provided with ... a plastic in-cage house and/or tube",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "cages were provided with aspen bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "cages were provided with ... nesting material",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "plastic in-cage house and/or tube and a piece of wood",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "individually ventilated home cage; single compartment",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "single-housed",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Basic rodent chow ... and tap water were freely available.",
+          "confidence": "high"
+        },
+        "raw_total": 6
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "ethanol available for 2 h on four consecutive days per week; baseline, treatment, and follow-up days recorded",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "ethanol was available for 2 h",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 3,
+          "value": "15+",
+          "evidence": "4 weeks of drinking baseline (4 days/week) plus treatment week and follow-up week",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "four prior days as the baseline days",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The original drinking pattern was continued for the following week to observe any possible long-term changes",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "2 h session does not span ≥6 h",
+          "confidence": "high"
+        },
+        "raw_total": 8
+      }
+    },
+    {
+      "assay_name": "Intermittent Sucrose Drinking (2-bottle choice)",
+      "assay_description": "Home-cage 2-bottle choice; 10% (w/v) sucrose vs water for 2 h on four consecutive days/week. Acute LSD (0.05, 0.1 mg/kg i.p.) given immediately before access; experiment repeated after repeated saline injections to control for injection effects. Measured sucrose intake (g/kg, ml), water intake, total fluid intake, sucrose preference.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "saline (n=10) or LSD (0.05 mg/kg or 0.1 mg/kg i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "habituated for the reversed light cycle, single housing and two-bottle setup for a week",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "drinking measured in home cage; freely moving",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "Basic rodent chow ... and tap water were freely available.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "Water was always available in a regular drinking bottle",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "treatments were administered immediately before the sucrose was made available",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 29,
+        "n_male": 29,
+        "n_female": null,
+        "n_per_group_min": 9,
+        "evidence": "saline (n=10) or LSD (0.05 mg/kg or 0.1 mg/kg i.p.; n=9 and 10, respectively)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute LSD (0.05 or 0.1 mg/kg) did not significantly alter sucrose intake or preference. Water intake increased in all groups after injection (interpreted as injection stress); when injection effects were habituated away in a follow-up experiment, LSD still had no effect on sucrose intake.",
+        "statistics": "Sucrose intake F(2,26)=1.72, p=0.2; after habituation F(2,26)=0.61, p=0.55; water-intake Day main effect F(8,208)=71.3, p<0.0001",
+        "direction": "no_effect",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "no significant differences between the treatment groups were observed in sucrose consumption (g/kg; F(2,26)=1.72, p=0.2)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "sucrose intake (g/kg), sucrose intake (ml), water intake, total fluid intake, sucrose preference",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "ingested volumes of sucrose and water were measured after 2 h",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no bout structure analysis reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "only intake/preference volumes measured",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "single-housed",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "volumetric measurement",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate ANOVAs reported",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "10% sucrose solution ... in their home cage",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "plastic in-cage house and/or tube",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "aspen bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "nesting material",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "plastic in-cage house and/or tube and a piece of wood",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single compartment home cage",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "single-housed",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "tap water were freely available",
+          "confidence": "high"
+        },
+        "raw_total": 6
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "sucrose available for 2 h on four consecutive days per week; experiment then repeated",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "ingested volumes ... measured after 2 h",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 3,
+          "value": "15+",
+          "evidence": "4 weeks of baseline drinking plus repeated experiment with additional saline phase and follow-up",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "four prior days as the baseline days",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The drinking behaviour was again followed for a week",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "2 h session",
+          "confidence": "high"
+        },
+        "raw_total": 8
+      }
+    },
+    {
+      "assay_name": "Short-term Food and Water Intake",
+      "assay_description": "Home-cage 2-h measurement of chow and water consumption by weighing; two baseline days followed by one acute drug day (0.1 mg/kg LSD vs saline).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered either saline (n=15) or 0.1 mg/kg LSD (n=14) i.p.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "All the mice had received an injection prior to the testing day to habituate them to the procedure",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "home cage measurement; freely moving",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "given access to pre-weighed portions of food and water",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "given access to pre-weighed portions of food and water",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "immediately after the injections, given access to pre-weighed portions of food and water",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 29,
+        "n_male": 29,
+        "n_female": null,
+        "n_per_group_min": 14,
+        "evidence": "saline (n = 15) or 0.1 mg/kg LSD (n = 14)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute 0.1 mg/kg LSD reduced 2-h chow consumption compared with saline (p=0.047). Water intake decreased within the LSD group relative to its own baseline (p=0.018) but did not differ from saline controls.",
+        "statistics": "Food: t(26.92)=2.081, p=0.0471; Water within-group Day F(1,27)=5.42, p=0.0276 (baseline vs drug p=0.018)",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "The acute treatment with 0.1 mg/kg LSD decreased chow consumption of the mice when compared to the saline control (t(26,92)=2.081, p=0.0471)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "chow consumption (g/kg) and water consumption (ml)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "weighed before and after 2-h window only",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no bout/microstructure analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "intake measured by weighing pre/post; no scoring of feeding acts",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "single-housed",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "homeostatic consumption",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "measurements by weighing",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "t-tests and repeated-measures, no multivariate",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "single-housed mice ... regular chow available, and water in a single bottle",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "plastic in-cage house and/or tube",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "aspen bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "nesting material",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "plastic in-cage house and/or tube and a piece of wood",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single compartment home cage",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "single-housed",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "given access to pre-weighed portions of food and water",
+          "confidence": "high"
+        },
+        "raw_total": 6
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "two baseline days and a drug day",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "measured again after 2 h",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "two baseline days + drug day = 3 recording days",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The same measurements were repeated the following day for a second baseline data point",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no recording reported >=24 h after drug",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "2 h session",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      }
+    },
+    {
+      "assay_name": "Intracranial Self-Stimulation (ICSS) - discrete-trial current-threshold",
+      "assay_description": "Operant chamber; medial forebrain bundle stimulation via implanted electrode; mice turn a wheel manipulandum. Two consecutive sessions immediately after LSD (0.05, 0.1, 0.2 mg/kg i.p.) and again 24 h later; second experiment tested LSD (0.1) + d-amphetamine (3.0). Measures: current-intensity threshold, response latency, ITI responses/min.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "saline and three different doses of LSD (0.05, 0.1 and 0.2 mg/kg i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "mice were brought into the experimental room to habituate for a minimum of 30 min before the session start; extensive training in the apparatus",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "flexible 18-cm long plastic-coated bipolar cable ... to a two-channel commutator (freely moving)",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in operant chamber during ICSS testing",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water in operant chamber during ICSS testing",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "mice went through two consecutive sessions immediately after the drug administration",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 9,
+        "n_male": 9,
+        "n_female": null,
+        "n_per_group_min": 7,
+        "evidence": "each mouse (n = 9) received saline and three different doses of LSD ... For the second part ... the mice (n = 7)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute LSD (0.05–0.2 mg/kg) had no effect on ICSS current-intensity threshold, response latency, or ITI responding in either same-day or 24-h sessions. Co-administered LSD (0.1 mg/kg) did not alter the threshold-lowering effect of d-amphetamine (3.0 mg/kg).",
+        "statistics": "Threshold Session 1 F(3,21)=1.2, p=0.33; Session 2 F(3,21)=0.73, p=0.55; Latency F(3,21)=0.72, p=0.55; ITI F(3,21)=0.61, p=0.31; Amph effect Session 2 F(2,10)=7.76, p=0.0093 (Sal-Sal vs Amph-Sal p=0.03); Amph-Sal vs Amph-LSD p=0.85",
+        "direction": "no_effect",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "None of the tested LSD doses produced any changes on the current-intensity threshold ... The simultaneous treatment with 0.1 mg/kg LSD had no observable effect on this [amphetamine-induced] decrease",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "session threshold, mean latency time and ITI responses per minute",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "session-level summary; no within-session time-course",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no sequence/transition analysis reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "operant wheel-turning, not a natural ethological behaviour",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "tested alone in operant chamber",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "mice were trained to turn the manipulandum on a fixed-ratio 1 schedule and on the discrete-trial current-threshold procedure",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Med Associates SOF-700RA-5 software (operant control), not a behavioural classifier",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "one-way ANOVAs only",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "operant chambers enclosed in wood-composite sound-attenuating cubicles",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no refuge in the operant chamber",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "metal rod floor; bedding tray is under the floor, not accessible in the testing area",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting material in operant chamber",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment objects in the chamber during testing",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single operant chamber compartment",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "tested alone",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in the chamber",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "two consecutive sessions immediately after drug; next-day session; daily basal sessions between treatments",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "FR1 acquisition criterion was 100 stimuli in less than 15 min; explicit session duration for threshold sessions not stated",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 3,
+          "value": "15+",
+          "evidence": "Each mouse received saline + 3 LSD doses + amphetamine combinations, ~1 week apart, with daily basal sessions on weekdays — many recording days for this assay",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "baseline values for the threshold, latency and ITI responses were calculated from the daily means obtained 3 days prior to each treatment",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Analysis of the corresponding data of the next session, 24 h after the treatment",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no session spans ≥6 h",
+          "confidence": "high"
+        },
+        "raw_total": 6
+      }
+    }
+  ],
+  "judge_notes": [
+    "Four distinct behavioural assays identified: intermittent ethanol drinking, intermittent sucrose drinking, short-term food/water intake, and ICSS. All three candidates converged on this set.",
+    "Added d-amphetamine as a second dosing entry (used as positive control in the ICSS assay) — candidates omitted it.",
+    "B4 (ethological): adopted 'No' (gpt-glm modal interpretation) since the assays measured intake volumes/preferences rather than scoring natural behavioural acts; drinking volume per the rubric is not an ethological behaviour score.",
+    "D3 for ICSS: scored 15+ given the crossover design with 4 drug treatments separated by ≥7 days plus daily basal sessions — many recording days for this single assay across the testing phase.",
+    "D3 for drinking assays: scored 15+ because the paper reports 4 weeks of baseline drinking (4 days/week ≈ 16 days) plus treatment week and follow-up week, all generating recorded intake data for the same assay.",
+    "ICSS session duration scored 0 with low confidence — the paper does not explicitly state the duration of a threshold session.",
+    "sex_dependent set to n/a throughout (only male mice were used)."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 8.18,
+    "recording_duration_max": 10.91,
+    "behavioural_complexity_mean": 2.19,
+    "environmental_complexity_mean": 6.13,
+    "recording_duration_mean": 9.21
+  },
+  "low_confidence_count": 1,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 72432,
+    "output_tokens": 10892,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

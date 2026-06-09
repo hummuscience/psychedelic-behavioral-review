@@ -1,0 +1,285 @@
+{
+  "study_id": "Reis2020",
+  "doi": null,
+  "species": "mouse",
+  "strain": "Swiss",
+  "age": {
+    "value": "adult",
+    "age_min_days": 90,
+    "age_max_days": 90,
+    "evidence": "Three-month-old Swiss male mice",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 56,
+    "n_female": null,
+    "evidence": "Three-month-old Swiss male mice",
+    "confidence": "high"
+  },
+  "psychedelic": "Ayahuasca",
+  "dosing": [
+    {
+      "compound": "Ayahuasca",
+      "doses_mg_per_kg": [
+        100.0
+      ],
+      "doses_raw": "100 mg/kg, orally",
+      "vehicle": "saline",
+      "route": "p.o.",
+      "schedule": "chronic",
+      "evidence": "Aya was administered orally by gavage at a volume of 10 ml/kg... For 8 consecutive days (days 13 to 20), animals received daily administrations of Veh or Aya (100 mg/kg)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Methods do not describe a handling protocol prior to testing.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Animals weighing 35-40 g were group housed (5-7 per cage) in polypropylene cages",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "controlled temperature (22-23 °C) and light (12 h light, 12 h dark; lights on at 6:45 am) conditions... All behavioral sessions started between 8 and 9 am",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Home cage described as polypropylene cages; no enrichment items mentioned.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Conditioned Place Preference",
+      "assay_description": "Two-compartment CPP apparatus (40×20×20 cm each) connected by a central choice compartment (40×10×15 cm). Phases: habituation (days 1-2), preconditioning test (day 3), 8 conditioning days, postconditioning test (day 12), 8-day treatment, posttreatment test (day 21), Mph reexposure (day 22), postreexposure test (day 23). Test sessions = 15 min of free access; CPP score = time in drug-paired minus saline-paired compartment. Tracked with ANY-maze.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "Aya was administered orally by gavage... Mph and Veh solutions were administered intraperitoneally (i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "A habituation session and a preconditioning test were conducted (days 1-2 and 3, respectively) in which animals were placed in the center of the apparatus with the door open with free access to each compartment for 15 min",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "animals were placed in the center of the apparatus with the door open with free access to each compartment",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Rodent chow... and water were available ad libitum throughout the experiments [in home cage]; CPP apparatus did not contain food",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Rodent chow... and water were available ad libitum throughout the experiments [in home cage]; CPP apparatus did not contain water",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 1440,
+          "evidence": "Twenty-four hours after the last conditioning session (day 12)... Twenty-four hours after the last treatment session (day 21)... Twenty-four hours after the Mph reexposure session (day 23)",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 56,
+        "n_male": 56,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "Experiment 1: control (n=8), Aya (n=8), Mph (n=8). Experiment 2: Mph (n=32) subdivided into Aya (n=16) and Veh (n=16); n=8 per group for posttreatment and postreexposure phases.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Ayahuasca (100 mg/kg, oral) induced CPP in mice, as did methylphenidate (10 mg/kg, i.p.), though Mph CPP was of greater magnitude. Repeated ayahuasca treatment in the Mph-paired compartment blocked the reinstatement of Mph-induced CPP following a Mph priming injection, whereas vehicle-treated animals showed reinstatement.",
+        "statistics": "Exp 1: F(1,7)=5.206, p<0.05 (treatment × compartment). Exp 2: postCT vs preCT t(27)=4.824, p<0.0001; full-phase RM ANOVA F(3,42)=2.828, p<0.05 (interaction); F(3,42)=5.097, p=0.004 (test); F(1,14)=8.578, p=0.01 (treatment); Bonferroni: Mph-Aya < Mph-Veh at PRxT.",
+        "direction": "mixed",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "Both ayahuasca and methylphenidate induced CPP in mice... Treatment with ayahuasca after conditioning with methylphenidate blocked the reinstatement of methylphenidate-induced CPP",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Expression of drug-induced CPP was evidenced by the CPP score (difference between the time spent in the drug-paired and in the nondrug-paired compartments)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "During test sessions, the time spent in each compartment was registered; reported as totals, no within-session time course.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural transitions or sequences reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only zone preference time measured; no natural behaviours scored.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice were tested individually in the CPP apparatus.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Conditioned place preference (CPP) model requires learned context-drug association.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Movement was tracked using the ANY-maze software (version 5.1, Stoelting)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVAs and t-tests only; no PCA or multivariate analysis.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "The CPP apparatus consisted of two conditioning compartments of equal size (40 × 20 × 20 cm)... connected by a central choice compartment",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enclosed refuge described in the apparatus.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Floors described as black wooden floor and red smooth floor; no bedding.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent in CPP apparatus.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in the CPP chambers.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "two conditioning compartments... connected by a central choice compartment that was accessible by sliding doors",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Animals were placed individually in the apparatus during tests.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the CPP apparatus during testing.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "preconditioning test... postconditioning test... posttreatment test... postreexposure test",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "free access to each compartment for 15 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Recording days: preCT (day 3), postCT (day 12), PTT (day 21), PRxT (day 23)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Preconditioning test was conducted on day 3 with data recorded and analysed.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Postreexposure test performed 24 h after the Mph reexposure; posttreatment test 24 h after last Aya treatment.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Each session lasted 15 min; no session ≥6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      }
+    }
+  ],
+  "judge_notes": [
+    "All three candidates converged on a single CPP assay encompassing preconditioning, postconditioning, posttreatment, and postreexposure phases — kept as one assay per rubric (different phases of same paradigm = 1 assay).",
+    "Fos immunohistochemistry was excluded as a non-behavioural endpoint.",
+    "B1 scored 0 (1 measure): CPP score is a single preference score derived from times in two zones (rubric explicitly says this counts as 1 measure), agreeing with qwen over glm/gptoss.",
+    "application_type set to 'multiple' since within this assay both p.o. (Aya) and i.p. (Mph) were administered.",
+    "schedule set to 'chronic' for Ayahuasca because Aya was administered ≥8 days (8-day treatment phase, plus 4 conditioning sessions in Exp 1).",
+    "DOI marked null — no candidate provided a verifiable DOI from the paper text."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 6.82,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 1.36,
+    "recording_duration_mean": 6.82
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 46212,
+    "output_tokens": 4258,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

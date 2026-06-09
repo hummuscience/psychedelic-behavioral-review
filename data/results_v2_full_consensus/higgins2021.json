@@ -1,0 +1,705 @@
+{
+  "study_id": "Higgins2021",
+  "doi": "10.3389/fphar.2021.640241",
+  "species": "rat",
+  "strain": "Long Evans",
+  "age": {
+    "value": "not_reported",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Male Long Evans rats were used in all experiments (source: Charles River Laboratories). Age not stated.",
+    "confidence": "low"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male Long Evans rats were used in all experiments",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin (with ketamine comparator)",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        0.01,
+        0.025,
+        0.03,
+        0.05,
+        0.1,
+        0.3,
+        1,
+        3,
+        10
+      ],
+      "doses_raw": "Psilocybin doses 0.03, 0.1, 0.3, 1, 3, 10 mg/kg (observation); 0.025-0.1 mg/kg (PR); 0.05-0.1 mg/kg (5-CSRTT standard); 0.01, 0.05, 0.1 mg/kg (5-CSRTT extended ITI)",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "Psilocybin ... was suspended in 0.9% saline and sonicated until fully dissolved. Drug was administered in a volume of 1 ml/kg, subcutaneous (SC) route.",
+      "confidence": "high"
+    },
+    {
+      "compound": "Ketamine",
+      "doses_mg_per_kg": [
+        0.3,
+        1,
+        3,
+        6,
+        10,
+        30,
+        60
+      ],
+      "doses_raw": "Ketamine doses 0.3, 1, 3, 10, 30, 60 mg/kg (observation); 0.3-6 mg/kg (PR and 5-CSRTT standard); 1-6 mg/kg (5-CSRTT extended ITI)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "(±) Ketamine hydrochloride ... was suspended in 0.9% saline and administered at a volume of 1 ml/kg, via the intraperitoneal (IP) route.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "No handling protocol described in Methods.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "All study animals were singly housed in a vivarium under a 12 h light:dark cycle",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12 h light:dark cycle (lights on: 06:00 h -18:00 h). All behavioral testing was during the light phase.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Home-cage enrichment not described.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Spontaneous Locomotor Activity and Behavioural Stereotypy Observation",
+      "assay_description": "Rats placed immediately post-injection in automated activity chambers (17\"x17\"x12\", Med Associates) for 2 h. Distance traveled, rearing, and ambulatory episodes recorded automatically; technicians scored drug-specific behaviours (head weaving, circling, ataxia, body sway for ketamine; WDS, BMC, YPG, FPT, HLA for psilocybin) every 5 min.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "Ketamine IP; Psilocybin SC (separate cohorts/experiments within this assay)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No apparatus habituation prior to test described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "subjects were placed in automated activity test chambers ... for 2 h",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Rats utilized for the overt behavioral experiments had ad-lib access to food and water [in home cage]; no food in activity chambers.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Ad lib access to water in home cage; no water in activity chambers during 2 h test.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Immediately post-dose, the subjects were placed in automated activity test chambers ... for 2 h",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 30,
+        "n_male": 30,
+        "n_female": null,
+        "n_per_group_min": 15,
+        "evidence": "A total of 30 male Long Evans rats were used for these experiments (N = 15 Ketamine study; N = 15 psilocybin study)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Ketamine produced a dose-dependent increase in locomotion and stereotypies (circling, ataxia) with threshold of 10 mg/kg. Psilocybin dose-dependently increased 5-HT2A-mediated behaviours (WDS/BMC) with threshold of 0.3 mg/kg, modestly increased distance traveled at 0.1-0.3 mg/kg, and decreased rearing at 10 mg/kg. Psilocybin-induced WDS/BMC was blocked by 5-HT2A antagonist M100907.",
+        "statistics": "Distance traveled: F6,84=4.4, p<0.01; Rearing: F6,84=6.2, p<0.01; M100907/psilo vs Veh/psilo WDS: p<0.001",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Ketamine produced a dose related increase in the incidence of overt behaviors and locomotion with a threshold dose of 10 mg/kg ... Psilocybin (0.03-10 mg/kg) produced a dose related increase in the incidence of behaviors presumed to be 5-HT2A receptor mediated (i.e. WDS/BMC) with a threshold dose of 0.3 mg/kg",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 3,
+          "value": "7+",
+          "evidence": "distance traveled, rearing, ambulatory episodes, WDS, BMC, YPG, FPT, HLA (and for ketamine: head weaving, circling, ataxia, body sway)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Data reported as totals over 2 h session; no within-session time-course analysis.",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural sequences/transitions.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "WDS, BMC, yawning, penile grooming, forepaw treading, hindlimb abduction scored as distinct natural acts",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animal tested alone in chamber.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Spontaneous behaviour observation; no learning component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Med Associates activity chambers (beam-break/position tracking); ethological behaviours scored manually by technicians.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVAs only.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "automated activity test chambers (17\" Wx17\" L × 12\" H; Med Associates)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open activity chamber, no refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard activity chamber floor; no bedding described.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in apparatus.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in apparatus.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single open chamber.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Focal animal alone in chamber.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in activity chamber.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Single 2 h recording per dose; doses given on separate days every 4-5 days.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "subjects were placed in automated activity test chambers ... for 2 h",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Rats were dosed in a semi-random sequence with test drug or vehicle control every 4-5 days (multiple doses tested per animal)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline session reported for this assay.",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recording terminated at 2 h post-dose.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "2 h session, <6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Progressive Ratio Task",
+      "assay_description": "Operant chambers (25 × 30 cm, Med Associates) where food-restricted rats lever-press for 45 mg food pellets under a progressive ratio schedule. Break point (failure to earn pellet in 20 min), total lever presses, and session duration measured. Ketamine 0.3-6 mg/kg IP and psilocybin 0.025-0.1 mg/kg SC tested in same cohort under Latin square design; analyses performed in full cohort and 'low responder' tertile.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "Ketamine IP (0.3-6 mg/kg); Psilocybin SC (0.025-0.1 mg/kg) tested in same task",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Training phase described but no specific pre-test apparatus habituation.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Operant chamber; rats free to move.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "Rats utilized for the 5-choice and progressive ratio experiments were placed on a restricted diet regimen throughout training and testing, where they were fed once a day with approximately 18-20 g of standard laboratory chow at the completion of testing procedures",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "Ad lib water in home cage; restriction not described for PR rats.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 10,
+          "evidence": "Pretreatment times for psilocybin, ketamine and dizocilpine was 10 min",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 72,
+        "n_male": 72,
+        "n_female": null,
+        "n_per_group_min": 23,
+        "evidence": "A total of 72 rats were trained ... effect of ketamine (0.3-6 mg/kg IP; N=68 rats) and psilocybin (0.025-0.1 mg/kg SC; N=72 rats); low responders (N=23 ketamine study; N=24 psilocybin study)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "In the full cohort, neither drug significantly increased break point overall (ketamine 6 mg/kg actually decreased it). In the 'low responder' tertile, ketamine 1-3 mg/kg and psilocybin 0.05-0.1 mg/kg significantly increased break point and lever presses, suggesting enhanced motivation. Low and high responders did not differ in free-feeding, locomotion, or body weight.",
+        "statistics": "Low responders ketamine: lever press F4,88=6.6, p<0.01; break point F4,88=8.9, p<0.01; session duration F4,88=5.0, p=0.01. Low responders psilocybin: lever press F3,69=4.9, p<0.01; break point F3,69=5.6, p<0.01.",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "ketamine 1-3 mg/kg doses to increase each measure relative to vehicle pretreatment ... increases in both measures following psilocybin 0.05-0.1 mg/kg pretreatment relative to vehicle [in low responders]",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Recorded measures included break point (number of pellets earned), total lever presses made during the test session, and test session duration",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session totals only.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Lever-press operant measure, not ethological.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animal tested alone.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Operant progressive ratio schedule requires learned lever-press contingency.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Med PC software (lever-press event detection, not behavioural classification).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVAs only.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Operant test chambers (Med Associates Inc.)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No refuge in operant chamber.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard operant chamber floor.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single aluminum enclosure (25×30 cm) with lever and hopper.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Operant testing alone.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "lever press for a food reward (45 mg Bioserv pellets) delivered during the session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "each animal received each treatment over repeated test sessions with 3-4 days intervals; baseline measured over 5-7 days",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "session duration ~15-19 min reported (e.g., Veh: 15.1 ± 2.0 min; Psilo 0.1 mg/kg: 18.7 ± 2.5 min); break point determined when rat failed to earn pellet in 20 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 2,
+          "value": "8-14",
+          "evidence": "Latin square with 4-5 doses per drug × 3-4 day intervals plus 5-7 day baseline pretest; both drugs tested in same cohort; total recording days for this assay exceed 7.",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Subjects were also ranked based on pellets earned and total lever presses over a 7-days pretest period",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Acute testing 10 min post-dose only.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sessions <60 min.",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      }
+    },
+    {
+      "assay_name": "5-Choice Serial Reaction Time Task (5-CSRTT)",
+      "assay_description": "Operant chambers (Med Associates) with array of five nose-poke niches and food magazine. Food-restricted rats respond to brief light cue (SD 0.75 s or 0.3 s) after ITI (5 s standard, 10 s extended). Measures: %correct, %hit, omissions, premature responses (PREM), perseverative responses (PSV), correct latency, magazine latency, total trials. Session up to 100 trials or 60 min. Ketamine 0.3-6 mg/kg IP and psilocybin 0.01-0.1 mg/kg SC tested across standard and extended-ITI conditions; analyses in full cohort and low/high performer or low/high impulsive tertiles.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "Ketamine IP; Psilocybin SC",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Training described but no separate pre-test habituation specified.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Operant chamber; rats free to move.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "Rats utilized for the 5-choice and progressive ratio experiments were placed on a restricted diet regimen throughout training and testing",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "Ad lib water in home cage; restriction not described.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 10,
+          "evidence": "Pretreatment times for psilocybin, ketamine and dizocilpine was 10 min",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 117,
+        "n_male": 117,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "Ketamine standard N=36; Psilocybin standard N=24; Ketamine extended ITI N=24; Psilocybin extended ITI N=57. Subgroup tertiles N=8-19.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Under standard conditions, ketamine 6 mg/kg reduced %hit and increased omissions/premature responses; lower doses had no overall effect, but in low-performer subgroup ketamine 1-3 mg/kg and psilocybin 0.05-0.1 mg/kg modestly improved %hit (attentional accuracy). Under extended ITI, dizocilpine produced large increases in PREM/PSV; ketamine and psilocybin produced more modest increases in PREM/PSV restricted to low-impulsive subgroups, with no effect on accuracy.",
+        "statistics": "Ketamine 6 mg/kg overall: F4,140>5.1, p<0.01 on %hit, omissions, PREM, PSV. Low performers ketamine: %hit F4,44=3.9, p<0.01. Low performers psilocybin: %hit F2,14=4.8, p=0.02. Extended ITI ketamine LI subgroup: treatment×subgroup PREM F3,42=4.2, p=0.01; PSV F3,42=4.1, p=0.01. Extended ITI psilocybin LI: PREM F3,54=3.4, p=0.02; PSV F3,54=3.0, p=0.04.",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "ketamine (1-3 mg/kg) increased PREM responses in the LI group ... psilocybin significantly increased PREM and PSV responses at the 0.05-0.1 mg/kg doses relative to vehicle pretreatment [in LI group]; small improvement in accuracy at 1 mg/kg and 3 mg/kg compared to vehicle pretreatment on % hit measure",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 3,
+          "value": "7+",
+          "evidence": "#Correct, #Incorrect, #Missed, %Correct, %Hit, PREM, PSV, correct latency, magazine latency, total trials",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session totals only; no within-session time-course.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition/sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Operant nose-pokes and latencies, not ethological behaviour.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animal tested alone.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "5-CSRTT measures attention and response control; learned stimulus-response task.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Med PC software with niche/magazine photocells (event detection).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVAs with subgroup tertile analyses; no PCA/multivariate.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "5-choice operant chambers (Med Associates Inc.)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No refuge in operant chamber.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard operant floor; no bedding.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "Array of five square niches (2.5×2.5×2.5 cm) on a curved panel, plus a reward magazine on the opposite wall — physically distinct compartments.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Tested alone in operant chamber.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "delivery of a food pellet (45 mg food pellet, Bioserv)",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "drug testing began ... animals tested twice weekly ... run under baseline conditions over intervening days; Latin square repeated measures design",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "Each session ran for either 100 trials or 60 min, whichever endpoint was achieved first",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 2,
+          "value": "8-14",
+          "evidence": "5-day baseline subgrouping window plus Latin-square testing across 4-5 doses twice weekly under two test conditions (standard + extended ITI) — recording across well over 7 days for this assay.",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Subgrouping made in this experiment based on baseline % correct made over 5 days preceding these experiments",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Acute, 10 min post-dose testing only.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sessions ≤60 min.",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      }
+    }
+  ],
+  "judge_notes": [
+    "Three distinct behavioural assays retained: (1) 2-h spontaneous activity/stereotypy observation (combining locomotion and observer-scored ethological signs — these were measured in the same recording session and constitute one assay), (2) Progressive Ratio operant task, (3) 5-CSRTT (collapsing standard 5 s ITI and extended 10 s ITI conditions into one assay per rubric guidance that different stimulus parameters of the same paradigm = one assay).",
+    "PK/LC-MS quantification and plasma sampling are physiological/analytical endpoints, not behavioural assays — excluded.",
+    "B1 for the activity/observation assay scored 7+ because the paper reports distance, rearing, ambulatory episodes, and multiple separately scored ethological behaviours (WDS, BMC, YPG, FPT, HLA, plus for ketamine head weaving, circling, ataxia, body sway).",
+    "E6 for 5-CSRTT scored 1 (multiple zones) following glm — the five niches plus magazine on the opposing wall constitute physically distinct compartments; qwen/gptoss under-scored this.",
+    "D3 raised to 8-14 for PR and 5-CSRTT given the Latin-square design with multiple doses tested per animal at 3-4 day intervals plus 5-7 day baseline periods — total recording days for these assays clearly exceed 7.",
+    "Food restriction: 'before' for PR and 5-CSRTT (restricted diet regimen throughout training/testing per Methods); 'during' for activity test (ad lib in home cage, no food in chamber).",
+    "Group housing scored 'no' — paper explicitly states all animals were singly housed.",
+    "Day/night flipped scored 'no' — standard light cycle (lights on 06:00-18:00) with testing in light phase explicitly stated."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 5.0,
+    "environmental_complexity_max": 2.73,
+    "recording_duration_max": 6.82,
+    "behavioural_complexity_mean": 4.17,
+    "environmental_complexity_mean": 1.36,
+    "recording_duration_mean": 5.91
+  },
+  "low_confidence_count": 5,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 88013,
+    "output_tokens": 10056,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

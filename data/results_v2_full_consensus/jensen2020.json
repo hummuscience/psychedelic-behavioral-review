@@ -1,0 +1,708 @@
+{
+  "study_id": "Jensen2020",
+  "doi": "10.1016/j.bcp.2020.114018",
+  "species": "mouse",
+  "strain": "C57BL/6J; NMRI",
+  "age": {
+    "value": "adult",
+    "age_min_days": 42,
+    "age_max_days": 91,
+    "evidence": "Male C57BL/6J mice (6-8 weeks old)... Female NMRI mice (7-13 weeks old at the time of testing)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": 32,
+    "n_female": 71,
+    "evidence": "Male C57BL/6J mice (6-8 weeks old) ... Female NMRI mice (7-13 weeks old)",
+    "confidence": "high"
+  },
+  "psychedelic": "25CN-NBOH, 25CN-NBMD, DOI",
+  "dosing": [
+    {
+      "compound": "25CN-NBMD",
+      "doses_mg_per_kg": [
+        0.3,
+        1,
+        3,
+        10,
+        30
+      ],
+      "doses_raw": "0.3, 1, 3, 10, or 30 mg/kg",
+      "vehicle": "water",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "25CN-NBMD was dissolved in water containing 1% Tween 80 and administered SC at a volume of 5 mL/kg... injected with 25CN-NBMD (0.3, 1, 3, 10, or 30 mg/kg)",
+      "confidence": "high"
+    },
+    {
+      "compound": "25CN-NBOH",
+      "doses_mg_per_kg": [
+        1.0,
+        3.0,
+        10.0
+      ],
+      "doses_raw": "1.0, 3.0 and 10.0 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "25CN-NBOH ... dissolved in 0.9% (w/v) NaCl adjusted to pH 7 ± 1, and administered i.p. 15 min ... prior to testing",
+      "confidence": "high"
+    },
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        0.1,
+        0.3,
+        1.0
+      ],
+      "doses_raw": "0.1, 0.3 and 1.0 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "DOI ... administered i.p. ... 30 min prior to testing",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not stated in methods",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Mice were housed up to four per cage... housed... with 5 mice per cage",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "yes",
+      "evidence": "The mice were housed on a reversed light-dark cycle (lights on at 1900 h, off at 0700 h)... Testing was performed between 1000 h and 1800 h (during the dark phase of the light-dark cycle).",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not stated in methods",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head-twitch response (HTR)",
+      "assay_description": "C57BL/6J mice with head-mounted magnets placed in a glass cylinder surrounded by a magnetometer coil; HTR counted over 30 min following s.c. administration of 25CN-NBMD (0.3-30 mg/kg) or vehicle.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "administered SC at a volume of 5 mL/kg",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Methods do not describe pre-test apparatus habituation",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "HTR activity was recorded in a glass cylinder surrounded by a magnetometer coil",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "food and water provided ad libitum except during behavioral testing",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "food and water provided ad libitum except during behavioral testing",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Test compounds were injected immediately prior to testing.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 32,
+        "n_male": 32,
+        "n_female": 0,
+        "n_per_group_min": 5,
+        "evidence": "Mice (32 total, n = 5-6/group) were injected with 25CN-NBMD",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "25CN-NBMD produced a dose-dependent, biphasic increase in head-twitch response in male C57BL/6J mice with a maximal response at 10 mg/kg (ED50 = 2.16 mg/kg). 25CN-NBOH was ~4-fold more potent (ED50 = 0.51 mg/kg).",
+        "statistics": "F5,26 = 11.62, p < 0.0001; 10 mg/kg vs vehicle p < 0.01 (Tukey); ED50 = 2.16 mg/kg (95% CI 1.39-3.35); ED50 comparison F(1,56) = 7.85, p = 0.007",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "25CN-NBMD produced a dose-dependent increase in HTR (drug effect: F5,26 = 11.62; p < 0.0001) ... maximal response occurring at 10 mg/kg",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Head twitch counts were analyzed",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The entire 30-min recordings were examined for head twitches (total counts)",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence/bout analysis reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is explicitly excluded from ethological behaviours",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing in a glass cylinder",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR does not require learning or memory",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTRs were identified by waveform characteristics from magnetometer coil voltage — signal-based detection, not video behavioural classification",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head twitch counts analyzed by one-way ANOVA",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "glass cylinder surrounded by a magnetometer coil",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "glass cylinder with no refuge",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "glass cylinder, no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment in cylinder",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single cylinder",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individual recording in cylinder",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "food and water provided ad libitum except during behavioral testing",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "HTR activity was recorded ... for 30 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "recorded ... for 30 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single HTR test session per condition",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Test compounds were injected immediately prior to testing",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No ≥24 h post-dose recording",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30 min session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Marble burying (MB)",
+      "assay_description": "Female NMRI mice tested individually in a type III H cage with 20 glass marbles on a 4.5 cm sawdust layer for 30 min following i.p. 25CN-NBOH (1, 3, 10 mg/kg) or DOI (0.1, 0.3, 1 mg/kg); buried marbles (>2/3 covered) counted by blinded observer at 10, 20 and 30 min.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered i.p. 15 min and 30 min prior to testing, respectively",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "The mice were not acclimatized to the test cages",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice were freely moving in type III H cages",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Food and water were provided ad libitum (home cage); no food in the test cage during the 30-min session",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water bottle in test cage during 30-min session",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 15,
+          "evidence": "25CN-NBOH and DOI ... administered i.p. 15 min and 30 min prior to testing, respectively",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 80,
+        "n_male": 0,
+        "n_female": 80,
+        "n_per_group_min": 10,
+        "evidence": "n = 10 (per group, for each drug, 4 groups each)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Both 25CN-NBOH (1, 3, 10 mg/kg) and DOI (0.1, 0.3, 1 mg/kg) produced dose-dependent decreases in marble burying in female NMRI mice. 25CN-NBOH significantly reduced cumulative buried marbles at 10 mg/kg; DOI at 0.3 and 1 mg/kg.",
+        "statistics": "25CN-NBOH cumulative: F3,36 = 3.39, p < 0.05 (10 mg/kg p < 0.01); time × treatment F6,72 = 5.43, p < 0.001. DOI cumulative: F3,36 = 9.50, p < 0.001 (0.3 mg/kg p < 0.05; 1 mg/kg p < 0.001); time × treatment F6,72 = 2.49, p < 0.05",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "25CN-NBOH ... produced a dose-dependent decrease in total digging during the test ... DOI ... also produced a dose-dependent decrease in total digging during the MB test",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The number of buried marbles served as a measure of perseverative MB behaviour",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "MB data are analyzed and presented as both time-course and total effect ... digging in time bins was analysed by two-way repeated measures ANOVA",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bout/sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The MB test measures compulsive-like digging — a natural digging behaviour",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning/memory component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Marbles counted by an observer blinded to the treatment",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVAs only",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "transparent type III H cages",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter in cage",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "a layer of 4.5 cm saw dust",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material reported",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Marbles are the test stimulus, not enrichment",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single cage compartment",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice tested individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in testing cage",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Single 30-min test session per animal",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "counted ... at the 10, 20, and 30-min time points",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "One test day per animal",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Test conducted 15-30 min post-injection only",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30 min session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Locomotor activity (LA)",
+      "assay_description": "Female NMRI mice placed in transparent type III H cages on a black background; movement recorded for 30 min by overhead camera using EthoVision XT after i.p. 25CN-NBOH (1, 3, 10 mg/kg) or DOI (0.1, 0.3, 1 mg/kg); distance travelled measured.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered i.p. 15 min and 30 min prior to testing, respectively",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "The mice were not acclimatized to the test cages and the recording was started immediately after placing the animals in the test cages",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice were freely moving in the test cages",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in test cage during 30-min session",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in test cage during 30-min session",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 15,
+          "evidence": "25CN-NBOH and DOI ... administered i.p. 15 min and 30 min prior to testing, respectively",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 60,
+        "n_male": 0,
+        "n_female": 60,
+        "n_per_group_min": 7,
+        "evidence": "n = 7-8 per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Neither 25CN-NBOH nor DOI produced significant changes in total distance travelled in female NMRI mice. There was a near-significant trend toward increased activity with 0.3 and 1 mg/kg DOI.",
+        "statistics": "25CN-NBOH: F3,28 = 0.93, p = 0.441. DOI: F3,25 = 1.81, p = 0.171; 0.3 mg/kg p = 0.059, 1 mg/kg p = 0.055",
+        "direction": "no_effect",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "one-way ANOVAs revealed no significant main effects of 25CN-NBOH treatment (F3,28 = 0.93; p = 0.441) or DOI treatment (F3,25 = 1.81; p = 0.171) on total distance travelled",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Distance travelled served as a measure of LA",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "total distance analysed by one-way ANOVA",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence/bout analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor distance is explicitly excluded from ethological behaviours",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Spontaneous locomotion, no learning",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EthoVision XT is a position-tracking system (score-0 list)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVA only",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "transparent type III H cages on a black background",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter present",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "LA cage described on a black background; no sawdust mentioned for LA test",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material reported",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment present",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single open cage",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual testing",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Movement was recorded for 30 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "recorded for 30 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recording started immediately after placing the animals in the test cages (post-injection)",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Acute test only",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30 min session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Three behavioural assays retained: HTR (in C57BL/6J males), marble burying (NMRI females), and locomotor activity (NMRI females). All other study content (cell-based binding, functional assays, radioligand binding, autoradiography, SAR/chemistry) is non-behavioural and excluded.",
+    "B7 for HTR set to 0: magnetometer waveform detection is a signal-based event detector, not a video-based behavioural classifier of the type rewarded by B7 (DeepLabCut/SLEAP/MoSeq/B-SOiD/SimBA). Overrode gptoss candidate.",
+    "E3 for LA set to 0: paper describes LA in 'transparent type III H cages on a black background' with no mention of sawdust for the LA assay (sawdust is specified only for MB). Overrode gptoss candidate.",
+    "day_night_flipped set to 'yes' based on explicit reversed-cycle statement for the HTR cohort (C57BL/6J at UCSD). NMRI mice were on standard cycle; reported the explicit reversed cycle for HTR cohort as the housing statement, since at least one cohort was on reversed cycle.",
+    "Sex n: HTR n=32 (male), MB n=40 female, LA n=~31 female (n=7-8 × 4 groups × 2 drugs). Approximate female total ≈ 71."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 0.83,
+    "environmental_complexity_mean": 0.45,
+    "recording_duration_mean": 1.36
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 81751,
+    "output_tokens": 8167,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

@@ -1,0 +1,318 @@
+{
+  "study_id": "Vejmola2021",
+  "doi": "10.1038/s41398-021-01603-4",
+  "species": "rat",
+  "strain": "Wistar",
+  "age": {
+    "value": "adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Experiments were outperformed on adult male Wistar rats (SPF, Velaz s.r.o., Prague, Czechia). The animals weighed 280-300 g at the time of surgery",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 50,
+    "n_female": null,
+    "evidence": "adult male Wistar rats",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocin, LSD, mescaline, DOB",
+  "dosing": [
+    {
+      "compound": "Psilocin",
+      "doses_mg_per_kg": [
+        4.0
+      ],
+      "doses_raw": "psilocin (4 mg/kg dissolved in 2 ml of saline (0.9% NaCl), acidified with 10 μl of glacial acetic acid)",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "psilocin (4 mg/kg dissolved in 2 ml of saline ... All of the substances were administered subcutaneously",
+      "confidence": "high"
+    },
+    {
+      "compound": "LSD",
+      "doses_mg_per_kg": [
+        0.2
+      ],
+      "doses_raw": "0.2 mg/kg",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "LSD (in a form of freebase, 0.2 mg/kg dissolved in 20 μl of 96% ethanol and then adjusted to the required volume of 5 ml by saline)",
+      "confidence": "high"
+    },
+    {
+      "compound": "Mescaline",
+      "doses_mg_per_kg": [
+        100.0
+      ],
+      "doses_raw": "100 mg/kg",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "mescaline hydrochloride (100 mg/kg) ... All of the substances were administered subcutaneously",
+      "confidence": "high"
+    },
+    {
+      "compound": "DOB",
+      "doses_mg_per_kg": [
+        5.0
+      ],
+      "doses_raw": "5 mg/kg",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "2,5-dimethoxy-4-bromoamphetamine (DOB, 5 mg/kg) ... All of the substances were administered subcutaneously",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Paper does not describe a deliberate pre-test handling protocol",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "After the surgery, the rats were individually separated (to prevent biting of the implant) until the day of registration.",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "regular twelve-hour (6:00-18:00) light/dark cycle ... Experiments were conducted during the daytime, between 7:30 and 13:00",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Rats were kept in pairs in standard plastic breeding containers — enrichment not mentioned",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Home-cage behavioural activity scoring (active vs inactive)",
+      "assay_description": "During EEG sessions, an experienced observer blindly scored the rats' behaviour as active behaviour or inactivity in the home cage in parallel with EEG recording. A 10-min baseline period was recorded before drug administration and 90 min after subcutaneous treatment; behavioural ratios were calculated per 10-min epoch.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "All of the substances were administered subcutaneously in a dose of 2 ml/kg of animal weight.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Approximately 15 mins before the experiment began, the animals were connected to the EEG system in their home cages. A 10-min recording session was obtained immediately before treatment to serve as a baseline condition.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "The rats were able to move freely in the cage during all of the EEG recording sessions while being connected with a cable to the amplifier.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "Access to standardized food and water was ad libitum.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "Access to standardized food and water was ad libitum.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Subsequently, treatments were administered, and registration continued for another 90 min.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 50,
+        "n_male": 50,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "10 rats for saline, nine rats for LSD, eight for psilocin, 12 for mescaline, and 11 for DOB were selected for signal analysis",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Behavioural activity (ratio of active to inactive time) was not significantly different between psychedelic-treated groups (psilocin, LSD, mescaline, DOB) and saline controls during the 90-min post-treatment recording, although a significant time × treatment interaction was detected.",
+        "statistics": "F(8,86) = 2.29, P < 0.05 (time × treatment interaction); Tukey post hoc: no significant effects between control and active substances at the appropriate times",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "Despite the significant interaction revealed by repeated-measures ANOVA between time and treatment (F(8,86) = 2.29, P < 0.05), Tukey's post hoc analysis showed no significant effects between the control group and the active substances at the appropriate times.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "two types of behavioral activity (active behavior/inactivity) were scored",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "analyzed four distinct time epochs ... (2) 20-30 min post treatment; (3) 50-60 min post treatment; and (4) 80-90 min post treatment",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only active vs inactive ratios analysed; no transitions/sequences reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Behaviour scored only as active vs inactive; no natural behavioural categories quantified",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "After the surgery, the rats were individually separated ... Rats tested alone",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning or memory component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "behavioral activity ... were scored (blindly to treatment) by an experienced observer",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate analysis (RM-ANOVA on active/inactive ratios)",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "the animals were connected to the EEG system in their home cages",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter mentioned in the home cage during recording",
+          "confidence": "low"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard plastic breeding containers used as testing environment; bedding not explicitly mentioned",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material mentioned",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects mentioned in testing cage",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "standard plastic breeding containers",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "After the surgery, the rats were individually separated (to prevent biting of the implant) until the day of registration.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Access to standardized food and water was ad libitum.",
+          "confidence": "medium"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "A 10-min recording session was obtained immediately before treatment ... registration continued for another 90 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "registration continued for another 90 min (plus 10 min baseline) — single continuous session ~100 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Each rat was recorded only once.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "A 10-min recording session was obtained immediately before treatment to serve as a baseline condition.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recording ended 90 min after treatment; no ≥24 h follow-up.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total session ~100 min, well under 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    }
+  ],
+  "judge_notes": [
+    "Paper's primary measurements are EEG (cross-spectral and phase-lagged coherence, power spectra), which are neural recordings excluded by the rubric. The only behavioural readout is the parallel active-vs-inactive scoring used to gate EEG analysis — included as a single behavioural assay (home-cage behavioural activity scoring) following the qwen candidate.",
+    "GLM candidate produced no assay entries; qwen's home-cage behavioural scoring entry was retained as the lone behavioural paradigm.",
+    "group_housing scored 'no' because rats were individually separated post-surgery up through recording, which is the housing during behavioural testing (qwen's interpretation preferred over glm's).",
+    "setup_habituation scored 'yes': animals were connected to the EEG system in their home cages ~15 min before experiment plus a 10-min pre-treatment baseline, constituting apparatus/tethering habituation."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 2.73,
+    "recording_duration_max": 4.09,
+    "behavioural_complexity_mean": 2.5,
+    "environmental_complexity_mean": 2.73,
+    "recording_duration_mean": 4.09
+  },
+  "low_confidence_count": 6,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm"
+  ],
+  "judge_usage": {
+    "input_tokens": 36555,
+    "output_tokens": 4401,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

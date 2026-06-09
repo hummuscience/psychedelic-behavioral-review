@@ -1,0 +1,483 @@
+{
+  "study_id": "Yu2023",
+  "doi": null,
+  "species": "rat",
+  "strain": "Sprague-Dawley",
+  "age": {
+    "value": "adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "approximately 200-220g upon arrival and 280-320g prior to behavioral testing or electrode implantation",
+    "confidence": "medium"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male Sprague-Dawley (SD) rats",
+    "confidence": "high"
+  },
+  "psychedelic": "25C-NBOMe",
+  "dosing": [
+    {
+      "compound": "25C-NBOMe",
+      "doses_mg_per_kg": [
+        0.03,
+        0.1,
+        0.3,
+        1.0
+      ],
+      "doses_raw": "25C-NBOMe (0.03-1.0 mg/kg) was dissolved in saline",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "25C-NBOMe (0.03-1.0 mg/kg) was dissolved in saline... All drugs were injected intraperitoneally (i.p.) at a volume of 1 mL/kg.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Rats were group-housed and allowed to acclimate to their new environment for 1 week at least before any experimental procedures were performed.",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "yes",
+      "evidence": "Rats were housed in a temperature- and humidity-controlled environment with a reversed light-dark cycle (12 vs. 12 hr).",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Open Field Test (Locomotor Activity)",
+      "assay_description": "Locomotor activity recorded in a square open field chamber (40x40x40 cm, black matte acrylic) for 60 min immediately after i.p. injection, with 3 days of prior habituation.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs were injected intraperitoneally (i.p.) at a volume of 1 mL/kg.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "After habituation for 3 days, rats were placed in open field chambers",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "rats were immediately placed in the open field chambers for 60 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard OFT; no food in apparatus (not explicitly stated)",
+          "confidence": "low"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard OFT; no water in apparatus (not explicitly stated)",
+          "confidence": "low"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "After injection with 25C-NBOMe or saline (i.p.), rats were immediately placed in the open field chambers for 60 min.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 40,
+        "n_male": 40,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "N = 8/group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "25C-NBOMe (0.03-1.0 mg/kg, i.p.) significantly affected locomotor activity with an inverted U-shaped dose-response curve, peaking at 5-15 min post-injection.",
+        "statistics": "one-way ANOVA, F(4,35) = 2.404, p = 0.0017",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "25C-NBOMe significantly affect locomotor activity with inverted U-Shaped dose-response curve (Fig. 1A; one-way ANOVA, F (4,35) = 2.404 p = 0.0017).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "distance travelled / total locomotor activity",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The temporal pattern of locomotor response to 25C-NBOMe. Each point represents the average distance travelled in 5-min bins.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only locomotor distance measured",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Tested alone",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning/memory component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "locomotor activity was recorded through night vision cameras",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVA only",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "square open field chamber (40*40*40 CM, made by black matte acrylic)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open field has no shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "black matte acrylic floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Empty open field",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "square open field chamber",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual testing in open field",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open field with no food/water",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "rats were immediately placed in the open field chambers for 60 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "60 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single recording session post-injection",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Habituation for 3 days but no pre-drug baseline data reported",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recording only acute",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "60 min session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Prepulse Inhibition (PPI)",
+      "assay_description": "Acoustic startle and prepulse inhibition measured in a sound-attenuated chamber with piezoelectric accelerometric platform; 5-min acclimatization, then pulse-alone, prepulse+pulse (70/75/80 dB prepulse), and no-stimulus trials.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs were injected intraperitoneally (i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Only a 5-min acclimatization within the test session; no separate pre-test habituation described",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "PPI startle chambers; apparatus consisted of one acrylic cage and one piezoelectric accelerometric platform inside of a sound attenuated chamber",
+          "confidence": "medium"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard PPI; no food in chamber",
+          "confidence": "low"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard PPI; no water in chamber",
+          "confidence": "low"
+        },
+        "time_to_assay": {
+          "value": "not_reported",
+          "value_minutes": null,
+          "evidence": "Time between injection and PPI testing not explicitly stated",
+          "confidence": "low"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "N in parentheses corresponds the number of rats per group (specific n not extractable from text)",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "25C-NBOMe (0.1 mg/kg) significantly attenuated PPI at 75 and 80 dB prepulse intensities without affecting startle response in the pulse-alone trials.",
+        "statistics": "Two-way ANOVA: factor of dosage F(2,40)=7.836, p=0.0013; factor of prepulse intensity F(1.639,65.54)=43.56, p<0.0001; interaction F(4,80)=1.967, p=0.1075",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "25C-NBOMe (0.1 mg/kg) significantly attenuated PPI at 75 or 80 dB without affecting startle response.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Startle amplitude (pulse alone) and PPI (% inhibition) at multiple prepulse intensities",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single averaged values per trial type",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "PPI startle magnitude is not an ethological measure",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Tested alone",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sensorimotor gating, not learning",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Laboratory Animal Behavioral Analysis System (piezoelectric amplitude readout)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVA only",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "acrylic cage and one piezoelectric accelerometric platform inside of a sound attenuated chamber",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Startle chamber has no shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Acrylic cage / platform",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard startle chamber",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single acrylic cage",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Single rat in startle chamber",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Startle chamber with no food/water",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Single test session with acclimatization plus trial block",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "5 min acclimatization + 5 pulse-alone stimuli + 5 trial types x 10 reps with 25-35 s ITI (~25-30 min total)",
+          "confidence": "medium"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug PPI baseline data reported",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Acute test only",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session well under 6 hours",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Excluded all electrophysiology/LFP recording analyses (PSD, coherence, time-frequency spectrograms in PrL/OFC/ACC/CA1) per rubric — these are neural recordings, not behavioural assays, even though MDL100,907/haloperidol pretreatment experiments are presented in the same paper.",
+    "Retained two behavioural assays: Open Field locomotor activity and Prepulse Inhibition. Both candidates agreed on these.",
+    "B1 for OFT scored 0 (single measure: distance travelled). Candidate 'glm' scored 1 but the rubric awards 0 points for 1 measure.",
+    "Setup_restrain for PPI scored 'yes' per rubric explicit note that 'PPI startle chambers with body-restraint tubes' count as restraint.",
+    "Sample size for PPI left null because exact n's are inside figure parentheses not visible in extracted text.",
+    "Day_night_flipped scored 'yes' based on explicit 'reversed light-dark cycle' statement."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 1.36
+  },
+  "low_confidence_count": 6,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm"
+  ],
+  "judge_usage": {
+    "input_tokens": 42157,
+    "output_tokens": 5925,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

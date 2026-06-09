@@ -1,0 +1,286 @@
+{
+  "study_id": "McQueney2024",
+  "doi": "10.1016/j.drugalcdep.2024.112426",
+  "species": "rat",
+  "strain": "Sprague-Dawley",
+  "age": {
+    "value": "not_reported",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "weighing 200-250 g upon arrival",
+    "confidence": "low"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": 18,
+    "n_female": 20,
+    "evidence": "Thirty-eight (18 male, 20 female) Sprague-Dawley rats",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        0.01,
+        0.03,
+        0.1
+      ],
+      "doses_raw": "0.01, 0.03, 0.1, mg/kg, s.c.",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "repeated",
+      "evidence": "saline or DOI (0.01, 0.03, 0.1, mg/kg, s.c.) was administered 15 minutes before the start of the self-administration session using a within-subjects, counterbalanced design. At least 72 hours occurred between DOI test days",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "All rats were pair-housed with a same-sex cage mate in standard cages",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "The colony room was maintained on a 12-h light-dark cycle with lights on or off at 06:00 and 18:00, respectively. All procedures were conducted during the light cycle.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "standard cages — enrichment not specified",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Fentanyl intravenous self-administration (within-session threshold procedure)",
+      "assay_description": "Operant self-administration of fentanyl in standard 2-lever Med-Associates chambers. FR1 acquisition (3-h daily sessions, 3.2 µg/kg/inf) followed by a low-price-twice within-session threshold procedure (2-h sessions, 11 doses descending by ¼ log every 10 min). DOI or saline administered 15 min pre-session in within-subjects design. Outcomes: active/inactive lever presses, infusions, consumption, latency, Q0 and α extracted from exponentiated demand function.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "saline or DOI (0.01, 0.03, 0.1, mg/kg, s.c.) was administered 15 minutes before the start of the self-administration session",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Animals acquired fentanyl self-administration without prior food, magazine, or lever press training.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "A metal spring leash ... allowed unobstructed access to the entire operant chamber.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard chow food (LabDiet, Prolab RMH 3000) and water were available ad libitum, except during self-administration sessions.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard chow food ... and water were available ad libitum, except during self-administration sessions.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 15,
+          "evidence": "DOI ... was administered 15 minutes before the start of the self-administration session",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 29,
+        "n_male": 16,
+        "n_female": 13,
+        "n_per_group_min": 12,
+        "evidence": "n = 29; M = 16 received at least one dose, n = 13 for the 0.01 mg/kg, n = 15 for the 0.03 mg/kg, n = 16 for the 0.1 mg/kg; F = 13 received at least one dose, n = 13 for the 0.01 mg/kg, n = 12 for the 0.03 mg/kg, n = 13 for the 0.1 mg/kg",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI dose- and sex-dependently altered fentanyl demand. In male rats, 0.01 mg/kg DOI increased demand intensity (Q0) and 0.1 mg/kg DOI increased demand elasticity (α). In female rats, 0.1 mg/kg DOI decreased Q0 but did not affect α. DOI did not alter inactive lever presses or latency to first active lever press.",
+        "statistics": "Q0: F(3,1176) = 7.59, p < 0.05; DOI × sex F(3,1176) = 5.09, p < 0.05. Male Q0 0.01 mg/kg t(637) = 2.84, p < 0.05; Female Q0 0.1 mg/kg t(540) = 3.85, p < 0.05. α: DOI × sex F(3,1176) = 15.08, p < 0.05; Male α 0.1 mg/kg t(637) = 5.94, p < 0.05.",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "yes",
+        "time_dependent": "n/a",
+        "evidence": "DOI dose-dependently altered fentanyl intake such that 5-HT2AR activation decreased Q0 in female rats but increased Q0 in male rats. For demand elasticity, DOI increased α in male rats but did not alter α in female rats.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 3,
+          "value": "7+",
+          "evidence": "active and inactive lever presses, total number of infusions, and consumption (µg) were all recorded ... demand elasticity (α) and demand intensity (Q0) ... latency to the first active lever press",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "infusions during each epoch were multiplied by the dose to yield µg consumed during that respective epoch ... consumption was plotted as a function of Price across 10-min epochs",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no analysis of behavioural transitions or sequences reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "behaviour measured was lever pressing, not natural ethological acts",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "self-administration sessions were conducted in standard operant chambers with a single rat",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "operant self-administration on FR1 schedule requires instrumental learning",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Med-Associates lever-press hardware — beam-break/operant system, not a behavioural classifier",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "nonlinear mixed-effects modeling of demand parameters, not dimensionality reduction across behavioural features",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "standard operant chambers containing two retractable levers",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "operant chamber provides no enclosed refuge",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "standard operant chamber floor; no bedding described",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting material in operant chamber",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment objects in operant chamber",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single operant chamber compartment with two levers",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "focal rat performed the task alone in the operant chamber",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "food and water available ad libitum, except during self-administration sessions",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "daily sessions across acquisition and within-session threshold testing; At least 72 hours occurred between DOI test days",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "daily three-hour sessions [acquisition] ... Eleven doses ... available across a two-hour session",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 3,
+          "value": "15+",
+          "evidence": "daily three-hour sessions; 7 days per week during acquisition until stability, then within-session threshold procedure to stability, then 4 drug test days separated by ≥72 h",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "There was no difference between Q0 or α across the saline treatment days and thus, those days were averaged.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "DOI administered 15 min before each session; no ≥24 h post-acute behavioural recording reported",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "longest session was 3 hours",
+          "confidence": "high"
+        },
+        "raw_total": 7
+      }
+    }
+  ],
+  "judge_notes": [
+    "All three candidates agreed on a single operant self-administration assay; consolidated as one assay.",
+    "Schedule classified as 'repeated' rather than 'acute': within-subjects design with 4 DOI test days (vehicle + 3 doses) separated by ≥72 h.",
+    "D3_recording_days set to 15+ (score 3): acquisition required multiple days of daily 3-h FR1 sessions (stability across ≥3 consecutive days), threshold-procedure stability also required multiple days, plus 4 drug test days — clearly exceeds 14 recording days for this assay. Candidates underestimated this.",
+    "B1 set to 7+: paper reports active lever presses, inactive lever presses, total infusions, consumption (µg), Q0, α, and latency.",
+    "Sex top-level n_male/n_female reflect total subjects enrolled (18M/20F); assay sample_size reflects rats included in final analysis (16M/13F)."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 6.25,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 9.55,
+    "behavioural_complexity_mean": 6.25,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 9.55
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 52090,
+    "output_tokens": 4302,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

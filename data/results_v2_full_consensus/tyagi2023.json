@@ -1,0 +1,496 @@
+{
+  "study_id": "Tyagi2023",
+  "doi": "10.1021/acsptsci.3c00137",
+  "species": "mouse",
+  "strain": "FVB.129P2-Pde6b+ Tyr c-ch Fmr1 tm1Cgr/J (Fmr1 KO) and FVB.129P2-Pde6b+ Tyr c-ch/AntJ (WT)",
+  "age": {
+    "value": "mixed",
+    "age_min_days": 23,
+    "age_max_days": 60,
+    "evidence": "We used Fmr1 KO juvenile mice (P23-P25)... In adult WT mice (~2 months old)... Juvenile (P23-P25) and adult (>P60) mice were injected",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "vehicle-treated male and female Fmr1 KO mice showed a prevalence of AGS of 72%",
+    "confidence": "high"
+  },
+  "psychedelic": "DPT, DOI",
+  "dosing": [
+    {
+      "compound": "DPT",
+      "doses_mg_per_kg": [
+        3,
+        5.6,
+        10,
+        15,
+        20
+      ],
+      "doses_raw": "3, 5.6, 10, 15, or 20 mg/kg",
+      "vehicle": "water",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "DPT hydrochloride... dissolved in Milli-Q (Millipore Sigma) water, which served as the vehicle... administered intraperitoneally (i.p.)... DPT (3, 5.6, 10, 15, or 20 mg/kg)",
+      "confidence": "high"
+    },
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        1
+      ],
+      "doses_raw": "1 mg/kg",
+      "vehicle": "water",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "(±)-2,5-Dimethoxy-4-iodoamphetamine (DOI) at 1 mg/kg used as a positive control elicited a very high number of HTRs",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "The mice were bred and raised in the vivarium at Mercer University College of Pharmacy as previously described.",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "All tests were performed during the light cycle (7:00-19:00).",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Audiogenic Seizure (AGS) Test",
+      "assay_description": "Juvenile Fmr1 KO mice placed in a clear polycarbonate box (46 × 20 × 20 cm) and exposed to a ~105 dB alarm for 5 min; behavioral responses (normal behavior, WRJ, TCS, death) scored. Tested with DPT alone and with pretreatments by pimavanserin, WAY-100635, SB-224289, methiothepin, and NE-100.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Vehicle and all compounds for in vivo studies were administered intraperitoneally (i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Juvenile mice were acclimated to the test room for 30-60 min in their home cages... Mice were placed in a clear, polycarbonate box... 1 min before being exposed to an alarm (room acclimation only, no apparatus pre-exposure).",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice were placed in a clear, polycarbonate box (46 cm × 20 cm × 20 cm) covered with a perforated, clear, polycarbonate lid",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Test apparatus is a polycarbonate box with no food present during the 5 min recording.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Test apparatus is a polycarbonate box with no water present during the 5 min recording.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 5,
+          "evidence": "All mice were placed back in their cages and were tested 5 min after injection with DPT.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "The vehicle group includes new (N = 14) and historical (N = 53) data... cotreatment with NE-100 50 mg/kg and DPT 10 mg/kg (N = 8)",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "DPT 10 mg/kg completely prevented AGS (0% prevalence) in juvenile Fmr1 KO mice compared with 72% in vehicle, while lower doses (3, 5.6 mg/kg) had no effect. Pretreatment with selective 5-HT2A/2C (pimavanserin), 5-HT1A (WAY-100635), 5-HT1B (SB-224289), pan-5-HT (methiothepin) or sigma1 (NE-100) antagonists did not block DPT's antiepileptic effect.",
+        "statistics": "DPT 10 mg/kg vs vehicle p < 0.0001; 3 and 5.6 mg/kg p = 0.69; antagonist co-treatments p ≥ 0.10 (n.s.)",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "DPT completely prevented AGS at 10 mg/kg (p < 0.0001)... Relative to vehicle, DPT did not significantly affect the prevalence of AGS at 3 (p = 0.69) or 5.6 mg/kg (p = 0.69).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "AGS prevalence, latency to seizure onset, seizure duration, lethality, and duration of WRJ were reported.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Frequencies and total duration of seizure responses reported; no within-session time-course analysis.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Behavioral responses... were documented as discrete categories without formal transition/sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Outcomes are seizure-related responses (WRJ, TCS, death), not natural ethological behaviours.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "AGS is an individual reflexive seizure assay.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "AGS is a reflexive seizure model with no learning component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The frequencies of AGS were documented by visual observations of video recordings.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "AGS and other behaviors were analyzed using Fisher's exact test.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Mice were placed in a clear, polycarbonate box (46 cm × 20 cm × 20 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Clear polycarbonate box with perforated lid; no shelter.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Clear polycarbonate box; no bedding mentioned.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent in AGS box.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment items in the box.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "clear, polycarbonate box (46 cm × 20 cm × 20 cm)",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "A maximum of 4 mice (2 per box) were observed simultaneously — 2 per box but during seizure recording each mouse is the focal subject; no social interaction measured.",
+          "confidence": "medium"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in apparatus.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Single 5-min exposure to alarm.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "the duration of exposure was 5 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test day per mouse.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug AGS test reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "tested 5 min after injection with DPT",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5 min session.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "Head-Twitch Response (HTR) with Locomotor Activity",
+      "assay_description": "Juvenile (P23-P25) and adult (>P60) WT mice injected i.p. with DPT (3, 5.6, 10, 15, 20 mg/kg), DOI (1 mg/kg), or vehicle and immediately placed in an open-field plexiglass chamber (43 × 43 cm, Med Associates). HTRs counted manually for 15 min; locomotor activity tracked via EthoVision; 5-HT1AR-dependent behavioral signs (flat body posture, hind limb abduction, tremors, Straub tail) also documented.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "injected (i.p.) with Milli-Q water (vehicle) or DPT",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "WT mice were acclimated to a procedure room for ≥ 30 min before administering test compounds — room acclimation only, not apparatus habituation.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "placed in a clear open-field plexiglass chamber (43 × 43 cm; Med Associates)",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Open-field chamber with no food during the 15-min recording.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Open-field chamber with no water during the 15-min recording.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "injected (i.p.)... and were immediately placed in a clear open-field plexiglass chamber... counted... for 15 min postinjection",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "Juvenile: F(5, 23) = 4.25; Adult: F(5, 22) = 5.18 — implies ~4-5 mice per dose group.",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "DPT elicited a dose-dependent HTR in juvenile and adult WT mice with a maximal effect at 10 mg/kg (the same dose effective against AGS), declining at 20 mg/kg (inverted-U). DPT did not affect locomotor activity in adult WT mice, but reduced distance traveled at 20 mg/kg in juveniles. DPT 20 mg/kg also elicited 5-HT1AR-dependent behaviors (flat body posture, hind limb abduction, tremors, Straub tail) not seen at lower doses. DOI (1 mg/kg) elicited robust HTR as a positive control.",
+        "statistics": "Juvenile HTR: F(5,23)=4.25, p=0.007; Adult HTR: F(5,22)=5.18, p=0.027; DPT vs vehicle juvenile: 3 mg/kg p=0.047, 5.6 mg/kg p=0.007, 10 mg/kg p=0.007, 15 mg/kg p=0.046, 20 mg/kg p=0.287; 5-HT1AR signs at 20 mg/kg: flat body posture/hind limb abduction/Straub tail p=0.0001, tremors p=0.003.",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "DPT produced a dose-dependent head-twitch response (HTR), with maximal effects at 10 mg/kg... DPT at 20 mg/kg elicited... flat body posture, hind limb abduction, tremors, and Straub tail.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "HTR count, locomotor distance, flat body posture, hind limb abduction, tremors, Straub tail.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Counts and totals over 15 min; no within-session binning reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transitional/sequential analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is a stereotyped drug-induced motor response, not part of natural ethological repertoire; 5-HT1AR signs are drug-elicited motor syndromes.",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice tested individually in open field.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning/memory component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTRs were counted using a hand-held tally counter... Locomotor activity... calculated by EthoVision software (centroid tracking).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "one-way ANOVA with Holm-Šídák's multiple comparisons test was used",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "clear open-field plexiglass chamber (43 × 43 cm; Med Associates)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open-field chamber.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open-field chamber; no bedding.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment items.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "open-field plexiglass chamber (43 × 43 cm)",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice were individually placed in the open-field chamber.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in apparatus.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "counted... for 15 min postinjection",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "for 15 min postinjection",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test session per mouse.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline recording reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recording within 15 min of injection only.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "15 min session.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Merged GLM's separate HTR, open-field locomotor, and 5-HT1AR behavioral observation entries into a single 'Head-Twitch Response with Locomotor Activity' assay — these were all measured concurrently in the same 15-min open-field session in the same animals (only the manipulation/scored variable differed), matching the rubric's 'same apparatus/same session = one assay' rule. B1 increased to 4-6 to reflect the combined measures (HTR, locomotion, flat body posture, hind limb abduction, tremors, Straub tail).",
+    "B4 (ethological) scored 0 for HTR assay: head-twitch and 5-HT1A syndrome signs (Straub tail, flat body posture, hind-limb abduction) are drug-induced stereotyped motor responses, not behaviours from the species' natural repertoire — overriding GLM's score of 1.",
+    "B1 for AGS scored 2 (4-6 measures): paper reports AGS prevalence, latency, seizure duration, WRJ duration, and lethality (supported by Supplemental Figure S1).",
+    "setup_habituation scored 'no' rather than 'yes' for both assays: paper only describes room/procedure-room acclimation, which the rubric explicitly says does NOT count as apparatus habituation.",
+    "E7 for AGS scored Alone: although '2 per box' is mentioned, each is a focal animal with no social interaction measured and seizures are individual responses.",
+    "Excluded all in vitro pharmacology (radioligand binding, TRUPATH BRET2) per rubric — these are not behavioural assays."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 2.5,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 0.68
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm"
+  ],
+  "judge_usage": {
+    "input_tokens": 57302,
+    "output_tokens": 7524,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

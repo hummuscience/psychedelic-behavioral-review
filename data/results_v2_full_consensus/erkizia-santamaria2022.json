@@ -1,0 +1,288 @@
+{
+  "study_id": "Erkizia-Santamaria2022",
+  "doi": "10.1016/j.biopha.2022.113612",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 56,
+    "age_max_days": 56,
+    "evidence": "Adult male C57BL/6 J mice (8 weeks old) were purchased from Envigo",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Adult male C57BL/6 J mice (8 weeks old)",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        0.125,
+        0.25,
+        0.5,
+        1.0,
+        3.0
+      ],
+      "doses_raw": "0.125/0.25/0.5/1/3 mg/kg, i.p.",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Psilocybin was dissolved to 0.025 -0.2 mg/mL in saline solution (0.9 % NaCl)... All drugs were administered by intraperitoneal injection.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not described in methods",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "housed in groups of 6 (cage size: 22 × 22 × 14.5 cm)",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "housed under standard laboratory conditions on a 12 h light/dark cycle (direction of cycle not specified)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not described in methods",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head-twitch response",
+      "assay_description": "HTR individually assessed in an Open Field chamber (43 × 43 × 43 cm), recorded with a camera for 25 min immediately after psilocybin injection; a trained observer counted HTRs between minutes 5–25. Includes dose-response (0.125–3 mg/kg) and antagonist pre-treatments (MDL11939, SB242084, WAY100635).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs were administered by intraperitoneal injection.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "no apparatus habituation described for HTR",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "HTR was individually assessed in an Open Field chamber (43 × 43 × 43 cm)",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "food in home cage ad libitum; no food in open-field apparatus during recording",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "water in home cage ad libitum; no water in open-field apparatus during recording",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "recorded with a camera device... immediately after psilocybin injection for 25 min",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 59,
+        "n_male": 59,
+        "n_female": null,
+        "n_per_group_min": 7,
+        "evidence": "saline (n = 12), 0.125 mg/kg (n = 8), 0.25 mg/kg (n = 7), 0.5 mg/kg (n = 8), 1 mg/kg (n = 14), 3 mg/kg (n = 10)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin induced a dose-dependent inverted-U HTR curve, peaking at 1 mg/kg (~17 HTRs) and decreasing at 3 mg/kg (~9 HTRs). The 5-HT2A antagonist MDL11939 completely blocked HTR; the 5-HT2C antagonist SB242084 (0.1 mg/kg) potentiated HTR at the descending dose (3 mg/kg) but not at 1 mg/kg; the 5-HT1A antagonist WAY100635 had no effect.",
+        "statistics": "F(5,53)=42.84, p<0.0001; vehicle+psil vs MDL+psil t=16.96, p<0.0001; SB dose-response F(4,46)=37.70, p<0.0001; SB potentiation at 3 mg/kg F(3,41)=43.25, p<0.0001, t=3.20, p<0.05; WAY100635 Fi(1,31)=0.17, p=0.68",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Psilocybin induced a dose-dependent HTR (maximal effect 17.07 ± 1.31 at 1 mg/kg i.p.) that was completely suppressed by the 5HT2AR antagonist MDL11939... Higher doses of psilocybin (3 mg/kg) induced lower HTR (9.00 ± 0.53). The 5HT2CR antagonist SB242084 (0.1 mg/kg) increased HTR exerted by psilocybin (3 mg/kg).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "a trained observer counted the number of these responses",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "an initial analysis of HTR throughout time in 5 min-intervals, for 40 min... maximal effect on HTR was reached at the 5-10 min interval",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "head-twitch response is explicitly listed as a non-ethological readout per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "HTR was individually assessed",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning or memory component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "a trained observer counted the number of these responses",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "ANOVA only; no dimensionality reduction",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Open Field chamber (43 × 43 × 43 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "open-field chamber with no shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "open fields were thoroughly cleaned with 70 % ethanol — bare floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent in open field",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no objects described in chamber",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Open Field chamber (43 × 43 × 43 cm)",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "HTR was individually assessed",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in open-field chamber",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "recorded... immediately after psilocybin injection for 25 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "recorded with a camera device... immediately after psilocybin injection for 25 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "single test session per mouse",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug HTR baseline recorded",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "only acute recording",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "25 min recording",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Two assays retained: head-twitch response and rectal body temperature. Dose-response and antagonist pre-treatments collapsed into the relevant single assay per rubric (same paradigm under different pharmacological manipulations).",
+    "In vitro radioligand binding assays excluded per rubric (ex vivo/in vitro molecular work).",
+    "Temperature D1 set to 'Multiple discrete sessions' (score 1) because the paper reports two distinct timed measurements at -30 min and 0 min plus every 20 min post-drug, all with reported data; one candidate scored 0 but the time-course is clearly multiple measurement timepoints within one day. D2 set to 2 (61 min–6 h) since recording spans 150 min from baseline to final timepoint.",
+    "Sex n_male set equal to n_total per assay since all subjects were male; study-level n_male left null as paper does not give a definitive total male count beyond ~302 estimate.",
+    "day_night_flipped set to not_reported (high confidence) because paper specifies 12h light/dark cycle but not direction; testing 'in the early morning' is ambiguous regarding cycle direction."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 1.36
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 57256,
+    "output_tokens": 6316,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

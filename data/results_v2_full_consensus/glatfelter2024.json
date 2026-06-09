@@ -1,0 +1,507 @@
+{
+  "study_id": "Glatfelter2024",
+  "doi": "10.1021/acsptsci.3c00192",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 60,
+    "age_max_days": 150,
+    "evidence": "cohorts of 12 C57BL/6J male mice (2 -5 months, one cohort per drug)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male C57BL/6J mice ( # 000664) were purchased from the Jackson Laboratory",
+    "confidence": "high"
+  },
+  "psychedelic": "LSD; Lisuride",
+  "dosing": [
+    {
+      "compound": "LSD",
+      "doses_mg_per_kg": [
+        0.001,
+        0.003,
+        0.01,
+        0.03,
+        0.1,
+        0.3,
+        1,
+        3
+      ],
+      "doses_raw": "0.001 -3 mg/kg s.c.; also 0.1 mg/kg and 3 mg/kg in antagonist studies",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "various doses of each test drug (0.001 -30 mg s.c.) were administered ... All drugs were administered subcutaneously as the weight of the salt dissolved or diluted in a sterile 0.9% saline vehicle",
+      "confidence": "high"
+    },
+    {
+      "compound": "Lisuride",
+      "doses_mg_per_kg": [
+        0.001,
+        0.003,
+        0.01,
+        0.02,
+        0.03,
+        0.1,
+        0.3,
+        1,
+        3
+      ],
+      "doses_raw": "0.001 -3 mg/kg s.c.; 0.02, 0.03 mg/kg in antagonist studies",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "various doses of each test drug (0.001 -30 mg s.c.) were administered ... lisuride (0.02 mg/kg s.c.) ... lisuride (0.03 mg/kg s.c.)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "no explicit mention of a handling protocol",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "group housed under a 12:12 light -dark cycle (lights on at 7AM) for 1 -2 weeks for facility acclimation",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12:12 light -dark cycle (lights on at 7AM)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "home-cage enrichment not described",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head Twitch Response (HTR)",
+      "assay_description": "30 min video recordings (GoPro Hero 7, 120 fps) used to score head twitches following s.c. injection of LSD, lisuride, 8-OH-DPAT or antagonist combinations. Includes dose-response and antagonist reversal experiments.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "All drugs were administered subcutaneously",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "pre (just prior to drug administration after a 5 min chamber acclimation)",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "HTR was recorded and scored from 30 min video recordings; animals freely moving",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Short test in a recording chamber; no food present in apparatus",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Short test in a recording chamber; no water present in apparatus",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "HTR was recorded and scored from 30 min video recordings; antagonists given 15 or 30 min before test drug",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 4,
+        "evidence": "n =5 -7 for dose-response; n = 4 -6 for antagonist experiments",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "LSD induced robust dose-dependent HTR (ED50 = 39 µg/kg) with an inverted-U curve, while lisuride suppressed spontaneous HTR (ED50 = 6 µg/kg). WAY100635 pretreatment restored basal HTR after lisuride and unmasked HTR after high-dose LSD; pretreatment with lisuride or 8-OH-DPAT blocked LSD-induced HTR; M100907 blocked LSD-induced HTR.",
+        "statistics": "LSD HTR ED50 = 39 (25-58) µg/kg, Emax = 52 HTR; lisuride HTR ED50 = 6 (0.8-16) µg/kg",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "LSD induces head twitch responses (HTRs)(ED50 = 0.039 mg/kg), while lisuride suppresses HTRs (ED50 = 0.006 mg/kg)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "total HTR count",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "HTR time-course plots; descending limb of the LSD HTR curve corresponded with the hypolocomotive and hypothermic effects... compressed the time-course of effects (Figure S5A)",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no transition or sequence analysis reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is a drug-induced stereotypy, not a natural ethological behaviour (per rubric)",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "animals tested alone",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning or memory component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR scored manually from video recordings; no ML/pose-estimation reported",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate analyses only",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "modified photobeam array chambers (TruScan, Coulbourne Instruments)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent in a locomotor/HTR chamber",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no bedding mentioned in testing apparatus",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting material in apparatus",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment objects in apparatus",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single photobeam chamber",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individual mice tested alone",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in 30 min testing apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "single 30 min recording session per test day",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "30 min video recordings",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "cohorts of 12 C57BL/6J male mice were tested for acute dose-related effects ... once per week for 4 -5 weeks",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug HTR recording reported as baseline data",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "tests are acute (within 30 min of dosing); same animals tested at weekly intervals with different drug arms, not as post-acute follow-up of a single dose",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30 min sessions",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    },
+    {
+      "assay_name": "Locomotor Activity",
+      "assay_description": "Distance traveled recorded over 30 min in modified photobeam array chambers (TruScan, Coulbourne) after s.c. drug administration; dose-response and antagonist studies.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "All drugs were administered subcutaneously",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "pre (just prior to drug administration after a 5 min chamber acclimation)",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "freely moving in photobeam array chambers",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in photobeam chamber during 30 min session",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water in photobeam chamber during 30 min session",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "locomotor activity recorded during the 30 min post-drug session",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 4,
+        "evidence": "n =5 -7 for dose-response; n = 4 -6 for antagonist experiments",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Lisuride produced potent hypolocomotion (ED50 = 8 µg/kg), similar in magnitude to 8-OH-DPAT, while LSD produced hypolocomotion only at much higher doses (ED50 = 840 µg/kg). WAY100635 pretreatment attenuated lisuride- and 8-OH-DPAT-induced hypolocomotion, indicating 5-HT1A involvement.",
+        "statistics": "Lisuride hypolocomotion ED50 = 8 (5-15) µg/kg, Emax = 364 cm; LSD ED50 = 840 (475-1505) µg/kg, Emax = 758 cm",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Lisuride also produced potent hypothermia and hypolocomotion (ED50 = 0.008 -0.023 mg/kg) that was blocked by the 5-HT1A antagonist WAY100635",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "distance traveled",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Time-course plots of distance traveled during the session further illustrate the similarity in locomotor suppression",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no transition/sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "locomotor distance is not an ethological behaviour per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "tested alone",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "photobeam array (beam-break) — on the SCORE-0 list",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate only",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "modified photobeam array chambers (TruScan, Coulbourne Instruments)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no bedding mentioned",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting material",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment objects",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single chamber, no compartments",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individual mice tested alone",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in apparatus during 30 min",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "single 30 min recording per test day",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "30 min session",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "tested once per week for 4 -5 weeks",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug locomotor baseline session reported as data",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "acute test within 30 min of dosing",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30 min session",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    }
+  ],
+  "judge_notes": [
+    "Three assays retained: HTR, locomotor activity (photobeam), and body temperature. Two candidates omitted body temperature, but it is a separate measurement modality (transponder reads at pre/post timepoints) per Methods, and is reported as a primary outcome in Table 1. Although body temperature is borderline physiological, it is included here because the candidates treat it as part of the behavioural battery; reviewers may downgrade if applying strict 'behaviour-only' rules.",
+    "Merged candidate dose lists across LSD and lisuride into two dosing entries; both compounds are psychedelic/analogue compounds and both were administered.",
+    "B2 temporal dynamics scored Yes for HTR and locomotion based on time-course plots described in main text and Figures S4/S5 of the paper.",
+    "D3 set to 2-7 because each mouse cohort was tested weekly for 4-5 weeks within a given assay (dose-response design with repeated within-assay testing across days).",
+    "Body temperature D1 scored 'Multiple discrete sessions' because pre- and post-injection readings are taken on each test day; D4 baseline = Yes for the pre-injection reading."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 2.73,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 2.73
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 57552,
+    "output_tokens": 8920,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

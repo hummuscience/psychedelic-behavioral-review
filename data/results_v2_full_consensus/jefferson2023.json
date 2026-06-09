@@ -1,0 +1,497 @@
+{
+  "study_id": "Jefferson2023",
+  "doi": "10.1038/s41386-023-01572-w",
+  "species": "mouse",
+  "strain": "C57BL/6J; Thy1-GFP line M",
+  "age": {
+    "value": "not_reported",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "The paper does not state the age of the animals in days or weeks for the experimental cohorts (USV mice were socialized until ~50 days but age at testing not specified).",
+    "confidence": "low"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Experiments were performed on males and females, except for the USV measurements, because males vocalize substantially more than females.",
+    "confidence": "high"
+  },
+  "psychedelic": "5-MeO-DMT, Psilocybin",
+  "dosing": [
+    {
+      "compound": "5-MeO-DMT",
+      "doses_mg_per_kg": [
+        5.0,
+        10.0,
+        20.0,
+        40.0
+      ],
+      "doses_raw": "5, 10, 20, or 40 mg/kg; i.p.",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "5-MeO-DMT (5, 10, 20, or 40 mg/kg; i.p.), psilocybin (1 mg/kg; i.p.), and saline vehicle (equivalent volume; i.p.). Freebase 5-MeO-DMT vehicle = 1.4% ethanol in saline; 5-MeO-DMT succinate dissolved in saline.",
+      "confidence": "high"
+    },
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "1 mg/kg, i.p.",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "psilocybin (1 mg/kg, i.p.) ... Psilocybin working solution was prepared by dissolving powder ... with saline.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Methods do not describe a deliberate handling/habituation protocol.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Animals were group-housed (2-5 mice per cage).",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "facility with 12 h light-dark cycle (7:00 AM-7:00 PM for light).",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "No mention of enrichment items in the home cage.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head-twitch response",
+      "assay_description": "Mice with a magnetic ear tag placed in a 4\"x4\"x4\" clear plastic open-top container surrounded by a copper coil; head movements detected via electromagnetic induction for 120 min immediately after i.p. injection. Measures: total HTR count and duration (FWHM of HTR rate time course).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "recorded for 120 min immediately after intraperitoneal injection of drug or vehicle.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Paper does not mention prior exposure of mice to the recording container.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "the mouse was placed inside a clear plastic, open-top container - freely moving.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Recording chamber is a clear plastic container with no food described as present.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Recording chamber is a clear plastic container with no water described as present.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "we recorded for 120 min immediately after intraperitoneal injection of drug or vehicle.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 34,
+        "n_male": 18,
+        "n_female": 16,
+        "n_per_group_min": 4,
+        "evidence": "n = 34 mice (3 males and 3 females for each condition, except 3 males and 1 female for saline condition).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "5-MeO-DMT produced a dose-dependent increase in total head-twitch count (significant at 40 mg/kg vs saline). The duration of HTR for 5-MeO-DMT was consistently brief (~3-5 min) regardless of dose, and significantly shorter than the ~14 min duration produced by 1 mg/kg psilocybin.",
+        "statistics": "5 mg/kg: P=0.2, 10 mg/kg: P=0.2, 20 mg/kg: P=0.06, 40 mg/kg: P=0.02 (one-way ANOVA vs saline). Duration: P=0.5 across 5-MeO-DMT doses; 5-MeO-DMT vs psilocybin duration P=0.001 (treatment effect), post hoc P=0.002-0.03.",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "Escalating doses of 5-MeO-DMT up to the highest doses tested led to more head-twitch responses ... duration of 5-MeO-DMT's effects was consistently brief regardless of the dose tested ... relative to that of psilocybin (14 ± 3 min).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "we calculated total count ... and duration, which is the full width at half maximum.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Head-twitch response as a function of time after systemic administration ... duration ... quantified by calculating the full-width half-maximum from the time course.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural sequences or transitions.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-twitch is a stereotyped drug-induced response, not a natural ethological behaviour.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mouse placed alone in the recording container.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning or memory component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "used a peak detection algorithm to detect individual head-twitch events from the magnetic coil voltage signal - signal processing, not a behavioural classifier from video.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only separate univariate ANOVAs on count and duration.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "clear plastic, open-top container (4\"x4\"x4\" height).",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open-top container; no enclosed refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bare plastic floor described; no bedding mentioned.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described in the apparatus.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects described.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single open chamber.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Focal mouse alone in container during recording.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water inside recording chamber.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "We recorded for 120 min immediately after injection (one session per mouse).",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min-6 h",
+          "evidence": "we recorded for 120 min immediately after intraperitoneal injection.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single 120-min session per animal.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline recording in the same apparatus reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No HTR recordings >=24 h after dosing.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "120-min session is <6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    },
+    {
+      "assay_name": "Social ultrasonic vocalization (USV)",
+      "assay_description": "Male-female pair placed in a cylindrical chamber (6\" diameter x 7\" height) within a soundproof box; male injected and recorded for 200 s after female introduction. USVs detected and classified into 11 subtypes using VocalMat (CNN-based classifier).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "psilocybin, 1 mg/kg, i.p.; 5-MeO-DMT, 20 mg/kg, i.p.; ketamine, 10 mg/kg, i.p.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Socialization occurred from the time of weaning until 50 days after birth and involved putting a male-female pair of juvenile mice into a cylindrical recording chamber ... Socialization took place 3 times a week, for 3 consecutive weeks.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Male-female pair allowed to interact freely in the chamber.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food described as present in the 200-s recording chamber.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water described as present in the 200-s recording chamber.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 5,
+          "evidence": "male mice were injected ... and then placed into the recording chamber for 5 min before a female was added and the interaction recorded for 200 s.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 15,
+        "n_male": 15,
+        "n_female": null,
+        "n_per_group_min": 15,
+        "evidence": "n = 15 mice.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "5-MeO-DMT (20 mg/kg) nearly completely suppressed social USVs (-99.9%), a stronger effect than psilocybin (-30%) and ketamine (-62%). Drugs also altered the distribution of USV subtypes, favoring short USVs over step sounds for psilocybin and ketamine.",
+        "statistics": "Psilocybin: -30 ± 6%, P=2x10^-4; 5-MeO-DMT: -99.90 ± 0.03%, P=6x10^-5; Ketamine: -62 ± 8%, P=6x10^-5 (Wilcoxon signed-rank). Subtype distributions: psilocybin χ²=408.5, P<10^-5; 5-MeO-DMT χ²=55.3, P<10^-5; ketamine χ²=1543.4, P<10^-5.",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "The 5-MeO-DMT-treated mice had an even greater decrease in social USVs (-99.90 ± 0.03%; P = 6×10^-5).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "Number of vocalizations plus proportions of 11 distinct USV subtypes (chevron, step up, up FM, step down, two steps, short, flat, reverse chevron, multiple steps, complex, down FM).",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total counts and proportions over the 200 s window; no within-session time course reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of vocalization sequences, transitions, or bout structure.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Social ultrasonic vocalizations produced during mating behavior are a natural communication behaviour.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 3,
+          "value": "Free social interaction",
+          "evidence": "male-female pair ... allowing them to interact ... interaction recorded for 200 s.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate mating-context vocalization; no learning/memory required.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "vocalizations detected and classified into subtypes using automated routines based on machine learning algorithms using the VocalMat software ... pre-trained convolutional neural network.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only chi-square tests on subtype proportions; no PCA/UMAP or dimensionality reduction.",
+          "confidence": "high"
+        },
+        "raw_total": 7
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "cylindrical recording chamber (6\" diameter x 7\" height, acrylic exterior with rubber dampening mat).",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enclosed refuge described in chamber.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Rubber dampening mat described; no bedding mentioned.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects described.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single cylindrical open chamber.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 2,
+          "value": "Free social group",
+          "evidence": "male-female pair ... allowing them to interact.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water described in chamber during recording.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "On the first 3 days, male mice were injected with saline ... On the fourth day, a drug was injected prior to the same recording procedure ... three iterations of a 4-day vocalization protocol.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "interaction recorded for 200 s.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 2,
+          "value": "8-14",
+          "evidence": "three iterations of a 4-day vocalization protocol = 12 recording days per mouse (3 baseline + 1 drug per iteration x 3 iterations).",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "On the first 3 days, male mice were injected with saline ... to determine baseline number of vocalizations.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No post-acute (>=24 h after drug) USV recording reported; subsequent baseline days are after a new saline injection.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "200 s session is <6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    }
+  ],
+  "judge_notes": [
+    "Two assays identified: head-twitch response and social USV. Imaging of dendritic spines (longitudinal two-photon microscopy) was excluded per rubric (histological/anatomical endpoint, not a behavioural assay).",
+    "B1 for USV set to 2 (4-6 measures) because the study reports total USV count plus proportions across 11 subtypes, which exceeds 3 distinct measures (qwen scored 2; glm/gptoss scored lower).",
+    "D3 for USV adjusted to 8-14 (score 2): three iterations of a 4-day protocol = 12 recording days per animal where baseline USV data are explicitly collected and reported; all candidates underestimated this.",
+    "B1 for HTR kept at 1 (2-3 measures: total count + duration); candidate qwen and gptoss agreed.",
+    "D2 for HTR set to 2 (61 min-6 h): 120 min recording is >60 min per rubric boundary; glm's score of 1 was an error.",
+    "B7 for HTR scored 0: peak detection on a magnetic coil voltage signal is signal processing, not a video/pose ML behavioural classifier.",
+    "Setup habituation for USV scored 'yes' (extensive pre-test socialization in the same chamber 3x/week for 3 weeks)."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 8.75,
+    "environmental_complexity_max": 2.73,
+    "recording_duration_max": 5.45,
+    "behavioural_complexity_mean": 5.62,
+    "environmental_complexity_mean": 1.36,
+    "recording_duration_mean": 4.09
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 55948,
+    "output_tokens": 7234,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

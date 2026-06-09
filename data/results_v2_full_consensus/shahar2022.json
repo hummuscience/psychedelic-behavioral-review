@@ -1,0 +1,305 @@
+{
+  "study_id": "Shahar2022",
+  "doi": "10.3390/ijms232214148",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "adult",
+    "age_min_days": 63,
+    "age_max_days": 84,
+    "evidence": "adult (9-12 weeks old) C57BL/6J male mice",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Experiments were performed on adult (9-12 weeks old) C57BL/6J male mice.",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin, 5-HTP",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        0.1,
+        1.6,
+        3.2,
+        4.4,
+        6.4,
+        25.6
+      ],
+      "doses_raw": "psilocybin 0.1-25.6 mg/kg i.p. or 4.4 mg/kg i.p.",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "PSIL was dissolved in 100% saline (0.9% NaCl) solution... administered by intraperitoneal (i.p.) injection",
+      "confidence": "high"
+    },
+    {
+      "compound": "5-HTP",
+      "doses_mg_per_kg": [
+        50,
+        100,
+        150,
+        200,
+        250
+      ],
+      "doses_raw": "5-HTP, 50-250 mg/kg i.p., 200 mg/kg i.p.",
+      "vehicle": "other",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "5-HTP... were dissolved in 5% DMSO + 95% saline (0.9% NaCl) solution.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "Both male and female experimenters performed the studies and handled the mice.",
+      "confidence": "medium"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "free access to mice colony chow, water and up to 8 per cage",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "12 h light/dark cycle (direction not specified)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Animals were housed under standardized conditions... (no mention of enrichment)",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head Twitch Response (HTR)",
+      "assay_description": "HTR measured via custom-built magnetometer apparatus with magnetic ear tags. Mice placed in plastic containers (11.6 cm diameter x 13.3 cm height) surrounded by a coil. Recorded for 30 min after 5-HTP or 20 min after psilocybin, with dose-response and receptor modulator (M100907, 8-OH-DPAT, RS-102221, EPPTB) pretreatments.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Drugs were administered by intraperitoneal (i.p.) injection immediately before placing the weighed animals into the magnetometer.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Drugs were administered by intraperitoneal (i.p.) injection immediately before placing the weighed animals into the magnetometer.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "placed inside a magnetometer apparatus... consisting of plastic containers (11.6 cm diameter × 13.3cm height)",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard short test in magnetometer; no food in apparatus.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard short test in magnetometer; no water in apparatus.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Drugs were administered by intraperitoneal (i.p.) injection immediately before placing the weighed animals into the magnetometer.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 3,
+        "evidence": "n = 3-5 (Fig 2C); n = 4-5 (Fig 1); n = 5-14 (Fig 3); n = 4-11 (Fig 4)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "5-HTP (50-250 mg/kg) and psilocybin (0.1-25.6 mg/kg) induced dose-dependent increases in HTR; psilocybin showed a bimodal time profile. M100907 (5-HT2A antagonist) and 8-OH-DPAT (5-HT1A agonist) blocked HTR induced by both compounds. RS-102221 (5-HT2C antagonist) enhanced HTR at lower doses and reduced it at higher doses (inverted-U). EPPTB (TAAR1 antagonist) reduced 5-HTP-induced HTR but not psilocybin-induced HTR.",
+        "statistics": "Two-way repeated measures ANOVA: significant main effects of dose and time, and time x dose interactions. Detailed results in Supplementary Table S1.",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "5-HTP and psilocybin induced a dose-dependent increase in the frequency of HTR over 20 min with attenuation by the 5-HT2AR antagonist, M100907, and the 5-HT1AR agonist, 8-OH-DPAT.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Total HTR, peak HTR in 2-min bin, HTR over time bins",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "HTR over time (2 min time bins) showed a dose-dependent increase... within-subject effect of time",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequential/transitional analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is explicitly excluded from ethological category per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animals tested individually in magnetometer container.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Reflexive motor response, no learning component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Magnetometer signal processing via MATLAB script; not pose estimation or supervised behavioural ML classifier.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate analyses only.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "magnetometer apparatus consisting of plastic containers (11.6 cm diameter × 13.3cm height) surrounded by a coil",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open plastic cylindrical container; no shelter.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Plastic container; no bedding mentioned.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in magnetometer container.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in magnetometer container.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "plastic containers (11.6 cm diameter × 13.3cm height)",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual mice placed in magnetometer.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in magnetometer apparatus.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "HTR was measured for 30 min for 5-HTP and 20 min for PSIL in the magnetometer.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "HTR was measured for 30 min for 5-HTP and 20 min for PSIL",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single recording session per animal (vehicle/low-dose animals reused after 2-week washout but each test is one day for that assay session).",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Drugs were administered immediately before placing the animals into the magnetometer; no pre-drug behavioural baseline reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recording ended within 30 min of dosing; no >=24 h follow-up.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Longest session was 30 min.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Both candidates converged on a single HTR assay; merged into one entry.",
+    "B1 set to 2-3 (score 1): paper reports total HTR, peak HTR in 2-min bin, and time-binned HTR as distinct measures.",
+    "D1 set to Single session: the same animal is not retested longitudinally on this assay (only naive/low-dose reuse after 2-week washout for separate experiments).",
+    "B7 set to 0: magnetometer signal processing via MATLAB is not pose estimation or supervised ML behavioural classification per rubric.",
+    "day_night_flipped marked not_reported with high confidence: paper states 12 h light/dark cycle but does not specify direction.",
+    "handling marked yes (medium): paper mentions experimenters handled the mice, though no formal habituation handling protocol described."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 2.5,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 1.36
+  },
+  "low_confidence_count": 1,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm"
+  ],
+  "judge_usage": {
+    "input_tokens": 45666,
+    "output_tokens": 4180,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

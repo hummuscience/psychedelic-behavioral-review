@@ -1,0 +1,893 @@
+{
+  "study_id": "Warren2024",
+  "doi": "10.1038/s41586-024-07403-2",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 56,
+    "age_max_days": 105,
+    "evidence": "Male 8-15-week-old C57BL6/J mice were used as the experimental mice for all experiments.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male 8-15-week-old C57BL6/J mice were used as the experimental mice for all experiments.",
+    "confidence": "high"
+  },
+  "psychedelic": "4-F,5-MeO-PyrT; 5-MeO-MET",
+  "dosing": [
+    {
+      "compound": "4-F,5-MeO-PyrT",
+      "doses_mg_per_kg": [
+        0.03,
+        0.1,
+        0.3,
+        1.0,
+        3.0
+      ],
+      "doses_raw": "0.03, 0.1, 0.3, 1 or 3 mg/kg, s.c.",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "mice were administered either 4-F,5-MeO-PyrT (0.1, 0.3, 1 or 3 mg/kg, s.c.)... A separate cohort... receiving a subcutaneous injection of 4-F,5-MeO-PyrT (0.03, 0.1, 0.3, 1 or 3 mg/kg, s.c.)",
+      "confidence": "high"
+    },
+    {
+      "compound": "5-MeO-MET",
+      "doses_mg_per_kg": [
+        0.3,
+        1.0,
+        3.0,
+        10.0
+      ],
+      "doses_raw": "0.3, 1, 3 or 10 mg/kg, s.c.",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "mice were administered either 4-F,5-MeO-PyrT... or 5-MeO-MET (0.3, 1, 3 or 10 mg/kg, s.c.)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Methods describe habituation to testing room but do not describe a dedicated handling protocol.",
+      "confidence": "medium"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Mice were purchased from the Jackson Laboratory and housed 5 mice per cage with food and water available ad libitum.",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "Mice were maintained on a 12-h light-dark cycle (lights on 7:00-19:00) and all testing was done in the light cycle.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Paper describes home cage density and food/water access but does not mention enrichment items.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "Locomotor activity measured in clear Plexiglass arena (27.31 x 27.31 x 20.32 cm; Med Associates ENV-510) using infrared beam tracking; 30-min standard session and a separate 120-min cohort. Tested with 4-F,5-MeO-PyrT and 5-MeO-MET +/- WAY-100635 pretreatment, also in a chronic social defeat sub-cohort.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "4-F,5-MeO-PyrT (0.1, 0.3, 1 or 3 mg/kg, s.c.) or 5-MeO-MET (0.3, 1, 3 or 10 mg/kg, s.c.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "mice were allowed to habituate for 30 min [to the testing room]; no separate apparatus habituation described.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "allowed to ambulate freely for 30 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard Plexiglass open field arena; no food in apparatus.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard Plexiglass open field arena; no water in apparatus.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "immediately gently placed in a clear Plexiglass arena... after receiving a subcutaneous injection",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 3,
+        "evidence": "Evaluation of 4-F,5-MeO-PyrT in open field for two hours (n = 3-4/group); Effect of WAY-100635... on total locomotion (n = 7-8/group, 30 min)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Both 4-F,5-MeO-PyrT and 5-MeO-MET produced dose-dependent suppression of locomotor activity in the open field, consistent with 5-HT1A-mediated sedation. The locomotor-suppressing effect was attenuated by WAY-100635 pretreatment.",
+        "statistics": "one-way ANOVA with Tukey's post hoc test; exact p values reported in figure panels",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "We observed dose-dependent locomotor suppression in the open-field test for both 4-F,5-MeO-PyrT and 5-MeO-MET",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "ambulatory distance traveled... total locomotion... corner time as a measure of anxiety-like behavior",
+          "confidence": "medium"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total locomotion reported across session; no within-session time-bin analysis described.",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition or sequence analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Measures locomotor distance and zone occupancy via beam breaks; no ethological act scoring.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animals tested alone in open field.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning/memory component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Data were collected using Activity Monitor by Med Associates (infrared beam-break system).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No multivariate analysis reported.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "clear Plexiglass arena (27.31 x 27.31 x 20.32 cm, Med Associates ENV-510)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open Plexiglass arena; no shelter.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bare Plexiglass arena.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in apparatus.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in apparatus.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Standard square open field with no internal compartments.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Single mouse placed in arena.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in apparatus.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Single recording session per animal (30 min or 120 min).",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "A separate cohort... allowed to ambulate freely for 120 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test day per animal.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline recording reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recording starts immediately post-injection; no >=24h follow-up.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Longest session 120 min.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    },
+    {
+      "assay_name": "Head-Twitch Response",
+      "assay_description": "Mice placed in a new observation cage immediately after s.c. injection; HTR scored from overhead GoPro video (120 Hz) for the first 10 min. Tested with 4-F,5-MeO-PyrT and 5-MeO-MET +/- WAY-100635 pretreatment.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "mice were administered either 4-F,5-MeO-PyrT... or 5-MeO-MET... s.c.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Mice were habituated to the testing room for 30 min; no apparatus habituation described.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "placed in a new observation cage",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Observation cage during recording; no food.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Observation cage during recording; no water.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "mice were administered... and placed in a new observation cage. An overhead camera... recorded their movements.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "HTR (n = 6/group)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "5-MeO-MET produced strong dose-dependent HTR, especially with WAY-100635 co-administration (5-HT1A blockade unmasks 5-HT2A-driven HTR). 4-F,5-MeO-PyrT did not produce notable HTR at doses up to 3 mg/kg, consistent with its 5-HT1A selectivity and lack of 5-HT2A engagement in vivo.",
+        "statistics": "one-way ANOVA with Tukey's post hoc test; exact p values in figure",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "5-MeO-MET showed strong dose-dependent activity following co-administration of the 5-HT1A-selective antagonist WAY-100635... By contrast, 4-F,5-MeO-PyrT did not produce notable HTR at doses up to 3 mg/kg",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Observers scored HTR from recorded footage for the first 10-min period.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total HTR count across 10 min reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is explicitly defined in the rubric as not ethological.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animal alone in observation cage.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Reflexive motor response.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Observers scored HTR from recorded footage (manual scoring).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No multivariate analysis.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "placed in a new observation cage",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter in observation cage.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bedding not reported in observation cage.",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material reported.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects reported.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single observation cage.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Animal alone.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in observation cage.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Single 10-min scoring period.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "scored HTR... for the first 10-min period",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test day.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline recorded.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recording starts immediately post-injection.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "10 min session.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "Social Interaction Test",
+      "assay_description": "Chronic social defeat (10 days) followed 24 h post-drug by two-phase SI test: 2.5 min no-target exploration of open arena, then 2.5 min with a novel CD-1 in a wire mesh cage. Time in interaction zone and corners tracked by EthoVision. Tested with vehicle, 4-F,5-MeO-PyrT (1 mg/kg s.c.), WAY-100635, and combination.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "mice were injected with 4-F,5-MeO-PyrT (1.0 mg/kg) or vehicle",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No habituation to the SI arena is described prior to the test.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "experimental mouse is allowed to explore an open-field arena",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in the SI arena.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in the SI arena.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "mice were injected with 4-F,5-MeO-PyrT (1.0 mg/kg) or vehicle and evaluated in the SI test 24 h later.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 143,
+        "n_male": 143,
+        "n_female": null,
+        "n_per_group_min": 5,
+        "evidence": "A total of 46 mice were administered vehicle treatment (17 control, 29 stress), 53 received 4-F,5-MeO-PyrT (17 control, 36 stress), 15 received WAY-100635 (5 control, 10 stress), and 29 received 4-F,5-MeO-PyrT + WAY-100635 (10 control, 19 stress).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Chronic social defeat reduced the social interaction ratio in vehicle-treated mice; 4-F,5-MeO-PyrT (1 mg/kg s.c., 24 h pre-test) rescued this deficit and increased the proportion of resilient mice. Co-administration of WAY-100635 blocked the effect, indicating 5-HT1A mediation. Defeated vehicle mice also spent more time in corners; drug treatment normalized this.",
+        "statistics": "two-way ANOVA: interaction P = 0.1778; row (treatment) P = 0.0741; column (control/stress) P = 0.0001; Fisher's LSD post hoc; Fisher's exact test for resilient/susceptible proportions",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "This phenotype was rescued by 4-F,5-MeO-PyrT treatment, as indicated by an increased IR in the stress-exposed mice... WAY-100635 co-administration blocked the ability of 4-F,5-MeO-PyrT to ameliorate SI deficits",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "time in interaction zone (no-target and target), interaction ratio, time in corners, locomotor distance during no-target session",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Summary measures averaged across each 2.5-min phase.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition/sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Time-in-zone measures only, not ethological act scoring.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 2,
+          "value": "Restricted social interaction",
+          "evidence": "a new CD-1 male mouse is placed into a wire mesh cage",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning/memory component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "automatically tracked using EthoVision analysis software (Noldus)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No multivariate analysis; resilient/susceptible split is a univariate threshold.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "open-field arena with wire mesh cage on one side",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter for focal animal.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bare arena floor.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects (wire mesh cage with CD-1 is the test stimulus).",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single open arena with virtual interaction and corner zones (no physical partitions).",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 1,
+          "value": "Stimulus behind barrier",
+          "evidence": "a new CD-1 male mouse is placed into a wire mesh cage",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in apparatus.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Two-session test: no-target phase (2.5 min) and target phase (2.5 min) with data reported for both.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "2.5 min per phase, 5 min total.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "SI test conducted on day 11 only.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No-target phase is part of same session, not a pre-drug baseline; drug already on board.",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "evaluated in the SI test 24 h later [after drug administration]",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5 min session.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    },
+    {
+      "assay_name": "Sucrose Preference Test",
+      "assay_description": "Two-bottle choice (water vs 1% sucrose) in home cage with ad libitum overnight access, conducted after SI test in chronic social defeat mice. Tested with vehicle, 4-F,5-MeO-PyrT, WAY-100635, and combination.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "mice were injected with 4-F,5-MeO-PyrT (1.0 mg/kg) or vehicle",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "On day 10, chronic SD stressed mice were individually housed and habituated to two bottles containing just water.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice had ad libitum overnight access to both bottles.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "Mice had ad libitum overnight access to both bottles (in home cage).",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "Mice had ad libitum overnight access to both bottles.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "Twenty-four hours later, following the SI test, one bottle was replaced with a 1% sucrose solution",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 84,
+        "n_male": 84,
+        "n_female": null,
+        "n_per_group_min": 5,
+        "evidence": "A total of 27 mice were administered vehicle (9 control, 18 stress), 27 received 4-F,5-MeO-PyrT (9 control, 18 stress), 15 received WAY-100635 (5 control, 10 stress), and 15 received 4-F,5-MeO-PyrT + WAY-100635 (5 control, 10 stress).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Chronic social defeat reduced sucrose preference in vehicle-treated mice (anhedonia). 4-F,5-MeO-PyrT (1 mg/kg s.c.) restored sucrose preference to control-like levels in stressed mice, an effect blocked by WAY-100635, indicating 5-HT1A mediation.",
+        "statistics": "two-way ANOVA: interaction P = 0.0773; row (treatment) P = 0.0159; column (control/stress) P = 0.0008; Fisher's LSD post hoc",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "stressed mice treated with 4-F,5-MeO-PyrT had significantly increased sucrose preference relative to vehicle-treated animals... co-administration of WAY-100635 reversed the effects of 4-F,5-MeO-PyrT",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "preference for sucrose over water was calculated as follows: (sucrose/(sucrose + water)) × 100",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single overnight preference value.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Consumption volumes only.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individually housed during test.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning/memory component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Volumetric measurement; no behavioural classifier.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate preference ratio.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "chronic SD stressed mice were individually housed and habituated to two bottles",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter reported in test cage.",
+          "confidence": "low"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not explicitly reported for the test cage.",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single home cage.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individually housed",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Mice had ad libitum overnight access to both bottles",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Single overnight measurement of consumption.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 3,
+          "value": ">6 h",
+          "evidence": "Mice had ad libitum overnight access to both bottles",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single overnight session.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Habituation to two water bottles was not used as a reported preference baseline.",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Test conducted ~24 h or more after drug administration (following the 24-h post-injection SI test).",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "ad libitum overnight access to both bottles (>=6 h continuous measurement)",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      }
+    }
+  ],
+  "judge_notes": [
+    "Both candidates identified the same four behavioural assays (OFT, HTR, SI test, sucrose preference); no merging or dropping required.",
+    "B1 for OFT set to 2-3 (score 1): paper reports locomotor distance plus corner time in the SD sub-cohort (Extended Data Fig. 7e-g).",
+    "B1 for SI scored 4-6 (2 pts) reflecting no-target time, target time, interaction ratio, corner time, and locomotion measures.",
+    "D1 for SI raised to 'Multiple discrete sessions' (1 pt) because both no-target and target phases are recorded and reported as distinct sessions within the test.",
+    "D6 for sucrose preference set to Yes (overnight >=6 h continuous monitoring), correcting the GLM candidate.",
+    "D2 for OFT set to 61 min–6 h (2 pts) because a 120-min cohort was explicitly run, matching the longest single session rule.",
+    "setup_habituation for OFT and HTR set to 'no'/'not_reported' rather than 'yes' since the paper describes room habituation only, which the rubric explicitly excludes from setup habituation.",
+    "B7 scored 0 across all assays: EthoVision and Med Associates Activity Monitor are position-tracking systems per rubric; HTR was scored manually."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 5.0,
+    "environmental_complexity_max": 2.73,
+    "recording_duration_max": 6.82,
+    "behavioural_complexity_mean": 1.56,
+    "environmental_complexity_mean": 1.02,
+    "recording_duration_mean": 3.07
+  },
+  "low_confidence_count": 6,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm"
+  ],
+  "judge_usage": {
+    "input_tokens": 88669,
+    "output_tokens": 10972,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

@@ -1,0 +1,482 @@
+{
+  "study_id": "Alper2018",
+  "doi": "10.3389/fphar.2018.00994",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "adult",
+    "age_min_days": 70,
+    "age_max_days": 126,
+    "evidence": "adult male C57BL/6J mice (10-18 weeks old; Jackson Laboratory, United States)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "All experiments were conducted in adult male C57BL/6J mice",
+    "confidence": "high"
+  },
+  "psychedelic": "LSD",
+  "dosing": [
+    {
+      "compound": "LSD",
+      "doses_mg_per_kg": [
+        0.025,
+        0.05
+      ],
+      "doses_raw": "25 or 50 µg/kg body weight, i.p.",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "treated with single intraperitoneal injection of saline or 25 or 50 µg/kg LSD (25 or 50 µg/kg body weight, i.p.) once before the onset of the dark cycle",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "handling not mentioned",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "Mice were housed singly",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "yes",
+      "evidence": "Mice were housed singly and habituated to reverse light-dark cycle for at least a week",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "enrichment not described",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Two-bottle choice alcohol drinking",
+      "assay_description": "Singly-housed mice were exposed to two bottles (water and 20% ethanol) for 24 h at the start of the dark phase, 5 days/week for 4 weeks to develop preference. After LSD/saline injection, consumption was measured daily for up to 46 days. Outcomes: ethanol consumption (g/kg/day), ethanol preference, total fluid intake.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "single intraperitoneal injection of saline or 25 or 50 µg/kg LSD",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Mice were housed singly and habituated to reverse light-dark cycle for at least a week. The mice were then exposed to ethanol to develop preference... for 4 weeks",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice were freely moving in their home cage during drinking",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "Mice were given unlimited access to standard mouse chow and water throughout the entire study",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "Mice were given unlimited access to standard mouse chow and water throughout the entire study",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 10,
+          "evidence": "Water bottles were replaced with bottles containing water and ethanol after 10 min of treatment",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "Data are presented as mean ± SEM (n = 8-10 per group)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "A single 50 µg/kg i.p. dose of LSD reduced ethanol consumption (~17.9%) and ethanol preference compared to saline controls, with the effect sustained for 46 days. 25 µg/kg LSD had no significant effect. Total fluid intake did not differ between groups.",
+        "statistics": "50 µg/kg: F=11.99, df=15, p=0.0035 (consumption); F=13.32, df=15, p=0.0024 (preference); t=-1.86, df=15, p=0.0414; t=-1.83, df=15, p=0.0436. 25 µg/kg: F=3.08, df=17, p=0.0974; F=0.53, df=17, p=0.475",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "In mice treated with 50 µg/kg LSD ethanol consumption was reduced relative to controls (p = 0.0035), as was ethanol preference (p = 0.0024)... No significant effects on ethanol consumption or preference were observed in mice treated with 25 µg/kg LSD",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "ethanol consumption, ethanol preference, and total fluid intake measured",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Data reported as daily 24-h totals across days; no within-session time-course analysis reported",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no analysis of behavioural sequences reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "drinking preference is not scored as an ethological behaviour",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice were housed singly and tested alone",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "two-bottle choice does not require learning/memory in the rubric sense",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "consumption measured by bottle weight",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "analyses were univariate (MLM, t-tests)",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "Mice were housed singly... offered water and 20% ethanol in the home cage",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no shelter described in the home cage",
+          "confidence": "low"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "bedding not explicitly described",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "nesting material not mentioned",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment objects reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single home cage compartment",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice were housed singly",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Mice were given unlimited access to standard mouse chow and water throughout the entire study",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Amounts of ethanol and water consumption were measured every 24 h for 5 days/week",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 3,
+          "value": ">6 h",
+          "evidence": "two bottles... offered for 24 h",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 3,
+          "value": "15+",
+          "evidence": "sustained over an interval of 46 days following LSD administration",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "divided into three groups of equal ethanol intake based on the amount of ethanol consumed on the day before administration",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "sustained over an interval of 46 days following LSD administration",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "offered for 24 h",
+          "confidence": "high"
+        },
+        "raw_total": 10
+      }
+    },
+    {
+      "assay_name": "Locomotor activity (infrared beam ambulatory monitoring)",
+      "assay_description": "Ambulatory activity recorded as total beam breaks on x and y axes using an ATM3 infrared beam-based activity sensor over a 24-h period beginning at dark onset, on day 1 and day 8 after a single i.p. injection of 50 µg/kg LSD or saline in ethanol-naïve mice. Hourly ambulatory counts analyzed with MLM.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administration of 50 µg/kg LSD or saline",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "habituation to the activity monitor not described",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "ambulatory activity measured via beam interruptions; animal freely moving",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "not_reported",
+          "evidence": "food access during the 24 h activity recording not specified",
+          "confidence": "low"
+        },
+        "water_restriction": {
+          "value": "not_reported",
+          "evidence": "water access during the 24 h activity recording not specified",
+          "confidence": "low"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 1440,
+          "evidence": "measured... at 1 and 8 days after the administration of 50 µg/kg LSD",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "df=14 in MLM analysis suggests ~16 animals total but not explicitly stated",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "50 µg/kg LSD had no significant effect on ambulatory activity compared to saline controls on either day 1 or day 8.",
+        "statistics": "Day 1: F=0.74, df=14, p=0.4054; Day 8: F<0.01, df=14, p=0.9907",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "The result showed no significant difference in locomotor activity comparisons between control versus the LSD-treated group utilizing a MLM for hourly ambulatory counts on day 1 (F = 0.74, df = 14, p = 0.4054) or day 8 (F < 0.01, df = 14, p = 0.9907)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "ambulatory counts (interruption of total number of beams)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "utilizing a MLM for hourly ambulatory counts",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no behavioural sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "locomotor beam breaks are not ethological measures",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "ethanol-naïve mice tested alone",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning/memory component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "infrared beam-based system measures position/activity only",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "only univariate MLM reported",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "infrared beam-based activity sensor (ATM3; Columbus Instrument)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no shelter in activity cage",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "bedding not described for activity cage",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "nesting material not described",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment objects reported",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "activity cage is a single compartment",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "mouse recorded alone",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "food/water provision in activity cage not described",
+          "confidence": "low"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "activity recorded on day 1 and day 8 after injection",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 3,
+          "value": ">6 h",
+          "evidence": "over a 24 h period beginning at the dark cycle",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "at 1 and 8 days after the administration",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline activity recording described",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "activity measured at 8 days after administration",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "each session spanned 24 h",
+          "confidence": "high"
+        },
+        "raw_total": 7
+      }
+    }
+  ],
+  "judge_notes": [
+    "Two assays identified: two-bottle choice drinking and infrared beam locomotor activity. All three candidates agreed on this structure.",
+    "B2 (temporal dynamics) for the drinking assay: candidates split. Paper reports daily 24-h totals over days (between-session), not within-session time-course; scored 0 per rubric (between-session changes do not count).",
+    "D1 (continuity) for drinking: scored 1 (multiple discrete daily sessions) rather than 2 (continuous), since bottles were offered 24 h on weekdays with daily readings, not uninterrupted >=6 h monitoring of a single continuous session as a primary recording mode — though the daily session itself does cover 24 h (captured in D2/D6).",
+    "B1 for drinking: 3 distinct measures (consumption, preference, total fluid) → score 1 (2-3 bin).",
+    "E3 bedding scored 0 with low confidence — paper does not explicitly describe bedding in home cage during the drinking session.",
+    "Time_to_assay for drinking: 10 min between injection and bottle re-presentation per Methods."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 2.73,
+    "recording_duration_max": 13.64,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 1.36,
+    "recording_duration_mean": 11.6
+  },
+  "low_confidence_count": 11,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 42057,
+    "output_tokens": 5681,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

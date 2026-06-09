@@ -1,0 +1,481 @@
+{
+  "study_id": "Inserra2023",
+  "doi": "10.1177/0269881121991569",
+  "species": "mouse",
+  "strain": "C57BL/6N",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 60,
+    "age_max_days": 70,
+    "evidence": "aged 60 -70 days",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 53,
+    "n_female": null,
+    "evidence": "Adult male C57BL/6N mice (Charles Rivers, Saint-Constant, Quebec, Canada) (n = 53)",
+    "confidence": "high"
+  },
+  "psychedelic": "LSD",
+  "dosing": [
+    {
+      "compound": "LSD",
+      "doses_mg_per_kg": [
+        0.03
+      ],
+      "doses_raw": "30 µg/kg/day",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "repeated",
+      "evidence": "LSD (Sigma-Aldrich, London, UK) was dissolved in a 0.9% NaCl vehicle (VEH) solution and administered intraperitoneally (i.p.) ... for 7 days (30 µg/kg/day)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "No explicit handling protocol described.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "housed under standard laboratory conditions (max 5 per cage)",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12 h light-dark cycle (lights off at 19:00)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "yes",
+      "evidence": "cages enriched with nesting material",
+      "confidence": "high"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Direct Social Interaction Test",
+      "assay_description": "After 10 min habituation, a novel weight- and sex-matched conspecific was introduced into the cage with the test mouse and the mice freely interacted for 10 min. Interaction time (nose-to-anogenital sniffing, nose-to-nose sniffing, social grooming), rearing events, rearing time, grooming bouts and total grooming time were manually scored.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered intraperitoneally (i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "After 10 min habituation, a novel weight- and sex-matched conspecific stranger mouse was introduced into the cage",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "mice were able to freely engage in social interaction",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food placed in the test arena during the 10-min interaction; home cage had ad libitum food.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water placed in the test arena during the 10-min interaction; home cage had ad libitum water.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "The direct social interaction (DSI) test took place 24 h after the 7th injection",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 33,
+        "n_male": 33,
+        "n_female": null,
+        "n_per_group_min": 16,
+        "evidence": "VEH (n = 16) or LSD (n = 17); n = 16-17 per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Repeated LSD (30 µg/kg/day, 7 days, i.p.) increased social interaction time with a stranger mouse compared to vehicle. Rearing events, rearing time, grooming bouts and total grooming time were unchanged.",
+        "statistics": "Mann-Whitney test, P < 0.05; unpaired t tests for rearing/grooming (ns).",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "mice receiving repeated LSD spent significantly more time in social interaction with a stranger mouse in the direct social interaction test compared to VEH-treated mice",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "interaction time, number of rearing events, rearing time, grooming bouts, total grooming time",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Behaviour reported as totals over the 10-min session.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural sequences/transitions reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "nose-to-anogenital sniffing, nose-to-nose sniffing and social grooming",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 3,
+          "value": "Free social interaction",
+          "evidence": "mice were able to freely engage in social interaction for 10 min",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Test does not require learning or memory.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "manually scored blindly",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate tests applied separately.",
+          "confidence": "high"
+        },
+        "raw_total": 6
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "a novel ... stranger mouse was introduced into the cage with the test mouse",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enclosed refuge described during the DSI test.",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Test performed in the home cage which contained nesting material (cages enriched with nesting material).",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "cages enriched with nesting material",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects beyond nesting material reported.",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Home cage is a single compartment.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 2,
+          "value": "Free social group",
+          "evidence": "novel conspecific stranger mouse was introduced into the cage with the test mouse and the mice were able to freely engage in social interaction",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Test conducted in the home cage where food and water are available ad libitum.",
+          "confidence": "medium"
+        },
+        "raw_total": 6
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "One 10-min DSI test per mouse.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "freely engage in social interaction for 10 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "DSI performed on a single day, 24 h after the 7th injection.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline behavioural recording reported for this assay.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The DSI test took place 24 h after the 7th injection",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session lasted only 10 min.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Three Chambers Test",
+      "assay_description": "Three-chamber social preference/novelty test. Phase 1: 10 min free habituation to empty arena. Phase 2: 10 min with Stranger 1 (S1) under a wire cage vs empty cage (sociability). Phase 3: 10 min with S1 vs a new Stranger 2 (S2) (social novelty). Time spent sniffing, sociability and social novelty indices, and distance travelled were measured.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered intraperitoneally (i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Test mice were placed in the middle chamber and allowed to freely explore the empty three-chamber arena for 10 min",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "test mouse was allowed to explore the three-chamber arena",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in the testing arena during the test.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in the testing arena during the test.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "the three chambers test (TCT) was performed 24 h later [after the 8th injection]",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 33,
+        "n_male": 33,
+        "n_female": null,
+        "n_per_group_min": 16,
+        "evidence": "n = 16-17 per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Repeated LSD increased the time spent interacting with S1 vs empty cage and with S2 vs S1, and increased the social preference and social novelty indices, without altering locomotion.",
+        "statistics": "Two-way ANOVA with Bonferroni post-hoc (treatment × sociability significant); unpaired t test for social preference index (P<0.05); Mann-Whitney for social novelty index (P<0.05); RM ANOVA for distance travelled (ns).",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "LSD-treated mice spent significantly more time interacting with a stranger mouse compared to VEH-treated controls ... LSD-treated mice spent significantly more time interacting with the novel intruder than VEH-treated mice",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "time sniffing S1/empty/S2, sociability index, social novelty index, distance travelled",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Totals per phase reported; no within-session time-course.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transitions/sequences analysed.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "time spent sniffing S1, S2 or the empty cage was manually scored",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 2,
+          "value": "Restricted social interaction",
+          "evidence": "unfamiliar mouse ... was introduced into one of the two side chambers, enclosed in a wire cage, thus allowing only the test mouse to initiate social interaction",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "social novelty phase requires recognition of S1 as familiar vs S2 as novel (social recognition memory).",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "manually scored blindly",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate analyses only.",
+          "confidence": "high"
+        },
+        "raw_total": 6
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "three-chamber arena",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enclosed refuge in the three-chamber arena.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described in the three-chamber apparatus.",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in the three-chamber apparatus.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in the apparatus.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "three-chamber arena with side chambers and middle chamber",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 1,
+          "value": "Stimulus behind barrier",
+          "evidence": "unfamiliar mouse ... enclosed in a wire cage",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in the three-chamber apparatus.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Three sequential 10-min phases (habituation, sociability, social novelty) each recorded.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "each phase 10 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "TCT performed on a single day.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline recorded for the TCT.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "TCT performed 24 h after the 8th injection",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No single session ≥6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    }
+  ],
+  "judge_notes": [
+    "Two assays identified: Direct Social Interaction (DSI) and Three Chambers Test (TCT). All candidates agreed on these.",
+    "DSI test is conducted in the home cage of the test mouse (paper: 'introduced into the cage with the test mouse'), so E1=Home cage and bedding/nesting/food-water are scored Yes accordingly (per glm and gptoss); qwen's classification as standard apparatus was rejected.",
+    "B6 (cognitive) scored 1 for TCT because the social novelty phase requires recognition memory (familiar S1 vs novel S2); scored 0 for DSI which does not require learning.",
+    "B5 for DSI = Free social interaction (score 3); B5 for TCT = Restricted (score 2, wire cup).",
+    "D1 for TCT scored 1 (multiple discrete phases within session, consistent with gptoss); D5 followup = Yes for both assays since testing occurs 24h after last injection.",
+    "DOI backfilled from user-edited prisma_problems.numbers: was None, now '10.1177/0269881121991569'"
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 7.5,
+    "environmental_complexity_max": 8.18,
+    "recording_duration_max": 2.73,
+    "behavioural_complexity_mean": 7.5,
+    "environmental_complexity_mean": 5.46,
+    "recording_duration_mean": 2.04
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 60224,
+    "output_tokens": 6222,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

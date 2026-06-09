@@ -1,0 +1,875 @@
+{
+  "study_id": "Lu2021",
+  "doi": "10.1038/s41380-021-01159-1",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 30,
+    "age_max_days": 60,
+    "evidence": "Both sexes of mice aged 1-2 months were used.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Both sexes of mice aged 1-2 months were used.",
+    "confidence": "high"
+  },
+  "psychedelic": "Tabernanthalog (TBG)",
+  "dosing": [
+    {
+      "compound": "Tabernanthalog",
+      "doses_mg_per_kg": [
+        10.0
+      ],
+      "doses_raw": "10 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "TBG or fluoxetine hydrochloride ... was administered to the mouse intraperitoneally (i.p.) at a dosage of 10 mg/kg of bodyweight. USP-grade saline (0.9%) was used as vehicle.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "it was also handled 10 min daily for 3 days ... The mouse was handled 5-10 min per day for 3 days to habituate it to the experimenter.",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Mice were group-housed with littermates and maintained on a 12 h light/dark cycle.",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "maintained on a 12 h light/dark cycle (direction not specified)",
+      "confidence": "medium"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Elevated Plus Maze",
+      "assay_description": "Custom plexiglass EPM (arms 30 x 5 cm; closed arms walled 15 cm; elevated 50 cm). Mice freely explored for 5 min. DeepLabCut tracked multiple body points; total distance and time in open vs. closed arms quantified.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "TBG ... was administered to the mouse intraperitoneally (i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Habituation to the EPM apparatus before testing is not described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Each mouse was allowed to explore the EPM freely for 5 min.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food was placed in the EPM during the 5-min test.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water was placed in the EPM during the 5-min test.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "injected a single dose of TBG (10 mg/kg) into the mice immediately after 7d UMS and conducted behavioral tests one day later",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "n = number of mice unless otherwise indicated",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "UMS mice spent less time in open arms than controls, with similar total distance. A single 10 mg/kg i.p. dose of TBG administered after UMS restored open-arm time, indicating reduced anxiety.",
+        "statistics": "Time in open arms: H(3) = 8.275, p < 0.05, Kruskal-Wallis with Dunn's post hoc. Total distance: H(3) = 4.437, p = 0.1088.",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "TBG alleviated stress-induced anxiety (Fig. 1d).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "quantify the total distance traveled and the time spent in open vs. closed arms",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Data reported as totals over the 5-min session.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural sequences.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Measures locomotor distance and zone occupancy time.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EPM assesses innate anxiety, not learning.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "DeepLabCut was used only to track body points; behaviour was quantified from body location (zone time, distance), not classified into behavioural states.",
+          "confidence": "medium"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate analyses only.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "custom-made plexiglass EPM",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EPM closed arms are not considered enclosed refuges by rubric definition.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Plexiglass apparatus, no bedding described.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "EPM arms are open-ended extensions of a central platform (rubric).",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each mouse tested alone.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the apparatus during the 5-min test.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "single 5-min trial",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "5 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "tested one day after UMS termination",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug EPM trial recorded.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Behavioural tests one day (24 h) after TBG injection.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5-min session.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Whisker-dependent Texture Discrimination (free-moving)",
+      "assay_description": "Free-moving mice in a 38x28x23 cm chamber explore two textured columns. Protocol: habituation (3 min), encoding (5 min, two identical textures), resting (5 min), testing (3 min, familiar + novel texture). Approaches, investigation time and discrimination index (DI) scored with Boris.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "TBG ... i.p.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Prior to testing, the subject mouse was habituated to the testing chamber ... for 10 min per day for 2 days.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Free-moving mice.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in apparatus during test.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in apparatus during test.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "conducted behavioral tests one day later",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "n = number of mice unless otherwise indicated",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "Control mice preferred the novel texture (positive DI); UMS abolished this preference; TBG restored novel-texture preference. Total exploration during encoding was similar across groups.",
+        "statistics": "DI testing: H(3) = 16.061, p < 0.001, Kruskal-Wallis with Dunn's post hoc.",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "while control mice preferred the novel texture, UMS mice lost such preference ... TBG ... restored the novel texture preference in WTD",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "quantified the number of approaches and the amount of time spent actively investigating the columns, and computed the discrimination index",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Totals/indices over phase; no within-session time course.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Approaches and active investigation (sniffing/whisking) of textured columns scored as discrete exploratory acts using Boris.",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Tested alone.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Requires memory of the encoded texture to distinguish familiar vs. novel during testing.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Behaviour analyzed offline with Boris (manual annotation tool).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate analyses.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "testing chamber (38 x 28 x 23 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No refuge described.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Textures are test stimuli.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Open chamber with two columns.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual testing.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in apparatus.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "All phases on one testing day.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "habituation (3 min), encoding (5 min), resting (5 min), and testing (3 min) — 16 min total within single test session.",
+          "confidence": "medium"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "On the testing day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug WTD recording.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Test 24 h after TBG.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Brief session.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    },
+    {
+      "assay_name": "Four-choice odor discrimination and reversal",
+      "assay_description": "Food-restricted mice in a four-quadrant arena (12'x12'x9' acrylic, internal walls) learn to dig in scented pine-shaving ramekins for a Cheerio reward (discrimination phase: rosemary/clove/thyme/nutmeg), then thyme is swapped for cinnamon (reversal). Criterion = 8/10 correct trials. Outcome: trials to criterion per phase.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "TBG ... i.p.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "two-day pre-training procedure ... acclimation ... shaping",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "mouse could freely explore the arena",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "The mouse was food restricted starting ~5 days before the testing day so that its body weight was reduced to 80-85% of the baseline.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "not_reported",
+          "evidence": "Water access not described.",
+          "confidence": "low"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "conducted behavioral tests one day later",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "n = number of mice unless otherwise indicated",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "UMS did not alter initial discrimination but significantly increased trials to criterion in the reversal phase. A single dose of TBG normalized reversal performance, restoring cognitive flexibility.",
+        "statistics": "Initial discrimination: F(2,13)=0.8922, p=0.4334. Reversal: H(3)=9.954, p<0.01, Kruskal-Wallis with Dunn's post hoc.",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "UMS mice ... took significantly more trials to learn the new odor-reward contingency in the reversal phase ... TBG ... normalized cognitive flexibility in the 4-choice task",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Number of trials taken to reach the performance criterion in the initial discrimination and reversal phase.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Trials-to-criterion totals only.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Digging in scented media for buried food is a natural species-typical foraging behaviour scored as the operational response.",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Evaluates the mouse's flexibility in learning an odor-reward contingency and reversing the association.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Manual scoring of choices.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "four-chamber arena ... acrylic box",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Digging media were made of pine shavings ... in ramekins inside the arena.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Ramekins are task stimuli.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "4 quadrants partially divided by 3'-wide internal walls",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual testing.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Food rewards were small pieces (~10 mg each) of Honey Nut Cheerio delivered in the apparatus.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "discrimination session followed by a reversal session on the testing day",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "Trials untimed; most mice completed shaping within 1 h, and testing similarly extends beyond 15 min in this paradigm.",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "On the testing day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Pre-training is not a recorded baseline for this assay.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Tested 24 h after TBG injection.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session well under 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    },
+    {
+      "assay_name": "Whisker-dependent Texture Discrimination (head-fixed)",
+      "assay_description": "Head-fixed mice in a Neurotar mobile home cage explore textures (sandpaper patches) attached to the cage wall. Phases: free exploration (5 min), encoding (15 min, two identical textures), resting (10 min), testing (15 min, familiar + novel). Approaches, interaction time, and DI scored with Boris. Performed concurrently with 2-photon calcium imaging of S1BF L2/3 neurons.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "TBG ... i.p.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "The mouse was handled 5-10 min per day for 3 days ... habituated to head-fixation on the empty MHC (1 h session x 2 per day for at least 6 days).",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "head-fixed mice",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in MHC during recording.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in MHC during recording.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "conducted behavioral tests one day later",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "n = number of mice unless otherwise indicated",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "Total interaction time was similar across groups, but UMS impaired discrimination index and TBG restored novel-texture preference. Calcium imaging showed novel-texture-selective neuronal responses were reduced by UMS and rescued by TBG.",
+        "statistics": "DI: F(2,32)=10.95, p<0.001, one-way ANOVA with Tukey post hoc. Total interaction time: F(2,32)=1.487, p=0.2412.",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "UMS impaired texture discrimination and TBG rescued it ... neither UMS nor post-stress TBG treatment altered total interaction time",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Total interaction time and discrimination index reported.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Totals across phase.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Active whisker-investigation of textures scored as discrete exploratory acts.",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Requires memory of the encoded texture to identify novelty.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "analyzed offline using the Boris program (manual annotation).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Neurotar mobile home cage used as a head-fixed test apparatus.",
+          "confidence": "medium"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bedding not described in MHC.",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only test textures.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single MHC arena.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual testing.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in MHC during recording.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "All four phases completed in one session.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "free exploration (5 min) + encoding (15 min) + resting (10 min) + testing (15 min) = 45 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "On the testing day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug session.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "24 h after TBG.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "45-min session.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    }
+  ],
+  "judge_notes": [
+    "Kept four behavioural assays: EPM, free-moving WTD, four-choice odor discrimination/reversal, and head-fixed WTD. The head-fixed WTD is genuinely a distinct paradigm from the free-moving WTD (different apparatus, head-fixation, different protocol durations) so was kept separate per gptoss/glm.",
+    "Excluded all neural-only readouts (wide-field Ca imaging of CaWF, 2P Ca imaging of baseline synchronous events, in vitro patch-clamp of PV+ INs) and spine imaging — these are not behavioural assays.",
+    "Overrode glm's B7=Yes for EPM: DeepLabCut was used purely as a position tracker (body point used to compute zone time and distance), not as a behavioural classifier — rubric requires classification of discrete states, so scored 0.",
+    "B4 for WTD assays scored Yes: active whisker-mediated investigation/sniffing of textures, scored as discrete approach/investigation events with Boris, falls within the ethological-behaviour category. Digging in 4-choice also scored ethological.",
+    "B6 for WTD scored Yes (requires memory of the encoded texture across the rest interval — a learned/memory component), aligning with how the literature treats novel-object/texture recognition.",
+    "D2 for free-moving WTD: total in-apparatus session (3+5+5+3 = 16 min) treated as a single session >=15 min, scored 1.",
+    "D2 for 4-choice scored 1 with low confidence — paper states sessions were untimed but most mice completed shaping within 1 h, supporting >=15 min for the full discrimination+reversal session.",
+    "DOI taken from candidate consensus (qwen, glm); gptoss left it null but the value is consistent with the paper's supplementary link."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 4.09,
+    "recording_duration_max": 2.73,
+    "behavioural_complexity_mean": 3.12,
+    "environmental_complexity_mean": 1.02,
+    "recording_duration_mean": 2.39
+  },
+  "low_confidence_count": 5,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 69791,
+    "output_tokens": 10080,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

@@ -1,0 +1,899 @@
+{
+  "study_id": "Hernandez-Leon2023",
+  "doi": "10.1016/j.jep.2023.117415",
+  "species": "mouse",
+  "strain": "Swiss Webster",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 49,
+    "age_max_days": 63,
+    "evidence": "Male mice Swiss Webster strain (25 -30 g) aged 8 ± 1 weeks",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male mice Swiss Webster strain (25 -30 g) aged 8 ± 1 weeks",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybe cubensis (whole mushroom and aqueous/methanolic extracts containing psilocybin and psilocin)",
+  "dosing": [
+    {
+      "compound": "Psilocybe cubensis whole mushroom",
+      "doses_mg_per_kg": [
+        1000.0
+      ],
+      "doses_raw": "1000 mg/kg, p.o.",
+      "vehicle": "water",
+      "route": "p.o.",
+      "schedule": "acute",
+      "evidence": "administration of 1000 mg/kg, p.o., of the whole P. cubensis mushroom",
+      "confidence": "high"
+    },
+    {
+      "compound": "Psilocybe cubensis aqueous extract",
+      "doses_mg_per_kg": [
+        1.0,
+        10.0,
+        100.0
+      ],
+      "doses_raw": "1, 10, and/or 100 mg/kg, i.p.",
+      "vehicle": "water",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "polar aqueous (AQ) ... extractions (1, 10, and/or 100 mg/kg, i.p.)",
+      "confidence": "high"
+    },
+    {
+      "compound": "Psilocybe cubensis methanolic extract",
+      "doses_mg_per_kg": [
+        1.0,
+        10.0,
+        100.0
+      ],
+      "doses_raw": "1, 10, and/or 100 mg/kg, i.p.",
+      "vehicle": "other",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "methanolic (MeOH) extractions (1, 10, and/or 100 mg/kg, i.p.)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "divided into groups of at least 6 individuals",
+      "confidence": "medium"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "12-h light/dark cycle (direction not specified)",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Rota-rod test",
+      "assay_description": "Rotarod treadmill (model 7600, Ugo Basile, 4 cm diameter). Mice trained to remain on rod ≥5 min; 30 min after treatments, time-on-rod (up to 2 min cutoff) recorded.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "treatments of the complete P. cubensis mushroom (Pc, 1000 mg/kg, p.o.), or after all doses tested in the case of the MeOH or AQ extractions, i.p.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "animals were trained to remain on rod at least 5 min",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "mice freely run on the rotating rod",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in rotarod apparatus during test",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water in rotarod apparatus during test",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "30 min after treatments, the length of time each mouse remained at least 2 min on the rod was recorded",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "Data are shown as the mean ± S.E.M. of at least six animals.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "No significant differences in motor activity were observed for any dose of the whole mushroom (1000 mg/kg, p.o.) or MeOH/AQ extracts (1-100 mg/kg, i.p.), indicating lack of motor impairment.",
+        "statistics": "F3,30 = 0.48, p = 0.697 (Pc); F5,45 = 0.89, p = 0.491 (MeOH); F5,45 = 0.18, p = 0.966 (AQ)",
+        "direction": "no_effect",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "no differences were observed in the motor activity of mice receiving treatments of the complete P. cubensis mushroom ... or after all doses tested in the case of the MeOH ... or AQ ... extractions, i.p.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "time-on-rod recorded",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "single latency value",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "motor coordination task",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "motor task",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "manual recording",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Rotarod treadmill for mice (model 7600, Ugo Basile)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "rotating rod",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individual testing",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food or water on apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "one recording session",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "remained at least 2 min on the rod",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "single test day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "training phase only, no baseline data reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no post-acute recording",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "session <6 h",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "Acrylic box divided into 12 squares (6 × 6 cm). Ambulatory activity (squares explored) measured for 2 min; rearing events counted for 5 min, 30 min after treatment.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Anxiolytic-like effects were also evaluated in the open-field test using (1, 10, or 100 mg/kg, i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "each mouse was placed in an acrylic box, freely moving",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in apparatus during test",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water in apparatus during test",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "The effects were evaluated 30 min after treatment administration.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "Data are shown as the mean ± S.E.M. of at least six animals.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "MeOH and AQ extracts (1, 10 mg/kg) did not affect ambulation; at 100 mg/kg both extracts reduced exploration (AQ more strongly). Both extracts significantly reduced rearing at all doses, resembling buspirone — interpreted as anxiolytic-like.",
+        "statistics": "Ambulation: F4,34 = 2.19, p = 0.049 (MeOH), F4,34 = 7.60, p = 0.0002 (AQ); Rearing: F4,34 = 8.65, p < 0.0001 (MeOH), F4,34 = 15.01, p < 0.0001 (AQ)",
+        "direction": "decrease",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "a significant no dose-dependent reduction in the number of rearings, as an escape behavior, was observed in mice administered MeOH ... or AQ ... in a similar manner than the anxiolytic reference drug BUSP4",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "ambulatory activity (squares explored) and rearing events",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "totals over 2 or 5 min",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "rearing events scored as a distinct natural exploratory behaviour",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "anxiety test based on innate behaviour",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "manual scoring, no ML tools",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate ANOVAs only",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "acrylic box divided into 12 squares",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no refuge in open field",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "bare acrylic floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "open field with virtual squares only",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each mouse was placed in an acrylic box",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food or water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "single recording session post-treatment",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "period of 2 min ... counted for 5 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "single test day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline for OFT",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no post-acute recording",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "<6 h session",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "Elevated Plus-Maze",
+      "assay_description": "Wooden cross elevated 50 cm with two open arms (30×5 cm) and two closed arms (30×15×5 cm) and central platform (5×5 cm). Latency, entries, and time in arms recorded over 5 min, 30 min after treatment.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "AQ or MeOH extractions at 10 mg/kg, i.p., in the plus-maze test",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "mice freely explored the maze",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in apparatus during test",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water in apparatus during test",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "The effects were evaluated 30 min after treatment administration.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "Data are shown as the mean ± S.E.M. of at least six animals.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "AQ and MeOH extracts (10 mg/kg, i.p.) increased open-arm entries, time spent in open arms and delayed latency to enter closed arms, mirroring buspirone effects. AQ produced stronger anxiolytic-like response than MeOH.",
+        "statistics": "Latency closed: F3,20 = 6.04, p = 0.0042; Open-arm entries: F3,20 = 5.44, p = 0.0067; Time open arms: F3,20 = 29.97, p < 0.001; Closed-arm entries: F3,20 = 7.94, p = 0.0011; Time closed arms: F3,20 = 29.51, p < 0.001",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "A significant increase was also observed in the number of entries into the open ... or closed ... arms ... time spent in open arms ... augmented in a significant manner",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "latency at entry in closed arms, entries in open arms, time spent in open arms, average time in open arms, entries in closed arms, time spent in closed arms",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "totals over 5 min",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "zone preference / arm entries, not ethological behaviours",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "innate anxiety test",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "manual scoring",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate ANOVA only",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "wooden cross with open and closed arms",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EPM closed arms are not shelter per rubric",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "wooden cross, no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "EPM scored as single space per rubric",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "each mouse placed alone",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "registered over a period of 5 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "5 min session",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "single test day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no post-acute recording",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5 min session",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "Forced Swimming Test",
+      "assay_description": "Glass cylinder (26 cm high, 12 cm diameter), 17 cm tap water (25±2°C). Pre-test 15 min on day 1; final test 5 min 24 h later. Immobility, swimming, and climbing scored every 5 s.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "Pc 1000 mg/kg p.o. and AQ/MeOH extractions (1, 10, 100 mg/kg, i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "pre-test is the first swim session, no separate apparatus habituation",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "FST cylinder (rubric classifies FST as restraint)",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in apparatus during test",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "water is the swim medium, not for drinking",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "The effects were evaluated 30 min after treatment administration.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "Data are shown as the mean ± S.E.M. of at least six animals (n ≥ 6).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "P. cubensis whole mushroom (1000 mg/kg, p.o.) and MeOH/AQ extracts (1-100 mg/kg, i.p.) significantly and dose-dependently reduced immobility and increased swimming, resembling fluoxetine and imipramine. No effect on climbing (unlike imipramine).",
+        "statistics": "Immobility: F5,45 = 10.57, p < 0.0001 (MeOH); F5,45 = 10.02, p < 0.0001 (AQ); F3,30 = 15.35, p < 0.0001 (Pc vs references). Swimming: F5,45 = 11.97, p < 0.0001 (MeOH); F5,45 = 14.40, p < 0.0001 (AQ). Climbing: F5,45 = 8.22, p < 0.0001.",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "a significant and dose-dependent manner effect was observed in the immobility behavior in mice treated with MeOH ... or AQ ... extractions, and Pc 1000 mg/kg, p.o. resembling the response of the reference drugs FLX and IMI",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "immobility, swimming, climbing",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "mean number of behaviors over 5 min, no within-session time-course",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST behaviours not classified as ethological per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "scored by an observer blinded to treatment",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate ANOVAs only",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "glass cylinder (26 cm high, 12 cm diameter)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no refuge in cylinder",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "water-filled cylinder",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "FST cylinder",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Animals were individually placed in a glass cylinder",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/drinkable water accessible",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "two swimming sessions: 15 min pre-test and 5 min final test 24 h later",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "In the first session called pre-test, mice swam for 15 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "pre-test on day 1, final test 24 h later on day 2",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "pre-test session occurred but no separate pre-drug baseline data analysed; pre-test precedes drug administration on test day",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no recording ≥24 h after the final dose",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "longest session is 15 min",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    }
+  ],
+  "judge_notes": [
+    "Included four behavioural assays: Rota-rod, Open Field, Elevated Plus-Maze, Forced Swimming Test. Excluded EEG spectral power analysis as it is a neural recording, not a behavioural assay (per rubric).",
+    "FST D1 scored as Multiple discrete sessions (pre-test + test) and D2 as 15-60 min based on the 15-min pre-test, consistent with the gptoss candidate; glm scored similarly. D4 (pre-drug baseline) set to No because the pre-test is conducted before drug treatment but is not analyzed as a pre-drug baseline of the test measure — conservative scoring.",
+    "Setup_restrain for FST set to 'yes' per rubric which lists FST cylinder explicitly as restraint.",
+    "Dosing split into three compound entries (whole mushroom, AQ extract, MeOH extract) to reflect distinct preparations, consistent with glm candidate."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 4.09,
+    "behavioural_complexity_mean": 1.56,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 1.02
+  },
+  "low_confidence_count": 5,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 68028,
+    "output_tokens": 9878,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

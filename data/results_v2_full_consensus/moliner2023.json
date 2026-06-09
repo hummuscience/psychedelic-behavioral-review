@@ -1,0 +1,684 @@
+{
+  "study_id": "Moliner2023",
+  "doi": "10.1038/s41593-023-01316-5",
+  "species": "mouse",
+  "strain": "C57BL/6JRccHsd (WT) and C57BL/6NTac-NTrk2em6006 Y433F heterozygous",
+  "age": {
+    "value": "adult",
+    "age_min_days": 70,
+    "age_max_days": null,
+    "evidence": "We used both female and male mice that were at least 10 weeks old at the start of experiments for this study.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "We used both female and male mice that were at least 10 weeks old at the start of experiments for this study.",
+    "confidence": "high"
+  },
+  "psychedelic": "LSD, Psilocin",
+  "dosing": [
+    {
+      "compound": "LSD",
+      "doses_mg_per_kg": [],
+      "doses_raw": "not reported in available text",
+      "vehicle": "not_reported",
+      "route": "not_reported",
+      "schedule": "acute",
+      "evidence": "single administration of LSD; specific dose/vehicle/route not stated in the available manuscript text",
+      "confidence": "low"
+    },
+    {
+      "compound": "Psilocin",
+      "doses_mg_per_kg": [],
+      "doses_raw": "not reported in available text",
+      "vehicle": "not_reported",
+      "route": "not_reported",
+      "schedule": "acute",
+      "evidence": "PSI used in in vitro and behavioural assays; specific dose/vehicle/route not stated in the available manuscript text",
+      "confidence": "low"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "No handling protocol described in available text.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "Animals were caged in standard housing conditions as described in the Animals section in Methods.",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "Light cycle direction not specified in available text.",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Home-cage enrichment not described.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head-Twitch Response",
+      "assay_description": "Count of head twitches following LSD administration in WT and Y433F+/- mice, with or without M100907 5-HT2A antagonist pretreatment.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "not_reported",
+          "evidence": "Route of LSD administration for HTR not explicitly stated in available text.",
+          "confidence": "low"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No habituation procedure described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Animals were freely moving during observation of head twitches.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard HTR observation chamber; food not present during recording.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard HTR observation chamber; water not present during recording.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": null,
+          "evidence": "Head-twitch response measured acutely following LSD injection (standard HTR protocol).",
+          "confidence": "medium"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "Sample sizes not reported in available manuscript text.",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "LSD induced head-twitch responses normally in Y433F+/- mice (TrkB-binding mutant) but the response was blocked by 5-HT2A antagonist M100907, indicating HTR depends on 5-HT2A and is independent of TrkB binding.",
+        "statistics": "",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "Head twitches in response to LSD occur normally in Y433F +/- mice but are blocked by M100907.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Only head-twitch count reported.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total counts; no within-session time-course analysis described.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence/transition analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is a drug-induced response, explicitly excluded from ethological per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Tested alone.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning or memory component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No mention of pose estimation or ML classifier.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate analysis.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Standard observation chamber.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter described.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bedding not mentioned.",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Observation chamber is a single space.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Animal tested alone.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Food/water not accessible during recording.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Single observation session.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Session duration not explicitly stated; assumed short standard HTR.",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test day for HTR.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline HTR recording described.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Acute test only.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session does not span ≥6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "Repeated Forced Swim Test (rFST)",
+      "assay_description": "Repeated forced swim stress model with immobility measured; LSD administered as single dose and antidepressant-like effect assessed 7 days later in WT and Y433F+/- mice, with or without M100907 pretreatment.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "not_reported",
+          "evidence": "Route not explicitly stated in available text.",
+          "confidence": "low"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No habituation procedure described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "FST cylinder; per rubric, FST is classified as restraint.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Food not accessible in FST cylinder during recording.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Drinking water not accessible during FST.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "short_term_1to7d",
+          "value_minutes": 10080,
+          "evidence": "LSD produced a sustained antidepressant-like effect 7 days after a single administration.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "Sample sizes not reported in available manuscript text.",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "A single dose of LSD produced a sustained antidepressant-like effect (reduced immobility) 7 days post-administration in WT but not Y433F+/- mice. M100907 pretreatment did not block the effect, indicating it is TrkB-dependent but 5-HT2A-independent.",
+        "statistics": "",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "LSD produced a sustained antidepressant-like effect 7 days after a single administration in WT but not Y433F +/- mice. Pretreatment with M100907 did not prevent the antidepressant-like effect of LSD.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Immobility time as primary measure.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total immobility reported, not within-session time course.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST immobility explicitly excluded from ethological per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Tested alone.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning/memory component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pose estimation/ML classifier mentioned.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate analysis.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Forced swim cylinder.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter in cylinder.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Water-filled cylinder; no bedding.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Cylinder is single open volume.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Tested alone.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water accessible.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Repeated sessions of the forced swimming test (rFST).",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Session duration not explicitly stated in available text; standard FST sessions are typically <15 min.",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Repeated FST sessions with antidepressant-like effect measured 7 days after LSD.",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline reported.",
+          "confidence": "low"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Antidepressant-like effect measured 7 days after a single LSD administration.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No session spans ≥6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Contextual Fear Conditioning and Extinction",
+      "assay_description": "Contextual fear conditioning followed by extinction training; freezing behavior measured during extinction and recall at 3 days and 4 weeks after a single LSD injection in WT and Y433F+/- mice; control group tested for effect of LSD without extinction training.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "not_reported",
+          "evidence": "Route of LSD not explicitly stated in available text.",
+          "confidence": "low"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Habituation procedure not described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice freely move in conditioning chamber.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Food not present in conditioning chamber.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Water not present in conditioning chamber.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 4320,
+          "evidence": "Effects measured at 72 h and 4 weeks after a single LSD administration.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "Sample sizes not reported in available manuscript text.",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "A single LSD injection facilitated contextual fear extinction, reducing freezing at 3 days and 4 weeks post-administration in WT but not Y433F+/- mice. Extinction training was required; LSD alone without extinction did not reduce freezing.",
+        "statistics": "",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "no",
+        "evidence": "LSD also facilitates contextual extinction of conditioned fear response 72 h after a single administration, which persists for at least 4 weeks. However, these short- and long-term effects are lost in Y433F +/- mice. LSD alone does not bring about fear extinction, as extinction training is required to produce a sustained decrease in behavioral freezing after LSD treatment.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Freezing time as primary measure.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total freezing per session reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bout/sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Conditioned freezing explicitly excluded from ethological per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Tested alone.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Fear conditioning/extinction requires associative learning and memory.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pose estimation/ML classifier mentioned.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate analysis.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Standard conditioning chamber.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter in chamber.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard grid floor; no bedding.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single conditioning chamber.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Tested alone.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in chamber.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Conditioning, extinction, and recall sessions on separate days.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Session duration not explicitly stated; standard fear conditioning sessions are typically <15 min.",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Multiple recording sessions including conditioning, extinction, and recall at 72 h and 4 weeks.",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline freezing reported.",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Effects measured at 72 h and persist for at least 4 weeks after a single LSD administration.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No session spans ≥6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    }
+  ],
+  "judge_notes": [
+    "All three candidates identified HTR, rFST, and contextual fear conditioning/extinction as the main behavioural assays; these were retained.",
+    "Added a fourth assay (monocular deprivation / ocular dominance plasticity) which is described in the text ('LSD also promotes visual plasticity and facilitates a shift in ocular dominance...') and was missed by all candidates; scored conservatively with low confidence on procedural details since methods detail is sparse in available text.",
+    "Dropped GLM's specific dose claims (0.2 mg/kg LSD, 2 mg/kg PSI) and i.p. route — these are not in the visible manuscript text and appear to be inferred/hallucinated; marked dosing as not_reported with low confidence.",
+    "For fear conditioning, used B6=1 (cognitive yes) as agreed by candidates; E6 scored 0 (single context chamber per session), overriding gptoss's score of 0 with 'Multiple zones' value mislabel.",
+    "Strain consolidated to reflect both WT (C57BL/6JRccHsd) and Y433F heterozygous (C57BL/6NTac-NTrk2em6006) lines used in the study."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 4.09,
+    "behavioural_complexity_mean": 0.42,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 2.73
+  },
+  "low_confidence_count": 15,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 58194,
+    "output_tokens": 9658,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

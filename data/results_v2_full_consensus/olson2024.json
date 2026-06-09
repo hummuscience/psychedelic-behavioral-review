@@ -1,0 +1,286 @@
+{
+  "study_id": "Olson2024",
+  "doi": null,
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "adult",
+    "age_min_days": 84,
+    "age_max_days": 168,
+    "evidence": "Eight adult male (age 12 -24 weeks) C57BL/6J",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 14,
+    "n_female": 0,
+    "evidence": "Eight adult male (age 12 -24 weeks) C57BL/6J... experimental mice were used for DOI experiments. For saline experiments a subset of the DOI mice (N = 4) received saline injections one week following DOI administration, with another six adult male mice (age 12 -24 weeks) C57BL/6J... receiving saline only.",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        5.0
+      ],
+      "doses_raw": "5 mg/kg i.p.",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "male mice received a 5 mg/kg i.p. injection of racemic 2,5-dimethoxy-4-iodoamphetamine (DOI) or saline",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "Mice were placed in a novel open field environment and allowed to move freely. A 15-min baseline recording was followed by i.p. injection of DOI (5 mg/kg) or saline and a 60-min post-injection recording. Position and velocity were tracked with DeepLabCut to segregate active and rest periods, in synchronization with mPFC electrophysiology recordings.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "received a 5 mg/kg i.p. injection of racemic 2,5-dimethoxy-4-iodoamphetamine (DOI) or saline",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Male mice were recorded in a novel open field environment",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "were allowed to move freely",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard open field; no food in apparatus during recording",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard open field; no water in apparatus during recording",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "After 15 min of baseline recording male mice received a 5 mg/kg i.p. injection of... DOI or saline and were then placed back in the open field environment to freely behave for 60 min.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 14,
+        "n_male": 14,
+        "n_female": 0,
+        "n_per_group_min": 4,
+        "evidence": "Eight adult male... experimental mice were used for DOI experiments. For saline experiments a subset of the DOI mice (N = 4) received saline injections... with another six adult male mice... receiving saline only.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Locomotor velocity was tracked during free exploration of the open field; average velocity (186.26 cm/min) was consistent with non-implanted mice, indicating no overt impairment of locomotion. The open field session was primarily used to segregate active vs. rest behavioral states for neural analysis rather than to test a DOI effect on locomotion per se.",
+        "statistics": "",
+        "direction": "not_clear",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "we calculated the average velocity (cm/min) for all male mice during the entire recording session, which we found to be 186.26 cm/min... confirming that our mice exhibit locomotion within a range consistent with that of non-implanted mice.",
+        "confidence": "medium"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "average velocity... and active vs. rest behavioral state classification",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Behavioural data summarized as average velocity and binary active/rest segregation; no within-session time-course of behaviour reported.",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No behavioural transition or sequence analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "we did not consider behaviors like sniffing, grooming and rearing",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Male mice were recorded in a novel open field environment",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open field locomotion does not require learning or memory.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Videos were then imported into DeepLabCut (DLC)... positional markers were manually set for head, body and tail",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No multivariate or dimensionality reduction analysis of behaviour reported.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "recorded in a novel open field environment",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open field provides no enclosed refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding mentioned in the open field apparatus.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent in open field.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in the open field.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "open field environment",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice were recorded alone in the open field.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in open field during recording.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "After 15 min of baseline recording... placed back in the open field environment to freely behave for 60 min - one continuous session per animal.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "15 min baseline + 60 min post-injection = ~75 min continuous recording",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single recording session per animal described.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "After 15 min of baseline recording male mice received a 5 mg/kg i.p. injection",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No behavioural recording ≥24 h after drug administration reported.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session ~75 min, well under 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    }
+  ],
+  "judge_notes": [
+    "Qwen returned no assays; glm and gptoss both identified a single Open Field Test assay used to segregate behavioral states for mPFC electrophysiology. Consolidated as one assay.",
+    "Although the paper primarily reports electrophysiological outcomes, the rubric scores the behavioural component of behaviour+ephys studies; the OFT (with DeepLabCut tracking and velocity-based active/rest segregation) is the scored behaviour.",
+    "B1 scored 2-3 (velocity + active/rest classification = ~2 measures), matching gptoss.",
+    "B2 scored No: the paper does not present within-session time-course of behaviour itself; spectrograms are neural data. Overrode glm.",
+    "B7 scored Yes due to DeepLabCut pose estimation (head/body/tail markers).",
+    "D2 scored 2 (61 min–6 h): continuous 75-min recording session.",
+    "n_total set to 14 (8 DOI + 6 saline-only); the 4 saline-only-from-DOI-cohort animals are already counted in the 8 DOI mice."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 4.09,
+    "behavioural_complexity_mean": 2.5,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 4.09
+  },
+  "low_confidence_count": 4,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 43292,
+    "output_tokens": 3459,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

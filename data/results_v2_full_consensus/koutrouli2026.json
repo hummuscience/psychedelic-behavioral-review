@@ -1,0 +1,495 @@
+{
+  "study_id": "Koutrouli2025",
+  "doi": "10.1111/adb.70111",
+  "species": "rat",
+  "strain": "Wistar",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 42,
+    "age_max_days": 42,
+    "evidence": "adult male Wistar rats ( n = 40; 160-180 g, approximately 6 weeks old)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 80,
+    "n_female": null,
+    "evidence": "For each of the two studies (psilocybin/ibogaine), adult male Wistar rats ( n = 40; 160-180 g, approximately 6 weeks old)",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin, Ibogaine",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        1.25,
+        5.0
+      ],
+      "doses_raw": "1.25 mg/kg (day 1) and 5 mg/kg (day 5)",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "repeated",
+      "evidence": "Psilocybin ... dissolved in sterile 0.9% NaCl and administered subcutaneously (s.c.; 2 mL/kg) ... Doses of 1.25 mg/kg (day 1) and 5 mg/kg (day 5)",
+      "confidence": "high"
+    },
+    {
+      "compound": "Ibogaine",
+      "doses_mg_per_kg": [
+        10.0,
+        40.0
+      ],
+      "doses_raw": "10 mg/kg (day 1) and 40 mg/kg (day 5)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "repeated",
+      "evidence": "Ibogaine hydrochloride ... dissolved in sterile 0.9% NaCl ... for intraperitoneal administration (i.p.; 3 mL/kg) ... ibogaine was administered at 10 mg/kg (day 1) and 40 mg/kg (day 5)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "Rats were habituated to laboratory conditions during the first week after delivery, regularly handled and weighed.",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "housed in pairs in standard home cages",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "a 12/12 h light/dark cycle",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "housed in pairs in standard home cages",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Intravenous Cocaine Self-Administration (acquisition, extinction, cue-induced reinstatement)",
+      "assay_description": "Operant chambers (40 × 30 × 52 cm) with two levers on FR1 schedule; 2-h daily sessions. Acquisition with cocaine dose escalation (0.25 → 0.5 mg/kg/infusion), 10 days of extinction (saline, no cues; psilocybin or ibogaine administered on extinction days 1 and 5), and a single cue-induced reinstatement test 6 days after the last treatment.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "Psilocybin ... administered subcutaneously (s.c.) ... Ibogaine ... for intraperitoneal administration (i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Rats were trained to press the active lever on a fixed ratio 1 (FR1) schedule ... [sucrose pellet training prior to cocaine sessions]",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "rats were placed daily into standard operant conditioning chambers",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "water and food were provided ad libitum [in the home cage]; no food present in chamber during cocaine/extinction sessions",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "water and food were provided ad libitum [in the home cage]; no water present in chamber during sessions",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 1440,
+          "evidence": "Psilocybin or ibogaine was administered ... on extinction days 1 and 5 ... ensuring an interval of ~24 h before the subsequent extinction session ... A cue-induced reinstatement test was conducted 6 days after the last treatment",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 80,
+        "n_male": 80,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "For each of the two studies (psilocybin/ibogaine), adult male Wistar rats ( n = 40 ...)",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "Both psilocybin (1.25 → 5 mg/kg) and ibogaine (10 → 40 mg/kg) reduced active lever pressing/cocaine infusions during extinction; psilocybin reached significance 1 day after the second dose (with trend after first), ibogaine was significant after both doses. Both compounds also reduced between-subject variance. Neither compound significantly altered cue-induced reinstatement, though psilocybin showed a non-significant trend toward attenuation.",
+        "statistics": "Extinction psilocybin: t(28)=2.36, p=0.026 (day 6); t(28)=1.32, p=0.098 (day 2). Extinction ibogaine: t(22)=2.59, p=0.016 (day 6); t(22)=1.73, p=0.049 (day 2). Reinstatement psilocybin: t(28)=0.83, p=0.20; ibogaine: t(22)=-0.14, p=0.56.",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "Rats receiving psilocybin showed a marked reduction in infusion intake 1 day after the second treatment ... ibogaine ... significant decrease ... Administration of either psilocybin or ibogaine did not produce a statistically significant effect on reward intake during cue-induced reinstatement",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "the number of active and inactive lever presses and the number of infusions were measured",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Daily totals reported per session; no within-session time-course analysis",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural sequences or transitions reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Lever pressing is an operant, not ethological, behaviour",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animals tested alone in the operant chamber",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Acquisition, extinction, and cue-induced reinstatement require learned drug-response associations",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "standard operant conditioning chambers (Med Associates, USA)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No multivariate or dimensionality-reduction analysis reported (univariate t-tests and mixed linear models)",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "standard operant conditioning chambers (40 × 30 × 52 cm; Med Associates)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent in operant chamber",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding in operant chamber",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "operant chamber is a single compartment",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Only the focal animal present in the operant chamber",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water available in chamber during cocaine/extinction/reinstatement sessions",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Acquisition (~12-14 days), 10 days of extinction, plus single reinstatement test",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "daily 2-h sessions",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 3,
+          "value": "15+",
+          "evidence": "12-14 days acquisition + 10 days extinction + 1 reinstatement",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "acquisition part of the experiment is taken as a baseline measure",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "A cue-induced reinstatement test was conducted 6 days after the last treatment",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "daily 2-h sessions",
+          "confidence": "high"
+        },
+        "raw_total": 8
+      }
+    },
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "80 × 80 cm black arena with 70-cm walls; rats placed in centre and allowed free exploration for 15 min under dim lighting (60 lx). Five OFTs conducted (baseline + pre/post each treatment). Behaviour recorded at 25 fps and analysed using DeepLabCut for trajectory length, time in centre, and thigmotaxis.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "Psilocybin administered s.c.; ibogaine administered i.p.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No pre-test exposure to the OFT arena described",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "A rat was allowed to move freely within the arena for 15 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "empty black arena (80 × 80 cm); no food present during 15-min test",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "empty black arena; no water in arena during test",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 1440,
+          "evidence": "OFTs were conducted ... prior to IVSA (baseline), right before the psychedelic or saline administration (pre-I and II), and ~24 h after psychedelic or saline administration (post-I and II)",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 80,
+        "n_male": 80,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "adult male Wistar rats ( n = 40) for each study",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "Neither psilocybin nor ibogaine produced significant effects on locomotor or anxiety-like behaviour (trajectory length, time in centre, thigmotaxis) before or 24 h after treatment, with one exception: ibogaine-treated rats spent significantly more time in the centre after the second dose, which the authors attributed to a technical obstruction.",
+        "statistics": "Baseline psilocybin: trajectory t(24)=-0.24, p=1.00; centre time t(24)=-0.47, p=1.00; thigmotaxis t(24)=-0.77, p=1.00. Post-2nd psilocybin: trajectory t(12)=1.50, p=0.91; centre t(12)=0.31, p=1.00; thigmotaxis t(12)=0.16, p=1.00. Post-2nd ibogaine: centre time t(26)=4.10, p=0.01; trajectory t(26)=2.31, p=0.32; thigmotaxis t(26)=2.55, p=0.21.",
+        "direction": "no_effect",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "The applied treatment had no side effects on general locomotor activity or anxiety-like behaviour, as measured in the open field test 24 h after each administration",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "trajectory length, time spent moving in the centre, thigmotaxis",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total values reported per 15-min session; no within-session time-course",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition/sequence analysis reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Measured locomotion and thigmotaxis only",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animal tested alone",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "OFT assesses innate exploration/anxiety, not learning",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Videos were analysed using DeepLabCut software (DLC) ... key points: nose, neck and tail root",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Separate univariate t-tests reported per measure",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "empty black arena (80 × 80 cm) surrounded by 70 cm high walls",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "empty black arena; no refuge",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "empty black arena (no bedding mentioned)",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "empty black arena",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single open arena; the 25-square grid is a virtual analysis grid",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "rat placed in the central part ... allowed to move freely",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in arena",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "A total of five OFTs were conducted",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "A rat was allowed to move freely within the arena for 15 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "five OFTs (baseline + pre-I, post-I, pre-II, post-II)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "one baseline assessment before the start of the IVSA protocol",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "~24 h after psychedelic or saline administration (post-I and II)",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "15 min sessions",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      }
+    }
+  ],
+  "judge_notes": [
+    "Merged glm's separate 'IVSA-Extinction' and 'Cue-Induced Reinstatement' assays into one IVSA assay per rubric guidance (acquisition + extinction + reinstatement are phases of the same operant paradigm).",
+    "D2 for IVSA scored 2 (61 min–6 h) because daily sessions were 2 h; glm's score of 1 was a misclassification.",
+    "B1 scored 1 (2-3 measures: active lever, inactive lever, infusions) — not 2 as in glm (which used the 4-6 bin).",
+    "Sex n_male reported as 80 total across both studies (40 + 40); each individual study used 40 male rats.",
+    "day_night_flipped kept as not_reported because the paper only states '12/12 h light/dark cycle' without specifying direction.",
+    "OFT setup_habituation set to not_reported — paper does not describe pre-test apparatus exposure (gptoss interpretation preferred over glm 'no')."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 10.91,
+    "behavioural_complexity_mean": 2.5,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 8.87
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 58125,
+    "output_tokens": 7090,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

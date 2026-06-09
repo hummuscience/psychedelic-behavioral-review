@@ -1,0 +1,283 @@
+{
+  "study_id": "Brockett2024",
+  "doi": null,
+  "species": "mouse",
+  "strain": "F1 offspring of CBA/CaJ x C57BL/6J-Tg(Thy1-GCaMP6s)GP4.3Dkim/J",
+  "age": {
+    "value": "mixed",
+    "age_min_days": 45,
+    "age_max_days": 210,
+    "evidence": "1.5 -7 mo old",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": 7,
+    "n_female": 2,
+    "evidence": "n = 6 mice, 2 females, 4 males (psilocybin imaging); n = 3 mice, 3 males (saline imaging)",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        2.0
+      ],
+      "doses_raw": "2 mg/kg in 0.1 mL saline",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "intraperitoneal (ip) injection of either psilocybin (2 mg/kg in 0.1 mL saline)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Paper does not mention handling procedures.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "Paper does not mention cage density.",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "yes",
+      "evidence": "Mice were housed under a reversed 12-h light/12-h dark light cycle.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Paper does not mention home cage enrichment.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Video Arena - Cage Exploration and Head-Twitch Response",
+      "assay_description": "Custom video tracking arena: black acrylic box with smaller clear acrylic inner box containing bedding, lid covered, recorded from above at 150 fps for 40-60 min post-injection. Frame-difference analysis quantified gross movement (cage exploration); head-twitch responses were manually scored from the same videos.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "intraperitoneal (ip) injection of either psilocybin (2 mg/kg in 0.1 mL saline)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Behavioral experiments began with habituation, by placing the mouse in the small clear box for an hour, before being administered an intraperitoneal (ip) injection",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "the mouse was placed back in the clear box, covered with a clear lid, and then videoed",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food mentioned in apparatus; standard short-term behavioral arena.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water mentioned in apparatus; standard short-term behavioral arena.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Immediately after injection, the mouse was placed back in the clear box ... and then videoed for an additional 40-60 min.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 10,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 5,
+        "evidence": "psilocybin (2 mg/kg in 0.1 mL saline) (n = 5 mice) or a 0.1 mL saline vehicle (n = 5 mice). HTR manually scored in n=1 psilocybin and n=1 saline mouse.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "A 2 mg/kg ip dose of psilocybin increased head-twitch rate transiently (peaking within the first 10 min and declining by ~10 min post-injection) and produced a biphasic locomotor response: mice explored the arena during the first 10 min but became significantly hypoactive for the remaining 10-60 min relative to both their early exploration and saline controls. Saline mice showed consistent movement throughout.",
+        "statistics": "Psilocybin 0-10 vs 10-60: bootstrap t test P = 0.012; Saline 10-60 vs Psilocybin 10-60: bootstrap t test P = 0.011; Saline 0-10 vs 10-60: P = 0.66; HTR/CE correlation saline vs psilocybin: bootstrap t test P = 0.026.",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "the psilocybin 10-60 movement was significantly less than both the psilocybin 0-10 movement (bootstrap t test, P = 0.012) and the saline 10-60 movement (bootstrap t test, P = 0.011).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Cage exploration movement trace plus manually-labeled head-twitch responses; HTR/CE correlation also computed.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "time-course of cage exploration plotted on a frame-by-frame basis; averaged in 0-10 vs 10-60 min windows; HTR time-course also analyzed.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural transitions, sequences, or microstructure.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Measures are HTR (excluded per rubric) and gross locomotor movement (not ethological).",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mouse tested alone in the clear box.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning or memory component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Movement quantified via frame-difference and Hilbert envelope; HTRs were manually labeled. No pose estimation or ML classifier.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate tests; no PCA/UMAP/clustering reported.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "custom-built video tracking arena ... large black acrylic box ... contained a smaller clear acrylic box",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Clear box covered with a clear lid; no enclosed refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Bedding was placed inside the clear box",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material mentioned in the testing arena.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects mentioned in the arena.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single clear acrylic box used for testing.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mouse tested alone in the box.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water present in the testing arena.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "videoed for an additional 40-60 min after injection",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "videoed for an additional 40-60 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single recording session per mouse on injection day.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Habituation occurred before injection but no pre-drug behavioral data was recorded/reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recording was acute (0-60 min post-injection); no >=24 h follow-up.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session <6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Merged GLM's separate 'Open Field Test' and 'Head-Twitch Response' assays into one entry: both measures were collected from the same video recording in the same custom arena during a single session, with HTR being one manually-scored measure and cage exploration being the automated frame-difference measure. Qwen and gptoss correctly treated this as one assay.",
+    "Did NOT score two-photon imaging or wide-field tonotopic imaging as behavioral assays - these are neural recording sessions in head-fixed awake mice with passive sound presentation; per rubric they are excluded.",
+    "B1 scored 2-3 because two distinct behavioural measures (gross movement/CE and HTR count) plus a derived correlation were reported.",
+    "Sex coded as 'both' based on imaging cohort breakdown (2F/4M psilocybin, 3M saline); behavioral cohort sex not separately specified."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 2.5,
+    "environmental_complexity_mean": 1.36,
+    "recording_duration_mean": 1.36
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 46619,
+    "output_tokens": 3653,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

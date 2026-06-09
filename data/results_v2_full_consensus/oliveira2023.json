@@ -1,0 +1,284 @@
+{
+  "study_id": "deOliveira2024",
+  "doi": null,
+  "species": "rat",
+  "strain": "Wistar",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Male Wistar rats provided by CEDEME at the Federal University of São Paulo weighing 250-300 g at the beginning of the experiments",
+    "confidence": "medium"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 28,
+    "n_female": null,
+    "evidence": "Male Wistar rats were used in this study",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [],
+      "doses_raw": "10.0 ug/0.3 uL",
+      "vehicle": "DMSO",
+      "route": "other",
+      "schedule": "acute",
+      "evidence": "2,5-dimethoxy-4-iodoamphetamine (DOI) (10.0 ug/0.3 uL); DOI was dissolved in 10% DMSO solution and 0.9% saline solution. DOI was microinjected into IC",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Upon arrival, the rats remained undisturbed for one week, for acclimatization in the animal vivarium.",
+      "confidence": "medium"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "They were housed in groups of four in standard plastic cages",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "under a 12:12 dark/light cycle (lights on at 07:00 am)... The experiments were conducted during the light phase of the light/dark cycle",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "standard plastic cages (45 cm × 35 cm x 15 cm) with wood chip bedding",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Prepulse Inhibition (PPI) of Acoustic Startle Reflex",
+      "assay_description": "Acoustic startle/PPI in a wire-mesh cage (16.5 × 5.1 × 7.6 cm) inside a sound-attenuated chamber. 5 min acclimation followed by 64 trials (pulse alone 120 dB, prepulse alone 75/80/85 dB, prepulse+pulse, no-stimulus); total session 22 min. Baseline session day before drug test; test session after intracerebral microinjections of DOI in IC and/or bicuculline in PPTg.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "other",
+          "evidence": "DOI was microinjected into IC and bicuculline into PTTg (intracerebral microinjection via guide cannulas)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Five days after surgery... the animals were tested in a brief baseline startle/PPI session... The purpose of the preexposure was to familiarize rats to the chambers, testing procedure",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "The equipment consisted of a wire-mesh cage (16.5 × 5.1 × 7.6 cm), which was connected to a stabilimeter; animal moved within the cage",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "food and water given were ad libitum for the extent of the study; no food in startle chamber during 22-min recording",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "food and water given were ad libitum for the extent of the study; no water in startle chamber during 22-min recording",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Immediately after that procedure [microinjection], they were submitted to the PPI test.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 28,
+        "n_male": 28,
+        "n_female": null,
+        "n_per_group_min": 7,
+        "evidence": "Four groups of rats were used: vehicle/saline (n = 7); DOI/saline (n = 7); vehicle/bicuculline (n = 7); and DOI/bicuculline (n = 7).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Microinjection of DOI into the IC reduced %PPI at 75 dB and 85 dB prepulse intensities compared with vehicle controls. Simultaneous microinjection of bicuculline into the PPTg prevented the DOI-induced PPI deficit. Startle amplitude was unchanged across groups.",
+        "statistics": "Three-way ANOVA: IC drug F(1,36)=9.640, P=0.0037; PPTg drug F(1,36)=17.28, P=0.0002; IC×PPTg interaction F(1,36)=8.735, P=0.0055; prepulse intensity F(2,36)=10.29, P=0.0003; DOI/bicuculline vs DOI/saline at 85 dB P<0.014.",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "PPI deficits was observed in the intensity of 75 dB by rats treated with DOI/saline compared to vehicle/saline and vehicle/bicuculline groups (P < 0.05)... DOI/bicuculline group showed an increase of PPI compared to DOI/saline group (P < 0.014)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "The amount of PPI was calculated as a percentage score... Startle magnitude was calculated as the mean startle response to all pulse-alone trials",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Startle magnitude was calculated as the mean startle response to all pulse-alone trials during the PPI test session.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural sequences or transitions reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "PPI/startle is not an ethological behaviour",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Each rat was tested alone in the startle chamber",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "PPI does not require learning or memory",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "signals were amplified, digitised and analysed by the software of the startle measurement system (Insight Equipment) — pressure/stabilimeter, not behavioural classifier",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVAs only; no PCA/clustering reported",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "commercial startle chambers... wire-mesh cage inside a ventilated, sound-attenuated chamber",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "wire-mesh cage with no enclosed refuge",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "wire-mesh cage; no bedding mentioned",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent in startle chamber",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent in startle chamber",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single wire-mesh cage compartment",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "The startle reaction of the rat within the wire-mesh cage — single animal",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in startle chamber during recording",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Five days after surgery... the animals were tested in a brief baseline startle/PPI session... The day after the baseline startle/PPI session, drug testing took place",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "The total duration of the session was 22 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "baseline startle/PPI session... The day after the baseline startle/PPI session, drug testing took place",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Each animal's average response across the trials was used to determine groups matched with equivalent mean startle magnitude and percent PPI for the pharmacological studies.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No recording ≥24 h after drug administration",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session was 22 min, well below 6 h",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    }
+  ],
+  "judge_notes": [
+    "All three candidates identified a single PPI assay; merged into one entry.",
+    "D1/D3: baseline PPI session and drug test session are on separate days with data reported/used (matched groups), so scored as Multiple discrete sessions and 2-7 recording days, following glm candidate; gptoss and qwen missed this.",
+    "B1: PPI% and startle magnitude reported = 2 measures, score 1 (2-3 bin).",
+    "setup_restrain: wire-mesh cage with stabilimeter allows free movement; not body-restrained — scored 'no' (gptoss/qwen interpretation correct over glm).",
+    "Dosing: Bicuculline is a GABA-A antagonist, not a psychedelic, so excluded from dosing list per rubric (only psychedelic compound DOI listed).",
+    "Route: intracerebral microinjection into IC — not one of standard routes, scored 'other'.",
+    "DOI is psychedelic dosed intracerebrally; time_to_assay = 0 min (immediately after microinjection)."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 5.45,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 5.45
+  },
+  "low_confidence_count": 1,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 49550,
+    "output_tokens": 4200,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

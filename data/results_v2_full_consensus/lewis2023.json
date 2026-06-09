@@ -1,0 +1,905 @@
+{
+  "study_id": "Lewis2023",
+  "doi": "10.1016/j.celrep.2023.112203",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 42,
+    "age_max_days": 56,
+    "evidence": "Male C57BL/6J mice (6-8 weeks old) from Jackson Labs ... adult male and female C57BL/6 mice (7-8 weeks old)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "adult male and female C57BL/6 mice (7-8 weeks old) were obtained from Jackson Laboratories",
+    "confidence": "high"
+  },
+  "psychedelic": "2-Br-LSD, LSD, DOI",
+  "dosing": [
+    {
+      "compound": "2-Br-LSD",
+      "doses_mg_per_kg": [
+        0.1,
+        0.3,
+        1.0,
+        3.0,
+        10.0
+      ],
+      "doses_raw": "0.1, 0.3, 1, 3, or 10 mg/kg i.p.",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "multiple",
+      "evidence": "2-Br-LSD was tested in male C57BL/6J mice over a 100-fold range of doses (0.1-10 mg/kg i.p.); also chronic 7-day repeated dosing and CVS multi-dose regimens",
+      "confidence": "high"
+    },
+    {
+      "compound": "LSD",
+      "doses_mg_per_kg": [
+        0.1
+      ],
+      "doses_raw": "0.1 mg/kg i.p.",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Administration of 0.1 mg/kg LSD, by contrast, produced a significant increase in HTR counts",
+      "confidence": "high"
+    },
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        1.0,
+        10.0
+      ],
+      "doses_raw": "1 mg/kg DOI (challenge); 10 mg/kg/day for 7 days",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "multiple",
+      "evidence": "all of the mice were injected with DOI (1 mg/kg); repeated treatment with DOI (10 mg/kg/day) once daily for 7 consecutive days",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "No explicit pre-test handling protocol described",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Mice were housed up to four per cage ... Mice were housed in groups of four",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "yes",
+      "evidence": "The mice were housed on a reversed light-dark cycle (lights on at 1900 h, off at 0700 h)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Home-cage enrichment not described",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head-Twitch Response",
+      "assay_description": "Mice placed in a 12-cm diameter glass cylinder surrounded by a magnetometer coil; head twitches detected via head-mounted neodymium magnet and identified using AI; sessions of 30-240 min depending on experiment.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "2-Br-LSD (0.1-10 mg/kg i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "mice were allowed to habituate to the room for at least 1 h prior to testing (room habituation only, no apparatus exposure)",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "mice were placed in a 12-cm diameter glass cylinder ... behavior was recorded continuously",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Glass cylinder apparatus - no food in apparatus during test",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Glass cylinder apparatus - no water in apparatus during test",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Immediately after drug treatment, mice were placed in a 12-cm diameter glass cylinder",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 36,
+        "n_male": 36,
+        "n_female": null,
+        "n_per_group_min": 5,
+        "evidence": "6 groups of mice (n = 5-6/group, 36 total)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "2-Br-LSD (0.1-10 mg/kg) did not induce head twitches in male mice, whereas LSD (0.1 mg/kg) produced a robust increase. Pre-treatment with 2-Br-LSD dose-dependently blocked DOI-induced HTR (76% attenuation at 3 mg/kg), and repeated 7-day 2-Br-LSD did not induce tolerance to a subsequent DOI challenge.",
+        "statistics": "F(5,25)=1.91, p=0.1282 (2-Br-LSD alone); t(9)=8.35, p<0.001 (LSD vs vehicle); F(4,26)=17.96, p<0.0001 (DOI blockade); F(47,658)=12.45, p<0.0001 (drug × time)",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "2-Br-LSD ... did not induce the HTR (F 5,25 = 1.91, p = 0.1282). ... 2-Br-LSD attenuated the response to DOI in a dose-dependent manner (F 4,26 = 17.96, p < 0.0001).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "HTR counts were analyzed",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Data are presented as group means ± SEM during consecutive 5-min time blocks",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No behavioural sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is explicitly excluded from ethological measures per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice tested alone in cylinder",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head twitches were identified using artificial intelligence (custom AI, not a listed pose-estimation/syllable tool such as DLC/SLEAP/MoSeq/B-SOiD)",
+          "confidence": "medium"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate HTR counts analyzed by ANOVA",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "12-cm diameter glass cylinder",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open glass cylinder, no refuge",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Glass cylinder, no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment in cylinder",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single cylindrical compartment",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Single mouse per cylinder",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "HTR activity recorded continuously per session (60 min max in single experiment)",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min-6 h",
+          "evidence": "HTR activity was assessed for 240 minutes (4 h) in one experiment",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Repeated tolerance experiment: mice received 7 daily injections and then HTR challenge 24 h later; baseline pre-challenge data acquired across the 7-day regimen is not separately recorded, but the tolerance arm constitutes a separate test day plus chronic dosing recordings",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline HTR recording reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "24 h after the final injection, all of the mice were injected with DOI (1 mg/kg) and then HTR activity was assessed",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Longest session 240 min, <6 h",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    },
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "Mice placed in a 45 × 30 cm rectangular transparent arena for 10 minutes; total distance traveled and time in center (7 cm from walls) quantified using DeepLabCut pose-estimation tracking.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "treated with a single injection of 2-Br-LSD ... i.p.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No apparatus habituation explicitly described",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice were allowed to explore the arena for 10 minutes",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Open field arena - no food in apparatus",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Open field arena - no water in apparatus",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "Mice were tested in the open field 24 h after drug treatment",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 87,
+        "n_male": 43,
+        "n_female": 44,
+        "n_per_group_min": 10,
+        "evidence": "Female and male mice (n = 10-11/group/sex); chronic stress cohort n = 12/group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute 2-Br-LSD did not change total distance traveled; female mice showed increased time in the center at 1 and 3 mg/kg (anxiolytic-like effect), while males showed a non-significant trend. In the CVS cohort, repeated 2-Br-LSD (4 × 1 mg/kg) restored CVS-reduced center time without affecting locomotion, and this effect persisted 28 days later.",
+        "statistics": "Females locomotion: F(3.00,29.02)=0.1320, p=0.9403; Females center: F(3,40)=7.431, p=0.0005; Males locomotion: F(3,39)=1.824, p=0.1587; Males center: F(3,39)=2.005, p=0.1291; CVS center: F(3,43)=4.649, p=0.0067",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "yes",
+        "time_dependent": "no",
+        "evidence": "female mice showed increased exploration of the arena center after the 1 and 3 mg/kg treatments (1-way ANOVA: F 3,40 = 7.431, p = 0.0005)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Variables quantified included total distance traveled and time in the center of the arena",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total distance and total center time across 10-min session reported",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Distance and zone time are spatial measures",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "black cardboard barriers preventing mice from seeing conspecifics during testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "OFT videos were processed using DeepLabCut software ... ResNet50-based model",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVAs on each measure",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "rectangular transparent arenas (45 cm length, 30 cm width)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open arena, no refuge",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Transparent arena floor, no bedding mentioned",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single rectangular arena",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "barriers preventing mice from seeing conspecifics",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in arena",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "In the CVS cohort, OFT was performed on treatment day and again 28 days later",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Mice were allowed to explore the arena for 10 minutes",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "A similar series of tests were performed 4 weeks later (CVS cohort: 2 OFT recording days)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline OFT recorded",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "tested in the open field 24 h after drug treatment; CVS cohort retested 28 days after last treatment",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "10-min session",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Forced Swim Test",
+      "assay_description": "Mice placed in a 4-L cylindrical glass container with 3 L water at 25 °C for 6 min; immobility time during the last 4 min manually scored by blinded experimenter.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "treated with a single injection of 2-Br-LSD ... i.p.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No FST habituation described",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "FST cylinder - per rubric definition the FST cylinder counts as restraint",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "FST cylinder - no food accessible",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "FST cylinder filled with water, no drinking water available",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1500,
+          "evidence": "Mice were tested in the open field 24 h after drug treatment, followed by assessment in the FST 1 h later",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 87,
+        "n_male": 43,
+        "n_female": 44,
+        "n_per_group_min": 10,
+        "evidence": "Female and male mice (n = 10-11/group/sex); n = 11-12/group in Vol antagonist cohort",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute 2-Br-LSD decreased immobility 25 h post-injection; significant in females at 1 mg/kg and in males at all three doses (0.3, 1, 3 mg/kg). The effect was blocked by pre-treatment with the 5-HT2A antagonist volinanserin (0.125 mg/kg) in both sexes.",
+        "statistics": "Females: F(3,39)=4.438, p=0.0089; Males: F(3,39)=5.739, p=0.0024; Vol × treatment interaction: females F(1,43)=5.32, p=0.026; males F(1,44)=5.441, p=0.0243",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "yes",
+        "time_dependent": "n/a",
+        "evidence": "we observed a 35.18 ± 10.03 s decrease in immobility in females at the 1 mg/kg dose ... A similar effect was observed in males at all doses tested",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "immobility time during the last 4 minutes was the sole measure",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only total immobility during last 4 min analyzed",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST immobility explicitly excluded from ethological measures per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Tested alone in cylinder",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "an experimenter blinded to treatment manually recorded immobility time",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single univariate measure",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "four-liter cylindrical glass container",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open water cylinder",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Water-filled cylinder, no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single cylinder",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Single mouse per cylinder",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No accessible food/water",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "filmed using a digital camera for 6 minutes",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "6 minutes",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single FST session per mouse",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug FST baseline",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "FST 25 h after drug injection (≥24 h post-acute)",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "6-min session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Splash Test",
+      "assay_description": "Mice placed in a new cage similar to home cage for 10 min; 500 µL of 30% sucrose solution applied to back; self-grooming time scored by blinded experimenter from video.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Mice were injected every 48 h ... 2-Br-LSD (i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "mice were placed in a new cage similar to their home cage for 10 min (no prior habituation reported)",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice freely moving in cage; sucrose applied to back",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in test cage",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water bottle in test cage",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 120,
+          "evidence": "Behavioral testing began 2 h following the final injection",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 44,
+        "n_male": null,
+        "n_female": 44,
+        "n_per_group_min": 10,
+        "evidence": "n = 10-12/group, female mice only",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Chronic variable stress reduced self-grooming time in the splash test; both 2-Br-LSD treatment regimens (1 × 3 mg/kg and 4 × 1 mg/kg) produced grooming levels intermediate between naive-saline and CVS-saline, indicating partial reversal. The effect washed out by 28 days post-treatment.",
+        "statistics": "1-way ANOVA: F(3,40)=3.016, p=0.0410",
+        "direction": "increase",
+        "dose_dependent": "not_reported",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "CVS also reduced the time spent self-grooming in the splash test (F 3,40 = 3.016, p = 0.0410) ... Female mice in the CVS-1×-2-Br-LSD and CVS-4×-2-Br-LSD groups had grooming levels intermediate between the naive-saline and CVS-saline groups",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "self-grooming time was scored",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total grooming over 10 min reported",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No grooming syntax/bout analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "self-grooming is a natural ethological behaviour",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Tested alone",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "self-grooming time was scored ... by an experimenter blind to the treatment",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVA",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "placed in a new cage similar to their home cage",
+          "confidence": "medium"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No refuge in test cage",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bedding in test cage not explicitly mentioned",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material reported",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment reported",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single cage compartment",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Single-housed mice tested alone",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water accessible during test",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "A similar series of tests were performed 4 weeks later",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "10 min recording",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Splash test on day 34 and again 28 days later",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-treatment splash baseline reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Same cohort tested 28 days after last treatment",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "10-min session",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    }
+  ],
+  "judge_notes": [
+    "Merged tolerance experiment (chronic DOI/2-Br-LSD then DOI challenge) and DOI-blockade experiments into the single HTR assay, since all use the same apparatus and outcome (head twitches in glass cylinder).",
+    "D2 for HTR set to score 2 (61 min-6 h) because one HTR experiment recorded continuously for 240 min (4 h) - candidates missed this.",
+    "D5 for HTR set to Yes because the tolerance experiment recorded HTR 24 h after the last of 7 daily injections.",
+    "OFT D1/D3/D5 reflect that the chronic-stress cohort underwent OFT both on treatment day and again 28 days later (2 recording days, post-acute follow-up).",
+    "Splash test D1/D3/D5 reflect that the chronic-stress cohort underwent splash test on day 34 and again 28 days later.",
+    "B7 (automated classification) for HTR scored 0 because the paper used custom AI not on the score-1 list (DeepLabCut/SLEAP/MoSeq/B-SOiD/SimBA); OFT scored 1 because DeepLabCut was explicitly used.",
+    "Dropped all candidate-listed in vitro GPCR assays, pharmacokinetics, hERG, dendritogenesis, spinogenesis, and Golgi staining - these are not behavioural assays.",
+    "FST setup_restrain set to 'yes' per rubric explicit listing of FST cylinder as restraint.",
+    "Housing day_night_flipped set to 'yes' (HTR Methods explicitly state reversed cycle at UCSD); Canadian cohort had standard 12:12 but the UCSD-tested HTR animals were on reversed cycle - reported as yes with note that not all cohorts used reversed cycle."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 5.45,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 3.75
+  },
+  "low_confidence_count": 5,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 89274,
+    "output_tokens": 10460,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

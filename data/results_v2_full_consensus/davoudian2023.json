@@ -1,0 +1,98 @@
+{
+  "study_id": "Davoudian2023",
+  "doi": "10.1021/acschemneuro.2c00637",
+  "species": "mouse",
+  "strain": "cFos-GFP [B6.Cg-Tg(Fos-tTA,FosEGFP*)1Mmay/J] and C57BL/6J",
+  "age": {
+    "value": "adult",
+    "age_min_days": 42,
+    "age_max_days": 140,
+    "evidence": "Adult, 6 to 20 week old cfos GFP mice ... Adult, 8 week old C57BL/6J mice",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": 12,
+    "n_female": 12,
+    "evidence": "Mice received saline (10 mL/kg, i.p.; n = 4 males, 4 females), ketamine (10 mg/kg, i.p.; n = 4 males, 4 females), or psilocybin (1 mg/kg, i.p.; n = 4 males, 4 females).",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin (compared to ketamine)",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "1 mg/kg, i.p.",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "psilocybin (1 mg/kg, i.p.; Usona Institute)",
+      "confidence": "high"
+    },
+    {
+      "compound": "Ketamine",
+      "doses_mg_per_kg": [
+        10.0
+      ],
+      "doses_raw": "10 mg/kg, i.p.",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "ketamine (10 mg/kg, i.p.; ketamine HCl, # 055853, Henry Schein)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [],
+  "judge_notes": [
+    "Study contains no behavioural assays — it is a whole-brain c-Fos mapping study using serial two-photon and light sheet microscopy. Per rubric, immunohistochemistry / histological endpoints (c-Fos staining) are explicitly listed as NOT assays and should be skipped.",
+    "All three candidates correctly returned an empty assays array.",
+    "Consolidated dosing to include both psilocybin and ketamine (glm omitted ketamine).",
+    "n_male/n_female set to 12 each (4 per condition × 3 conditions), reconciling candidate disagreements."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0,
+    "environmental_complexity_max": 0,
+    "recording_duration_max": 0,
+    "behavioural_complexity_mean": 0,
+    "environmental_complexity_mean": 0,
+    "recording_duration_mean": 0
+  },
+  "low_confidence_count": 4,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 37348,
+    "output_tokens": 1087,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

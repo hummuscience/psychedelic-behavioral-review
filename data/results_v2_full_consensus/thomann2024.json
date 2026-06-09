@@ -1,0 +1,84 @@
+{
+  "study_id": "Thomann2024",
+  "doi": "10.3389/fphar.2024.1391689",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "C57BL/6J adult male mice (Janvier, Le Genest-Saint-Isle, France)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 10,
+    "n_female": null,
+    "evidence": "C57BL/6J adult male mice... A total of 10 mice were dosed orally with either 3 mg/kg bodyweight psilocybin (n = 5) or saline solution (n = 5)",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        3.0
+      ],
+      "doses_raw": "3 mg/kg bodyweight psilocybin",
+      "vehicle": "saline",
+      "route": "p.o.",
+      "schedule": "acute",
+      "evidence": "A total of 10 mice were dosed orally with either 3 mg/kg bodyweight psilocybin (n = 5) or saline solution (n = 5).",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "no handling protocol described",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "maintained in littermate pairs in standard cages",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "yes",
+      "evidence": "The colony room was on a reversed light-dark cycle (dark phase 07:00 to 19:00)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "yes",
+      "evidence": "standard cages (containing sawdust, a sleeping chamber, tissue paper, and a wood stick)",
+      "confidence": "high"
+    }
+  },
+  "assays": [],
+  "judge_notes": [
+    "This is a pharmacokinetics/metabolism study. Mice were dosed with psilocybin and blood was sampled at multiple timepoints for plasma analysis; no behavioural assays were conducted. Both candidates correctly returned an empty assays array.",
+    "All in vitro/ex vivo work (HLM, recombinant CYPs, MAO, UGT, 5-HT receptor binding/activation) is excluded per rubric.",
+    "Human plasma sample reanalysis is also non-behavioural and excluded."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0,
+    "environmental_complexity_max": 0,
+    "recording_duration_max": 0,
+    "behavioural_complexity_mean": 0,
+    "environmental_complexity_mean": 0,
+    "recording_duration_mean": 0
+  },
+  "low_confidence_count": 1,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm"
+  ],
+  "judge_usage": {
+    "input_tokens": 45306,
+    "output_tokens": 918,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

@@ -1,0 +1,682 @@
+{
+  "study_id": "Maltby2026",
+  "doi": "10.1177/02698811251395386",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 56,
+    "age_max_days": 70,
+    "evidence": "8- to 10-week-old male C57BL6/J mice",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "we restricted psilocybin testing to male mice",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        0.1,
+        0.32,
+        1.0,
+        1.5,
+        3.0,
+        3.2,
+        10.0
+      ],
+      "doses_raw": "0.1, 0.32, 1, 3.2, 10 mg/kg (HTR/RO); 1.5 or 3 mg/kg (EZM/FST)",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "Unless otherwise stated, all dosing was subcutaneous (SC) using 0.9% saline as the vehicle... psilocybin (0.1, 0.32, 1, 3.2, and 10 mg/kg, SC)... psilocybin (1.5 or 3 mg/kg, SC)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "Animals were acclimated to the facility environment and handled by experimenters prior to starting experiments.",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Mice were housed up to five per cage... The animals were group-housed",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "standard 12/12 hours light/dark cycle; lights on at 7 am",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head Twitch Response (HTR) and locomotor activity",
+      "assay_description": "Mice placed in 12\"x12\"x12\" behavioural chambers; 20-min video at 240 fps; HTRs detected/classified and locomotor activity tracked via custom DeepLabCut algorithm. Total HTR, peak HTR rate, and total distance traveled were measured.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "psilocybin (0.1, 0.32, 1, 3.2, and 10 mg/kg, SC) immediately prior to testing",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice were placed in behavioral chambers (12\" x 12\" x 12\") and behavior was recorded",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard behavioural chamber; no food in apparatus during 20-min test",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard behavioural chamber; no water in apparatus during 20-min test",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "dosed with vehicle or psilocybin... immediately prior to testing",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 72,
+        "n_male": 72,
+        "n_female": null,
+        "n_per_group_min": 12,
+        "evidence": "n = 12 mice/group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin (0.1-10 mg/kg SC) produced an inverted-U dose-response in total HTR over 20 min with peak at ~1 mg/kg, and a higher peak rate at 3.2 mg/kg. Higher doses (3.2-10 mg/kg) significantly suppressed locomotor activity. Peak HTR rate correlated more strongly with 5-HT2A receptor occupancy than total HTR count.",
+        "statistics": "Total HTR: F(5,66)=23.00, p<0.0001; Total distance: F(5,66)=20.35, p<0.0001; HTR time course: F(3.914,258.3)=45.22, p<0.0001; Locomotor time course interaction F(45,594)=7.611, p<0.0001; R2=0.5220 (peak rate vs RO), R2=0.1434 (total HTR vs RO).",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Psilocybin (0.1-10 mg/kg, SC) caused a dose-dependent increase in the total number of HTRs with the typical 'inverted-U'-shaped dose-response curve with a maximum response at ~1 mg/kg",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Total HTR count, peak HTR rate, total distance traveled",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "HTR data were analyzed in 2-minute bins",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence/transition analysis reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is explicitly listed as not ethological",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing; no social construct",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Reflexive response; no learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "data were processed using a custom algorithm in DeepLabCut to detect and classify the HTR",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate ANOVA and correlations reported",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "behavioral chambers (12\" x 12\" x 12\")",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open chamber with no refuge",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding reported in chamber",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in chamber",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects reported",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single open chamber",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice tested individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in testing chamber",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "behavior was recorded for 20 minutes",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "recorded for 20 minutes",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single session immediately after dosing",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline recording reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recording done immediately at dosing",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single 20-min session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Elevated Zero Maze (EZM)",
+      "assay_description": "Annular track 5 cm wide, 60 cm inner diameter, 60 cm elevated, with two open and two closed quadrants. 6-min exploration test 20 h post-dose; open-areas time ratio scored manually by blinded observer.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "psilocybin (1.5 or 3 mg/kg, SC) or vehicle",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Apparatus habituation not described",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "The mice were allowed to explore the EZM for 6 minutes",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard short maze test; no food in apparatus",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard short maze test; no water in apparatus",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1200,
+          "evidence": "Mice were tested in the Elevated Zero Maze (EZM) 20 hours post-administration",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 23,
+        "n_male": 23,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "vehicle n=10, 1.5 mg/kg n=7, 3 mg/kg n=6",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin at 1.5 mg/kg significantly increased the open-areas time ratio (22.83±3.08% vs 13.82±2.03% vehicle), while 3 mg/kg had no effect, suggesting dose-specific anxiolytic-like activity.",
+        "statistics": "1.5 mg/kg vs vehicle p<0.05; 3 mg/kg vs vehicle p=0.73 (one-way ANOVA + Fisher's LSD)",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "psilocybin-treated animals displayed a significantly increased open arms time ratio at the dose of 1.5 mg/kg, SC (22.83 ± 3.08%, n = 7, p < 0.05) but not at 3 mg/kg",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Open areas time ratio (derived from time in open vs closed) = 1 preference measure",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single ratio reported, no within-session time-binning",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition or sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Zone preference time is spatial, not ethological",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Tested individually",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate avoidance-based anxiety assay",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "scored by an experimenter unaware of the treatment",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVA only",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Elevated Zero Maze",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Closed quadrants are part of apparatus, not a shelter (per rubric)",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Elevated maze; definitionally no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in maze",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "EZM arms are open-ended extensions, not distinct compartments per rubric",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each mouse tested alone",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in maze",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "explore the EZM for 6 minutes",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "6-minute EZM session",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test day 20 h post-dose",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug EZM trial",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Tested at 20 h post-dose, <24 h",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "6-minute session",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "Forced Swim Test (FST)",
+      "assay_description": "Individual glass cylinders (18.5 cm tall, 12 cm diameter) with 25°C water at 12 cm depth; 6-min session 24 h post-dose; last 4 min manually scored for immobility by blinded observers.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "psilocybin (1.5 or 3 mg/kg, SC)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No apparatus habituation described",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "FST cylinder (per rubric, FST is a restraint setting); mice in individual glass cylinders filled with water",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food accessible in FST cylinder during recording",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No drinking water accessible during FST",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "FST sessions were conducted 24 hours post-administration",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 25,
+        "n_male": 25,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "vehicle n=11, 1.5 mg/kg n=8, 3 mg/kg n=6",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin at 3 mg/kg significantly reduced immobility time (95.68±9.60 s vs 158.2±8.23 s vehicle), while 1.5 mg/kg had no effect, indicating dose-specific antidepressant-like activity 24 h post-dose.",
+        "statistics": "3 mg/kg vs vehicle p<0.001; 1.5 mg/kg vs vehicle p=0.26 (one-way ANOVA + Fisher's LSD)",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "immobility time was significantly reduced at 3 mg/kg, SC psilocybin (95.68 ± 9.60 seconds, n = 6, p < 0.001), but not at 1.5 mg/kg",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Immobility time was the only measure reported",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total immobility over last 4 min, no within-session time binning",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transitional analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST immobility excluded as ethological per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Tested individually in cylinders",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "manually scored by observers unaware of the treatment",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVA only",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "individual glass cylinders",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No refuge in cylinder",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Water-filled cylinder; no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single cylinder",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individual glass cylinders",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or drinking water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "6-minute FST session",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "6 minutes",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test day 24 h post-dose",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug FST trial",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "24 hours post-administration",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "6-minute session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Three behavioural assays included: HTR (with locomotor activity tracked in same session — treated as one assay with multiple measures), EZM, and FST. Receptor occupancy ([3H]MDL-100,907 displacement) and Western blot/biomarker measurements are non-behavioural and excluded.",
+    "B1 for HTR scored 1 (2-3 measures: total HTR, peak HTR rate, total distance) — total HTR and peak HTR rate are different derived measures of the same response but reported and analyzed separately; locomotion is a distinct variable.",
+    "E6 for EZM scored 0 per rubric (EZM arms are not distinct enclosed compartments), overriding gptoss candidate.",
+    "setup_restrain for FST scored 'yes' per rubric (FST cylinder explicitly listed as restraint).",
+    "EZM D5 followup scored 0 because testing was at 20 h (<24 h); FST D5 scored 1 at 24 h."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 0.91
+  },
+  "low_confidence_count": 4,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 66161,
+    "output_tokens": 7700,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

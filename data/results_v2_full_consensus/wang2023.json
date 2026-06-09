@@ -1,0 +1,483 @@
+{
+  "study_id": "Wang2023",
+  "doi": "10.1111/cns.14054",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 56,
+    "age_max_days": 56,
+    "evidence": "204 8-week-old C57BL/6J male mice",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 204,
+    "n_female": 0,
+    "evidence": "In total, 204 8-week-old C57BL/6J male mice were purchased from Beijing Vital River Laboratory Animal Technology.",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocin",
+  "dosing": [
+    {
+      "compound": "Psilocin",
+      "doses_mg_per_kg": [
+        5.0,
+        1.0,
+        0.25
+      ],
+      "doses_raw": "5 mg/kg, 1 mg/kg, or 0.25 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "repeated",
+      "evidence": "Psilocin (Cayman Chemical Company) were dissolved in 0.9% saline. In the acute METH administration model... the doses of psilocin were 5 mg/kg, 1 mg/kg, or 0.25 mg/kg... In the METH-induced CPP model, the dose of... psilocin... were 1 mg/kg",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Methods describe housing and adaptation but do not mention any handling protocol.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Mice were housed in four mice per cage with water and standard chow available ad libitum",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "12/12 h light/dark cycle (direction/timing not specified)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Methods describe standard housing but do not mention cage enrichment.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Open Field Test (locomotor activity)",
+      "assay_description": "Mouse activity monitored in an open field for 1 h following acute drug administration; used to test effects of psilocin alone, psilocin+METH, and TFP-2HCl/SCH772984+METH on locomotion.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered prior to i.p injection of METH",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No pre-test apparatus habituation described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "mouse activity was monitored in an open-field for 1 h",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "mouse activity was monitored in an open-field for 1 h (no food in apparatus)",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "mouse activity was monitored in an open-field for 1 h (no water in apparatus)",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "psilocin/TFP-2HCl/SCH772984 administered prior to i.p. injection of METH; standard pre-treatment ~30 min before testing as used in CPP",
+          "confidence": "medium"
+        }
+      },
+      "sample_size": {
+        "n_total": 85,
+        "n_male": 85,
+        "n_female": 0,
+        "n_per_group_min": 6,
+        "evidence": "24 mice were divided into four groups... 25 mice were divided into four groups... 36 mice were divided into six groups... n = 6-7",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute METH (2 mg/kg) significantly increased locomotor activity. Psilocin at 1 mg/kg inhibited METH-induced hyperactivity, whereas 0.25 mg/kg had no effect; psilocin alone at 5 mg/kg increased activity but 1 and 0.25 mg/kg did not. The D2R inhibitor TFP-2HCl (2 mg/kg) and ERK inhibitor SCH772984 (10 mg/kg) also blocked METH-induced hyperactivity.",
+        "statistics": "Psilocin alone F(3,21)=5.300, p=0.007; psilocin+METH F(3,21)=15.32, p<0.001; TFP/SCH+METH F(5,30)=90.06, p<0.001",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "5 mg/kg psilocin group exhibited increased activity compared to the control group (p < 0.05)... 1 mg/kg psilocin significantly inhibited METH-induced hyperactivity in mice (p<0.01)... 2 mg/kg TFP-2HCl and 10 mg/kg SCH772984 significantly inhibited METH-induced hyperactivity",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "mouse activity was monitored (single locomotor measure)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total activity over 1 h reported as a single value per animal",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequential/transitional analysis reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only locomotor activity measured",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animals tested individually in open field",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open field locomotor measurement, no learning required",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No behavioural classifier reported",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVAs only",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "open-field",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open field has no shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent in OFT",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in OFT",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "open-field",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "mouse activity was monitored",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "monitored in an open-field for 1 h",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "monitored in an open-field for 1 h",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single acute test session",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline recording reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Acute test only",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "1 h session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Conditioned Place Preference",
+      "assay_description": "Two-compartment CPP apparatus (15×15×37 cm; black mesh vs white grid floor) with pre-test (day 1, 15 min), acquisition (days 2–9, conditioning with saline/METH ± drug; post-test day 10, 15 min), extinction (days 11–22, with periodic 15-min tests), and reinstatement test (15 min). CPP scores measured.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "injected (i.p) with METH... injected (i.p) with 1 mg/kg psilocin",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "On day1, mice were pre-tested for 15 min — pre-test serves as baseline measurement rather than dedicated habituation; no separate apparatus habituation described",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "mice was allowed to shuttle freely in the apparatus",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard CPP apparatus, no food in chamber during 15-min test",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard CPP apparatus, no water in chamber during 15-min test",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 30,
+          "evidence": "Drugs administered 30 min before METH during conditioning; CPP tested at post-test day 10, extinction tests across days 13-22, and reinstatement test",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": 0,
+        "n_per_group_min": 5,
+        "evidence": "n = 5-7 (acquisition); n = 5-10 (extinction); n given per group across figures",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "METH (1 mg/kg) produced significant CPP. Psilocin (1 mg/kg) given before METH during conditioning inhibited acquisition of CPP. Psilocin had no significant effect on extinction or METH-primed reinstatement. D2R inhibitor TFP-2HCl (2 mg/kg) and ERK inhibitor SCH772984 (10 mg/kg) also blocked CPP acquisition.",
+        "statistics": "Acquisition interaction F(3,20)=8.998, p<0.001; time F(1,20)=4.432, p=0.0481; treatment F(3,20)=13.34, p<0.001. Extinction F(9,75)=5.177, p<0.001. Reinstatement F(3,19)=18.39, p<0.001. TFP/SCH acquisition F(5,41)=3.135, p<0.05.",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "injection of the 1 mg/kg psilocin before METH significantly inhibited the increase in CPP scores of the METH group (p < 0.001)... psilocin did not impact METH extinction and relapse",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "CPP score (time in drug-paired compartment) reported",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single CPP score per test session",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequential analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only zone preference measured",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animals tested alone",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Conditioned place preference requires learned association",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No automated behavioural classification reported",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVAs only",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "CPP apparatuses each consisting of two equal compartments (15 cm × 15 cm × 37 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Two open compartments separated by baffle; no shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "metal grid floor... metal mesh floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in CPP",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in CPP",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "two equal compartments... A movable baffle was in the center",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "mice was allowed to shuttle freely in the apparatus",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in apparatus during test",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Pre-test (day 1), post-test (day 10), extinction tests (days 13-22), reinstatement test",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "pre-tested for 15 min... allowed to explore the two compartments freely for 15 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 2,
+          "value": "8-14",
+          "evidence": "Pre-test day 1, post-test day 10, extinction tests on days 13, 16, 19, 22, plus reinstatement test ≈ 7-8+ recording days",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "On day1, mice were pre-tested for 15 min",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Post-test on day 10 and extinction tests on days 13-22 are >=24 h after last drug administration",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "15-min sessions",
+          "confidence": "high"
+        },
+        "raw_total": 6
+      }
+    }
+  ],
+  "judge_notes": [
+    "Two distinct behavioural paradigms identified: open-field locomotor monitoring (collapsing all dose arms and the TFP-2HCl/SCH772984 experiments) and the CPP paradigm (collapsing acquisition, extinction, and reinstatement into one assay per rubric).",
+    "Resolved B1 disagreement: paper reports a single locomotor measure ('mouse activity') for OFT and a single CPP preference score for CPP → score 0 (1 measure) for both, not 1 (2-3).",
+    "D3 for CPP set to 8-14 (score 2) rather than 2-7: pre-test day 1, post-test day 10, plus repeated extinction tests on days 13, 16, 19, 22 (the procedure was 'repeated three times over days 14-22') and a reinstatement test — totaling ≥7 distinct recording days.",
+    "D2 for CPP set to 15-60 min (score 1): tests were explicitly 15 minutes (the lower bound), per rubric '15 to 60 minutes inclusive → score 1'.",
+    "Setup habituation for CPP scored 'no' (rather than 'yes' as one candidate suggested) because the day-1 pre-test is itself a recorded baseline trial, not a no-data habituation exposure.",
+    "Housing day_night_flipped marked not_reported with high confidence — 12:12 cycle stated without direction.",
+    "TFP-2HCl and SCH772984 are not psychedelics but are administered alongside psilocin in the same OFT/CPP paradigms; their data are folded into the same two assays."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 8.18,
+    "behavioural_complexity_mean": 0.62,
+    "environmental_complexity_mean": 0.68,
+    "recording_duration_mean": 4.77
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm"
+  ],
+  "judge_usage": {
+    "input_tokens": 45235,
+    "output_tokens": 6266,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

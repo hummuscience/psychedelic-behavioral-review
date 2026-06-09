@@ -1,0 +1,484 @@
+{
+  "study_id": "Hinchcliffe2024",
+  "doi": null,
+  "species": "rat",
+  "strain": "Lister Hooded",
+  "age": {
+    "value": "not_reported",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Age of the animals not stated in the methods.",
+    "confidence": "low"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Ten separate cohorts of male Lister Hooded rats (Envigo, UK) were used in these experiments... This study only used male rats",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        0.1,
+        0.3,
+        1.0
+      ],
+      "doses_raw": "0.1, 0.3, and 1.0 mg/kg, ip",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "psilocybin (COMP360...) (0.1, 0.3, and 1.0 mg/kg, ip)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "All animals were habituated to the holding position required for ip dosing for 5 days before the experiments.",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Animals were pair-housed in standard enriched laboratory cages",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "yes",
+      "evidence": "under a 12:12-hour reverse light-dark cycle (lights off at 08:00 hours)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "yes",
+      "evidence": "Animals were pair-housed in standard enriched laboratory cages",
+      "confidence": "high"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Affective Bias Test",
+      "assay_description": "Bowl-digging associative learning task. Rats learn two substrate–reward associations across 4 daily pairing sessions (one under control and one under affective-state/RAAD manipulation), then make choices between the two reward-paired substrates during a 30-trial choice test. Psilocybin tested in three protocols: acute (1 h pre-choice) modulation of negative bias, sustained (24 h pre-choice) modulation, and pre-pairing administration to bias new learning. Measures: % choice bias, latency to dig, trials to criterion, omissions; head-twitch and wet-dog-shake counts also recorded during psilocybin sessions.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "psilocybin (0.1, 0.3, and 1.0 mg/kg, ip)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Animals were first trained to dig in ceramic bowls containing sawdust over 5 days with increasing levels of difficulty until the final session, when they completed a novel discrimination test",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "ip injection procedures were done using a low-stress, nonrestraint method; animals moved freely in the digging arena.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "Rats were food-restricted to approximately 90% of their free-feeding weights matched to the normal growth curve",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "were provided with water ad libitum",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 60,
+          "evidence": "drugs were administered 1 hour before the choice test... tested animals in the choice test 24 hours after drug treatment... drug treatments were administered before learning (days 1 to 4)",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 11,
+        "evidence": "n = 11 to 16 per group; psilocybin groups n = 11–12",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute psilocybin (0.1, 0.3 mg/kg) attenuated a FG7142/corticosterone-induced negative affective bias 1 h post-dose. At 24 h, low doses (0.1, 0.3 mg/kg) reversed the bias to positive, while 1.0 mg/kg only ameliorated the negative bias. When given before new learning, 0.3 mg/kg psilocybin induced a positive bias (similar to venlafaxine), whereas 1.0 mg/kg induced a negative bias.",
+        "statistics": "Acute attenuation: F(3,30)=19.94, P<0.0001, η²=0.67; 24-h reversal: F(3,30)=27.16, P<0.0001, η²=0.81; new learning: F(4,44)=10.93, P<0.0001, η²=0.50; psilocybin 0.3 mg/kg vs vehicle P=0.0019.",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "Acute psilocybin or ketamine, administered before the choice test, attenuated the negative bias... Low, but not high, doses of ketamine and psilocybin reversed the valence of the negative affective bias 24 hours after RAAD treatment... Low-dose psilocybin induced a positive affective bias similar to the conventional antidepressant venlafaxine",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "Choice bias, latency to dig, trials to criterion, omissions, head-twitch responses, wet-dog shakes were recorded.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Results reported as totals/averages across 30-trial choice tests; no within-session time-course analysis.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural transitions or sequences.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Digging behaviour scored, and head-twitch/wet-dog-shake counts recorded alongside the assay (tables S5–S9). Digging is a natural exploratory/foraging behaviour.",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Task performed individually with no social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Associative learning task with memory retrieval phase.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Choices and latencies recorded manually; no pose estimation or ML behavioural classifier.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVA and t-tests; no PCA/clustering.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Affective bias test arena with two digging bowls — standard behavioural apparatus.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enclosed refuge in the arena.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sawdust is placed inside digging bowls as the task cue/substrate, not as arena floor bedding.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material present in the testing arena.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in arena beyond the two task bowls.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single arena with two bowls; no compartments or dividers.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Focal rat tested alone in the arena.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "A single 45-mg food pellet was placed in either bowl using a random schedule; food rewards accessible during the recording session.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Four pairing sessions (days 1–4) plus choice test on day 5 or 6; behavioural data recorded across multiple days.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "Animals were observed for 10 min during the pairing session or 15 min during the choice test (psilocybin observation periods).",
+          "confidence": "medium"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Each week was composed of four pairing sessions (one per day) ... followed by a choice test on the fifth or sixth day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline choice test recorded before the affective state manipulation.",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "tested animals in the choice test 24 hours after drug treatment",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sessions well below 6 hours.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    },
+    {
+      "assay_name": "Reward Learning Assay",
+      "assay_description": "Control bowl-digging task with the same structure as the affective bias test, but one substrate paired with high reward (2 pellets) and the other with low reward (1 pellet) under constant affective state. Psilocybin administered 1 h before the choice test to probe specificity of bias modulation.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "psilocybin (0.1, 0.3, and 1.0 mg/kg, ip)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Animals were first trained to dig in ceramic bowls containing sawdust over 5 days... all animals then progressed to a reward learning assay protocol",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Animals moved freely in the digging arena during the test.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "Rats were food-restricted to approximately 90% of their free-feeding weights",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "provided with water ad libitum",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 60,
+          "evidence": "administering the drug 1 hour before the choice test to check for any nonspecific and acute effects on memory",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 12,
+        "evidence": "psilocybin (0.1, 0.3, and 1.0 mg/kg; n = 12)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Low-dose psilocybin did not impair the reward-induced positive bias, demonstrating specificity of affective bias modulation; psilocybin treatment also produced characteristic head-twitch and wet-dog-shake responses during the choice test.",
+        "statistics": "Not explicitly reported for psilocybin in the reward learning assay; effects described as similar to vehicle.",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Animals treated with low-dose ketamine, psilocybin, or scopolamine expressed similar reward-induced positive biases compared to the vehicle control, confirming that the affective bias modulation by RAADs was specific",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "Choice bias, latency to dig, trials to criterion, omissions, head-twitch responses, wet-dog shakes scored.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session totals reported only.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition/sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Digging behaviour and head-twitch/wet-dog-shake counts scored.",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Associative learning of substrate–reward magnitude.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Manual scoring; SPSS/Prism analysis only.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate analyses.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Same digging arena as affective bias test.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sawdust placed within bowls as task substrate, not as arena floor bedding.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single arena with two bowls.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Tested individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Food pellets placed in bowls and consumable during the choice test.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Four pairing sessions plus a choice test, with behavioural data recorded across days.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "Animals were observed for 10 min during the pairing session or 15 min during the choice test.",
+          "confidence": "medium"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Four pairing sessions (one per day) followed by a choice test on day 5/6.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline choice test reported.",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Drug only tested 1 h before choice test; no ≥24 h post-drug recording in this assay.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sessions well below 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    }
+  ],
+  "judge_notes": [
+    "Merged candidates' separate handling of acute, sustained, new-learning, cue-reactivation, and mPFC-infusion variants into a single 'Affective Bias Test' entry, per rubric: same paradigm under different timing, route, and pharmacological manipulations = one assay.",
+    "Dropped the 'Head-twitch / wet-dog-shake scoring' entry proposed by gptoss: HTR/WDS were scored within the affective bias and reward learning sessions and are not a standalone behavioural paradigm in this paper; they are included as additional measures within the existing assays (B1).",
+    "Only psilocybin is scored as the psychedelic compound per rubric scope; ketamine and scopolamine assays are not separately listed as psychedelic-administered assays, though they share the same behavioural paradigm and are covered by the same assay entries when administered.",
+    "B4 scored 1 because digging is a natural exploratory behaviour and HTR/WDS were quantified during the session — though HTR alone would not count, digging behaviour and latency to dig are ethological measures of foraging.",
+    "E3 scored 0: sawdust is the task cue inside the digging bowls, not floor bedding/substrate of the testing arena (interpreted conservatively; candidates split on this).",
+    "D2 scored 1 (15–60 min): the explicit 15-min observation window during the choice test plus 30 trials of up to 30 s each places session duration at ~15 min.",
+    "D4 scored 0: vehicle conditions are within-subject controls but no pre-drug baseline choice test data are reported for this assay."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 5.0,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 5.45,
+    "behavioural_complexity_mean": 5.0,
+    "environmental_complexity_mean": 1.36,
+    "recording_duration_mean": 4.77
+  },
+  "low_confidence_count": 0,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 59649,
+    "output_tokens": 6974,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

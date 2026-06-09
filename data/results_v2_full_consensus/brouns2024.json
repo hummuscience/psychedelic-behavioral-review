@@ -1,0 +1,285 @@
+{
+  "study_id": "Brouns2024",
+  "doi": "10.1101/2024.12.17.629035",
+  "species": "mouse",
+  "strain": "C57BL/6",
+  "age": {
+    "value": "adult",
+    "age_min_days": 180,
+    "age_max_days": 180,
+    "evidence": "27 adult male and female C57BL/6 mice with a mean age of ~6 months",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "27 adult male and female C57BL/6 mice",
+    "confidence": "high"
+  },
+  "psychedelic": "25CN-NBOH",
+  "dosing": [
+    {
+      "compound": "25CN-NBOH",
+      "doses_mg_per_kg": [
+        10.0
+      ],
+      "doses_raw": "10 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Animals were injected intraperitoneally with either 25CN-NBOH (N=12 mice) a 5-HT 2A receptor-preferring agonist, at a dose of 10 mg/kg, or saline to function as a control (N=14 mice).",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "yes",
+      "evidence": "The animals' vivarium ran on a reversed light cycle with lights off (dark phase) from 7:00 AM to 7:00 PM.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "FED3 Sequential Fixed-Ratio 2 (SEQFR2) Reversal Learning Task",
+      "assay_description": "Mice performed a sequential 2-poke operant task in a modified home cage equipped with the FED3 device. Forward phase (6 days, 4 h/day): left-then-right poke within 30 s yields a 10 mg pellet. Reversal phase (6 days, 4 h/day): right-then-left required. Measures: poke efficiency, percent correct trials, cumulative pellets dispensed. Reversal measured 15-21 days post a single i.p. injection of 25CN-NBOH (10 mg/kg) or saline.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Animals were injected intraperitoneally with either 25CN-NBOH... at a dose of 10 mg/kg",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "For 2 days the animals underwent the habituation phase of the protocol, in which the animals were introduced to the FED3 and experimentation cages.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "The cages used with the FED3 devices were modified standard mouse housing cages... to allow the animal to interact with the reward well and nose poke holes",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "the animals were left to rest for 24 hours in their home cage before beginning an 85% free feeding weight schedule for 2 days",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "time_to_assay": {
+          "value": "long_term_over7d",
+          "value_minutes": 21600,
+          "evidence": "during the reversal phase, measured 15-21 days after the single injection",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 26,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 12,
+        "evidence": "25CN-NBOH (N=12 mice)... or saline to function as a control (N=14 mice)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "A single 10 mg/kg i.p. dose of 25CN-NBOH significantly enhanced reversal learning performance measured 15-21 days post-injection in both male and female mice. NBOH-treated mice showed higher poke efficiency, percent correct trials, and cumulative pellets during the reversal phase. During the forward phase, only cumulative pellets were increased (indicating greater task engagement) while poke efficiency and percent correct were unaffected.",
+        "statistics": "Forward poke efficiency: F(1,557)=.1721, P=.6784; Forward % correct: F(1,431)=.7771, P=.3785; Forward pellets: F(1,620)=7.513, P=0.0063; Reversal poke efficiency: F(1,528)=21.91, P<.0001; Reversal % correct: F(1,401)=6.629, P=.0104; Reversal pellets: F(1,620)=20.74, P<.0001; Female reversal: F(1,319)=16, P<.0001; Male reversal: F(1,205)=8.3, P=.0044",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "no",
+        "time_dependent": "n/a",
+        "evidence": "during the reversal phase, measured 15-21 days after the single injection, psychedelic treatment resulted in significantly increased learning ability. This is indicated by the increased the efficiency of nose pokes (F(1,528)=21.91, P<.0001), the percent correct trials initiated (F(1,401)=6.629, P=.0104), and again by the higher total number of pellets obtained (F(1,620)=20.74, P<.0001).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "poke efficiency... cumulative pellets dispensed... proportion of correct trials initiated ('percent correct')",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Each hour-long bin contains 4 points for each hour of the 4-hour per day sessions",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural sequences/transitions/microstructure reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Task measures operant nose-poke performance, not natural ethological behaviours",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice tested alone; no social component",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "reversal of the experimental protocol is indicative of flexible learning",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FED3 event logging (nose-poke detection), not pose estimation or ML behavioural classification",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No PCA, UMAP, or multivariate analysis reported",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "The cages used with the FED3 devices were modified standard mouse housing cages... Data were collected within the animals' vivarium",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enclosed refuge described in the testing cage",
+          "confidence": "low"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bedding presence not explicitly stated for the testing cage",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material mentioned in the testing apparatus",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects mentioned in the testing cage",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "modified standard mouse housing cages with a single compartment",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "After each 4-hour session, the animals were returned to their home cages until the next day",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "FED3 device... deliver a 10mg reward pellet",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "sessions lasted for 4 hours each over the course of 6 days... reversal phase lasted for 6 days",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "these sessions lasted for 4 hours each",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 2,
+          "value": "8-14",
+          "evidence": "forward phase 6 days + reversal phase 6 days = 12 recording days (training days also constitute additional recording sessions for this assay)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug recording of the SEQFR2 task; drug administered before training began",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "reversal phase, measured 15-21 days after the single injection",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sessions were 4 hours, not ≥6 h",
+          "confidence": "high"
+        },
+        "raw_total": 6
+      }
+    }
+  ],
+  "judge_notes": [
+    "All three candidates identified a single behavioural assay (FED3 SEQFR2 reversal learning); consolidated as one assay.",
+    "B1 set to 2-3 (score 1): three reported measures (poke efficiency, percent correct, cumulative pellets) - matches glm and gptoss; qwen's '4-6' (score 2) was an overcount.",
+    "D3 scored 8-14 (score 2): forward 6 days + reversal 6 days = 12 recording days for this assay; gptoss undercounted as 2-7.",
+    "E3 bedding scored 0 (not_reported→No with low confidence); modified standard housing cages described but bedding not explicitly mentioned during recording — defaulting to conservative 'No' with low confidence, consistent with qwen and gptoss.",
+    "food_restriction set to 'before' (85% free-feeding weight schedule prior to training); pellets are delivered during the session as the reward.",
+    "time_to_assay: the reversal phase (the primary effect-bearing recording) was 15-21 days post-dose; treated as long_term_over7d. The forward phase began ~8 days post-dose but is part of the same assay."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 2.73,
+    "recording_duration_max": 8.18,
+    "behavioural_complexity_mean": 3.75,
+    "environmental_complexity_mean": 2.73,
+    "recording_duration_mean": 8.18
+  },
+  "low_confidence_count": 7,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 39348,
+    "output_tokens": 3946,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

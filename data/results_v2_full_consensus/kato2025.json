@@ -1,0 +1,484 @@
+{
+  "study_id": "Kato2025",
+  "doi": "10.1002/npr2.70075",
+  "species": "mouse",
+  "strain": "ICR",
+  "age": {
+    "value": "not_reported",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Male ICR mice (20-25 g) were obtained from Japan SLC Inc.",
+    "confidence": "low"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male ICR mice (20-25 g) were obtained from Japan SLC Inc.",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        0.3,
+        1.0,
+        3.0
+      ],
+      "doses_raw": "0.3, 1, and 3 mg/kg, s.c.",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "repeated",
+      "evidence": "DOI (1 and 3 mg/kg, s.c.) conditioning ... twice daily for 3 days; acute administration of DOI (0.3, 1, and 3 mg/kg, s.c.)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Methods do not mention handling protocol.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Unless otherwise stated, the mice were group-housed (3-6 mice).",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12-h light/dark cycle (lights on from 8:00 a.m. to 8:00 p.m.).",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Methods do not address home-cage enrichment.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Conditioned Place Aversion (CPA) Test",
+      "assay_description": "Two-compartment shuttle box (15 × 30 × 15 cm) with white/textured vs black/smooth compartments. Preconditioning trial, 3 days of conditioning (saline AM, drug PM, 30 min each), and post-conditioning tests of 15 min on Days 4, 7, and 14. Time spent in each compartment recorded by infrared beam sensor.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "DOI (1 and 3 mg/kg, s.c.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Preconditioning test (Day -1) used directly as baseline; no separate apparatus habituation described.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Animal placed in centre of two compartments, free to move between them.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Food and water were available ad libitum (in home cage); no food in apparatus.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Food and water were available ad libitum (in home cage); no water in apparatus.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "short_term_1to7d",
+          "value_minutes": 1440,
+          "evidence": "The postconditioning tests were performed on Days 4, 7, and 14.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "Each column represents the mean scores with S.E.M. of eight to ten animals (U50,488H) / ten to twelve animals (DOI).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI (3 mg/kg, s.c.) produced significant place aversion on Day 4 compared with saline controls, but the aversive effect was absent on Days 7 and 14. U50,488H (1 mg/kg) similarly produced aversion on Days 4 and 7.",
+        "statistics": "DOI 3 mg/kg p < 0.01 (Day 4, Dunnett's); U50,488H 1 mg/kg p < 0.01 (Day 4), p < 0.05 (Day 7).",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "The DOI 3 mg/kg group had a significant CPA score compared with the saline control group on Day 4 (3 mg/kg; p < 0.01; daily statistics), but not on Days 7 and 14.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single CPA score calculated from time spent in drug- vs vehicle-paired compartment.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total time spent in each compartment during 900 s session reported; no within-session time course.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of transitions or sequences reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Zone preference (time in compartment) is a spatial measure, not an ethological behaviour.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animal tested alone in apparatus.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Conditioned place aversion requires learned drug-context association.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "automatically recorded with an infrared beam sensor (Supermex sensor).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate ANOVA with Dunnett's reported.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "shuttle box (15 cm wide × 30 cm long × 15 cm high) made of acrylic resin board",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Two open compartments; no enclosed refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Textured or smooth floor; no bedding in apparatus.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent in CPP apparatus.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in CPP compartments.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "divided into two compartments of equal size",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "An animal ... was placed in the center of the two compartments.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in apparatus during 15 min test.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Preconditioning test plus postconditioning tests on Days 4, 7, and 14.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "900 s (15 min) session",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Preconditioning (Day -1) plus postconditioning tests on Days 4, 7, and 14 = 4 recording days.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The preconditioning test was performed ... time spent ... was automatically recorded.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Postconditioning tests on Days 4, 7, and 14 without drug administration.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sessions are 15 min.",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      }
+    },
+    {
+      "assay_name": "Marble-Burying Test",
+      "assay_description": "Polycarbonate cage (28 × 44 × 20.5 cm) with 5 cm-deep paper bedding and 25 blue glass marbles in a 5×5 grid. Mice placed for 30 min after drug administration; marbles buried to ≥2/3 depth counted at 15 and 30 min from overhead photographs. Performed acutely and 1 h after CPA test on Days 4, 7, and 14.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "U50,488H (0.3, 1, and 3 mg/kg, s.c.) and DOI (0.3, 1, and 3 mg/kg, s.c.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Each mouse was placed in a cage for 30 min immediately after drug administration.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Each mouse was placed in a cage ... freely moving.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in test cage; ad libitum in home cage.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in test cage; ad libitum in home cage.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 0,
+          "evidence": "after a single administration, and also on Days 4, 7 and 14 after the CPA test (1 h after the CPA test session).",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 9,
+        "evidence": "Each column represents the mean counts with S.E.M. of nine (U50,488H acute) and 14 to 16 (DOI acute) animals; 8-10 (U50,488H post-CPA) and 10-12 (DOI post-CPA).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute DOI and U50,488H dose-dependently reduced marble-burying at 15 and 30 min compared with saline. In contrast, when re-tested 1 h after the CPA test on Day 4 (and Day 7 for DOI), animals previously conditioned with DOI or U50,488H showed an INCREASE in marble burying versus saline-conditioned controls.",
+        "statistics": "Acute DOI: 15 min (0.3 mg/kg p<0.05, 1 mg/kg p<0.01) and 30 min (1 mg/kg p<0.01, 3 mg/kg p<0.01). Post-CPA Day 4: increased burying (DOI 1 and 3 mg/kg p<0.05 at 30 min; 3 mg/kg p<0.05 at 15 min). Day 7: DOI 3 mg/kg p<0.05 at 15 min.",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "There was a significant reduction in the number of buried marbles for all doses of DOI at 15 (0.3 mg/kg; p < 0.05, 1 mg/kg; p < 0.01) and 30 min (1 mg/kg; p < 0.01, 3 mg/kg; p < 0.01) compared with the saline control group. ... On Day 4, the number of buried marbles was significantly greater than that in the saline control for 15 (3 mg/kg; p < 0.05) and 30 min (1 and 3 mg/kg; p < 0.05) in the DOI conditioning groups.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Number of marbles buried (single measure, counted at two time points).",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The number of marbles buried by the mice was then counted after 15 and 30 min.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition or sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Marble burying is a natural rodent burrowing/digging behaviour.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Each mouse tested alone.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate behaviour; no learning required.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Marbles counted manually from overhead photographs.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVA only.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Polycarbonate cages (28 × 44 × 20.5 cm) — standard marble-burying apparatus.",
+          "confidence": "medium"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter/refuge in test cage.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "evenly distributed on 5 cm-deep paper animal bedding (Paper Clean)",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Marbles are the test stimuli, not enrichment objects.",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single polycarbonate cage with no internal partitions.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each mouse was placed in a cage",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water present in test cage.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Marble-burying after acute administration and 1 h after CPA test on Days 4, 7, and 14.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "Each mouse was placed in a cage for 30 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Acute test day plus Days 4, 7, and 14 = 4 recording days.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline marble-burying recording.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Marble-burying assessed on Days 4, 7, 14 after CPA conditioning (≥24 h post-dose).",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30 min sessions.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    }
+  ],
+  "judge_notes": [
+    "Only DOI is scored as the psychedelic compound; U50,488H is a kappa-opioid agonist (not in the rubric's psychedelic list) but was administered in the same assays — assay scoring is unchanged because the paradigms are identical.",
+    "Schedule for CPA = repeated (3 days of conditioning); marble-burying acute test = acute, post-CPA marble-burying = repeated. Single dosing entry uses 'repeated' to cover the dominant CPA conditioning regimen.",
+    "E1 for marble-burying scored 0 (Standard apparatus) following the modal interpretation — marble-burying cage with bedding is the standard apparatus for this assay; gptoss's 'Enriched arena' was an outlier.",
+    "E5 for marble-burying scored 0: marbles are the test stimuli (NOR-style 'novel object used AS the test' analogue), not enrichment.",
+    "Time-to-assay for CPA set to short_term_1to7d (first post-conditioning test on Day 4 = ~24 h after last conditioning dose); marble-burying = multiple (acute at 0 min and follow-ups on Days 4/7/14).",
+    "Direction for marble-burying scored 'mixed' because acute administration decreased burying while post-CPA testing increased burying.",
+    "DOI backfilled from Zotero (BetterBibTeX citekey lookup): was None, now '10.1002/npr2.70075'"
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 6.82,
+    "behavioural_complexity_mean": 1.88,
+    "environmental_complexity_mean": 1.36,
+    "recording_duration_mean": 6.13
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 47350,
+    "output_tokens": 6326,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

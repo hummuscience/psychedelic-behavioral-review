@@ -1,0 +1,681 @@
+{
+  "study_id": "Krupp2024",
+  "doi": "10.1016/j.neuropharm.2024.109949",
+  "species": "mouse",
+  "strain": "C57BL/6NHsd",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 42,
+    "age_max_days": 56,
+    "evidence": "Male (C57BL/6NHsd) mice between 6 and 8 weeks",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 103,
+    "n_female": null,
+    "evidence": "Male (C57BL/6NHsd) mice between 6 and 8 weeks (Envigo, Indianapolis, IN; (N = 103)",
+    "confidence": "high"
+  },
+  "psychedelic": "(R)-DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        0.015,
+        0.03,
+        0.3
+      ],
+      "doses_raw": "high dose (0.3), middle dose (0.03), low dose (0.015 mg/kg)",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "Freshly dissolved into saline to achieve the desired concentrations [high dose (0.3), middle dose (0.03), low dose (0.015 mg/kg)] of (R)-DOI hydrochloride...were given as 0.1 mL subcutaneous (sc) injections.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "After being separated, animals were handled, and had their body weight and food consumption monitored daily until the end of experimentation.",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "Mice were separated into individual cages (4-5 days) prior to the start of behavioral experiments.",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "All mice were maintained on a 12:12 light-dark cycle (lights on at 6 a.m. and off at 6 p.m.). All behavioral experiments were done during the animals' active phase (scotophase).",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "no",
+      "evidence": "group housed (4-5 animals/30 × 16 × 12.5 cm cage, without enrichment)",
+      "confidence": "high"
+    }
+  },
+  "judge_notes": [
+    "Merged candidate gptoss's four separate SAM assay entries (Escape proportion, Latency, Socially induced freezing, Attention to escape route) into a single SAM assay — these are all distinct behavioural measures collected within the same 5-min SAM apparatus session, so they count as one assay with multiple measures.",
+    "Kept Home Cage Locomotion and Fear Conditioning Test (Day 5 in SAM without aggressor) as separate assays because they are distinct paradigms with different apparatus contexts/protocols.",
+    "Housing group_housing: scored 'no' because the paper explicitly states mice were separated into individual cages prior to behavioral experiments, though they were group-housed during the 5-day acclimation period.",
+    "SAM B5/E7: scored as Free social interaction / Free social group because the focal mouse and CD1 aggressor freely interact in the open field without barriers.",
+    "SAM E1: scored Standard apparatus (rather than Enriched arena) — the SAM is a standard rectangular box with two divider-formed compartments; this is apparatus architecture, not enrichment.",
+    "SAM E2 shelter: although safety areas exist behind dividers, only the small escape tunnel apex allows the test mouse to leave the open field — scored 0 conservatively, consistent with gptoss; the safety zones are part of the apparatus design rather than refuges available to all mice during recording.",
+    "B7 scored 0 for all assays: ANYmaze is position-tracking software per rubric SCORE-0 list.",
+    "Fear Conditioning Test time_to_assay: ~3 days after last dose (Day 2 injection, Day 5 test) → short_term_1to7d."
+  ],
+  "assays": [
+    {
+      "assay_name": "Stress Alternatives Model (SAM)",
+      "assay_description": "Test C57BL/6N mice exposed to a novel aggressive CD1 mouse in a rectangular box (91 × 22 × 30 cm) with two safety areas behind curved dividers, each with a small apical escape tunnel. Each daily session is 5 min over 4 consecutive days, preceded by a tone-cued fear conditioning element. Behaviours measured: latency to escape, % escaping, socially induced freezing, attention to escape route (time within 3 cm of escape hole), jumps. Drug administered after Day 2; behavioural changes assessed on Days 3 and 4 across (R)-DOI doses (0.015, 0.03, 0.3 mg/kg) vs. vehicle.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "were given as 0.1 mL subcutaneous (sc) injections",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Paper does not describe pre-test apparatus habituation for SAM.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Test mice are placed in an opaque cylinder...the cylinder is lifted, exposing each test mouse a novel aggressive CD1 mouse in the SAM open field for 5 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food was placed in the SAM arena during the 5-min test; home cage had ad libitum food.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water was placed in the SAM arena during the 5-min test; home cage had ad libitum water.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 1440,
+          "evidence": "Immediately following SAM social interactions on Day 2, mice were given sc injections...Days 3 and 4 of the SAM to determine how psychedelic treatment impacts stress coping strategies",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 90,
+        "n_male": 90,
+        "n_female": null,
+        "n_per_group_min": 7,
+        "evidence": "vehicle-treated animals (N = 28) and (R)-DOI treatment (3 dosages: 0.015 mg/kg, N = 20; 0.03 mg/kg, N = 17; 0.3 mg/kg, N = 25). Escape middle dose N=7.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Single sc (R)-DOI shifted Stay (stress-vulnerable) mice toward active coping: low (0.015 mg/kg) and middle (0.03 mg/kg) doses increased the proportion escaping, reduced latency to escape, increased attention to the escape route, and reduced socially induced freezing on Days 3 and 4. The high dose (0.3 mg/kg) was least effective on coping but reduced freezing in Escape mice on Day 3. Effects were dose-dependent and not monotonic with the lowest doses most efficacious.",
+        "statistics": "Escape proportion (Stay, low dose Day 3): χ²: F1 = 2.8, p ≤ 0.029; Day 4 middle and low doses: χ²: F1 = 4.3, p ≤ 0.039. Latency (Stay): middle t20 = 2.1, p ≤ 0.05; low t20 = 2.6, p ≤ 0.019 on Day 3; Escape low Day 4 t20 = 2.4, p ≤ 0.024. Freezing (Stay Day 4): F3,39 = 3.1, p ≤ 0.037; middle dose t20 = 2.6, p ≤ 0.018. Attention (Stay): F3,38 = 4.2, p ≤ 0.011 Day 3; low dose Day 3 t19 = 2.7, p ≤ 0.016; Day 4 t20 = 3.7, p < 0.001.",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "Stay mice treated with the lowest dose (0.015 mg/kg) of (R)-DOI had a significantly higher proportion of animals that escaped on Day 3 compared to vehicle-treated Stay animals (40% increase; χ2: F1 = 2.8, p ≤ 0.029).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "Behaviors that were recorded include latency to escape, contextual and cued freezing, socially induced freezing, attention to the escape route, and number of jumps.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Outcomes reported as single totals/averages per 5-min session; between-day comparisons are not within-session temporal dynamics.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition/sequence/microstructure analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Social interaction with a live CD1 aggressor, including socially induced freezing and active escape investigation, is from the species' natural repertoire.",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 3,
+          "value": "Free social interaction",
+          "evidence": "exposing each test mouse a novel aggressive CD1 mouse (unconditioned stimulus, US) in the SAM open field for 5 min",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "fear conditioning is the initial step that begins each day of the SAM...the time it takes an animal to escape declines over the 4-day paradigm, suggesting that spatial and/or social learning is occurring",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "videos were stored for later behavioral analysis using ANYmaze Video Tracking Software (Version 6.0, Stoelting Co, Wood Dale, IL) or scored manually",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVAs and t-tests reported; no PCA/clustering.",
+          "confidence": "high"
+        },
+        "raw_total": 7
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "The SAM apparatus is a clear rectangular box (91 cm × 22 cm x 30 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Safety areas are separated by curved dividers with small apical escape tunnels — these are part of the apparatus and accessible only via escape, not a refuge available throughout the test.",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding mentioned for the SAM apparatus during recording.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material mentioned in the SAM apparatus.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in the SAM apparatus.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "Two curved, white opaque dividers are used to separate the two safety areas (10 cm × 22 cm x 30 cm) from the main open field of the SAM (71 cm, 22 cm, 30 cm)",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 2,
+          "value": "Free social group",
+          "evidence": "exposing each test mouse a novel aggressive CD1 mouse (unconditioned stimulus, US) in the SAM open field for 5 min",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in the SAM apparatus during the 5-min recording.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "All animals were subjected to 5 min in the Stress Alternatives Model (SAM) for four days in a row",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "All animals were subjected to 5 min in the Stress Alternatives Model (SAM)",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "four days in a row (Days 1-4)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "During development of the Escape or Stay behavioral phenotypes on Days 1 and 2 pre-drug behavior can be compared to behavior following administration of (R)-DOI (Days 3 and 4)",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Days 3 and 4 of the SAM, ≥24 h after the Day 2 injection.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5-min sessions.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    },
+    {
+      "assay_name": "Home Cage Locomotion",
+      "assay_description": "Locomotor activity recorded in the animals' home cage immediately following SAM social interactions on Day 3, comparing vehicle and three (R)-DOI doses.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "0.1 mL subcutaneous (sc) injections",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Habituation to the recording context not described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Animals freely moving in home cage.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "given ad libitum access to food and water throughout all experiments",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "given ad libitum access to food and water throughout all experiments",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "The effects of (R)-DOI on home cage locomotion was measured immediately following SAM social interactions on Day 3 (Fig. 1E).",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 90,
+        "n_male": 90,
+        "n_female": null,
+        "n_per_group_min": 17,
+        "evidence": "vehicle N=28; low dose N=20; middle dose N=17; high dose N=25",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "Home-cage locomotion was slightly elevated in mice that received the lowest (0.015 mg/kg) (R)-DOI dose compared with all other groups; higher doses did not change locomotion.",
+        "statistics": "",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Locomotion in the home cage following (R)-DOI treatment was slightly elevated in the lowest (0.015 mg/kg) dose compared to all other groups (Fig. S3); but was not affected by higher dosages.",
+        "confidence": "medium"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Home-cage locomotion only.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total locomotion reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor distance is not ethological per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animals separated into individual cages prior to behavioural experiments.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Tracking software only.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No multivariate analysis.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "home cage locomotion",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter described in home cage (without enrichment).",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bedding not explicitly reported.",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Without enrichment housing; no nesting material described.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "group housed...without enrichment",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Standard home cage.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice were separated into individual cages (4-5 days) prior to the start of behavioral experiments.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "given ad libitum access to food and water throughout all experiments",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Locomotion measured on Day 3 only.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Session duration not explicitly stated; scored conservatively.",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Measured on Day 3 only.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug home-cage locomotion baseline reported.",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Day 3 recording is ≥24 h after Day 2 injection.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Short single session.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Fear Conditioning Test",
+      "assay_description": "On Day 5, mice tested for tone-cued and contextual freezing in the SAM apparatus without the CD1 aggressor (no US), to assess fear conditioning developed across Days 1-4.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "sc administration of (R)-DOI",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Habituation to apparatus before recording not described separately for Day 5.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Animals freely moving in SAM arena.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in the SAM apparatus during testing.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in the SAM apparatus during testing.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "short_term_1to7d",
+          "value_minutes": 4320,
+          "evidence": "On Day 5, C57BL/6N mice are tested for fear conditioning (FC) responses (freezing) in the SAM without the unconditioned stimulus. Drug given after Day 2 (~3 days prior).",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "Sample sizes for Day 5 fear-conditioning test reported in Fig. S4 (supplementary).",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "Fear-conditioned freezing on Day 5 was not affected by (R)-DOI in Stay mice (cued > contextual at all doses, as in vehicle). In Escape mice, (R)-DOI at all doses prevented the typical enhancement of cued freezing relative to contextual.",
+        "statistics": "",
+        "direction": "no_effect",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "freezing induced by fear conditioning was not affected by DOI (Fig. S4)...However, (R)-DOI treatment, at all doses, in Escape mice prevented enhanced freezing during cued conditioning (Fig. S4C).",
+        "confidence": "medium"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Contextual (pre-tone) and cued (post-tone) freezing reported.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Pre-tone vs. post-tone freezing analyses parse within-session time-course around the CS.",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Conditioned freezing is not in the ethological category per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Tested in SAM arena without the unconditioned (CD1) stimulus.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Fear conditioning is a learned association.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "ANYmaze tracking / manual scoring.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No multivariate analysis.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Tested in the SAM apparatus.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No accessible refuge during the recording.",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding mentioned in SAM apparatus.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in apparatus.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in apparatus.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "Same SAM apparatus with safety areas separated by dividers from the main open field.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "tested for fear conditioning response in the SAM without the unconditioned stimulus",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in the SAM apparatus.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Fear conditioning test conducted once on Day 5.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Duration not explicitly stated; SAM-style short session.",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Only Day 5 recorded as the FC test.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug FC baseline reported.",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Day 5 test is ~3 days after Day 2 injection.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Short single session.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 8.75,
+    "environmental_complexity_max": 4.09,
+    "recording_duration_max": 5.45,
+    "behavioural_complexity_mean": 4.17,
+    "environmental_complexity_mean": 2.73,
+    "recording_duration_mean": 2.72
+  },
+  "low_confidence_count": 6,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 80724,
+    "output_tokens": 9178,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

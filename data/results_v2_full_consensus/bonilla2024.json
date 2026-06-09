@@ -1,0 +1,285 @@
+{
+  "study_id": "Bonilla2024",
+  "doi": "10.1016/j.neuropharm.2024.110163",
+  "species": "rat",
+  "strain": "Wistar",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 50,
+    "age_max_days": 60,
+    "evidence": "Subjects were age-matched (P50-60 on arrival) male and female Wistar rats",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "age-matched (P50-60 on arrival) male and female Wistar rats",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        0.4
+      ],
+      "doses_raw": "0.4 mg/kg",
+      "vehicle": "PBS",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "DOI was dissolved in sterile phosphate-buffered saline (PBS) at a concentration of 0.4 mg/ml for dosing at 0.4 mg/kg... administered in 1 mg/ml volumes by intraperitoneal injection 30-min prior to testing.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Paper does not describe a handling habituation protocol.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "Animals were single-housed in a temperature and humidity-controlled environment",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "lights on 8am-8pm",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Home-cage enrichment not mentioned.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Progressive Ratio Test (Heroin + Alcohol/Saccharin Co-Self-Administration)",
+      "assay_description": "Operant chambers (Med-Associates) with two retractable levers; one delivering i.v. heroin (40 μg/50 μl infusion + light cue) and the other delivering oral alcohol (12%) or saccharin (0.1%) (75 μl bolus + tone cue). After FR1 and FR3 acquisition training, a series of progressive ratio tests measured break points for heroin vs. alcohol/saccharin under vehicle, DOI (0.4 mg/kg), MDL 100,907 (0.3 mg/kg), SB-242084 (0.5 mg/kg), and antagonist+DOI conditions. Latency to first lever press also measured.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "DOI, MDL 100,907, and SB-242084 were administered in 1 mg/ml volumes by intraperitoneal injection 30-min prior to testing.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Rats underwent FR1 and FR3 self-administration training in the same operant chambers prior to PR testing; no separate apparatus habituation without data collection is described.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Rats were placed in the operant chambers for testing; no restraint described.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Operant chamber equipped only with a liquid delivery port for alcohol/saccharin; standard laboratory chow available in home cage but not in the testing chamber.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "free access to standard laboratory chow and water [in home cage]; no water bottle in the operant chamber.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "All injections were administered 30 min prior to placement in the operant chambers for testing.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 30,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 7,
+        "evidence": "MDL experiment: n = 7 vehicle; n = 8 DOI (alcohol group); n = 7 vehicle; n = 8 DOI (saccharin group). SB experiment: n = 7 vehicle; n = 7 DOI.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute 0.4 mg/kg DOI (i.p., 30 min pre-test) significantly reduced heroin break points but did not affect alcohol or saccharin break points in rats with a history of heroin+alcohol or heroin+saccharin co-self-administration. The 5-HT2A antagonist MDL 100,907 (0.3 mg/kg) blocked DOI's effect on heroin motivation, while the 5-HT2C antagonist SB-242084 (0.5 mg/kg) did not. DOI did not alter latency to the first lever press, ruling out nonspecific motoric/attentional impairment. Neither antagonist altered break points on its own.",
+        "statistics": "MDL experiment DOI: main effect F(1,13)=8.67, p=0.011; reward x treatment F(1,13)=5.68, p=0.033; vehicle vs. DOI heroin p=0.002. SB experiment DOI: main effect F(1,12)=4.609, p=0.053; reward x treatment F(1,12)=5.41, p=0.038; vehicle vs. DOI p=0.010. Saccharin controls MDL: F(1,13)=17.88, p=0.001; SB: F(1,13)=5.18, p=0.040; reward x treatment F(1,13)=6.95, p=0.021. SB+DOI in alcohol group: reward x treatment F(1,12)=4.31, p=0.060; saccharin controls main effect F(1,12)=5.17, p=0.042; reward x treatment F(1,12)=6.02, p=0.030.",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "DOI significantly reduced heroin (vehicle vs. DOI: p = 0.002), but not alcohol, break points in the MDL experiment... Post-hoc analyses indicated DOI reduced heroin (vehicle vs. DOI; p = 0.010), but not alcohol, break points",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Break points (for heroin and alcohol/saccharin) and latency to the first lever press were reported.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only summary break point per session reported; no within-session time-course analysis.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural transitions or sequences.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Operant lever pressing is not an ethological behaviour.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Rats tested alone in operant chambers.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Progressive ratio task with learned operant responding for heroin and alcohol/saccharin rewards.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Med-Associates operant chambers (lever-press detection only).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Break points were analyzed using two-way or three-way repeated measures ANOVA; no dimensionality reduction.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "rat self-administration chambers enclosed within sound attenuating cubicles (Med-Associates)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Operant chamber; no refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard operant chamber floor; no bedding described.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent in operant chamber.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in the operant chamber.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Standard operant chamber with two levers and a liquid delivery port within a single arena; no separate compartments.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Focal rat tested alone in the operant chamber.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Each press on the lever delivered a single bolus of alcohol or saccharin (75 μl) into the delivery port; heroin lever delivered i.v. infusion. Liquid reward (saccharin/alcohol containing water) is accessible during the PR session.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "A sequence of progressive ratio tests was conducted (baseline drug-free, antagonist alone, DOI alone, drug-free, antagonist+DOI, follow-up drug-free), separated by at least three days.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "daily self-administration training (FR1; 3h/session/weekday)... alcohol/saccharin phase lasted 30 min, followed by heroin phase that lasted 2.5 h. PR tests conducted in the same operant chambers.",
+          "confidence": "medium"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "At least 6 PR tests were conducted (baseline, antagonist alone, DOI alone, drug-free interim, antagonist+DOI, follow-up drug-free), separated by ≥3 days.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The first progressive ratio test in each experiment was conducted drug-free to assess the baseline motivation",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "A drug-free progressive ratio test was conducted one (SB experiment) to seven (MDL experiment) days after this test as well to screen for lasting DOI effects",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sessions ~3 h total; no single session ≥6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 6
+      }
+    }
+  ],
+  "judge_notes": [
+    "All candidates identified a single behavioural paradigm (progressive ratio operant test); merged into one assay even though it was run under multiple drug/antagonist conditions, per rubric.",
+    "D2 scored 2 (61 min–6 h): training/test sessions used the same chambers and protocol gives 30 min alcohol phase + 2.5 h heroin phase = ~3 h session length (gptoss missed this; glm captured it).",
+    "E8 scored 1 (Yes): liquid reward (alcohol/saccharin) is accessible during the PR session via the delivery port, even though chow/water bottle are not in the chamber.",
+    "B1 scored 1 (2-3): break point + latency to first press = 2 measures (qwen's '1' point was incorrect categorization; correct mapping for 2-3 measures = 1 point).",
+    "E6 scored 0 (Single open space): a standard operant chamber with two levers is one arena without dividers/walls; glm's '1' was overcalled.",
+    "setup_habituation set to 'no' given extensive prior training in the same chambers serves as functional familiarization but no separate pre-test habituation phase is described; this is borderline and marked medium confidence."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 8.18,
+    "behavioural_complexity_mean": 2.5,
+    "environmental_complexity_mean": 1.36,
+    "recording_duration_mean": 8.18
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 44353,
+    "output_tokens": 4760,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "study_id": "Golden2022",
+  "doi": null,
+  "species": "mouse",
+  "strain": "C57BL/6",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 42,
+    "age_max_days": 98,
+    "evidence": "aged 6-14 weeks",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": 5,
+    "n_female": 5,
+    "evidence": "Experiments were conducted on male and female C57 BL6 mice (n = 10, 5 female)",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        2.0
+      ],
+      "doses_raw": "2 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "A dose of 2 mg/kg was delivered via an intraperitoneal (i.p.) injection (n = 5).",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Paper describes habituation to the treadmill setup but does not describe a separate experimenter-handling protocol.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "Animals were housed under a 12/12 h light-dark cycle with food and water available ad libitum.",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "Animals were housed under a 12/12 h light-dark cycle... Habituation and recordings were performed during the dark phase of the cycle. (Direction of cycle not specified.)",
+      "confidence": "medium"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Animals were housed under a 12/12 h light-dark cycle with food and water available ad libitum.",
+      "confidence": "low"
+    }
+  },
+  "assays": [],
+  "judge_notes": [
+    "Paper is an in vivo electrophysiology study: LFP and multi-unit/single-unit extracellular recordings from anterior cingulate cortex in head-fixed awake mice on a treadmill. Per rubric, neural recordings (in vivo electrophysiology, LFP, single-unit) are explicitly excluded — even in awake/behaving animals — because the primary outcome is neural activity, not behaviour.",
+    "Locomotion on the treadmill is mentioned only as a covariate check (Wilcoxon comparing running time baseline vs psilocybin) and is not analysed as a primary behavioural outcome in its own apparatus/paradigm. No standard behavioural assay (OFT, EPM, HTR test, etc.) is scored in the paper; the home-cage head-twitch observation is mentioned only as off-line dose verification done separately from the experiments presented, with no data reported.",
+    "Therefore no scorable behavioural assays are produced; assays array is empty. All three candidate models also returned empty assay arrays, confirming this judgment.",
+    "Day/night flipped scored not_reported (medium confidence): testing was during the dark phase, but the paper does not state whether the light cycle was reversed or whether dark-phase testing was under standard or reversed lighting."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0,
+    "environmental_complexity_max": 0,
+    "recording_duration_max": 0,
+    "behavioural_complexity_mean": 0,
+    "environmental_complexity_mean": 0,
+    "recording_duration_mean": 0
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 37286,
+    "output_tokens": 1186,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

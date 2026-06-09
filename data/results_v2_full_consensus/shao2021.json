@@ -1,0 +1,509 @@
+{
+  "study_id": "Shao2021",
+  "doi": "10.1016/j.neuron.2021.06.008",
+  "species": "mouse",
+  "strain": "C57BL/6J; Thy1-GFP M",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 42,
+    "age_max_days": 84,
+    "evidence": "For head-twitch response and learned helplessness, 6 to 10-week-old C57BL/6J mice were used. For electrophysiology, 6 to 8-week-old C57BL/6J mice were used. For two-photon imaging, Thy1 GFP mice underwent surgery when they were 6 to 8-week-old... For confocal imaging, 8 to 12-week-old Thy1 GFP mice were used.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": 74,
+    "n_female": 76,
+    "evidence": "Head-twitch response was evaluated using 40 male and 42 female C57BL/6J mice. Learned helplessness was evaluated using 34 male and 34 female C57BL/6J mice.",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        0.25,
+        0.5,
+        1.0,
+        2.0
+      ],
+      "doses_raw": "0, 0.25, 0.5, 1, and 2 mg/kg, intraperitoneally [i.p.]",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Animals were weighed and injected intraperitoneally with saline or psilocybin (0.25, 0.5, 1, or 2 mg/kg).",
+      "confidence": "high"
+    },
+    {
+      "compound": "Ketanserin",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "1 mg/kg, i.p.",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "For ketanserin pretreated groups, animals received ketanserin (1 mg/kg, i.p.; S006, Sigma-Aldrich) 10 min before administration of saline or psilocybin (1 mg/kg, i.p.).",
+      "confidence": "high"
+    },
+    {
+      "compound": "Ketamine",
+      "doses_mg_per_kg": [
+        10.0
+      ],
+      "doses_raw": "10 mg/kg, i.p.",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "injected with saline (10 mL/kg, i.p.), ketamine (10 mg/kg, i.p.), or psilocybin (1 mg/kg, i.p.)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Upon arrival, animals habituated at the housing facility for > 2 weeks before behavioral testing. (No explicit handling protocol described.)",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Mice were group housed (2 - 5 mice per cage) under controlled temperature in a 12 hr light-dark cycle (7:00 AM to 7:00 PM) with free access to food and water.",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12 hr light-dark cycle (7:00 AM to 7:00 PM)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Not addressed in methods.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head-twitch response",
+      "assay_description": "Mice individually placed in halved open-field activity boxes immediately after i.p. injection of psilocybin (0.25–2 mg/kg) with or without ketanserin pretreatment; head twitches counted from overhead video. Typical recordings 30 min; subset extended to >150 min.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "injected intraperitoneally with saline or psilocybin (0.25, 0.5, 1, or 2 mg/kg).",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No pre-test exposure to the apparatus described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "the two animals were immediately placed into separate chambers, made by inserting a plastic divider to halve an open-field-activity box",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Testing in an open-field activity box; no food in apparatus during recording.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Testing in an open-field activity box; no water in apparatus during recording.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "after injections, the two animals were immediately placed into separate chambers",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 82,
+        "n_male": 40,
+        "n_female": 42,
+        "n_per_group_min": 7,
+        "evidence": "We characterized 82 C57BL/6J mice (40 males and 42 females) with five doses of psilocybin (0, 0.25, 0.5, 1, and 2 mg/kg, intraperitoneally [i.p.]; range, 7-10 per sex per dose).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin produced a dose-dependent increase in head-twitch response with a sharp rise at 1 mg/kg; the response peaked at 6-8 min post-administration and declined to zero by ~2 h. Ketanserin (1 mg/kg) pretreatment fully abolished the head-twitch response.",
+        "statistics": "A Kruskal-Wallis test was used to compare 10-minute head twitch responses across treatment groups (Saline+Psilocybin vs Ketanserin+Psilocybin vs Ketanserin+Saline), followed by Dunn's multiple comparisons.",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "not_reported",
+        "time_dependent": "yes",
+        "evidence": "A sharp rise of elicited head-twitch responses occurred at 1 mg/kg... rate of head-twitch responses peaked at 6-8 min after administration and then gradually declined until they ceased at ~2h. The ketanserin pretreatment abolished completely the psilocybin-induced head-twitch responses.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The videos were scored for head twitches.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Time course of head-twitch responses after administrating psilocybin... peaked at 6-8 min after administration and then gradually declined",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transitions/sequences analysed.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is a pharmacological reflex, explicitly excluded from ethological behaviours by rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "the two animals were immediately placed into separate chambers",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Reflexive response, not learned.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The videos were scored for head twitches by an experienced observer blind to the experimental conditions.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate counts only.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "open-field-activity box (12'' W x 6'' H x 10'' D)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open field-style chamber, no refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bare open-field box, cleaned with 70% ethanol between mice.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in apparatus.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in apparatus.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "plastic divider halved an open-field-activity box; each animal in a single open compartment",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "the two animals were immediately placed into separate chambers",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in recording chamber.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Typical recordings were 30 minutes long and, for a subset of mice (2 males and 2 females), extended to > 150 minutes.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "for a subset of mice (2 males and 2 females), extended to > 150 minutes",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single recording session after injection.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recording began after drug administration; no pre-drug baseline.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No recording ≥24 h after dose.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Longest session <6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    },
+    {
+      "assay_name": "Learned helplessness (shuttle-box active avoidance)",
+      "assay_description": "5-day protocol in a two-compartment shuttle box. Days 1-2: inescapable footshocks (induction). Day 3 (Test 1): 30 escapable footshocks (0.15 mA, ≤10 s) measuring escape failures and latency. Day 4: i.p. saline, ketamine (10 mg/kg) or psilocybin (1 mg/kg). Day 5 (Test 2, 24 h after treatment): identical test.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "injected with saline (10 mL/kg, i.p.), ketamine (10 mg/kg, i.p.), or psilocybin (1 mg/kg, i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No pre-test apparatus habituation described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "allowed the animal to shuttle between two compartments",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Shuttle box test; no food in apparatus during recording.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Shuttle box test; no water in apparatus during recording.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "On Day 5, 24 hr after treatment, the animal underwent Test 2",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 68,
+        "n_male": 34,
+        "n_female": 34,
+        "n_per_group_min": null,
+        "evidence": "Learned helplessness was evaluated using 34 male and 34 female C57BL/6J mice... We used 68 C57BL/6J mice to compare psilocybin (1 mg/kg, i.p.) against saline and ketamine (10 mg/kg, i.p.).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Within individuals, psilocybin (1 mg/kg) reduced escape failures from Test 1 to Test 2 (24 h post-dose); in susceptible animals 15 of 16 psilocybin-treated mice showed a decrease or no change. Across groups, comparison of saline vs ketamine vs psilocybin did not reach a main effect of treatment.",
+        "statistics": "p = 0.004, post hoc Bonferroni-corrected t test (within-individual); p = 0.09, two-way ANOVA (across treatments).",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "Within individuals, psilocybin reduced the proportion of escape failures (p = 0.004, post hoc Bonferroni-corrected t test; Figure 1D)... Across individuals, comparison among saline, ketamine, and psilocybin did not reveal a main effect of treatment (p = 0.09, two-way ANOVA; Figure 1E).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Escape failures and escape latencies were used as indicators of learned helplessness",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No within-session time-course analysis reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence/transition analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Conditioned escape, not natural behaviour.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "An animal was placed in a shuttle box",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Learned helplessness paradigm requires learning escape contingencies.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "measured by infrared photobeams",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate analyses only.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "shuttle box separated by a guillotine door (16'' x 6.5'' x 8.5'', Med Associates Inc.)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Two open compartments, no enclosed refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "grid floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in apparatus.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in apparatus.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "shuttle box separated by a guillotine door which, when open, allowed the animal to shuttle between two compartments",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "An animal was placed in a shuttle box",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in apparatus.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "On Day 3, the animal underwent Test 1... On Day 5, 24 hr after treatment, the animal underwent Test 2.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "30 footshocks with up to 10 s each followed by 30 s inter-shock interval ≈ ~20 min per test session.",
+          "confidence": "medium"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Test 1 on Day 3 and Test 2 on Day 5.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Test 1 served as a pre-drug baseline before treatment on Day 4.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "On Day 5, 24 hr after treatment, the animal underwent Test 2.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sessions <6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      }
+    }
+  ],
+  "judge_notes": [
+    "Only two behavioural assays were administered to rodents with a psychedelic: head-twitch response and learned helplessness. Two-photon/confocal imaging, whole-cell mEPSC recording are non-behavioural endpoints and were excluded per rubric.",
+    "Added Ketanserin and Ketamine to dosing block (only qwen/glm omitted them); they were administered to behavioural-test animals.",
+    "HTR D2 set to score 2 (61 min–6 h) because a subset of mice was recorded >150 min — the longest session sets the score.",
+    "Learned helplessness D2 set to 15–60 min based on protocol arithmetic (30 trials × up to 10 s shock + 30 s ITI ≈ 20 min); confidence medium since paper does not state a total session duration.",
+    "B2 for learned helplessness scored 0: paper does not analyse within-session time course of escape behaviour.",
+    "E2 for shuttle box scored 0: open compartments are not enclosed refuges (glm's score of 1 overridden).",
+    "Outcomes time_dependent for learned helplessness set to n/a (single post-dose timepoint) rather than 'yes'."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 6.82,
+    "behavioural_complexity_mean": 1.88,
+    "environmental_complexity_mean": 0.68,
+    "recording_duration_mean": 4.78
+  },
+  "low_confidence_count": 4,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 56677,
+    "output_tokens": 6741,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

@@ -1,0 +1,284 @@
+{
+  "study_id": "Buchborn2014",
+  "doi": "10.1177/0269881114531666",
+  "species": "rat",
+  "strain": "Wistar (HsdCpb:WU)",
+  "age": {
+    "value": "adult",
+    "age_min_days": 105,
+    "age_max_days": 105,
+    "evidence": "At the age of seven weeks, rats were bulbectomised... Eight weeks after surgery, on the sixth day of subchronic treatment, pole-jumping experiments were set in.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": 0,
+    "evidence": "For experiments, male Wistar rats (average (Ø) 400 g) (HsdCpb:WU; Harlan Winkelmann, Germany) were used.",
+    "confidence": "high"
+  },
+  "psychedelic": "LSD",
+  "dosing": [
+    {
+      "compound": "LSD",
+      "doses_mg_per_kg": [
+        0.13
+      ],
+      "doses_raw": "0.13 mg/kg, subcutaneous, dissolved in isotonic saline, 10 ml/kg",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "chronic",
+      "evidence": "Lysergide[(R,R)-tartrate]-anhydrate... was applied for a period of 11 days, once every 24 h (0.13 mg/kg, subcutaneous, dissolved in isotonic saline, 10 ml/kg).",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "The paper does not mention a handling protocol.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "The animals were housed in groups of five each cage",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "light/dark cycle 12:12 (light on at 06:00.)... All five sessions were performed at about the same time during the light period.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "The paper does not mention environmental enrichment in the home cage.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "One-way active avoidance learning (pole-jumping test)",
+      "assay_description": "Rats learned to jump onto a pole to avoid foot shock; 10 trials/day over 5 consecutive days. CS = buzzer (80 dB), US = foot shock (0.2-0.4 mA); trial max 20 s, avoidance window ≤4 s. Conditioned avoidances and instrumental escapes were recorded.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "0.13 mg/kg, subcutaneous, dissolved in isotonic saline",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "On the first day, rats were allowed five minutes for exploration of the test apparatus, on the following days only one minute was granted.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "rats had to learn to actively avoid electrical foot stimuli by jumping onto a pole",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard testing apparatus; food not accessible in the pole-jumping chamber. Home cage: 'standard food pellets... ad libitum'.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard testing apparatus; water not accessible in the pole-jumping chamber. Home cage: 'tap water ad libitum'.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "Treatment started five days before the behavioural experiments, and continued till 24 h before decapitation... administration was performed two hours after each test session.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 35,
+        "n_male": 35,
+        "n_female": 0,
+        "n_per_group_min": null,
+        "evidence": "F(3,31) = 6.39, p = 0.002 (denominator df = 31, implies N=35 across 4 groups)",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "Bulbectomised rats showed deficits in both conditioned and instrumental pole-jumping avoidance. Repeated LSD (0.13 mg/kg/d, 11 d) normalised conditioned avoidance learning in bulbectomised rats to sham levels, with a non-significant trend for instrumental escapes. LSD had no effect on sham-operated controls.",
+        "statistics": "Main effects: time F(4,124)=69.04, p=0.000 (conditioned); F(4,124)=43.22, p=0.000 (instrumental); group F(3,31)=6.39, p=0.002 (conditioned); F(3,31)=2.93, p=0.049 (instrumental); time×group F(12,124)=2.62, p=0.004. sham/saline vs bulb/saline: F(1,14)=13.15, p=0.003 (cond); F(1,14)=4.85, p=0.045 (instr). bulb/saline vs bulb/LSD: F(4,56)=2.6, p=0.045 (cond).",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "The repeated administration of LSD, however, led to a normalisation of conditioned avoidance learning: LSD-treated bulbectomised rats caught up with the sham-operated controls... and significantly differed from their saline treated counterparts (bulb/saline vs bulb/LSD: F(4,56)=2.6, p=0.045).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "the numbers of successful escapes (instrumental reactions, ≤ 20 s) and avoidances (conditioned reactions, ≤ 4 s) were recorded.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Learning was analysed across days (5 sessions), not within a single session.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural sequences or transitions reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Measures are learned escape/avoidance latencies, not natural ethological behaviours.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animals tested individually; no social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "rats had to learn to actively avoid electrical foot stimuli by jumping onto a pole",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Manual recording of escapes/avoidances; no automated classifier reported.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Separate univariate ANOVAs; no PCA/clustering reported.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "pole-jumping test apparatus with grid floor and a pole",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter or refuge in the pole-jumping apparatus.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "electrical foot stimulation delivered through stainless steel rods of the test apparatus' floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in the test apparatus.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in the test apparatus.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single chamber with a pole; no distinct compartments.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each rat tested individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the pole-jumping apparatus.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "On five days in a row, within 10 trials each day... All five sessions were performed at about the same time during the light period.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "10 trials/day, each trial ≤20 s, ITI 30-90 s, plus 1-5 min exploration. Total session ≈10-15 min; paper does not explicitly state session length.",
+          "confidence": "medium"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "On five days in a row, within 10 trials each day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Testing began on the 6th day of subchronic LSD treatment; no pre-drug behavioural baseline recorded.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Treatment continued till 24 h before decapitation; sessions occurred during dosing, with drug given 2 h after each session.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sessions performed during the light period; each session well under 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    }
+  ],
+  "judge_notes": [
+    "All three candidates agreed this paper contains a single behavioural assay (one-way active avoidance / pole-jumping). Neurochemical receptor binding assays were correctly excluded as non-behavioural.",
+    "B2 temporal_dynamics: GLM scored 1 citing repeated-measures ANOVA across days, but rubric defines B2 as WITHIN-session dynamics. Across-day learning curves are between-session comparisons → scored 0, consistent with qwen and gptoss.",
+    "D2 session_duration: paper does not explicitly state total session length; estimated ~10-15 min from 10 trials × ≤20s + 30-90s ITI + 1-5 min exploration. Scored 0 (<15 min) with medium confidence.",
+    "setup_habituation: scored 'yes' based on explicit 5-min exploration period on day 1 of the apparatus.",
+    "time_to_assay: testing occurred ~22 h after the previous dose (drug given 2 h after each session, sessions ~24 h apart) → early_2to24h, ~1440 min."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 2.73,
+    "behavioural_complexity_mean": 2.5,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 2.73
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 42255,
+    "output_tokens": 4297,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

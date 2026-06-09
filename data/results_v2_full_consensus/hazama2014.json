@@ -1,0 +1,482 @@
+{
+  "study_id": "Hazama2014",
+  "doi": "10.1371/journal.pone.0089153",
+  "species": "mouse",
+  "strain": "C57BL/6J x 129S6/SvEvTac F1 hybrid",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 56,
+    "age_max_days": 63,
+    "evidence": "All experiments were conducted with naıve 8-9-week-old male mice",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "All experiments were conducted with naıve 8-9-week-old male mice",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        1.0,
+        3.0
+      ],
+      "doses_raw": "doses of DOI (1.0 or 3.0 mg/kg); DOI (1 mg/kg) for PPI; DOI (3 mg/kg) for c-Fos",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "intraperitoneally injected with either saline or DOI ... doses of DOI (1.0 or 3.0 mg/kg)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "group-housed (4-5 per cage)",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12-h light-dark cycle (light on at 8:00 am)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head-Twitch Response",
+      "assay_description": "Mice individually placed in observation cages (19x10x11 cm) for 60-min habituation, then i.p. injected with saline or DOI (0.1-3.0 mg/kg); head-twitches counted by trained blind observers over 60 min.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "intraperitoneally injected with either saline or DOI",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "mice were individually placed in observation cages... for a 60-min habituation period",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "individually placed in observation cages",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "standard short test; no food in observation cage during recording",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "standard short test; no water in observation cage during recording",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Scoring began immediately after injection",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 3,
+        "evidence": "Values are expressed as the mean 6 SEM (n=3-4)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI dose-dependently increased head-twitch responses in both genotypes, but PACAP+/- mice showed significantly more head twitches than wild-type littermates at 1.0 and 3.0 mg/kg. Maximal response occurred within ~20 min after 1 mg/kg injection.",
+        "statistics": "Two-way ANOVA: genotype F(1,28)=39.6, p<0.001; dose F(4,28)=55.8, p<0.001; interaction F(4,28)=14.1, p<0.001",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "The total number of head-twitch responses induced by DOI during a 60-min period was significantly increased in both genotypes in a dose-dependent manner, but the response in PACAP+/- mice occurred significantly more frequently than in their PACAP+/+ littermates with doses of DOI (1.0 or 3.0 mg/kg)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Head-twitch responses were counted over a 60-min period",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Time course of the effect of 1 mg/kg DOI administration on PACAP+/+ and PACAP+/- mice (Fig. 1B)",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no sequence/transition analysis reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-twitch response (HTR) — explicitly listed as NOT ethological in rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "mice were individually placed in observation cages",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning/memory component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Scoring began immediately after injection by trained blind observers",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate ANOVA only",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "observation cages (19x10x11 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "observation cage with no refuge",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no bedding mentioned",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting material mentioned",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment in test apparatus",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single observation cage",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individually placed in observation cages",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in observation cage",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "recordings were made for a duration of 60 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "recordings were made for a duration of 60 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "single test session per cohort",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "habituation without data collection; saline control is separate group",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no recording >=24 h post-dose",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "60-min session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Prepulse Inhibition of Acoustic Startle",
+      "assay_description": "Acoustic startle responses measured in an SR-LAB startle chamber 5 min after i.p. injection of saline or DOI (1 mg/kg). After 5 min acclimatization with 65 dB background noise, 40 pulse-alone (120 dB) and 10 prepulse (68, 71, 74 dB) trials plus 12 no-stim trials; PPI calculated as a percentage.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "DOI (1 mg/kg) was injected intraperitoneally 5 min before the experiments",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "acclimatization to the startle chamber occurred during the testing session itself, not as a separate pre-test exposure",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "PPI startle chambers with body-restraint tubes (SR-LAB); rubric: PPI startle chambers = restrained",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "standard short test; no food in startle chamber during recording",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "standard short test; no water in startle chamber during recording",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 5,
+          "evidence": "Animals were placed in the startle chamber 5 min after intraperitoneal injection of DOI (1.0 mg/kg)",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "Values are expressed as the mean 6 SEM (n = 6-9)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI (1 mg/kg) significantly disrupted PPI in PACAP+/- mice but had no effect in wild-type littermates. Startle amplitudes did not differ between groups.",
+        "statistics": "Three-way ANOVA: genotype F(1,33)=7.38, p<0.05; treatment F(1,33)=10.0, p<0.01; treatment x genotype interaction F(1,33)=4.35, p<0.05; dB x genotype x treatment F(2,66)=0.719, p=0.49",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Although 1.0 mg/kg DOI had no effect in wild-type mice, it evoked PPI deficits in PACAP+/- mice",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Effects of DOI on PPI (A) and acoustic startle response (B) were examined",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "PPI calculated as a single percentage score per prepulse intensity",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "PPI startle is not an ethological behaviour",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animals were placed in the startle chamber alone",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "sensorimotor gating without learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "SR-LAB beam/transducer-based system, not behavioural classifier",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate ANOVA only",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "startle chamber (SR-LAB; San Diego Instruments)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no shelter in startle chamber",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no bedding in startle chamber",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting material",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment objects",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single startle chamber compartment",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Animals were placed in the startle chamber individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in startle chamber",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "single testing session per animal",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "5 min acclimatization + 62 trials at ~15 s average interval ≈ ~20 min total session",
+          "confidence": "medium"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "single test day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug PPI baseline reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no >=24 h post-dose recording",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "session well under 6 h",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "All three candidates identified the same two behavioural assays (HTR and PPI). c-Fos immunohistochemistry, plasma corticosterone, body temperature, and Western blot are non-behavioural endpoints and are correctly omitted.",
+    "Open field test (Fig. S2) is described only for characterizing maternal-genotype effects on baseline locomotion in untreated F1 mice; the paper does not state that DOI was administered in the OFT, so it was excluded as a psychedelic-administered behavioural assay.",
+    "B1 for HTR: head-twitch count is a single behavioural measure → score 0 (qwen and gptoss agreed; glm's score 1 was inconsistent with their own '1' value label).",
+    "PPI setup_restrain: per rubric, PPI startle chambers count as physical restraint → 'yes'.",
+    "PPI setup_habituation: 5-min acclimatization occurred within the testing session, so per rubric this does not count as pre-test setup habituation → 'no'.",
+    "Doses consolidated to the two doses (1.0, 3.0 mg/kg) for which between-genotype differences are explicitly reported in the text; glm's broader [0.1, 0.3, 1, 3, 10] list reflects the Fig. 1A dose-range but is not all confirmed in the body text — kept conservative."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 1.36
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 49568,
+    "output_tokens": 5574,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

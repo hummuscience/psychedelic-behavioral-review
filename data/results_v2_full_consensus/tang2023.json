@@ -1,0 +1,82 @@
+{
+  "study_id": "Tang2023",
+  "doi": "10.1007/s00213-023-06366-y",
+  "species": "rat",
+  "strain": "Sprague Dawley",
+  "age": {
+    "value": "adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Male Sprague Dawley rats (280-350 g)",
+    "confidence": "medium"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male Sprague Dawley rats (280-350 g)",
+    "confidence": "high"
+  },
+  "psychedelic": "25C-NBOMe",
+  "dosing": [
+    {
+      "compound": "25C-NBOMe",
+      "doses_mg_per_kg": [],
+      "doses_raw": "30 µM (bath application)",
+      "vehicle": "not_reported",
+      "route": "other",
+      "schedule": "acute",
+      "evidence": "The bath application of 25C-NBOMe (30 µM) significantly increased the frequencies of sEPSC",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Male Sprague Dawley rats (280-350 g) were group-housed",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "12-h light/dark cycles (direction not specified)",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [],
+  "judge_notes": [
+    "This paper is entirely an ex vivo whole-cell patch-clamp electrophysiology study in acute brain slices. No behavioural assays were conducted on rodents. Per rubric, ex vivo/in vitro slice physiology is explicitly excluded from scoring. Both candidates correctly returned an empty assays list.",
+    "25C-NBOMe was applied via bath perfusion to slices (30 µM), not administered in vivo; route coded as 'other' with details in evidence.",
+    "DOI backfilled from user-edited prisma_problems.numbers: was None, now '10.1007/s00213-023-06366-y'"
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0,
+    "environmental_complexity_max": 0,
+    "recording_duration_max": 0,
+    "behavioural_complexity_mean": 0,
+    "environmental_complexity_mean": 0,
+    "recording_duration_mean": 0
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm"
+  ],
+  "judge_usage": {
+    "input_tokens": 36792,
+    "output_tokens": 768,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

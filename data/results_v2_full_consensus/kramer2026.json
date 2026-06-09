@@ -1,0 +1,492 @@
+{
+  "study_id": "Kramer2025",
+  "doi": "10.1038/s41386-025-02272-3",
+  "species": "rat",
+  "strain": "Wistar Kyoto (WKY)",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 50,
+    "age_max_days": 55,
+    "evidence": "Male WKY aged 50 -55 postnatal days",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 24,
+    "n_female": 0,
+    "evidence": "Male WKY ... Female rats were excluded from this study",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin, 25CN-NBOH",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "PSI = 1.0 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Each drug ... was dissolved in sterile saline and administered in a volume of 1 mL/kg intraperitoneally to each rat corresponding to their assigned treatment group (day 0) (PSI = 1.0 mg/kg)",
+      "confidence": "high"
+    },
+    {
+      "compound": "25CN-NBOH",
+      "doses_mg_per_kg": [
+        1.5
+      ],
+      "doses_raw": "25CN-NBOH = 1.5 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Each drug ... was dissolved in sterile saline and administered in a volume of 1 mL/kg intraperitoneally ... (25CN-NBOH = 1.5 mg/kg)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Rats were pair-housed with a standard 12:12 light-dark cycle",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "standard 12:12 light-dark cycle",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "yes",
+      "evidence": "included Bed-r' Nest for enrichment (The Andersons, Inc., Maumee, Ohio)",
+      "confidence": "high"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Forced Swim Test",
+      "assay_description": "5-min swim in a cylindrical tank (114 cm × 30.5 cm, 30 cm water at 25-28°C) recorded for immobility, swimming, and climbing. 15-min pre-exposure on prior day (not recorded). Performed at 5 weeks (day 35) and 12 weeks (day 84) post drug.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered in a volume of 1 mL/kg intraperitoneally",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "A 15-min pre-exposure to the paradigm one day prior to testing is used to elicit consistent passive coping strategy",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "rats were placed into a plastic cylindrical tank ... could swim freely",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food was present in the tank during testing",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Tank contained water for swimming only, not for drinking",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 50400,
+          "evidence": "Rats were evaluated in the FST 35 days (5 weeks) and 84 days (12 weeks) after a single administration",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 24,
+        "n_male": 24,
+        "n_female": 0,
+        "n_per_group_min": 8,
+        "evidence": "Each treatment group had eight animals per group (n = 8)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Both psilocybin (1.0 mg/kg) and 25CN-NBOH (1.5 mg/kg) significantly reduced immobility and increased swimming compared with saline at both 5 and 12 weeks post-administration, with no loss of effect size over time. Climbing was unaffected. 25CN-NBOH produced larger effects than psilocybin.",
+        "statistics": "Immobility: treatment F(2,21)=20.28, p<0.0001; PSI vs SAL p=0.0077 (5wk), p=0.0032 (12wk); 25CN-NBOH vs SAL p<0.0001 at both; 25CN-NBOH vs PSI p=0.0290 (5wk), p=0.0257 (12wk). Swimming: F(2,21)=22.92, p<0.0001.",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "Rats given PSI were significantly less immobile than control rats at 5 weeks (p = 0.0077) and 12 weeks (p = 0.0032) ... No differences were observed within individual treatment groups between 5- and 12-week time points",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "scored for immobility, swimming, and climbing",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total counts reported for the 5-min session; no within-session time course",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transitions or behavioural sequences analysed",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Immobility, swimming, climbing are FST coping measures, not natural ethological behaviours",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Each rat tested alone in tank",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST does not require learning or memory",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST scoring was performed by trained scorers blind to the treatment conditions",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Repeated measures ANOVA on individual measures",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "plastic cylindrical tank (114 cm × 30.5 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open water tank, no refuge",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Tank contained water only",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single cylindrical tank",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "rats were placed individually into tank",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or drinkable water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "FST performed at days 35 and 84 post-administration",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "the rats were exposed to a 5-min swim",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "evaluated in the FST 35 days and 84 days",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The pre-exposure was not recorded",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "tested 35 and 84 days post administration",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5-min session",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Locomotor Activity (Open Field)",
+      "assay_description": "5-min open field exploration in a 61 cm² arena with 45 cm opaque walls. Distance traveled tracked by EthoVision XT 8.5. Performed immediately prior to FST at 5 and 12 weeks post-drug.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered in a volume of 1 mL/kg intraperitoneally",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No prior habituation to the LCA arena described",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "allowing them to explore freely for 5 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food present in arena during 5-min test",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water present in arena during 5-min test",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 50400,
+          "evidence": "Locomotor activity was also measured immediately prior to FST testing at weeks 5 and 12",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 24,
+        "n_male": 24,
+        "n_female": 0,
+        "n_per_group_min": 6,
+        "evidence": "Equipment failure resulted in the exclusion of four videos of LCA from Week 5 - one from the control group, one from the PSI group, and two from the 25CN-NBOH group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Locomotor activity (distance traveled) did not differ between psilocybin, 25CN-NBOH, and saline groups at either 5 or 12 weeks post-administration, ruling out nonspecific sedative/stimulant confounds on FST.",
+        "statistics": "Mixed-effects analysis (REML); no significant differences reported.",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "No significant differences were observed between treatment groups",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "scored for distance traveled (cm)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only total distance reported",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor distance is not an ethological behaviour",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Tested individually",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open-field locomotion, no learning required",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EthoVision XT 8.5 tracking software (position tracking only)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single univariate measure analysed",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "open field square arena (61 cm²) with 45 cm opaque walls",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open arena, no refuge",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard open field, no bedding described",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "square arena, single compartment",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "placing each rat into the arena",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in apparatus during 5-min test",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "measured immediately prior to FST testing at weeks 5 and 12",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "allowing them to explore freely for 5 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "measured at weeks 5 and 12",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline LCA reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Recorded 35 and 84 days post drug",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5 min session",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    }
+  ],
+  "judge_notes": [
+    "All three candidates agreed on two behavioural assays: FST and Locomotor Activity (open field). No assay merging was required beyond that.",
+    "Excluded slice electrophysiology, spine counting/microscopy, and qRT-PCR per rubric (non-behavioural endpoints).",
+    "Age: rated young_adult (PND 50-55 is at the boundary; majority of candidates went adolescent vs young_adult — chose young_adult since PND 50+ rats are typically considered young adult).",
+    "time_to_assay: scored as 'multiple' (50400 min ≈ 35 days to first session; 84 days to second) — corrected gptoss which scored early_2to24h.",
+    "Setup_habituation for FST: scored 'yes' because the 15-min pre-exposure trial (no data recorded) constitutes habituation to the apparatus."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 4.09,
+    "behavioural_complexity_mean": 0.62,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 4.09
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 52545,
+    "output_tokens": 5584,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

@@ -1,0 +1,283 @@
+{
+  "study_id": "Jin2020",
+  "doi": "10.1016/j.ejmech.2020.112709",
+  "species": "mouse and rat",
+  "strain": "Kun Ming (KM)",
+  "age": {
+    "value": "not_reported",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Chinese Kun Ming (KM) Mice (20 ± 2.0 g)",
+    "confidence": "low"
+  },
+  "sex": {
+    "value": "not_reported",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Sex of the experimental mice is not stated in the methods.",
+    "confidence": "low"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "1 mg/kg (ip)",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "60 min before i.p. administration of DOI (1 mg/kg)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Methods do not describe a handling protocol.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "Animals were randomly assigned to different experimental groups, each kept in a separate cage.",
+      "confidence": "medium"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "Animals were housed under standardized conditions for light and temperature.",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "No mention of enrichment items in the home cage.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "DOI-induced head twitch",
+      "assay_description": "Mice (10/group) were orally pretreated with compound 13 (0.03–1.0 mg/kg), risperidone, aripiprazole, or vehicle 60 min before i.p. DOI (1 mg/kg). Immediately after DOI, mice were placed individually into observation chambers; after a 5-min wait, head-twitch responses were counted for 15 min.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "compound 13 administered p.o.; DOI administered i.p.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No apparatus habituation is described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "animals were individually placed into observation chambers",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Food not present in observation chambers during the head-twitch recording.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Water not present in observation chambers during the head-twitch recording.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 5,
+          "evidence": "Immediately after DOI treatment, animals were individually placed into observation chambers; after a 5-min wait, the number of head twitch responses that occurred during the next 15 min was counted.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 10,
+        "evidence": "Mice (10 mice in each group) were orally dosed with increasing doses of the aripiprazole ... risperidone ... compound 13 ... or vehicle",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI (1 mg/kg, i.p.) induced head-twitch responses in mice, which were suppressed by oral pretreatment with compound 13 in a dose-dependent manner (ED50 = 0.07 mg/kg). Risperidone (ED50 0.04) and aripiprazole (ED50 0.58 mg/kg) also reduced head twitches.",
+        "statistics": "ED50 compound 13 = 0.07 mg/kg; two-way ANOVA followed by Tukey post-hoc; #p<0.05 vs vehicle; **p<0.01, *p<0.05 vs DOI treatment",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "DOI caused head twitch responses in mice, which were suppressed by pretreatment with compound 13 in a dose-dependent manner (ED50, 0.07 mg/kg)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "the number of head twitch responses that occurred during the next 15 min was counted",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single total count over 15 min; no within-session binning.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural sequences reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-twitch response is a drug-induced behaviour, not a natural ethological act per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "animals were individually placed into observation chambers",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning or memory component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head twitches were counted manually.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only head-twitch counts reported.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "individually placed into observation chambers",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Observation chambers provide no enclosed refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described in observation chambers.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in testing apparatus.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in observation chambers.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Observation chamber is a single arena.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "animals were individually placed into observation chambers",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in observation chamber during recording.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Single 15-min recording bout per mouse.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "the number of head twitch responses that occurred during the next 15 min was counted",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test day for the HTR assay.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline recording reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No >=24 h post-drug recording.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session lasted 15 min total.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Only the DOI-induced head-twitch assay involves administration of a psychedelic (DOI). All other in vivo assays in the paper (APO-climbing, MK-801 hyperactivity, FST, TST, NOR, catalepsy, locomotor activity, weight gain, prolactin, PK) test the novel antipsychotic compound 13 without psychedelic administration and are out of scope per rubric.",
+    "Session duration scored as 15–60 min based on the 15-min recording window (B/glm scored <15 min, but rubric treats 15 min inclusive as the 15–60 bin).",
+    "Group housing scored 'no' based on explicit statement that animals were 'each kept in a separate cage'.",
+    "application_type set to 'multiple' because compound 13 was given p.o. and DOI i.p. in the same assay."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0.0,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 0.0,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 1.36
+  },
+  "low_confidence_count": 4,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 95757,
+    "output_tokens": 3323,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

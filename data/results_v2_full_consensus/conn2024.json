@@ -1,0 +1,1070 @@
+{
+  "study_id": "Conn2024",
+  "doi": "10.1038/s41380-024-02575-9",
+  "species": "rat",
+  "strain": "Sprague-Dawley",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 42,
+    "age_max_days": 56,
+    "evidence": "female Sprague-Dawley rats (n = 35 behaviour; n = 12 RNAscope) were 6 weeks of age on arrival... separate cohorts of aged matched female Sprague-Dawley rats (total n = 168) that commenced training at 7 weeks of age",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "female",
+    "n_male": 0,
+    "n_female": null,
+    "evidence": "female Sprague-Dawley rats... female animals were used exclusively in these studies",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        1.5
+      ],
+      "doses_raw": "1.5 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Psilocybin (USONA Institute Investigational Drug Supply Program; Lot# AMS0167) was dissolved in saline and administered at a dose of 1.5 mg/kg... All drugs were administered intraperitoneally at a 1.0 ml/kg injection volume",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Methods do not describe a handling protocol.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "In all cases, animals were group-housed and acclimated to the 12 h light/dark cycle",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "yes",
+      "evidence": "acclimated to the 12 h light/dark cycle (lights off at 1100 h)... Operant testing was conducted once daily in the home cage for a 3 h session between 12:00-15:00 (early dark phase)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Home-cage enrichment is not described.",
+      "confidence": "low"
+    }
+  },
+  "judge_notes": [
+    "Reversed light cycle inferred from explicit 'lights off at 1100 h' plus testing 'between 12:00-15:00 (early dark phase)' — scored day_night_flipped = yes (glm reading), overriding qwen/gptoss.",
+    "Merged candidate 'Between-session reversal learning' / 'Home-cage operant reversal learning' / 'Reversal Learning (operant)' into one Reversal Learning assay (same FED3 paradigm, includes 5-HT1A/5-HT2A antagonist arms which per rubric are still one assay).",
+    "Merged FR-extinction and VR-extinction into one Extinction assay (same FED3 paradigm, same outcome of response suppression with no rewards).",
+    "Merged classic PR and re-setting PR into one Progressive Ratio assay (same apparatus, same effortful-responding construct measured by breakpoint/engagement).",
+    "Kept Variable Ratio schedule training as a separate assay from Extinction because the recording measures response vigor under uncertainty rather than extinction.",
+    "ABA: scored E1=Home cage (transparent living chamber = home cage used as the testing environment), E5=Yes (running wheel as enrichment object in the test cage), D1=Continuous monitoring and D2=>6 h (wheel running is recorded continuously by Scurry software across the 10-day period), D6=Yes (continuous recording spans >=6 h).",
+    "FED3 home-cage operant tasks: E5 scored No because the FED3 device IS the test apparatus rather than added enrichment; food_restriction='no' because chow was ad libitum in the home cage during testing."
+  ],
+  "assays": [
+    {
+      "assay_name": "Activity-Based Anorexia (ABA)",
+      "assay_description": "Rats individually housed in transparent chambers with a running wheel and removable food basket; 7-day baseline wheel habituation followed by up to 10 days of 90 min/day food access. Body weight, wheel revolutions, food anticipatory activity, and food intake recorded continuously. Psilocybin administered 24 h before ABA onset.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs were administered intraperitoneally at a 1.0 ml/kg injection volume",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Rats were allowed to habituate to the wheel for seven days to determine baseline running wheel activity (RWA)",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "rats were individually housed in transparent living chambers with a removable food basket and a running wheel",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "During the ABA period, food access was restricted to 90 min/day at the onset of the dark phase (1100-1230 h)",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "Water access during ABA chambers not restricted (ad libitum housing standard); not explicitly restricted in methods.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "psilocybin was administered 24 h prior to the onset of timed food restriction",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 35,
+        "n_male": 0,
+        "n_female": 35,
+        "n_per_group_min": 16,
+        "evidence": "Weight loss trajectories of individual rats (n = 16 saline; n = 19 psilocybin)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "A single dose of psilocybin (1.5 mg/kg, i.p.) administered 24 h before ABA onset improved body weight maintenance: psilocybin-treated rats spent more days above 85% baseline body weight and were protected from severe weight loss. There were no overall effects on wheel running or food intake, but ABA-resistant psilocybin rats showed reduced compulsive running and increased food anticipatory activity and intake.",
+        "statistics": "Days >85% BW: t(33)=2.508, p=0.0172; severe weight loss: t(33)=2.146, p=0.0394; daily % BW loss trend: t(33)=1.918, p=0.0638; wheel revolutions Treatment F(1,33)=1.159, p=0.2985; ABA Phase F(1,33)=126.5, p<0.0001",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Psilocybin-treated rats spent significantly more days above 85% of their baseline body weight (p = 0.0172)... psilocybin prevented severe weight loss associated with ABA (p = 0.0394).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 3,
+          "value": "7+",
+          "evidence": "body weight, % days >85% BW, daily weight loss, severe weight loss proportion, total wheel revolutions, food anticipatory activity (FAA), daily food intake, mean intake",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Daily totals reported across the 10-day period; no within-session minute-by-minute analysis.",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition or sequence analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Measures are wheel running, food intake, and body weight; not scored ethological acts.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animals individually housed during ABA.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "ABA outcomes assess physiological adaptation/weight loss, not a learning task.",
+          "confidence": "medium"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Running activity was recorded by the Scurry Activity Wheel Software (beam-break/position).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Separate univariate analyses only.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "rats were individually housed in transparent living chambers with a removable food basket and a running wheel",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Transparent living chamber; no enclosed refuge described.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bedding not described in the ABA chamber.",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material mentioned.",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Running wheel present in the home cage during the recording period.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single chamber containing a food basket and wheel; not physically partitioned compartments.",
+          "confidence": "medium"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Rats were individually housed during ABA.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Food access (90 min/day) and water provided in the testing cage during the continuous recording period.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 2,
+          "value": "Continuous monitoring",
+          "evidence": "Running activity was recorded by the Scurry Activity Wheel Software... persisted for a maximum of 10 days",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 3,
+          "value": ">6 h",
+          "evidence": "Continuous wheel monitoring across each 24 h day during baseline and the 10-day ABA period.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 3,
+          "value": "15+",
+          "evidence": "7-day baseline habituation + up to 10-day ABA = up to 17 recording days.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Rats were allowed to habituate to the wheel for seven days to determine baseline running wheel activity",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Behaviour recorded for up to 10 days after single psilocybin dose.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Continuous 24 h wheel recording each day spans >=6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 11
+      }
+    },
+    {
+      "assay_name": "Operant Reversal Learning (FED3)",
+      "assay_description": "Home-cage FED3 device with two nose-poke ports and pellet magazine. After FR1/FR3/FR5 training, reward contingencies reversed 18 h after saline/psilocybin (with or without ketanserin, MDL100907 or WAY100635 pretreatment). 3 h daily sessions over up to 3 reversal days; accuracy, target/non-target pokes, latencies, rewards measured.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs were administered intraperitoneally at a 1.0 ml/kg injection volume",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Rats were habituated to sucrose pellet rewards for two days prior to training... magazine training on a 'free feeding' schedule",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Operant testing was conducted once daily in the home cage; animals freely moving.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "ad libitum access to water and standard laboratory chow (Barastoc, Australia) throughout",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "ad libitum access to water... throughout",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1080,
+          "evidence": "Psilocybin was administered 18 h prior to reversal of reward contingencies",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": 0,
+        "n_female": null,
+        "n_per_group_min": 9,
+        "evidence": "Saline+SAL n=15, MDL+SAL n=9, WAY+SAL n=13, Saline+PSI n=16, MDL+PSI n=9, WAY+PSI n=13 (from Fig. 3/4 reporting).",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "Psilocybin (18 h post-dose) improved reversal accuracy on the initial reversal day, primarily by reducing perseverative non-target pokes and shortening latencies to first poke and first reward. 5-HT2A antagonism (MDL100907) alone abolished reversal learning, but co-administration with psilocybin rescued performance. 5-HT1A antagonism (WAY100635) negated psilocybin's improvement, implicating 5-HT1AR in psilocybin's pro-flexibility action.",
+        "statistics": "Accuracy Treatment F(1,29)=5.128, p=0.0312; non-target pokes t(18)=2.425, p=0.0260; latency to first poke t(18)=2.307, p=0.0332; latency to first reward t(18)=2.291, p=0.0343; MDL+SAL vs SAL+SAL accuracy p=0.0221; WAY+PSI vs SAL+PSI accuracy p=0.0024; MDL+PSI vs MDL+SAL accuracy t(16)=3.034, p=0.0079",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Psilocybin... produced an improvement in response accuracy (p = 0.0312)... specifically by reduced responding to the non-target (incorrect) port (p = 0.0260)... improvements in reversal accuracy and engagement were abolished when psilocybin was co-administered with the selective 5-HT1AR antagonist (WAY100635).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 3,
+          "value": "7+",
+          "evidence": "accuracy, criterion proportion, total pokes, target pokes, non-target pokes, rewards earned, latency to first poke, latency to first target poke, latency to first reward, session duration",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "first reversal session analysed in 6 x 30 min time bins (Fig. 2B)",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition/sequence analysis of pokes reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Operant nose-pokes are not ethological behaviours.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animal alone in home cage during testing.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Reversal learning task tests cognitive flexibility.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FED3 uses infra-red beams to detect nose-pokes and pellet collection (beam-break, not behavioural classifier).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate analyses only.",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "Operant testing was conducted once daily in the home cage",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Tinted transparent cage; no shelter described.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bedding in testing cage not described.",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material mentioned.",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FED3 is the test apparatus, not an enrichment object.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single home-cage space containing the FED3; not physically partitioned compartments.",
+          "confidence": "medium"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Rats individually housed during testing.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "ad libitum access to water and standard laboratory chow throughout; sucrose pellets delivered during session.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "rats underwent 3 days of testing on the reversed FR5 schedule",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "Operant testing was conducted once daily in the home cage for a 3 h session between 12:00-15:00",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "3 days of testing on the reversed FR5 schedule",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Training data (FR1/3/5) precede drug but are not analysed as baseline reversal performance.",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recording started 18 h post-dose; no >=24 h follow-up reported for reversal accuracy beyond the 3-day window.",
+          "confidence": "medium"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "3 h session does not span >=6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    },
+    {
+      "assay_name": "Operant Extinction (FR and VR)",
+      "assay_description": "Following FR5 (or VR20) training, psilocybin or saline administered; over the next 2-3 days the FED3 was provided with no rewards. Number/pattern of nose-pokes across extinction sessions measured. Includes a 7-day post-treatment test of response suppression.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs were administered intraperitoneally",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Rats were habituated to sucrose pellet rewards for two days prior to training",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Home-cage operant testing; animals freely moving.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "ad libitum access to water and standard laboratory chow throughout",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "ad libitum access to water",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 1080,
+          "evidence": "saline or psilocybin was administered immediately following the final FR5 training session. Over the next 3 days rats underwent extinction testing... extinction following variable ratio training tested up to ~7 days post-dose.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": 0,
+        "n_female": null,
+        "n_per_group_min": 9,
+        "evidence": "FR extinction Treatment F(1,17) implies ~19; VR extinction F(1,21) implies ~23.",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "Psilocybin had no significant effect on extinction of FR-trained responding or on response suppression following VR training tested 7 days later.",
+        "statistics": "FR extinction Treatment F(1,17)=0.3212, p=0.5783; Interaction F(179,3043)=0.2623, p>0.9999; VR extinction Treatment F(1,21)=0.2681, p=0.6100",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "Psilocybin treatment had no effect on... the ability to extinguish a previously learned response (p = 0.5783)... no improvement in response suppression 7 days following psilocybin treatment (p = 0.6100).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Total pokes and target-vs-non-target pokes across extinction sessions.",
+          "confidence": "medium"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Within-session time course analysed (Interaction F(179,3043) over 179 time bins).",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Operant nose-pokes.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animals alone during testing.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Extinction requires learning that responses no longer yield reward.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Infrared beam-break system.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate analyses.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "Operant testing was conducted once daily in the home cage",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Tinted transparent cage; no shelter.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bedding not described.",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not described.",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FED3 is the test apparatus.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single home-cage space.",
+          "confidence": "medium"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individually housed.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "ad libitum chow and water in the home cage throughout testing.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Over the next 3 days rats underwent extinction testing... 2 consecutive days of extinction testing after VR.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "Operant testing was conducted once daily in the home cage for a 3 h session; VR extinction had 24 h access to FED3 (with 3 h primary window).",
+          "confidence": "medium"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "3 days FR extinction + 2 days VR extinction.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug extinction baseline session.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "no improvement in response suppression 7 days following psilocybin treatment",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Primary sessions <6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      }
+    },
+    {
+      "assay_name": "Progressive Ratio / Re-setting Progressive Ratio",
+      "assay_description": "Home-cage FED3 PR task with exponential schedule (5*e^(0.2n)-5) testing breakpoint; followed by an FR5 reinstatement session and a re-setting PR session in which the ratio reset to 1 after any 10 min of inactivity. Psilocybin administered 18 h before the first PR test.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs were administered intraperitoneally",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Rats were habituated to sucrose pellet rewards for two days prior to training; FR1/3/5 training preceded PR.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Home-cage operant testing; freely moving.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "ad libitum access to water and standard laboratory chow throughout",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "ad libitum access to water",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1080,
+          "evidence": "saline or psilocybin was administered at completion of the final FR5 training session and the next day rats underwent a progressive ratio",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 25,
+        "n_male": 0,
+        "n_female": 25,
+        "n_per_group_min": 12,
+        "evidence": "breakpoint t(23)=0.7795, p=0.4436 indicates ~25 subjects.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin did not change breakpoint on the classic PR task but selectively increased task engagement (target pokes) on the re-setting PR session, when effort cost was lowered by ratio resets. Effects emerged only after experience with the resetting reward economy.",
+        "statistics": "Classic PR breakpoint t(23)=0.7795, p=0.4436; R-PR target pokes p=0.0209; classic PR target pokes p>0.9999",
+        "direction": "mixed",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Psilocybin treatment had no effect on breakpoint... (p = 0.4436)... psilocybin increased task engagement specifically during the R-PR session... increases in the number of target but not non-target pokes (R-PR p = 0.0209).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "Breakpoint, target pokes, non-target pokes, pellets earned, engagement metrics across PR and R-PR.",
+          "confidence": "medium"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No within-session time-binned analysis reported for PR.",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Operant responses.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animal alone.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "PR/R-PR task; in R-PR rats must learn the new reward economy.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Beam-break detection only.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "Operant testing was conducted once daily in the home cage",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not described.",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not described.",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FED3 is the test apparatus.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single home-cage space.",
+          "confidence": "medium"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individually housed.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Ad libitum chow/water in home cage and sucrose pellets delivered during session.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "PR session, FR5 reinstatement session, and R-PR session run on successive days.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "allowing animals access to the operant devices for 3 h using a standard PR schedule",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "PR + FR5 reinstatement + R-PR = ~3 recording days.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug PR baseline.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "All PR/R-PR sessions within the first ~3 days post-dose; no >=24 h pure follow-up isolated.",
+          "confidence": "medium"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "3 h session.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    },
+    {
+      "assay_name": "Variable Ratio Schedule Training",
+      "assay_description": "Following FR1 training and psilocybin/saline administration, rats were trained on VR5, VR10, and VR20 schedules (2 days each) on FED3 to assess response vigor under increasing reinforcement uncertainty.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs were administered intraperitoneally",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Rats were habituated to sucrose pellet rewards for two days prior to training; FR1 training preceded VR.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Home-cage operant testing; freely moving.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "ad libitum access to water and standard laboratory chow throughout",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "ad libitum access to water",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 1080,
+          "evidence": "saline or psilocybin was administered. The following day rats were trained at variable ratio (VR) schedules of VR5, VR10 and VR20 (two days on each schedule)",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 23,
+        "n_male": 0,
+        "n_female": 23,
+        "n_per_group_min": 11,
+        "evidence": "VR Treatment F(1,21)=1.741 implies n=23.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin had no effect on response vigor or goal-directed engagement across increasingly uncertain VR schedules.",
+        "statistics": "Treatment F(1,21)=1.741, p=0.2013; Interaction F(2,42)=0.7244, p=0.4906",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "Psilocybin treatment had no effect on... response vigour under uncertain (variable) schedules of reinforcement (p = 0.2013).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Target pokes, rewards earned across VR schedules.",
+          "confidence": "medium"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No within-session minute-by-minute analysis reported.",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Operant nose-pokes.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animals alone.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "VR schedules require learning under uncertainty.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Beam-break detection.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "Operant testing in home cage.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not described.",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not described.",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FED3 is the apparatus.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single home-cage space.",
+          "confidence": "medium"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individually housed.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Ad libitum chow/water plus pellet rewards during session.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "two days on each schedule (VR5, VR10, VR20)",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "Operant testing was conducted once daily in the home cage for a 3 h session",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "2 days on each of VR5, VR10, VR20 = 6 recording days.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FR1 training is not analysed as a baseline of VR performance.",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "VR sessions extend up to ~7 days after the single dose.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "3 h session.",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      }
+    }
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 6.25,
+    "environmental_complexity_max": 4.09,
+    "recording_duration_max": 15.0,
+    "behavioural_complexity_mean": 4.0,
+    "environmental_complexity_mean": 3.0,
+    "recording_duration_mean": 7.91
+  },
+  "low_confidence_count": 12,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 84438,
+    "output_tokens": 13085,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

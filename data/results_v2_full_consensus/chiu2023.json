@@ -1,0 +1,703 @@
+{
+  "study_id": "Chiu2023",
+  "doi": "10.1101/2023.09.25.559347",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Adult male and female C57BL/6J ... were used in this study.",
+    "confidence": "medium"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Adult male and female C57BL/6J (#000664), Ai9 mice (#007909), and Thy1-GFP-M mice were from Jackson Labs",
+    "confidence": "high"
+  },
+  "psychedelic": "LSD, DOI, Psilocin",
+  "dosing": [
+    {
+      "compound": "LSD",
+      "doses_mg_per_kg": [
+        0.3,
+        0.5
+      ],
+      "doses_raw": "0.3 mg/kg LSD (behavioral); 0.5 mg/kg LSD for 5 consecutive days (downregulation)",
+      "vehicle": "cyclodextrin",
+      "route": "i.p.",
+      "schedule": "multiple",
+      "evidence": "vehicle was composed of N,N-dimethyllacetamide (final volume 0.5%) ... brought to volume with 5% 2-hydroxypropoyl-β-cyclodextrin ... 0.3 mg/kg LSD ... C57 and Htr2a EGFP-CreERT2 mice were treated (i.p.) with vehicle or 0.5 mg/kg LSD for 5 days.",
+      "confidence": "high"
+    },
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "1 mg/kg DOI",
+      "vehicle": "cyclodextrin",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "1 mg/kg 2,5-dimethoxy-4-iodoamphetamine (DOI)... (i.p.)",
+      "confidence": "high"
+    },
+    {
+      "compound": "Psilocin",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "1 mg/kg psilocin",
+      "vehicle": "cyclodextrin",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "1 mg/kg psilocin (i.p.)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "No handling protocol described.",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Mice were housed 3-5 per cage in a temperature- and relative humidity-controlled room",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "12:12-hr light/dark cycle (direction not specified)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Home-cage enrichment not described.",
+      "confidence": "high"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Open Field Test (locomotion, rearing, stereotypy)",
+      "assay_description": "Open field (21 x 21 x 30 cm) under 180 lux; 30 min baseline followed by 90 min post-injection recording. Locomotor activity (distance traveled), rearing (vertical beam-breaks), and stereotypical activities (repetitive beam-breaks <1 sec) monitored automatically by beam-breaks in 5-min segments.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "injected (i.p.) with the vehicle, 0.3 mg/kg LSD, 1 mg/kg DOI, or 1 mg/kg psilocin",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Mice were placed into the open field for 30 min to collect baseline activities (baseline data is collected, not habituation-without-data).",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice freely moved in the open field arena.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in the open field arena during recording.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in the open field arena during recording.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "returned immediately to the open field for 90 min",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "Sample sizes per group not reported in main text.",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "DOI increased locomotion, rearing, and stereotypy; LSD increased rearing and stereotypy; psilocin did not significantly affect these motor measures relative to vehicle. Baseline locomotor, rearing, and stereotypical activities were higher overall in Htr2a EGFP-CreERT2 than in C57 mice.",
+        "statistics": "Locomotion DOI vs vehicle p≤0.031; Rearing LSD/DOI p≤0.001; Stereotypy DOI p=0.035; baseline genotype p≤0.004",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "Locomotor activities were increased overall in both genotypes by DOI relative to vehicle (p-values≤0.031)... only LSD and DOI augmented overall rearing (p-values≤0.001), while only DOI increased stereotypy (p=0.035)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "Locomotor activity (distance traveled), rearing (vertical beam-breaks), and stereotypical activities (repetitive beam-breaks)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "baseline activities were collected in 5-min blocks over 30 min and post-injection responses were followed over the next 90 min ... monitored in 5-min segments",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence/transition analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotion, rearing, and stereotypy beam-breaks are not natural ethological behaviours.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning required.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Motor activities assessed automatically by beam-breaks (Fusion Versamax).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate statistics (ANOVA/ANCOVA) reported.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "open field (21 x 21 x 30 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter in open field (definitionally absent).",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bare floor of open field arena.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material (definitionally absent).",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects (definitionally absent).",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Open field is a single open arena.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Only the focal mouse was present.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in arena.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Baseline (30 min) followed by post-injection (90 min) was one continuous session in the same apparatus.",
+          "confidence": "medium"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "30 min baseline + 90 min post-injection = 120 min total continuous recording",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "All open-field recording done on a single day per animal.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Mice were placed into the open field for 30 min to collect baseline activities",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No ≥24-h post-drug recording.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total session ~2 h, well under 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Head Twitch Response (with grooming and retrograde walking)",
+      "assay_description": "Head twitches, grooming duration, and retrograde walking events filmed over 30 min during the open field session following drug administration. HTRs scored manually by blinded observers; grooming and retrograde walking scored using TopScan (CleverSys).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "injected (i.p.) with the vehicle, 0.3 mg/kg LSD, 1 mg/kg DOI, or 1 mg/kg psilocin",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "30-min baseline collected in same apparatus (data collected, not habituation).",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice were freely moving in the open field.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in open field arena.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in open field arena.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "filmed over 30 min during the open field studies following administration of drugs",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "Sample sizes not reported.",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "LSD, DOI, and psilocin all increased HTRs vs vehicle; DOI > LSD or psilocin in C57. LSD and DOI prolonged grooming in C57 while psilocin reduced grooming. LSD and DOI increased retrograde walking events; no genotype difference for retrograde walking.",
+        "statistics": "HTR all psychedelics vs vehicle p<0.001; DOI vs LSD/psilocin p≤0.043; LSD vs psilocin p=0.026; grooming p-values<0.001; retrograde walking p-values<0.001",
+        "direction": "mixed",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "LSD, DOI, and psilocin stimulated more head twitch responses (HTRs) in the C57 and Htr2a EGFP-CreERT2 mice relative to the vehicle controls (p-values<0.001) ... both LSD and DOI stimulated grooming for longer periods ... both LSD and DOI stimulated [retrograde walking] to greater extents than psilocin- and vehicle-treated mice (p-values<0.001).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "HTR count, grooming duration, retrograde walking events",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Reported as totals over 30 min, no within-session time-course for these measures.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence or microstructure analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Grooming duration was scored — a natural ethological behaviour.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning required.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTRs scored by hand; grooming/retrograde walking scored using TopScan (CleverSys) which is position-tracking, on the SCORE-0 list.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate statistics.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Open field arena.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bare floor.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Open field.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Only focal mouse present.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "30 min video recording over single session.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "filmed over 30 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single day of testing.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline for HTR/grooming/retrograde walking reported.",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No follow-up recording ≥24 h after drug.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session <6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Prepulse Inhibition (PPI)",
+      "assay_description": "PPI of acoustic startle in SR-LAB apparatus. 42 trials (6 null + 18 pulse-alone + 18 prepulse-pulse). Drug administered i.p., mice placed in chambers, habituated to 64 dB white noise, testing began 10 min later. %PPI, startle magnitude, and null activity measured.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Mice received (i.p.) the vehicle, 0.3 mg/kg LSD, 1 mg/kg DOI, or 1 mg/kg psilocin",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Following habituation to a white-noise background (64 dB), testing began 10 min later.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "SR-LAB startle chambers use small enclosures/holders restraining the animal during recording.",
+          "confidence": "medium"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in PPI chamber.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in PPI chamber.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 10,
+          "evidence": "testing began 10 min later",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "Not reported in available text.",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "All three psychedelics (LSD, DOI, psilocin) disrupted PPI relative to vehicle in both C57 and Htr2a EGFP-CreERT2 mice. PPI was lower overall in C57 than in knock-in mice. Null activities were higher in knock-in mice; startle responses differed by genotype and treatment.",
+        "statistics": "PPI genotype p<0.001; all hallucinogens vs vehicle p<0.001",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "within genotypes all three hallucinogens disrupted PPI relative to vehicle (p-values<0.001)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "%PPI, startle activity, null activity reported.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No within-session time-course analysis reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence/transition analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Startle magnitude/PPI are reflex measures, not ethological.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "PPI is sensorimotor gating, no learning.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "SR-LAB startle system records force transducer output, not behavioural classification.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate statistics.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "SR-LAB startle chambers.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter inside startle chamber.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding in startle tube.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single startle tube/chamber.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Single mouse in chamber.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in chamber.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Each test composed of 42 trials in one session.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "42 brief trials following 10-min habituation; session duration not explicitly stated but trial-based PPI sessions are typically <15 min.",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test day.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline PPI session reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No ≥24-h follow-up recording.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session <6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    }
+  ],
+  "judge_notes": [
+    "Merged candidate gptoss's separate Open Field Locomotion, Rearing, and Stereotypy entries into a single Open Field Test assay — these are different measures from the same apparatus/protocol, scored as 1 assay per rubric (B1 captures multiple measures).",
+    "Merged candidate gptoss's separate HTR, Grooming, and Retrograde Walking entries into a single video-scored open-field-during-recording assay, since they share the same 30-min video recording during the open field session and the same scoring protocol (B1=2-3, B4=Yes due to grooming).",
+    "Kept Open Field and HTR/grooming as separate assays because B/E/D rubric treats different behavioural domains in the same apparatus as separate assays, and the HTR/grooming measures used video scoring rather than beam-break data.",
+    "PPI: set setup_restrain=yes per rubric guidance (PPI startle chambers with body-restraint tubes count as restraint).",
+    "D2 for PPI scored 0 (<15 min) with low confidence — exact session duration not stated but 42-trial PPI sessions are typically brief; flagged accordingly.",
+    "Dose schedule for LSD set to 'multiple' because behavioural studies used a single 0.3 mg/kg dose (acute) while the downregulation experiment used 0.5 mg/kg × 5 days (repeated).",
+    "Vehicle inferred as 2-hydroxypropyl-β-cyclodextrin (cyclodextrin) since paper explicitly states this was the vehicle for behavioral drugs."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 4.09,
+    "behavioural_complexity_mean": 2.5,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 1.82
+  },
+  "low_confidence_count": 1,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 94831,
+    "output_tokens": 8178,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

@@ -1,0 +1,704 @@
+{
+  "study_id": "Jones2023",
+  "doi": "10.1021/acsptsci.3c00123",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 42,
+    "age_max_days": 56,
+    "evidence": "All 554 C57Bl6/J mice used (male; 6 -8 weeks old; The Jackson Laboratory, ME, USA)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 554,
+    "n_female": null,
+    "evidence": "All 554 C57Bl6/J mice used (male; 6 -8 weeks old; The Jackson Laboratory, ME, USA)",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        0.3,
+        1.0,
+        3.0
+      ],
+      "doses_raw": "0.3 and 3 mg/kg (range 0-3 mg/kg)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Psilocybin powder ... was diluted in 0.9% sterile saline ... administered intraperitoneally (IP) at doses between 0.3 and 3 mg/kg.",
+      "confidence": "high"
+    },
+    {
+      "compound": "Ketamine",
+      "doses_mg_per_kg": [
+        30.0
+      ],
+      "doses_raw": "30 mg/kg IP",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Ketamine hydrochloride ... diluted in 0.9% sterile saline ... administered at a dose of 30 mg/kg IP.",
+      "confidence": "high"
+    },
+    {
+      "compound": "Lisuride",
+      "doses_mg_per_kg": [
+        0.25
+      ],
+      "doses_raw": "0.25 mg/kg",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "a group of animals were given 0.25 mg/kg of lisuride",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Acclimation prior to handling is mentioned but no specific handling protocol described.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "were housed in groups of three or four",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "yes",
+      "evidence": "while under a 12 h artificial, reversed light/dark cycle",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Home cage enrichment not described.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "41 × 20 × 24 cm open-field arena, ~200-250 lux; mice placed individually in a corner and allowed to explore freely for 10 min (acute, at 15 min and 4 h post-injection) or 150 min (at 7 days). Total distance traveled and time in center (middle one-third, 6 × 27 cm) measured by Any-Maze.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Mice were injected IP with psilocybin (0 -3 mg/kg)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No apparatus pre-exposure described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice were allowed to explore freely for 10 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in the open-field apparatus during recording.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in the open-field apparatus during recording.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 15,
+          "evidence": "at 15 min and 4 h after IP administration of psilocybin ... assessed behavior in an open field at 7 days following drug administration",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "Group n's for OFT not explicitly stated in main text.",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "Psilocybin produced bidirectional, dose-dependent effects on time in center: significant suppression at 15 min (acute anxiogenic-like) and significant enhancement at 4 h (postacute anxiolytic-like) with 3 mg/kg. At 7 days, psilocybin increased time in center during a 150 min OFT, but this long-term anxiolytic effect was abolished by chronic oral corticosterone exposure. Distance traveled was not significantly altered.",
+        "statistics": "Time in center: two-way RM ANOVA dose × time interaction p = 0.0019, Sidak's *p = 0.047, **p = 0.001. Distance: dose × time interaction p = 0.034. 7-day OFT: psilocybin × corticosterone interaction p = 0.0115, drug main effect p < 0.0001, Sidak's vs saline *p = 0.046.",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "A negative relationship between the dose and the time spent in the center of the open field was seen at 15 min ... In contrast, a positive relationship between the dose and the time spent in the center of the open field was observed at 4 h.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Time spent in the center and total distance travelled were automatically quantified",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total session measures reported; no within-session time binning.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transitions or sequences analyzed.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Time in center is a spatial zone measure, not an ethological behaviour per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individually placed into a corner within an open-field apparatus",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate approach-avoidance test; no learning required.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "automatically quantified using Any-Maze software (position tracking)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate analyses only.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "open-field apparatus (41 × 20 × 24 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open field with no refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described; apparatus cleaned with Trifectant between tests.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in arena.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "open-field arena with virtual center zone",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individually placed into a corner",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in apparatus.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Recorded at 15 min, 4 h, and 7 days post-injection",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "for 10 min in acute experiments and for 150 min in long-term experiments",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Acute recordings on day 1 and OFT again at 7 days.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline OFT reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "assessed behavior in an open field at 7 days following drug administration",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Longest session 150 min (<6 h).",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      }
+    },
+    {
+      "assay_name": "Head Twitch Response",
+      "assay_description": "Mice implanted with skull-mounted neodymium magnets were placed individually in a clear acrylic cylinder (15.24 × 15.24 cm) wrapped in copper coil within a dark sound-attenuating chamber. Following 3 mg/kg IP psilocybin, magnetometer signals were recorded for 2 h and head twitches automatically detected via custom MATLAB software in 10 min bins.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered with 3 mg/kg IP psilocybin",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No pre-test apparatus habituation described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "individual animals were placed into a clear acrylic cylinder",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in HTR cylinder during recording.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in HTR cylinder during recording.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "the animals were administered with 3 mg/kg IP psilocybin and recorded for an additional 2 h",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 7,
+        "evidence": "n = 7 -8 (Figure 2A)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin (3 mg/kg IP) produced a robust elevation in head twitch counts during the first 10 min post-injection that rapidly returned to baseline.",
+        "statistics": "Two-way RM ANOVA (n = 7-8; drug × time interaction p < 0.0001; drug main effect p < 0.0001; time main effect p = 0.48) with Sidak's *p = 0.031.",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "Psilocybin-treated animals demonstrated a clear elevation in the number of HTRs occurring in the first 10 min after IP administration, which rapidly returned to baseline",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Head twitch counts only.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Head twitch counts across 10 min bins following psilocybin administration",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Per rubric, HTR is explicitly NOT ethological.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual animals were placed into a clear acrylic cylinder",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Unconditioned reflex response.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Magnetometer signal processing with custom MATLAB; not a video-based behavioural classifier on rubric's allow-list.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single variable.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "clear acrylic cylinder (15.24 cm height × 15.24 cm diameter)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No refuge in cylinder.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single cylinder.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individual animals were placed",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in cylinder.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "recorded for an additional 2 h",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "recorded for an additional 2 h",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single recording day.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recording ended at 2 h post-injection.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "2 h session.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    },
+    {
+      "assay_name": "Novelty Suppressed Feeding",
+      "assay_description": "After 16 h food deprivation, mice received saline or drug IP 4 h prior to testing. They were placed in a novel cage (60 × 40 × 40 cm, 960 lux) with a sucrose-soaked food pellet on a petri dish in the center and observed for 10 min. Latency to first feed (blinded scoring), movement/distance (Any-Maze), time in center, and pellet weight change were measured.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Mice then received an IP injection of saline or drug 4 h prior to performing the NSF test",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No apparatus habituation described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "placed into a corner of the apparatus and allowed to explore for 10 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "Animals underwent a 16 h period of food deprivation",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in NSF apparatus.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 240,
+          "evidence": "IP injection of saline or drug 4 h prior to performing the NSF test",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 30,
+        "n_male": 30,
+        "n_female": 0,
+        "n_per_group_min": null,
+        "evidence": "n = 30 (Figure 2C,D)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin (3 mg/kg IP) reduced latency to first feed and increased time in the center of the NSF chamber 4 h post-injection, indicating anxiolytic-like effects. This effect was blocked by 21-day chronic oral corticosterone, by mifepristone pretreatment, and by withdrawal from prior chronic corticosterone, but NOT by ketanserin (5-HT2A antagonist). Lisuride and repeated saline injection produced similar latency reductions, supporting a glucocorticoid-mediated mechanism.",
+        "statistics": "Mantel-Cox (n = 30; ***p = 0.001); time in center t-test **p = 0.0047; mifepristone block Mantel-Cox p = 0.0003 (Psil vs saline **p = 0.0075; Psil vs Psil+Mifep *p = 0.0174); ketanserin no block (Psil vs Psil+Ketans p = 0.45); chronic CORT block p = 0.16; withdrawal block p = 0.59.",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "psilocybin was found to reduce the latency to first consumption in the NSF assay ... Animals treated with 3 mg/kg IP psilocybin also exhibited increased time in the center of this assay at 4 h posttreatment",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "Latency to first feed, time in center, distance/movement (Any-Maze), and pellet weight change before/after test",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single latency / aggregate measures over 10 min.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence/transition analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Feeding behaviour (latency to feed, pellet consumption) is a natural behavior directly measured.",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Approach-avoidance conflict; no learned association required.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Any-Maze tracking only; latency scored by blinded observer.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate analyses.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "novel cage environment (60 × 40 × 40 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No refuge in arena.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding mentioned.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single arena with central petri dish.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Tested individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "A food pellet soaked in 50% sucrose solution was placed into a glass petri dish that served as the center zone",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "allowed to explore for 10 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "10 min test",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test day at 4 h post-injection.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug NSF baseline.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Test at 4 h post-injection only.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "10 min session.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    }
+  ],
+  "judge_notes": [
+    "Three behavioural assays retained (OFT, HTR, NSF). All non-behavioural endpoints (plasma corticosterone ELISA, LC-MS/MS pharmacokinetics) excluded per rubric.",
+    "FST and SPT mentioned in main text as supplementary (Figure S2) — not scored as separate assays because supplement details unavailable in the provided markdown and main text only briefly references null results.",
+    "B4 (ethological) for NSF scored Yes because feeding is a natural behaviour directly measured (latency to first feed, pellet consumption); candidates disagreed and this matches gptoss reading.",
+    "B1 for NSF set to 2-3+ → '4-6' (score 2): latency, time in center, distance/movement, and pellet weight change = 4 distinct measures.",
+    "Dosing block expanded to include Ketamine and Lisuride, which were also administered to mice in behavioural experiments (NSF), in addition to Psilocybin.",
+    "B7 scored 0 for all assays: Any-Maze is position tracking (rubric SCORE 0 list); HTR magnetometer signal processing is not on the SCORE 1 allow-list.",
+    "Handling scored not_reported (low confidence) — paper mentions 'prior to handling or experimentation' as acclimation context but does not describe a habituation handling protocol."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 6.82,
+    "behavioural_complexity_mean": 2.08,
+    "environmental_complexity_mean": 0.45,
+    "recording_duration_mean": 3.18
+  },
+  "low_confidence_count": 5,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 60146,
+    "output_tokens": 8501,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

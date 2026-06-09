@@ -1,0 +1,744 @@
+{
+  "study_id": "Cao2022",
+  "doi": "10.1126/science.abl8615",
+  "species": "mouse",
+  "strain": "C57BL/6J, B6D2F1",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 42,
+    "age_max_days": 56,
+    "evidence": "Male C57/BL6J mice (age 6-8 weeks); 8 weeks plus for ARS experiments",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male C57/BL6J mice (age 6-8 weeks)",
+    "confidence": "medium"
+  },
+  "psychedelic": "LSD, DOI, Psilocin, Lisuride, IHCH-7113, IHCH-7079, IHCH-7086",
+  "dosing": [
+    {
+      "compound": "LSD",
+      "doses_mg_per_kg": [
+        0.0075,
+        0.015
+      ],
+      "doses_raw": "0.0075 and 0.015 mg/kg intraperitoneally (ip)",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "acute administration of LSD [0.0075 and 0.015 mg/kg intraperitoneally (ip)]",
+      "confidence": "high"
+    },
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [],
+      "doses_raw": "not reported in main text",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "DOI ... produced an HTR of equal magnitude in wild-type and b-arrestin2 knockout mice",
+      "confidence": "low"
+    },
+    {
+      "compound": "Psilocin",
+      "doses_mg_per_kg": [],
+      "doses_raw": "not reported in main text",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "the psychedelics (LSD, DOI, and psilocin), but not lisuride, induced a significant HTR in mice",
+      "confidence": "low"
+    },
+    {
+      "compound": "Lisuride",
+      "doses_mg_per_kg": [],
+      "doses_raw": "not reported in main text",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "LSD-induced HTR is blocked by IHCH-7079, IHCH-7086, lisuride, and MDL100907",
+      "confidence": "low"
+    },
+    {
+      "compound": "IHCH-7113",
+      "doses_mg_per_kg": [
+        0.125
+      ],
+      "doses_raw": "doses as low as 0.125 mg/kg",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "IHCH-7113, which produced HTR at doses as low as 0.125 mg/kg",
+      "confidence": "high"
+    },
+    {
+      "compound": "IHCH-7079",
+      "doses_mg_per_kg": [
+        10
+      ],
+      "doses_raw": "doses as high as 10 mg/kg",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "IHCH-7079 and IHCH-7086 failed to produce any HTR, even at doses as high as 10 mg/kg",
+      "confidence": "high"
+    },
+    {
+      "compound": "IHCH-7086",
+      "doses_mg_per_kg": [
+        10
+      ],
+      "doses_raw": "doses as high as 10 mg/kg",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "IHCH-7079 and IHCH-7086 failed to produce any HTR, even at doses as high as 10 mg/kg",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "no handling protocol described",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "cage density not specified",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "fixed 12/12 hour light/dark cycle, lights turned on at 7:00 am",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "home-cage enrichment not described",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head Twitch Response (HTR)",
+      "assay_description": "Automated magnetometer-based detection system; mice with implanted skull magnets placed in a 12 cm diameter glass beaker; 30 min baseline recording followed by 1-2 h post-injection recording; HTR identified by sinusoidal wavelets. Tested across multiple drugs/doses and in Y370W mutant mice.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "mice were administrated (IP) with testing compounds",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "mice were transferred to the beaker for 30 mins to recording the baseline HTR",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "mice were placed in a 12 cm diameter glass beaker (freely moving)",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in beaker during recording",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water in beaker during recording",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Immediately after the baseline recording, mice were administrated (IP) with testing compounds, and further recording for 1-2 hours",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "error bars represent SEM (n = 8 to 10 C57/BL6J or B6D2F1 mice)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "LSD, DOI, psilocin, and IHCH-7113 induced a dose-dependent HTR in mice, while lisuride, IHCH-7079, and IHCH-7086 failed to produce HTR even at 10 mg/kg. LSD-induced HTR was blocked by MDL100907, lisuride, IHCH-7079, and IHCH-7086. In Y370W heterozygous mice DOI induced HTR but LSD did not; in homozygous mice neither induced HTR.",
+        "statistics": "ns, *P<0.05, **P<0.01, ***P<0.001, ****P<0.0001 (two-tailed unpaired Student's t test)",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "IHCH-7113, not IHCH-7079 or IHCH-7086, induces a dose-dependent HTR in mice that is blocked by 5-HT2AR selective antagonist MDL100907 ... LSD-induced HTR is blocked by IHCH-7079, IHCH-7086, lisuride, and MDL100907",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "HTR count was the single measure",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "HTR responses in mice are shown as 5-min binned intervals",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no transition/sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is drug-induced stereotypy, not natural ethological behaviour",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "mouse tested alone",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is reflexive, no learning required",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "fully automated magnetometer-based detection system (MDS); HTR was identified by searching for sinusoidal wavelets fulfilling specific criteria",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate analysis only",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "12 cm diameter glass beaker",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "glass beaker, no shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "glass beaker, no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting material",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment objects",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single beaker",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "mouse placed alone in beaker",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in beaker",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "baseline + post-drug recording in same session",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "30 min baseline plus further recording for 1-2 hours",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "single test day per cohort",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "mice were transferred to the beaker for 30 mins to recording the baseline HTR",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no >=24h post-drug recording",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "session <6 h",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Forced Swim Test (FST)",
+      "assay_description": "Mice individually placed into a glass beaker filled with 15 cm deep water at 25±1 °C for 6 min; immobility time during the final 4 min recorded. Used in both ARS-induced and corticosterone-induced depression models.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "injected intraperitoneally (ip) with testing compounds",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "no separate habituation described",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "FST cylinder (forced to swim, definitionally restrained per rubric)",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in FST apparatus",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no drinking water access during 6-min swim test",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "After a 30 min recovery period, mice were subjected to evaluation",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "error bars represent SEM (n = 8 C57/BL6J or B6D2F1 mice)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute administration of LSD (0.0075 and 0.015 mg/kg), lisuride, IHCH-7079, and IHCH-7086 significantly reduced immobility in ARS-induced and corticosterone-induced depression models. Antidepressant-like effects of IHCH-7079 and IHCH-7086 were abolished by MDL100907. LSD effect persisted in Y370W mutant mice.",
+        "statistics": "ns, *P<0.05, **P<0.01, ***P<0.001, ****P<0.0001 (two-tailed unpaired Student's t test)",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "acute administration of LSD ... significantly attenuated acute restraint stress (ARS)-induced 'depression-like' freezing behavior in the forced swimming test (FST) and tail suspension test (TST)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "immobility time during final 4 min",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "total immobility reported, no within-session bins",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST immobility is not ethological",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individually tested",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "manually assessed by blinded observer",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate measure",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "glass beaker filled with 15 cm deep water",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "water, no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting material",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single beaker",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individually placed",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no consumable food/water",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "6 min single session",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "forced to swim for 6 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "single FST day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug FST baseline reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no >=24h post-drug recording",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "6 min",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "Tail Suspension Test (TST)",
+      "assay_description": "Mice individually suspended by tail with adhesive tape for 6 min; immobility during final 4 min manually scored by blinded observer. Used in ARS-induced and corticosterone-induced depression models.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "injected intraperitoneally (ip) with testing compounds",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "no separate habituation described",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "suspended by the tail using an adhesive tape",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food during suspension",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water during suspension",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "After a 30 min recovery period, mice were subjected to evaluation via tail suspension test (TST)",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "error bars represent SEM (n = 8 C57/BL6J or B6D2F1 mice)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute administration of LSD (0.015 mg/kg), lisuride, IHCH-7079, and IHCH-7086 significantly reduced immobility time in the TST of ARS- and corticosterone-induced depression-like mice; effects of IHCH-7079/7086 were abolished by MDL100907. LSD antidepressant-like effect persisted in Y370W mutant mice.",
+        "statistics": "ns, *P<0.05, **P<0.01, ***P<0.001, ****P<0.0001 (two-tailed unpaired Student's t test)",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "acute administration of LSD ... significantly attenuated ARS-induced 'depression-like' freezing behavior in the ... tail suspension test (TST)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "immobility time during final 4 min",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "total immobility, no within-session bins",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "TST immobility is not ethological",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individually suspended",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "manually assessed by blinded observer",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate measure",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "suspended by the tail",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no bedding during suspension",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single suspension space",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individually suspended",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "6 min single session",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "suspended for 6 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "single TST day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no >=24h post-drug recording",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "6 min",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    }
+  ],
+  "judge_notes": [
+    "Three behavioural assays identified: HTR, FST, TST. All candidates agreed on these three assays.",
+    "B1 for HTR: scored 0 (single measure = HTR count). One candidate scored 1 citing 5-min binned plots, but binning is temporal dynamics (B2), not a separate measure.",
+    "FST setup_restrain scored 'yes' per rubric (FST cylinder is listed explicitly as restraint).",
+    "Sex scored 'male' based on Methods 'Male C57/BL6J mice' statement quoted by two candidates; gptoss flagged not_reported but the quote is in the methods.",
+    "Dosing entries for DOI, psilocin, and lisuride left with empty numeric arrays — exact doses are reported only in supplementary figures not visible in the main text provided.",
+    "D2 for HTR scored 2 (61 min–6 h): 30 min baseline + 1–2 h post-drug = ~90–150 min total."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 4.09,
+    "behavioural_complexity_mean": 0.83,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 1.36
+  },
+  "low_confidence_count": 5,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 60507,
+    "output_tokens": 8242,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

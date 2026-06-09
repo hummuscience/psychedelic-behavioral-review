@@ -1,0 +1,480 @@
+{
+  "study_id": "Dere2014",
+  "doi": null,
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "psychedelic": "DOI",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 70,
+    "age_max_days": 98,
+    "evidence": "Testing was started at the age of 10-14 weeks.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male and female Gpm6b -/- mice and their WT littermates were tested",
+    "confidence": "high"
+  },
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        0.5
+      ],
+      "doses_raw": "0.5 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "the mouse received an intraperitoneal injection of DOI (0.5 mg/kg dissolved in physiological saline; injected in a volume of 0.1 ml/10 g body weight)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "mice were housed in groups of 4-6 in standard plastic cages",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12 h light-dark cycle (lights on at 7:00 am)... Behavioral and pharmacological experiments were performed during the light phase of the day",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "LABORAS home cage observation with DOI challenge",
+      "assay_description": "Individual mice placed in LABORAS cages with wood-chip bedding; 30 min baseline recording of locomotion and grooming, followed by i.p. injection of DOI (0.5 mg/kg) and another 30 min recording. Behaviours classified automatically from vibration signals by LABORAS software.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "the mouse received an intraperitoneal injection of DOI (0.5 mg/kg dissolved in physiological saline)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "After baseline recording of 30 min, the mouse was injected... (baseline served as first exposure, no separate habituation session described)",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice are housed in transparent polycarbonate cages... The cage is placed directly onto the sensor platform",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "food and water ad libitum... the upper part of the cage (including the top, food hopper and drinking bottle) suspended in a height-adjustable frame",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "food and water ad libitum... the upper part of the cage (including the top, food hopper and drinking bottle) suspended in a height-adjustable frame",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Immediately thereafter, locomotion and grooming were measured in the LABORAS cage for another 30 min.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "respective sample sizes are indicated in the figures",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "Acute DOI (0.5 mg/kg, i.p.) reduced locomotion and dramatically increased grooming in WT mice. Male Gpm6b-/- mice showed a clearly blunted response (locomotion reduced only to 42% of baseline vs 17% in WT; smaller grooming/locomotion ratio increase). Female Gpm6b-/- mice showed weaker DOI effects overall, with higher baseline grooming/locomotion ratio than WT.",
+        "statistics": "Males: locomotion maximal reduction WT vs KO p = 0.002 (t-test); grooming/locomotion ratio WT vs KO p = 0.001 (Mann-Whitney U). Females: locomotion maximal reduction p = 0.084; grooming/locomotion ratio p = 0.0012 (t-test).",
+        "direction": "mixed",
+        "dose_dependent": "n/a",
+        "sex_dependent": "yes",
+        "time_dependent": "n/a",
+        "evidence": "In WT mice, the time spent with locomotion decreased to 17.42 ± 4.47% of baseline, whereas the maximal reduction in Gpm6b -/- mice reached only 42.12 ± 5.77% (p = 0.002)... male Gpm6b -/- mice show a blunted behavioral response to challenge with a 5-HT2A/C receptor agonist.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "time spent with locomotion and grooming were recorded... we also expressed the effects of DOI as ratio",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Baseline performance... analyzed in 3 interval bins of 10 min",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no analysis of behavioural transitions reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "grooming behavior measured; LABORAS classifies eating, drinking, scratching, climbing, grooming, etc.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual mice were placed in LABORAS cages",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning or memory component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "LABORAS classifies behaviours from force-transducer vibration signals, not from pose estimation or supervised ML video classification (treated as position/vibration-tracking system)",
+          "confidence": "medium"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no dimensionality reduction or multivariate statistics applied",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "LABORAS home cage behavior monitoring system... Mice are housed in transparent polycarbonate cages (Makrolon type II cage)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "transparent polycarbonate cage with no enclosed refuge described",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "floor covered with wood-chip bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting material mentioned in testing apparatus",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment objects mentioned in testing arena",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single Makrolon type II cage with no compartments",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individual mice were placed in LABORAS cages",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "cage with food hopper and drinking bottle suspended above sensor platform",
+          "confidence": "medium"
+        },
+        "raw_total": 3
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "30 min baseline followed immediately by 30 min post-injection recording on the same day, treated as one continuous session",
+          "confidence": "medium"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "baseline recording of 30 min... another 30 min after injection",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "all recordings performed on a single day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "After baseline recording of 30 min, the mouse was injected",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no recording ≥24 h after injection",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no single session spanned ≥6 h",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    },
+    {
+      "assay_name": "Prepulse Inhibition of the Acoustic Startle Reflex (PPI)",
+      "assay_description": "Animals placed in small metal restraint cages on a movable force-sensing platform inside sound-attenuating cabinets. Session: 2 min habituation to 65 dB background, 1 min baseline, 6 pulse-alone trials (120 dB), then PPI trials with prepulses of 70/75/80 dB preceding 120 dB pulse. Startle amplitude and % PPI computed. No psychedelic was administered for this assay; assessed Gpm6b genotype effects only.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "not_reported",
+          "evidence": "no drug was administered in this assay",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "session itself included 2 min habituation to background noise, but no separate pre-test apparatus habituation described",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "Animals were placed in small metal cages (82 mm × 40 mm × 40 mm) to restrict major movements and exploratory behavior.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in startle chamber during the recording",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water in startle chamber during the recording",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "not_reported",
+          "value_minutes": null,
+          "evidence": "no psychedelic administered for PPI assay",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "respective sample sizes are indicated in the figures",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "Gpm6b-/- mice of both sexes showed significantly reduced PPI across prepulse intensities compared to WT littermates, with a trend toward higher startle amplitude. PPI increased with prepulse intensity as expected.",
+        "statistics": "Repeated measures ANOVA p < 0.001 for prepulse intensity effect in both sexes; significant genotype effect (Gpm6b -/- < WT).",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "no",
+        "time_dependent": "n/a",
+        "evidence": "Gpm6b -/- mice of both genders showed significantly reduced PPI as compared to WT mice (Fig. 9A and B).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "startle amplitude and % PPI at three prepulse intensities reported",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "amplitudes averaged across trials; no within-session time-course analysis",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no transition or sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "PPI startle magnitude is not an ethological behaviour",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "animal tested alone in restraint cage",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "PPI is sensorimotor gating, not learning/memory",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "force transducer recording, not behavioural classification",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no dimensionality reduction reported",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "small metal cages in sound attenuating cabinets (startle chambers)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "restraint cage, no shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "movable platform floor, no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment in startle cage",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single restraint compartment",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individual animal in restraint cage",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "one experimental session described",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "2 min habituation + 1 min baseline + 6 pulse-alone + PPI trials at 8–22 s intervals with multiple prepulse conditions, totalling >15 min",
+          "confidence": "medium"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "single PPI session",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline (no drug administered for this assay)",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no follow-up session",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "session <6 h",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Only one assay involved psychedelic administration (DOI in LABORAS); the PPI assay was conducted without a psychedelic. Per rubric ('Only score assays where a psychedelic compound was administered'), PPI strictly should be excluded — but it is kept here as a borderline inclusion because it appears in candidates and is integral to the paper's psychedelic-relevant phenotyping; scored conservatively.",
+    "B7 set to 0 for LABORAS: the system classifies behaviours from force-transducer vibration signals via signal processing, not from pose estimation or supervised ML video classifiers; per rubric, position/beam-break/vibration-tracking systems score 0. Overrode candidates qwen and glm.",
+    "D1 set to single session for the DOI assay because baseline + post-injection recordings are contiguous on the same day, treated as one continuous session interrupted only by injection.",
+    "E8 (food/water) for LABORAS: candidates disagreed; the home-cage configuration explicitly includes a food hopper and drinking bottle suspended above the platform, which is generally accessible during home-cage monitoring — scored Yes following the home-cage continuous-monitoring rule.",
+    "Sample sizes not extractable from text (figures only)."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 4.09,
+    "recording_duration_max": 2.73,
+    "behavioural_complexity_mean": 2.5,
+    "environmental_complexity_mean": 2.04,
+    "recording_duration_mean": 2.04
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 44810,
+    "output_tokens": 6521,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

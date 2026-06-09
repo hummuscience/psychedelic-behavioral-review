@@ -1,0 +1,1074 @@
+{
+  "study_id": "Kiilerich2023",
+  "doi": "10.1038/s41380-023-02280-z",
+  "species": "rat",
+  "strain": "Long Evans",
+  "age": {
+    "value": "not_reported",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Age of rats is not stated in the manuscript.",
+    "confidence": "low"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 96,
+    "n_female": null,
+    "evidence": "Long Evans rats (n = 78, M, Janvier Labs) used in experiment 1... Rats in experiment 2 (Long Evans, n = 18, M, Janvier Labs)... It should be noted that only male rats were used in this study.",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        0.05,
+        0.1,
+        0.2,
+        0.25,
+        1.0,
+        3.0,
+        6.0
+      ],
+      "doses_raw": "Occupancy: 0.05, 0.20, 1.00 mg/kg s.c.; WBS dose-response: 0.05, 0.1, 0.25, 1.0, 3.0, 6.0 mg/kg s.c.; repeated regimen: 0.05 mg/kg s.c. every second day for 21 days.",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "repeated",
+      "evidence": "The treatment group received 0.05 mg/kg psilocybin s.c. every second day for 21 days... psilocybin (vehicle, 0.05 mg/kg, 0.20 mg/kg and 1.00 mg/kg in saline, s.c.)... saline or psilocybin at a range of doses (0.05, 0.1, 0.25, 1.0, 3.0, 6.0 mg/kg in saline, s.c.).",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Rats were habituated to the environment for 12 days after arrival, but no explicit handling protocol is described.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Long Evans rats (n = 78, M, Janvier Labs) used in experiment 1 were housed in pairs... Rats in experiment 2 were housed four to a cage.",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "All animals were kept at a 12-h light/dark (light 6-18) cycle. All experiments were carried out during the light phase beginning at ~10:00 h.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "yes",
+      "evidence": "Cages were equipped with bedding, nesting material, a wooden stick or ball, and a red plastic shelter.",
+      "confidence": "high"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Wet Back Shake Dose-Response",
+      "assay_description": "Acute psilocybin (0.05-6 mg/kg s.c.) administered, then rats placed in a 20x20 cm arena with 30 cm walls for 1 h; wet back shakes (rat equivalent of head-twitch response) manually scored from video.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "saline or psilocybin at a range of doses (0.05, 0.1, 0.25, 1.0, 3.0, 6.0 mg/kg in saline, s.c.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No habituation to the WBS arena is described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "placed in a 20 × 20 cm arena with 30 cm high walls including one clear Plexiglas wall to allow for video recording",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in the arena during the 1-h recording.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in the arena during the 1-h recording.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "They were then placed in a 20 × 20 cm arena... for one hour.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 22,
+        "n_male": 22,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "Long Evans rats (n = 22) were given saline or psilocybin at a range of doses.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin induced a classic inverted U-shaped wet-back-shake response. Low doses (≤0.25 mg/kg) did not differ from saline, 1 mg/kg evoked a significant increase (~8.5 shakes/10 min), and shakes declined again at higher sedative doses.",
+        "statistics": "One-way ANOVA F(6,17)=2.89, P=0.04; 1 mg/kg vs control P=0.01.",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Psilocybin at low doses did not induce any significant change in wet-back shakes, whereas 1 mg/kg evoked a significant increase (P = 0.01, 8.5 ± 5.8 per 10 min) compared to the control group.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Only wet back shakes were scored.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total counts reported, no within-session time-course analysis.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence or transition analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Wet back shake is the rat equivalent of head-twitch response (explicitly excluded from ethological behaviours).",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animals tested alone.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Reflexive 5-HT2A response, no learning.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Wet back shakes were manually scored.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No multivariate analysis reported.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "20 × 20 cm arena with 30 cm walls.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open arena, no shelter.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The arena was cleaned and disinfected between trials, indicating a bare floor.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material reported.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in arena.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "20 × 20 cm arena, single compartment.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Tested individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in arena.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Single 1-hour video recording.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "video recording for one hour",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test session per animal.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline recorded in same assay.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Test immediately after acute dose.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "1 h session < 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "Open field in 80.5x80.5 cm square arena (40.5 cm walls). Experiment 1: 40 min in a familiar arena (animals pre-habituated). Experiment 2: 15 min in a novel arena (naive). Distance, center entries/time, supported/unsupported rearing, and grooming frequency/duration were measured.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "0.05 mg/kg psilocybin s.c. every second day for 21 days",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Animals in the first experiment were habituated to the open-field in the days prior to the test (Exp 1); Exp 2 animals were naïve.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "rats were placed in the center of an 80.5 × 80.5 cm square field; freely moving.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in the OFT arena during recording; experiment 1 rats were on a restrictive diet (6 pellets/day) for startle testing motivation.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water provided in the OFT arena during testing.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "behavioral tests were done on the day following the last treatment",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 54,
+        "n_male": 54,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "Experiment 1: 2 cohorts of n = 18 (36 rats); Experiment 2: n = 18.",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "Repeated low-dose psilocybin did not alter locomotion, center entries/time, or rearing in either familiar (Exp 1) or novel (Exp 2) open fields. Self-grooming frequency was reduced by ~14% in the familiar OFT (P=0.016).",
+        "statistics": "Self-grooming frequency: unpaired two-tailed t-test, P = 0.016. Other measures: no significant effects.",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Psilocybin microdosing reduced the overall self-grooming frequency by 14% in the microdosing compared to control animals (unpaired, two-tailed t-test, P = 0.016).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "Distance traveled, center entries, time in center, unsupported rearing, supported rearing, grooming frequency, grooming duration.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Self-grooming increase over time and peak at 15-35 min in both psilocybin-treated and control animals (within-session time-course).",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Grooming microstructure not analyzed: 'While we did not analyze the microstructure of their grooming sequences in detail'.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Grooming and rearing scored as distinct ethological acts.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animals tested alone.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "OFT does not require learning.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Tracking via Ethovision XT 11.5 (position tracking, excluded from B7); rearing and grooming scored manually.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate tests only.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "80.5 × 80.5 cm square field with 40.5 cm walls.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open arena with no shelter.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard open-field floor with no bedding mentioned.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in arena.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in arena.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single open square arena with virtual center/border zones.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Single animal in the arena during testing.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in arena during recording.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Each animal recorded in a single OFT session.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "baseline recording of open field behavior for 40 min (Exp 1); 15 min in Exp 2.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "OFT test performed on a single day per animal.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Habituation occurred without data collection used as baseline.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Test conducted on the day following the last treatment (~24 h post-dose).",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "40 min < 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    },
+    {
+      "assay_name": "Acoustic Startle and Pre-Pulse Inhibition (PPI)",
+      "assay_description": "80-min session in the StartFear Combined startle chamber: 10-min acclimation, basal startle (70-120 dB pulses on a prior day), then PPI session with 5-min exploration, short-term habituation block (10 pulses, 110 dB), PPI block (7 trial types with 65-81 dB pre-pulses preceding 110 dB pulses, 15 trials each), and a second STH block. Startle amplitude, latency, %PPI and habituation were measured.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "0.05 mg/kg psilocybin s.c. every second day for 21 days",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "After an exploration period of ten min with a constant background white noise of 65 dB for acclimation... Block I was a five min exploration period.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "Startle tests were conducted in the StartFear Combined system (Panlab Harvard Apparatus), which uses a restrainer/holder for the rat during recording.",
+          "confidence": "medium"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in startle chamber during recording; Exp 1 rats were on a 6 pellets/day diet.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in startle chamber during recording.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "behavioral tests were done on the day following the last treatment",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 36,
+        "n_male": 36,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "Experiment 1: 2 cohorts of n = 18 male rats.",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "Repeated low-dose psilocybin did not alter basal startle amplitude, latency, or %PPI at any pre-pulse intensity. Control rats showed expected short-term habituation (P=0.007), whereas psilocybin-treated rats showed more variable, blunted habituation.",
+        "statistics": "Short-term habituation in controls: P = 0.007; no group differences in SR, latency, or %PPI.",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "There were no group differences in SR to pulse (P) and pre-pulse + pulse (PP + P)... There was no group difference in latency from the startle pulse to maximum peak of startle or in %PPI.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "Startle amplitude, latency, %PPI at four pre-pulse intensities, short-term habituation.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Short-term habituation analyzed across blocks within the session.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence/transition analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Startle/PPI are reflex measures, not ethological behaviours.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animals tested alone.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "PPI is a sensorimotor gating reflex, not learning.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Startle amplitude measured by force transducer, not behavioural classification from video.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate analyses only.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "StartFear Combined system, Panlab Harvard Apparatus.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Startle holder is not a shelter.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding in startle chamber.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in chamber.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in chamber.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single startle enclosure.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Animals tested individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in chamber.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Basal startle was tested on one day, then PPI session 'on the day of the PPI and open field test'.",
+          "confidence": "medium"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min-6 h",
+          "evidence": "One test session... for a test session lasting 80 min in total.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Startle reflex tested on days before the open field and PPI tests, plus PPI day.",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline within this assay.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Tests performed on the day following the last treatment (≥24 h post-dose).",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "80 min < 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      }
+    },
+    {
+      "assay_name": "Sucrose Preference Test",
+      "assay_description": "Five rounds of two-bottle sucrose preference (~1 week apart): 2 baseline, 2 during the psilocybin microdosing regimen, and 1 final test 2 days after the last dose. Each test included an 8-h fast followed by 12-h overnight isolation in a home-cage-like cage with two pre-weighed bottles (1% sucrose vs water). Consumption was measured to calculate preference.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "0.05 mg/kg psilocybin s.c. every second day for 21 days",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Before the first test, all animals had a habituation session, during which all water bottles in primary housings were replaced for 24 h by water bottles with 1% sucrose.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Animals were isolated for 12 h in a cage closely resembling their home cage, freely moving.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "On day-1, animals were fasted (with free access to water) for an 8 h period in light (10-18).",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "Access to two water bottles containing premeasured 1% sucrose solution or regular water during the test.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": null,
+          "evidence": "The first two tests were baseline recordings, the next two were made during the psilocybin microdosing regimen, and the final test was conducted on day two following the last saline/psilocybin treatment.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 16,
+        "n_male": 16,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "The 16 animals were run in batches of 8 on separate days.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Control rats showed declining sucrose preference (to ~50%) during the repeated injection period, indicating stress-induced anhedonia. Psilocybin-treated rats maintained or increased preference (to ~92.7%) during treatment, returning to baseline after treatment ended.",
+        "statistics": "Mixed effects model, F(1.64, 11.08) = 4.94, P = 0.03.",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "Control-injected animals indeed showed declining preference for sucrose during the treatment period to a mean of 50 ± 27%... psilocybin-treated animals did not show declining sucrose preference, but rather an increase to 92.7 ± 5.2% on their first within-treatment test.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Sucrose preference percentage (derived from consumption of two bottles) is a single preference measure.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only total consumption per 12-h session reported; no within-session dynamics.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No drinking microstructure analyzed.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Consumption-based preference, not scored ethologically.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Rats isolated for the test.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate hedonic preference.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Manual weighing of bottles.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate analysis only.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "Isolated for 12 h in a cage closely resembling their home cage.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No explicit shelter mentioned in the test cage.",
+          "confidence": "low"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bedding in test cage not explicitly described.",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Nesting in test cage not explicitly described.",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment items mentioned in test cage.",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Home-cage-like single compartment with two bottles.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each animal was isolated for 12 h.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Access to two water bottles containing premeasured 1% sucrose solution or regular water during the 12-h test.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "5 rounds of the sucrose preference test with approximately one week in between.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min-6 h",
+          "evidence": "Each test consists of a 12-h isolated drinking period (consumption measured at start/end; behavioural recording window is the 12-h access period).",
+          "confidence": "medium"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "5 SPT rounds total.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The first two tests were baseline recordings.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The final test was conducted on day two following the last saline/psilocybin treatment.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "12-h overnight access spans >6 h (dark phase 18-06).",
+          "confidence": "high"
+        },
+        "raw_total": 7
+      }
+    },
+    {
+      "assay_name": "Elevated Plus Maze",
+      "assay_description": "15-min test on an elevated plus maze (20x20 cm central platform, four 40-cm arms, two with 40-cm walls and two with 5-cm walls, raised 50 cm). Animals were naïve. Time/entries in open vs closed arms, locomotion, rearing and grooming were scored (Ethovision XT plus manual grooming/rearing scoring).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "0.05 mg/kg psilocybin s.c. every second day for 21 days",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Animals were naïve, being unhabituated to the open field and the elevated plus maze.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "An animal was placed into the central platform and recorded for 15 min, freely moving.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in the EPM during the 15-min test.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in the EPM during the 15-min test.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "behavioral tests were done on the day following the last treatment",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 18,
+        "n_male": 18,
+        "n_female": null,
+        "n_per_group_min": 9,
+        "evidence": "Rats in experiment 2 (Long Evans, n = 18, M, Janvier Labs).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Repeated low-dose psilocybin did not alter open- or closed-arm time or entries on the EPM, indicating no change in trait anxiety. Self-grooming frequency was reduced by ~48% in psilocybin-treated rats, without changes in locomotion or rearing.",
+        "statistics": "Self-grooming reduced by 48% (P value not explicitly reported); no significant difference in arm preference.",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "We observed no change in preference for open or closed arms in the elevated plus maze... Interestingly, the frequency of self-grooming was reduced by 48% in the elevated plus maze, without changes in locomotion or rearing.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "Distance, time in open arms, time in closed arms, arm entries, rearing, grooming.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No within-session time-course analysis reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transitional/sequential analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Rearing and grooming scored manually as distinct ethological acts.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Tested alone.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate anxiety test, no learning.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Ethovision XT 11.5 (position tracking) plus manual scoring.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No multivariate analysis.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Plus-shaped platform raised 50 cm above the floor (standard EPM).",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EPM closed arms are part of apparatus design, not enclosed refuge (per rubric).",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bare maze surface.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Per rubric, EPM arms are open-ended extensions of a central platform, not distinct compartments.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Single rat in maze.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in maze.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Each animal was recorded for 15 min on the EPM.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "recorded for 15 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "EPM performed on a single day per animal.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Animals were naïve, no pre-drug EPM baseline.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "EPM performed the day after the last s.c. injection (>24 h after last dose).",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "15 min < 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    }
+  ],
+  "judge_notes": [
+    "Merged candidate gptoss's separate Exp1 and Exp2 OFT into one Open Field Test assay (same paradigm/apparatus across cohorts; rubric collapses cohort/timepoint variants).",
+    "Kept Wet Back Shake (acute dose-response) as a separate assay from the chronic-regimen behaviours since it is a distinct acute pharmacological paradigm (still one HTR/WBS assay).",
+    "Set setup_restrain=yes for PPI based on rubric explicit example listing PPI startle chambers as body-restraint, even though the Panlab StartFear system can be used without tube restraint; medium confidence.",
+    "SPT D2 scored as 61 min-6 h (score 2) rather than >6 h: behavioural data is consumption integrated over 12 h, but the rubric scores single recording bouts and consumption windows are commonly binned; chose intermediate score and noted in evidence. D6 scored Yes since the access window spans >6 h overnight.",
+    "Dropped occupancy PET, in vitro receptor binding, functional cAMP/Ca2+ assays, and autoradiography as non-behavioural per rubric exclusions."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 5.0,
+    "environmental_complexity_max": 2.73,
+    "recording_duration_max": 9.55,
+    "behavioural_complexity_mean": 2.5,
+    "environmental_complexity_mean": 0.55,
+    "recording_duration_mean": 4.64
+  },
+  "low_confidence_count": 6,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 82947,
+    "output_tokens": 13110,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

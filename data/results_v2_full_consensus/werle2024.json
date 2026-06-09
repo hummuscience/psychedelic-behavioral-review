@@ -1,0 +1,503 @@
+{
+  "study_id": "Werle2024",
+  "doi": "10.1111/bph.16315",
+  "species": "rat",
+  "strain": "Wistar",
+  "age": {
+    "value": "adult",
+    "age_min_days": 90,
+    "age_max_days": 120,
+    "evidence": "Three hundred thirty-one naive, non-stressed Wistar rats (231 males and 100 females) aged 90 -120 days were used.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": 231,
+    "n_female": 100,
+    "evidence": "Three hundred thirty-one naive, non-stressed Wistar rats (231 males and 100 females) aged 90 -120 days were used.",
+    "confidence": "high"
+  },
+  "psychedelic": "Ayahuasca (DMT)",
+  "dosing": [
+    {
+      "compound": "Ayahuasca",
+      "doses_mg_per_kg": [
+        0.1,
+        0.3,
+        1.0
+      ],
+      "doses_raw": "AYA solution containing 0.1, 0.3 or 1.0 mg/kg of DMT",
+      "vehicle": "water",
+      "route": "p.o.",
+      "schedule": "repeated",
+      "evidence": "AYA was thawed, diluted in distilled water before use and administered orally (per gavage) in a 2.5-ml kg-1 volume. ... This protocol, when repeated twice on consecutive days, enhanced extinction recall.",
+      "confidence": "high"
+    },
+    {
+      "compound": "MDL-11,939",
+      "doses_mg_per_kg": [],
+      "doses_raw": "MDL-11,939 0.1 or 0.3 μg (intra-IL, 0.5 μl per hemisphere)",
+      "vehicle": "saline",
+      "route": "other",
+      "schedule": "repeated",
+      "evidence": "The potent and selective 5-HT2A receptor antagonist MDL-11,939 was dissolved in NaCl 0.9% containing 5% ethanol before use and infused bilaterally into the infralimbic cortex in a 0.5 μl per hemisphere volume.",
+      "confidence": "high"
+    },
+    {
+      "compound": "WAY-100635",
+      "doses_mg_per_kg": [],
+      "doses_raw": "WAY-100635 0.4 or 1.2 μg (intra-IL, 0.5 μl per hemisphere)",
+      "vehicle": "saline",
+      "route": "other",
+      "schedule": "repeated",
+      "evidence": "The potent 5-HT1A receptor antagonist WAY-100635 was dissolved in NaCl 0.9% and infused intra-infralimbic cortex in a 0.5 μl per hemisphere volume.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "no explicit handling protocol described",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "kept in groups of four in polypropylene cages",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "on a 12-h light/dark cycle, with lights on at 7:00 AM ... behavioural procedures were performed in rooms under the illumination of 40 lx from 1:00 PM to 5:00 PM",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "home-cage enrichment not mentioned",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Elevated Plus-Maze",
+      "assay_description": "5-min test in a wooden EPM (two open 50x10 cm arms, two enclosed 50x10x40 cm arms, 10x10 cm central platform, 50 cm above floor). Measured % open-arm time, stretched-attend postures, and enclosed-arm entries. Conducted in naive males, naive females, and fear-conditioned males.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "p.o.",
+          "evidence": "administered orally (per gavage) in a 2.5-ml kg-1 volume",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "no apparatus habituation described for the EPM",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "animals freely explored the elevated plus-maze for 5 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in the EPM apparatus during the 5-min test",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water in the EPM apparatus during the 5-min test",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 60,
+          "evidence": "given 60 min before the elevated plus-maze test",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 80,
+        "n_male": 66,
+        "n_female": 14,
+        "n_per_group_min": 7,
+        "evidence": "Experiment 1: n = 13, 11, 11 and 12; Experiment 2: n = 7 and 7; Experiment 4: n = 9 and 10",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Oral AYA (0.1-1.0 mg/kg DMT) did not change % open-arm time or stretched-attend postures in male or female rats, indicating no anxiogenic/anxiolytic effect. The 1.0 mg/kg dose increased enclosed-arm entries in naive males (increased general exploratory activity). Fear-conditioned males treated with 0.3 mg/kg AYA showed no EPM differences vs vehicle.",
+        "statistics": "η2 = 0.17 for enclosed-arm entries; P ≤ 0.05 versus VEH (one-way ANOVA, Newman-Keuls)",
+        "direction": "no_effect",
+        "dose_dependent": "yes",
+        "sex_dependent": "no",
+        "time_dependent": "n/a",
+        "evidence": "The three AYA groups presented values similar to controls for these anxiety-related measures... The AYA (DMT 1.0) group presented significantly higher values than the VEH group [enclosed-arm entries].",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "% open-arm time, stretched-attend postures, enclosed-arm entries",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "single 5-min totals reported",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no transition/sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The number of stretched-attend postures... was also recorded.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "tested alone",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "innate avoidance anxiety test",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "an investigator blinded to the experimental design scored",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate ANOVA / t test",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "The elevated plus-maze was made of wood",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EPM closed arms are part of apparatus, not shelter (definitionally absent)",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "wooden maze, no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting material in EPM",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment objects in EPM",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "EPM arms scored as single open space per rubric",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "tested alone",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "A 5-min test in the elevated plus-maze was conducted.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "5-min test",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "single test day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug EPM recording",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "tested 60 min after dose",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5 min session",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "Contextual Fear Conditioning and Extinction",
+      "assay_description": "Rats conditioned in Context A (3x 1 mA 3-s shocks). Extinction learning session(s) of 15 min in Context A (one or two sessions, 1 day apart), with single or repeated oral AYA (0.3 mg/kg DMT, 60 min pre-session) and/or intra-IL infusions of MDL-11,939 (5-HT2A antagonist) or WAY-100635 (5-HT1A antagonist) 10 min pre-session. Test A (3-min recall in Context A), Test B (3-min novel Context B), reinstatement (single US in Context C), and Retest A (3-min). Tested with 1- and 21-day-old memories in males and females. Outcome: % time freezing.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "oral (per gavage) AYA 60 min before extinction; intra-infralimbic cortex infusions of MDL-11,939 or WAY-100635 10 min before extinction",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "For familiarization, each animal was placed alone in a rectangular chamber... designated Context A, allowed to explore it for 3 min",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "animals freely placed in conditioning chamber",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in chamber during recording",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water in chamber during recording",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 60,
+          "evidence": "given 60 min before the extinction learning session",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 251,
+        "n_male": 165,
+        "n_female": 86,
+        "n_per_group_min": 7,
+        "evidence": "Experiments 3 and 5-12 group sizes range from n=7 to n=11 per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Single oral AYA (0.3 mg/kg DMT) enhanced within-session freezing extinction without affecting extinction recall. Repeated AYA (2 daily doses) enhanced both within-session extinction and extinction recall (lower freezing at Test A) for 1-day-old and 21-day-old memories, in both males and females. Reinstatement abolished group differences. Intra-IL MDL-11,939 (5-HT2A antagonist) at 0.3 μg impaired within-session extinction by itself; at 0.1 μg it blocked AYA's within-session effect but not its extinction-recall effect. Intra-IL WAY-100635 (5-HT1A antagonist) did not affect extinction alone but blocked AYA's between-session (recall) effect.",
+        "statistics": "Experiment 3: ηp2 = 0.33 (treatment), 0.58 (time bin); Experiment 5: ηp2 = 0.44; oral treatment x repeated testing interactions ηp2 = 0.22-0.40; mixed ANOVA, Newman-Keuls post hoc, P ≤ 0.05",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "no",
+        "time_dependent": "yes",
+        "evidence": "AYA-treated animals expressed relatively further reductions [in freezing]... The AYA group presented significantly lower freezing values than controls during Test A",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Freezing behaviour... expressed as the percentage of total session time.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "time bin... significantly influenced the time spent in freezing... groups gradually presented lower values throughout the extinction session",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no transition/sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Freezing... defined as a total absence of body and head movements",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "tested alone",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "contextual fear conditioning, extinction learning and recall",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "scored from DVDs... by an investigator blinded to the experimental design",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "mixed ANOVA only",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "rectangular chamber (35x20x30 cm) with aluminium sidewalls",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enclosed refuge in conditioning chamber",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "grid floor, made of stainless steel bars",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting material",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment in apparatus",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single rectangular chamber per session (different contexts tested in separate sessions, not multi-zone within session)",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "each animal was placed alone",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "extinction learning session(s)... Test A, Test B, memory reinstatement session and Retest A were performed in the following days",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "Each animal was exposed to the conditioned context in the fear extinction learning session without US presentation for 15 min.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "two extinction learning sessions performed 1 day apart. Test A, Test B, memory reinstatement session and Retest A were performed in the following days",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline freezing in extinction context reported",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Test A and Retest A performed days after final AYA administration",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "longest session 15 min",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    }
+  ],
+  "judge_notes": [
+    "Merged all fear-conditioning experiments (Exp 3, 5-12) into a single 'Contextual Fear Conditioning and Extinction' assay per rubric: same paradigm with different drug/dose/route/sex/memory-age manipulations is ONE assay.",
+    "Kept EPM as a separate assay (Exp 1, 2, 4) since it is a different apparatus measuring anxiety/exploration.",
+    "Added MDL-11,939 and WAY-100635 as separate dosing entries since these are pharmacological compounds administered intra-IL in the behavioural experiments (route = 'other' = intra-cerebral/intra-IL infusion).",
+    "B1 for EPM scored 1 (2-3 measures) per modal qwen value; glm's score of 2 was inconsistent with its own value label.",
+    "E6 for fear conditioning scored 0: although three contexts (A/B/C) are used across sessions, each individual recording session takes place in a single chamber without multi-compartment within-session structure.",
+    "DOI not stated in the provided markdown; one candidate (glm) supplied a DOI that cannot be verified from the text, so set to null.",
+    "DOI backfilled from user-edited prisma_problems.numbers: was None, now '10.1111/bph.16315'"
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 5.45,
+    "behavioural_complexity_mean": 2.5,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 2.73
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm"
+  ],
+  "judge_usage": {
+    "input_tokens": 58776,
+    "output_tokens": 6519,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

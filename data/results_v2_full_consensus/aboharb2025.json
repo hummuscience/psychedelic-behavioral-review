@@ -1,0 +1,334 @@
+{
+  "study_id": "Aboharb2025",
+  "doi": "10.1038/s41467-025-56850-6",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "psychedelic": "Psilocybin, 5-MeO-DMT, 6-fluoro-DET, Ketamine, MDMA",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 56,
+    "age_max_days": 56,
+    "evidence": "We used adult, 8-week-old male and female C57BL/6 J mice",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": 32,
+    "n_female": 32,
+    "evidence": "For each of the 8 drugs, we tested 4 male and 4 female C57BL/6 J mice, totaling 64 animals",
+    "confidence": "high"
+  },
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "1 mg/kg, i.p., single dose",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "psilocybin (PSI, 1 mg/kg, i.p., single dose)",
+      "confidence": "high"
+    },
+    {
+      "compound": "5-MeO-DMT",
+      "doses_mg_per_kg": [
+        20.0
+      ],
+      "doses_raw": "20 mg/kg, i.p., single dose",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "5-methoxy-N,N-dimethyltryptamine (5-MeO-DMT or 5-MEO, 20 mg/kg, i.p., single dose)",
+      "confidence": "high"
+    },
+    {
+      "compound": "6-fluoro-DET",
+      "doses_mg_per_kg": [
+        20.0
+      ],
+      "doses_raw": "20 mg/kg, i.p., single dose",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "6-fluoro-N,N-diethyltryptamine (6-fluoro-DET or 6-FDET, 20 mg/kg, i.p., single dose)",
+      "confidence": "high"
+    },
+    {
+      "compound": "Ketamine",
+      "doses_mg_per_kg": [
+        10.0
+      ],
+      "doses_raw": "10 mg/kg, i.p., single dose",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "ketamine (KET, 10 mg/kg, i.p., single dose)",
+      "confidence": "high"
+    },
+    {
+      "compound": "MDMA",
+      "doses_mg_per_kg": [
+        7.8
+      ],
+      "doses_raw": "7.8 mg/kg, i.p., single dose",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "3,4-methylenedioxy methamphetamine (MDMA, 7.8 mg/kg, i.p., single dose)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Animals were housed in groups with 2-5 mice per cage",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "operating on a normal 12 hr light-12 hr dark cycle (8:00 AM to 8:00 PM for light)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head-twitch response (HTR)",
+      "assay_description": "Mice were placed in a plastic cube (4\"×4\"×4\") wrapped with a solenoid coil; head movements were detected via a magnetic ear tag, the induced voltage signal filtered (70-110 Hz) and peak-detected in MATLAB to count head-twitches over a 2-hour period after drug administration.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "psilocybin (1 mg/kg, i.p.); 5-MeO-DMT (20 mg/kg, i.p.); 6-fluoro-DET (20 mg/kg, i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "the animal was put inside a plastic cube (4'×4'×4')",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard short test; food not present in the cube during recording. Home cage food was ad libitum.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard short test; water not present in the cube during recording. Home cage water was ad libitum.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "total number of head twitches detected within a 2-hour period after drug administration",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 25,
+        "n_male": 13,
+        "n_female": 12,
+        "n_per_group_min": 6,
+        "evidence": "3 males and 3 females for each drug (n=6), except 4 males and 3 females for saline (n=7)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin (1 mg/kg) and 5-MeO-DMT (20 mg/kg) elicited robust head-twitch responses relative to saline, whereas 6-fluoro-DET (20 mg/kg) was not statistically different from saline controls, supporting its use as a non-hallucinogenic tryptamine.",
+        "statistics": "Wilcoxon rank-sum test (two-sided): SAL vs. 5-MEO P=3×10⁻³; 6-F-DET vs. 5-MEO P=2×10⁻²; SAL vs. PSI P=3×10⁻³; 6-F-DET vs. PSI P=8×10⁻³",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "unlike 1 mg/kg psilocybin and 20 mg/kg 5-MeO-DMT which elicited robust head-twitch responses, mice administered with 20 mg/kg 6-fluoro-DET were not statistically different from controls",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "total number of head twitches detected within a 2-hour period",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Time course of head-twitch response following the administration of 5-MeO-DMT, psilocybin, 6-fluoro-DET, or saline vehicle",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transitions, sequences, or microstructure analysis reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is explicitly listed as a non-ethological artificial behaviour",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Each mouse was recorded using one cube",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning or memory component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Voltage signal bandpass filtered (70-110 Hz) and processed for peak detection - signal-processing peak detection, not video-based behavioural classification",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No multivariate analysis applied to HTR data",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "plastic cube (4'×4'×4')",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bare plastic cube; no shelter described",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bare plastic cube; no bedding described",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects described in cube",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single plastic cube with no internal compartments",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each mouse was recorded using one cube",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water reported inside cube during recording",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "total number of head twitches detected within a 2-hour period after drug administration",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "2-hour period after drug administration",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single recording day post-injection",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline recording reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recording only within 2 h of dose; no ≥24 h follow-up",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "2-hour session, less than 6 hours",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    }
+  ],
+  "judge_notes": [
+    "Only one behavioural assay (head-twitch response) was scored. Light-sheet imaging of brain-wide c-Fos expression is a histological/anatomical readout, not a behavioural assay, and was excluded per rubric.",
+    "B2 scored Yes: Fig. 1b shows within-session time course of HTR, satisfying temporal dynamics within the 2-hour recording.",
+    "B7 scored 0: gpt-oss scored 1, but peak detection on a filtered voltage trace from a magnetic ear-tag sensor is signal processing, not a video-based behavioural classifier on the rubric's allow-list (DeepLabCut, MoSeq, B-SOiD, SimBA, etc.). Defaulted to 0 per 'when in doubt, score 0'.",
+    "Dosing block expanded to include all psychedelic/psychoactive compounds administered in the study (psilocybin, 5-MeO-DMT, 6-fluoro-DET, ketamine, MDMA); fluoxetine is an SSRI and excluded from the psychedelic list, though candidate glm included it.",
+    "Sample size for HTR assay reflects only the head-twitch cohort (n=25 across 4 drugs), not the 64-mouse c-Fos cohort.",
+    "Food/water restriction: scored 'during' per rubric default for standard short tests where food/water is not in the apparatus; home-cage access was ad libitum.",
+    "DOI backfilled from user-edited prisma_problems.numbers: was None, now '10.1038/s41467-025-56850-6'"
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 2.73,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 2.73
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 53838,
+    "output_tokens": 4248,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

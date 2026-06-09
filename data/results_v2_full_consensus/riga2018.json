@@ -1,0 +1,84 @@
+{
+  "study_id": "Riga2017",
+  "doi": "10.1016/j.neuropharm.2017.11.049",
+  "species": "mouse",
+  "strain": "C57/BL6",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 63,
+    "age_max_days": 112,
+    "evidence": "We used 9-16 week-old male homozygous 5-HT2A-R knockout mice (referred as KO2A) and wild-type mice (WT) of the same genetic background (C57/BL6).",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 24,
+    "n_female": 0,
+    "evidence": "A total of 24 mice (14 WT and 10 KO2A) were implanted... 9-16 week-old male homozygous 5-HT2A-R knockout mice... and wild-type mice (WT)",
+    "confidence": "high"
+  },
+  "psychedelic": "5-MeO-DMT",
+  "dosing": [
+    {
+      "compound": "5-MeO-DMT",
+      "doses_mg_per_kg": [
+        5.0
+      ],
+      "doses_raw": "5 mg/kg",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "saline + 5-MeO-DMT (5 mg/kg) (SAL + 5-MeO-DMT); All drugs were dissolved in saline (vehicle) and injected subcutaneously (s.c.)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "Animals were kept in a controlled environment (12 h light – dark cycle and 22 ± 2 °C room temperature)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [],
+  "judge_notes": [
+    "All three candidates returned zero scored assays. This is correct: the only behavioural-adjacent procedure in this paper is local field potential (LFP) recording in freely-moving mice, which is a neural electrophysiology measurement explicitly excluded by the rubric ('Neural recordings: ... LFP ... — even if done in awake/behaving animals. These measure NEURAL ACTIVITY, not behaviour.'). No behavioural readouts (locomotion, HTR, freezing, etc.) are reported as primary outcomes.",
+    "Consolidated identity fields using modal candidate values; DOI agreed across all three candidates."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0,
+    "environmental_complexity_max": 0,
+    "recording_duration_max": 0,
+    "behavioural_complexity_mean": 0,
+    "environmental_complexity_mean": 0,
+    "recording_duration_mean": 0
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 43832,
+    "output_tokens": 947,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

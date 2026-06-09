@@ -1,0 +1,481 @@
+{
+  "study_id": "Almeida2022",
+  "doi": null,
+  "species": "mouse",
+  "strain": "Swiss",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 42,
+    "age_max_days": 49,
+    "evidence": "Seventy-two adult male Swiss mice (6 -7 weeks-old)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 72,
+    "n_female": null,
+    "evidence": "Seventy-two adult male Swiss mice (6 -7 weeks-old)",
+    "confidence": "high"
+  },
+  "psychedelic": "Ayahuasca",
+  "dosing": [
+    {
+      "compound": "Ayahuasca",
+      "doses_mg_per_kg": [
+        1.76
+      ],
+      "doses_raw": "1.76 mg of DMT/kg",
+      "vehicle": "water",
+      "route": "p.o.",
+      "schedule": "repeated",
+      "evidence": "AYA was diluted in filtered water and was administrated by gavage at a dose of 1.76 mg of DMT/kg ... animals were treated daily with ayahuasca ... for eight consecutive days",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Paper does not mention a handling protocol.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "housed in polypropylene cages (26 × 36 × 19 cm) with free access to food and water — cage density not stated.",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "housed in a room with constant temperature (22 ± 1 °C) on a 12:12 h light/dark cycle (lights on at 7:00 am). All experiments were performed during the light period",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Paper does not mention home-cage enrichment.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "Circular open field (40 cm diameter, 50 cm high wall); 10 min sessions; total locomotion quantified by EthoVision. Used for ethanol-induced behavioral sensitization across acquisition (D1, D3, D5, D7, D9), withdrawal/treatment (8 days), and expression (challenge day).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "Ethanol administered i.p.; AYA administered by gavage (p.o.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Mice were habituated in the open field for 10 min for three consecutive days before the experiments",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "they were placed in the open field for 10 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard open-field apparatus; no food in arena during 10-min recording.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard open-field apparatus; no water in arena during 10-min recording.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 5,
+          "evidence": "Acquisition: 10 min after each ethanol injection (mice kept in home cage for first 5 min). Withdrawal: 30 min after AYA. Expression: challenge with ethanol then placed in open field after 5 min.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 61,
+        "n_male": 61,
+        "n_female": null,
+        "n_per_group_min": 9,
+        "evidence": "SAL/SAL/ET (n = 10), ET/SAL/ET (n = 18), SAL/AYA/ET (n = 9), ET/AYA/ET (n = 24)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Repeated ethanol induced behavioral sensitization (increased locomotion across acquisition days). Ayahuasca treatment during withdrawal attenuated the expression of sensitization, lowering locomotor activity on the challenge day in ET-AYA-ET vs ET-SAL-ET mice.",
+        "statistics": "Acquisition: time F(4,236)=5.60, p<0.001; treatment×time F(4,236)=3.69, p<0.001. Challenge: F(1,57)=6.33, p<0.001; post-hoc p<0.05.",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Mice of ET-AYA-ET group had significantly lower locomotor activity when compared with the ET-SAL-ET group (p < 0.05, Fig. 2B).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The total locomotion was quantified by EthoVision software",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Data reported as total distance per 10-min session; no within-session time-bin analysis.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transitional or sequential analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only total locomotor distance measured.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animals tested individually in the open field.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open field measures locomotor activity, not learning.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Quantified by EthoVision (position tracking).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVAs reported.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "openfield apparatus (40 cm in diameter surrounded by a 50 cm-high wall)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open field has no refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described in open field arena.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in arena.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in arena.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single circular open field.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each animal tested individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in arena during 10-min test.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Open field recorded across acquisition (D1, D3, D5, D7, D9) and on the challenge day.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "placed in the open field for 10 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Recording on D1, D3, D5, D7, D9 plus challenge day = 6 days (withdrawal-phase OF data not shown).",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Habituation data not shown and not analysed.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Challenge OF test occurred ~1 day after last AYA dose, but it follows ethanol challenge injection (no recording ≥24 h after last drug administration without re-dosing).",
+          "confidence": "medium"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Each session 10 min.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    },
+    {
+      "assay_name": "Elevated Plus Maze",
+      "assay_description": "EPM with two open arms (30 × 5 × 0.25 cm) and two closed arms (same size, 20 cm walls), elevated 60 cm. 5-min test. Measures: % time in open arms, % time in distal portions of open arms, open-arm entries, grooming frequency, head-dipping frequency.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "Ethanol i.p. during acquisition; AYA by gavage during withdrawal/treatment.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No EPM-specific habituation described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "mice were placed in the elevated plus maze for five minutes",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard EPM; no food in apparatus during 5-min test.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard EPM; no water in apparatus during 5-min test.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 360,
+          "evidence": "On the 7th day of withdrawal phase and treatment, mice were placed in the elevated plus maze for five minutes, six hours after treatment with AYA",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 61,
+        "n_male": 61,
+        "n_female": null,
+        "n_per_group_min": 9,
+        "evidence": "SAL-SAL-ET (n = 10), SAL-AYA-ET (n = 9), ET-SAL-ET (n = 18), ET-AYA-ET (n = 24)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Ayahuasca treatment during ethanol withdrawal produced an anxiolytic effect: AYA-treated mice spent more time in open arms and distal portions and made more open-arm entries; grooming was elevated only in ET-SAL-ET (ethanol-withdrawal) and reduced by AYA. Head-dipping did not differ.",
+        "statistics": "%time open arms: F(1,57)=14.82, p<0.001 (acquisition); F(1,57)=33.64, p<0.001 (withdrawal). Distal open arms: interaction F(1,57)=17.39, p<0.001. Entries: interaction F(1,57)=5.38, p<0.01. Grooming: F(1,57)=10.11, p<0.01; interaction F(1,57)=9.05, p<0.01.",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "The SAL-AYA-ET group spent more time in the open arms than the other groups ... the ET-AYA-ET group spent more time in the open arms when compared with ET-SAL-ET group (p < 0.01).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "Percentage of time spent in the open arms, percentage of time spent in the distal portions of the open arms, frequency of entries into the open arms, frequency of grooming, and frequency of head dipping",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Data reported as totals for the 5-min session.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transitional/sequential analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "frequency of grooming, and frequency of head dipping were analyzed ... based on visual monitoring and manual scoring",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animals tested individually.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EPM assesses innate anxiety, not learning.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "grooming and head dipping analyses were performed manually",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVAs reported.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "elevated plus maze consisted of two open arms ... and two closed arms",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EPM closed arms are part of apparatus design, not a shelter.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described in EPM.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting in apparatus.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment in apparatus.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Per rubric, EPM arms are not scored as distinct compartments.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each mouse tested alone.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in apparatus during test.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "EPM run once, on day 7 of withdrawal phase.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "placed in the elevated plus maze for five minutes",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "EPM recorded on one day only.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug EPM baseline reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EPM performed 6 h after AYA, not ≥24 h post-last dose.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5-min session.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    }
+  ],
+  "judge_notes": [
+    "Two assays retained: Open Field Test (used for ethanol-induced behavioral sensitization across acquisition and expression) and Elevated Plus Maze (anxiety during withdrawal). Western blot and ethanol plasma quantification excluded per rubric (ex vivo / physiological).",
+    "B1 for OFT scored 0 (single measure: total locomotion) per qwen/gptoss; glm's score of 1 was rejected because B1=1 maps to '2-3' measures.",
+    "D3 for OFT scored 1 (2-7 days = 5 acquisition days + challenge day = 6); gptoss's claim of 8-14 days included withdrawal-phase OF sessions explicitly noted as 'data not shown' so they are not reported recording days for analysis purposes — kept conservative.",
+    "D5 OFT scored 0: challenge OF occurs after a fresh ethanol injection; no analysed recording ≥24 h after last drug without further dosing.",
+    "application_type set to 'multiple' for both assays because ethanol (i.p.) and AYA (p.o.) are both administered in the same protocol.",
+    "DOI not present in provided markdown; left null."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 2.73,
+    "behavioural_complexity_mean": 1.88,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 1.36
+  },
+  "low_confidence_count": 4,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 51547,
+    "output_tokens": 6126,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

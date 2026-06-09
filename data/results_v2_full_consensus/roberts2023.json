@@ -1,0 +1,877 @@
+{
+  "study_id": "Roberts2022",
+  "doi": "10.1016/j.bbr.2022.114262",
+  "species": "rat",
+  "strain": "Long Evans",
+  "age": {
+    "value": "adult",
+    "age_min_days": 90,
+    "age_max_days": 120,
+    "evidence": "adult (PND 90 -120) Long Evans rats",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": 20,
+    "n_female": 20,
+    "evidence": "A total of 40 (20 male, 20 female) adult (PND 90 -120) Long Evans rats",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "1 mg/kg",
+      "vehicle": "water",
+      "route": "p.o.",
+      "schedule": "chronic",
+      "evidence": "Psilocybin (1 mg/kg) or vehicle (distilled water) was administered by gavage (1 ml/kg)... Subjects received psilocybin for five consecutive days during probabilistic discounting and eight consecutive days during delay discounting.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "no explicit handling protocol described",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "All animals were pair-housed in standard rat cages",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "kept on a 12 hr light/dark cycle (on at 0700 hr)... Animals underwent all experiments during their light cycle, between 0900 and 1500 hr",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "no mention of home-cage enrichment items",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Probability Discounting",
+      "assay_description": "Operant chamber task; rats chose between a certain small reward (1 pellet) and a risky large reward (3 pellets) with decreasing probability (100%, 66%, 33%, 12.5%, 0%) across 5 daily 1-hour sessions.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "p.o.",
+          "evidence": "Psilocybin (1 mg/kg) or vehicle (distilled water) was administered by gavage (1 ml/kg)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "no apparatus-specific habituation described for probability discounting (shaping is training, not habituation)",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "standard operant chambers; animals freely lever-pressed",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "All food was removed from the cages 24 h prior to the beginning of shaping and animals were fed once per day during the study... Animals remained on food restriction until completion of the progressive ratio task.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "water available ad libitum throughout the experiment",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 5,
+          "evidence": "Drug or vehicle was administered approximately 5 min prior to each day's behavioral session.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 40,
+        "n_male": 20,
+        "n_female": 20,
+        "n_per_group_min": 8,
+        "evidence": "40 rats (2 treatment groups, 10 male and 10 female per group); n = 8-10 per group in figure captions",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute psilocybin (1 mg/kg, p.o.) administered before each day's session had no significant effect on the proportion of large risky choices, the hyperbolic rate of decay, the area under the curve, or the number of trials completed in the probability discounting task in either sex.",
+        "statistics": "F(4,131) = 0.039, p = 0.997 (group × sex × probability on proportion of large choices); no significant effects on Kd or AUC.",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "no",
+        "time_dependent": "no",
+        "evidence": "A repeated measures mixed-effects analysis found no main effects or significant interactions between treatment group, sex, and probability [F(4,131) = 0.039, p = 0.997] for the proportion of choices made for the large, uncertain reward.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "percentage of large choices, total number of trials, hyperbolic rate of decay (Kd), area under the curve",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "percentage of large choices was compared over time (in 10 min bins) using two-way repeated measures mixed models within each probability",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no analysis of behavioural sequences or transitions reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "lever pressing is an operant behaviour, not ethological",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual operant testing; no social component",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "decision-making task requiring learning of probability contingencies across days",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Med Associates operant chamber - lever-press detection only",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate ANOVAs only",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "standard operant chambers (Med Associates, St Albans, VT)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no shelter inside operant chamber",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "operant chamber floor; no bedding mentioned",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting material in chamber",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment objects in chamber",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single operant chamber with no distinct compartments",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "animals tested individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "sugar pellets delivered as rewards during the session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "decreasing probability across daily test sessions (5 days)",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "Animals completed up to 100 trials during a one-hour testing session",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Subjects received psilocybin for five consecutive days during probabilistic discounting",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline session reported for this assay",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no recording ≥24 h after last dose for this assay",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "one-hour session does not span ≥6 h",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Delay Discounting",
+      "assay_description": "Operant chamber task; rats chose between a small immediate reward (1 pellet, 2 s) and a large delayed reward (3 pellets) with delay increasing across 8 daily 1-hour sessions (2, 7, 12, 17, 22, 32, 42, 52 s).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "p.o.",
+          "evidence": "Psilocybin (1 mg/kg) or vehicle... administered by gavage",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "no apparatus-specific habituation described beyond shaping/training",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "operant chambers; animals freely moving",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "All food was removed from the cages 24 h prior to the beginning of shaping... Animals remained on food restriction until completion of the progressive ratio task.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "water available ad libitum throughout the experiment",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 5,
+          "evidence": "Drug or vehicle was administered approximately 5 min prior to each day's behavioral session.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 40,
+        "n_male": 20,
+        "n_female": 20,
+        "n_per_group_min": 6,
+        "evidence": "the same 40 rats used in probability discounting were also tested in the delay discounting task; n = 6-8 per group in figure captions for AUC",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute psilocybin (1 mg/kg, p.o.) had no significant effect on the proportion of large delayed choices, exponential rate of decay, or AUC in the delay discounting task. A sex difference (independent of treatment) was found for total trials completed.",
+        "statistics": "F(7,233) = 1.51, p = 0.166 (group × sex × delay on proportion of large choices); main effect of sex F(1,36) = 5.87, p = 0.021 on number of trials completed.",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "no",
+        "time_dependent": "no",
+        "evidence": "A repeated measures mixed-effects analysis found no significant main effects or interaction between treatment group, sex, and delay [F(7,233) = 1.51, p = 0.166] for the proportion of choices made for the large, delayed reward.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "proportion of large choices, exponential rate of decay (Kd), area under the curve, total number of trials completed",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "percentage of large choices was compared over time (in 10 min bins) within each delay",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no transition/sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "lever pressing is operant, not ethological",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual operant testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "decision-making task involving learning of delay contingencies",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Med Associates lever-press detection only",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate analyses only",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "standard operant chambers (Med Associates)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no shelter inside operant chamber",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no bedding in operant chamber",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting material in chamber",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment objects in chamber",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single operant chamber without separate compartments",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individual testing",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "sugar pellets delivered as rewards during the session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "delays increased across days of testing (8 sessions)",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "Animals completed up to 100 trials during each one-hour testing session",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 2,
+          "value": "8-14",
+          "evidence": "eight consecutive days during delay discounting",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no ≥24 h post-acute follow-up",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "one-hour session does not span ≥6 h",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    },
+    {
+      "assay_name": "Progressive Ratio",
+      "assay_description": "Operant chamber task assessing motivation; lever press requirement increased exponentially (5×e^(0.2×reinforcer#)) up to 742 presses; session terminated after 1 h or 5 min of no responding. Breakpoint and cumulative responses recorded on one test day.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "p.o.",
+          "evidence": "Drug or vehicle was administered approximately 5 min prior to the start of the test day only (by gavage as described above)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Animals received one day of training on this task followed by one test day... On the first day of training, animals received no treatment and habituated to the task parameters (no data recorded).",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "operant chambers; animals freely moving",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "Animals remained on food restriction until completion of the progressive ratio task; fed once per day during the study",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "water available ad libitum throughout the experiment",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 5,
+          "evidence": "Drug or vehicle was administered approximately 5 min prior to the start of the test day only",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 40,
+        "n_male": 20,
+        "n_female": 20,
+        "n_per_group_min": 10,
+        "evidence": "the same 40 rats were tested on a progressive ratio task (n = 10 per group/sex)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute psilocybin (1 mg/kg, p.o.) had no significant effect on cumulative lever responding or breakpoint in the progressive ratio task in either sex.",
+        "statistics": "Three-way RM ANOVA (group × sex × time) on cumulative responses: no significant differences; two-way ANOVA on breakpoints: no significant differences.",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "no",
+        "time_dependent": "n/a",
+        "evidence": "Cumulative responses were analyzed with a three-way repeated measures ANOVA (group x sex x time), which found no significant differences... a two-way ANOVA was used to analyze breakpoints, which also showed no statistically significant differences",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "cumulative responses over time; breakpoint",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Cumulative responses over time were compared between groups and sexes using three-way mixed models",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no transition/sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "lever pressing is operant, not ethological",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual operant testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "task requires learned lever-reward association (operant)",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Med Associates lever-press detection only",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate analyses only",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "standard operant chambers (Med Associates)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no shelter in operant chamber",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no bedding in operant chamber",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting material",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment objects",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single operant chamber",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individual testing",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "sugar pellets delivered as rewards during the session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Animals received one day of training on this task followed by one test day... only data from the test day was analyzed and reported",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "Each session was terminated after one hour or once 5 min elapsed with no lever presses",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "only data from the test day was analyzed and reported",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "On the first day of training, animals received no treatment and habituated to the task parameters (no data recorded)",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no ≥24 h post-acute follow-up",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "one-hour session does not span ≥6 h",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Head Twitch Response",
+      "assay_description": "Rats placed in a large polycarbonate tube (~56 cm diameter, ~30 cm height) immediately after gavage; video recorded for 30 min and total head twitch responses quantified by two blind observers.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "p.o.",
+          "evidence": "Control subjects (psilocybin naïve) were administered either 1 mg/kg psilocybin or vehicle as described above (gavage)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Immediately after gavage, rats were placed in a large polycarbonate tube... no prior habituation to the tube reported",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "rats were placed in a large polycarbonate tube (~56 cm diameter, ~30 cm height); freely moving",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in the tube during the 30-min recording; food restriction ended at progressive ratio completion (>=1 week prior)",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water present in the tube during the 30-min recording",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Immediately after gavage, rats were placed in a large polycarbonate tube... and video was recorded for 30 min (beginning immediately after drug delivery)",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 20,
+        "n_male": 10,
+        "n_female": 10,
+        "n_per_group_min": 5,
+        "evidence": "5 male and 5 female rats per group (psilocybin and vehicle)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin (1 mg/kg, p.o.) significantly increased head twitch responses over 30 min relative to vehicle in both sexes, confirming pharmacological activity.",
+        "statistics": "F(1,15) = 31.55, p < 0.0001 (main effect of treatment); no sex effect.",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "no",
+        "time_dependent": "n/a",
+        "evidence": "A two-way ANOVA found a significant main effect of treatment group on total number of head twitch responses within 30 min [F(1,15) = 31.55, p < 0.0001] independent of sex. Psilocybin induced significantly more head twitches than vehicle treatment.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "total number of head twitch responses in each session",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "only total count over 30 min reported",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is explicitly excluded from ethological behaviours by the rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "rats recorded alone",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "reflexive drug-induced response, no learning required",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "independently quantified by two trained observers",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "single univariate measure",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "large polycarbonate tube (~56 cm diameter, ~30 cm height)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "open tube; no refuge",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no bedding mentioned inside tube",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting material",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment objects",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single cylindrical tube",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "rats recorded individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food or water in the tube during recording",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "video was recorded for 30 min on one occasion",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "video was recorded for 30 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Head twitch response (HTR) was assessed at least one week following... single recording day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline recorded",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "recording starts immediately after dosing; no ≥24 h follow-up",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30 min session does not span ≥6 h",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "All three candidates identified the same four assays (Probability Discounting, Delay Discounting, Progressive Ratio, Head Twitch Response); no merging needed.",
+    "B1 set to '4-6' (score 2) for the two discounting tasks following qwen/gptoss — paper reports proportion large choices, trial counts, Kd, and AUC (4 measures).",
+    "B5 set to 'None' for operant tasks: glm-coded social score (1) by gptoss is inappropriate — these tasks have no social construct.",
+    "B6 for Progressive Ratio set to 'Yes' (operant lever-pressing is a learned behaviour); aligns with qwen/glm rather than gptoss.",
+    "Food restriction coded as 'before' across operant assays (paper explicitly describes 24-h pre-shaping fast and daily restricted feeding) rather than 'during'.",
+    "Water restriction coded as 'no' (water ad libitum throughout the experiment).",
+    "Dosing schedule coded as 'chronic' given 8 consecutive days during delay discounting (>7 days).",
+    "Sample size n_total at assay level set to 40 for the three operant assays since all 40 rats contributed; n_per_group_min taken from minimum reported figure-caption n.",
+    "D3 for probability discounting = 5 days (2-7 bin, score 1); delay discounting = 8 days (8-14 bin, score 2).",
+    "E8 = Yes for the three operant assays (sugar pellets delivered inside the apparatus); = No for HTR."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 5.0,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 5.45,
+    "behavioural_complexity_mean": 3.44,
+    "environmental_complexity_mean": 1.02,
+    "recording_duration_mean": 3.06
+  },
+  "low_confidence_count": 4,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 64322,
+    "output_tokens": 10435,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

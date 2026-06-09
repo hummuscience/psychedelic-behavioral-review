@@ -1,0 +1,480 @@
+{
+  "study_id": "Mitazaki2020",
+  "doi": null,
+  "species": "rat",
+  "strain": "Sprague-Dawley",
+  "age": {
+    "value": "mixed",
+    "age_min_days": 35,
+    "age_max_days": 60,
+    "evidence": "Experiments were performed in pre- (PD 35) and post-pubertal (PD 60) animals.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "male pups (14-18 g) within each litter (4-10 males/litter) were randomly divided to sham or lesion status.",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "1.0 mg/kg, s.c.",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "injection of the DOI (1.0 mg/kg, s.c.) or vehicle. ... DOI) were dissolved in saline",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not stated",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "On PD 21 to 25, rats were weaned and grouped 2 to 3 per cage (20 cm × 25 cm × 40 cm).",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "on a 12:12 h light-dark cycle (light: 7-19 h). Behavioral testing occurred between 10:00 and 18:00.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not stated",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Wet-dog shakes response (WDSr)",
+      "assay_description": "Rats placed in an observation cage (20 × 25 × 40 cm), adapted 1 h, then injected with DOI (1.0 mg/kg, s.c.) and the number of wet-dog shakes counted for 30 min. Performed in pre-pubertal (PD 35) and post-pubertal (PD 60) NVHL and sham rats.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "injection of the DOI (1.0 mg/kg, s.c.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Each rat was allowed to adapt for 1 h in an observation cage (20 cm × 25 cm × 40 cm) before injection of the DOI",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Each rat was allowed to adapt for 1 h in an observation cage ... before injection",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard observation cage test with no food in apparatus during 30 min recording.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard observation cage test with no water in apparatus during 30 min recording.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "the number of wet-dog shakes ... was counted for 30 min after injection of DOI",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 9,
+        "evidence": "All groups had 9-13 animals per condition.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute DOI (1.0 mg/kg, s.c.) induced wet-dog shakes in all rats. The number of WDSr was significantly greater in post-pubertal (PD 60) NVHL rats than in sham controls, with no difference at pre-pubertal age (PD 35).",
+        "statistics": "t(22) = 3.092, p = 0.0053 (PD 60); t(16) = 0.6765, p = 0.5084 (PD 35)",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "The administration of DOI induced WDSr in all animals; however, it was significantly greater in NVHL rats compared to sham animals at post-puberty [t (22) = 3.092, p = 0.0053], but not at prepubertal age [t (16) = 0.6765, p = 0.5084].",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The number of wet-dog shakes ... was counted for 30 min after injection of DOI",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total shakes counted over 30 min; no within-session temporal analysis reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only total count reported; no sequence/transition analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "WDS/HTR is explicitly listed in rubric as not ethological.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Each rat tested alone in observation cage.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning or memory component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Shakes counted by observer blind to treatment; no automated classifier reported.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only one measure analyzed.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "observation cage (20 cm × 25 cm × 40 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter described in the observation cage.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding mentioned in the testing cage.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material mentioned.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects mentioned in the observation cage.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single observation cage with no internal divisions.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each rat was allowed to adapt for 1 h in an observation cage before injection.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water mentioned in the testing apparatus during 30-min recording.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Each animal received a single 30-min recording session after DOI injection (different cohorts tested at PD35 vs PD60).",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "counted for 30 min after injection of DOI",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Each animal tested once; PD 35 and PD 60 are separate cohorts, not repeated recordings of the same animals.",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline behavioural recording reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single 30-min session post-injection; no ≥24 h follow-up.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30 min session does not span ≥6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Prepulse inhibition (PPI) of acoustic startle response",
+      "assay_description": "SR-LAB startle chambers with plexiglas cylinder (8.2 cm inner diameter), 70 dB background. After 30 min post-injection of 5-HT2A antagonists (ketanserin 0.2/1.0/2.0 mg/kg i.p. or MDL100907 0.1/0.5 mg/kg s.c.) or antipsychotics (haloperidol, risperidone, clozapine), rats acclimated 5 min then exposed to 42 trials (120 dB pulse alone or 30 ms prepulse 3–15 dB above background, 100 ms before pulse). Outcomes: ASR amplitude and % PPI. Tested in NVHL and sham rats at PD 35 and PD 60.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "ketanserin (0.2, 1.0 and 2.0 mg/kg, i.p.) and selective 5-HT2A antagonist MDL100907 (0.1 and 0.5 mg/kg, s.c.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "rats were placed in the Plexiglas enclosure and allowed to acclimatize to the environment for 5 min before being tested ... On the first two trials ... presented in order to habituate the animals to the testing procedure.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "cylindrical plexiglas animal enclosure (length, 16 cm; inner diameter, 8.2 cm) ... PPI startle chambers with body-restraint tubes",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard startle chamber test; no food in apparatus.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard startle chamber test; no water in apparatus.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "Thirty minutes after drug injections, rats were placed in the Plexiglas enclosure",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "Sample sizes inferred from ANOVA df (e.g., F(1,45), F(1,37), F(1,40)) but not explicitly stated per group.",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "Post-pubertal (PD 60), but not pre-pubertal (PD 35), NVHL rats showed significant PPI deficits with no change in startle amplitude. PPI deficits were reversed by atypical antipsychotics (risperidone, clozapine) and by 5-HT2A antagonists ketanserin and MDL100907, but not by haloperidol. Drugs had no effect in sham animals.",
+        "statistics": "PD60 PPI lesion effect: t(18)=3.664, p=0.0018; risperidone group×treatment F(1,23)=4.631, p=0.0421, post-hoc p<0.0001; clozapine group×treatment F(1,26)=4.075, p=0.0439, post-hoc p=0.0010; ketanserin group×treatment F(1,45)=6.306, p=0.0157, post-hoc p=0.0050; MDL100907 group×treatment F(1,37)=13.81, p=0.0007, post-hoc p=0.0002; haloperidol no significant interaction.",
+        "direction": "increase",
+        "dose_dependent": "not_reported",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "NVHL-induced PPI deficits were reversed by all tested compounds except for haloperidol. ... ketanserin and MDL100907 attenuated PPI deficits in post-pubertal NVHL rats but produced no effect in sham animals.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Measures of both acoustic startle response (ASR) and PPI were obtained ... average PPI and startle amplitude reported.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Average PPI across trials reported; no within-session time-course analysis.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence or transition analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "PPI startle magnitude is explicitly listed as not ethological.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animal tested alone in startle chamber.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sensorimotor gating reflex; no learning/memory.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Piezoelectric accelerometer + SR-LAB software measures startle magnitude (position/force tracking), not behavioural classification.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVAs on PPI and startle amplitude separately; no multivariate analysis.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "SR-LAB system ... cylindrical plexiglas animal enclosure",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Restraint cylinder, not a shelter.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Plexiglas cylinder, no bedding.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in startle chamber.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in startle chamber.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single cylindrical enclosure.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Animal alone in plexiglas enclosure.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in startle chamber.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Single session per animal: 5 min acclimation + 42 trials with ~15 s ITI.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "5 min acclimation plus 42 trials with average 15 s ITI ≈ ~15-20 min total session.",
+          "confidence": "medium"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Tested once per animal (PD35 and PD60 are different cohorts).",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug PPI baseline reported in same animals.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Testing 30 min after drug; no ≥24 h post-acute follow-up.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session well under 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "All three candidates scored only the WDSr assay, but the paper also administers DOI (a psychedelic) and tests PPI with 5-HT2A antagonists. PPI was added as a second behavioural assay because it is a distinct paradigm (startle chamber, different measures). Note: ketanserin/MDL100907 are antagonists, not psychedelics, but DOI is administered in the WDSr arm of the study so the psychedelic-administration criterion is met for the study overall; PPI is included because it is part of the same drug-treatment study, though some reviewers may exclude it since DOI itself is not given in PPI sessions.",
+    "Reconciled D1/D3 for WDSr: PD35 and PD60 are separate cohorts of different animals, so each animal had only one recording session/day (D1=0, D3=0). Qwen's interpretation as multiple sessions was rejected.",
+    "B1 for WDSr: only one measure (total wet-dog shakes); scored 0 (modal across gptoss and qwen).",
+    "Setup_restrain=yes for PPI per rubric ('PPI startle chambers with body-restraint tubes').",
+    "DOI 1 mg/kg is a single dose, so dose_dependent = n/a."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 0.62,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 1.36
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 41286,
+    "output_tokens": 6409,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "study_id": "Gonzalez2021",
+  "doi": "10.1021/acsptsci.0c00164",
+  "species": "rat",
+  "strain": "Wistar",
+  "age": {
+    "value": "adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Six Wistar male adult rats were maintained on a 12-h light/dark cycle",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 6,
+    "n_female": null,
+    "evidence": "Six Wistar male adult rats",
+    "confidence": "high"
+  },
+  "psychedelic": "Ibogaine",
+  "dosing": [
+    {
+      "compound": "Ibogaine",
+      "doses_mg_per_kg": [
+        40.0
+      ],
+      "doses_raw": "40 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "A 40 mg/kg dose (i.p.) was employed in this work... Dissolution of ibogaine-HCl to prepare the samples for intraperitoneal (i.p.) injection was carried out using warm saline",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "Animals were housed individually in transparent cages",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "maintained on a 12-h light/dark cycle (lights on at 07.00 h)... Experimental sessions were conducted during the light period",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "transparent cages (40 × 30 × 20 cm3) containing wood shaving material — wood shaving is bedding, not enrichment; no other enrichment items mentioned",
+      "confidence": "low"
+    }
+  },
+  "assays": [],
+  "judge_notes": [
+    "Paper is an intracranial EEG study; the primary outcomes are neural recordings (iEEG power, coherence, permutation entropy, neural-network classification of brain states). Per rubric, electrophysiology / EEG / LFP recordings are explicitly excluded from scoring even when done in awake behaving animals.",
+    "Sleep scoring based on iEEG+EMG was used to identify wake/NREM/REM states, but these are state classifications from neural recordings, not behavioural assays.",
+    "The authors mention 'abnormal motor behaviors' from a previous study but no behavioural assay (e.g., OFT, HTR) was conducted or quantified in the present work.",
+    "All three candidates correctly returned an empty assays list; consolidated output preserves this.",
+    "enrichment_housing: candidates split between 'no' and 'not_reported'. Paper only mentions wood shaving (bedding), not enrichment objects, and does not explicitly state absence of enrichment, so 'not_reported' with low confidence is preferred."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0,
+    "environmental_complexity_max": 0,
+    "recording_duration_max": 0,
+    "behavioural_complexity_mean": 0,
+    "environmental_complexity_mean": 0,
+    "recording_duration_mean": 0
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 35708,
+    "output_tokens": 1065,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

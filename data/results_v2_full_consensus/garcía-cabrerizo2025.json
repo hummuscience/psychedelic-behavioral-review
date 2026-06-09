@@ -1,0 +1,679 @@
+{
+  "study_id": "GarciaCabrerizo2025",
+  "doi": "10.1016/j.biopha.2025.118720",
+  "species": "rat",
+  "strain": "Sprague-Dawley",
+  "age": {
+    "value": "adolescent",
+    "age_min_days": 34,
+    "age_max_days": 46,
+    "evidence": "Experiments began when rats were in mid adolescence, comprised between post-natal days (PND) 34-46",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": 71,
+    "n_female": 67,
+    "evidence": "Sprague-Dawley rats (n = 138 total; 71 males, 67 females)",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        0.3,
+        1.0
+      ],
+      "doses_raw": "0.3 and 1 mg/kg",
+      "vehicle": "saline",
+      "route": "multiple",
+      "schedule": "repeated",
+      "evidence": "acute dose of 0.3 or 1 mg/kg of psilocybin or saline (0.9% NaCl)... repeated psilocybin (0.3 and 1 mg/kg, 7 days, 1 dose/day, o.g.); i.p. vs o.g. routes compared.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "Rats were handled at least 1 day (PND 34) before any experimental procedure started.",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "After weaning rats were housed in groups of 2-4 rats per sex in standard cages.",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12:12 h light/dark cycle, with lights on at 08:00 a.m. All the procedures were performed during the light period",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "housed in groups of 2-4 rats per sex in standard cages (no mention of enrichment)",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head-Twitch Response (open field)",
+      "assay_description": "Square open field chamber (60 × 60 × 40 cm); rats placed immediately after psilocybin (i.p. or o.g.); head-twitch responses manually scored from 5-30 min by a blinded experimenter.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "comparing the i.p. vs. o.g. routes of administration",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "no apparatus habituation described prior to test",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "each rat was placed in the arena, and behavior was recorded for 30 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "open field chamber - no food accessible during recording",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "open field chamber - no water accessible during recording",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Immediately following psilocybin... administration, each rat was placed in the arena, and behavior was recorded for 30 min",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 43,
+        "n_male": 21,
+        "n_female": 22,
+        "n_per_group_min": 5,
+        "evidence": "43 adolescent Sprague Dawley rats (21 males and 22 females)... 1 mg/kg of psilocybin i.p. (n = 5; 1 male, 4 females)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute psilocybin 1 mg/kg increased head-twitch responses (~+5.3 vs saline) independently of administration route (i.p. vs o.g.); 0.3 mg/kg was not significant in the ANOVA but was significant in a direct t-test vs. saline.",
+        "statistics": "F2,37 = 30.76, p < 0.001; one-way F2,40 = 31.59, p < 0.001; 1 mg/kg vs saline p < 0.001; 0.3 mg/kg vs saline p = 0.272 (ANOVA), t = 3.21, df = 29, p = 0.003 (t-test)",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "1 mg/kg of psilocybin increased head-twitch responses independently of the route of administration (+5.3 head-twitch responses vs. saline-treated rats; p < 0.001)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Total head-twitch counts... were used for statistical comparisons",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total head-twitch counts, across the 5-30 min observation period, were used",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequential/transition analysis reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-twitch is a pharmacological proxy, explicitly excluded from ethological behaviours",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individually assessed in a square open field chamber",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning or memory component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "manually scored by a single trained experimenter blinded to treatment",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate ANOVAs/t-tests reported",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "square open field chamber (60 × 60 × 40 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open field with no refuge",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "chambers were cleaned with 70% ethanol - bare floor implied",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in arena",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in arena",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "square open field chamber",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individually assessed",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in arena",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "behavior was recorded for 30 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "behavior was recorded for 30 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "acute administration on PND 35",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline recorded for this assay",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No follow-up recordings ≥24 h after dose",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30 min session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Open Field Locomotor Activity",
+      "assay_description": "Same 60 × 60 × 40 cm open field arena; 30 min recording immediately after psilocybin (i.p. or o.g.); total distance travelled tracked with SMART Video Tracking System.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "0.3 or 1 mg/kg of psilocybin by i.p. vs. o.g.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "no apparatus habituation described",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "each rat was placed in the arena... behavior was recorded for 30 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Open field - no food in arena",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Open field - no water in arena",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Immediately following psilocybin... administration, each rat was placed in the arena",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 43,
+        "n_male": 21,
+        "n_female": 22,
+        "n_per_group_min": 5,
+        "evidence": "Same cohort as the head-twitch experiment (43 rats across six groups)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin (0.3 or 1 mg/kg, i.p. or o.g.) did not change total distance travelled in a novel open field compared with saline.",
+        "statistics": "0.3 mg/kg: F1,16 = 0.24, p = 0.631; 1 mg/kg: F1,19 = 0.66, p = 0.425",
+        "direction": "no_effect",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "psilocybin did not induce changes in locomotion in a novel environment, as observed by the lack of effect of treatment",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "total distance travelled (cm) for 30 min",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single total distance over 30 min",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequential analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor distance is not ethological",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individually assessed",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning required",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "SMART Video Tracking System (centroid tracking)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVAs only",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "square open field chamber (60 × 60 × 40 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter in open field",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bare floor cleaned with ethanol",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "square open field chamber",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individually assessed",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in arena",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "behavior was recorded for 30 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "30 min recording",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "PND 35 only",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No follow-up recording",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30 min session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Forced Swim Test",
+      "assay_description": "Water tank (41 cm high × 32 cm diameter, 25 cm depth, 25 ± 1 °C). 15 min pre-test (PND 34) followed by 5 min test sessions at 30 min post-acute dose (PND 35), and 1, 8, and 15 days post-repeated dosing (PND 42, 49, 56). Manual scoring of immobility, climbing, and swimming.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "p.o.",
+          "evidence": "oral psilocybin (0.3 and 1 mg/kg, 2 ml/kg, o.g.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "during the pre-test session, each rat was individually placed in a water tank... for 15 min (PND 34)",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "FST cylinder - per rubric, FST counts as restraint",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "FST tank - no food accessible during the 5 min test",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Water is the testing medium, not for drinking",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 30,
+          "evidence": "30 min after the first psilocybin administration at PND 35... evaluated at different time-points after treatment (1, 8 and 15 days)",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 60,
+        "n_male": 30,
+        "n_female": 30,
+        "n_per_group_min": 20,
+        "evidence": "60 adolescent Sprague Dawley rats (30 males and 30 females)... divided in 3 experimental groups of 20 rats each (10 males and 10 females)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute oral psilocybin (0.3 and 1 mg/kg) reduced immobility and increased climbing and swimming 30 min post-dose. Repeated 7-day dosing produced antidepressant-like effects at 1, 8, and 15 days post-treatment; the 1 mg/kg dose maintained efficacy across timepoints while the 0.3 mg/kg dose gradually lost efficacy on climbing/swimming by 8-15 days. Effects independent of sex.",
+        "statistics": "Acute immobility: F2,57 = 18.81, p < 0.001; climbing F2,57 = 6.69, p = 0.003; swimming F2,57 = 17.18, p < 0.001. 1-day immobility F2,57 = 22.46, p < 0.001. 8-day immobility F2,57 = 17.04, p < 0.001. 15-day immobility F2,57 = 9.49, p < 0.001",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "no",
+        "time_dependent": "yes",
+        "evidence": "both doses of psilocybin decreased the time rats spent immobile when compared to saline-treated rats... the dose of 0.3 mg/kg of psilocybin lost its efficacy for climbing and swimming 8- and 15-days post-treatment",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "immobility, climbing, and swimming each scored separately (3 measures)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5 min test - single total per behaviour reported",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition/sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST immobility explicitly excluded from ethological per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "each rat was individually placed in a water tank",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST is not a learning task",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "videos were blindly analyzed... Behavioral Tracker software - manual scoring",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Separate univariate ANOVAs per behaviour; a correlation with NeuroD1 is bivariate, not multivariate",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "water tank (41 cm high x 32 cm diameter)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No refuge in tank",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Water tank - definitionally absent",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single cylindrical compartment",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "each rat was individually placed",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Pre-test (PND 34), and test sessions on PND 35, 42, 49 and 56",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "15 min pre-test session on PND 34",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "PND 34 (pre-test), PND 35, PND 42, PND 49, PND 56 = 5 recording days",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "during the pre-test session, each rat was individually placed in a water tank... for 15 min (PND 34)",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "antidepressant-like response... evaluated at different time-points after treatment (1, 8 and 15 days)",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Longest session 15 min",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      }
+    }
+  ],
+  "judge_notes": [
+    "Three assays retained: HTR, open-field locomotion, and FST. HTR and OFT locomotion were run in the same apparatus but measure different behavioural domains (per rubric, these are separate assays).",
+    "FST: collapsed acute (30 min post-dose) and repeated-dose follow-ups (1, 8, 15 days) into one assay with multiple recording sessions, per assay-identity rule (different timepoints of same paradigm = one assay).",
+    "D2 for FST scored 1 (15-60 min) because the pre-test session was 15 min, even though test sessions were 5 min — longest single session governs.",
+    "B1 for FST scored 2 (4-6 measures interpreted from rubric: immobility + climbing + swimming = 3 distinct measures fall in the 2-3 bin, score 1). Corrected: 3 measures = bin 2-3 = score 1. Setting B1 score=1, raw_total updated.",
+    "Setup_habituation for HTR/OFT marked 'not_reported' (paper is silent on apparatus pre-exposure beyond general handling).",
+    "Setup_restrain for FST set to 'yes' per rubric (FST cylinder is listed as a restraint apparatus).",
+    "Immunohistochemistry for Ki-67/NeuroD1/BrdU is histological and not scored as a behavioural assay."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 6.82,
+    "behavioural_complexity_mean": 0.83,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 3.18
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 68213,
+    "output_tokens": 8054,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

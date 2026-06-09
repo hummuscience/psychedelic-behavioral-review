@@ -1,0 +1,284 @@
+{
+  "study_id": "RyskampRijsketic2023",
+  "doi": "10.1038/s41386-023-01613-4",
+  "species": "mouse",
+  "strain": "TRAP2;Ai14",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 84,
+    "age_max_days": 126,
+    "evidence": "Twenty-five male and 8 female TRAP2;Ai14 mice (12-18 weeks old) were used",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": 25,
+    "n_female": 8,
+    "evidence": "Twenty-five male and 8 female TRAP2;Ai14 mice (12-18 weeks old) were used for c-Fos-immunofluorescence (IF) mapping.",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        2.0
+      ],
+      "doses_raw": "2 mg/kg, i.p.",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "repeated",
+      "evidence": "Mice were administered saline or psilocybin (2 mg/kg, i.p.) ... After a 2-week washout, mice were injected again with saline or psilocybin (without 4-OHT), according to a crossover design",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Treatment conditions were consistent across cage mates.",
+      "confidence": "medium"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported (home cage described as 'familiar home cage (corncob bedding)' but no further enrichment information provided)",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head Twitch Response",
+      "assay_description": "Head twitches counted following i.p. psilocybin (2 mg/kg) vs saline in a separate cohort of male mice to validate drug lot potency. Apparatus and session duration not specified.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Mice were injected with saline or psilocybin (2 mg/kg)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "HTR assessed via established methodology in freely moving mice",
+          "confidence": "medium"
+        },
+        "food_restriction": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "water_restriction": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": null,
+          "evidence": "the same lot of which induced head twitches as assessed via established methodology [23]",
+          "confidence": "low"
+        }
+      },
+      "sample_size": {
+        "n_total": 7,
+        "n_male": 7,
+        "n_female": 0,
+        "n_per_group_min": 3,
+        "evidence": "saline = 1.3 ± 0.3 [n = 3]; psilocybin = 19.6 ± 2.4 [n = 4]; p < 0.01; two-tailed t-test",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin (2 mg/kg, i.p.) significantly increased head twitch counts (19.6 ± 2.4) compared to saline (1.3 ± 0.3) in male mice, confirming drug lot potency.",
+        "statistics": "p < 0.01; two-tailed t-test",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "the same lot of which induced head twitches as assessed via established methodology [23] in a separate cohort of male mice (saline = 1.3 ± 0.3 [n = 3]; psilocybin = 19.6 ± 2.4 [n = 4]; p < 0.01; two-tailed t-test)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Only head twitch count reported",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single total count reported, no within-session time course",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition or sequence analysis reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-twitch response is explicitly excluded from ethological behaviours per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social construct",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning or memory component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Assessed via established methodology, not stated to use pose estimation or ML classifier",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate t-test only",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Apparatus not specified; HTR typically performed in standard observation chamber",
+          "confidence": "low"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported; standard HTR chamber has no shelter",
+          "confidence": "low"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Standard HTR observation",
+          "confidence": "low"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "HTR scored on individual animals",
+          "confidence": "medium"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported; standard short HTR test does not include food/water",
+          "confidence": "low"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Single HTR count per animal",
+          "confidence": "medium"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Duration not explicitly stated",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single HTR assessment described",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No post-acute follow-up reported",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session does not span >=6 h",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    }
+  ],
+  "judge_notes": [
+    "The primary methodology of this paper is whole-brain c-Fos immunofluorescence mapping with LSFM — a histological/anatomical readout that is explicitly excluded from scoring per the rubric. No behavioural assay was performed on the main experimental cohort during the 2-h post-injection confinement period (no behavioural measures reported).",
+    "The only true behavioural assay was a Head Twitch Response measured in a separate validation cohort of male mice to confirm psilocybin lot potency. Included as the single assay.",
+    "Dosing schedule scored as 'repeated' because mice received psilocybin twice (initial TRAP labeling injection + second injection 2 weeks later under crossover design).",
+    "Sex n's reflect the c-Fos mapping cohort (25M/8F). The HTR validation cohort was a separate group of male mice only (n=3 saline, n=4 psilocybin).",
+    "GLM candidate included no assays; qwen and gptoss both identified HTR. Consolidated to a single HTR entry."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0.0,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 0.0,
+    "behavioural_complexity_mean": 0.0,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 0.0
+  },
+  "low_confidence_count": 14,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 40306,
+    "output_tokens": 3452,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

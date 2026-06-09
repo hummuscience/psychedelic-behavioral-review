@@ -1,0 +1,497 @@
+{
+  "study_id": "Elsilä2020",
+  "doi": "10.3389/fphar.2020.602770",
+  "species": "mouse",
+  "strain": "C57BL/6JRj",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 56,
+    "age_max_days": 56,
+    "evidence": "15 male C57BL/6JRj mice ... 8 weeks of age at arrival",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 23,
+    "n_female": null,
+    "evidence": "A total of 15 male C57BL/6JRj mice ... A group of eight male mice ... were tested in the head twitch response experiment.",
+    "confidence": "high"
+  },
+  "psychedelic": "LSD, 25CN-NBOH",
+  "dosing": [
+    {
+      "compound": "LSD",
+      "doses_mg_per_kg": [
+        0.025,
+        0.1,
+        0.2,
+        0.4
+      ],
+      "doses_raw": "0.025, 0.1, 0.2, and 0.4 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Four different doses of LSD were tested (0.025, 0.1, 0.2, and 0.4 mg/kg) ... all injections were performed intraperitoneally with injection volumes of 10 ml/kg.",
+      "confidence": "high"
+    },
+    {
+      "compound": "25CN-NBOH",
+      "doses_mg_per_kg": [
+        1.5
+      ],
+      "doses_raw": "1.5 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "The highly selective 5-HT2A receptor agonist 25CN-NBOH (1.5 mg/kg) ... all injections were performed intraperitoneally",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "Five days after arrival, the mice were slowly accustomed to handling by the experimenter. Over 5 days, the mice were exposed to gradually intensive handling",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "The mice were housed in pairs in individually ventilated cages",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "ordinary 12-h day-night cycle (lights off at 6 p.m.) ... As we did not have access to facilities with a reversed light cycle, the mice were tested during their inactive period.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "yes",
+      "evidence": "The cages were provided with aspen bedding, nesting material, a plastic in-cage house, and a piece of wood.",
+      "confidence": "high"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Iowa Gambling Task",
+      "assay_description": "Touchscreen-based operant chambers; mice chose among four panels with distinct probabilistic reward/punishment contingencies (20% sucrose reward; 5–40 s time-outs). Sessions lasted 30 min or until 100 responses. Drugs (LSD 0.025–0.4 mg/kg, 25CN-NBOH 1.5 mg/kg, D-amphetamine 2.0 mg/kg, saline) given i.p. before testing.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "all injections were performed intraperitoneally with injection volumes of 10 ml/kg",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Before the training, the mice were habituated to the operant chambers by letting them freely explore the chambers for 10 min",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "freely explore the chambers",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "Ten days after arrival, the mice were restricted of food to reduce their body weights to 80-90% of their free feeding weight.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "Water was normally available at all times.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "The mice were placed into the test chambers immediately after the LSD, 25CN-NBOH, and saline injections",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 15,
+        "n_male": 15,
+        "n_female": null,
+        "n_per_group_min": 15,
+        "evidence": "A total of 15 male C57BL/6JRj mice ... were tested in the Iowa Gambling Task (within-subjects design).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "LSD did not significantly affect option selection (favorable choices) at any tested dose. The highest LSD dose (0.4 mg/kg) significantly decreased premature responding and increased omissions, but did not change correct responses. 25CN-NBOH (1.5 mg/kg) had no significant effects. Amphetamine decreased correct and premature responses and increased omissions.",
+        "statistics": "Favorable %: χ²(6)=11.190, p=0.083; Premature %: χ²(6)=36.824, p<0.001, saline vs LSD 0.4 mg/kg z=2.700, p=0.013, d=1.13; Omissions: χ²(6)=39.943, p<0.001, saline vs LSD 0.4 mg/kg z=-2.667, p=0.015, d=1.15; saline vs amphetamine z=-3.800, p<0.001, d=1.93.",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "The highest dose of LSD (0.4 mg/kg) significantly decreased the premature responses ... and also increased the omissions ... None of the tested LSD doses caused any significant changes in option selection",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 3,
+          "value": "7+",
+          "evidence": "Total trials, Correct %, Premature %, Omission %, Favorable %, P1%, P2%, P3%, P4%",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session-level totals/percentages reported; no within-session time-bin analysis",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition/sequence analysis reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Outcomes are task-specific (responses, omissions, choices), not natural ethological behaviours",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Each mouse performed the task alone in an operant chamber",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The task is considered to require the integration of several executive functions, like flexibility in planning and evaluation of risk-reward ratio",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The chambers were controlled with K-Limbic System software (Med Associates) — beam-break/operant logging, not behavioural classification",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate non-parametric Friedman tests with Dunn's post hoc; no PCA/multivariate analysis",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "touchscreen-based operant chambers (Med Associates Inc.)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Operant chamber with steel grid floor; no refuge described",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "steel grid floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in the operant chamber",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in the chamber",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single operant chamber with touchscreen on back wall and reward magazine on front wall — single compartment, no internal partitions",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each mouse tested individually in its chamber",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "liquid reinforcer (20% sucrose solution) was delivered to a small cup during the session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Every week, the mice went through a single gambling task session per day for 5 days ... A 7-days wash-out period was left between the drug administrations",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "Each session lasted for 30 min or until the mouse responded to the screen 100 times",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 3,
+          "value": "15+",
+          "evidence": "After 15 days of the gambling task, the mice showed a stable performance ... [then] the effects of LSD on decision making were tested [over multiple additional drug-test days with 7-day washouts]",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "After the performance of the mice in the gambling task had stabilized (no significant changes in option selection on four consecutive days on day 15) ... prior to the drug treatment sessions",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Mice were placed into the test chambers immediately after injection; no ≥24 h post-dose follow-up recording reported",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sessions lasted 30 min, far less than 6 h",
+          "confidence": "high"
+        },
+        "raw_total": 6
+      }
+    },
+    {
+      "assay_name": "Head Twitch Response",
+      "assay_description": "Mice placed individually in a 5-L glass beaker immediately after i.p. injection of saline, 0.1 mg/kg LSD, or 1.5 mg/kg 25CN-NBOH; video recorded for 10 min and head twitches manually scored. Within-subject design with 5-day wash-out between treatments.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "each mouse was injected either with saline, 0.1 mg/kg LSD or 1.5 mg/kg 25CN-NBOH intraperitoneally",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Paper does not mention habituation to the beaker",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "immediately placed into a 5-L glass beaker ... video-record for 10 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Beaker contained no food during the 10-min recording",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Beaker contained no water during the 10-min recording",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "immediately placed into a 5-L glass beaker ... set to video-record for 10 min immediately after the mouse was placed in the beaker",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 8,
+        "n_male": 8,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "A group of eight male mice ... was tested for the head twitch response",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Both LSD (0.1 mg/kg) and 25CN-NBOH (1.5 mg/kg) significantly increased head twitch counts during the first 10 min compared with saline, with large effect sizes.",
+        "statistics": "χ²(2)=12.00, p=0.002; saline vs LSD 0.1 mg/kg z=-1.50, p=0.008, d=0.809; saline vs 25CN-NBOH 1.5 mg/kg z=-1.50, p=0.008, d=0.809",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "The tested doses of LSD and 25CN-NBOH significantly increased the number of head twitches in comparison to saline during the first 10 min after administration",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The videos were analyzed by visually scoring the number of head twitches",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total count over 10 min reported, no within-session time-bins",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence/transition analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head twitch response is explicitly excluded from ethological behaviours by the rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mouse tested alone in beaker",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Reflexive drug response; no learning or memory required",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Videos were analyzed by visually scoring",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate Friedman test on single measure",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "5-L glass beaker with a white plastic plate placed under the beaker",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open beaker with no refuge",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described in beaker",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in beaker",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in beaker",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single beaker compartment",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each mouse recorded alone in beaker",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in beaker during 10-min recording",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "On 3 separate testing days, each mouse was injected ... A 5-day wash-out period was left between the testing days",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "set to video-record for 10 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "On 3 separate testing days, each mouse was injected either with saline, 0.1 mg/kg LSD or 1.5 mg/kg 25CN-NBOH",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recording began immediately after injection; no pre-drug baseline recording reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No ≥24 h post-drug recording reported",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "10-min sessions, far less than 6 h",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    }
+  ],
+  "judge_notes": [
+    "Two distinct behavioural assays present: Iowa Gambling Task (touchscreen operant) and Head Twitch Response (beaker observation). Both retained.",
+    "B1 for IGT scored 3 (7+): the paper reports total trials, correct %, premature %, omission %, favorable %, P1%, P2%, P3%, P4% — nine measures (qwen's score). Other candidates underscored at 2.",
+    "Food restriction for IGT scored 'before' (chronic body-weight reduction to 80-90% for operant training; followed glm). Qwen's 'no' misread the protocol.",
+    "D3 for IGT scored 15+: ≥15 days of stable baseline gambling sessions plus multiple drug-test days exceeds 15 recording days (matches qwen).",
+    "E6 for IGT scored 0 (single open space): the operant chamber is a single compartment with screen and magazine on opposite walls but no internal dividers (gptoss, qwen). Overrode glm's '1'.",
+    "Head-twitch session duration =10 min → D2 score 0 (<15 min); D1 still 'Multiple discrete sessions' across 3 test days (gptoss erroneously scored D1=0).",
+    "Sex n: study used 15 male IGT mice + 8 male HTR mice = 23 total male subjects; no females."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 5.0,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 8.18,
+    "behavioural_complexity_mean": 2.5,
+    "environmental_complexity_mean": 0.68,
+    "recording_duration_mean": 5.46
+  },
+  "low_confidence_count": 1,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 51703,
+    "output_tokens": 6597,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

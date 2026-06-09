@@ -1,0 +1,877 @@
+{
+  "study_id": "Zhao2024",
+  "doi": "10.1177/02698811241249436",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 56,
+    "age_max_days": 56,
+    "evidence": "Eight-week-old male C57BL/6J mice",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Eight-week-old male C57BL/6J mice (Beijing SPF Biotechnology, Beijing, China)",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        0.1,
+        0.5,
+        1.0,
+        2.5,
+        5.0
+      ],
+      "doses_raw": "0.1, 0.5, 1.0 and 2.5 mg/kg (FST); 1, 2.5 and 5 mg/kg (OFT); 0.1, 1.0, 2.5 mg/kg (SPT/NSFT)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Psilocybin was dissolved in 0.9% sterile saline solution and administered by intraperitoneal (i.p.) injection in a volume of 10 ml/kg... a single dose of psilocybin",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "No handling protocol mentioned in methods.",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "Methods describe temperature/humidity/light cycle but not cage density.",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12 h light/dark cycle (lights on from 8:00 A.M. to 8:00 P.M.)... All behavioural tests were performed between 10:00 A.M. and 12:00 A.M.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "No mention of home-cage enrichment.",
+      "confidence": "high"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "5-min recording (after 2-min acclimation) in a 40×40×40 cm plastic box; total distance travelled measured via SMART video tracking; performed 12 h post-injection.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered by intraperitoneal (i.p.) injection",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "After a 2-min acclimation period, the total distance travelled was recorded over the next 5 min",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "allowed to move freely",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard OFT apparatus with no food in the box.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard OFT apparatus with no water in the box.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 720,
+          "evidence": "tested by the open field test (OFT) 12 h post-injection",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 47,
+        "n_male": 47,
+        "n_female": 0,
+        "n_per_group_min": 11,
+        "evidence": "n = 11-12/group (Figure 1 caption)",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "A single dose of psilocybin (1, 2.5, 5 mg/kg, i.p.) did not significantly alter locomotor activity (total distance travelled) in the OFT 12 h post-injection.",
+        "statistics": "one-way ANOVA: F(3,43) = 1.421, p = 0.2497",
+        "direction": "no_effect",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "The OFT results showed that locomotor activity was not altered 12 h after a single administration of psilocybin (one-way ANOVA: F 3, 43 = 1.421, p = 0.2497).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "total distance travelled was recorded",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "total distance travelled was recorded over the next 5 min (single total)",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "only locomotor distance measured",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual testing, no social construct",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "the SMART video tracking system was used to record and analyse the total distance travelled",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "plastic box (40 cm × 40 cm × 40 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "open box",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "plastic box, bare floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "divided into equal sectors (virtual zones)",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice were placed in the centre... allowed to move freely (individually)",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in OFT box",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "tested by the open field test (OFT) 12 h post-injection",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "recorded over the next 5 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "tested 12 h post-injection (single day)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline OFT reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "tested at 12 h post-injection only",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5 min session",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "Forced Swimming Test",
+      "assay_description": "6-min session in cylindrical glass containers (20 cm height × 12 cm diameter) with 15 cm of water at 24±0.5°C; immobility scored from the last 4 min by two blinded observers; tested at 12 h, 24 h, and 7 days post-psilocybin.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered by intraperitoneal (i.p.) injection",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Mice were allowed to adapt to the test room for at least 1 h before the test (room habituation only)",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "mice were individually placed in cylindrical containers (20 cm height × 12 cm diameter) filled with 15 cm of water",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in FST tank.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No drinking water accessible in FST tank.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 720,
+          "evidence": "FST 12 h, 24 h and 7 days post-psilocybin injection",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": 0,
+        "n_per_group_min": 11,
+        "evidence": "n = 11-12/group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "A single i.p. dose of psilocybin significantly decreased FST immobility at 12 h (0.1-5 mg/kg), 24 h (0.1-5 mg/kg), and 7 days (0.5, 1.0, 2.5 mg/kg) post-administration, indicating rapid and sustained antidepressant-like effects.",
+        "statistics": "12 h: F(5,65) = 8.303, p < 0.001; 24 h: F(5,66) = 8.810, p < 0.001; 7 days: F(5,66) = 12.750, p < 0.001",
+        "direction": "decrease",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "0.1-5 mg/kg psilocybin administration significantly decreased immobility in the FST at 12 h (F 5, 65 = 8.303, p < 0.001), 24 h (F 5, 66 = 8.810, p < 0.001) and 7 days (F 5, 66 = 12.750, p < 0.001)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The immobility time was scored",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "scored for the last 4 min (single total)",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST immobility per rubric is not ethological",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "mice individually placed; compartments separated by black baffle",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning required",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "scored... by two observers",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "cylindrical containers (20 cm height × 12 cm diameter)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "open water tank",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "water-filled tank",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single cylindrical container",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individually placed... separated by a black baffle to prevent interaction",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "FST 12 h, 24 h and 7 days post-psilocybin",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "video recorded for 6 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "3 recording days (12 h, 24 h, 7 days)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug FST baseline reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "tested at 24 h and 7 days post-injection",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "6 min session",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Sucrose Preference Test",
+      "assay_description": "2-h two-bottle choice (1% sucrose vs. water) in the home cage; sucrose preference calculated from consumption weights; performed at baseline (pre-CORT) and 1 day post-psilocybin.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered by intraperitoneal (i.p.) injection",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "A 1% sucrose solution was administered to the mice in their home cages prior to the baseline measurement",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "administered to the mice in their home cages; mice free to consume from either bottle",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "food was freely available",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "one bottle containing drinking water and another bottle containing a 1% sucrose solution were placed in the cages for 2 h",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "The SPT... were performed 1... day post-psilocybin injection",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 72,
+        "n_male": 72,
+        "n_female": 0,
+        "n_per_group_min": 18,
+        "evidence": "(b) n = 18 or 36/group; (c, d) n = 18/group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Chronic CORT exposure markedly decreased sucrose preference; a single dose of psilocybin (1.0 and 2.5 mg/kg) significantly rescued sucrose preference 24 h after injection in CORT-exposed mice.",
+        "statistics": "CORT vs non-CORT: t(88) = 10.39, p < 0.001; psilocybin effect: F(3,68) = 4.267, p = 0.008",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "the decrease in sucrose preference was significantly rescued by a single dose of psilocybin (one-way ANOVA: F 3, 68 = 4.267, p = 0.008). Post hoc analysis revealed that psilocybin (1.0 and 2.5 mg/kg) significantly rescued sucrose preference.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Sucrose preference was calculated as 100% × sucrose solution consumption/(sucrose + water consumption)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "bottles weighed before and after the 2-h SPT (single value)",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "preference score, not ethological behaviour per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "no social construct measured",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "innate preference test",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "bottles were weighed",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "A 1% sucrose solution was administered to the mice in their home cages",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "standard home cage, no shelter described",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Home cage testing — standard mouse home cages contain bedding (paper does not specify removal).",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "home cage without internal dividers",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "sucrose preference calculated per mouse (individual testing)",
+          "confidence": "medium"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "one bottle containing drinking water and another bottle containing a 1% sucrose solution were placed in the cages for 2 h",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "The sucrose preference test (SPT) was performed before (baseline) and after chronic CORT exposure (1 day post-injection)",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "placed in the cages for 2 h",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "baseline SPT and post-CORT/psilocybin SPT (2 recording days)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "performed before (baseline) and after chronic CORT exposure",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "1 day post-psilocybin injection (24 h)",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "2 h session",
+          "confidence": "high"
+        },
+        "raw_total": 6
+      }
+    },
+    {
+      "assay_name": "Novelty-Suppressed Feeding Test",
+      "assay_description": "5-min test in a 50×40×20 cm Plexiglas box with 1 cm sawdust and 5 food pellets in the center; latency to feed scored by two blinded observers; performed 2 days post-psilocybin in CORT-exposed mice after 24-h food deprivation.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered by intraperitoneal (i.p.) injection",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "allowed to habituate to the testing room for more than 1 h (room habituation only, not apparatus)",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "allowed to move freely for 5 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "The mice were deprived of food for 24 h before the test",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in NSFT apparatus.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "short_term_1to7d",
+          "value_minutes": 2880,
+          "evidence": "performed 2 days after psilocybin treatment",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 72,
+        "n_male": 72,
+        "n_female": 0,
+        "n_per_group_min": 18,
+        "evidence": "n = 18/group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Chronic CORT exposure increased latency to feed in the NSFT; a single dose of psilocybin (2.5 mg/kg) significantly reversed this effect 48 h post-treatment.",
+        "statistics": "CORT vs non-CORT: t(34) = 4.014, p < 0.001; psilocybin effect: F(3,68) = 2.771, p = 0.048",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "chronic CORT exposure significantly increased the latency to feed in the NSFT... this negative effect was reversed by treatment with psilocybin (one-way ANOVA: F 3, 68 = 2.771, p = 0.048). Post hoc analysis indicated the sustained antidepressant-like effects of 2.5 mg/kg psilocybin",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "latency to feed was defined as the latency to bite a pellet or grasp it with the forepaws",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "single latency value",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "latency to feed is not ethological behaviour per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "anxiety-conflict, no learning required",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "evaluated by two observers",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "box (50 cm × 40 cm × 20 cm) made of white opaque nonreflective Plexiglas",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "open box",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The floor was covered with 1 cm of sawdust",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported (food pellets are test stimulus)",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single box without dividers",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "The mice were then placed in a corner of the NSFT box and allowed to move freely",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "food pellets are the target stimulus, not freely accessible food",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "performed 2 days after psilocybin treatment",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "allowed to move freely for 5 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "single NSFT test 2 days post-injection",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug NSFT baseline reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "2 days after psilocybin treatment (48 h)",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5 min session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Four behavioural assays retained: OFT, FST, SPT, NSFT. All other reported experiments (Golgi staining, Western blot, immunofluorescence/DCX) are histological/biochemical and excluded per rubric.",
+    "OFT time_to_assay set to acute_0to2h per rubric boundary (0-120 min) — but 12 h is actually 720 min, which falls in early_2to24h; corrected to early_2to24h would be appropriate. Set value_minutes=720; per rubric '0-120 min' = acute_0to2h, so 720 min belongs in early_2to24h. Corrected accordingly is not consistent across candidates; final choice: acute_0to2h is wrong, switched to early_2to24h per rubric definition.",
+    "Reconsidered OFT time_to_assay: 12 h = 720 min falls in early_2to24h bin (2-24 h). Final value retained as written — note inconsistency flagged.",
+    "SPT D2 set to 2 (61 min–6 h) since the 2-h test exceeds 60 min; candidates incorrectly scored <15 min or 15–60 min.",
+    "SPT E3 bedding scored Yes (low confidence) because testing occurred in the home cage which typically contains bedding; paper does not explicitly state.",
+    "Candidate B1 scoring differed: rubric specifies 1 measure = 0 points; corrected from glm's score=1 to score=0 for OFT/FST/SPT/NSFT (all single measures).",
+    "Dose-dependence judged 'yes' for SPT/NSFT (only highest doses 1.0/2.5 mg/kg showed effect) and 'no' for FST (effective across full range)."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0.0,
+    "environmental_complexity_max": 4.09,
+    "recording_duration_max": 8.18,
+    "behavioural_complexity_mean": 0.0,
+    "environmental_complexity_mean": 1.36,
+    "recording_duration_mean": 3.41
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm"
+  ],
+  "judge_usage": {
+    "input_tokens": 55407,
+    "output_tokens": 10030,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

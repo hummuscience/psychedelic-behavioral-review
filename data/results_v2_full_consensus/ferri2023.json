@@ -1,0 +1,692 @@
+{
+  "study_id": "Ferri2023",
+  "doi": "10.1016/j.ejphar.2023.175926",
+  "species": "rat",
+  "strain": "Wistar",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 49,
+    "age_max_days": 56,
+    "evidence": "adult male Wistar rats weighing 230-280 g (7-8-week-old)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 80,
+    "n_female": null,
+    "evidence": "We obtained adult male Wistar rats",
+    "confidence": "high"
+  },
+  "psychedelic": "25H-NBOMe, 25H-NBOH",
+  "dosing": [
+    {
+      "compound": "25H-NBOMe",
+      "doses_mg_per_kg": [
+        0.3,
+        1.0,
+        3.0
+      ],
+      "doses_raw": "0.3, 1 or 3 mg/kg",
+      "vehicle": "DMSO",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "diluted in 10% dimethyl sulfoxide (Sigma-Aldrich, Brazil) and sterile saline prior to intraperitoneal (i.p.) administration of single doses of 0.3, 1 or 3 mg/kg (n = 10 animals per group)",
+      "confidence": "high"
+    },
+    {
+      "compound": "25H-NBOH",
+      "doses_mg_per_kg": [
+        0.3,
+        1.0,
+        3.0
+      ],
+      "doses_raw": "0.3, 1 or 3 mg/kg",
+      "vehicle": "DMSO",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "diluted in 10% dimethyl sulfoxide (Sigma-Aldrich, Brazil) and sterile saline prior to intraperitoneal (i.p.) administration of single doses of 0.3, 1 or 3 mg/kg",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12-h light-dark cycle (lights turned on at 07:00 a.m.)... behavioral studies were performed... between 09:00 a.m. and 12:00 p.m.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head-Twitch Response Test",
+      "assay_description": "Animals placed in a polypropylene box (30 × 19 × 13 cm) and recorded for 20 min immediately after i.p. drug administration; head-twitches counted by blind observer.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "intraperitoneal (i.p.) administration",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "no apparatus habituation described for HTR box",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "animals were placed in a polypropylene box (30 × 19 × 13 cm) and recorded for 20 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food present in HTR box during recording",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water present in HTR box during recording",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "recorded for 20 min immediately after the drug administration",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 70,
+        "n_male": 70,
+        "n_female": null,
+        "n_per_group_min": 10,
+        "evidence": "n = 10 per experimental group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "All doses of 25H-NBOMe and 25H-NBOH increased the cumulative number of head twitches over the 20-min session compared to control, indicating hallucinogenic effects.",
+        "statistics": "25H-NBOMe: time F(3,81)=91.4, p<0.001; dose F(3,27)=15.4, p<0.001; interaction F(9,81)=11.7, p<0.01. 25H-NBOH: time F(3,81)=15.4, p<0.001; dose F(3,27)=29.5, p<0.001; interaction F(9,81)=25.4, p<0.001.",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "At 20 min after drugs administration, all doses of 25H-NBOMe increased the number of HTRs... Similarly, all doses of 25H-NBOH induced an increased in the number of HTRs over time",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The cumulative number of head-twitch episodes was counted",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "cumulative counted over 20-min period in time bins; factor time F(3,81)=91.4, p<0.001",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no transitions or sequences analyzed",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is explicitly excluded from ethological behaviours per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual testing in polypropylene box",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning or memory component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "recordings were analyzed by an experienced observer who was blind to the treatments",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "only univariate ANOVAs reported",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "polypropylene box (30 × 19 × 13 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no refuge in the box",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no bedding mentioned",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single polypropylene box",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "animals placed individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food or water in the box during recording",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "recorded for 20 min immediately after the drug administration",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "recorded for 20 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "single test day for HTR",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline HTR recorded",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "acute testing only",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "20 min session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "20-min test in a circular open-field arena (60 cm diameter, 50 cm height); total distance traveled measured in four 5-min blocks using EthoVision XT.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "intraperitoneal (i.p.) administration",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "no apparatus habituation described for OFT",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Animals were individually placed in the center of a circular open-field arena",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in the arena during 20-min test",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water in the arena during 20-min test",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 20,
+          "evidence": "started 20 min after substances administration",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 70,
+        "n_male": 70,
+        "n_female": null,
+        "n_per_group_min": 10,
+        "evidence": "n = 10 per experimental group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Only the 3 mg/kg dose of both 25H-NBOMe and 25H-NBOH reduced distance traveled. 25H-NBOMe reduced locomotion across the test; 25H-NBOH reduced locomotion at 5 and 10 min only.",
+        "statistics": "25H-NBOMe: time F(3,112)=97.2, p<0.001; treatment F(3,112)=18.0, p<0.001; interaction F(9,112)=0.85, p=0.57. 25H-NBOH: time F(3,112)=130.8, p<0.001; treatment F(3,112)=3.53, p<0.05; interaction F(9,112)=3.50, p<0.001. Post-hoc p<0.05 for 3 mg/kg vs control.",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "rats treated with 3.0 mg of 25H-NBOMe traveled a shorter distance compared with control rats (p < 0.05)... rats treated with 3.0 mg of 25H-NBOH traveled a shorter distance at 5 and 10 min after starting the test, compared with control rats (p < 0.05)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "measure the total distance traveled during the test",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "measuring the distance traveled in four blocks of 5-min time sequences",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no sequence analysis reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "locomotor distance is not ethological per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animals were individually placed",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The software EthoVision XT was used (position tracking, score 0)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "only univariate ANOVAs reported",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "circular open-field arena (60 cm diameter, 50 cm height)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "open-field arena without shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "bare arena with dark bottom",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "OFT scored 0 per rubric",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Animals were individually placed",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food or water in arena",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "OFT, lasting 20 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "lasting 20 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "single test day for OFT",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline OFT recorded",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "acute testing only",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "20 min session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Forced Swimming Test",
+      "assay_description": "5-min test in an acrylic container (24 cm diameter, 50 cm height) filled with water (35 cm, 24 ± 1 °C); immobility duration scored by blind observer. Pre-test session conducted 24 h before test session.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "intraperitoneal (i.p.) administration",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "pre-test session of FST 24 h before is a procedural pre-swim, not apparatus habituation without data; no other habituation described",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "placed in an acrylic container filled with water (FST cylinder counts as restraint per rubric)",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in the FST cylinder during the 5-min test",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "water present only as test medium, not as drinking source",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 40,
+          "evidence": "The test was initiated 40 min after substance administration",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 70,
+        "n_male": 70,
+        "n_female": null,
+        "n_per_group_min": 10,
+        "evidence": "n = 10 per experimental group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "A single injection of 25H-NBOMe (1 and 3 mg/kg) and 25H-NBOH (1 and 3 mg/kg) significantly reduced immobility time in the FST compared to control, indicating antidepressant-like effects.",
+        "statistics": "25H-NBOMe: F(3,28)=3.68, p=0.023. 25H-NBOH: F(3,28)=4.47, p=0.011.",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "The single injection of 25H-NBOMe, at doses of 1 and 3 mg/kg, reduced the immobility time in the FST [F(3,28)=3.68; p=0.023]. Likewise, 1 and 3 mg/kg of 25H-NBOH also reduced the immobility time in the FST [F(3,28)=4.47; p=0.011].",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "based on the duration of floating",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "single total immobility for 5-min test",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST immobility is excluded from ethological per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "analyzed by an experienced observer who was blind to the treatments",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "only univariate ANOVA",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "acrylic container (24 cm diameter, 50 cm height)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no refuge in cylinder",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "water-filled container, no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single cylindrical container",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individual testing in FST",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food or water access",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "pre-test session of forced swim test (FST) 24 h before the test session... FST for 5 min on test day",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "FST for 5 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "pre-test session 24 h before the test session",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "underwent a pre-test session of forced swim test (FST) 24 h before the test session",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no recording ≥24 h after drug administration",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5 min session",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    }
+  ],
+  "judge_notes": [
+    "Three assays identified across all candidates: HTR, OFT, FST. All candidates agreed on assay structure.",
+    "Vehicle set to 'DMSO' (10% DMSO in saline; primary listed first per rubric) rather than 'saline'.",
+    "FST D1_continuity scored 1 (Multiple discrete sessions) because the paper explicitly reports a pre-test session 24 h before the test session, even though pre-test data are not numerically reported - the pre-swim is a standard recording session of the same assay. D3 scored 1 (2-7 days) and D4 baseline scored 'Yes' for consistency.",
+    "n_total for each assay set to 70 (7 groups × 10), since the paper states 80 animals total but the design includes 7 experimental groups of 10 (vehicle + 3 doses × 2 compounds).",
+    "B7 automated classification scored 0 for OFT despite EthoVision XT use, per explicit rubric SCORE-0 rule."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 4.09,
+    "behavioural_complexity_mean": 0.83,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 2.27
+  },
+  "low_confidence_count": 6,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 55381,
+    "output_tokens": 7659,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

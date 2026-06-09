@@ -1,0 +1,500 @@
+{
+  "study_id": "Fantegrossi2014",
+  "doi": "10.1007/s00213-014-3745-5",
+  "species": "mouse",
+  "strain": "NIH Swiss",
+  "age": {
+    "value": "not_reported",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Male NIH Swiss mice (Harlan Sprague Dawley, Inc.) weighing 20-25 g on delivery",
+    "confidence": "low"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male NIH Swiss mice",
+    "confidence": "high"
+  },
+  "psychedelic": "25CN-NBOH, DOI",
+  "dosing": [
+    {
+      "compound": "25CN-NBOH",
+      "doses_mg_per_kg": [
+        0.1,
+        0.3,
+        1.0,
+        3.0,
+        10.0,
+        30.0
+      ],
+      "doses_raw": "0.1, 0.3, 1.0, 3.0, 10.0, 30.0 mg/kg, ip",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "injected with saline or various doses of DOI or 25CN-NBOH... All drugs were dissolved in physiological saline",
+      "confidence": "high"
+    },
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        0.1,
+        0.3,
+        1.0,
+        3.0
+      ],
+      "doses_raw": "0.3, 1.0, 3.0 mg/kg (HTR); 0.1, 0.3 mg/kg (drug discrimination training dose)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Mice were trained... to discriminate either 0.3 mg/kg DOI or 0.1 mg/kg M100907 from saline vehicle. Injections were administered ip",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "housed three animals per cage in temperature-controlled rooms",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "Lights were set to a 12-h light/dark cycle (experiments were conducted 3-5 h into the light phase)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head Twitch Response",
+      "assay_description": "Mice injected i.p. with DOI or 25CN-NBOH (with or without M100907 / RS102221 pretreatment, or with 25CN-NBOH pretreatment before DOI), placed in an observation cage with fresh bedding; 10 min after injection, an overhead camera recorded behavior for 10 min and head twitches were manually scored by a blind observer.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Doses were then calculated and prepared for intraperitoneal (ip) injection",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "individual animals were removed from the home cage, injected... and placed into an observation cage",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "placed into an observation cage containing fresh bedding",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Neither food nor water was available during the experiments.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Neither food nor water was available during the experiments.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 10,
+          "evidence": "Ten minutes following this injection, an overhead camera was activated and behavior was recorded for 10 min.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 5,
+        "evidence": "animals allocated for head twitch experiments (n=5 per group)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI produced a characteristic biphasic dose-dependent increase in head twitches (max ~20 twitches/10 min at 1.0 mg/kg). 25CN-NBOH elicited fewer twitches (max ~10 at 1.0 mg/kg) with a shallow descending limb; effect was blocked by M100907 (5-HT2A antagonist) but not by RS102221 (5-HT2C antagonist). 25CN-NBOH pretreatment dose-dependently attenuated DOI-elicited head twitches.",
+        "statistics": "DOI vs saline: q=4.059 (0.3), 4.351 (1.0), 3.924 (3.0 mg/kg), df=14, p<0.05; 25CN-NBOH vs saline: q=3.811 (1.0), 3.536 (3.0 mg/kg), df=14, p<0.05; M100907 attenuation of 1.0 mg/kg 25CN-NBOH: q=2.952, p<0.05; RS102221 vs 30 mg/kg 25CN-NBOH: q=0.166, p>0.05; 25CN-NBOH pretreatment vs saline: q=4.517, 5.001, 11.292 for 3.0, 10.0, 30.0 mg/kg, p<0.05",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "25CN-NBOH induced a head twitch response in the mouse that was lower in magnitude than that of DOI, blocked by M100907, but not altered by RS102221. DOI-elicited head twitch was dose-dependently attenuated by 25CN-NBOH pretreatment.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "videotapes were later scored for drug-elicited head twitches",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "mean head twitches recorded over a 10-min observation period",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no sequential or transition analysis reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "head-twitch response is explicitly listed as non-ethological in the rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual animals were removed from the home cage and placed into an observation cage",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "head-twitch assay does not require learning",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "videotapes were later scored... by one blind observer",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "analyzed by one-way ANOVA on ranks",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "placed into an observation cage containing fresh bedding",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no shelter provided in the observation cage",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "observation cage containing fresh bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting material mentioned",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment objects mentioned",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single observation cage",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individual animals were removed from the home cage",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Neither food nor water was available during the experiments.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "For head twitch studies, each animal was used in only one experimental observation",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "behavior was recorded for 10 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "each animal was used in only one experimental observation",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline recording",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no follow-up recordings",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "10-min recording",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "Drug Discrimination (operant)",
+      "assay_description": "Two-lever, food-reinforced operant drug discrimination (FR5) in MED Associates chambers. Mice trained to discriminate 0.3 mg/kg DOI from saline, or 0.1 mg/kg M100907 from saline; substitution tested with cumulative doses of DOI, 25CN-NBOH (±M100907 pretreatment), ketanserin. 30-min sessions; % drug-appropriate lever responses and response rate measured.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Injections were administered ip 10 min before extension of the response levers",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Studies were conducted in operant-conditioning chambers for mice; animals were freely moving",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "mice assigned to drug discrimination studies (n=6 per group) were food-restricted to maintain weights at 30±2 g throughout testing",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "reinforced by 2 s of access to a palatable liquid reinforcer (approximately 0.02 ml evaporated milk diluted 1:1 with tap water)",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 10,
+          "evidence": "Injections were administered ip 10 min before extension of the response levers",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "mice assigned to drug discrimination studies (n=6 per group)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Mice reliably discriminated 0.3 mg/kg DOI and 0.1 mg/kg M100907 from saline. DOI produced full dose-dependent substitution; 25CN-NBOH only partially substituted (~55% max) for DOI and these effects were attenuated by M100907. 25CN-NBOH did not substitute for M100907 at any dose, whereas ketanserin fully substituted. High doses of 25CN-NBOH suppressed response rates.",
+        "statistics": "DOI training vs saline q=9.205, p<0.05; cumulative DOI 0.1, 0.3 mg/kg vs saline q=7.591, 9.297, df=12, p<0.05; 25CN-NBOH 10, 30 mg/kg vs saline q=5.233, 5.332, df=12, p<0.05; M100907 training vs saline q=10.506, df=16, p<0.05; ketanserin 0.1, 0.3, 1.0 mg/kg vs saline q=6.484, 8.173, 10.105, df=16, p<0.05; 25CN-NBOH 0.1–30 mg/kg vs M100907 TD q=9.438, 9.082, 7.882, 8.485, 8.205, 8.107, p<0.05",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "25CN-NBOH produced an intermediate degree of generalization (55%) for the DOI training dose, and these interoceptive effects were attenuated by M100907. Finally, 25CN-NBOH did not generalize to M100907 at any dose, but ketanserin fully substituted in these animals.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Percent drug-appropriate responding... Response rate was calculated for each session",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "responding aggregated per component, no within-session time-course analysis",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no sequence/transition analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "lever pressing is not an ethological behaviour",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individually enclosed in lightproof sound-attenuating cubicles",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Mice were trained... to discriminate either 0.3 mg/kg DOI or 0.1 mg/kg M100907 from saline vehicle",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "MED Associates operant chambers (beam/lever switch detection, not behavioural classification)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "repeated measures one-way ANOVA",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "operant-conditioning chambers for mice (MED Associates)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no shelter in operant chamber",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "operant chamber, no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single operant chamber with two levers",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individually enclosed in larger lightproof Malaguard sound-attenuating cubicles",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "reinforced by 2 s of access to a palatable liquid reinforcer (evaporated milk diluted 1:1 with tap water)",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Mice were trained 5 days per week... tests were conducted once or twice per week",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "mice were trained in 30-min sessions 5 days per week",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 3,
+          "value": "15+",
+          "evidence": "Mice were trained 5 days per week... Training was complete when mice performed stably over five consecutive sessions under the terminal FR5 schedule... tests were conducted once or twice per week",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Approximately half of the test sessions were conducted the day after saline training sessions... saline control sessions",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no post-acute follow-up >=24h after a single drug administration scheme",
+          "confidence": "medium"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30-min sessions",
+          "confidence": "high"
+        },
+        "raw_total": 6
+      }
+    }
+  ],
+  "judge_notes": [
+    "Merged glm's two separate drug-discrimination assays (DOI-trained and M100907-trained) into a single 'Drug Discrimination (operant)' entry, since the rubric defines an assay by paradigm/apparatus/measures, and the only difference is the training drug — a manipulation, not a different paradigm.",
+    "B1 for HTR scored 0 (1 measure: head-twitch count); glm's score of 1 with value '1' was inconsistent.",
+    "D3 for drug discrimination scored 3 (15+) — training takes many weeks of daily sessions plus weekly tests; gptoss underestimated as 2-7.",
+    "D4 baseline for drug discrimination scored 1: saline training/control sessions are recorded and reported as baseline reference for substitution analysis.",
+    "DOI is listed in dosing because it is a classical 5-HT2A psychedelic administered to rodents alongside 25CN-NBOH."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 8.18,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 1.36,
+    "recording_duration_mean": 4.09
+  },
+  "low_confidence_count": 4,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 53537,
+    "output_tokens": 7079,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

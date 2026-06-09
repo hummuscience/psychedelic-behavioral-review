@@ -1,0 +1,674 @@
+{
+  "study_id": "Xu2016",
+  "doi": "10.1016/j.neuropharm.2016.02.020",
+  "species": "rat",
+  "strain": "Sprague Dawley",
+  "age": {
+    "value": "adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Healthy adult male Sprague-Dawley (SD) rats weighing 250-300 g",
+    "confidence": "medium"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 104,
+    "n_female": 0,
+    "evidence": "Healthy adult male Sprague-Dawley (SD) rats",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [],
+      "doses_raw": "5 µg/0.5 µL",
+      "vehicle": "saline",
+      "route": "other",
+      "schedule": "repeated",
+      "evidence": "DOI, 5 µg/0.5 µL ... dissolved in sterile saline ... 0.5 µL of liquid was microinjected via the guide cannula on days 1, 7, 14 and 21 [into the OFC]",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Unstressed rats were housed four per cage, while rats in the stressed group were caged individually",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "They were maintained on a standard light/dark cycle (light on, 7:00-19:00 h)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Sucrose Preference Test",
+      "assay_description": "24-h two-bottle choice (1% sucrose vs tap water) following 24-h food/water deprivation; measures anhedonia via sucrose preference index. Left and bilateral OFC infusion cohorts.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "other",
+          "evidence": "0.5 µL of liquid was microinjected via the guide cannula [into the OFC] on days 1, 7, 14 and 21 (intra-OFC microinjection)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "72 h before testing, rats were acclimated with two bottles of a 1% sucrose solution for 24 h",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "rats housed in individual behavioral cages",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "rats housed in individual behavioral cages were deprived of water and food for 24 h",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "before",
+          "evidence": "deprived of water and food for 24 h",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "Microinjections on days 1, 7, 14 and 21; This test was performed on day 22",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 70,
+        "n_male": 70,
+        "n_female": 0,
+        "n_per_group_min": 10,
+        "evidence": "n = 18 for Vehicle/CON and Vehicle/CUMS, n = 12 for DOI/CON and Ket/CUMS, n = 10 for Ket/CON (left infusion); bilateral n = 6-8",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "CUMS and intra-OFC DOI both significantly decreased sucrose preference index, indicating anhedonia. Ketanserin pretreatment reversed CUMS-induced decrease.",
+        "statistics": "F4,65 = 4.827, P < 0.01; bilateral F4,29 = 4.874, P < 0.01",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "DOI treatment caused a decrease of sucrose preference index in control animals (P < 0.05)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "sucrose preference index (%) = (sucrose intake/total fluid intake) × 100",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "consumption was measured over a 24-h period (single total)",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "preference index only",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "rats housed in individual behavioral cages",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "innate hedonic preference",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "consumption measured by weighing bottles",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "rats housed in individual behavioral cages",
+          "confidence": "medium"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "individual behavioral cages with two bottles",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individual behavioral cages",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "bottles of 1% sucrose solution (200 mL) and of tap water (200 mL) were presented",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 2,
+          "value": "Continuous monitoring",
+          "evidence": "consumption was measured over a 24-h period",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 3,
+          "value": ">6 h",
+          "evidence": "24-h period",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "This test was performed on day 22",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Baseline screening was used to select animals but baseline data is not reported as an analyzed assay outcome",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Last DOI injection on day 21; SPT on day 22 (~24 h post-dose)",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "consumption was measured over a 24-h period",
+          "confidence": "high"
+        },
+        "raw_total": 7
+      }
+    },
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "5-min test in 60×60×40 cm wooden box; measures locomotor activity, rearing, grooming, and time in center via VideoMot2 tracking.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "other",
+          "evidence": "intra-OFC microinjection via guide cannula",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Rats were placed in the test environment for 30 min before starting OFT (room acclimation only, not apparatus exposure)",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "SD rats were individually placed in the center of the black square area and their activity was recorded",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "OFT apparatus contains no food",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "OFT apparatus contains no water",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "Microinjections on days 1, 7, 14 and 21; behavioral tests on day 22",
+          "confidence": "medium"
+        }
+      },
+      "sample_size": {
+        "n_total": 70,
+        "n_male": 70,
+        "n_female": 0,
+        "n_per_group_min": 10,
+        "evidence": "n = 18 for Vehicle/CON and Vehicle/CUMS, n = 12 for DOI/CON and Ket/CUMS, n = 10 for Ket/CON",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "CUMS and intra-OFC DOI significantly reduced locomotor activity, rearing, and time in center. Ketanserin reversed CUMS-induced reductions in locomotion and rearing. Grooming unaffected.",
+        "statistics": "locomotion F4,65 = 2.747, P < 0.01; rearing F4,65 = 11.647, P < 0.01; time in center F4,65 = 3.186, P < 0.01; grooming F4,65 = 1.946, P > 0.05",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "The Vehicle/CUMS and DOI groups displayed reduced locomotor activity, rearing times and time in the center during open field tests (P < 0.01)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "spontaneous locomotor activity, time in center, rearing and grooming behavior were measured",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "activity was recorded for 5 min (single total)",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "rearing and grooming behavior were measured",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "SD rats were individually placed",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "innate exploration/anxiety test",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "VideoMot2 tracking system (position tracking)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "open field apparatus was a wooden box (60×60×40 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "open field with no shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "wooden box; apparatus cleaned with dilute alcohol between trials",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single open arena (virtual zones for center analysis)",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "SD rats were individually placed",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported / standard OFT",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "activity was recorded for 5 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "recorded for 5 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "OFT performed on day 22",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Last DOI injection day 21; OFT on day 22 (~24 h post-dose)",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5 min",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Tail Suspension Test",
+      "assay_description": "6-min test; rats suspended by tail in three-walled rectangular compartment; immobility scored during last 5 min via tail suspension monitor.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "other",
+          "evidence": "intra-OFC microinjection via guide cannula",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "rats were suspended by their tail with tape from a strain gauge",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in TST apparatus",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water in TST apparatus",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "Last microinjection day 21; behavioral tests on day 22",
+          "confidence": "medium"
+        }
+      },
+      "sample_size": {
+        "n_total": 70,
+        "n_male": 70,
+        "n_female": 0,
+        "n_per_group_min": 10,
+        "evidence": "n = 18 for Vehicle/CON and Vehicle/CUMS, n = 12 for DOI/CON and Ket/CUMS, n = 10 for Ket/CON",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "CUMS and intra-OFC DOI significantly increased immobility time in TST. Ketanserin pretreatment prevented CUMS-induced increase.",
+        "statistics": "F4,65 = 5.757, P < 0.01; bilateral F4,29 = 4.816, P < 0.01",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "CUMS exposure or DOI treatment significantly increased the immobility time (P < 0.01, P < 0.05)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "total duration of immobility in the last 5 min was calculated",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "single total over 5 min",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "immobility measure only",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individually tested",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "behavioral despair test",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "calculated by the tail suspension monitor (strain gauge)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "three-walled rectangular compartment",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "rats are suspended; definitionally absent",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "three-walled rectangular compartment",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each rat was given 1 trial test",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Each rat was given 1 trial test of 6 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "1 trial test of 6 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "single TST session at end of protocol",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Last DOI injection day 21; TST on day 22 (~24 h post-dose)",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "6 min trial",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "All candidates agreed on 3 behavioural assays: SPT, OFT, TST. Merged left-OFC and bilateral-OFC infusions into the same assays per rubric (same paradigm under different infusion-site manipulations).",
+    "DOI route: 'other' selected (intra-OFC microinjection via guide cannula; not standard i.c.v. into ventricle). Candidates split between 'other' and 'i.c.v.'; 'other' is more accurate per Methods.",
+    "DOI doses_mg_per_kg left empty: dose given as 5 µg/0.5 µL intracerebral, not mg/kg.",
+    "D5 follow-up scored Yes for all assays because last microinjection occurred on day 21 and behavioural tests occurred on day 22 (≥24 h post last dose).",
+    "SPT E1 scored 'Home cage' (1) because rats were tested in 'individual behavioral cages' for the 24-h two-bottle SPT, which functions as a home-cage-style monitoring environment; this is a reasonable middle ground between candidates.",
+    "B1 SPT: a single preference score derived from two intake values = 1 measure per rubric (score 0)."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 2.73,
+    "recording_duration_max": 9.55,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 0.91,
+    "recording_duration_mean": 4.09
+  },
+  "low_confidence_count": 7,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm"
+  ],
+  "judge_usage": {
+    "input_tokens": 51970,
+    "output_tokens": 7453,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

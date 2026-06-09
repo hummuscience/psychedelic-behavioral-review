@@ -1,0 +1,284 @@
+{
+  "study_id": "Zhang2025",
+  "doi": "10.1021/acsptsci.5c00324",
+  "species": "mouse",
+  "strain": "C57BL/6J and TRAP2",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 56,
+    "age_max_days": 70,
+    "evidence": "Adult (8 -10 weeks) C57BL/6J and TRAP2 ... male mice were used.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Adult (8 -10 weeks) C57BL/6J and TRAP2 ... male mice were used.",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocin",
+  "dosing": [
+    {
+      "compound": "Psilocin",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "1 mg/kg, i.p.; local mPFC infusion 5 ng or 50 ng",
+      "vehicle": "other",
+      "route": "multiple",
+      "schedule": "acute",
+      "evidence": "Psilocin was solubilized in a mixture of DMSO and normal saline. The test substances were administered intraperitoneally ((i.p.) at a volume of 8 mL/kg. ... microinjection of saline or psilocin (5 ng or 50 ng) into the target brain region.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "mice were allowed to move freely in the test cage for 1 h and were handled for 0.5 h daily to acclimate to the experimental environment and procedures.",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "Housing density not stated.",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "Light cycle not stated.",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Home cage enrichment not stated.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head Twitch Response (HTR)",
+      "assay_description": "HTR events were counted from video recordings of freely moving mice in a test cage after systemic i.p. psilocin (1 mg/kg), local mPFC/OFC/IPAC/DMS cannula infusion of psilocin (5 or 50 ng), or during optogenetic activation/inhibition of c-Fos-TRAPed mPFC neurons. Scored by two blinded observers.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "Systemic i.p. injection of psilocin (1 mg/kg) and local microinjection into mPFC/OFC/IPAC/DMS (5 ng or 50 ng).",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "During the adaptation period, mice were allowed to move freely in the test cage for 1 h ... In the final 3 days of the adaptation period, mice were acclimated to the injector cannula insertion for 20 min daily.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "mice were allowed to move freely in the test cage",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Test cage HTR assay; no food present in apparatus during recording.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Test cage HTR assay; no water present in apparatus during recording.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "A camera mounted above the cage recorded the mice for the next 10 min after the microinjection ... HTR was assessed for 5 min with the laser off (baseline measure), then 5 min with the light on.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 5,
+        "evidence": "mPFC, n = 9 mice, OFC, n = 7 mice, DMS, n = 6 mice, IPAC, n = 5 mice ... n = 9 mice per group (activation) ... n = 8 mice per group (inhibition)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Local infusion of psilocin into the mPFC (5 ng or 50 ng) significantly induced HTR, whereas infusion into OFC, IPAC, or DMS did not. Optogenetic activation of c-Fos-TRAPed mPFC neurons in TRAP2 mice produced spontaneous HTR (most robust at 5 Hz), while optogenetic inhibition reduced psilocin-induced HTR by ~two-thirds.",
+        "statistics": "Paired t test; ** p < 0.01, *** p < 0.001, **** p < 0.0001; activation n=9; inhibition n=8.",
+        "direction": "increase",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "only localized infusion of psilocin into the mPFC induced a significant HTR ... administration of a minimal dose (5 ng or 25 pmol) of psilocin was sufficient to trigger substantial HTR, while a 10-fold increase in dosage did not significantly elevate the behavioral response ... optogenetic inhibition of c-Fos-positive neurons within the mPFC significantly attenuated psilocin-induced HTR.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "video recordings were analyzed by two independent observers ... to count the numbers of HTR.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total HTR counts reported per session; no within-session time-course analysis.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only counts of HTR events reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is explicitly excluded from ethological behaviours in the rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice tested alone in test cage; no social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is an innate behavioural response, no learning required.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "video recordings were analyzed by two independent observers, unaware of the treatment conditions, to count the numbers of HTR.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate counts reported.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "test cage with camera mounted above.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open test cage; no shelter described.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported in test cage.",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Standard test cage; no compartments.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each mouse recorded individually in test cage.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Short test cage HTR session; no food/water in apparatus.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Optogenetic inhibition experiment: mice received saline injection then 24 h later psilocin injection with HTR assessed; baseline psilocin session 1 week before formal experiment.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "Optogenetic inhibition: 1 min laser off / 1 min laser on, repeated 10 times = 20 min total recording session.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Inhibition study: baseline saline day, baseline psilocin day, then formal psilocin + opto day.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "On the sixth day of the adaptation period, mice received an injection of saline (8 mL/kg, i.p.). Twenty-4 h after the injection of saline, mice received an injection of psilocin (1 mg/kg, i.p.) ... to establish baseline HTR behavior.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "All HTR recordings occurred acutely after psilocin administration.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Longest session ~20 min.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    }
+  ],
+  "judge_notes": [
+    "Single HTR assay across all manipulations (systemic i.p., local cannula infusion into mPFC/OFC/IPAC/DMS, optogenetic activation, optogenetic inhibition) — per rubric, same paradigm under different manipulations = 1 assay.",
+    "Excluded c-Fos immunofluorescence quantification (histological endpoint, not behaviour).",
+    "D1/D3/D4 scored based on optogenetic inhibition arm, which included a separate baseline psilocin session 1 week prior to formal experiment (explicit baseline HTR measurement).",
+    "D2 scored 1 (15-60 min) based on 20-min opto-inhibition session (10 cycles of 1 min off + 1 min on).",
+    "B4 = No: HTR is explicitly excluded from ethological behaviours by the rubric.",
+    "Vehicle marked 'other' (DMSO + saline mixture); route 'multiple' due to combined systemic and local intracerebral infusion within the same assay."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0.0,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 5.45,
+    "behavioural_complexity_mean": 0.0,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 5.45
+  },
+  "low_confidence_count": 4,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm"
+  ],
+  "judge_usage": {
+    "input_tokens": 40216,
+    "output_tokens": 4158,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

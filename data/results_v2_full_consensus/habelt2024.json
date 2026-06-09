@@ -1,0 +1,493 @@
+{
+  "study_id": "Habelt2024",
+  "doi": "10.1038/s41398-024-03189-z",
+  "species": "rat",
+  "strain": "Wistar",
+  "age": {
+    "value": "adult",
+    "age_min_days": 180,
+    "age_max_days": 420,
+    "evidence": "All rats were in an advanced adult age >PND180, with animals in the control group ranging between 6-12 months and the experimental group being 14 months at the recording time.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 20,
+    "n_female": null,
+    "evidence": "We used male Wistar rats from the breeding colony at the CIMH.",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        2.5
+      ],
+      "doses_raw": "2.5 mg/kg",
+      "vehicle": "water",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "On days 6 and 9 after initial recordings, alcohol-dependent rats randomly received intraperitoneal (i.p.) injections of psilocybin (2.5 mg/kg ... dissolved in Ampuwa ... each 30 min before recording.",
+      "confidence": "high"
+    },
+    {
+      "compound": "LY379268",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "1 mg/kg",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "LY379268 (1 mg/kg, 1R,4R,5S,6R)-4-Amino-2-oxabicyclo[3.1.0]hexane-4,6-dicarboxylic acid, Tocris Bioscience) each 30 min before recording.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Methods describe two weeks of habituation to the animal room but do not describe a specific handling protocol.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "Rats were housed in single cages (Makrolon ®, Type III, Tecniplast Deutschland GmbH).",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "Housing rooms were temperature (20 - 22°C) and humidity (40 - 55%) controlled with a 12 h automatic light-dark cycle (lights on at 6.00 am).",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "yes",
+      "evidence": "Rats were housed ... on sawdust bedding (Ssniff - Bedding 3/4 S, Altrogge) with Bed-r' Nest material (Datesand Ltd.).",
+      "confidence": "high"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Long-term voluntary alcohol consumption with repeated deprivation (Alcohol Deprivation Effect)",
+      "assay_description": "Home-cage four-bottle voluntary drinking paradigm with concurrent access to water and 5%, 10% and 20% ethanol solutions, repeatedly interrupted by 2-3 week deprivation phases over more than a year. Daily ethanol intake (g/kg) was measured at baseline (last week of a drinking phase) and on the first day after deprivation to quantify the alcohol deprivation effect (ADE). Psilocybin (2.5 mg/kg i.p.) and LY379268 (1 mg/kg i.p.) effects on the ADE are referenced from prior work.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "alcohol-dependent rats randomly received intraperitoneal (i.p.) injections of psilocybin (2.5 mg/kg) ... or LY379268 (1 mg/kg) ... each 30 min before recording.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Animals were habituated to the animal room but the paper does not describe a separate habituation to the drinking apparatus beyond the long initial drinking phase.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Drinking occurred freely in the home cage from bottles with special spillage-minimizing caps.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "Pelleted food (V1534-300, ssniff Spezialdiäten GmbH) and water were available ad libitum.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "Water was available ad libitum alongside the ethanol bottles throughout.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": null,
+          "evidence": "Baseline intake measured during the last week of drinking phases and ADE measured on the first day after 2-3 week deprivation periods, across multiple cycles over >1 year.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 10,
+        "n_male": 10,
+        "n_female": null,
+        "n_per_group_min": 10,
+        "evidence": "rats (n = 10) were given ad libitum access to ethanol ... solutions of 5%, 10%, and 20%.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Following each deprivation period, rats showed a pronounced alcohol deprivation effect, with significantly increased intake of 5% and 20% ethanol and a near-significant increase for 10%, leading to a robust rise in total ethanol consumption from baseline (~3.43 g/kg/day) to post-deprivation (~4.66 g/kg/day). The paper references prior work showing psilocybin and LY379268 reduce the ADE.",
+        "statistics": "5%: p = 0.006; 10%: p = 0.11; 20%: p = 0.034; Total: p < 0.001 (two-sided paired t-tests).",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Following deprivation, animals displayed increased consumption of all alcohol concentrations compared to baseline drinking (5%: 1.58 ± 0.60, p = 0.006; 10%: 1.49 ± 0.47, p = 0.11; 20%: 1.59 ± 0.58, p = 0.034, Total: 4.66 ± 0.64, p = < 0.001 ...) revealing a pronounced ADE.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "Intake of 5%, 10%, 20% ethanol solutions, total ethanol intake, and relapse intensity (ADE-BL) are reported separately.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Daily intake values are summarised rather than analysed as within-session time-courses.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural sequences or microstructure of drinking.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Voluntary home-cage drinking is a natural consummatory behaviour from the species' repertoire.",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animals were single-housed and tested alone; no social construct measured.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Free-choice drinking does not require a specific cognitive task.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Intake measured by bottle weighing; no automated behavioural classifier used.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate comparisons and Spearman correlations are reported.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "Rats were housed in single cages (Makrolon Type III) with bottles attached for drinking.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard home cage with bedding and nest material; no enclosed refuge described.",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Rats were housed ... on sawdust bedding (Ssniff - Bedding 3/4 S, Altrogge).",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "with Bed-r' Nest material (Datesand Ltd.).",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No tunnels, chew toys, or other enrichment objects are mentioned.",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Home cage is a single compartment.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Rats were housed in single cages; no conspecific present during drinking measurement.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Pelleted food and water (plus ethanol bottles) were available ad libitum in the cage.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 2,
+          "value": "Continuous monitoring",
+          "evidence": "Animals had continuous home-cage access to bottles; intake was monitored 24 h/day across drinking cycles over more than a year.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 3,
+          "value": ">6 h",
+          "evidence": "Drinking is recorded continuously in the home cage (24-hour access), well beyond 6 h.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 3,
+          "value": "15+",
+          "evidence": "Eight weeks of continuous drinking followed by multiple 4-6 week drinking phases over more than a year, with daily intake measurements.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Baseline consumption during the last week of a drinking phase was recorded prior to deprivation and any pharmacological intervention.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Intake measured on the first day after 2-3 week deprivation periods (well beyond 24 h post-dose).",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Home-cage drinking is monitored continuously across full day/night cycles.",
+          "confidence": "high"
+        },
+        "raw_total": 11
+      }
+    },
+    {
+      "assay_name": "Auditory oddball ERP/ERO recording with resting-state ECoG",
+      "assay_description": "Awake rats placed in a rodent sling within a sound-insulated audiometry booth while prefrontal epidural ECoG was recorded. A two-tone auditory oddball paradigm (standards 1 kHz/70 dB 87%, deviants 2 kHz/80 dB 13%; 1620 tones in 6 blocks of 5 min) elicited ERPs (P1, N1, P2, N2, P3 components and peak-to-peak amplitudes) and event-related oscillations (delta, theta, alpha, beta, gamma). Additional 5-min resting-state recordings were obtained immediately before and ~1 h after acute i.p. psilocybin (2.5 mg/kg) or LY379268 (1 mg/kg). The recorded behavioural output is the animal's stimulus-locked sensory/cognitive response; data analysed are electrophysiological.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "alcohol-dependent rats randomly received intraperitoneal (i.p.) injections of psilocybin (2.5 mg/kg) ... or LY379268 (1 mg/kg) ... each 30 min before recording.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "During the final two-week period of alcohol deprivation, the animals were habituated to the recording set-up and underwent surgery to implant the neuroprosthetic device.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "One animal at a time was placed in a rodent sling (Lomir Biomedical Inc.) to reduce movement artefacts within an electrically shielded and sound-insulated audiometry booth.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Recording took place in an audiometry booth with the rat in a sling; no food bowl was present during recording.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Recording took place in an audiometry booth with the rat in a sling; no water bottle was available during recording.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "psilocybin (2.5 mg/kg) ... or LY379268 (1 mg/kg) ... each 30 min before recording.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 20,
+        "n_male": 20,
+        "n_female": null,
+        "n_per_group_min": 10,
+        "evidence": "Graphs illustrated in black: alcohol- and drug-naive controls (n = 10), red: alcohol-dependent animals (n = 10), green: alcohol-dependent animals that received a single dose of psilocybin, blue: alcohol-dependent animals that received a single dose of LY379268.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Although the primary readouts are electrophysiological (ERP/ERO/PSD), the behavioural paradigm itself is the auditory oddball task. Alcohol-dependent rats showed reduced P1N1/N1P2 amplitudes, attenuated delta/theta/alpha/beta ERO power and high-beta-dominant resting state compared to naive controls. Acute psilocybin and LY379268 restored P1N1 and N1P2 amplitudes, shifted maximum beta power to lower frequencies and reduced resting-state power across bands.",
+        "statistics": "rmANOVA with treatment and channel factors and Sidak-adjusted multiple comparisons; significant effects reported as *p<0.05, **p<0.01, ***p<0.001 (detailed F/p values in Tables S1, S4, S7, S11, S14).",
+        "direction": "mixed",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Acute application of psilocybin and LY379268 increased amplitudes of P1N1 and N1P2 components in our alcohol-dependent rats and ... elevated bandpowers over the entire frequency range. ... both pharmacotreatments shifted maximum beta powers from mid/high beta ranges to lower frequencies.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 3,
+          "value": "7+",
+          "evidence": "Reported measures include P1N1, N1P2, P2N2, N2P3 amplitudes; P1/N1/P2/N2/P3 latencies; delta, theta, alpha, beta and gamma ERO power; latencies and frequencies of maximum ERO power; and resting-state PSD per band.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "ERP and ERO analyses examine stimulus-locked changes over time within the post-stimulus window (e.g. P1 20-70 ms, P3 130-600 ms), and time-frequency ERSP traces show within-session temporal dynamics.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural transitions or sequences is reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The task measures stimulus-evoked neuroelectric responses during passive listening, not naturalistic behaviours.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Single animal in a sound-insulated booth; no social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The auditory oddball paradigm relies on detection of infrequent deviant tones, engaging selective attention and executive control.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Signal processing used EEGLAB filtering, epoching and spectral analysis; no pose estimation or behavioural ML classifier.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Statistical analyses are rmANOVAs and Spearman correlations on individual measures; no PCA/UMAP/cluster analyses.",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Recording took place in a sound-insulated audiometry booth with the rat in a rodent sling.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Animal is restrained in a sling within an open booth; no shelter.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described in the recording apparatus (rodent sling in audiometry booth).",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in the recording apparatus.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in the recording apparatus.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single-compartment audiometry booth with the animal restrained in a sling.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "One animal at a time was placed in a rodent sling.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water provided in the audiometry booth during recording.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "ECoG recordings were performed three days post-surgery (no drug) and on days 6 and 9 post-surgery with psilocybin or LY379268.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "The auditory oddball paradigm consisted of altogether 1620 tones ... delivered in 6 × 5 min blocks plus short breaks, with additional 5-min pre- and post-drug resting-state recordings, giving a total session of ~30-40 min.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Recordings on day 3 (baseline), day 6 and day 9 post-surgery (psilocybin or LY379268 in randomized order) = 3 recording days for this assay.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "ECoG recordings without any further interventions were implemented three days after the animals had undergone surgery ... The initial recording measured a state of abstinence in alcohol-dependent rats compared to matched alcohol-naïve rats.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recordings were performed 30 min after acute injection; no recordings ≥24 h after drug administration are reported.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sessions are ~30-40 min, well below 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    }
+  ],
+  "judge_notes": [
+    "Included two assays: (1) the long-term voluntary alcohol drinking / ADE paradigm (a behavioural paradigm whose primary outcome — ethanol intake — is reported and statistically analysed here), and (2) the auditory oddball paradigm during which ECoG was recorded. The oddball is a behavioural paradigm (selective attention to deviant tones) even though the readouts are electrophysiological; scored per rubric guidance that behavioural tasks combined with neural recording should be scored on the behavioural component.",
+    "Excluded pure electrophysiology/biomarker analyses (resting-state ECoG, ERPs, EROs) as standalone assays — they are recording modalities within the oddball assay.",
+    "Total n_male set to 20 (10 alcohol-dependent + 10 naive controls); candidate gptoss reported only the dependent cohort.",
+    "Vehicle for psilocybin set to 'water' (Ampuwa = sterile water for injection).",
+    "Housing enrichment marked 'yes' based on explicit mention of Bed-r' Nest material in home cage.",
+    "Setup restraint scored 'yes' for the ECoG/oddball assay because animals were placed in a rodent sling during recording, which constitutes body restraint (distinct from injection restraint)."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 6.25,
+    "environmental_complexity_max": 5.45,
+    "recording_duration_max": 15.0,
+    "behavioural_complexity_mean": 5.0,
+    "environmental_complexity_mean": 2.73,
+    "recording_duration_mean": 10.22
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 39828,
+    "output_tokens": 8376,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

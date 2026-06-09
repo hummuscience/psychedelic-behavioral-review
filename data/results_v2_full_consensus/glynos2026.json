@@ -1,0 +1,298 @@
+{
+  "study_id": "Glynos2025",
+  "doi": "10.1523/JNEUROSCI.0742-24.2025",
+  "species": "rat",
+  "strain": "Sprague Dawley",
+  "age": {
+    "value": "adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Adult male and female Sprague Dawley rats ( n =29, 15 males and 14 females, 300 -500 g, Charles River Laboratories)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": 15,
+    "n_female": 14,
+    "evidence": "Adult male and female Sprague Dawley rats ( n =29, 15 males and 14 females, 300 -500 g)",
+    "confidence": "high"
+  },
+  "psychedelic": "DMT, Psilocybin",
+  "dosing": [
+    {
+      "compound": "DMT",
+      "doses_mg_per_kg": [
+        0.75,
+        3.75,
+        7.5
+      ],
+      "doses_raw": "0.75, 3.75, 7.5 mg/kg",
+      "vehicle": "saline",
+      "route": "i.v.",
+      "schedule": "acute",
+      "evidence": "DMT fumarate dissolved in saline was administered over a 5 min period (100 µl/min) as an intravenous bolus at one of the following doses: (1) low, 0.75 mg/kg; (2) medium, 3.75 mg/kg; and (3) high, 7.5 mg/kg in a random order with at least 5 d between each dose.",
+      "confidence": "high"
+    },
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "1 mg/kg",
+      "vehicle": "not_reported",
+      "route": "i.v.",
+      "schedule": "acute",
+      "evidence": "The rats received DMT (0.75 mg/kg) and psilocybin (1 mg/kg) as an intravenous infusion over a 5 min period (100 µl/min)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Paper describes pre-experiment conditioning to chambers/cables but does not specifically describe handling habituation.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "housed in a temperature- and light-controlled facility (12 h light/12 h dark cycle, lights on at 8:00 A.M.), with ad libitum access to food and water.",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12 h light/12 h dark cycle, lights on at 8:00 A.M.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "No mention of home-cage enrichment items.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head Twitch Response",
+      "assay_description": "Video-recorded count of rapid side-to-side head rotations (independent of grooming) over a 15-min window starting at the beginning of intravenous DMT (0.75, 3.75, 7.5 mg/kg) or psilocybin (1 mg/kg) infusion, in freely moving rats connected to EEG cables and OFM probes.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.v.",
+          "evidence": "DMT fumarate dissolved in saline was administered over a 5 min period (100 µl/min) as an intravenous bolus",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "The rats ... were conditioned to the experimental chambers and EEG recording cables for at least 1 week before starting the experiments.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "freely behaving rats; connected to EEG cables but not physically restrained.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "ad libitum access to food and water (in home cage); no food in testing apparatus during the 15-min recording.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "ad libitum access to food and water (in home cage); no water in testing apparatus during the 15-min recording.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "HTR ... was quantified during a 15 min window, starting at the beginning of the DMT or psilocybin infusion.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 29,
+        "n_male": 15,
+        "n_female": 14,
+        "n_per_group_min": 12,
+        "evidence": "behavioral analysis included 17 rats for each of the low and high doses (nine males, eight female) and 15 rats for the medium (seven males, eight females) dose ... all 12 rats (six males, six females) were included in behavioral analysis.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "All three doses of intravenous DMT produced head twitches, with the low dose (0.75 mg/kg) producing significantly more twitches than medium (3.75 mg/kg) or high (7.5 mg/kg) doses, consistent with a biphasic dose-response. The number of twitches was similar to that produced by intravenous psilocybin (1 mg/kg). No sex differences were detected.",
+        "statistics": "Low vs medium: t[31]=3.6, CI=0.34-6.78, p=0.028; low vs high: t[31]=4.0, CI=0.92-7.14, p=0.01; DMT vs psilocybin: t[11]=1.9, CI=-0.24 to 3.41, p=0.08.",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "no",
+        "time_dependent": "n/a",
+        "evidence": "The low dose caused significantly more head twitches when compared with the medium dose ( t [31] = 3.6; CI=0.34 -6.78; p =0.028) and high dose ( t [31] = 4.0; CI = 0.92 -7.14; p =0.01).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "HTR ... was quantified during a 15 min window. Number of head twitches was the only quantitative behavioural measure reported.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Counts summed over the 15-min window; no within-session time-course analysis reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural sequences or transitions.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is a drug-induced surrogate behaviour, explicitly excluded from ethological category per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Single rat tested alone in the chamber; no social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR does not require learning or memory.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "All experiments were video recorded for later behavioral analysis by an investigator blinded to the experimental condition.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate comparisons reported.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Recording in the experimental chamber used for EEG/OFM recordings.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter described in the recording chamber.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described in the recording chamber.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects described in the recording chamber.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Recording chamber is a single arena without internal compartments.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Single focal rat in the chamber during recording.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water mentioned inside the recording chamber.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Each rat received the three DMT doses on separate days (at least 5 d between each dose), with behavioural data recorded each session.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "HTR was quantified during a 15 min window, starting at the beginning of the DMT or psilocybin infusion.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Three DMT doses given in random order with at least 5 d between each dose (3 recording days for the HTR assay per rat).",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR counts began at the start of infusion; no pre-drug HTR baseline counts were reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No HTR recordings ≥24 h post-dose.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "15-min session, far less than 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    }
+  ],
+  "judge_notes": [
+    "Only one behavioural assay (HTR) qualifies; EEG, OFM neurochemistry, and uHPLC-MS/MS are neural/chemical recordings excluded by rubric.",
+    "DMT schedule scored as 'acute' (single dose per session, three sessions separated by ≥5 days in a within-subject design) rather than 'repeated', following the rubric note that single-per-animal-per-session counts as acute.",
+    "D1 scored 1 (Multiple discrete sessions) because each rat underwent HTR recording on 3 separate days (one per dose); D3 scored 1 (2-7 days) accordingly. Glm's '8-14' was an overestimate.",
+    "B4 (ethological) scored 0 per explicit rubric instruction that HTR is not an ethological measure.",
+    "Setup_habituation scored 'yes' based on the explicit 1-week conditioning to chambers and cables."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0.0,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 4.09,
+    "behavioural_complexity_mean": 0.0,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 4.09
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 56127,
+    "output_tokens": 4277,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

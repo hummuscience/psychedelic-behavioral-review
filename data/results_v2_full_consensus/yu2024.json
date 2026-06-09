@@ -1,0 +1,679 @@
+{
+  "study_id": "Yu2024",
+  "doi": null,
+  "species": "rat",
+  "strain": "Sprague-Dawley",
+  "age": {
+    "value": "adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Adult male and timed-pregnant Sprague-Dawley rats were used for this study.",
+    "confidence": "medium"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "the protective effect of psilocybin was examined in male animals in this study.",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "100 µM x 20 µL (i.c.v.); 1 mg/kg/day (i.p., days 3-7)",
+      "vehicle": "saline",
+      "route": "multiple",
+      "schedule": "repeated",
+      "evidence": "psilocybin (100 µM x 20 µL, n = 7) or vehicle (saline, 20 µl, n = 7) was administered intracerebroventricularly (i.c.v.) at 15 min before the right middle cerebral artery occlusion... In the post-treatment group, psilocybin (1 mg/kg/day, n = 7) or vehicle ( n = 6) was administered i.p. from day 3 to day 7.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Not stated in the paper.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "Housing density not specified.",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "Light cycle not described.",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "All experiment procedures, including housing and husbandry conditions, environmental enrichment, animal care/monitoring, and humane endpoints, were carried out in accordance with the National Institutes of Health Guidelines (mentions enrichment as a procedure but does not specify whether home cage enrichment was provided).",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Elevated Body Asymmetry Test",
+      "assay_description": "Rats suspended 20 cm above the table by the tail; frequency of initial turning of the head or upper body contralateral to the ischemic side counted across 20 consecutive trials. Conducted on D2 (i.c.v. pretreatment cohort) and D9 (i.p. post-treatment cohort).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "psilocybin... administered intracerebroventricularly (i.c.v.) at 15 min before MCAo... psilocybin (1 mg/kg/day) was administered i.p. from day 3 to day 7.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No habituation protocol described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "Rats were examined for lateral movements/turning when their bodies were suspended 20 cm above the testing table by lifting their tails.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard short test; food not in apparatus.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard short test; water not in apparatus.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": null,
+          "evidence": "Behavioral tests were conducted two days (or D2) after the MCAo [pretreatment, ~48h after i.c.v. dose]; Behavioral tests were conducted on day 9 [post-treatment, 48h after last i.p. dose on day 7].",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 31,
+        "n_male": 31,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "A total of 18 adult rats were used for this analysis... n=7 per group... psilocybin (1 mg/kg/d, n=7) or vehicle (n=6)... Four non-stroke rats were used as naive controls.",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "Stroke increased body asymmetry; both pre- (i.c.v.) and post-treatment (i.p.) psilocybin significantly reduced body asymmetry. ANA12 antagonized the psilocybin-mediated improvement.",
+        "statistics": "Pretreatment: p=0.002 (stroke+veh vs. stroke+Psi); ANA12 antagonism p=0.012; Post-treatment: p=0.026 (one-way ANOVA + NK test).",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "Psilocybin significantly reduced... body asymmetry (Fig. 3-B2, p = 0.002, stroke + veh vs. stroke + Psi)... B2: body asymmetry, p = 0.026.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Frequency of contralateral turning counted in 20 trials (single measure).",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single tally across 20 trials.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transitional analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Forced postural response, not natural behaviour.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing, no social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Pure motor/postural test.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Manual observer counting.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single univariate measure.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Suspended 20 cm above testing table.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Animal suspended, no refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Suspended in air, no substrate.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single suspension point.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual testing.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Tests on D2 (pretreatment cohort) and D9 (post-treatment cohort).",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "20 consecutive trials, brief test.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Within each cohort, asymmetry was tested on a single day (D2 for pretreatment, D9 for post-treatment).",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-stroke baseline test reported for the same assay.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "In post-treatment cohort, behavioral tests were conducted on day 9, 48h after the last i.p. dose on day 7.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session <6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    },
+    {
+      "assay_name": "Bederson's Neurological Test",
+      "assay_description": "Postural reflex test: rats suspended 20-30 cm above the testing table and scored 0-3 on forelimb extension, lateral resistance, and twisting. Conducted on D2 (pretreatment) and D9 (post-treatment).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "psilocybin... administered intracerebroventricularly (i.c.v.)... or i.p. from day 3 to day 7.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Not described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "rats were examined for the degree of abnormal posture when suspended by 20-30 cm above the testing table.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in testing apparatus.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in testing apparatus.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": null,
+          "evidence": "Tests on D2 after MCAo (pretreatment) and D9 (after i.p. dosing days 3-7).",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 31,
+        "n_male": 31,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "n = 7 per group; vehicle post-treatment n = 6; 4 non-stroke controls.",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "Stroke increased Bederson's neurological score; both pre- and post-treatment psilocybin significantly reduced the score. ANA12 antagonized this protection.",
+        "statistics": "Pretreatment: p=0.011; ANA12 antagonism p=0.012; Post-treatment: p=0.024 (one-way ANOVA + NK test).",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "Psilocybin significantly reduced the Bederson's neurological score (Fig. 3-B1, p = 0.011)... Psi post-treatment significantly reduced (B1) Bederson's neurological score (p = 0.024).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single composite 0-3 score.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single score reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Forced postural reflex test.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Motor/postural assessment.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Manual scoring by observer.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Suspended above testing table.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Suspended, no refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No substrate.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single test location.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual testing.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Within each cohort, the test was performed once (D2 for pretreatment, D9 for post-treatment).",
+          "confidence": "medium"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Brief postural test.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single recording day per cohort.",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-stroke baseline reported for this assay.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "In post-treatment cohort, test on day 9 = 48h after last dose on day 7.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session <6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Locomotor Activity (Open Field Infrared Monitor)",
+      "assay_description": "Rats individually placed in a 3D infrared behavior chamber (42 × 42 × 21 cm) for 60 min; horizontal activity (HACTV), total distance traveled (TOTDIST), movement number (MOVNO), and movement time (MOVTIME) recorded via Accuscan beam-break system. Tested on D2 (pretreatment) and D9 (post-treatment).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "psilocybin... administered i.c.v. before MCAo... or i.p. from day 3 to day 7.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No habituation described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Rats were individually placed in a 3D infrared behavior chamber (42 × 42 × 21 cm) for 60 min.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in locomotor chamber.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in locomotor chamber.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": null,
+          "evidence": "Locomotor activity was monitored for one hour on day 2... [post-treatment] Behavioral tests were conducted on day 9.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 31,
+        "n_male": 31,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "n = 7 per group; vehicle post-treatment n = 6; 4 non-stroke controls.",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "Stroke significantly reduced locomotor activity (HACTV, TOTDIST, MOVNO, MOVTIME). Both pre- and post-treatment with psilocybin increased locomotor activity; ANA12 antagonized the pretreatment effect.",
+        "statistics": "Pretreatment: HACTV p=0.039, TOTDIST p=0.032, MOVNO p=0.0284, MOVTIME p=0.056; ANA12 antagonism HACTV p=0.009, TOTDIST p=0.018. Post-treatment: HACTV p=0.009, TOTDIST p=0.009, MOVNO p=0.022, MOVTIME p=0.02 (one-way ANOVA + NK test).",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "Psilocybin increased horizontal activity (HACTV, p = 0.039), total distance traveled (TOTODIST, p = 0.032), and movement number (MOVNO, p = 0.0284)... [post-treatment] C1: horizontal activity p = 0.009; C2: total distance traveled, p = 0.009; C3: movement number, p = 0.022; C4: movement time, p = 0.02.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "Four parameters: HACTV, TOTDIST, MOVNO, MOVTIME.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Totals reported across 60-min session; no within-session time-course analysis described.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bout or transition analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Beam-break locomotion measures.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Rats individually placed.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Pure locomotor measure.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Accuscan infrared beam-break system - not behavioural classification.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate per-measure analysis.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "3D infrared behavior chamber (42 × 42 × 21 cm).",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open chamber.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding mentioned.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No objects in chamber.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single chamber.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Rats were individually placed.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard short locomotor test, no food/water.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Within each cohort, locomotor activity recorded once (D2 or D9).",
+          "confidence": "medium"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "Rats were individually placed in a 3D infrared behavior chamber (42 × 42 × 21 cm) for 60 min.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "One recording day per cohort.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline session for this assay reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Post-treatment cohort tested on day 9, 48h after last i.p. dose on day 7.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "60-min session.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    }
+  ],
+  "judge_notes": [
+    "Excluded in vitro primary cortical neuronal culture experiments (MAP2 immunocytochemistry, ANA12 in vitro) - these are ex vivo molecular endpoints, not rodent behaviour.",
+    "Excluded TTC infarct measurement and qRT-PCR (MAP2, synaptophysin, IBA1, BDNF) - histological/molecular endpoints.",
+    "Kept the Elevated Body Asymmetry Test and Bederson's Neurological Test as separate assays (different apparatus parameters, different scored constructs) consistent with both candidate models.",
+    "Merged pre- and post-treatment cohorts into single assay entries per paradigm (same behaviour, same apparatus; only manipulation/timing differs), per rubric decision rule.",
+    "B1 for asymmetry and Bederson scored 0 (single measure each), correcting glm's score of 1; locomotor scored 2 (4 measures).",
+    "D3 set to 1 (single recording day per cohort) for each behavioural assay, since each cohort experienced the test only once; rubric specifies counting days that THIS assay was administered, not all study days.",
+    "D5 set to Yes for all three assays because the post-treatment cohort was tested on day 9 (>=24 h after last dose on day 7).",
+    "DOI not present in extracted markdown; left null.",
+    "Housing enrichment scored not_reported (low confidence): the paper mentions enrichment as a procedural domain governed by NIH guidelines but does not explicitly describe enrichment items in home cages."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 2.73,
+    "behavioural_complexity_mean": 0.83,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 2.27
+  },
+  "low_confidence_count": 7,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm"
+  ],
+  "judge_usage": {
+    "input_tokens": 50746,
+    "output_tokens": 8420,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

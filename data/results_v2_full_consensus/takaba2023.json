@@ -1,0 +1,1297 @@
+{
+  "study_id": "Takaba2023",
+  "doi": "10.21203/rs.3.rs-3138705/v1",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 49,
+    "age_max_days": 63,
+    "evidence": "Male C57BL/6J mice (7-9 weeks old) were obtained from Japan SLC, Inc.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male C57BL/6J mice (7-9 weeks old)",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocin, DOI, TCB-2",
+  "dosing": [
+    {
+      "compound": "Psilocin",
+      "doses_mg_per_kg": [
+        1.5,
+        2.0,
+        4.0
+      ],
+      "doses_raw": "1.5, 2.0, and 4.0 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Psilocin was dissolved to final doses of 1.5, 2.0, and 4.0 mg/kg in 0.9% NaCl solution (saline)... All drugs were administered intraperitoneally (i.p.) at a dose of 10 mL/kg.",
+      "confidence": "high"
+    },
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        0.05,
+        0.1,
+        0.25,
+        1.0,
+        2.0
+      ],
+      "doses_raw": "0.05, 0.1, 0.25, 1.0, and 2.0 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "DOI concentration was adjusted to 10 mg/mL using dimethyl sulfoxide (DMSO; Sigma-Aldrich) and dissolved in saline to obtain the final doses of 0.05, 0.1, 0.25, 1.0, and 2.0 mg/kg.",
+      "confidence": "high"
+    },
+    {
+      "compound": "TCB-2",
+      "doses_mg_per_kg": [
+        0.5,
+        1.0,
+        5.0
+      ],
+      "doses_raw": "0.5, 1.0, and 5.0 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "The concentration of TCB-2 was adjusted to 10 mg/mL using DMSO and dissolved to final doses of 0.5, 1.0, and 5.0 mg/kg in saline.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "No handling protocol described in methods.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Unless otherwise stated, the mice were group-housed (4-5 mice/cage).",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "The mice were kept in a well-regulated environment (24 ± 1°C, 55 ± 5% humidity) according to a 12-h light/dark cycle (lights on at 7:00 a.m.)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Home cage enrichment not mentioned.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Forced Swim Test",
+      "assay_description": "Mice individually placed in a clear beaker (19.3 cm height, 13.1 cm diameter) with 15 cm water (25 ± 1°C) for 15 min; immobility time scored manually. Used to test acute (24h) effects of psilocin, DOI, TCB-2, fluoxetine, imipramine across doses, and antagonist pretreatments (volinanserin, SB242084); also repeated weekly for 4 weeks to test long-lasting effects of psilocin.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs were administered intraperitoneally (i.p.) at a dose of 10 mL/kg.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No pre-test apparatus habituation described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "Mice were individually placed in a clear beaker... at a depth of 15 cm under water to ensure that mice could not touch the bottom of the beaker with their hind paws and tails.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "FST apparatus is a water-filled beaker; no food in apparatus.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No drinking water provided in beaker.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 1440,
+          "evidence": "subjected to the FST 24 h after administration... the FST was repeated every week for a month.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "Sample sizes not explicitly stated in main text.",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "Psilocin (1.5 mg/kg), DOI (0.1 and 0.25 mg/kg), and TCB-2 (5.0 mg/kg) significantly decreased immobility time in the FST 24 h after acute treatment. Effects were blocked by the 5-HT2A antagonist volinanserin but not by the 5-HT2C antagonist SB242084. Psilocin's antidepressant-like effect persisted for at least 3 weeks; DOI and TCB-2 did not show sustained effects at 1 week.",
+        "statistics": "psilocin: H(3) = 6.80, p = 0.033; DOI: H(6)=16.06, p = 0.0067; TCB-2: H(4) = 8.26, p = 0.035; fluoxetine/imipramine: H(3) = 2.73, p = 0.26; psilocin+volinanserin: H(3) = 7.11, p = 0.029; DOI+volinanserin: H(4)=11.22, p = 0.011; TCB-2+volinanserin: H(3) = 15.68, p = 0.00040; long-term psilocin: F Treatment(1,38) = 25.36, p < 0.0001",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "Mice that received psilocin (1.5 mg/kg), DOI (0.1 and 0.25 mg/kg), or TCB-2 (5.0 mg/kg) had significantly decreased immobility time in the FST compared with vehicle-treated control mice... psilocin significantly and persistently decreased immobility time for three weeks after administration.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The immobility time was measured in a double-blind manner.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single total immobility time per 15-min session reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transitional/sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST immobility excluded as ethological per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice tested individually in beaker.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST does not require learning/memory.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The immobility time was measured in a double-blind manner (manual scoring).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No multivariate analysis.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "clear beaker (19.3 cm in height, 13.1 cm in diameter)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Water-filled beaker, no shelter.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Water-filled beaker.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment in beaker.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single cylindrical beaker.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice were individually placed in a clear beaker.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water accessible in beaker.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "the FST was repeated every week for a month",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "allowed to swim freely for 15 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "FST at 24 h, then every week for a month (up to ~5 timepoints in different cohorts).",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline FST reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "FST 24 h post-dose and weekly thereafter for up to 3-4 weeks.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "15-min sessions.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    },
+    {
+      "assay_name": "Tail Suspension Test",
+      "assay_description": "Mice suspended by the tail in a 30x30x30 cm box for 5 min under 20 lx; immobility time recorded automatically via EthoVision XT 12. Used 24 h after psilocin/DOI/TCB-2 ± volinanserin pretreatment.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs were administered intraperitoneally (i.p.).",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No pre-test habituation described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "Mice were individually suspended in a tail suspension box... using a sellotape attached 1 cm from the end of the tail.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in suspension box.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in suspension box.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "24 h after treatment",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "Not explicitly stated.",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "Psilocin (1.5 mg/kg), DOI (0.1 mg/kg), and TCB-2 (5.0 mg/kg) decreased immobility time in the TST 24 h post-treatment, an effect blocked by volinanserin pretreatment.",
+        "statistics": "psilocin: H(3) = 7.27, p = 0.026; DOI: H(4)=9.95, p = 0.019; TCB-2: H(3) = 11.06, p = 0.0040",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "psilocin (1.5 mg/kg), DOI (0.1 mg/kg), and TCB-2 (5.0 mg/kg) decreased the immobility time in the FST and TST, and pretreatment with volinanserin prevented this effect.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The immobility time was automatically recorded.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single immobility total reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "TST immobility not ethological.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Tested individually.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EthoVision XT 12 is position tracking, not behavioural classification.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No multivariate analysis.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "tail suspension box (30 cm length x 30 cm width x 30 cm height)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter in box.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Suspended apparatus; no bedding.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single box.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice were individually suspended.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent during 5-min suspension.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "5-min test at 24 h.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "for 5 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "24 h after treatment",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No baseline reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "24 h after last drug administration.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5-min session.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Novelty-Suppressed Feeding Test",
+      "assay_description": "After 24 h food deprivation, mice placed in a 31x31x15 cm bright arena (100 lx) with wood chip bedding and a single food pellet in center; latency to feed, feeding count, and feeding time recorded over 10 min. Tested 24 h after psilocin/DOI/TCB-2 ± volinanserin.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs were administered intraperitoneally (i.p.).",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No apparatus habituation described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Each mouse was placed individually at the center of the apparatus and allowed to move freely in the cage for 10 min.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "Mice were food-restricted for 24 h prior to the NSFT.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "not_reported",
+          "evidence": "Water status not stated for NSFT.",
+          "confidence": "low"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "Mice were subjected to the NSFT 24 h after treatment",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "Not explicitly stated.",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "Psilocin significantly reduced latency to feed (anxiolytic-like effect), unaffected by volinanserin. DOI and TCB-2 did not alter latency to feed. TCB-2 increased feeding count and feeding time.",
+        "statistics": "latency: H(6) = 21.70, p = 0.00090; feeding count: H(6) = 14.83, p = 0.011; feeding time: H(6) = 17.69, p = 0.0034",
+        "direction": "mixed",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Psilocin treatment significantly reduced the latency to feed... which was not attenuated by pretreatment with volinanserin... DOI or TCB-2 administration did not affect the latency to feed... mice treated with TCB-2 showed a significant increase in feeding count and time.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "The latency to feed, feeding counts, and feeding time data of each mouse were collected.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single totals over 10 min.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Latency to feed is an anxiety measure, not an ethological behaviour.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "NSFT relies on innate conflict, not learning.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "data of each mouse were collected in a double-blind manner (manual scoring).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No multivariate analysis.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "arena (31 cm long × 31 cm wide × 15 cm heigh)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open bright arena.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "filled with wood chip bedding material",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single arena.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each mouse was placed individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "A single food pellet was placed in the center of a bright light (100 lx) arena.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "10-min test.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "allowed to move freely in the cage for 10 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "24 h after treatment",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No baseline reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "24 h after treatment.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "10-min test.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Head-Twitch Response Test",
+      "assay_description": "Mice placed in observation cage (29x18x12 cm, 15 lx) immediately or 24 h after drug administration; HTR counted manually from video over 30 min.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs were administered intraperitoneally (i.p.).",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No habituation described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice were placed in an observation cage.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in observation cage.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in observation cage.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 0,
+          "evidence": "immediately or 24 h after drug administration",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "Not explicitly stated.",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "Psilocin (1.5 mg/kg), DOI (1.0 and 2.0 mg/kg), and TCB-2 (5.0 mg/kg) markedly increased HTR immediately post-injection. DOI at the antidepressant-effective dose (0.1 mg/kg) did NOT induce HTR. No psychedelic affected HTR 24 h after dosing.",
+        "statistics": "psilocin: H(4) = 26.71, p < 0.0001; DOI: H(5)=42.50, p < 0.0001; TCB-2: H(4) = 26.60, p < 0.0001",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "Mice showed significantly greater HTR immediately after treatment with psilocin (1.5 mg/kg), DOI (1.0 or 2.0 mg/kg), or TCB-2 (5.0 mg/kg)... psilocin (1.5 mg/kg), DOI (0.1 mg/kg), or TCB-2 (5.0 mg/kg) did not affect the HTR in mice 24 h after treatment.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Drug-induced HTR... was counted.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total HTR over session reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR excluded as ethological per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR was counted... in a double-blind manner (manual).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No multivariate analysis.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "observation cage (29 cm long × 18 cm wide × 12 cm heigh)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open observation cage.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported in apparatus.",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single cage.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual testing.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in observation cage during 30-min test.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "30-min observation per animal.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "The HTR was recorded for 30 min.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Each cohort tested either immediately or 24 h after drug administration (one day per animal).",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "HTR also assessed 24 h after treatment.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30-min sessions.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    },
+    {
+      "assay_name": "Three-Chamber Sociability Test",
+      "assay_description": "62x41x22.5 cm three-chamber apparatus; 15-min habituation, 15-min sociability (stranger1 vs empty cage), and 15-min social novelty (stranger2 vs familiar stranger1) sessions with stimulus mice under wire cups. Interaction times measured by EthoVision XT 12; sociability and social novelty indices computed. Tested 24 h post drug.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs were administered intraperitoneally (i.p.).",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "During habituation, the subject mouse was allowed to habituate to the apparatus and freely explore the three chambers for 15 min.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "allowed to freely explore the three chambers",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in apparatus.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in apparatus.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "The mice were subjected to the test 24 h after treatment.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "Not explicitly stated.",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "Psilocin, DOI, and TCB-2 did not alter sociability (preference for stranger1 over empty cage) relative to vehicle. Vehicle-treated mice exhibited social novelty preference (stranger2 > stranger1), but psychedelic-treated mice did not show this discrimination.",
+        "statistics": "sociability index: H(4) = 2.19, p = 0.53; stranger1 interaction: H(4) = 5.29, p = 0.15; stranger2 interaction: H(4) = 4.62, p = 0.20; social novelty index: H(4) = 2.68, p = 0.44",
+        "direction": "mixed",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "even though the vehicle-treated control mice exhibited social novelty/discrimination, the mice treated with psychedelics did not show such behavior.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Interaction times with stranger1, stranger2, and empty cage, plus sociability and social novelty indices.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total interaction time over 15 min per session.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Interaction is scored as time in zone, not as discrete sniff/follow bouts.",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 2,
+          "value": "Restricted social interaction",
+          "evidence": "an unfamiliar male C57BL/6J mouse (stranger1)... was placed in a wire cage in the left chamber",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Social novelty/discrimination session requires recognition memory for the familiar stranger1.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "automatically measured using the Ethovision XT 12 automated tracking program (position tracking only).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No multivariate analysis.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "three-chamber apparatus (62 cm long × 41 cm wide × 22.5 cm heigh)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enclosed refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported; standard 3-chamber.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only wire cages for stimulus mice.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "consisted of three chambers (left, center, and right)... with walls separated by transparent acrylic",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 1,
+          "value": "Stimulus behind barrier",
+          "evidence": "unfamiliar male C57BL/6J mouse... was placed in a wire cage",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in apparatus.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "habituation... sociability session... social novelty session, each 15 min with 10-min inter-session interval.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "freely explore the three chambers for 15 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "All three sessions performed on the same day, 24 h after treatment.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "24 h after treatment.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "15-min sessions.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Locomotor Activity Test",
+      "assay_description": "Each mouse placed in a transparent rectangular cage (40x45x26 cm) at 15 lx for 15 min; locomotor activity recorded automatically using infrared beam-break sensors (Scanet SV-40), 24 h after drug.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs were administered intraperitoneally (i.p.).",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No habituation described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Each mouse was placed in a standard transparent rectangular rodent cage.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in test cage.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in test cage.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "automatically measured for 15 min using digital counters with infrared sensors... 24 h after drug administration.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "Not explicitly stated.",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "Psilocin, DOI, and TCB-2 did not alter spontaneous locomotor activity 24 h post-treatment.",
+        "statistics": "H(4) = 5.01, p = 0.17",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "no significant differences were found among the groups (H(4) = 5.01, p = 0.17).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The locomotor activity of each mouse was automatically measured.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single total over 15 min.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Beam-break locomotion is not ethological.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "digital counters with infrared sensors (Scanet SV-40) — beam-break system.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No multivariate analysis.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "standard transparent rectangular rodent cage (40 cm long × 45 cm wide × 26 cm high)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open test cage.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported; standard locomotor cage.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment items.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single cage.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each mouse was placed individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in test cage.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "measured for 15 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "automatically measured for 15 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "24 h after drug administration",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No baseline reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "24 h after drug administration.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "15-min session.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    }
+  ],
+  "judge_notes": [
+    "Six distinct behavioural assays identified, matching both candidates: FST, TST, NSFT, HTR, 3-chamber sociability, and locomotor activity.",
+    "FST collapsed across acute, antagonist, and long-term-follow-up (weekly for 4 weeks) experiments into one assay per rubric (same paradigm under different manipulations/timepoints).",
+    "B7 set to 0 for TST/3-chamber/locomotor because EthoVision XT and Scanet SV-40 are tracking/beam-break systems per rubric (overriding any candidate score of 1).",
+    "FST setup_restrain scored 'yes' per rubric example (FST cylinders count as restraint).",
+    "D5 follow-up scored 'yes' for all assays since all behavioural recordings occurred ≥24 h after dosing (overriding candidate qwen which marked some as 'no').",
+    "B6 cognitive scored 'yes' for 3-chamber social novelty session because it explicitly requires recognition memory of stranger1.",
+    "Sample sizes not reported in the text/figure captions visible in the markdown; set to null with low confidence."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 5.0,
+    "environmental_complexity_max": 2.73,
+    "recording_duration_max": 5.45,
+    "behavioural_complexity_mean": 1.04,
+    "environmental_complexity_mean": 0.91,
+    "recording_duration_mean": 2.95
+  },
+  "low_confidence_count": 11,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm"
+  ],
+  "judge_usage": {
+    "input_tokens": 66110,
+    "output_tokens": 14747,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

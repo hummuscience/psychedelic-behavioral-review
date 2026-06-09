@@ -1,0 +1,482 @@
+{
+  "study_id": "Fletcher2017",
+  "doi": "10.1007/s00213-017-4560-6",
+  "species": "rat",
+  "strain": "Sprague-Dawley",
+  "age": {
+    "value": "adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Adult male Sprague-Dawley rats (Charles River, Quebec) weighing 280-320 g at the beginning of each study",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Adult male Sprague-Dawley rats",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        0.1,
+        0.3,
+        0.6
+      ],
+      "doses_raw": "DOI (0, 0.1, 0.3, 0.6 mg/kg, SC)",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "DOI (Sigma) was dissolved in saline and injected SC 30 min before testing; DOI (0, 0.1, 0.3, 0.6 mg/kg, SC; n = 10)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "Rats were housed individually in a temperature-controlled and humidity-controlled room",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "maintained on a 12h light/dark cycle (lights on at 8:00 a.m.). All training and testing were conducted during the light phase.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Responding for Conditioned Reinforcement",
+      "assay_description": "40-min sessions in Med Associates operant chambers with two retractable levers. Pressing the active (CRf) lever delivered a compound visual+auditory CS (previously paired with water during 10 Pavlovian conditioning sessions) on a RR2 schedule; pressing the inactive (NCRf) lever had no consequence. Tested alone and in combination with methylphenidate.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "DOI (Sigma) was dissolved in saline and injected SC 30 min before testing",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "In the habituation phase, subjects were placed in the chambers with the house light on and approximately 2 ml of water in the dish.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Rats were placed in the boxes with both levers present",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Food not present in the operant chamber during testing; water restriction described but not food",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "before",
+          "evidence": "Throughout these experiments, rats were allowed access to water for 2 h per day between 2 and 4 p.m.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "DOI ... injected SC 30 min before testing",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 10,
+        "n_male": 10,
+        "n_female": 0,
+        "n_per_group_min": 10,
+        "evidence": "DOI (0, 0.1, 0.3, 0.6 mg/kg, SC; n = 10)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI dose-dependently reduced responding for the conditioned reinforcer; 0.3 and 0.6 mg/kg DOI reduced CRf lever pressing without affecting the inactive lever. The effect was blocked by M100907, indicating a 5-HT2A receptor-mediated action. DOI also attenuated the methylphenidate-induced enhancement of CRf responding.",
+        "statistics": "F(3,27) = 7.35, p < 0.001; dose × lever interaction F(3,27) = 4.76, p < 0.01; DOI × methylphenidate × lever interaction F(1,9) = 5.13, p < 0.05",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "For DOI, the main effect of dose [F 3,27 = 7.35, p < 0.001] and the dose × lever interaction [F 3,27 = 4.76, p < 0.01] were significant; 0.3 and 0.6 mg/kg DOI reduced responding on the CRf lever only",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "responses on the CRf lever and responses on the NCRf (inactive) lever",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Data reported as total responses over the 40-min session",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural sequences reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Lever pressing is not an ethological behaviour",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animals tested alone in operant chamber",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Task requires Pavlovian conditioning of the CS-US association and instrumental learning",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Med Associates operant chambers (lever press detection, SCORE-0 list)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "ANOVA on response counts only",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "standard operant conditioning chambers (Med Associates, VT)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter present in operant chamber",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard operant chamber floor, no bedding mentioned",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in testing apparatus",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in chamber",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single operant chamber compartment with levers and magazine",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Focal animal tested alone",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no water was delivered during the CRf test session",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "every animal was tested with all doses of the specific drug being examined ... Drug tests were separated by at least 72 h",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "drug testing was conducted in 40-min sessions",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "four DOI dose conditions tested with Latin square; drug tests separated by at least 72 h",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "vehicle condition included in within-subjects Latin square design; initial test session prior to drug testing to establish lever sampling",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "All testing acute (30 min post-injection)",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "40-min sessions",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    },
+    {
+      "assay_name": "Responding for Water",
+      "assay_description": "40-min sessions in the same operant chambers with only the right lever extended; responses delivered 0.1 ml of water on a RR2 schedule. Used to test whether drug effects on CRf responding were specific or generalized to primary reinforcement.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "DOI ... injected SC 30 min before testing",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Responding for water was acquired rapidly and was stable after five to seven sessions (acquisition sessions prior to drug testing)",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Rats were placed in the test chambers for daily 40-min sessions",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Food not present in chamber during session",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "before",
+          "evidence": "rats were allowed access to water for 2 h per day between 2 and 4 p.m.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "DOI injected SC 30 min before testing",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 8,
+        "n_male": 8,
+        "n_female": 0,
+        "n_per_group_min": 8,
+        "evidence": "DOI (n = 8) on responding for water",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI did not significantly alter responding for water relative to vehicle at any dose tested (0.1, 0.3, 0.6 mg/kg), indicating the suppression of CRf responding was not due to a generalized motor or motivational deficit.",
+        "statistics": "F(3,21) = 3.49, p > 0.05 (Dunnett's vs vehicle: ns)",
+        "direction": "no_effect",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Dunnett's test showed that none of the doses of DOI altered responding when compared to the vehicle condition (Fig. 3d).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Only responses on the water-delivering lever recorded (single active lever)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total responses across the 40-min session",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Lever pressing is not an ethological behaviour",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Tested alone",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Task requires learning the lever-water association",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Med Associates operant chambers (SCORE-0)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVA only",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "standard operant conditioning chambers",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter present",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bare operant chamber floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single operant compartment",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Focal animal tested alone",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "responses on the right lever delivered 0.1 ml of water according to a RR2 schedule",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "doses tested according to a Latin square design with sessions separated by ≥72 h",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "daily 40-min sessions",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Four DOI conditions (vehicle + 3 doses) tested on separate days",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Vehicle session included in within-subjects Latin square",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Acute testing only",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "40-min sessions",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    }
+  ],
+  "judge_notes": [
+    "Only DOI qualifies as a psychedelic compound under the rubric; 8-OH-DPAT, WAY100635, M100907, Ro60-0175, SB242084, and methylphenidate are non-psychedelic 5-HT/DA ligands and are not listed as separate assays' psychedelic exposures — but the CRf and water-reinforcement assays still include DOI testing and are scored.",
+    "Two assays retained: (1) Responding for Conditioned Reinforcement (merges basal CRf testing, methylphenidate-combination testing, and the explicitly-unpaired CS control, all using the same paradigm); (2) Responding for Water (separate paradigm using same apparatus but primary reinforcement).",
+    "B1 for CRf scored 1 (2-3 measures: CRf lever and NCRf lever responses) following gptoss; glm agreed on category. Water assay scored 0 (only active lever measured, inactive lever retracted).",
+    "E8 differs between assays: CRf session delivers only CS (no water), so 0; water assay delivers water as reinforcer, so 1.",
+    "D4 baseline scored 1: vehicle session within Latin square serves as within-subject baseline; reasonable interpretation though confidence reduced to medium.",
+    "Food restriction marked 'during' (food not in apparatus); water restriction marked 'before' for CRf (chronic 2h/day access regime preceding test) — this is the more accurate reading per rubric since rats were water-restricted prior to testing."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 5.45,
+    "behavioural_complexity_mean": 1.88,
+    "environmental_complexity_mean": 0.68,
+    "recording_duration_mean": 5.45
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 45351,
+    "output_tokens": 6331,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

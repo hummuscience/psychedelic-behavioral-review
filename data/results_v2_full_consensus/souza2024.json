@@ -1,0 +1,286 @@
+{
+  "study_id": "Souza2024",
+  "doi": null,
+  "species": "rat",
+  "strain": "Wistar",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 60,
+    "age_max_days": 60,
+    "evidence": "Wistar, 250-350 g, ~ 2 months old",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 17,
+    "n_female": null,
+    "evidence": "A total of 17 adult male rats were used (Rattus norvegicus, Wistar, 250-350 g, ~ 2 months old)",
+    "confidence": "high"
+  },
+  "psychedelic": "5-MeO-DMT",
+  "dosing": [
+    {
+      "compound": "5-MeO-DMT",
+      "doses_mg_per_kg": [
+        1.0,
+        3.0,
+        10.0
+      ],
+      "doses_raw": "for ICV groups: 100 ug, 150 ug, or 200 ug diluted in 2 ul of saline; for IP groups: 1 mg, 3 mg, or 10 mg diluted in 0.3 ml of saline",
+      "vehicle": "saline",
+      "route": "multiple",
+      "schedule": "acute",
+      "evidence": "injected with one of the three 5-MeO-DMT doses (for ICV groups: 100 ug, 150 ug, or 200 ug diluted in 2 ul of saline; for IP groups: 1 mg, 3 mg, or 10 mg diluted in 0.3 ml of saline) or saline ... Animals were submitted to four, weekly-spaced experimental sessions",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "Before the first experimental session, animals were handled (~ 20 min) and habituated to the experimental room and box for at least three days (1 h per day).",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "The animals were housed in an appropriate vivarium under controlled temperature and humidity",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "lights on at 6:00 and lights off at 18:00 ... Experiments were done in the afternoon or beginning of the evening (14-18 h) under dim light",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "The animals were housed in an appropriate vivarium under controlled temperature and humidity",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Open Field Locomotion and Stereotyped Behaviour Scoring",
+      "assay_description": "Freely behaving rats recorded in a 55.5 × 65 × 45 cm arena for 1 h baseline followed by 2-3 h post-injection. Speed tracked via Cineplex/IdTracker; 10 stereotyped/abnormal behaviours scored manually (e.g., uncoordinated gaiting, backwards gaiting, head tremor, wetdog shake, stillness).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "for ICV groups: 100 ug, 150 ug, or 200 ug ... for IP groups: 1 mg, 3 mg, or 10 mg",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "animals were handled (~ 20 min) and habituated to the experimental room and box for at least three days (1 h per day)",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "freely behaving rats",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Open field arena; no mention of food in apparatus.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Open field arena; no mention of water in apparatus.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "after the baseline recording, animals were injected ... and recorded for an additional two to three hours",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 17,
+        "n_male": 17,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "A total of 17 adult male rats were used ... 1 to 8 sessions per rat, totalling 54 drug and 20 saline sessions",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "5-MeO-DMT (ICV and IP) significantly decreased time spent and number of events of stillness at all doses, and dose-dependently increased the duration and frequency of 'altered behaviours' (uncoordinated gaiting, backward gaiting, head tremor, wetdog shake, etc.), with the strongest effect at ICV 200 ug. Speed distributions shifted with dose.",
+        "statistics": "ANOVA p < 0.05; 'Still': Mean time F(3,20) = 7.6747, Number of events F(3,20) = 5.3164; 'Altered behaviours': Mean time F(3,20) = 3.2362, Number of events F(3,20) = 3.8690; Tukey-Kramer post hoc *p < 0.05, **p < 0.01",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "both the mean time spent and the number of events of 'still' are significantly decreased for every dose compared to saline. Conversely, there was an increase of the mean time and number of events of 'altered behaviours' for the dose ICV 200 ug compared to saline",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 3,
+          "value": "7+",
+          "evidence": "10 behaviours most observed ... intermittent and uncoordinated gaiting or jumping; backwards gaiting; flat body gaiting; turning on its axis; quiet; uncoordinated gaiting; still; jumps; head tremor; and wetdog shake; plus speed",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Mean time spent and number of events reported across whole session; no within-session time-course of behaviour analysed.",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural transitions or sequences reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "head tremor; wetdog shake; backwards gaiting; turning on its axis; uncoordinated gaiting",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Single rat tested alone in arena.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Spontaneous locomotion and stereotyped behaviour; no learning/memory component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "tracked using Cineplex from Plexon or IdTracker to detect the animals' centre of mass ... quantified abnormal behaviours through empirical observation",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVAs reported; no PCA/clustering of behavioural features.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "arena (55.5 × 65 × 45 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open arena with no refuge described.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described in testing arena.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described in testing arena.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects described in arena.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "arena (55.5 × 65 × 45 cm)",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Freely behaving single rat in arena.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water inside the testing arena.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Each experimental session consisted of three consecutive days that started with a one-hour recording ... On the second day, after the baseline recording, animals were injected ... and recorded for an additional two to three hours",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "recorded for an additional two to three hours",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Each experimental session consisted of three consecutive days ... baseline (day 1) and dosing day (day 2) recordings used in this work",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "started with a one-hour recording of the animal in the arena ... after the baseline recording, animals were injected",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Two additional 1-h recordings were made one day before and after the experiment but are not included in this work",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sessions of 2-3 hours; no session ≥6 hours.",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      }
+    }
+  ],
+  "judge_notes": [
+    "Both candidates identified a single behavioural assay (open-field locomotion/stereotyped behaviour scoring); kept as one assay.",
+    "B1 raised to 3 (7+ measures): paper explicitly scores 10 distinct behaviours plus speed, exceeding both candidates' choices.",
+    "D3 set to '2-7' (2 days): baseline day 1 + dosing day 2 are the recording days for this assay (per Methods, 'All experiments reported here refer to the second day' plus baseline); the third day was not part of this assay's data per the manuscript.",
+    "Excluded all LFP/electrophysiology analyses (power spectra, gamma coupling, state maps) per rubric — those are neural recordings, not behavioural assays.",
+    "Dosing: IP doses listed as mg/kg-equivalent (1, 3, 10 mg per ~300 g rat ≈ 3.3/10/33 mg/kg, but paper reports total mg per animal); kept mg-per-animal IP values [1,3,10] which approximate mg/kg given ~250-350 g body weights.",
+    "Group housing and home-cage enrichment left as not_reported per silence in methods."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 5.0,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 6.82,
+    "behavioural_complexity_mean": 5.0,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 6.82
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm"
+  ],
+  "judge_usage": {
+    "input_tokens": 46217,
+    "output_tokens": 4321,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

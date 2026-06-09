@@ -1,0 +1,285 @@
+{
+  "study_id": "Hatzipantelis2025",
+  "doi": "10.1021/acschemneuro.5c00384",
+  "species": "mouse",
+  "strain": "C57BL/6N",
+  "age": {
+    "value": "adult",
+    "age_min_days": 60,
+    "age_max_days": 180,
+    "evidence": "All animals tested were between 2 and 6 months of age",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "N = 18 -22 WT mice/sex and 8 -9 KO mice/ sex",
+    "confidence": "high"
+  },
+  "psychedelic": "5-MeO-DMT",
+  "dosing": [
+    {
+      "compound": "5-MeO-DMT",
+      "doses_mg_per_kg": [
+        1.0,
+        10.0,
+        50.0
+      ],
+      "doses_raw": "1, 10, and 50 mg/kg (0.8, 7.9, and 39 mg/kg active 5-MeO-DMT, respectively)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "5-MeO-DMT hemifumarate was delivered at 1, 10, and 50 mg/kg (0.8, 7.9, and 39 mg/kg active 5-MeO-DMT, respectively) ... administered via intraperitoneal injection",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "Mice were habituated to the behavioral suite for 1 h prior to experiments and also habituated to the investigator via direct handling for three consecutive days prior to any behavioral testing.",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Weaned animals were housed in 2 to 5 animals of the same sex per cage with mixed genotypes",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "kept on a 7:00 to 19:00 light cycle with ad libitum access to food and water",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head-Twitch Response",
+      "assay_description": "Mice injected i.p. with 5-MeO-DMT (1, 10, 50 mg/kg) were placed in a 40 x 40 cm open field chamber and recorded for 20 min; head twitches were manually scored by two blinded observers.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "5-MeO-DMT ... administered via intraperitoneal injection",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Mice were habituated to the behavioral suite for 1 h prior to experiments (room habituation, not apparatus habituation)",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice were injected with varying doses of 5-MeO-DMT, placed in the same open field chamber as for the OFT, and activity was recorded using overhead cameras for 20 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard open field chamber with no food provided during recording",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard open field chamber with no water provided during recording",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Mice were injected with varying doses of 5-MeO-DMT, placed in the same open field chamber ... and activity was recorded using overhead cameras for 20 min",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 7,
+        "evidence": "N = 7 -10 mice/genotype/sex",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "5-MeO-DMT elicited head twitches dose-dependently. INMT KO mice showed reduced HTR compared to WT at the highest dose (50 mg/kg), with no sex effect, suggesting reduced 5-HT2AR responsiveness in KO mice.",
+        "statistics": "dose × genotype interaction; F(3,99) = 4.573, P = 0.0048; at 50 mg/kg F(1,26) = 6.978, P = 0.0138",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "no",
+        "time_dependent": "n/a",
+        "evidence": "INMT KO mice, regardless of sex, displayed reduced 5-MeO-induced HTR at 50 mg/kg (Figure 5D; F (1,26) = 6.978, P = 0.0138).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Total number of head twitches elicited by varying doses of 5-MeO-DMT",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total number of head twitches reported as a single count over the session",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural sequences or transitions reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-twitch response is a pharmacologically induced behaviour, not in the natural ethological repertoire",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mouse tested alone in open field chamber",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR does not require learning or memory",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR behavior was scored by two blinded, trained observers",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate head-twitch counts analyzed",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "placed in the same open field chamber as for the OFT",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open field chamber has no shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open field chamber with bare floor, cleaned with 70% ethanol between animals",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in open field chamber",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in test chamber",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "40 cm x 40 cm opaque gray open field chamber",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mouse tested alone in open field chamber",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in the testing apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "activity was recorded ... for 20 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "activity was recorded using overhead cameras for 20 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "HTR test performed on a single day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline HTR recording reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No post-acute follow-up reported",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "20 min session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Only the Head-Twitch Response assay involved direct administration of a psychedelic (5-MeO-DMT) to rodents. All other behavioural tests (FST, OFT, EPM, FC/FE, CPP, NOR, SAB, 3-CSI) were used to phenotype INMT KO vs WT mice without psychedelic administration and were therefore excluded per scoring rules.",
+    "All three candidates agreed on the HTR as the sole scorable assay; their scores were nearly identical and were adopted with high confidence.",
+    "Direction set to 'decrease' (KO vs WT reduction at top dose) consistent with qwen and glm; gptoss labeled it 'increase' based on the dose effect of 5-MeO-DMT itself, but the primary reported result framing is the genotype-mediated reduction.",
+    "doses_mg_per_kg kept as nominal administered hemifumarate doses (1, 10, 50) as paper labels them; active-base equivalents noted in evidence."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0.0,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 0.0,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 1.36
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 53235,
+    "output_tokens": 3517,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

@@ -1,0 +1,307 @@
+{
+  "study_id": "Lerer2024",
+  "doi": "10.3389/fphar.2024.1391412",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "adult",
+    "age_min_days": 84,
+    "age_max_days": 84,
+    "evidence": "Experiments were performed on adult (12 weeks old) C57BL/6J male mice.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Experiments were performed on adult (12 weeks old) C57BL/6J male mice.",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin, Psychedelic Mushroom Extract, 5-HTP",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        4.4
+      ],
+      "doses_raw": "PSIL 4.4 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "PSIL was dissolved in 100% saline (0.9% NaCl) solution... Drugs were administered by i.p. injection... PSIL 4.4 mg/kg",
+      "confidence": "high"
+    },
+    {
+      "compound": "Psychedelic Mushroom Extract",
+      "doses_mg_per_kg": [
+        4.4
+      ],
+      "doses_raw": "PME... administered intraperitoneally at a PSIL dose of 4.4 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "PME was supplied by Back of the Yards Algae Sciences (Chicago, IL, USA), dissolved in 0.9% NaCl and administered intraperitoneally at a PSIL dose of 4.4 mg/kg",
+      "confidence": "high"
+    },
+    {
+      "compound": "5-HTP",
+      "doses_mg_per_kg": [
+        200.0
+      ],
+      "doses_raw": "5-HTP 200 mg/kg",
+      "vehicle": "DMSO",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "5-HTP was dissolved in 5% DMSO +95% saline (0.9% NaCl) solution... 5-HTP 200 mg/kg",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Paper does not describe a handling protocol beyond acclimatization.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "Animals were housed under standardized conditions... (cage density not specified)",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12-h light/dark cycle... HTR was measured... at ZT4 (11 a.m.), 4 h after lights on at 7 a.m.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Animals were housed under standardized conditions (enrichment not mentioned).",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head Twitch Response",
+      "assay_description": "Head twitches were recorded for 20 min immediately after i.p. injection of psilocybin (4.4 mg/kg) or 5-HTP (200 mg/kg), with or without prior administration of 5-HT receptor modulators (8-OH-DPAT, M100907, RS-102221), using a magnetometer apparatus. HTR data were obtained from the same mice used in Shahar et al., 2022 and correlated with IEG expression measured 1 h post-injection.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Drugs were administered by i.p. injection in a standard injection volume of 300 µL immediately before HTR was performed.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Paper does not describe habituation to the magnetometer apparatus prior to recording.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "HTR was measured... by means of a magnetometer apparatus (free-moving mice; no restraint described).",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Animals were housed... with free access to food and water; HTR recording occurred in the magnetometer apparatus where food was not accessible.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Animals were housed... with free access to food and water; water was not present in the magnetometer apparatus during recording.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "HTR was measured... for 20 min immediately after injection of the drug at ZT4 (11 a.m.)",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "Comparisons were made between groups of 8-10 mice in each of the treatment groups.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "PSIL (4.4 mg/kg, i.p.) induced a robust head-twitch response over the 20-min recording, whereas 5-HTP also induced HTR (as reported in Shahar et al., 2022). No significant correlation was observed between PSIL-induced total or peak HTR and IEG (cfos, egr1, egr2) expression in somatosensory cortex.",
+        "statistics": "",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "No correlation was observed between the head twitch response (HTR) induced by PSIL and its effect on the IEGs.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Pearson correlations between cfos, egr1 and egr2 levels induced by PSIL and total... and peak HTR",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR was measured as total and peak over the 20-min session; no within-session time-course analysis described.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of transitions or sequences reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-twitch response is a drug-induced motor response, not an ethological behaviour.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice were tested individually in the magnetometer apparatus.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR does not require learning or memory.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR was detected with a magnetometer apparatus, not pose-estimation or ML classifiers.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate Pearson correlations were reported.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "HTR was measured by means of a magnetometer apparatus.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Magnetometer chamber provides no enclosed refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described for the HTR apparatus.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described in the magnetometer apparatus.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects described in the magnetometer chamber.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Magnetometer apparatus is a single recording chamber.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice were recorded individually in the magnetometer apparatus.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Food/water not accessible inside the magnetometer apparatus.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "HTR was measured for 20 min immediately after injection.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "for 20 min immediately after injection of the drug",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "HTR was measured on the day of injection only.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline HTR recording reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No HTR recording ≥24 h after injection reported.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single 20-min session, far less than 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Only one behavioural assay (Head Twitch Response) is scored. All other measurements (IEG mRNA expression via qRT-PCR, RNA extraction) are molecular endpoints and excluded per rubric.",
+    "HTR data were collected on mice from a prior study (Shahar et al., 2022) and re-analysed here for correlation with IEG expression; treated as one assay.",
+    "B1 scored 1 (2-3 measures): total HTR and peak HTR are both reported as separate variables correlated with IEGs.",
+    "Dosing reconciled across candidates: PSIL, PME, and 5-HTP all administered; only PSIL HTR data used in this paper's correlation analysis."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 1.36
+  },
+  "low_confidence_count": 4,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 41687,
+    "output_tokens": 4089,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

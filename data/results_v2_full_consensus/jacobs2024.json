@@ -1,0 +1,693 @@
+{
+  "study_id": "Jacobs2024",
+  "doi": "10.1016/j.nlm.2024.107954",
+  "species": "rat",
+  "strain": "Long-Evans",
+  "age": {
+    "value": "adult",
+    "age_min_days": 63,
+    "age_max_days": null,
+    "evidence": "At the start of experiments, animals were > postnatal day 63.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Multiple cohorts of males and females were used.",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin, DOI",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        0.32,
+        1.0,
+        3.2
+      ],
+      "doses_raw": "0.32, 1.0, or 3.2 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Psilocybin or ± DOI (0.32, 1.0, or 3.2 mg/kg, see below) or vehicle was administered intraperitoneally 15 min prior to behavioral sessions",
+      "confidence": "high"
+    },
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        0.32,
+        1.0,
+        3.2
+      ],
+      "doses_raw": "0.32, 1.0, or 3.2 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Psilocybin or ± DOI (0.32, 1.0, or 3.2 mg/kg) or vehicle was administered intraperitoneally 15 min prior to behavioral sessions",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "Animals used for punishment learning experiments (n = 31) were handled and food restricted to 14 g/day.",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Adult Long-Evans rats (n = 55) were pair-housed",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "yes",
+      "evidence": "kept on a reverse 12 h:12 h light/dark cycle. All experimental procedures were performed during the rodents' dark (active) cycle.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Probabilistic Punishment Task",
+      "assay_description": "Operant chained schedule (seek-take nose pokes) for sucrose pellets, with probabilistic footshock on the seek action (0-60% across six 15-min blocks; ~90 min total). Measures trial completion and seek/take action latencies during acquisition (8 sessions) and after learning.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered intraperitoneally 15 min prior to behavioral sessions",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "animals were first habituated to the operant box (60 min session, pellet dispensed every 45 s on average)",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Operant chambers... Chambers contained two nose poke holes... animals freely responded",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "Animals... were handled and food restricted to 14 g/day. Food restriction was monitored throughout the study to maintain 90 % of free feeding weight.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 15,
+          "evidence": "administered intraperitoneally 15 min prior to behavioral sessions",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 31,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 7,
+        "evidence": "Animals used for punishment learning experiments (n = 31)... N = 7 -8 per sex per treatment",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "During acquisition, 1 mg/kg psilocybin decreased trial completion in the safe block and increased seek latency in females, indicating enhanced behavioral suppression in females learning punishment associations. After learning, 1 mg/kg psilocybin modestly attenuated suppression in risk blocks in both sexes, while ± DOI (1 mg/kg) had no significant effect.",
+        "statistics": "Acquisition safe block: F(1,27)=5.8, p=0.023; sex: F(1,27)=10.7, p=0.003; female seek latency 3-way interaction F(8,196)=2.05, p=0.04. Post-acquisition: psilocybin F(1,14)=10.97, p=0.005; Interaction F(2.81,39.38)=4.45, p=0.009; DOI F<1.65, p>0.15.",
+        "direction": "mixed",
+        "dose_dependent": "no",
+        "sex_dependent": "yes",
+        "time_dependent": "yes",
+        "evidence": "Psilocybin increased behavioral suppression in female rats as punishment associations were learned. After learning, psilocybin decreased behavioral suppression in both sexes.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "2-3",
+          "evidence": "Main dependent variables were trial completion, or action latencies for seek or take actions.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Single session analyses... group mean values for each block or the average during risk blocks (blocks 2-6) were determined — block-by-block within-session analysis across the six 15-min blocks.",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural transitions or sequences reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Operant nose-poke responses measured, not natural ethological behaviours.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual operant testing with no social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "this task allows for assessing learning of action-punishment association",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Graphic State software (Coulbourn Instruments) was used for programming the task — operant event capture, not behavioural classification.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "ANOVA and mixed-effects models used; no PCA, UMAP, or clustering reported.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Operant chambers (Coulbourn Instruments, PA) were used for behavioral testing.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Chambers contained two nose poke holes... grid floor; no shelter.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "grid floor was connected to a shock generator",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in the operant chamber.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in the operant chamber.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Operant chamber with nose poke holes and food trough; no physical dividers creating distinct compartments.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual operant testing.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The food trough... dispensed 45 mg sucrose pellets",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Behavior in the task was then monitored for eight consecutive sessions.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min-6 h",
+          "evidence": "six 15 trial blocks that were 15 min in length (~90 min total).",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 2,
+          "value": "8-14",
+          "evidence": "We assessed the last no-shock session and first 8 probabilistic punishment sessions... plus post-acquisition drug tests.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Animals were given four days of these contingencies with no footshock (no shock sessions)... We assessed the last no-shock session",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Behavior was monitored for the following eight sessions; post-acquisition tests at least 72 h after dose.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sessions ~90 min; no session >=6 hours.",
+          "confidence": "high"
+        },
+        "raw_total": 7
+      }
+    },
+    {
+      "assay_name": "Shock Threshold Test",
+      "assay_description": "Animals placed in operant chamber under red light; after 3 min acclimation, footshocks of ascending intensity (0-0.16 mA) applied every ~45 s. Blinded experimenter recorded first shock intensity eliciting a flinch response. Tested across saline baseline, drug, and saline washout days.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "animals were pretreated with saline 30 min before the session... repeated again on day 3 with psilocybin or ± DOI pretreatment",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Animals were placed in the chamber under red light for 15 min with no scheduled consequences on day 1.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "footshock was applied about every 45 s (contingent on all 4 paws being on the shock grid) — animals freely moved.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "a subset of rats trained in the probabilistic punishment task (n = 10) were given psilocybin or ± DOI in a shock threshold procedure — these animals remained on the 14 g/day food restriction.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "A 30-min pretreatment was chosen here to better match the timing of when animals encountered risk of punishment in the probabilistic punishment task.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 10,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 5,
+        "evidence": "a subset of rats trained in the probabilistic punishment task (n = 10)... N = 5 per drug.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Neither psilocybin (1 mg/kg) nor ± DOI (1 mg/kg) altered the shock intensity required to elicit a flinch response compared with saline.",
+        "statistics": "Psilocybin: paired t(4)=0.389, p=0.71; ± DOI: paired t(4)=1.5, p=0.21; saline test-retest: paired t(9)=1.1, p=0.29.",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Psilocybin had no effect on footshock sensitivity as the flinch response was achieved at a similar shock intensity to that seen with saline (paired t(4) = 0.389, p = 0.71). ± DOI also had no effect on footshock sensitivity (paired t(4) = 1.5, p = 0.21).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "we took the first shock intensity which elicited a flinch response",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single threshold value per session; no within-session temporal analysis.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Flinch is a reflex, not a natural ethological behaviour.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Reflexive flinch; no learning required.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "An experimenter, blinded to treatment, determined the first footshock intensity which elicited a flinch response.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Paired t-tests only.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Animals were placed in the chamber under red light",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard operant chamber; no shelter.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "grid floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment items.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Operant chamber single arena.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual testing.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water during shock threshold test.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Day 1 acclimation, day 2 saline, day 3 drug, plus saline washout session.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "Animals were placed in the chamber under red light for 15 min with no scheduled consequences on day 1.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "day 1... day 2... day 3... additional saline session after a 48-hr drug washout",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "On day 2, animals were pretreated with saline 30 min before the session.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "in an additional saline session after a 48-hr drug washout.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sessions <1 h.",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      }
+    },
+    {
+      "assay_name": "Elevated Plus Maze",
+      "assay_description": "Standard EPM with two opposing open arms (46 cm) and two opposing closed arms (46 cm with 48 cm walls). Animals placed in the center and allowed to explore for 10 min. Percent time in open arms and total distance traveled measured via PanLab SMART tracking.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "A drug naïve group of animals (n = 24) was injected with saline, ± DOI (1 mg/kg), or psilocybin (1 mg/kg) 15 min before elevated plus maze testing.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Animals were placed in the center of the maze and allowed to explore",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "water_restriction": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 15,
+          "evidence": "injected with saline, ± DOI (1 mg/kg), or psilocybin (1 mg/kg) 15 min before elevated plus maze testing.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 24,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "A drug naïve group of animals (n = 24)... N = 8 per treatment.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin (1 mg/kg) decreased percent time in open arms and reduced total distance traveled compared to saline. ± DOI produced similar trends that did not reach significance after post-hoc correction.",
+        "statistics": "Open arm time: F(2,20)=4.18, p=0.031; Locomotor activity: F(2,21)=4.42, p=0.025; ± DOI post hoc: p=0.109 (open arm) and p=0.058 (locomotion).",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "psilocybin decreased approach as indexed by less time in the open arm of the maze compared to saline animals (Effect of treatment: F(2,20) = 4.18, p = 0.031)... accompanied by a decrease in locomotor activity (F(2,21) = 4.42, p = 0.025).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "percent of time spent in open arms... Total distance traveled",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single summary values reported across 10-min session.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Zone preference (time in open arm) is a spatial measure, not ethological.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EPM assesses innate approach-avoidance.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "calculated using PanLab SMART (v3.0) — position tracking, not behavioural classification.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "One-way ANOVAs only.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "The elevated plus maze consisted of four arms.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EPM closed arms are part of the apparatus design, not a shelter per scoring rules.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding mentioned on EPM.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "EPM arms are open-ended extensions of a central platform — score 0 per rubric.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Animals placed individually in the maze.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in EPM.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Animals were placed in the center of the maze and allowed to explore for a total of 10 min.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "allowed to explore for a total of 10 min.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single EPM test session.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Drug-naïve group; no pre-drug baseline recorded.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single session; no follow-up.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "10 min session.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    }
+  ],
+  "judge_notes": [
+    "Three assays included: Probabilistic Punishment Task, Shock Threshold Test, Elevated Plus Maze. All candidates agreed on these three.",
+    "B2 temporal_dynamics for the Probabilistic Punishment Task scored 1 (Yes): the task explicitly analyzes behavior block-by-block within a single 90-min session (six 15-min blocks at ascending risk), which constitutes within-session temporal analysis. GLM scored 1; qwen and gptoss scored 0. Sided with GLM here based on paper text describing per-block analyses within a session.",
+    "Food restriction in PPT scored 'before' (animals on 14 g/day chronic restriction prior to and across testing) rather than 'no' (gptoss); per rubric, deliberate pre-test food restriction = 'before'.",
+    "B1 for PPT scored 2 (2-3 measures): trial completion + seek latency + take latency = 3 measures. Gptoss scored 1; qwen and glm scored 2 — sided with the majority and the explicit text.",
+    "Housing enrichment marked not_reported (low confidence) as paper is silent on home-cage enrichment.",
+    "D5 follow-up for PPT scored Yes due to post-acquisition drug tests conducted days after acquisition (≥72 h after prior dosing)."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 5.0,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 9.55,
+    "behavioural_complexity_mean": 2.08,
+    "environmental_complexity_mean": 0.45,
+    "recording_duration_mean": 5.46
+  },
+  "low_confidence_count": 6,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 59675,
+    "output_tokens": 9461,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

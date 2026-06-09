@@ -1,0 +1,1085 @@
+{
+  "study_id": "Hesselgrave2021",
+  "doi": "10.1073/pnas.2022489118",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 56,
+    "age_max_days": 63,
+    "evidence": "All mice were 8 wk old at the start of the experiment ... A separate cohort of 9-wk-old male (n = 20) and female (n = 20) mice were used for the forced swim test",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": 20,
+    "evidence": "Two cohorts of male C57BL/6J mice were bred in-house ... A separate cohort of 9-wk-old male (n = 20) and female (n = 20) mice were used for the forced swim test",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        1.0,
+        5.0,
+        10.0
+      ],
+      "doses_raw": "1 mg/kg (SPT/FUST/HTR/FST); 5 mg/kg (locomotion); 10 mg/kg (in vivo electrophysiology)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Psilocybin was obtained from Cayman Chemical and diluted to 1 mg/mL in sterile 0.9% saline ... Psilocybin injections were given at 1 mg/kg ... For locomotion experiments or in vivo electrophysiology experiments, psilocybin was prepared at a 5 mg/mL concentration in sterile 0.9% saline and injected at 5 mg/kg or 10 mg/kg, respectively.",
+      "confidence": "high"
+    },
+    {
+      "compound": "Ketanserin",
+      "doses_mg_per_kg": [
+        2.0
+      ],
+      "doses_raw": "2 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Ketanserin was administered 60 min prior to injection with either vehicle control or psilocybin ... ketanserin at 2 mg/kg",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "No handling protocol described",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "Animals were group housed prior to the experiment but single housed at the onset of the behavioral and stress protocols until the end of the study",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "kept on a 12 h light/dark cycle (lights on at 7 AM)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Home-cage enrichment not described",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Sucrose Preference Test",
+      "assay_description": "Two-bottle choice in the home cage comparing 1% sucrose vs water consumed over 14-16 h; preference measured at baseline, post-CMMS, and 24 h after psilocybin ± ketanserin.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Mice were then given a single intraperitoneal (i.p.) injection of psilocybin (1 mg/kg).",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "For the SPT, mice were trained to the presence of a 2% sucrose solution in their home cages prior to the baseline measurement.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice were free to consume liquid from either bottle for 14 to 16 h",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "provided food and water ad libitum",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "provided food and water ad libitum; mice free to consume liquid from either bottle for 14-16 h",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "24 h after drug injection",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 38,
+        "n_male": 38,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "vehicle-vehicle (n = 12), ketanserin-vehicle (n = 6), vehicle-psilocybin (n = 13), and ketanserin-psilocybin (n = 7)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "A single i.p. injection of psilocybin (1 mg/kg) restored sucrose preference 24 h after dosing in chronically stressed male mice. The effect was not blocked by ketanserin pretreatment (2 mg/kg).",
+        "statistics": "Three-way RM ANOVA: stress F2,68 = 60.26, P < 0.0001; Stress × Psilocybin F2,68 = 4.50, P = 0.015; Stress × Psilocybin × Ketanserin F2,68 = 0.0592, P = 0.9426. Post-hoc: veh-psil P = 0.0012; ket-psil P = 0.042.",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Treatment with psilocybin (1 mg/kg, i.p.) significantly increased SP compared to values after CMMS, whether animals were pretreated with ketanserin (2 mg/kg; P = 0.042) or a vehicle control (P = 0.0012).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Preference is expressed as a percentage and was calculated for each night as (the weight of 1% sucrose solution consumed/total liquid weight consumed) × 100",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bottles were weighed at the end; preferences for the two nights were averaged.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural sequences.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Consumption-based preference, not an ethological behaviour.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Test does not target social behaviour.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate preference, no learning required.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bottles were weighed to measure consumption.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate preference score only.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "bottles ... were placed in the cages",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enclosed refuge described in home cage during test.",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Home cage test; standard home cages contain bedding.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Nesting material not described.",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment described in home cage.",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Standard home cage without partitions.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "single housed at the onset of the behavioral and stress protocols",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "provided food and water ad libitum; bottles in cage during test",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "assessed ... prior to stress (baseline), after 10 to 14 d of CMMS, and 24 h after drug injection",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 3,
+          "value": ">6 h",
+          "evidence": "Mice were free to consume liquid from either bottle for 14 to 16 h",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 2,
+          "value": "8-14",
+          "evidence": "Two nights each at baseline, post-CMMS, and post-drug (6 nights total).",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Hedonic state was assessed using the SPT ... prior to stress (baseline)",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "24 h after drug injection",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Mice were free to consume liquid from either bottle for 14 to 16 h",
+          "confidence": "high"
+        },
+        "raw_total": 9
+      }
+    },
+    {
+      "assay_name": "Female Urine Sniffing Test",
+      "assay_description": "Mice individually placed in empty cage; habituated 15 min; then 3 min interaction with two cotton swabs (male urine vs estrous female urine). Time sniffing each swab scored from video.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "single intraperitoneal (i.p.) injection of psilocybin (1 mg/kg)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "mice were individually transferred to empty, freshly made cages and allowed to habituate for 15 min",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "animals were given 3 min to interact with the swabs",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Empty, freshly made cages with no food during test",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Empty, freshly made cages with no water during test",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "24 h after drug injection",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 19,
+        "n_male": 19,
+        "n_female": null,
+        "n_per_group_min": 4,
+        "evidence": "vehicle-vehicle (n = 6), ketanserin-vehicle (n = 4), vehicle-psilocybin (n = 5), and ketanserin-psilocybin (n = 4)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin (1 mg/kg) restored preference for female urine 24 h after dosing in chronically stressed male mice. The effect was not blocked by ketanserin pretreatment.",
+        "statistics": "Stress F2,30 = 43.41, P < 0.0001; Stress × Psilocybin F2,30 = 4.26, P < 0.024; Stress × Psilocybin × Ketanserin F2,30 = 0.8677, P = 0.4302. Post-hoc: veh-psil P = 0.0012; ket-psil P = 0.0024.",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Treatment with psilocybin significantly increased preference for the scent of female urine compared to values after CMMS whether animals were pretreated with ketanserin (P = 0.0024) or vehicle (P = 0.0012).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "percent preference scored as (time spent sniffing the female urine swab/total time spent sniffing both swabs) × 100",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total sniff time over 3 min; no within-session dynamics.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Time spent sniffing each swab — a natural investigative/olfactory behaviour.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 1,
+          "value": "Social construct, individual testing",
+          "evidence": "comparing interactions with swabs dipped in urine from male mice and female mice in estrous — social/sexual chemosensory construct, but tested alone.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate olfactory preference, no learning required.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Videos were later scored by a trained experimenter blinded to the position of male and female urine swabs.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate preference only.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "mice were individually transferred to empty, freshly made cages",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Empty cage; no refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "empty, freshly made cages",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Empty cage with only swabs as stimuli.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Empty cage without partitions.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "mice were individually transferred to empty, freshly made cages",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in test cage during 3 min trial.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "FUST assessed prior to stress (baseline), after 10 to 14 d of CMMS, and 24 h after drug injection",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "animals were given 3 min to interact with the swabs",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Three recording days: baseline, post-CMMS, post-drug.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Hedonic state was assessed using ... FUST prior to stress (baseline)",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "24 h after drug injection",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "3 min session.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    },
+    {
+      "assay_name": "Head Twitch Response",
+      "assay_description": "Mice video-recorded in home cage for 15 min immediately after injection; head twitches counted by three blinded scorers.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "psilocybin (1 mg/kg, i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No habituation to the recording condition described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "mice were placed in their home cage and video recording was initiated",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "Home cage with food and water ad libitum",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "Home cage with food and water ad libitum",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Immediately following the second injection of either vehicle or psilocybin, mice were placed in their home cage and video recording was initiated",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 29,
+        "n_male": 29,
+        "n_female": null,
+        "n_per_group_min": 7,
+        "evidence": "vehicle-vehicle (n = 7), ketanserin-vehicle (n = 7), vehicle-psilocybin (n = 7), and ketanserin-psilocybin (n = 8)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin (1 mg/kg) significantly increased head twitches over 15 min; ketanserin (2 mg/kg) pretreatment fully blocked this increase, confirming 5-HT2AR engagement.",
+        "statistics": "One-way ANOVA F3,25 = 6.96, P = 0.0015; veh-veh vs veh-psil P = 0.0045; ket-psil vs ket-veh P = 0.26.",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Vehicle-pretreated mice receiving psilocybin demonstrated significantly more head twitching compared to mice receiving vehicle or ketanserin alone ... Head-twitching counts were not significantly different in ketanserin-pretreated mice receiving psilocybin compared to mice receiving vehicle alone",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "noting the total number of and time stamp of each head twitch",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total counts over 15 min reported; no within-session time-course analysis.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence/transition analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-twitch response is not an ethological behaviour per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mouse alone in home cage.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Reflexive response; no learning required.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Three trained experimenters scored ... while blinded to treatment",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single count measure.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "mice were placed in their home cage and video recording was initiated",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No refuge described in test home cage.",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Standard home cage; bedding present.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Nesting material not described.",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment described.",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Standard home cage.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Single-housed mouse in home cage.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Home cage with ad libitum food and water.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "scored the first 0 to 15 min of activity",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "scored the first 0 to 15 min of activity",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single recording session immediately following injection.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug HTR baseline recorded.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No follow-up >=24 h post-drug.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "15 min session.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Open Field Locomotion",
+      "assay_description": "Separate cohort of male mice given ketanserin or saline pretreatment then psilocybin (5 mg/kg, i.p.); immediately placed in open field arena; locomotion scored with TopScan Suite.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Mice were injected with a high dose of psilocybin (5 mg/kg) ... 60 min after pretreatment",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No prior apparatus exposure described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "animals were immediately placed in an open field arena, and their behavior was recorded",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Open field arena does not contain food.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Open field arena does not contain water.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Following the psilocybin injection, animals were immediately placed in an open field arena",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "A separate cohort of 8-wk-old male mice were used to analyze the effects of psilocybin and ketanserin pretreatment on locomotion. (n's not given in main text)",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "Ketanserin pretreatment induced hypolocomotion, either directly or by enhancing psilocybin's locomotor-suppressing effect; this served as a positive control of ketanserin activity.",
+        "statistics": "Not reported in main text (SI Appendix, Fig. S2).",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "pretreatment with ketanserin induced hypolocomotion, directly and/or by enhancing the effects of psilocybin (SI Appendix, Fig. S2), confirming its activity at the given dose.",
+        "confidence": "medium"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Locomotion was scored with TopScan Suite software (Clever Sys).",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No within-session time-course reported in main text.",
+          "confidence": "low"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor distance — not an ethological behaviour per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Single mouse in open field.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning required.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "TopScan (CleverSys) is a position-tracking system — SCORE 0.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No multivariate analysis.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "open field arena",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent in open field.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open field has a bare floor.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in arena.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Open field arena.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Single animal in open field.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in arena.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Single locomotor session after injection.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Session duration not explicitly stated.",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single recording day.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline locomotor recording.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No follow-up.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Short session.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "Forced Swim Test",
+      "assay_description": "6 min swim in a Plexiglas cylinder filled with 15 cm water (23-25 °C); immobility time scored for the last 4 min using ANY-maze. Conducted at 1, 3, and 7 days after psilocybin (1 mg/kg) injection in unstressed male and female mice.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "injected with vehicle or psilocybin (1 mg/kg)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No habituation to FST described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "6 min swim in a Plexiglas cylinder filled with 15 cm of water — FST is a restrained/inescapable apparatus per rubric.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in cylinder during swim.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No drinking water available during swim.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 1440,
+          "evidence": "The first FST session occurred 24 h after injection ... no effect of psilocybin (1mg/kg) on immobility time at 1, 3, or 7 d postinjection",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 40,
+        "n_male": 20,
+        "n_female": 20,
+        "n_per_group_min": 10,
+        "evidence": "A separate cohort of 9-wk-old male (n = 20) and female (n = 20) mice were used for the forced swim test",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "A single 1 mg/kg dose of psilocybin had no effect on FST immobility time at 1, 3, or 7 days post-injection in either male or female unstressed C57BL/6J mice.",
+        "statistics": "Not reported in main text (SI Appendix, Fig. S4).",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "no",
+        "time_dependent": "no",
+        "evidence": "We found no effect of psilocybin (1mg/kg) on immobility time at 1, 3, or 7 d postinjection (SI Appendix, Fig. S4)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Immobility time was scored with ANY-maze (Stoelting) for the last 4 min of the 6 min swim",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single immobility total for last 4 min.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST immobility is excluded from ethological behaviours per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animal alone in cylinder.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning required.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "ANY-maze is on the SCORE-0 list (position tracking).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single univariate measure.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Plexiglas cylinder filled with 15 cm of water",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent in FST.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Water-filled cylinder; no bedding.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single cylinder.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Single animal per cylinder.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No accessible food/water.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "FST conducted at 1, 3, and 7 d post-injection",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "6 min swim",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "1, 3, or 7 d postinjection",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug FST baseline.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Recordings 1, 3, and 7 d post-injection (>=24 h).",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "6 min session.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    }
+  ],
+  "judge_notes": [
+    "Sex consolidated to 'both' because the FST cohort included male and female mice, even though the CMMS anhedonia experiments used only males.",
+    "Added Ketanserin to the dosing list — although it is not the psychedelic itself, it is a pharmacological agent administered to animals and was treated as a separate dosing entry following the rubric instruction to list each compound administered.",
+    "SPT D3 (recording days) raised to 2 because the SPT used 2 nights per timepoint across 3 timepoints (≈6 recording nights total), placing it in the 8-14 range only if every night is counted; conservatively kept as the modal '2-7'... actually upgraded to 8-14 score 2 to reflect the explicit 'procedure was repeated for a second night' across baseline/post-stress/post-drug measurements (6 nights minimum).",
+    "Adjusted FUST B5 to 'Social construct, individual testing' (score 1) — sniffing urine from conspecifics represents a chemosensory social cognition test even though no live animal is present (consistent with how social novelty and social-odour tests are typically scored).",
+    "FUST B4 set to 'Yes' — sniffing investigation of urine is a natural ethological exploratory/olfactory behaviour.",
+    "Locomotion outcome direction set to 'decrease' (ketanserin/psilocybin-induced hypolocomotion) per the text statement, although exact statistics are in SI.",
+    "Dropped in-vivo electrophysiology (LFP delta power recording) as a separate assay — it is a neural recording, not a behavioural assay per rubric.",
+    "Dropped in-vitro hippocampal slice AMPA/NMDA recording — ex vivo electrophysiology, not behaviour."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 4.09,
+    "recording_duration_max": 12.27,
+    "behavioural_complexity_mean": 0.5,
+    "environmental_complexity_mean": 1.64,
+    "recording_duration_mean": 4.63
+  },
+  "low_confidence_count": 11,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 77257,
+    "output_tokens": 12788,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

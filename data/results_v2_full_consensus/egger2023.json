@@ -1,0 +1,99 @@
+{
+  "study_id": "Egger2023",
+  "doi": "10.3389/fphar.2023.1140656",
+  "species": "rat",
+  "strain": "Long Evans",
+  "age": {
+    "value": "not_reported",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Forty-three (43) male Long Evans rats (N = 24, 227 ± 12 g, for experiment 1; and N = 19, 268 ± 24 g, for experiment 2)",
+    "confidence": "low"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 43,
+    "n_female": null,
+    "evidence": "Forty-three (43) male Long Evans rats",
+    "confidence": "high"
+  },
+  "psychedelic": "DMT, Harmine",
+  "dosing": [
+    {
+      "compound": "DMT",
+      "doses_mg_per_kg": [
+        1.0,
+        3.0
+      ],
+      "doses_raw": "1 mg/kg each; 3 mg/kg each",
+      "vehicle": "other",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "Groups of (n = 6) rats received either saline, harmine (1 mg/kg), DMT (1 mg/kg), or harmine + DMT (1 mg/kg each) as subcutaneous injections... N = 19 rats received an injection of saline (n = 14) or harmine (n = 5) at a dose of 3 mg/kg (s.c.), followed 5 minutes later by DMT at a dose of 3 mg/kg.",
+      "confidence": "high"
+    },
+    {
+      "compound": "Harmine",
+      "doses_mg_per_kg": [
+        1.0,
+        3.0
+      ],
+      "doses_raw": "1 mg/kg each; 3 mg/kg each",
+      "vehicle": "other",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "harmine (1 mg/kg)... harmine + DMT (3 mg/kg each); dissolved in EtOH containing fumaric acid (1 mg/mL) and then diluted 1:10 with PBS",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Housing was in groups of four in individually ventilated cages",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12-h light/dark cycle (lights were on from 6 a.m. to 6 p.m)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "yes",
+      "evidence": "environmental enrichment, which consisted of wooden sticks, bedding and a red-colored shelter",
+      "confidence": "high"
+    }
+  },
+  "assays": [],
+  "judge_notes": [
+    "All three candidates returned zero behavioural assays. This is correct: the paper is a pharmacokinetic / PET / ex vivo receptor occupancy study. The endpoints are brain drug concentrations (HPLC-MS), ex vivo [3H]ketanserin and [18F]MH.MZ binding (receptor occupancy via tissue scintillation/gamma counting), and [18F]FDG-PET cerebral glucose metabolism under isoflurane anesthesia — none of which are behavioural assays per the rubric (PET imaging without a behavioural task is explicitly excluded).",
+    "The authors note in passing that they observed head-twitch responses in some rats, but state they 'did not systematically assess behavioral indices' — no HTR data were collected or analyzed, so no HTR assay is scoreable.",
+    "Vehicle coded as 'other' (10% EtOH/PBS, with fumaric acid in experiment 2) since the primary solvent is an ethanol/PBS mixture rather than a single standard vehicle."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0,
+    "environmental_complexity_max": 0,
+    "recording_duration_max": 0,
+    "behavioural_complexity_mean": 0,
+    "environmental_complexity_mean": 0,
+    "recording_duration_mean": 0
+  },
+  "low_confidence_count": 1,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 45347,
+    "output_tokens": 1352,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

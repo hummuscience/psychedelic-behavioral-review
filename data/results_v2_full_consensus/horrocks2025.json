@@ -1,0 +1,285 @@
+{
+  "study_id": "Horrocks2025",
+  "doi": "10.1152/jn.00411.2024",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "adult",
+    "age_min_days": 133,
+    "age_max_days": 196,
+    "evidence": "three mice were 20 wk old and one mouse was 28 wk old... Two additional male mice of the same strain (19 wk old)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": 4,
+    "n_female": 2,
+    "evidence": "Four adult C57BL/6J mice (JAX 000664), two male and two female, were used for electrophysiological recordings... Two additional male mice of the same strain (19 wk old) were used to evaluate head-twitch responses under DOI.",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        10.0
+      ],
+      "doses_raw": "10 mg/kg",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "repeated",
+      "evidence": "injected 2,5-dimethoxy-4-iodoamphetamine, (±)-DOI hydrochloride... subcutaneously at a concentration of 10 mg/kg (diluted in sterile saline)... We performed electrophysiological recordings on five different days for each mouse.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not mentioned",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "not mentioned",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "not mentioned",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not mentioned",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head-Twitch Response",
+      "assay_description": "Rate of head-twitches counted in freely moving mice in their home cage 20 min after DOI (10 mg/kg s.c.) or saline injection, used to confirm dose effectiveness.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "subcutaneously at a concentration of 10 mg/kg",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not mentioned",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "freely moving in their cage",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "freely moving in their cage (home cage)",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "freely moving in their cage (home cage)",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 20,
+          "evidence": "Twenty minutes after injection of DOI, these mice showed a rate of 2 HTR/min",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 2,
+        "n_male": 2,
+        "n_female": 0,
+        "n_per_group_min": 2,
+        "evidence": "Two additional male mice of the same strain (19 wk old) were used to evaluate head-twitch responses under DOI.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI (10 mg/kg s.c.) increased head-twitch response rate to ~2 HTR/min and 1.8 HTR/min in the two mice, compared with 0.2 HTR/min after saline injection, confirming dose effectiveness.",
+        "statistics": "",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Twenty minutes after injection of DOI, these mice showed a rate of 2 HTR/min and 1.8 HTR/min, compared to 0.2 HTR/min for either mouse after saline injection.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Only head-twitch rate was measured",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single rate (HTR/min) reported; no within-session time course",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural sequences",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-twitch response is treated as HTR/WDS, not ethological per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social construct measured",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning or memory component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pose-estimation or ML classifier described for HTR scoring",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No multivariate analysis",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "freely moving in their cage",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "home cage as single open space",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Paper does not indicate co-housing during HTR scoring; treated as individual home-cage observation",
+          "confidence": "low"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Home cage testing; food and water typically accessible in home cage",
+          "confidence": "medium"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Single HTR observation period after injection",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "HTR/min rate reported but duration not explicitly stated; treated as brief observation",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "HTR measurement on single day not stated otherwise",
+          "confidence": "low"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Saline comparison was on a separate occasion; not a pre-drug baseline within the same session",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No recordings ≥24 h after dose",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Brief observation, far less than 6 h",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    }
+  ],
+  "judge_notes": [
+    "Dropped all electrophysiology/auditory cortex Neuropixels recording sessions — these are neural recordings, not behavioural assays per rubric (even though sounds were presented to awake mice; the primary outcome was neural activity).",
+    "Locomotion (running on wheel) was extracted from video but only used as a covariate for the neural analysis; not treated as a standalone behavioural assay.",
+    "Only the Head-Twitch Response assay (in 2 additional male mice, freely moving in home cage) is a scoreable behavioural assay with DOI administration.",
+    "Schedule set to 'repeated' because each electrophysiology mouse received DOI on 5 different days; for the HTR cohort the schedule is less clear but compound entry is study-level.",
+    "B4 scored 0: rubric explicitly excludes HTR/WDS from ethological behaviours.",
+    "E8 scored 1 (home cage implies food/water access); candidates disagreed but home-cage testing typically includes ad lib food/water."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0.0,
+    "environmental_complexity_max": 2.73,
+    "recording_duration_max": 0.0,
+    "behavioural_complexity_mean": 0.0,
+    "environmental_complexity_mean": 2.73,
+    "recording_duration_mean": 0.0
+  },
+  "low_confidence_count": 12,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 46077,
+    "output_tokens": 3132,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

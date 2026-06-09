@@ -1,0 +1,512 @@
+{
+  "study_id": "Rahbarnia2023",
+  "doi": null,
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 70,
+    "age_max_days": 84,
+    "evidence": "Forty-nine male C57BL/6J mice (Jackson Laboratories, Bar Harbor, ME) aged between 10 and 12 weeks were used.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 49,
+    "n_female": null,
+    "evidence": "Forty-nine male C57BL/6J mice",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin, TCB-2, M100907",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        0.1,
+        0.3,
+        1.0,
+        3.0
+      ],
+      "doses_raw": "0.3, 1, and 3 mg/kg (acute); 0.1 and 1 mg/kg once daily for 7 days (repeated)",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "multiple",
+      "evidence": "Psilocybin ... dissolved in 0.9% saline solution ... administered subcutaneously 10 min prior to testing ... injections of psilocybin (0, 0.3, 1, and 3 mg/kg) ... injected once daily with assigned doses of psilocybin, for a total of 7 injections.",
+      "confidence": "high"
+    },
+    {
+      "compound": "TCB-2",
+      "doses_mg_per_kg": [
+        0.3,
+        1.0,
+        3.0
+      ],
+      "doses_raw": "0, 0.3, 1, and 3 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "TCB-2 ... dissolved in 0.9% saline solution ... administered interperitoneally 15 min prior to testing.",
+      "confidence": "high"
+    },
+    {
+      "compound": "M100907",
+      "doses_mg_per_kg": [
+        0.1,
+        0.3,
+        1.0
+      ],
+      "doses_raw": "0, 0.1, 0.3, and 1 mg/kg",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "M100907 ... dissolved in a 0.9% saline solution containing 0.3% tween ... administered subcutaneously ... 30 min prior to testing.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Mice were group-housed in temperature- and humidity-controlled colony rooms",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "under a 12-h light-dark cycle (lights off at 7 pm)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Continuous Performance Test (CPT)",
+      "assay_description": "Touchscreen operant task where mice discriminate visual target (S+) from non-target (S-) stimuli for milkshake reward. Tested under baseline (2-s SD), variable SD (1/0.75/0.5/0.25 s), and reduced SD (1 s) conditions following acute and repeated drug administration. Sessions max 45 min or until 100 rewards.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "Psilocybin and M100907 were administered subcutaneously ... TCB-2 was administered interperitoneally",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Mice were first habituated to the touchscreen chambers in a single 20-min session",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice freely moved in chamber to make nose-poke and touch responses",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "Mice undergoing touchscreen training were food restricted to 85-90% of their free-feeding body weight using a 3 h/day limited-access schedule.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "Water was available ad libitum.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 10,
+          "evidence": "Psilocybin and M100907 were administered subcutaneously 10 and 30 min prior to testing, respectively. TCB-2 was administered interperitoneally 15 min prior to testing.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 31,
+        "n_male": 31,
+        "n_female": null,
+        "n_per_group_min": 10,
+        "evidence": "Thirty-one mice were trained for experiments involving the CPT ... psilocybin (n = 11), TCB-2 (n = 10), or M100907 (n = 10).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute high-dose psilocybin (3 mg/kg), TCB-2 (3 mg/kg), and M100907 (0.3-1 mg/kg) reduced hit rate and false alarm rate and induced more conservative responding; psilocybin also reduced d' and increased latencies. No drug effects were observed in the variable-stimulus-duration CPT or following repeated psilocybin injections. Effects coincided with doses that reduced locomotor activity.",
+        "statistics": "Psilocybin: hit rate F(1.873,18.73)=19.98, p<0.001; FA rate F(2.366,23.66)=8.25, p=0.001; d' F(1.754,17.54)=6.36, p=0.010; c F(1.911,19.11)=18.95, p<0.001. TCB-2: hit F(1.605,14.45)=9.98, p=0.002; FA F(2.152,19.66)=6.66, p=0.006; c F(2.002,18.02)=9.00, p=0.002. M100907: hit F(2.727,24.54)=6.67, p=0.002; FA F(2.093,18.84)=9.78, p=0.001; c F(2.245,20.20)=8.52, p=0.002.",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "Psilocybin reduced hit rate ... false alarm rate ... and d' ... These effects were seen at the highest dose of 3 mg/kg. No drug effects were seen on the more difficult CPT or following repeated PSI injections.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "hit rate, false alarm rate, d', response criterion c, response latency, reward collection latency",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Performance summarized per session; no within-session time-course analysis reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural transitions or sequences reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Operant touchscreen responses, not natural ethological behaviours.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing in operant chambers.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "In the CPT, mice learned to distinguish visual targets from non-targets for milkshake reward.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The chambers were controlled using ABET II touchscreen software.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVAs; no PCA/UMAP reported.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "touchscreen operant conditioning chambers",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enclosed refuge in the operant chamber.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "perforated steel floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in testing apparatus.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only touchscreen and reward tray; no enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single chamber with three response windows on one wall; no separate compartments.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice tested individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "A peristaltic liquid pump ... delivered strawberry milkshake ... into a reward-tray.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Drug testing sessions always took place on Tuesdays and Fridays ... Mice were then tested twice on the modified CPT ... tested for a third time ... off-drug.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "Mice were tested for a maximum of 45 min, or until 100 rewards were achieved.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 2,
+          "value": "8-14",
+          "evidence": "Multiple drug test days across experiments 1-3 on Tuesdays and Fridays plus repeated dosing test days.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline CPT trial was reported as a recording session; vehicle control was used.",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Mice completed this last test off-drug following a 72-h drug washout period.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Maximum session was 45 min.",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      }
+    },
+    {
+      "assay_name": "Locomotor Activity Test",
+      "assay_description": "Spontaneous locomotor activity measured in eight Med Associates activity monitor chambers (40 x 40 x 35 cm) with 16x16 infrared photocell array. Distance travelled and ambulatory counts recorded for 60 min after injection, analyzed in 5-min bins.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "Psilocybin and M100907 s.c.; TCB-2 i.p.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Mice were habituated to testing chambers in two 1-h sessions.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice were injected ... and then immediately placed in the activity cages.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Separate cohort; no food in activity chambers during the 1-h recording.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water bottle in activity chambers during recording.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Mice were injected ... and then immediately placed in the activity cages.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 18,
+        "n_male": 18,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "Eighteen mice from a separate cohort were used for locomotor tests. They were assigned into three equal groups (n = 6).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin (3 mg/kg) and TCB-2 (3 mg/kg) significantly reduced locomotor activity over the 1-h session compared to saline. All three doses of M100907 (0.1, 0.3, 1 mg/kg) significantly reduced distance travelled.",
+        "statistics": "Psilocybin: F(3,15)=7.04, p=0.004. TCB-2: F(3,15)=6.06, p=0.007. M100907: F(3,15)=36.22, p<0.001; Time F(11,55)=3.85, p<0.001.",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "Post hoc analysis showed that the 3 mg/kg dose of psilocybin significantly reduced locomotor activity compared to saline control ... All three doses of M100907 significantly reduced the distance that mice traveled when compared to saline control.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Ambulatory counts and measures of distance travelled were then recorded.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The right-hand panels show locomotor activity in 5-min bins across the test session.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence/transition analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor distance via beam-breaks; not an ethological behaviour per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Spontaneous locomotor activity; no learning component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Infrared photocell beam-break system (Med Associates).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVAs.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "activity monitor chambers (Med Associates) measuring 40 × 40 × 35 cm",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter described.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard Med Associates chambers; bedding not mentioned.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single activity monitor chamber.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual testing.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in activity chambers during the test.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Locomotor activity was assessed for an hour after drug administration procedures.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "recorded for a duration comprised of pre-treatment time + 60 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Repeated measures design with 4 dose conditions per drug; drug testing sessions separated by 72-h washout, on Tuesdays and Fridays.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Habituation sessions not reported as analyzed baseline data.",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No post-acute (>=24 h) locomotor recordings reported.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "1-h session.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    }
+  ],
+  "judge_notes": [
+    "All three candidates agreed on 2 assays: CPT (collapsing baseline, variable-SD, and repeated-dosing variants into one paradigm per the rubric's 'different stimulus parameters' and 'acute vs. repeated dosing' rules) and Locomotor Activity. Adopted this consolidation.",
+    "Food restriction for CPT: gptoss said 'no' but the paper explicitly states mice were food-restricted to 85-90% body weight prior to/during training. Used 'before' per qwen/glm.",
+    "Water restriction for CPT: water available ad libitum in home cage; test apparatus has milkshake reward not water bottle, so used 'no' per paper's explicit ad libitum statement.",
+    "D3 (recording days) for CPT: candidates split 2-7 vs 8-14. Given Experiment 1 (4 doses x 3 drug groups, dose order Latin square on Tues/Fri) + Experiment 2 (3 doses) + Experiment 3 (3 test days), individual mice were tested on the CPT on ~8-12 distinct days. Chose 8-14.",
+    "D4 baseline for CPT: training is not 'pre-drug baseline recording' per the rubric (no pre-drug recording on same assay/environment with reported data used for drug comparison beyond vehicle control). Scored 0.",
+    "psychedelic field: included all three drugs (psilocybin + TCB-2 + M100907) since TCB-2 is a 5-HT2A agonist and the paper frames all three as the manipulation of interest."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 6.82,
+    "behavioural_complexity_mean": 3.12,
+    "environmental_complexity_mean": 0.68,
+    "recording_duration_mean": 4.78
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 57675,
+    "output_tokens": 6813,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

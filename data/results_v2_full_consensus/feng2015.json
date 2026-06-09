@@ -1,0 +1,284 @@
+{
+  "study_id": "Feng2014",
+  "doi": "10.1007/s00213-014-3756-2",
+  "species": "rat",
+  "strain": "Sprague-Dawley",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Male Sprague-Dawley rats (226 -250 g upon arrival, Charles River, Portage, MI)",
+    "confidence": "low"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": 0,
+    "evidence": "Male Sprague-Dawley rats (226 -250 g upon arrival)",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [],
+      "doses_raw": "0.0, 1.0, 5.0, and 25.0 μg/0.5 μl/side",
+      "vehicle": "saline",
+      "route": "other",
+      "schedule": "repeated",
+      "evidence": "DOI (RBI-Sigma, Natick, MA) were dissolved in 0.9 % saline (SAL) and were microinjected... DOI at 0.0, 1.0, 5.0, and 25.0 μg/0.5 μl/side, ... bilateral microinjection (0.5 μl at 0.5 μl/min)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "rats were first handled and habituated to the custom-built two-compartment shuttle boxes (Med Associates, VT, USA) for 2 days (20 min/day)",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "housed in pairs in transparent polycarbonate cages",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "maintained on a 12:12 light/dark schedule... All behavioral tests were conducted in the light cycle between 9:00 and 17:00",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Conditioned Avoidance Response",
+      "assay_description": "Two-compartment shuttle box (Med Associates). 30 trials/session during training and challenge tests, 20 trials/session for the acute drug tests in Exp 1. CS = 76 dB white noise (10 s); US = 0.8 mA footshock up to 5 s. Avoidance, escape, and intertrial crossings recorded. DOI microinfused into mPFC or NAs; CLZ given systemically.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "Clozapine ... administrated subcutaneously at 10.0 mg/kg... DOI ... microinjected through ... injector (Plastics One), which extended ... below the tips of the guide cannulas in the NAs or mPFC",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "rats were first handled and habituated to the custom-built two-compartment shuttle boxes ... for 2 days (20 min/day)",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "rats were placed in the CAR boxes and tested for avoidance",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Food and water were provided ad libitum [in home cage]; no food in apparatus during testing",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Food and water were provided ad libitum [in home cage]; no water in apparatus during testing",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 45,
+          "evidence": "rats were injected with CLZ 10 mg/kg. Thirty minutes later, they were centrally infused ... tested for avoidance at 45 and 95 min after the CLZ injection",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 119,
+        "n_male": 119,
+        "n_female": 0,
+        "n_per_group_min": 6,
+        "evidence": "Only those rats (119 out of 156) that reached the training criterion ... were used... n =6,8,8 for VEH; n =7, 8, 7 for CLZ",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Intra-mPFC quinpirole dose-dependently potentiated CLZ's acute avoidance disruption while intra-mPFC DOI marginally reduced it; NAs infusions had no effect. Repeated CLZ produced tolerance (progressive recovery of avoidance), and intra-mPFC DOI (25 μg/side) abolished expression of CLZ tolerance whether given during induction (Exp 2) or immediately before the challenge test (Exp 3).",
+        "statistics": "Exp1 mPFC-DOI: main effect of DOI F(3,24)=3.156, p=0.043; DOI×time F(6,48)=2.340, p=0.046; marginal at 45 min F(3,24)=2.760, p=0.064. Exp2 challenge: CLZ F(1,38)=31.796, p<0.001; DOI F(2,38)=6.412, p=0.004; interaction F(2,38)=4.295, p=0.021. Exp3 challenge: F(2,21)=9.556, p=0.001; CLZ-DOI25 vs CLZ-SAL p=0.024.",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "intra-mPFC infusion of DOI at 25.0 μg/0.5 μl/side during the induction period of CLZ tolerance completely abolished CLZ tolerance ... CLZ-DOI 25 group did not differ from the VEH-SAL group (p=0.344), but had significantly lower avoidance than the CLZ-SAL group (p=0.024)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "avoidance response ... escape ... intertrial crossing",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "tested at 45 and 95 min after the CLZ injection; these are separate test bouts with home-cage interval, not within-session time-course binning",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no transition or sequence analysis reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "measures are conditioned avoidance, escape, and intertrial crossings - not natural ethological behaviours",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "rats tested individually in shuttle box",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "trained to acquire avoidance responding in 10 sessions; CS-US association is learned",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "custom-built two-compartment shuttle boxes (Med Associates) - beam-break / standard operant recording",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "only univariate ANOVAs reported",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "custom-built two-compartment shuttle boxes (Med Associates, VT, USA)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "shuttle box has no enclosed refuge",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "footshock ... delivered to the metal grid floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent in shuttle box",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment items in apparatus",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "two-compartment shuttle boxes",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "rats tested individually in the shuttle box",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food or water inside testing apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "predrug day ... five drug test days ... retraining ... challenge test",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "30 trials per session with CS 10 s, US up to 5 s, and intertrial interval 30-60 s; in Exp 1, 20 trials tested at 45 and 95 min after CLZ",
+          "confidence": "medium"
+        },
+        "D3_recording_days": {
+          "score": 3,
+          "value": "15+",
+          "evidence": "10 training sessions ... predrug retraining ... four 3-day cycles of drug testing (Exp 1) or five drug test days plus retraining and challenge (Exp 2/3)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "predrug retraining session ... predrug day avoidance data reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "One day after the 5th CLZ test, all rats were retrained drug-free ... then challenged with CLZ; challenge test occurs >24 h after last repeated dose",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "individual sessions well under 6 h",
+          "confidence": "high"
+        },
+        "raw_total": 7
+      }
+    }
+  ],
+  "judge_notes": [
+    "Merged gptoss's split of 'CAR' and 'Intertrial Crossing' into a single CAR assay - both are measured in the same apparatus during the same recording session and are sub-measures of one paradigm (per rubric: composite sub-scores count as separate measures within ONE assay).",
+    "Collapsed Exp 1, 2, and 3 into one CAR assay since they are the same behavioural paradigm under different drug/timing/route manipulations (rubric: same test under different drug doses/regimens = 1 assay).",
+    "B1 scored 1 (2-3 measures): avoidance, escape, intertrial crossing.",
+    "D2 scored 1 (15-60 min): 30 trials with 10 s CS + up to 5 s US + 30-60 s ITI per trial yields ~20-30 min per session; this is consistent across candidates that estimated it, though duration is not explicitly stated as a single number.",
+    "D3 scored 3 (15+): training (10 sessions) + predrug retraining + multiple drug test days + challenge clearly exceeds 15 recording days for this assay across the study.",
+    "Route set to 'other' for DOI dosing entry since central microinjection into mPFC/NAs (intraparenchymal) is not strictly i.c.v.; clarified in evidence.",
+    "Food/water restriction scored 'during' (default for standard short test, ad libitum in home cage)."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 9.55,
+    "behavioural_complexity_mean": 2.5,
+    "environmental_complexity_mean": 1.36,
+    "recording_duration_mean": 9.55
+  },
+  "low_confidence_count": 1,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 49199,
+    "output_tokens": 4489,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

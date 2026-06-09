@@ -1,0 +1,494 @@
+{
+  "study_id": "Odland2020",
+  "doi": null,
+  "species": "mouse",
+  "strain": "NMRI",
+  "age": {
+    "value": "adult",
+    "age_min_days": 119,
+    "age_max_days": 182,
+    "evidence": "17-26 weeks old at the time of testing",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "female",
+    "n_male": null,
+    "n_female": 100,
+    "evidence": "Female NMRI mice from Envigo were used for the experiments (100 total)",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin, DOI",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        0.5,
+        1.0,
+        2.0
+      ],
+      "doses_raw": "0.5, 1.0, and 2.0 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Psilocybin was dissolved in isotonic saline (0.9 % NaCl). All drugs were administered by intraperitoneal injection at 10 mL/kg ... psilocybin, which was given 15 min before testing.",
+      "confidence": "high"
+    },
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "1.0 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "DOI ... was dissolved in isotonic saline (0.9 % NaCl). All drugs were administered by intraperitoneal injection at 10 mL/kg and given 30 min before testing.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Mice were group housed five mice per cage in individually ventilated cages",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "The animals were housed on a 12/12 h light cycle with lights on at 07 h, and experiments were performed between 09 h and 17 h.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Marble Burying Test",
+      "assay_description": "Transparent cages (42.5 × 26.5 × 18 cm) with ~4.5 cm aspen sawdust and 20 glass marbles in 5×4 pattern; treatment-blinded observer counted marbles buried >1/2 at 10, 20, and 30 min (dose-response) or at 10 min (interaction experiments). Tested psilocybin (0.5, 1.0, 2.0 mg/kg), DOI (1.0 mg/kg), citalopram (2.5 mg/kg) alone and with 5-HT2A antagonist M100907 or 5-HT2C antagonist SB242084.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs were administered by intraperitoneal injection at 10 mL/kg",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "After transfer to the experimental room, the animals were acclimatized for a minimum of one hour before behavioral testing",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "The MB test was performed in transparent cages ... freely moving",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Food and water were not available during experiments.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Food and water were not available during experiments.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 15,
+          "evidence": "psilocybin, which was given 15 min before testing; other drugs given 30 min before testing",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": 0,
+        "n_female": null,
+        "n_per_group_min": 9,
+        "evidence": "n = 9 (Fig 1); n = 10 (Fig 2, 4); n = 9-10 (Fig 3)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin (1.0 and 2.0 mg/kg) significantly reduced total marbles buried over 30 min; all doses reduced digging in the first 10 min. DOI (1.0 mg/kg) reduced digging, an effect blocked by the 5-HT2A antagonist M100907 but not the 5-HT2C antagonist SB242084. Citalopram's effect was blocked by SB242084 but not M100907. Psilocybin's effect was not blocked by either antagonist.",
+        "statistics": "Psilocybin total: F3,32=5.39, p=0.004; 1.0 mg/kg p=0.002, 2.0 mg/kg p=0.002. Time bins: F2,64=24.66, p<0.001; treatment×time F6,64=4.01, p=0.002. DOI: F1,54=15.50, p<0.001; DOI×antagonist F2,54=4.06, p=0.023; DOI vs DOI+M100907 p<0.001. Citalopram: t17=3.24, p=0.005; CIT+SB t18=-2.60, p=0.018. Psilocybin interaction: t18=3.52, p=0.002; psilocybin+M100907 t18=-1.37, p=0.188; psilocybin+SB t18=0.18, p=0.857.",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "1.0 (p = 0.002) and 2.0 mg/kg (p = 0.002) psilocybin significantly reduced total digging at the 30 min time point ... DOI significantly reduced digging ... this effect was completely blocked by M100907.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The number of marbles buried > 1/2 served as a measure of repetitive digging behavior",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "counted the number of marbles visible at 10, 20, and 30 min ... Time-dependent analysis ... significant main effect of time (F2,64 = 24.66; p < 0.001)",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The marble burying (MB) test is a test used to study repetitive digging behavior in mice",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual animals were tested",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Marble burying does not require learning or memory",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "A treatment-blinded observed counted the number of marbles visible",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate ANOVAs reported",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "The MB test was performed in transparent cages (LxWxH: 42.5 × 26.5 × 18 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enclosed refuge described in the cage",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "containing ~4.5 cm aspen sawdust",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "nesting material not mentioned",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment objects reported",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "transparent cages ... Twenty glass marbles were placed with equal distance in a 5 × 4 pattern",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual animals were tested",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Food and water were not available during experiments.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Single 30 min test per animal per treatment",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "counted the number of marbles visible at 10, 20, and 30 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test day per treatment; multiple tests separated by ≥1 week washout are separate experiments, not multiple recording days for one assay",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline recording reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no recordings ≥24 h after dosing for this assay",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30 min test duration",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Locomotor Activity Test",
+      "assay_description": "Transparent cages (42.5 × 26.5 × 18 cm) on black background; movement recorded by overhead camera with EthoVision XT for 45 min in 5-min bins; distance traveled measured. Tested psilocybin (0.5, 1.0, 2.0 mg/kg).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs were administered by intraperitoneal injection at 10 mL/kg",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Recording started immediately after placing the animals in the test cages",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Movement was recorded by a camera mounted above the test cages",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Food and water were not available during experiments.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Food and water were not available during experiments.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 15,
+          "evidence": "psilocybin, which was given 15 min before testing",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 36,
+        "n_male": 0,
+        "n_female": 36,
+        "n_per_group_min": 9,
+        "evidence": "n = 9 (Fig 1C/D)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin (0.5, 1.0, 2.0 mg/kg) did not significantly affect total distance traveled or distance in 5-min time bins over 45 min, indicating that the reduction in marble burying was not due to general motor suppression.",
+        "statistics": "Total distance: F3,32=0.61, p=0.616. Time bins: F8,256=60.19, p<0.001 (time); F3,32=0.81, p=0.496 (treatment); F24,256=0.85, p=0.677 (interaction).",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "The ANOVA of motor activity revealed no significant main effect of treatment on total distance traveled during 45 min (F3,32 = 0.61; p = 0.616).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Distance traveled served as a measure of locomotor activity.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "movement was recorded for 45 min in 5-min time bins",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "locomotor distance is not an ethological behaviour per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animals tested alone",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "locomotor test does not require learning",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EthoVision XT (Noldus) — position tracking, not behavioural classifier",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate ANOVAs reported",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "The LA test was performed in transparent cages (LxWxH: 42.5 × 26.5 × 18 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter described",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "transparent cages on a black background; no bedding mentioned for LA test",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "nesting material not mentioned",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment objects reported",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "transparent cages without partitions",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Animals recorded individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Food and water were not available during experiments.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Recording started immediately after placing the animals in the test cages and movement was recorded for 45 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "movement was recorded for 45 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single LA test session per animal",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline recording reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no post-acute recordings reported",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "45 min test duration",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Two distinct assays kept: Marble Burying and Locomotor Activity (separate apparatus/protocols measuring different behavioural domains).",
+    "B1 for MB scored 0 (1 measure: marbles buried; counting at multiple timepoints is temporal dynamics of one measure, not separate measures), agreeing with qwen over glm/gptoss.",
+    "D3 for MB scored 0 — repeated testing of the same animal across weeks reflects re-use of animals in different experiments, not multiple recording days for one assay; each animal contributes one recording day per treatment instance.",
+    "Setup habituation scored 'no' — paper explicitly states animals were placed in apparatus and recording started immediately; only room acclimation occurred, which is not setup habituation.",
+    "DOI doses_mg_per_kg only included 1.0 mg/kg since the MB dose-response for DOI was previously published and not re-run here."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 1.88,
+    "environmental_complexity_mean": 0.68,
+    "recording_duration_mean": 1.36
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 45179,
+    "output_tokens": 6055,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

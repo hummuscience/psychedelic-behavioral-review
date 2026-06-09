@@ -1,0 +1,492 @@
+{
+  "study_id": "TorradoPacheco2023",
+  "doi": "10.1038/s41386-023-01545-z",
+  "species": "rat",
+  "strain": "Long-Evans",
+  "age": {
+    "value": "adult",
+    "age_min_days": 56,
+    "age_max_days": 56,
+    "evidence": "Long-Evans rats of both sexes were bred in house or purchased from Charles River Laboratories (CRL, Wilmington, MA) at 8 weeks of age.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": 24,
+    "n_female": 25,
+    "evidence": "Rats (n = 49, 24 males and 25 females) were pair-housed in same-sex pairs",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin, DOI",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "1 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Psilocybin... were dissolved in saline to a concentration of 1 mg/ml... The dosage of 1 mg/kg for psilocybin... All injections were intraperitoneal. Saline, DOI or psilocybin were injected 20 min before behavioral testing.",
+      "confidence": "high"
+    },
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "1 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "DOI (Sigma-Aldrich, cat #D101) were dissolved in saline... The dosage of 1 mg/kg for psilocybin and DOI...",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "After acclimation and handling, animals were food restricted to 85-90% of their free-feeding weight",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Rats (n = 49, 24 males and 25 females) were pair-housed in same-sex pairs",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "yes",
+      "evidence": "under a 12 h reverse light/dark cycle with lights off at 9:00 am. All behavioral tasks were conducted during the active dark phase.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Operant Extradimensional Set-Shifting Task",
+      "assay_description": "Operant set-shifting task with two nose-poke ports. Rats responded according to a 'Light' rule (lit port rewarded) or a 'Side' rule (specific side rewarded). Rule changed after 10 consecutive correct responses. Session ended when criterion was reached on four rule sets or after 45 min. Measures: trials-to-criterion, completed sets, fraction correct, response time, streaks. Tested under saline, psilocybin (1 mg/kg), DOI (1 mg/kg), ketanserin pretreatment, and SB242084 pretreatment.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All injections were intraperitoneal.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Paper describes training but does not explicitly describe pre-task apparatus habituation separate from training.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Animals freely performed nose-poke responses in operant chambers; no restraint mentioned.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "animals were food restricted to 85-90% of their free-feeding weight before training on behavioral tasks began",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 20,
+          "evidence": "Saline, DOI or psilocybin were injected 20 min before behavioral testing.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 35,
+        "n_male": 18,
+        "n_female": 17,
+        "n_per_group_min": 11,
+        "evidence": "Adult rats of both sexes (n = 35, 18 males and 17 females) were trained in the task... n = 15 [psilocybin], n = 14 [saline], n = 12 [DOI], n = 14 [KET+PSI], n = 11 [KET+SAL], n = 11 [SB+PSI], n = 11 [SB+SAL]",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute psilocybin (1 mg/kg) improved set-shifting performance by reducing trials-to-criterion and producing fewer but longer streaks of correct responses, without changing the number of completed sets or overall fraction correct. DOI (1 mg/kg) impaired performance, reducing completed sets and fraction correct. The 5HT2A antagonist ketanserin blocked psilocybin's effect (and alone improved performance), while the 5HT2C antagonist SB242084 did not block psilocybin's effect. No sex differences observed.",
+        "statistics": "Psilocybin trials-to-criterion p=0.0005 (paired t-test); response time p=0.008; streaks p=0.025; streak length p=0.034; DOI completed sets p=0.012; DOI fraction correct p=0.005; KET+PSI trials-to-criterion p=0.231; KET+SAL trials-to-criterion p=0.026; SB+PSI trials-to-criterion p=0.032.",
+        "direction": "mixed",
+        "dose_dependent": "n/a",
+        "sex_dependent": "no",
+        "time_dependent": "n/a",
+        "evidence": "Psilocybin (1 mg/kg, i.p.) improved performance on the set-shifting task, as indicated by a significant decrease in the average number of trials rats needed to reach criterion... DOI (1 mg/kg, i.p.)... rats completed significantly fewer sets when treated with DOI... Ketanserin blocked the effect of psilocybin on cognitive flexibility",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "we calculated trials to criterion, number of completed sets, and fraction of correct responses... We also calculated 'streaks'... Lastly, we computed response time",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Metrics averaged across sets within a session; no within-session time-binned analyses reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Streaks of consecutive correct responses are counted but no transitional/sequence analyses (Markov chains, microstructure) reported.",
+          "confidence": "medium"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Operant nose-poke responses; no natural behaviours scored.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animals tested individually in operant chambers.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "set-shifting task, which tests an animal's ability to modify behavior, among competing and previously learned strategies",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard operant chamber outputs (nose-poke counts) used; no pose estimation or behavioural classifier.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Multiple univariate tests (t-tests, ANOVAs); no PCA/clustering reported.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "operant set-shifting task",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard operant chamber; no shelter mentioned.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard operant chamber; no bedding mentioned.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent in operant chamber.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in operant chamber.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single operant chamber with two nose-poke ports; no separate compartments.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Animals tested individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "the lit port was rewarded... food reward delivered during operant task",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Three sessions of stable behavior were used as a baseline for each animal. For main treatment sessions... injections were given 20 min prior to the start of the session.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "Each session lasted until criterion was reached on four rule sets, or until 45 min elapsed.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 3,
+          "value": "15+",
+          "evidence": "Animals were tested in daily sessions; reached stability over many sessions, then 3 baseline days plus treatment day; animals received multiple injections with 2 weeks washout, so total recording days for this assay exceeds 15.",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Three sessions of stable behavior were used as a baseline for each animal.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Behavioral testing was at 20 min post-injection; no >=24 h post-acute behavioural measurement reported in this assay.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sessions <=45 min.",
+          "confidence": "high"
+        },
+        "raw_total": 6
+      }
+    },
+    {
+      "assay_name": "Pavlovian Reversal Learning Task",
+      "assay_description": "Pavlovian appetitive/aversive reversal learning task. Two CSs (tone or flashing light) paired with food (appetitive) or foot-shock (aversive) US. Animals performed 10 sessions, with CS-US contingencies reversed on session 6. Measure: R-value (food-port responses during CS / responses during second half of ITI).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All injections were intraperitoneal.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Pavlovian conditioning chamber; freely moving animals.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "animals were food restricted to 85-90% of their free-feeding weight before training on behavioral tasks began",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 20,
+          "evidence": "Injections of psilocybin (1 mg/kg) or an equivalent volume of saline were given 20 min before starting the task on the reversal session (session 6).",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 13,
+        "n_male": 6,
+        "n_female": 7,
+        "n_per_group_min": 6,
+        "evidence": "Rats were injected with psilocybin (1 mg/kg, n = 7, 3 males and 4 females) or an equivalent volume of saline (n = 6, 3 of each sex)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin (1 mg/kg) given before the reversal session did not affect Pavlovian reversal learning. Both saline and psilocybin groups successfully reversed their cue-outcome associations, with no group differences in R-values across sessions or in within-session learning during the reversal session.",
+        "statistics": "Appetitive cue: main effect of Treatment p=0.472; Session x Treatment p=0.179 (mixed-effects). Aversive cue: main effect of Treatment p=0.834; Session x Treatment p=0.993. Within-session reversal (appetitive): main effect of Timepoint p=0.009; Treatment x Timepoint p=0.487. Aversive: Timepoint p=0.371; Treatment x Timepoint p=0.754.",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "No differences were found when comparing responses to each contingency pairing for the two treatment groups... there were no differences between groups (interaction effect Treatment x Timepoint, p = 0.487).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "R-value for appetitive cue and for aversive cue (plus early/late within-session analyses)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "we plotted the R-value in early (first 10) and late (last 10) trials in that session",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transitional or sequence analyses reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Food-port entry responses to CS; no natural-repertoire behaviours scored.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing; no social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "reversal learning involves updating cue-outcome (or action-outcome) associations",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard conditioning chamber port-entry counts; no behavioural classifier.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate mixed-effects and ANOVA only.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Pavlovian conditioning chamber",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard conditioning chamber; no shelter.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Conditioning chamber with metal grid (foot-shock); no bedding.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard apparatus; no enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single conditioning chamber; no separate compartments.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Animals tested individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "each was paired either with a mild foot-shock or a food reward",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Animals performed ten task sessions",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Session duration not explicitly stated as a numeric value.",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 2,
+          "value": "8-14",
+          "evidence": "Animals performed ten task sessions",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Sessions 1-5 (pre-reversal) recorded before reversal session 6 with drug; baseline data reported and used in analysis.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "After drug on session 6, sessions 7-10 were recorded, i.e., >=24 h after psilocybin administration.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No single session spans >=6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      }
+    }
+  ],
+  "judge_notes": [
+    "Both candidates agreed on two distinct assays (operant set-shifting and Pavlovian reversal learning); all drug arms (psilocybin, DOI, ketanserin±psilocybin, SB242084±psilocybin) collapsed into a single set-shifting assay per rubric.",
+    "D3 for set-shifting set to 15+: training to stability typically requires many sessions plus 3 baseline + treatment days, and animals received up to 4 injections with 2-week washouts in daily sessions, exceeding 15 recording days for the assay.",
+    "D5 for reversal learning scored Yes because sessions 7-10 occurred after psilocybin given on session 6 (≥24 h post-dose with behavioural data reported).",
+    "Housing handling scored 'yes' (explicit mention of 'acclimation and handling') rather than 'not_reported'.",
+    "E8 set to Yes for both assays since food rewards are delivered inside the apparatus during the session.",
+    "B3 scored 0: streak counting is a summary statistic, not a sequence/transition analysis."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 8.18,
+    "behavioural_complexity_mean": 3.75,
+    "environmental_complexity_mean": 1.36,
+    "recording_duration_mean": 7.5
+  },
+  "low_confidence_count": 6,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm"
+  ],
+  "judge_usage": {
+    "input_tokens": 47418,
+    "output_tokens": 7304,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

@@ -1,0 +1,287 @@
+{
+  "study_id": "Castro-Nin2024",
+  "doi": "10.1007/s00213-024-06572-2",
+  "species": "rat",
+  "strain": "Sprague Dawley",
+  "age": {
+    "value": "adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Nine Sprague Dawley male adult rats",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 9,
+    "n_female": null,
+    "evidence": "Nine Sprague Dawley male adult rats were maintained on a 12-h light/dark cycle",
+    "confidence": "high"
+  },
+  "psychedelic": "Noribogaine",
+  "dosing": [
+    {
+      "compound": "Noribogaine",
+      "doses_mg_per_kg": [
+        20.0,
+        40.0
+      ],
+      "doses_raw": "noribogaine 20 mg/kg (N20, six rats), noribogaine 40 mg/kg (N40, seven rats)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "rats either received noribogaine 20 mg/kg (N 20 , six rats), noribogaine 40 mg/kg (N 40 , seven rats), or saline solution (Control, nine rats) i.p.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "Animals were housed individually in transparent cages (40 × 30 × 20 cm)",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "maintained on a 12-h light/dark cycle (lights on at 06.00 AM). Experimental sessions were conducted during the light period, between 11 AM and 5 PM",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "no",
+      "evidence": "transparent cages (40 × 30 × 20 cm) containing wood shaving material",
+      "confidence": "medium"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Polysomnographic sleep-wake recording",
+      "assay_description": "6-hour continuous EEG (M1, S1) + EMG recording in a sound-attenuated chamber, with rats freely moving in their transparent home-cage-style recording box. Sleep-wake states (W, LS, SWS, REM) scored in 10-s epochs; total time, episode number, episode duration, and latencies analyzed.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "animals were injected with a noribogaine dose or vehicle i.p.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "At the end of the surgical procedures, they were adapted to the recording chamber for at least 4 days.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "The recordings were performed through a rotating commutator, to allow the rats to freely move within the recording box.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "Animals were housed individually in transparent cages ... with water and food ad libitum.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "with water and food ad libitum",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Before the beginning of the recordings, animals were injected with a noribogaine dose or vehicle i.p.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 22,
+        "n_male": 22,
+        "n_female": 0,
+        "n_per_group_min": 6,
+        "evidence": "N: Control = 9; N 20 = 6; N 40 = 7.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute i.p. noribogaine (20 and 40 mg/kg) increased wakefulness and decreased slow-wave sleep over a 6-hour recording, while persistently suppressing REM sleep (reduced total REM, fewer REM episodes, and markedly delayed REM latency). Effects peaked in the first 2 h and were dose-dependent, with REM suppression lasting through the entire recording at the high dose.",
+        "statistics": "W: F(2,19)=12.69, p=0.0003 (Ctrl vs N20 p=0.006; Ctrl vs N40 p=0.0001). SWS: F(2,19)=11.18, p=0.0006. REM: F(2,19)=20.62, p=0.00001. REM latency: F(2,19)=49.90, p=0.00000002. REM from first SWS: F(2,19)=36.17, p=0.0000003 (N20 vs N40 p=0.045).",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "both noribogaine doses significantly promoted W ... while significantly reducing SWS ... and REM ... REM latency significantly increased for both doses",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 3,
+          "value": "7+",
+          "evidence": "Total time spent in W, LS, SWS, and REM sleep, as well as the duration and number of episodes ... Sleep latencies were also evaluated.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "we divided our recordings into three blocks of 2 h ... peak effects for both doses occurred within the first 2 h",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of transitions/sequences between states reported beyond episode counts/durations.",
+          "confidence": "medium"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only EEG/EMG-defined sleep-wake states scored; no natural behaviours measured.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animals were housed individually and recorded alone.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Polysomnographic recording, no learning or memory component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The states of sleep and wakefulness were determined in 10-s epochs following the criteria previously employed by our group (manual scoring).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVAs on separate measures; no PCA/clustering reported.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "Animals were housed individually in transparent cages (40 × 30 × 20 cm) containing wood shaving material ... Experimental sessions were conducted ... in a sound-attenuated chamber",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Transparent cage with wood shavings; no enclosed refuge described.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "transparent cages (40 × 30 × 20 cm) containing wood shaving material",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material mentioned in the testing cage.",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects described in the recording cage.",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "transparent cages (40 × 30 × 20 cm)",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Animals were housed individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "with water and food ad libitum",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 2,
+          "value": "Continuous monitoring",
+          "evidence": "we recorded animals during 6 h following i.p. administration",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "recorded animals during 6 h",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single 6-h recording session per treatment; cross-over animals contribute separate days per condition but each assay condition is one recording day.",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline recording in the same assay; saline control was a separate session/group.",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recordings ended within 6 h of administration; no ≥24 h follow-up.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "6-hour session does not exceed 6 h threshold.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    }
+  ],
+  "judge_notes": [
+    "Only one behavioural assay (polysomnographic sleep-wake recording) is present; qwen and gptoss returned empty assay lists, glm provided the assay scoring which was used as the base and verified against the paper.",
+    "B1 upgraded to 7+ because the paper reports total time, number of episodes, and episode duration for each of 4 states plus latencies (>7 distinct measures).",
+    "DOI reconstructed as 10.1007/s00213-024-06572-2 from supplementary link in paper.",
+    "n_total set to 22 (sum across groups: 9+6+7); n_male=22 since all subjects were male.",
+    "D3 set to 1: each treatment condition was a single 6-h recording; cross-over design uses different days for different conditions but per-condition is a single recording day for the assay.",
+    "D4 set to No: saline control was a separate session/animal-condition, not a pre-drug baseline within the same recording.",
+    "Enrichment_housing set to 'no' since wood shavings (bedding) are the only home-cage feature mentioned; no enrichment items reported."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 5.0,
+    "environmental_complexity_max": 4.09,
+    "recording_duration_max": 5.45,
+    "behavioural_complexity_mean": 5.0,
+    "environmental_complexity_mean": 4.09,
+    "recording_duration_mean": 5.45
+  },
+  "low_confidence_count": 1,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 37902,
+    "output_tokens": 3657,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

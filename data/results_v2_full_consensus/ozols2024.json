@@ -1,0 +1,287 @@
+{
+  "study_id": "Ozols2024",
+  "doi": "10.1101/2024.05.21.595211",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "adult",
+    "age_min_days": 120,
+    "age_max_days": 255,
+    "evidence": "Behavioral testing was performed on 4-8.5 month old mice",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Both male and female mice were used for all experiments.",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        0.1,
+        0.3,
+        1.0
+      ],
+      "doses_raw": "0.0mg/kg, 0.1mg/kg, 0.3mg/kg, or 1.0mg/kg of body weight",
+      "vehicle": "water",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Drug or vehicle was administered via intraperitoneal (i.p.) injection at a final concentration of 0.0mg/kg, 0.1mg/kg, 0.3mg/kg, or 1.0mg/kg of body weight. Animals were tested with each dose in randomized order with a washout period >= 3 days between tests.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "Behavioral testing was performed on 4-8.5 month old mice habituated to handling for 5min/day x 3 days.",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "Animals were housed on a 12-hour light/dark cycle with ad libitum access to food and water.",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "Animals were housed on a 12-hour light/dark cycle",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not stated",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head-Twitch Response (HTR)",
+      "assay_description": "Mice placed in 11cm diameter glass beaker surrounded by copper wire coil for 30 min recording; only last 15 min analyzed. HTRs detected via magnetometer signal processed by automated MATLAB script (Butterworth band-pass 70-110 Hz). Tested under combinations of DOI doses (0, 0.1, 0.3, 1.0 mg/kg) and optogenetic inhibition (HR/yellow light) or activation (ChR/blue light) of PFC 5-HT2AR+ neurons.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Drug or vehicle was administered via intraperitoneal (i.p.) injection",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "24 hours prior to HTR experiments, mice were habituated to optogenetic patch cords for 10min.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "mice were placed in an 11cm diameter glass beaker ... for 30 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Mice tested in glass beaker; no food in apparatus during recording.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Mice tested in glass beaker; no water in apparatus during recording.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Immediately following administration of either vehicle or DOI (i.p.), mice were placed in an 11cm diameter glass beaker ... for 30 min",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "When there were at least three animals per sex, data were analyzed with sexes combined and with males and females separately.",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "DOI dose-dependently increased HTRs in mice. Optogenetic activation of PFC 5-HT2AR+ neurons alone (without agonist) was not sufficient to induce HTRs. Optogenetic inhibition of PFC 5-HT2AR+ neurons prevented DOI-induced HTRs in male mice but not female mice. Conversely, optogenetic activation augmented DOI-induced HTRs in female mice but not male mice.",
+        "statistics": "Repeated measures two-way ANOVA with Šídák's post-hoc tests; Geisser-Greenhouse correction applied where appropriate. Specific F/p values not extracted in main text.",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "yes",
+        "time_dependent": "n/a",
+        "evidence": "DOI administration (1mg/kg) significantly increased the number of HTRs in control mice (non-opsin expressing) compared to vehicle treated mice ... optogenetic inhibition of 5HT2AR+ cells in the PFC, in Htr2a-Cre+/-;Ai39+/- (HR expressing) mice, prevented this DOI-induced increase in HTR ... in female mice, optogenetic stimulation increased the number of DOI-induced HTRs in ChR-expressing female mice compared to non-ChR expressing female mice.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Only the number of HTRs was quantified.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "only the last 15 min of each recording session were analyzed (single total count).",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transitional or sequential analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-twitch response is a drug-induced behavior, explicitly excluded from ethological behaviors per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice tested alone in glass beaker; no social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR does not require learning or memory.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Automated head-twitch detection relied on a MATLAB script ... The script rejected frequencies from the raw voltage data outside of 70 - 110 Hz, via a Butterworth band-pass filter. This is signal-thresholding of magnetometer voltage, not video-based pose estimation or ML behavioral classification.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate ANOVA on HTR counts reported.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "mice were placed in an 11cm diameter glass beaker",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Glass beaker provides no shelter or refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Glass beaker floor; no bedding mentioned.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in beaker.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in beaker.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "11cm diameter glass beaker is a single open compartment.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each mouse tested individually in the beaker.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in beaker during recording.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Animals were tested with each dose in randomized order with a washout period >= 3 days between tests. Each animal underwent multiple HTR sessions across doses and light conditions.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "mice were placed in an 11cm diameter glass beaker ... for 30 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Ai32+ mice underwent HTR experiments at 0.0mg/kg, 0.1mg/kg, 0.3mg/kg, and 1.0mg/kg doses of DOI ... with a washout period >= 3 days between tests; each dose × light condition recorded on separate days.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "HTRs of Ai39+ mice were tested following 0.0mg/kg and 1.0mg/kg doses of DOI. Vehicle (0 mg/kg) sessions serve as within-subject baseline recordings with reported data.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recording occurred immediately after each injection; no post-acute (>=24 h after last dose) recording for the same dose.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sessions were 30 min, well under 6 hours.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    }
+  ],
+  "judge_notes": [
+    "All three candidates identified a single behavioural assay (HTR); merged into one consolidated entry.",
+    "B7 (automated classification): scored 0 per rubric — MATLAB band-pass thresholding of magnetometer voltage is signal-processing on a non-position sensor, not pose estimation or ML behavioural classification. Overruled gptoss which scored 1.",
+    "Setup_habituation: scored 'yes' — paper explicitly states patch-cord habituation 24 h prior to HTR experiments (a separate pre-test exposure to the testing setup).",
+    "D1 continuity: scored 'Multiple discrete sessions' — each animal was tested across multiple dose × light-condition combinations on separate days with >=3 day washouts.",
+    "D4 baseline: scored 'Yes' — vehicle (0 mg/kg) sessions were run and reported as within-subject baseline data for the same assay.",
+    "Dosing schedule: scored 'acute' — although mice received multiple injections across the study, each test is a single acute dose with long (>=3 day) washouts, treated as independent acute exposures."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0.0,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 5.45,
+    "behavioural_complexity_mean": 0.0,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 5.45
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 42502,
+    "output_tokens": 4335,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

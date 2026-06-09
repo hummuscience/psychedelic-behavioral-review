@@ -1,0 +1,326 @@
+{
+  "study_id": "delaFuenteRevenga2022",
+  "doi": "10.1021/acschemneuro.2c00170",
+  "species": "mouse",
+  "strain": "C57BL/6",
+  "age": {
+    "value": "adult",
+    "age_min_days": 56,
+    "age_max_days": 140,
+    "evidence": "Adult (8 -20 weeks old) C57BL/6 male mice",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Adult (8 -20 weeks old) C57BL/6 male mice (Jackson Laboratory)",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI, LSD",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        0.5,
+        1.0,
+        2.0
+      ],
+      "doses_raw": "DOI (0.5 mg/kg), DOI (1 mg/kg), DOI (2 mg/kg)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "repeated",
+      "evidence": "repeated (4 days) administration of the psychedelic 1-(2,5-dimethoxy-4-iodophenyl)-2-aminopropane (DOI)... All drugs were administered in saline (0.9% NaCl) as vehicle... administered intraperitonally (i.p.)",
+      "confidence": "high"
+    },
+    {
+      "compound": "LSD",
+      "doses_mg_per_kg": [
+        0.2
+      ],
+      "doses_raw": "0.2 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "repeated",
+      "evidence": "Mice were administered LSD (0.2 mg/kg) every day for 4 days",
+      "confidence": "high"
+    },
+    {
+      "compound": "Lisuride",
+      "doses_mg_per_kg": [
+        0.4,
+        2.0
+      ],
+      "doses_raw": "lisuride (0.4 mg/kg); lisuride (2 mg/kg)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "repeated",
+      "evidence": "lisuride (0.4 mg/kg) (group 2) daily for 4 days... treated once a day for 4 days with lisuride (2 mg/kg)",
+      "confidence": "high"
+    },
+    {
+      "compound": "M100907",
+      "doses_mg_per_kg": [
+        0.1,
+        1.0
+      ],
+      "doses_raw": "M100907 (0.1 mg/kg or 1 mg/kg)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "1 mg/kg of the relatively selective 5-HT2AR antagonist M100907... compare two different doses of M100907... 0.1 mg/kg or 1 mg/kg",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "no explicit handling protocol described",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "housed in groups of 3 -4 animals per cage",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "kept under a 12 h light/dark cycle (lights on 6 a.m. to 6 p.m.)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "home-cage enrichment not mentioned",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head-Twitch Response (HTR)",
+      "assay_description": "Mice with implanted neodymium skull magnets or magnetic ear tags were placed in a testing chamber, habituated for 30 min, then injected with DOI, LSD, lisuride and/or M100907 (or vehicle). Head twitches were detected via magnetometer and processed by signal analysis + deep-learning scalogram classifier. Total HTR over the first 30 min and minute-by-minute time courses (up to 3 h) were analysed. Used to characterize tolerance, cross-tolerance, antagonist blockade, and β-arrestin2 dependence.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs were administered intraperitonally (i.p.) at a volume of 5 µL/g",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "animals were transferred from their homecage to the testing chamber where they were allowed to habituate to the environment. After 30 min, the corresponding drug or drugs were administered",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "animals were freely moving in the testing chamber during HTR recording",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "ad libitum access to food and water in home cage; testing chamber separate, no food in apparatus",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "ad libitum access to food and water in home cage; testing chamber separate, no water in apparatus",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "After 30 min [habituation], the corresponding drug or drugs were administered... Data acquisition in the magnetometer was performed",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 5,
+        "evidence": "n = 5 -10 mice per group; n = 5 mice per group; n = 6 mice per group; n = 10 mice per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute DOI and LSD increased HTR; repeated daily administration of DOI (4 days) or LSD (4 days) produced progressive tolerance (~50% reduction). Tolerance to DOI was already evident 24 h after a single dose, was surmountable by a higher dose, and was prevented by pretreatment with M100907 (1 mg/kg). Cross-tolerance occurred between LSD and DOI but not between lisuride and either psychedelic. Tolerance developed equivalently in WT and β-arrestin2 KO mice.",
+        "statistics": "DOI tolerance: time F[6,135]=30.75, p<0.001; day-1 treatment F[2,135]=49.40, p<0.001; one-way ANOVA F[2,19]=6.59, p<0.01. M100907 effect: F[3,112]=72.54, p<0.001; t8=2.87, p<0.05. Dose surmount: t8=3.60, p<0.01. β-arr2: genotype F[1,40]=0.43, p>0.05. LSD tolerance: F[1,90]=24.58, p<0.001; t18=4.14, p<0.001. LSD→DOI cross-tolerance: t18=2.17, p<0.05. Lisuride lack of cross-tolerance: F[1,56]=0.03, p>0.05.",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "repeated (4 days) administration of the psychedelic... DOI induced a progressive decrease in HTR behavior... cross-tolerance became apparent between the psychedelics DOI and LSD, whereas repeated administration of the nonpsychedelic 5-HT2AR agonist lisuride did not affect the ability of these two psychedelics to induce HTR",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Total HTR during the first 30 min and time-course (minute-by-minute) HTR; also spontaneous HTR pre-lisuride",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Time course of HTR on day 1... Time course of HTR on day 2 (within-session minute-by-minute analysis)",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural sequences or transitions",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is a drug-induced motor response, not natural ethological behaviour",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animals tested individually with no social construct",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR does not require learning or memory",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "the signal was also processed using a deep learning-based protocol based on scalograms",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate ANOVAs and t-tests; no PCA or multivariate analysis",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "transferred from their homecage to the testing chamber",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter described in HTR chamber",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described in testing chamber",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in testing chamber",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in HTR apparatus",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "HTR magnetometer chamber is a single recording space",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Focal mouse alone in testing chamber during recording",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in HTR testing chamber",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Some experiments comprised several consecutive days of testing sessions (days 1-5)",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "we monitored HTR responses for 3h in each of these experimental conditions",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "received daily DOI (1 mg/kg) injections for 4 consecutive days; days 1-5 testing",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "compared HTR behavior before and after lisuride administration... spontaneous HTR (30 min before lisuride administration)",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Tolerance to DOI-induced HTR was also observed 24 h after a single administration",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Longest session ~3 h, less than 6 h",
+          "confidence": "high"
+        },
+        "raw_total": 6
+      }
+    }
+  ],
+  "judge_notes": [
+    "All three candidates identified a single HTR assay; merged into one entry as the rubric collapses dose/antagonist/genotype/cross-tolerance variants into one paradigm.",
+    "B1 set to 2-3 (score 1): paper reports total 30-min HTR counts, time-course (minute-binned) HTR, and pre-lisuride spontaneous HTR — multiple distinct measures.",
+    "B7 scored 1 because the paper explicitly used a deep learning scalogram-based classifier in addition to magnetometer signal analysis.",
+    "D2 scored 2 (61 min–6 h) based on explicit 3 h monitoring in Supplementary Figure 1.",
+    "D4 scored Yes because spontaneous HTR was measured for 30 min prior to lisuride and reported (pre-drug baseline within the same assay/session).",
+    "food/water_restriction set to 'during' (standard short test, ad libitum in home cage but no access in testing chamber).",
+    "Added Lisuride and M100907 as dosing entries since both were administered to animals in the behavioural experiments (lisuride is an active comparator psychedelic-related compound)."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 8.18,
+    "behavioural_complexity_mean": 3.75,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 8.18
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 51365,
+    "output_tokens": 4580,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

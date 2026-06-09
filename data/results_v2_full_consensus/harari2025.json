@@ -1,0 +1,85 @@
+{
+  "study_id": "Harari2025",
+  "doi": "10.1186/s13041-025-01191-0",
+  "species": "mouse",
+  "strain": "C57",
+  "age": {
+    "value": "not_reported",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Age not reported in the text.",
+    "confidence": "low"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 24,
+    "n_female": null,
+    "evidence": "C57 male mice were housed in reverse-light cycle... n = 6 per group across 4 groups.",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        5.0
+      ],
+      "doses_raw": "5 mg/kg psilocybin",
+      "vehicle": "not_reported",
+      "route": "not_reported",
+      "schedule": "acute",
+      "evidence": "mice treated with 5 mg/kg psilocybin, followed by placing in light... mice treated with 5 mg/kg psilocybin and kept in the dark.",
+      "confidence": "medium"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Handling not mentioned.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "Housing density not stated.",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "yes",
+      "evidence": "C57 male mice were housed in reverse-light cycle and experimentation took place in the dark cycle.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Home-cage enrichment not mentioned.",
+      "confidence": "low"
+    }
+  },
+  "assays": [],
+  "judge_notes": [
+    "No behavioural assays were performed in this study. The paper is a transcriptomic (RNA-seq + qPCR) investigation of gene expression in visual cortex and thalamus following psilocybin and/or light exposure. Per rubric, ex vivo molecular work (RNA-seq, qPCR) is not scored.",
+    "All three candidates correctly returned an empty assays array.",
+    "DOI taken from the Supplementary Information link in the paper (10.1186/s13041-025-01191-0); 2/3 candidates agreed."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0,
+    "environmental_complexity_max": 0,
+    "recording_duration_max": 0,
+    "behavioural_complexity_mean": 0,
+    "environmental_complexity_mean": 0,
+    "recording_duration_mean": 0
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 27018,
+    "output_tokens": 842,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

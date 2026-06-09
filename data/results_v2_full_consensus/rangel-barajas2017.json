@@ -1,0 +1,283 @@
+{
+  "study_id": "Rangel-Barajas2016",
+  "doi": "10.1016/j.neuropharm.2016.11.001",
+  "species": "mouse",
+  "strain": "FvB/N",
+  "age": {
+    "value": "adult",
+    "age_min_days": 140,
+    "age_max_days": 273,
+    "evidence": "All mice ranged in age from 20 to 39 weeks",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Data were obtained from male FvB/N mice supplied by Jackson Laboratories",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        5.0
+      ],
+      "doses_raw": "5 mg/kg, ip",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Electrophysiological signals were recorded for analysis for 30 min under basal conditions (untreated) followed by 30 min after DOI (5 mg/kg, ip).",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "with a 12 h day/night cycle. All experiments were conducted during the light phase of the diurnal cycle.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head-twitch response (HTR)",
+      "assay_description": "Mice were placed in an open-field arena (26 x 18 cm) located in a soundproof chamber; head twitches (rapid left-right head movements) were counted by two observers in 5-min intervals for 30 min after DOI (5 mg/kg, i.p.) injection.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "DOI (5 mg/kg, ip)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "mice behaving spontaneously in an open-field arena (26 x 18 cm)",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "open-field arena (26 x 18 cm) located in a soundproof and electrically shielded chamber; food available ad libitum in home cage",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "open-field arena (26 x 18 cm) located in a soundproof and electrically shielded chamber; water available ad libitum in home cage",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "recorded for 30 min after DOI administration",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 8,
+        "n_male": 8,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "Administration of DOI (5 mg/kg ip) in FvB/N mice (n = 8) induced 75.8 ± 1.30 HTRs over a 30-min recording period",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute 5 mg/kg i.p. DOI induced a robust head-twitch response averaging 75.8 ± 1.30 twitches over 30 min, peaking 5–10 min post-injection and declining thereafter.",
+        "statistics": "Friedman test followed by Dunn's multiple comparisons test indicated significant differences from the 5-min peak (*p < 0.05; **p < 0.01).",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "Administration of DOI (5 mg/kg ip) in FvB/N mice (n = 8) induced 75.8 ± 1.30 HTRs over a 30-min recording period... peaked between 5 and 10 min after injection and decreased over time.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The number of head-twitches was recorded for 5-min intervals",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The number of head-twitches was recorded for 5-min intervals... decreased progressively from the peak recorded at 5 min post injection",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-twitches were counted as discrete events; no analysis of sequences.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is explicitly excluded from ethological behaviours per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice tested individually in open-field arena",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR does not require learning or memory.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Two observers counted the number of head-twitches by visual examination.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate counts of head-twitches reported.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "open-field arena (26 x 18 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open-field arena has no enclosed refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding mentioned in the testing arena.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material reported in the arena.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects reported in the arena.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "open-field arena (26 x 18 cm)",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "mice behaving spontaneously in an open-field arena",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water present in the arena during recording.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Electrophysiological signals were recorded for analysis for 30 min under basal conditions (untreated) followed by 30 min after DOI",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "recorded for 30 min after DOI administration",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "All recordings performed on the same day, 30 min before and 30 min after injection",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "recorded for 30 min under basal conditions (untreated) followed by 30 min after DOI",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No recordings were performed ≥24 h after injection.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Each session lasted 30 min, far less than 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    }
+  ],
+  "judge_notes": [
+    "Only one behavioural assay (HTR) is scorable; all spike/LFP electrophysiology recordings are excluded per rubric as neural recordings even though done in behaving animals.",
+    "B1 scored 0 (1 measure: head-twitch count only) per modal candidate interpretation; glm's score of 1 was an error since 1 measure = 0 points.",
+    "D1 scored 1 (multiple discrete sessions) and D4 scored 1 (pre-drug baseline) since paper explicitly reports 30 min basal recording before DOI; qwen missed this for the HTR assay though HTR-specific baseline is debatable, but the open-field arena was used continuously pre/post DOI per Methods.",
+    "Food/water restriction scored 'during' (standard short open-field test with home-cage ad libitum food/water but none in the arena)."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 4.09,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 4.09
+  },
+  "low_confidence_count": 4,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 44245,
+    "output_tokens": 3599,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

@@ -1,0 +1,482 @@
+{
+  "study_id": "Magee2025",
+  "doi": "10.1523/JNEUROSCI.0652-25.2025",
+  "species": "mouse",
+  "strain": "CRF1:GFP",
+  "age": {
+    "value": "adult",
+    "age_min_days": 60,
+    "age_max_days": 240,
+    "evidence": "Adult female CRF1:GFP mice (n=90, 2-8 months, 18-30 g)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "female",
+    "n_male": null,
+    "n_female": 90,
+    "evidence": "Adult female CRF1:GFP mice (n=90, 2-8 months, 18-30 g)",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocin",
+  "dosing": [
+    {
+      "compound": "Psilocin",
+      "doses_mg_per_kg": [
+        2.0
+      ],
+      "doses_raw": "2 mg/kg",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "Mice were subcutaneously injected with 2 ml/kg of either 2 mg/kg psilocin or vehicle (2% glacial acetic acid in 0.9% saline).",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "Mice in the ethanol drinking cohorts (n=60) were individually housed for two-bottle choice (2BC) drinking.",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "yes",
+      "evidence": "housed in a temperature- and humidity-controlled 12 h reverse light/dark (7 A.M. lights off) facility",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Two-Bottle Choice Drinking",
+      "assay_description": "Individually housed mice given 2 h home-cage access (Mon-Fri) to 20% ethanol and water bottles; ethanol and water intake measured at 1 h and 2 h timepoints across baseline, treatment, and follow-up sessions. Some mice received CIE vapor exposure intervening between drinking weeks (CIE-2BC vs AIR-2BC).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "Mice were subcutaneously injected with 2 ml/kg of either 2 mg/kg psilocin or vehicle",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Mice were individually housed for at least 5 d prior to the start of drinking for habituation.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice were individually housed for two-bottle choice (2BC) drinking",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "ad libitum food (RMH-3000) and water access",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "ad libitum food (RMH-3000) and water access; two bottles, one containing 20% ethanol solution and one containing water",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Psilocin decreased ethanol consumption in the session immediately following injection",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 40,
+        "n_male": null,
+        "n_female": 40,
+        "n_per_group_min": 10,
+        "evidence": "Vehicle: n=10; Psilocin: n=10 (Fig 1). AIR: n=10; CIE: n=10 (Fig 2).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute 2 mg/kg psilocin (s.c.) reduced 1 h and 2 h ethanol intake in the drinking session immediately following injection in both CIE-exposed and air-exposed female mice. The effect was acute and did not persist in subsequent sessions; water intake was largely unchanged (slight increase in 2nd hour in one cohort).",
+        "statistics": "Two-way ANOVA, Fig 1D treatment p=0.0003, F(1,18)=19.33; Fig 1F treatment×time p=0.0081, multiple comparisons Veh vs Psi p=0.0072; Fig 2F CIE treatment p=0.0313, F(1,15)=5.643; Fig 2G AIR treatment p=0.0013, F(1,18)=14.34",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "Psilocin decreased ethanol consumption in the session immediately following injection with a main effect of treatment and time (two-way ANOVA, treatment: ***p=0.0003, F(1,18)=19.33)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "1 h ethanol intake, 2 h ethanol intake, 1 h water intake, 2 h water intake; also ethanol preference reported in supplementary",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "One hour intake was recorded to compare any immediate consumption to the total 2 h duration and determine whether mice were front-loading",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no analysis of bout sequences or transitions reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "only ethanol/water intake volumes were quantified; no natural behavioural acts scored",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice were individually housed for two-bottle choice (2BC) drinking",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "voluntary drinking; no learning task component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Alcohol intake was determined by visual inspection of ethanol volume according to meniscus on serological pipettes",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate ANOVAs and t-tests only",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "Mice were individually housed for two-bottle choice (2BC) drinking",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no shelter mentioned in home cage",
+          "confidence": "low"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Standard home-cage drinking implies bedding present",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single home cage with two bottles, no internal partitions",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice were individually housed for two-bottle choice (2BC) drinking",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "two bottles, one containing 20% ethanol solution and one containing water; ad libitum food",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Mice underwent 2 weeks of baseline 2BC drinking followed by alternating 2BC weeks and CIE weeks for another 4 weeks; recordings of 5 sessions following injection",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "Mice were given 2 h access (Mon-Fri) to two bottles",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 3,
+          "value": "15+",
+          "evidence": "2 weeks of baseline 2BC drinking (Mon-Fri) plus alternating drinking weeks for 4 more weeks plus 5 post-injection sessions",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Mice underwent 2 weeks of baseline 2BC drinking",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "drinking measured for 5 sessions following injection",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "2 h access sessions; no single session ≥6 h",
+          "confidence": "high"
+        },
+        "raw_total": 8
+      }
+    },
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "41 cm × 41 cm × 30 cm open-field chamber (Versa Max, AccuScan) with infrared photo-beam tracking. 10 min free-movement session measuring total distance, distance in centre, thigmotaxis, distance per minute, and time spent in centre.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "Mice were subcutaneously injected with either vehicle or psilocin (2 mg/kg) before habituating in the room with the machines on for 90 min",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "habituating in the room with the machines on for 90 min — room habituation only, not apparatus habituation",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "the mice were placed into the boxes and allowed to move freely for 10 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "open field chamber; no food in apparatus",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "open field chamber; no water in apparatus",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 90,
+          "evidence": "Mice were subcutaneously injected with either vehicle or psilocin (2 mg/kg) before habituating in the room with the machines on for 90 min. Once habituation was complete, the mice were placed into the boxes",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 20,
+        "n_male": null,
+        "n_female": 20,
+        "n_per_group_min": 10,
+        "evidence": "locomotor cohort (n=20)... Vehicle: n=10; Psilocin: n=10",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute 2 mg/kg psilocin did not alter total distance traveled, distance traveled per minute, or time spent in centre compared with vehicle, indicating no sedation, hyperlocomotion, or anxiety-like effect at this dose.",
+        "statistics": "Unpaired t test: total distance p=0.5354, t=0.6318, df=18; two-way ANOVA distance by minute p=0.1170, F(9,162)=1.608; centre time t test p=0.6409, t=0.4744, df=18",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "we measured locomotion and found no difference in total distance traveled... distance traveled by minute... or time spent in center between vehicle and psilocin",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "multiple values were measured including total distance traveled in center, total distance traveled, thigmotaxis, and time course data of locomotion",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Distance traveled by minute during locomotor testing",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no transitional or sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "only locomotor and zone-time measures",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "mouse tested alone in arena",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "x-y-z spatial positioning was recorded through three sets of infrared photo beams — beam-break position tracking",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate t-tests and ANOVA",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "computer-controlled open field chamber (41 cm × 41 cm × 30 cm; Versa Max, AccuScan Instruments)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "open field chamber; no shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "acrylic box; no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "open field chamber - single open arena",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "mice were placed into the boxes individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in open field",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "allowed to move freely for 10 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "allowed to move freely for 10 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "single locomotor test session described",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline recording in same apparatus reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no post-acute follow-up locomotor test",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "10 min session",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    }
+  ],
+  "judge_notes": [
+    "Two assays identified consistently across candidates: Two-Bottle Choice Drinking and Open Field (locomotor) Test. All candidates agreed on these.",
+    "Excluded non-behavioural endpoints: immunohistochemistry/c-Fos quantification and corticosterone ELISA are not behavioural assays.",
+    "group_housing scored 'no' at study level because mice in drinking cohorts (60/90) were individually housed during testing; the locomotor/naive cohort housing differed but the dominant testing condition for behavioural assays involved single housing — note that locomotor cohort was group housed prior to treatment.",
+    "setup_habituation for OFT scored 'no': only room habituation (90 min in testing room) was described, not exposure to the apparatus itself.",
+    "E3 bedding for 2BC scored 'Yes' because the test is conducted in the animal's home cage which by default contains bedding (standard mouse husbandry); this is a reasonable inference given home-cage testing.",
+    "D3 for 2BC scored 15+ since baseline drinking spanned 2 weeks (Mon-Fri) plus alternating drinking weeks for 4 more weeks plus 5 post-injection sessions — well over 15 recording days.",
+    "D2 for 2BC scored 2 (61 min-6 h) as drinking sessions were 2 h."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 4.09,
+    "recording_duration_max": 10.91,
+    "behavioural_complexity_mean": 3.75,
+    "environmental_complexity_mean": 2.04,
+    "recording_duration_mean": 5.46
+  },
+  "low_confidence_count": 5,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 56507,
+    "output_tokens": 6648,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

@@ -1,0 +1,1671 @@
+{
+  "study_id": "deSousaSilva2026",
+  "doi": "10.1016/j.neuropharm.2026.110947",
+  "species": "mouse",
+  "strain": "Swiss",
+  "age": {
+    "value": "adult",
+    "age_min_days": 126,
+    "age_max_days": 154,
+    "evidence": "Male Swiss mice (18-22 weeks old; 35-45 g)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 136,
+    "n_female": null,
+    "evidence": "only male mice were employed in this study",
+    "confidence": "high"
+  },
+  "psychedelic": "DMT",
+  "dosing": [
+    {
+      "compound": "DMT",
+      "doses_mg_per_kg": [
+        10.0,
+        25.0
+      ],
+      "doses_raw": "DMT 10 or 25 mg/kg (ip)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Drugs were diluted in 0.9% NaCl and administered acutely via intraperitoneal injection (i.p.) 24 h before the test session of the learned helplessness model.",
+      "confidence": "high"
+    },
+    {
+      "compound": "S-ketamine",
+      "doses_mg_per_kg": [
+        10.0,
+        30.0
+      ],
+      "doses_raw": "S-ketamine 10 or 30 mg/kg (ip)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "S-ketamine 10 or 30 mg/kg (ip)... administered acutely via intraperitoneal injection (i.p.)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Methods do not mention a handling protocol prior to testing.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Mice were housed in groups of up to eight per cage (41 × 34 × 16 cm), until the beginning of experiments. Single-housed cohort was isolated 7 days before learned helplessness for the second experimental step.",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12:12 h light--dark cycle, lights on at 6:00 a.m.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "No mention of home-cage enrichment.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Gross Home-Cage Behaviour",
+      "assay_description": "Home cage observation 10-15 min post-injection; rearing counts, lid-climbing time, grooming time, and time stopped manually scored from video.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered acutely via intraperitoneal injection (i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Not reported for home-cage observation.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "mice were placed in the home cage located in the animal facility",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "food and water available ad libitum (home cage)",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "food and water available ad libitum (home cage)",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 10,
+          "evidence": "video recorded in the interval between 10 and 15 min after treatments",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 48,
+        "n_male": 48,
+        "n_female": null,
+        "n_per_group_min": 5,
+        "evidence": "vehicle n=16, S-ket 10 n=9, S-ket 30 n=5, DMT 10 n=12, DMT 25 n=6 (Table 1)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DMT at both doses (10 and 25 mg/kg) significantly reduced exploratory behaviors (rearing, lid-climbing) and increased time stopped 10 min post-injection. S-ketamine 30 mg/kg (but not 10 mg/kg) also altered gross behavior.",
+        "statistics": "rearings F(4,43)=7.81; lid-climbing F(4,43)=3.66; grooming F(4,43)=4.39; stopped F(4,43)=4.20, p<0.05",
+        "direction": "mixed",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "DMT at both doses tested, 10 and 25 mg/kg, significantly reduced exploratory behaviors (such as rearing counts and time of lid-climbing) and increased time stopped",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "rearing counts, time spent lid-climbing, grooming, time stopped",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single 5-min observation window; no within-session bins reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition/sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "rearing, grooming (i.e., self-cleaning), lid-climbing are natural mouse behaviours",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Single-housed mice observed individually.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "manually quantify gross behaviors detected for each mouse by a blinded experimenter",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVAs only.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "mice were placed in the home cage located in the animal facility",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enclosed refuge described.",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Standard home cage with bedding.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Home cage is single compartment.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Single-housed during this observation.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "food and water available ad libitum (home cage)",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "5-min video recorded once after injection.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "video recorded in the interval between 10 and 15 min after treatments (5 min)",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single day observation.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline recorded.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Acute observation only.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5 min session.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "Learned Helplessness Model",
+      "assay_description": "Shuttle box (50×30×30 cm) with two compartments separated by guillotine door; mice received inescapable footshocks across 2 induction days, then 30 escapable footshock trials at screening (day 3) and test (day 4, 24 h post-drug). Escape frequency and latency recorded.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered acutely via intraperitoneal injection (i.p.) 24 h before the test session",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "with the guillotine door closed, animals explored the shuttle box for 5 min (light off) before screening trials",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "animals were individually placed in acrylic shuttle box and moved freely",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in shuttle box during testing.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in shuttle box during testing.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "Twenty-four hours after drug administration (day 4), mice underwent a test session",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 75,
+        "n_male": 75,
+        "n_female": null,
+        "n_per_group_min": 5,
+        "evidence": "Group-housed: vehicle n=11, S-ket10 n=7, DMT10 n=9; single-housed: vehicle n=16, S-ket10 n=9, S-ket30 n=5, DMT10 n=12, DMT25 n=6",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "S-ketamine and DMT (both 10 mg/kg) reversed escape deficits in group-housed helpless mice 24 h post-injection (increased escapes, reduced latency), but neither drug at any tested dose reversed helplessness in single-housed mice.",
+        "statistics": "Group-housed escapes: F(2,20)=4.10, p=0.03; latency treatment F(2,80)=7.60, sessions F(3,80)=14.70, interaction F(6,80)=2.41, p<0.05. Single-housed: p>0.05",
+        "direction": "mixed",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "In group-housed mice, S-ketamine and DMT (both at 10 mg/kg)... reversed helpless behavior... the treatment with S-ketamine and DMT, even at higher doses, did not abolish the helpless behavior in single-housed mice",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "escape latency and frequency of escapes were recorded",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Escape latencies in the screening and test sessions, analyzed in blocks of 15 escapable footshock trials",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence/transition analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Escape behaviour not in ethological repertoire category per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animals individually placed.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Learned helplessness involves a learned stimulus-shock association.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Animal mobility...was manually scored by an experimenter blinded to treatment conditions",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate analyses.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "acrylic shuttle box (50 × 30 × 30 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enclosed refuge in shuttle box.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "stainless-steel grid floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "None.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "None.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "divided into two compartments by a guillotine door",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Animals were individually placed.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in box.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "screening session (day 3) and test session (day 4); both reported",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "30 trials with ~20 s mean ITI plus 5-min exploration in screening ≈ 15-20 min",
+          "confidence": "medium"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "screening day 3 + test day 4 = 2 recording days",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Screening session prior to drug treatment provides baseline behavior for analysis.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Test session 24 h after drug administration.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session <6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      }
+    },
+    {
+      "assay_name": "Sucrose Preference Test",
+      "assay_description": "Two-bottle choice (2% sucrose vs water) for 12 h in home cage; sucrose preference and total liquid intake measured at baseline (pre-stress), 48 h, and 5 days post-drug.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered acutely via intraperitoneal injection (i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "animals were habituated to two bottles (A and B), both containing 2% sucrose solution, for ~12 h during the dark phase",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Free home-cage access.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "food available ad libitum",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "before",
+          "evidence": "mice were deprived of water for 4 h immediately before re-exposure to the bottles",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 2880,
+          "evidence": "48 h (or 3 days) and 5 days after drug-treatment",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 33,
+        "n_male": 33,
+        "n_female": null,
+        "n_per_group_min": 4,
+        "evidence": "vehicle n=9, S-ket10 n=7, S-ket30 n=4, DMT10 n=7, DMT25 n=6 (Table 1)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Both DMT doses (10 and 25 mg/kg) and S-ketamine prevented the stress-induced reduction in sucrose preference at 5 days post-treatment. S-ketamine 30 mg/kg increased total fluid intake.",
+        "statistics": "RM ANOVA F(2,16)=3.71, p=0.04; total intake S-ket30 F(2,6)=40.28, p<0.05",
+        "direction": "increase",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "both S-ketamine and DMT (at all doses tested) significantly prevented the reduction of sucrose preference observed in the control group 5 days after treatments",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "sucrose preference (%) and total liquid ingestion",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Between-session comparisons only; total over 12 h period.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "None.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Preference score; not ethological per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Single-housed animal alone.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate sucrose preference.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bottles weighed before/after.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate analyses.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "Testing was performed in helpless individually housed mice... in the home cage",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter described.",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Standard home cage with bedding.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Home cage single compartment.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Single-housed mice.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "12 h of access to one bottle containing 2% sucrose and another containing water",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "baseline, 48 h and 5 days after drug-treatment",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 3,
+          "value": ">6 h",
+          "evidence": "12 h of access to bottles",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "baseline + 48 h + 5 days = 3 recording days",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Baseline measurements were taken after the sucrose solution habituation period, and before footshock stress sessions",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "5 days after drug-treatment",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "12 h session spans >=6 h",
+          "confidence": "high"
+        },
+        "raw_total": 8
+      }
+    },
+    {
+      "assay_name": "Tail Suspension Test",
+      "assay_description": "Mice suspended by tail >50 cm above floor for 6 min; immobility time manually scored during final 4 min at 28 h, 120 h, and 192 h post-drug.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered acutely via intraperitoneal injection (i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Not described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "Mice were suspended by the tail using adhesive tape",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in apparatus.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in apparatus.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 1680,
+          "evidence": "28 h, 120 h, and 192 h after drug-treatment",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 45,
+        "n_male": 45,
+        "n_female": null,
+        "n_per_group_min": 5,
+        "evidence": "28h: vehicle n=13, S-ket10 n=9, S-ket30 n=5, DMT10 n=12, DMT25 n=6 (Table 1)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "S-ketamine 30 mg/kg reduced immobility at 28 h. DMT 10 mg/kg reduced immobility with effects persisting up to 8 days post-injection, longer-lasting than S-ketamine.",
+        "statistics": "Mixed effects analysis, treatment effect F(4,43)=3.56, p<0.05",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "S-ketamine (only at 30 mg/kg) reduced the immobility time in helpless mice at 28 h... DMT 10 mg/kg trended to evoked a similar effect up to 8 days after drug injection",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "immobility time",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single total over 4 min.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "None.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "TST immobility not ethological per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Behavioral despair, no learning.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "manually recorded during the final 4 min by an observer",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "tail suspension apparatus",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Suspended above floor.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Suspended in single open space.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual testing.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "28 h, 120 h, and 192 h after drug-treatment",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Each session lasted 6 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "3 recording days (28h, 120h, 192h)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug TST baseline.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "120 h and 192 h are >=24 h after drug administration",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "6 min sessions.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "Square arena (40×40×40 cm) under low red lighting; 30 min recording with Anymaze tracking. Total distance, distance in 5-min blocks, % center time and % center distance (first 10 min) measured.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered acutely via intraperitoneal injection (i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Not described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice were individually placed in the center of a square arena",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in arena.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in arena.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1800,
+          "evidence": "open field test was performed ~30 h after treatment",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 47,
+        "n_male": 47,
+        "n_female": null,
+        "n_per_group_min": 5,
+        "evidence": "vehicle n=15, S-ket10 n=9, S-ket30 n=5, DMT10 n=12, DMT25 n=6 (Table 1)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DMT 10 mg/kg significantly increased spontaneous distance moved compared to vehicle at 30 h post-administration, reversing stress-induced hypolocomotion; effect prominent in first 15 min. No changes in center exploration.",
+        "statistics": "ANOVA F(4,43)=2.78, p=0.04; time F(5,251)=82.08, treatment F(4,251)=11.12, p<0.05",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "DMT 10 mg/kg, but not S-ketamine... 30 h after administration significantly increased the spontaneous distance moved compared to vehicle-treated mice",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "Total distance, distance in 5-min blocks, % center time, % center distance",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "distance moved analyzed in blocks of 5 min",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "None.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotion/zone time not ethological per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "analyzed with Anymaze® software (position tracking, not behavioral classifier)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "square arena (40 x 40 × 40 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open arena.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "arena was cleaned with 5% ethanol between trials; no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "None.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "None.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Open field single arena.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice were individually placed.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Single 30 min recording.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "Spontaneous exploration was recorded for 30 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test session at ~30 h.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug OFT baseline.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "30 h is >=24 h after drug administration.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30 min session.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    },
+    {
+      "assay_name": "Contextual Fear Conditioning",
+      "assay_description": "Re-exposure to shock context for 3 min without footshocks; percentage of time freezing manually scored at 5 days and 8 days post-drug.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered acutely via intraperitoneal injection (i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Not described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "re-exposed to the same context for 3 min, with the guillotine door open and the light on, without footshocks",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in apparatus.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in apparatus.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 7200,
+          "evidence": "Contextual fear-expression tests were conducted at two post-conditioning intervals: 4 and 7 days (5 and 8 days after drug)",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 34,
+        "n_male": 34,
+        "n_female": null,
+        "n_per_group_min": 4,
+        "evidence": "120 h: vehicle n=12, S-ket10 n=9, S-ket30 n=5, DMT10 n=4, DMT25 n=5 (Table 1)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DMT 10 mg/kg showed a non-significant trend toward reduced freezing at 5 days post-injection; S-ketamine had no effect. No significant effects at 8 days.",
+        "statistics": "Kruskal-Wallis, K=4.54, p=0.10",
+        "direction": "no_effect",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "a reduced percentage of freezing time was observed in helpless mice injected with DMT 10 mg/kg but it did not reach the significance (p = 0.10)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "% freezing time",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single % per session.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "None.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Conditioned freezing excluded per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Contextual fear conditioning requires learned association.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "manually by an experienced observer blinded to treatment conditions",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Same shuttle box used for conditioning.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Grid floor.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "None.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "None.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "Shuttle box divided into two compartments by guillotine door.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual testing.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Tests at 5 days and 8 days post-drug.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "re-exposed to the same context for 3 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "2 recording days (5 and 8 days post-drug)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug context-test baseline.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "5 and 8 days are >=24 h after drug.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "3 min sessions.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Elevated Plus-Maze",
+      "assay_description": "EPM with open and closed arms; 5 min free exploration; % time in open arms and entries into closed arms manually scored at 5 days post-drug.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered acutely via intraperitoneal injection (i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Not described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "allowed to freely explore the apparatus for 5 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in apparatus.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in apparatus.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "short_term_1to7d",
+          "value_minutes": 7200,
+          "evidence": "EPM test was conducted once 30 min after contextual fear conditioning in helpless mice 5 days after drug-administration",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 28,
+        "n_male": 28,
+        "n_female": null,
+        "n_per_group_min": 5,
+        "evidence": "vehicle n=12, DMT10 n=5, DMT25 n=5 (Table 1, EPM block)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DMT 10 and 25 mg/kg increased time spent in open arms at 5 days post-administration, indicating anxiolytic-like effects; S-ketamine had no effect.",
+        "statistics": "ANOVA F(2,18)=4.13, p=0.03",
+        "direction": "increase",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "DMT 10 and 25 mg/kg, but not S-ketamine 10 and 30 mg/kg, increased the time spent exploring the open arms",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "% time in open arms and entries into closed arms",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single total over 5 min.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "None.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Zone preference; not ethological per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate avoidance.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "manually scored by a trained observer",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "elevated plus maze",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EPM closed arms not shelter per rubric.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bare apparatus.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "None.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "None.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "EPM arms not distinct compartments per rubric.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual testing.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "EPM test was conducted once",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "5 min exploration",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test at 5 days.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug EPM baseline.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "5 days is >=24 h after drug.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5 min session.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Novelty-Suppressed Feeding Behavior",
+      "assay_description": "After 7 h food deprivation, mice placed in brightly lit open-field arena with food pellet at center for 5 min; latency to feed and consumption recorded in unfamiliar and familiar (home cage) environments at 8 days post-drug.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered acutely via intraperitoneal injection (i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Not described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "individually placed in a brightly lit open-field arena... allowed to explore for 5 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "After 7 h of food deprivation, mice were individually placed in a brightly lit open-field arena",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in apparatus.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "long_term_over7d",
+          "value_minutes": 11520,
+          "evidence": "NSFB test was conducted once in helpless mice 8 days after drug-administration",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 37,
+        "n_male": 37,
+        "n_female": null,
+        "n_per_group_min": 5,
+        "evidence": "vehicle n=12, S-ket10 n=9, S-ket30 n=5, DMT10 n=5, DMT25 n=6 (Table 1)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Neither DMT nor S-ketamine significantly affected latency to eat or food consumption in the NSFB test at 8 days post-administration.",
+        "statistics": "p > 0.05",
+        "direction": "no_effect",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "neither DMT nor S-ketamine significantly affected the behavior of mice in the novelty-suppressed feeding behavior 8 days post-drug administration",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Latency to begin eating and time spent ingesting food, in both unfamiliar and familiar environments",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total over 5 min.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "None.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Latency/consumption metrics; not scored as ethological per rubric.",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate anxiety-feeding conflict, no learning.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "manually recorded by a blinded experimenter",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "brightly lit open-field arena",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open arena.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported; bare arena typical.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "None.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "None.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Open-field arena.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individually placed.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "single food pellet positioned at the center",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "NSFB test was conducted once",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Allowed to explore for 5 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test at 8 days.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug NSFB baseline.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "8 days post-drug.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5 min session.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Both candidates agreed on the 8 assay structure: gross home-cage behavior, learned helplessness, sucrose preference, TST, OFT, contextual fear conditioning, EPM, NSFB.",
+    "Added S-ketamine as a second dosing entry (qwen omitted it); paper explicitly tested S-ketamine 10 and 30 mg/kg as comparator.",
+    "Group_housing scored 'yes' (qwen) rather than 'not_reported' (gptoss): paper explicitly states 'Mice were housed in groups of up to eight per cage'.",
+    "Sucrose preference D2 session duration: 12 h access = >6 h, scored 3 (consistent with gptoss).",
+    "Learned helplessness B6 cognitive scored 1 — the paradigm depends on a learned shock-context association.",
+    "EPM E6 scored 0 per rubric explicit instruction that EPM arms are not multiple compartments.",
+    "Time_to_assay value_minutes uses the first/earliest timepoint per rubric guidance for 'multiple'."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 4.09,
+    "recording_duration_max": 10.91,
+    "behavioural_complexity_mean": 2.03,
+    "environmental_complexity_mean": 1.53,
+    "recording_duration_mean": 3.92
+  },
+  "low_confidence_count": 12,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 80262,
+    "output_tokens": 17854,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

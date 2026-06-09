@@ -1,0 +1,732 @@
+{
+  "study_id": "Nardou2023",
+  "doi": "10.1038/s41586-023-06204-3",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "adult",
+    "age_min_days": 96,
+    "age_max_days": 112,
+    "evidence": "adult male mice (at postnatal day 96 (P96)) ... At P98 to P112, mice were euthanized",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male wild-type mice were bred in house ... adult male mice",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin, LSD, Ketamine, Ibogaine, MDMA",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        0.1,
+        0.2,
+        0.3
+      ],
+      "doses_raw": "0.3 mg/kg; 0.1 mg/kg; 0.2 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "single intraperitoneal (i.p.) dose of psilocybin (0.3 mg/kg) ... 0.1 mg/kg ... 0.2 mg/kg psilocybin",
+      "confidence": "high"
+    },
+    {
+      "compound": "LSD",
+      "doses_mg_per_kg": [
+        0.001,
+        0.05
+      ],
+      "doses_raw": "1 µg/kg; 50 µg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "LSD (i.p. 1 µg/kg) ... increasing the LSD dose to 50 µg/kg",
+      "confidence": "high"
+    },
+    {
+      "compound": "Ketamine",
+      "doses_mg_per_kg": [
+        3.0,
+        100.0
+      ],
+      "doses_raw": "3 mg/kg; 100 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "ketamine (i.p. 3 mg/kg) ... anesthetic dose of i.p. ketamine (100 mg/kg)",
+      "confidence": "high"
+    },
+    {
+      "compound": "Ibogaine",
+      "doses_mg_per_kg": [
+        40.0
+      ],
+      "doses_raw": "40 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "ibogaine (i.p. 40 mg/kg)",
+      "confidence": "high"
+    },
+    {
+      "compound": "MDMA",
+      "doses_mg_per_kg": [
+        10.0
+      ],
+      "doses_raw": "10 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "MDMA (i.p. 10 mg/kg)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "Prior to i.p. drug treatment experiments ... mice were habituated to the injection procedure with daily saline i.p. injections in the home cage.",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Mice were socially housed (3-5 males) in a cage containing corncob bedding",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "All mice were maintained on a 12 h:12 h natural light:dark cycle, starting at 07:30 ... All experiments were performed during the mouse rest period (light cycle)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Mice were socially housed (3-5 males) in a cage containing corncob bedding [no mention of enrichment items]",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Social Conditioned Place Preference (sCPP)",
+      "assay_description": "Open-field activity chamber (ENV-510, Med Associates) partitioned into two equally-sized zones by a clear Plexiglas wall with a hole, each zone containing a distinct novel bedding. 30-min pre-conditioning and post-conditioning trials measured time spent in each zone, with normalized and subtracted social preference scores computed. Tested across psilocybin, LSD, ketamine, ibogaine, MDMA, ±ketanserin, in WT and β-arrestin-2 KO mice, at multiple post-treatment timepoints (48 h to 4 weeks).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "single intraperitoneal (i.p.) dose of psilocybin ... LSD (i.p. 1 µg/kg) ... ketamine (i.p. 3 mg/kg) ... ibogaine (i.p. 40 mg/kg)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Mice were habituated to the injection procedure but apparatus-specific habituation is not described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "The amount of time spent freely exploring each zone was recorded during 30-min test sessions.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Food and water provided ad libitum in home cage; no food in the testing apparatus during the 30-min sCPP session.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Food and water provided ad libitum in home cage; no water in the testing apparatus during the 30-min sCPP session.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 2880,
+          "evidence": "tested 48 h after the injection ... One week ... Two weeks ... three weeks ... four weeks after pretreatment",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "n values across sub-experiments range from 6 (LSD 48h) to 23 (LSD 3 weeks); group sizes reported per figure panel.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute pretreatment with psilocybin (0.3 mg/kg), LSD (1 µg/kg), ketamine (3 mg/kg), ibogaine (40 mg/kg) and MDMA all reinstated social conditioned place preference in adult mice 48 h after dosing, whereas saline did not. The duration of the open state was drug-specific (ketamine <1 wk, psilocybin ~2 wk, LSD ~3 wk, ibogaine ≥4 wk), proportional to acute subjective duration in humans. LSD- and psilocybin-induced reinstatement was blocked by ketanserin (5-HT2AR antagonist), while MDMA and ketamine effects were ketanserin-insensitive; LSD and MDMA effects required β-arrestin-2, ketamine and ibogaine did not.",
+        "statistics": "Psilocybin t(14)=-3.741, P=0.002; LSD t(8)=-7.095, P<0.001; Ketamine t(17)=-3.826, P<0.002; Ibogaine t(11)=-2.690, P=0.02; Saline t(16)=-0.441, P=0.665.",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "Mice pretreated with psilocybin, but not saline, exhibited a significant sCPP at P98 ... pretreatment with LSD ... also reopened the critical period for social reward learning.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "normalized social preference scores (time spent in social zone post-treatment divided by pre-treatment) and subtracted social preference scores (time spent in social zone post minus pre)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Results reported as total time over 30-min sessions; no within-session time-course analysis.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition or sequence analysis described.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Measure is zone preference time (a spatial measure), not ethological acts; 'Mice are never excluded based on the quality of their social interactions.'",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 1,
+          "value": "Social construct, individual testing",
+          "evidence": "Social conditioning with cage mates for 24 h, but test trial is conducted with the focal mouse alone choosing between bedding cues.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "CPP is a learned association between a condition (for example, social) and a cue (bedding).",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "open field activity chamber (ENV-510, Med Associates) equipped with infrared beams and a software interface (Activity Monitor, Med Associates) — position tracking only.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Analyses use t-tests on individual preference measures; no PCA/clustering.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "open field activity chamber (ENV-510, Med Associates)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Apparatus partitioned into two equally sized zones using a clear Plexiglas wall; no enclosed refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "each zone contained one type of novel bedding (Alpha-Dri ... or Kaytee Soft Granule)",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described in the testing apparatus.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in the chamber.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "apparatus was partitioned into two equally sized zones using a clear Plexiglas wall, with a 5 cm diameter circular hole at the base",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Test session: focal mouse explores zones alone; social conditioning occurred earlier in home cage.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water present in the testing chamber during the 30-min session.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "After an initial pre-conditioning trial to establish baseline preference ... Immediately after the isolation conditioning, a 30-min post-conditioning trial was conducted",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "recorded during 30-min test sessions",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Pre-conditioning trial + 24 h social conditioning + 24 h isolation conditioning + post-conditioning trial = ~4 day protocol with 2 recording days.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "After an initial pre-conditioning trial to establish baseline preference for the two sets of bedding cues",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "tested 48 h after the injection ... One week ... Two weeks ... three weeks ... four weeks after pretreatment",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30-min test sessions; well under 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      }
+    },
+    {
+      "assay_name": "Cocaine Conditioned Place Preference",
+      "assay_description": "CPP paradigm with 5 mg/kg cocaine conditioning, following i.p. pretreatment with saline or LSD. Time spent in the cocaine-paired context measured, with normalized and subtracted cocaine preference scores reported.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "i.p. injections in cocaine CPP",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Not described for cocaine CPP specifically.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Freely-moving CPP paradigm with no restraint mentioned.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Ad libitum food in housing; no food in CPP apparatus during testing.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Ad libitum water in housing; no water in CPP apparatus during testing.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "not_reported",
+          "value_minutes": null,
+          "evidence": "Exact timing between LSD pretreatment and cocaine CPP test not specified.",
+          "confidence": "low"
+        }
+      },
+      "sample_size": {
+        "n_total": 16,
+        "n_male": 16,
+        "n_female": 0,
+        "n_per_group_min": 8,
+        "evidence": "saline (n=8) and LSD (n=8) both develop significantly increased preference for the cocaine context",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Both saline- and LSD-pretreated mice developed significant cocaine CPP, with no difference between groups, indicating LSD pretreatment does not alter cocaine reward learning.",
+        "statistics": "Saline: t(7)=-4.5102, P=0.0028; LSD: t(7)=-4.8353, P=0.0019; between-group normalized t(14)=-1.0051, P=0.332; subtracted t(14)=-1.1035, P=0.288.",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Comparisons reveal no difference in normalized cocaine preference ... and subtracted cocaine preference.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Normalized cocaine preference and subtracted cocaine preference both reported.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total time only.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Zone preference measure.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component in cocaine CPP.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "CPP requires learned context-drug association.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard activity monitor tracking only.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate t-tests.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "CPP chamber.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter described.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding mentioned for cocaine CPP.",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not present.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "Standard two-compartment CPP apparatus.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "CPP test conducted alone.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in apparatus.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "CPP includes pre- and post-conditioning trials.",
+          "confidence": "medium"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Session duration not explicitly stated for cocaine CPP.",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Pre- and post-conditioning recording days.",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Pre-conditioning baseline trial implicit in CPP design.",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No >24 h post-acute follow-up described.",
+          "confidence": "medium"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Short sessions.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Amphetamine-induced Locomotor Sensitization",
+      "assay_description": "Locomotor activity recorded across multiple days of repeated 20 mg/kg amphetamine administration following 3 days of saline pretreatment; MDMA administered after day 12 and locomotor response retested on day 16.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "i.p. injections; MDMA administered i.p. after day 12.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Not described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Freely moving locomotor recording.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Ad libitum in home cage; no food in locomotor chamber.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Ad libitum in home cage; no water in locomotor chamber.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": null,
+          "evidence": "Locomotor activity assessed across sensitization days, including day 12 and day 16 after MDMA administration.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 12,
+        "n_male": 12,
+        "n_female": 0,
+        "n_per_group_min": 12,
+        "evidence": "day 12 versus day 16, n = 12, t(11) = 2.2171, P = 0.443",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "MDMA administration did not significantly alter amphetamine-induced locomotor sensitization (comparing day 12 vs day 16).",
+        "statistics": "t(11)=2.2171, P=0.443",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Administration of MDMA after day 12 did not significantly alter the locomotor response to amphetamine (day 12 versus day 16, n=12, t(11)=2.2171, P=0.443).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Locomotor activity (distance traveled) as single outcome.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total session locomotion reported, not within-session dynamics.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor distance is not an ethological act per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor sensitization measured here as a physiological/pharmacological response, not a cognitive task per rubric.",
+          "confidence": "medium"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Beam-break activity monitor.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate t-test.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Open-field activity chamber (Med Associates).",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding mentioned.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not present.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Open-field chamber without partitions.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Tested alone.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in chamber.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Locomotor activity recorded across multiple sensitization days (e.g., day 12 and day 16).",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Specific session duration not stated.",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 2,
+          "value": "8-14",
+          "evidence": "Locomotor activity during sensitization to amphetamine following 3 days of saline pretreatment, with recordings through day 12 and day 16.",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "3 days of saline pretreatment recording precedes amphetamine administration.",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No follow-up >24 h after final drug dose described.",
+          "confidence": "low"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Short sessions.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    }
+  ],
+  "judge_notes": [
+    "Consolidated all sCPP variants (different psychedelics, doses, timepoints, ketanserin co-administration, β-arrestin-2 KO, juvenile/adult, multi-week durations) into a single sCPP assay entry per rubric: same paradigm, apparatus, and measurements differ only by drug/genotype/timepoint manipulations.",
+    "Retained Cocaine CPP and Amphetamine Locomotor Sensitization as separate assays (different paradigms/constructs from sCPP); both involve psychedelic (LSD or MDMA) administration to rodents.",
+    "B1 for sCPP scored 1 (2-3 measures: raw time, normalized preference, subtracted preference) — chose modal value across candidates; glm's score of 2 inconsistent with rubric (2-3 measures = 1 point).",
+    "D3 for sCPP scored 1 (2-7 days): pre-conditioning trial + post-conditioning trial = 2 recording days per animal (each mouse used at one timepoint), consistent with explicit statement 'Each mouse was used for only one behavioural time point.' Overrode gptoss's D4=0 since pre-conditioning trial is explicitly recorded as baseline preference.",
+    "D5 (post-acute follow-up) for sCPP scored 1: behavioural testing occurs 48 h to 4 weeks after drug dosing, well >24 h.",
+    "Handling scored 'yes' based on explicit habituation to injection procedure with daily saline i.p. injections in the home cage.",
+    "enrichment_housing scored 'not_reported' (corncob bedding mentioned but no enrichment items described); confidence low.",
+    "Dropped ex vivo electrophysiology (mEPSC recordings in NAc/mPFC slices) and RNA-seq as non-behavioural per rubric.",
+    "D2 for cocaine CPP and amphetamine sensitization left as low confidence as paper does not state session durations explicitly for these assays."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 2.73,
+    "recording_duration_max": 6.82,
+    "behavioural_complexity_mean": 2.08,
+    "environmental_complexity_mean": 1.36,
+    "recording_duration_mean": 5.45
+  },
+  "low_confidence_count": 8,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 75339,
+    "output_tokens": 9577,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

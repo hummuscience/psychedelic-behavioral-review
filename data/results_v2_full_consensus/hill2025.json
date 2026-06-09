@@ -1,0 +1,542 @@
+{
+  "study_id": "Hill2025",
+  "doi": "10.1177/02698811251330737",
+  "species": "mouse, rat",
+  "strain": "Swiss Webster (mice); Sprague-Dawley (rats)",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 70,
+    "age_max_days": 90,
+    "evidence": "Male Swiss Webster mice ... obtained ... at approximately 8 weeks of age and tested at approximately 10 weeks of age. Male Sprague-Dawley rats (n = 16) were obtained ... at approximately 90 days of age.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 264,
+    "n_female": 0,
+    "evidence": "Male Swiss Webster mice (n = 248) ... Male Sprague-Dawley rats (n = 16)",
+    "confidence": "high"
+  },
+  "psychedelic": "DOM, 4-OH-MiPT, 5-MeO-DBT, 5-Cl-DMT",
+  "dosing": [
+    {
+      "compound": "DOM",
+      "doses_mg_per_kg": [
+        0.25,
+        0.5,
+        1.0,
+        2.5,
+        5.0,
+        10.0
+      ],
+      "doses_raw": "0.25 to 10 mg/kg (locomotor); 0.5 mg/kg (training/discrimination)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "DOM was dissolved in saline ... administered intraperitoneally ... doses from 0.25 to 10 mg/kg ... DOM (0.5 mg/kg, 30-min pretreatment)",
+      "confidence": "high"
+    },
+    {
+      "compound": "4-OH-MiPT",
+      "doses_mg_per_kg": [
+        0.5,
+        1.0,
+        2.5,
+        5.0,
+        10.0,
+        25.0
+      ],
+      "doses_raw": "0.5 to 25 mg/kg",
+      "vehicle": "other",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "4-OH-MiPT ... were suspended in 2% methylcellulose ... administered intraperitoneally ... tested in doses from 0.5 to 25 mg/kg",
+      "confidence": "high"
+    },
+    {
+      "compound": "5-MeO-DBT",
+      "doses_mg_per_kg": [
+        0.05,
+        0.1,
+        0.25,
+        0.5,
+        1.0,
+        2.5,
+        5.0,
+        10.0,
+        25.0,
+        50.0
+      ],
+      "doses_raw": "0.05 to 25 mg/kg (locomotor); 2.5 to 50 mg/kg (discrimination)",
+      "vehicle": "other",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "5-MeO-DBT ... suspended in 2% methylcellulose ... tested in doses from 0.05 to 25 mg/kg ... 5-MeO-DBT (tested from 2.5 to 50 mg/kg)",
+      "confidence": "high"
+    },
+    {
+      "compound": "5-Cl-DMT",
+      "doses_mg_per_kg": [
+        0.5,
+        1.0,
+        2.5,
+        5.0,
+        10.0,
+        25.0
+      ],
+      "doses_raw": "1 to 25 mg/kg (locomotor); 0.5 to 5 mg/kg (discrimination)",
+      "vehicle": "other",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "5-Cl-DMT ... suspended in 2% methylcellulose ... tested from 1 to 25 mg/kg ... 5-Cl-DMT (tested from 0.5 to 5 mg/kg)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Methods section does not describe a handling/habituation protocol.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Mice were grouped and housed in cages on a 12:12-h light/dark cycle. (Note: rats were housed individually.)",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "maintained on a 12:12 light/dark cycle (lights on at 7:00 AM) ... beginning at 0800 h (1 h after lights on).",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "No mention of home-cage enrichment.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Locomotor Activity Test (mice)",
+      "assay_description": "Horizontal activity (ambulation counts via 16 infrared photobeams) measured in Digiscan chambers (40.5 x 40.5 x 30.5 cm) for 8 h in 10-min bins following acute i.p. injection of vehicle, DOM, 4-OH-MiPT, 5-MeO-DBT, or 5-Cl-DMT.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All compounds were administered intraperitoneally in a volume of ... 10 mL/kg in mice.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Mice were injected immediately prior to locomotor activity testing; no separate apparatus habituation described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice freely moved in the Digiscan locomotor activity testing chambers (40.5 x 40.5 x 30.5 cm).",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Mice allowed free access to food and water in home cages; no food in activity chambers during recording.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Mice allowed free access to water in home cages; no water in activity chambers during recording.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Separate groups of 8 mice were injected ... immediately prior to locomotor activity testing.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 248,
+        "n_male": 248,
+        "n_female": 0,
+        "n_per_group_min": 8,
+        "evidence": "Male Swiss Webster mice (n = 248) ... Separate groups of 8 mice were injected ... n = 8 for each dose.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOM, 4-OH-MiPT, 5-MeO-DBT, and 5-Cl-DMT all produced dose- and time-dependent depression of locomotor activity. DOM ED50=4.8 mg/kg, 4-OH-MiPT ED50=5.8 mg/kg (also a ~50-min stimulant phase), 5-MeO-DBT ID50=16.5 mg/kg with apparent late stimulant phase n.s. vs vehicle, 5-Cl-DMT ID50=12.3 mg/kg.",
+        "statistics": "DOM: Dose F(6,49)=3.81, p=0.003; periods F(35,1715)=67.83, p<0.001; interaction F(210,1715)=2.62, p<0.001. 4-OH-MiPT: Dose F(6,48)=4.313, p=0.001; periods F(35,1680)=65.87, p<0.001; interaction F(210,1680)=3.54, p<0.001. 5-MeO-DBT: Dose F(9,70)=1.77, p=0.091; periods F(35,2450)=80.87, p<0.001; interaction F(315,2450)=1.62, p<0.001. 5-Cl-DMT: Dose F(5,42)=0.15, p=0.980; periods F(35,1470)=54.20, p<0.001; interaction F(175,1470)=2.29, p<0.001.",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "Treatment with DOM ... resulted in time- and dose-dependent depression of locomotor activity ... 4-OH-MiPT ... produced time- and dose-dependent depression ... 5-MeO-DBT ... produced depression ... 5-Cl-DMT ... resulted in depression of locomotor activity.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "horizontal activity (interruption of photocell beams) was measured",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "measured for 8 h within 10-min periods ... two-way ANOVA with ... 10-min period as a within-subject factor",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No behavioural sequence/transition analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only ambulation counts (photobeam breaks) recorded.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice tested individually in activity chambers.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor activity test has no learning/memory requirement.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "A panel of infrared beams (16 beams) and corresponding photodetectors ... horizontal activity (interruption of photocell beams).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only ANOVAs on a single measure reported.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Digiscan locomotor activity testing chambers (40.5 x 40.5 x 30.5 cm).",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open activity chamber with no refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Photobeam-instrumented chamber with bare floor; no bedding described.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described in chamber.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in chamber.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single 40.5 x 40.5 cm open chamber.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each mouse tested alone in its chamber.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in the activity chamber during recording.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "horizontal activity ... was measured for 8 h within 10-min periods, beginning at 0800 h.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 3,
+          "value": ">6 h",
+          "evidence": "measured for 8 h",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single 8-h test session per animal.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Mice injected immediately prior to testing; no pre-drug baseline reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No post-acute (>=24h) recording reported.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Single session spanned 8 h (>=6 h).",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    },
+    {
+      "assay_name": "Drug Discrimination (DOM vs saline, rats)",
+      "assay_description": "Two-lever operant discrimination: rats trained to discriminate DOM (0.5 mg/kg, 30-min pretreatment) from saline on an FR10 food-reinforced schedule. Substitution tests (max 20 min) measured %DOM-lever responding and response rate following 4-OH-MiPT, 5-MeO-DBT (30-min pretreatment), or 5-Cl-DMT (15-min pretreatment).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "intraperitoneal (i.p.) injections (1 mL/kg) of vehicle or test compound were administered",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "The rats received approximately 60 of these sessions before they were used in tests for the substitution of the experimental compounds.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Standard operant behavior-testing chambers; rats move freely and lever-press.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "Body weights were maintained at 320-350 g by limiting food to 15 g/day which included the food received during operant sessions.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "Water was readily available.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 15,
+          "evidence": "DOM, 4-OH-MiPT, and 5-MeO-DBT were tested following a 30-min pretreatment, whereas 5-Cl-DMT was tested with a 15-min pretreatment.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 16,
+        "n_male": 16,
+        "n_female": 0,
+        "n_per_group_min": 6,
+        "evidence": "Male Sprague-Dawley rats (n = 16) ... Each compound was tested in groups of six rats.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "4-OH-MiPT (ED50=0.77 mg/kg) fully substituted for the DOM (0.5 mg/kg) discriminative stimulus, whereas 5-Cl-DMT (max 26-35% DOM-lever responding) and 5-MeO-DBT (max 39%) only partially substituted. DOM and 4-OH-MiPT did not alter response rate; 5-Cl-DMT (5 mg/kg) and 5-MeO-DBT (50 mg/kg) significantly suppressed responding.",
+        "statistics": "5-Cl-DMT response rate F(4,20)=6.53, p=0.002; 5-MeO-DBT response rate F(5,25)=17.88, p<0.001. DOM ED50=0.23 mg/kg; 4-OH-MiPT ED50=0.77 mg/kg.",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "DOM (ED 50 = 0.23 mg/kg) and 4-OH-MiPT (ED 50 = 0.77 mg/kg) fully substituted ... whereas 5-Cl-DMT and 5-MeO-DBT did not ... 5-Cl-DMT decreased responding following 5 mg/kg F(4, 20) = 6.53, p = 0.002 and 5-MeO-DBT suppressed responding following 50 mg/kg F(5, 25) = 17.88, p < 0.001.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "percentage of total response made on the drug-appropriate lever ... rate of responding in responses per second",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Mean percentage drug-appropriate responding and overall rate reported per session; no within-session time-course analysis.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition/sequence analysis of lever-press patterns.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Operant lever pressing is not an ethological behaviour.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Rats tested alone in operant chambers.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "rats were trained to discriminate DOM (0.5 mg/kg) from saline",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Med Associates SmartCtrl / Med-PC operant data collection — not behavioural classification.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate analyses of %drug-lever responding and response rate.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Standard operant behavior-testing chambers (Coulbourn Instruments).",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter inside operant chamber.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard operant chamber floor; no bedding described.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in operant chamber.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in operant chamber.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single operant compartment with two levers.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Rats tested individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "food (45 mg food pellets; Bio-Serve, Frenchtown, NJ) was available as a reinforcer",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Test sessions lasted for a maximum of 20 min.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "Test sessions lasted for a maximum of 20 min.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Each substitution test was a single test session day per dose.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline trial recorded as part of the substitution test itself.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No recording >=24 h after drug administration.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "20-min sessions, <6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Two distinct assays in this paper: (1) mouse locomotor activity (Digiscan, 8 h) and (2) rat DOM drug-discrimination operant task. GLM only reported the locomotor assay; qwen and gptoss reported both — retained both.",
+    "B1 for locomotor: only horizontal ambulation counts reported as a behavioural variable (score 0 = 1 measure). GLM mis-scored B1 as 1 with value '1'; corrected to score 0.",
+    "D1 for locomotor: a single uninterrupted 8 h session per animal = single session of long duration (D2=3, D6=1) but D1 is 'Single session' (0), not 'Continuous monitoring' (continuous monitoring per rubric implies repeated/ongoing home-cage-style recording).",
+    "Food restriction in the discrimination assay scored 'before' — rats were maintained at 320-350 g via 15 g/day food restriction, consistent with operant food-reinforcement protocols.",
+    "Setup habituation for discrimination scored 'yes' — ~60 training sessions in the operant chamber prior to substitution testing.",
+    "DOM is included as a study drug because it was administered behaviorally (training drug) and dose-response in locomotor activity, even though it is not one of the three 'novel tryptamines' framed in the title.",
+    "Housing: mice were group-housed, rats individually housed — group_housing scored 'yes' based on the mouse subjects (the majority and primary experimental cohort); the rat single-housing is noted in evidence."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 5.45,
+    "behavioural_complexity_mean": 1.88,
+    "environmental_complexity_mean": 0.68,
+    "recording_duration_mean": 3.41
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 46626,
+    "output_tokens": 7776,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

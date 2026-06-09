@@ -1,0 +1,676 @@
+{
+  "study_id": "Skyberg2025",
+  "doi": "10.1101/2025.10.14.682230",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "adult",
+    "age_min_days": 120,
+    "age_max_days": 360,
+    "evidence": "4-12 month-old mice (Mus musculus, C57BL/6J, Jackson Laboratories and bred-in house)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": 14,
+    "n_female": 7,
+    "evidence": "In total, 14 male and 7 female mice were used for this study.",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        10.0
+      ],
+      "doses_raw": "10mg/kg in saline",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "DOI (2,5-dimethoxy-4-iodoamphetamine; Sigma, 10mg/kg in saline) or saline (0.9% NaCl) were administered subcutaneously halfway throughout the recording",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "Animals were handled by the experimenter for several days before surgical procedures, and subsequently habituated (~45 minutes total) to the spherical treadmill and freely moving arena",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "Mice were housed with sibling cage mates until the beginning of experiments and then they were singly housed.",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "kept on a 12-h light/dark cycle",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not addressed in the paper",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Freely Moving Arena (Active Vision / Locomotion)",
+      "assay_description": "Mice explored a 48x37x30 cm arena with Lego bricks on the floor and visual stimuli on the walls for ~45 minutes, before and after s.c. injection of DOI or saline. Behavioural measures included gaze-shift frequency (head+eye movements), locomotor activity, time in center, and pupil size, tracked via head-mounted cameras, IMU, and an overhead camera with DeepLabCut.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "DOI ... or saline (0.9% NaCl) were administered subcutaneously halfway throughout the recording",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "subsequently habituated (~45 minutes total) to the spherical treadmill and freely moving arena with hardware tethering attached for several days before experiments.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "freely moving arena ... animals could explore for 45 minutes",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "Small pieces of tortilla chips ... were lightly scattered around the arena ... animals were not water or food restricted.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "animals were not water or food restricted.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 15,
+          "evidence": "After waiting 15 minutes, experiments were repeated in reverse order",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 14,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 4,
+        "evidence": "before and after administration of either DOI (n = 10) or saline (n = 4)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI increased the frequency of gaze shifts (~+5.6/min) and locomotor activity relative to saline (which decreased gaze shifts ~-9.9/min); the effect on gaze-shift frequency was highly correlated with the effect on locomotion. The kinematic structure of gaze shifts themselves was unchanged.",
+        "statistics": "Gaze shift frequency DOI vs saline: Z = 1.98, p = 0.04 (Wilcoxon rank-sum). Correlation between gaze shift and locomotor effects: r = 0.89, p = 5.2e-4.",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "DOI did alter the frequency of gaze shifts, increasing the average number of gaze shifts per minute by 5.56 ... The difference in saline and DOI's effect on gaze shift frequency was significant (Z = 1.98, p = 0.04; Wilcoxon rank-sum test).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "gaze shifts/min, locomotor speed/% time mobile, % time in center, pupil size, head and eye velocity",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Pre vs post-injection comparisons reported as averages across the recording period; no within-session time-course analysis described.",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural sequences or transitions reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "natural visual behaviors of the animal such as eye and head movements ... saccade-and-fixate pattern ... foraging",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Single mouse in the arena; no social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning or memory component; free exploration.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "eight points around the pupil were tracked with DeepLabCut ... The mouse's position in the arena was tracked with DeepLabCut",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No PCA/clustering of behavioural features reported (PCA was applied to neural PETHs, not behaviour).",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 2,
+          "value": "Enriched arena",
+          "evidence": "48-cm long by 37-cm wide by 30-cm high ... covered with black and white Lego bricks to provide three-dimensional visual contrast ... monitor played a sparse moving noise stimulus",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enclosed refuge described in the arena.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The floor was a gray silicone mat (Gartful)",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described in the arena.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "covered with black and white Lego bricks to provide three-dimensional visual contrast",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single open arena with no internal partitions.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Focal mouse tested alone in the arena.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Small pieces of tortilla chips (Juanita's) were lightly scattered around the arena to encourage foraging during the recording",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Mice were first placed into the freely-moving arena ... for ~45 minutes ... experiments were repeated in reverse order [after injection]",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "placed into the freely-moving arena ... for ~45 minutes",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "In total, recordings took approximately 3 hours [single session day]",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "before and after administration of either DOI (n = 10) or saline (n = 4)",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Post-injection recording occurred within the same session, ~15 min after injection; no ≥24 h follow-up.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recordings lasted ~3 h total across multiple ~45-min sessions; no single session ≥6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Head-fixed Visual Stimulus Presentation (treadmill)",
+      "assay_description": "Mice were head-fixed on a spherical treadmill (~30 min) and presented with computer-generated visual stimuli (band-limited Gaussian noise, contrast-reversing checkerboard, flashed sparse noise, drifting sinusoidal gratings) before and after s.c. injection of DOI or saline. Eye position and locomotion on the treadmill were tracked; neural responses to stimuli were recorded.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "DOI ... or saline (0.9% NaCl) were administered subcutaneously halfway throughout the recording",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "habituated (~45 minutes total) to the spherical treadmill and freely moving arena with hardware tethering attached for several days before experiments.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "head-fixed on a spherical treadmill for approximately 30 minutes",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Head-fixed on treadmill with monitor; no food in the apparatus during recording.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Head-fixed on treadmill; no water in the apparatus during recording. animals were not water or food restricted [in housing].",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 15,
+          "evidence": "After waiting 15 minutes, experiments were repeated in reverse order",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 10,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 3,
+        "evidence": "mice (DOI: n = 7, 330 cells; saline: n = 3, 186 cells) were shown continuously flashed stimuli",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI suppressed visually-evoked V1 responses to head-fixed stimuli, with a significantly larger suppressive effect on sparse noise than on the reverse checkerboard; saline had no significant effect. Stimulus refresh rate (2 vs 4 Hz) did not explain the difference, suggesting stimulus predictability matters.",
+        "statistics": "Checkerboard max FR DOI: Z = 18626, p = 5.58e-7; saline: Z = 8653, p = 0.95. Sparse noise max FR DOI: Z = 7122, p = 3.71e-15; saline: Z = 6335, p = 0.07. Modulation comparison: X²(2)=10.83, p=0.004 (Kruskal-Wallis); sparse vs checkerboard p=0.017; sparse vs gaze-shift p=0.010.",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "Administration of DOI suppressed the checkerboard evoked response of many cells ... and significantly attenuated the average max firing rate across the population (Z = 18626, p = 5.58e-7) ... DOI significantly attenuated the average maximum firing rate [sparse noise] (Z = 7122, p = 3.71e-15).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Eye saccades (high eye velocity >240 deg/s identified) and locomotion on treadmill recorded during head-fixed stimuli.",
+          "confidence": "medium"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Behavioural measures reported as pre vs post means; no within-session behavioural time course analysed.",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No behavioural sequence analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-fixed stimulus presentation; no natural behaviours scored.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Single animal head-fixed; no social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Passive viewing of visual stimuli; no learning task.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "eight points around the pupil were tracked with DeepLabCut",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No multivariate analysis of behavioural features.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "head-fixed on a spherical treadmill ... 70-cm monitor ... placed approximately 27.5 cm from the mouse's right eye",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-fixed setup; no refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Spherical treadmill; no bedding.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in head-fixed apparatus.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment in head-fixed apparatus.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single head-fixed location facing one monitor.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Single mouse head-fixed.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in the head-fixed apparatus during recording.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "head-fixed on a spherical treadmill for approximately 30 minutes ... experiments were repeated in reverse order [pre and post injection]",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "head-fixed on a spherical treadmill for approximately 30 minutes",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "In total, recordings took approximately 3 hours [single day]",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "before and after either DOI or saline administration",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Post-injection recording within ~15 min; no follow-up ≥24 h.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "~30 min head-fixed session.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Freely Moving Arena in Darkness",
+      "assay_description": "Mice explored the same freely moving arena in complete darkness (light sources blocked; pilocarpine applied to constrict pupil for tracking) for ~30 min, before and after DOI administration, to test whether DOI effects depended on visual input. Gaze shifts were detected from head/eye movements.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "subcutaneous administration of either DOI (n = 8, 92 cells) or a saline control",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "habituated ... to the spherical treadmill and freely moving arena with hardware tethering attached for several days before experiments.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "freely moving ... moved from the spherical treadmill to the dark arena",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "animals were not water or food restricted; tortilla chips scattered in the arena",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "animals were not water or food restricted",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 15,
+          "evidence": "After waiting 15 minutes, experiments were repeated in reverse order",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 8,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "recorded neural activity during free movement in the light before DOI administration as well as in complete darkness before and after DOI (n = 8, 92 cells)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "In complete darkness, gaze-shift-aligned V1 responses were largely absent both before and after DOI, and there were no significant differences between pre- and post-DOI darkness for evoked or baseline firing rates, indicating that DOI's effects in V1 depend on visual input rather than motor/vestibular signals.",
+        "statistics": "Friedman with Dunn's post-hoc: evoked FR pre-DOI light vs pre-DOI dark p=7.6e-11; light vs post-DOI dark p=2.4e-14; pre vs post dark p=0.23. Baseline: light vs pre-dark p=4.6e-3; light vs post-dark p=1.7e-3; pre vs post dark p=0.68.",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "there was no significant difference between the median evoked firing rates in the dark conditions before or after DOI (p = 0.23).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Gaze shifts (head + eye velocity) detected; pupil tracked.",
+          "confidence": "medium"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No within-session behavioural time-course analysis described.",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition/sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Natural head/eye gaze-shifting movements quantified during free movement.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Single mouse.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Free exploration; no cognitive task.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "eight points around the pupil were tracked with DeepLabCut ... mouse's position ... tracked with DeepLabCut",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No multivariate behavioural analysis.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 2,
+          "value": "Enriched arena",
+          "evidence": "same freely moving arena ... covered with black and white Lego bricks ... in complete darkness",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No refuge in arena.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Floor was a gray silicone mat.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "covered with black and white Lego bricks to provide three-dimensional visual contrast",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single open arena.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Single mouse in arena.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Small pieces of tortilla chips ... were lightly scattered around the arena",
+          "confidence": "medium"
+        },
+        "raw_total": 4
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "in complete darkness before and after DOI",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "The recording lasted approximately 30 min or until the effect of pilocarpine wore off",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Same recording day, ~3 h total.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "in complete darkness before and after DOI",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Post-injection recording within same session.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "~30 min session.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    }
+  ],
+  "judge_notes": [
+    "Both candidates collapsed all behavioural sessions into a single assay. Per the rubric, the free-moving arena and head-fixed treadmill are different apparatuses/paradigms with different measured behaviours, so they were split into two assays. The dark free-moving recordings use the same arena but explicitly test a different behavioural construct (visual dependence of gaze-evoked responses) under markedly different sensory conditions; treated as a separate assay variant. Note that the primary outcomes are V1 electrophysiology, which is not scored — only the behavioural measurements (gaze shifts, locomotion, pupil, time in center) are scored here, as a psychedelic was administered and behaviour was recorded.",
+    "DeepLabCut is used to track pupil keypoints and body position (pose estimation), so B7 scored 1 per rubric.",
+    "E1 scored as 'Enriched arena' for free-moving sessions because the arena had Lego bricks providing 3D visual structure and patterned walls beyond a standard open field; E5 = Yes for the Legos. Tortilla chip foraging supports E8 = Yes.",
+    "D5 scored 0 (no ≥24h follow-up): post-injection recordings occurred ~15 min after the s.c. injection within the same session.",
+    "time_to_assay set to acute_0to2h with 15 min, based on '15 minute' wait after injection before resuming recording.",
+    "group_housing = no because animals were singly housed once experiments began, per Methods."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 5.0,
+    "environmental_complexity_max": 5.45,
+    "recording_duration_max": 4.09,
+    "behavioural_complexity_mean": 3.75,
+    "environmental_complexity_mean": 3.63,
+    "recording_duration_mean": 4.09
+  },
+  "low_confidence_count": 1,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm"
+  ],
+  "judge_usage": {
+    "input_tokens": 60647,
+    "output_tokens": 9138,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

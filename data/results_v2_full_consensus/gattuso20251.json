@@ -1,0 +1,1070 @@
+{
+  "study_id": "Gattuso2025",
+  "doi": "10.1016/j.ejphar.2025.177304",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 90,
+    "age_max_days": 120,
+    "evidence": "Mice were 3 -4 months of age during the experimental protocol.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": 46,
+    "n_female": 53,
+    "evidence": "5-HTT KO mice (26 males and 27 females) and WT littermates (20 males and 26 females)",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "1 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Psilocybin (1 mg/kg), provided by Usona Institute Inc., was dissolved in 0.9% saline solution, and administered via intraperitoneal (i.p.) injection.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "No explicit handling protocol described in methods.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Mice were housed in groups of 2 -5 same-sex mice in individually ventilated cages until weaning at four weeks of age, where they were then transferred to standard open-top boxes (34 × 16 × 16 cm; 2 -5 mice/box).",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "All behavioural testing was conducted during the light cycle (typically between 9 a.m. and 4 p.m.)... in a 12-hr light/dark cycle.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Home-cage enrichment not described.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Locomotor Activity",
+      "assay_description": "Locomotor activity measured for 15 min before and 60 min after acute psilocybin in a 26 x 26 x 38 cm photo-beam activity chamber; distance travelled analysed in 5-min bins.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered via intraperitoneal (i.p.) injection",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "mice were acclimatised to their environment (room) for at least 30 min before testing; no separate apparatus habituation described, baseline used 10-15 min bin",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "placing mice in a 26 x 26 × 38 cm photo-beam activity chamber",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard activity chamber without food access.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard activity chamber without water access.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Locomotor activity was measured for 15 min before and 60 min after acute psilocybin administration",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 99,
+        "n_male": 46,
+        "n_female": 53,
+        "n_per_group_min": 10,
+        "evidence": "n = 10 -14 mice per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute psilocybin (1 mg/kg i.p.) increased total distance travelled in WT mice but had no locomotor effect in 5-HTT KO mice. KO mice had higher baseline locomotion than WT.",
+        "statistics": "genotype × treatment interaction F(1,90)=18.18, p<0.0001, η2=0.083; WT-PSIL vs WT-SAL p<0.0001; KO-PSIL vs KO-SAL p=0.895; baseline genotype F(1,94)=21.03, p<0.001",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "no",
+        "time_dependent": "n/a",
+        "evidence": "WT mice that were injected with psilocybin travelled more than WT mice that received saline (p<0.0001). Psilocybin compared to saline did not alter locomotor activity in 5-HTT KO mice (p=0.895).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "we analysed distance travelled (cm) via 5-min bins",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "we analysed distance travelled (cm) via 5-min bins",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no transition or sequence analysis reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "distance travelled / locomotion is not ethological per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "locomotor assay, no learning",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "photo-beam activity chamber (Coulbourn); position/beam-break only",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "only univariate ANOVAs",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "26 x 26 × 38 cm photo-beam activity chamber",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "open chamber, no shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "standard activity chamber, no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single open chamber",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individual testing",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "pre/post recording continuous on a single day",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "15 min before and 60 min after acute psilocybin administration (~75 min continuous)",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "acute psilocybin administration, single day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "We used the 10-15-min bin before injection as baseline",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no locomotor recording ≥24 h post-dose",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "session <6 h",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Head-Twitch Response (HTR)",
+      "assay_description": "Mice placed in the locomotor cell and video recorded from above for 15 min immediately post-injection; head-twitches manually scored by a blinded researcher and analysed in 5-min bins.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered via intraperitoneal (i.p.) injection",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Only 30 min room acclimation described; no apparatus habituation before HTR",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "mice were placed in the locomotor cell and were video recorded from a top view",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in apparatus during recording",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in apparatus during recording",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "in the 15 min immediately after injection",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 99,
+        "n_male": 46,
+        "n_female": 53,
+        "n_per_group_min": 10,
+        "evidence": "n = 10 -14 mice per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin induced robust head-twitches in WT mice, with the response completely absent in 5-HTT KO mice across 5, 10 and 15 min bins. No significant sex difference.",
+        "statistics": "genotype effect F(1,45)=2.88, p<0.0001, η2=0.546; sex F(1,45)=3.79, p=0.058; time × genotype F(2,92)=16.37, p<0.0001; post-hoc WT vs KO p=0.007 (5 min), p<0.0001 (10, 15 min)",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "no",
+        "time_dependent": "n/a",
+        "evidence": "psilocybin induced a greater number of head-twitches in WT mice compared to KO mice (F1,45 = 2.88; p < 0.0001)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "head-twitch count was the measure",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "analyse head-twitch responses in 5-min bins for the first 15 min",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no transition/sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is explicitly excluded from ethological per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "reflexive response",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "manually scored by a blinded and trained researcher",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate analyses only",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "locomotor cell (photo-beam chamber)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "open chamber",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "standard chamber floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single chamber",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individual testing",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "15 min recording immediately after injection",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "in the 15 min immediately after injection",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "single recording day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline for HTR",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "acute test only",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "15 min session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Light-Dark Box (LDB)",
+      "assay_description": "10-min test in a 26 × 26 × 38 cm TruScan arena divided into light (750 lux) and dark compartments; percentage time in light, distance travelled and latency measured. Tested at 24 h, 72 h, and 8 days after psilocybin.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered via intraperitoneal (i.p.) injection",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Only 30 min room acclimation; no apparatus habituation described",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice were allowed to explore the arena for 10 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in apparatus during test",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in apparatus during test",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 1440,
+          "evidence": "Anxiety-like behaviour was measured via the LDB at three-time points: 24 h, 72 h, and 8 days after acute psilocybin injection.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 99,
+        "n_male": 46,
+        "n_female": 53,
+        "n_per_group_min": 10,
+        "evidence": "n = 10 -14 mice per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin did not significantly change time in the light compartment in either sex/genotype, though a non-significant trend toward an anxiolytic effect appeared in WT females (p=0.09). KO mice showed reduced light duration vs WT.",
+        "statistics": "Females: treatment F(1,49)=3.23, p=0.078; genotype F(1,49)=96.05, p<0.0001. Males: genotype × time F(2,84)=8.08, p<0.001; treatment F(1,42)=0.43, p=0.514",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "no",
+        "time_dependent": "no",
+        "evidence": "Psilocybin did not significantly alter the time spent in the light compartment (p=0.078). Psilocybin did not alter light duration in male WT or KO animals (p=0.514).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "% time in light, total distance travelled, latency to the light side",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "single total/percentage per session",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no transition analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "time in zone is a spatial measure, not ethological",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "innate avoidance test",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Activity Monitor software (Med Associates) - position tracking",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate ANOVAs only",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "TruScan Photobeam arenas, 26 × 26 × 38 cm",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "dark compartment is fully enclosed (per rubric)",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no bedding described",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "divided into light and dark compartments with a black Plexiglas insert",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "single animal in arena",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "measured at three-time points: 24 h, 72 h, and 8 days",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "explore the arena for 10 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "24 h, 72 h, and 8 days = 3 recording days",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug LDB baseline reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "tests at 24 h, 72 h, and 8 days after injection",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "10 min sessions",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Porsolt Swim Test (PST)",
+      "assay_description": "6-min swim in a 2-L beaker filled with 1.5 L of 25°C water; immobility scored in the last 4 min using Depression Scan (Clever Sys). Tested at 24 h, 72 h, and 8 days after psilocybin.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered via intraperitoneal (i.p.) injection",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Immediately after the LDB, mice were habituated to the PST room for 30 min (room only, not apparatus)",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "mice were placed in a 2-L beaker filled with 1.5 L of water, from which escape was impossible (FST cylinder - per rubric)",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in apparatus",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No drinkable water access during swim",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 1440,
+          "evidence": "Testing was conducted over three time points: the first time point was at 24 h, the second was at 72 h, and the third was 8 days after drug administration.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 99,
+        "n_male": 46,
+        "n_female": 53,
+        "n_per_group_min": 10,
+        "evidence": "n = 10 -14 mice per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin did not significantly alter immobility time in either genotype or sex; a non-significant trend for a genotype × treatment interaction (p=0.069) and treatment effect in WT females (p=0.054) was noted. KO mice exhibited increased immobility vs WT.",
+        "statistics": "Females: genotype F(1,49)=23.05, p<0.0001; genotype × treatment F(1,49)=3.47, p=0.069; treatment trend WT females p=0.054. Males: genotype F(1,42)=50.09, p<0.0001; treatment F(1,42)=0.003, p=0.954",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "no",
+        "time_dependent": "no",
+        "evidence": "Psilocybin did not alter immobility time in either KO or WT mice (p=0.954). A trend for a genotype × treatment interaction was observed in females (p=0.069).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Time spent immobile was the main outcome measured",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Immobility duration in the last 4 min scored as total",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no transition analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST immobility is explicitly excluded per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Depression Scan, Clever Sys - position-based tracking (per rubric SCORE 0)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate ANOVAs only",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "2-L beaker filled with 1.5 L of water",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no shelter in beaker",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "water-filled beaker",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "2-L beaker",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Male and female mice were placed in different beakers",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/drinkable water access during swim",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Testing was conducted over three time points: 24 h, 72 h, and 8 days",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "left to swim for 6 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "24 h, 72 h, and 8 days = 3 recording days",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug PST baseline reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "24 h, 72 h, and 8 days after drug administration",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "6 min sessions",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Saccharin-Preference Test (SPT)",
+      "assay_description": "Individually housed mice given 0.1% saccharin and tap water bottles (alternated positions) over 24-h periods across 3 days, starting on day 8 post-psilocybin; preference calculated as % of total fluid intake.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered via intraperitoneal (i.p.) injection",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "We did not habituate mice to their single-housed environment, as we intended to maximise stress effects",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "mice were individually housed and exposed to both 0.1% saccharin and tap water solutions",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "Mice had ad libitum access to standard chow",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "exposed to both 0.1% saccharin and tap water solutions across a 24-h period",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "long_term_over7d",
+          "value_minutes": 11520,
+          "evidence": "On the 8th day after psilocybin administration ... exposed to both 0.1% saccharin and tap water solutions across a 24-h period for three days.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 99,
+        "n_male": 46,
+        "n_female": 53,
+        "n_per_group_min": 10,
+        "evidence": "n = 10 -14 mice per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Female 5-HTT KO mice exhibited reduced saccharin preference compared with female WT, indicating an anhedonia-like phenotype. Psilocybin did not alter saccharin preference in either sex/genotype.",
+        "statistics": "Females: time F(2,95)=36.23, p<0.0001; genotype F(1,49)=0.501, p<0.01; treatment F(1,49)=0.500, p=0.483. Males: time F(1.69,67.71)=10.69, p<0.0001; genotype p=0.431; treatment p=0.867",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "no",
+        "time_dependent": "no",
+        "evidence": "Psilocybin did not alter saccharin preference in WT or KO mice (p=0.483). Female 5-HTT KO mice exhibited reduced saccharin preference compared to WT mice (p<0.01).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Saccharin-preference scores were calculated as a percentage of total fluid intake",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "preference computed per 24-h day; effect of time is between-session",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "preference score is not an ethological act",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individually housed",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "consumption preference, no learning",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "bottle weight-based intake",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate analyses only",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "mice were individually housed and exposed to both 0.1% saccharin and tap water solutions",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "standard cage; no explicit shelter",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "bedding presence in home cage not explicitly stated for test",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "standard home cage",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individually housed",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "exposed to both 0.1% saccharin and tap water solutions; ad libitum chow",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 2,
+          "value": "Continuous monitoring",
+          "evidence": "24-h continuous bottle-intake monitoring across three consecutive days",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 3,
+          "value": ">6 h",
+          "evidence": "across a 24-h period for three days",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "three days of testing",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug SPT baseline",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "On the 8th day after psilocybin administration",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "across a 24-h period",
+          "confidence": "high"
+        },
+        "raw_total": 8
+      }
+    }
+  ],
+  "judge_notes": [
+    "All three candidates identified the same five behavioural assays (Locomotor, HTR, LDB, PST, SPT). No assays merged or dropped.",
+    "D2 for Locomotor set to 2 (61 min–6 h) since the continuous recording spans 15 min baseline + 60 min post-injection (~75 min total continuous session); qwen and glm scored 1, but gptoss's 2 better reflects the continuous duration.",
+    "B7 for PST set to 0: Depression Scan (Clever Sys) is position-based tracking per rubric (similar to TopScan).",
+    "C2 setup_habituation set to 'no' across assays: paper only describes room acclimation (30 min), explicitly not apparatus habituation. glm's 'yes' overcounted room acclimation as apparatus habituation.",
+    "PST setup_restrain set to 'yes' per rubric explicit example listing FST cylinder as restraint.",
+    "Day/night flipped set to 'no' (not 'not_reported'): paper explicitly states testing during the light cycle (9am-4pm) under a 12-hr light/dark cycle.",
+    "SPT D1 upgraded to 'Continuous monitoring' (score 2): three consecutive 24-h continuous bottle intake measurements satisfy ≥6 h continuous criterion."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 2.73,
+    "recording_duration_max": 10.91,
+    "behavioural_complexity_mean": 0.75,
+    "environmental_complexity_mean": 1.09,
+    "recording_duration_mean": 4.91
+  },
+  "low_confidence_count": 5,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 71870,
+    "output_tokens": 12025,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

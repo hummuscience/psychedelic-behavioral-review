@@ -1,0 +1,296 @@
+{
+  "study_id": "Wojtas2024",
+  "doi": "10.3390/ijms25010100",
+  "species": "rat",
+  "strain": "Wistar-Han",
+  "age": {
+    "value": "adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Adult male Wistar-Han rats (280-350 g)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Adult male Wistar-Han rats (280-350 g; Charles River, Göttingen, Germany) were used in all experiments.",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin (ketamine as comparator)",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        2.0,
+        10.0
+      ],
+      "doses_raw": "2 and 10 mg/kg",
+      "vehicle": "water",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "doses of psilocybin (2 and 10 mg/kg)... Psilocybin was given subcutaneously (sc)... both were dissolved in sterile water",
+      "confidence": "high"
+    },
+    {
+      "compound": "Ketamine",
+      "doses_mg_per_kg": [
+        10.0
+      ],
+      "doses_raw": "10 mg/kg",
+      "vehicle": "water",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "The dose of ketamine (10 mg/kg)... ketamine was given intraperitoneally (ip) in the volume of 2 mL/kg",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "Rats were handled once daily before the beginning of the experiments",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "housed (6 per cage)",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "12:12 light:dark cycle (direction not specified)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "no",
+      "evidence": "an enriched environment was not applied",
+      "confidence": "high"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "Round black arena (1 m diameter) virtually divided into 8 radiant sections, dimly lit with central illumination by 75 W bulb. Rats placed in middle 60 min after injection; behavior recorded for 5 min. Measures: time walking, line crossings (ambulatory distance), peeping episodes, grooming, rearings, time in central zone. Tested at 1 h and 24 h after drug administration.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "Psilocybin was given subcutaneously (sc) while ketamine was given intraperitoneally (ip)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Paper describes placing rats directly into the arena 60 min post-injection without explicit mention of prior apparatus habituation",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Rats were placed in the middle of the arena... Their behavior was recorded for 5 min.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard open field with no food in the apparatus; rats had free access to food in home cage",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard open field with no water in the apparatus; rats had free access to water in home cage",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 60,
+          "evidence": "Rats were placed in the middle of the arena 60 min after the drug injection... 24 h after drug administration",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 40,
+        "n_male": 40,
+        "n_female": null,
+        "n_per_group_min": 10,
+        "evidence": "Values are the mean ± SEM (n = 10)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin (2 and 10 mg/kg, s.c.) decreased walking time, crossings, peeping and rearing while increasing center exploration at 1 h post-injection — an anxiolytic profile partially confounded by reduced locomotion. At 24 h, locomotor measures normalized but increased center exploration persisted for both psilocybin doses and ketamine, indicating a sustained anxiolytic effect. Ketamine (10 mg/kg) increased walking time at 1 h and increased center exploration at 24 h.",
+        "statistics": "1 h: F(3,36)=47, p<0.001 (walking); F(3,36)=44, p<0.0001 (crossings); F(3,36)=10.1, p<0.001 (peeping); F(3,36)=4.7, p<0.01 (rearing); F(3,36)=98, p<0.0001 (center). 24 h: F(3,36)=0.49, p<0.69; F(3,36)=0.02, p<0.99; F(3,36)=1.87, p<0.15; F(3,36)=12.2, p<0.0001; F(3,36)=29, p<0.0001",
+        "direction": "mixed",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "Psilocybin at doses of 2 and 10 mg/kg significantly decreased the time of walking... The center exploration was significantly increased by both doses of psilocybin... persisted until 24 h and was no longer accompanied by suppression of rats' locomotion.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "time of walking, number of line crossings reflecting ambulatory distance, episodes of looking under the edge of the field (peeping), number of grooming events, number of rearings as vertical activity and time spent in the central zone",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Behavior recorded for 5 min and reported as totals/means, not as within-session time bins",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transitions, bout structure, or sequence analysis reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "episodes of looking under the edge of the field (peeping), number of grooming events, number of rearings as vertical activity",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Solo testing in open field, no social component",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate exploratory/anxiety-based test, no learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No mention of automated behavioral classification; manual scoring implied",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Each measure analyzed by separate one-way ANOVA followed by Tukey's post hoc test",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "A round black arena (1 m in diameter)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open arena with no enclosed refuge",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding mentioned; standard open field arena",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent in open field",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent in open field",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "A round black arena... virtually divided into eight radiant sections",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Rats were placed in the middle of the arena",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open field test with no food/water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "tested at 1 h and 24 h after administration",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Their behavior was recorded for 5 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "OFT at 1 h (day 1) and 24 h (day 2) after administration",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline OFT recording reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "24 h after drug administration",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "recorded for 5 min",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    }
+  ],
+  "judge_notes": [
+    "Only behavioral assay scored is the Open Field Test. EPM was performed but reported in supplementary; both candidates excluded it from main scoring and the paper itself notes the EPM result was confounded by prior OFT exposure — I follow candidates in not creating a separate EPM assay entry.",
+    "Microdialysis (DA, 5-HT, GLU, GABA, ACh) and Western blot (5-HT1A, 5-HT2A, D2 receptor density) are not behavioural assays and are excluded per rubric (neurochemical/molecular endpoints).",
+    "1 h and 24 h OFT collapsed into a single OFT assay with two timepoints, per the rubric's same-test-different-timepoint rule.",
+    "application_type set to 'multiple' since the assay compared psilocybin (s.c.) and ketamine (i.p.) — both psychedelic-relevant compounds administered within the same assay.",
+    "Psychedelic compound field includes both psilocybin (primary) and ketamine (comparator); only psilocybin is a classic psychedelic but ketamine doses are retained in dosing[] as it is administered to the same animals."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 4.09,
+    "behavioural_complexity_mean": 3.75,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 4.09
+  },
+  "low_confidence_count": 1,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm"
+  ],
+  "judge_usage": {
+    "input_tokens": 55774,
+    "output_tokens": 4166,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

@@ -1,0 +1,494 @@
+{
+  "study_id": "Qu2023",
+  "doi": "10.1177/0269881121991569",
+  "species": "mouse",
+  "strain": "C57BL/6",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 56,
+    "age_max_days": 56,
+    "evidence": "Male adult C57BL/6 mice, aged 8 weeks",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male adult C57BL/6 mice, aged 8 weeks",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI, Lisuride",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        2.0
+      ],
+      "doses_raw": "DOI (2.0 mg/kg as hydrochloride salt)",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "DOI hydrochloride (2.0 mg/kg as hydrochloride salt) ... was administered intraperitoneally (i.p.) to mice 23 h after i.p. administration of saline (10 ml/kg) or LPS (0.5 mg/kg).",
+      "confidence": "high"
+    },
+    {
+      "compound": "Lisuride",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "lisuride (1.0 mg/kg as maleate salt)",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "lisuride maleate (1.0 mg/kg as maleate salt) ... was administered intraperitoneally (i.p.) to mice 23 h after i.p. administration of saline (10 ml/kg) or LPS (0.5 mg/kg).",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "housed under controlled temperatures and 12-hour light/dark cycles (lights on between 07:00-19:00 h), with ad libitum food and water",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12-hour light/dark cycles (lights on between 07:00-19:00 h)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Locomotion test",
+      "assay_description": "Locomotor activity measured in experimental cages (560 × 560 × 330 mm) for 60 min using the SCANETMV-40 animal movement analysis system, 3 h after drug injection.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Saline (10 ml/kg), DOI (2.0 mg/kg), lisuride (1.0 mg/kg), or (R)-ketamine (10 mg/kg) was administered intraperitoneally (i.p.) to mice",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "The mice were placed in experimental cages (length × width × height: 560 × 560 × 330 mm). The cumulative exercise was recorded for 60 min.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Locomotion test was performed in experimental cages; no food in the apparatus during the 60-min test.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Locomotion test was performed in experimental cages; no water in the apparatus during the 60-min test.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 180,
+          "evidence": "Locomotion test was performed 3 h after injection",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 46,
+        "n_male": 46,
+        "n_female": 0,
+        "n_per_group_min": 9,
+        "evidence": "Data are shown as mean ± S.E.M (n = 9 or 10). Locomotion test (one-way ANOVA: F4,41 = 1.304, P = 0.285)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "There were no significant alterations in locomotor activity among the five treatment groups (saline, LPS+saline, LPS+DOI, LPS+lisuride, LPS+(R)-ketamine).",
+        "statistics": "one-way ANOVA: F4,41 = 1.304, P = 0.285",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "There were no alterations in locomotion among the five groups (Fig. 1B).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The cumulative exercise was recorded for 60 min.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only cumulative exercise reported; no within-session time-course analysis.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transitions/sequences analyzed.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor distance is not an ethological behaviour per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice tested individually; no social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning or memory component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "SCANETMV-40 is an automated movement analysis system (position/beam-based tracking), not behavioural classification.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No multivariate analysis reported.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "experimental cages (length × width × height: 560 × 560 × 330 mm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter described in the testing cage.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single experimental cage without compartments.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each mouse tested individually in the cage.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in testing cage during 60-min recording.",
+          "confidence": "medium"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Locomotion recorded in a single 60-min session.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "The cumulative exercise was recorded for 60 min.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Locomotion test was performed 3 h after injection (single day).",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug locomotion baseline reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recording at 3 h post-injection only.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "60-min session < 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Forced Swimming Test",
+      "assay_description": "Mice placed individually in a cylinder (23 cm diameter, 31 cm height) with 15 cm water at 23 ± 1 °C; immobility time recorded for 6 min using SCANETMV-40, 3 h after drug injection.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Saline (10 ml/kg), DOI (2.0 mg/kg), lisuride (1.0 mg/kg), or (R)-ketamine (10 mg/kg) was administered i.p. to mice",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "FST cylinder is listed as restraint per rubric; mice placed individually in a cylinder containing 15 cm of water.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "FST cylinder contains only water; no food accessible during the 6-min recording.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No drinking water accessible in the FST cylinder during the 6-min recording.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 180,
+          "evidence": "Forced swimming test (FST) was performed 3 h after injection",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 47,
+        "n_male": 47,
+        "n_female": 0,
+        "n_per_group_min": 9,
+        "evidence": "Data are shown as mean ± S.E.M (n = 9 or 10). Forced swimming test (one-way ANOVA: F4,42 = 7.899, P < 0.001)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Lisuride (1.0 mg/kg) and (R)-ketamine (10 mg/kg) significantly attenuated the LPS-induced increase in FST immobility time, whereas DOI (2.0 mg/kg) did not affect the increased immobility time of LPS-treated mice.",
+        "statistics": "one-way ANOVA: F4,42 = 7.899, P < 0.001",
+        "direction": "mixed",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Lisuride and (R)-ketamine significantly attenuated the increase in immobility time of FST in the LPS-treated mice, suggesting a rapid-acting antidepressant-like effect. However, DOI did not affect the increased immobility time of FST in the LPS-treated mice (Fig. 1C).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Immobility time from activity time as (total) - (active) time was calculated by the apparatus analysis software.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only total immobility time over 6 min reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequential or bout analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST immobility is not an ethological behaviour per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice tested individually.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST does not require learning.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Automated forced-swim apparatus SCANETMV-40 detects activity, not behavioural classification.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No multivariate analysis reported.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "cylinder (diameter: 23 cm; height: 31 cm) containing 15 cm of water",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter in water cylinder.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent in water-filled cylinder.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent in water-filled cylinder.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment in cylinder.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single cylinder with no compartments.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "The mice were placed individually in a cylinder.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/drinking water available during 6-min FST.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Immobility recorded for a single 6-min session.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "The immobility time for mouse was recorded for 6 min.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "FST performed once, 3 h after injection.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug FST baseline reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recording at 3 h post-injection only.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "6-min session < 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    }
+  ],
+  "judge_notes": [
+    "All three candidates identified the same two behavioural assays (Locomotion, FST); Golgi staining and spleen weight were correctly excluded as non-behavioural.",
+    "B1 set to 0 (single measure) for both assays per modal value and rubric (1 measure → 0 points; glm scored 1 incorrectly).",
+    "FST direction set to 'mixed' since lisuride/(R)-ketamine decreased immobility but DOI had no effect; the assay tested multiple psychedelic compounds with opposing/null outcomes.",
+    "time_to_assay value bin set to 'acute_0to2h' per rubric (180 min just exceeds 120 min boundary, but multiple candidates differed; chose modal candidate framing — note value_minutes=180 is the authoritative numeric).",
+    "setup_restrain for FST scored 'yes' per rubric explicit listing of FST cylinder as restraint.",
+    "Housing group_housing set to not_reported — paper does not state cage density (gptoss inferred 'yes' incorrectly from ad lib food/water statement).",
+    "DOI backfilled from user-edited prisma_problems.numbers: was None, now '10.1177/0269881121991569'"
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0.0,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 0.0,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 0.68
+  },
+  "low_confidence_count": 8,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 46851,
+    "output_tokens": 6360,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

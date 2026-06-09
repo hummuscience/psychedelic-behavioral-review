@@ -1,0 +1,482 @@
+{
+  "study_id": "Kolbman2023",
+  "doi": "10.1016/j.cub.2023.10.016",
+  "species": "rat",
+  "strain": "Sprague Dawley",
+  "age": {
+    "value": "adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "adult Sprague Dawley rats",
+    "confidence": "medium"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": 21,
+    "n_female": 21,
+    "evidence": "adult Sprague Dawley rats, n = 42, 21 male, 21 female",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        1.0,
+        10.0
+      ],
+      "doses_raw": "1 mg/kg psilocybin ... 10 mg/kg psilocybin",
+      "vehicle": "saline",
+      "route": "i.v.",
+      "schedule": "acute",
+      "evidence": "Group 1 (n = 14, 6 male, 8 female) received an intravenous bolus of 1 mg/kg psilocybin, Group 2 (n = 12, 6 male, 6 female) received an intravenous bolus of 10 mg/kg psilocybin, and Group 3 (n = 13, 6 male, 7 female) received an intravenous bolus of 0.9% saline (vehicle control).",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "maintained on a 12h:12h light:dark cycle (lights on at 08:00); Nociceptive responses were obtained between 12:00 and 14:00",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "von Frey Test (mechanical hypersensitivity)",
+      "assay_description": "Mechanical sensitivity assessed using von Frey filaments of ascending thickness applied to the plantar surface of each hind paw; paw withdrawal threshold (g) measured. Rats placed in individual Plexiglas enclosures on a mesh stand and habituated 20–30 min prior. Tested across multiple days (Day -1 baseline, Day 0 post-formalin, Day 1 post-drug, then days 3, 5, 7, 14, 21, 28).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.v.",
+          "evidence": "intravenous bolus of 1 mg/kg psilocybin ... 10 mg/kg psilocybin",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "rats were allowed 20-30 minutes to habituate to von Frey testing apparatus before each experiment",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "rats were placed in individual Plexiglas testing enclosures on a IITC von Frey mesh stand",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard testing apparatus with no food in the chamber; ad libitum food in home cage",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard testing apparatus with no water in the chamber; ad libitum water in home cage",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 180,
+          "evidence": "Approximately 3 h after psilocybin or vehicle infusion, we measured responses ... thereafter the responses were measured every other day during week 1, and then weekly for the next three weeks",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 42,
+        "n_male": 21,
+        "n_female": 21,
+        "n_per_group_min": 12,
+        "evidence": "Group 1 (n = 14, 6 male, 8 female) ... Group 2 (n = 12, 6 male, 6 female) ... Group 3 (n = 13, 6 male, 7 female)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Both low (1 mg/kg) and high (10 mg/kg) doses of i.v. psilocybin significantly attenuated formalin-induced mechanical hypersensitivity in ipsilateral and contralateral hind paws on all testing days for up to 28 days post-administration. No sex differences observed.",
+        "statistics": "ipsilateral p < 0.01, contralateral p < 0.0001 (all testing days)",
+        "direction": "increase",
+        "dose_dependent": "no",
+        "sex_dependent": "no",
+        "time_dependent": "no",
+        "evidence": "the rats injected with psilocybin - low or high dose - showed a significant attenuation of formalin-induced mechanical hypersensitivity in both ipsilateral (p < 0.01, all testing days) and contralateral (p < 0.0001, all testing days) paws",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "withdrawal threshold in the hind paws ipsilateral as well as contralateral to the injection",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "single average threshold value per session; no within-session time-course analysis",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no behavioural sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "paw withdrawal is a reflexive nociceptive response, not an ethological behaviour",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "rats placed in individual Plexiglas testing enclosures",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "reflexive withdrawal, no learning/memory required",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "manual filament application with observer-scored withdrawal",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate analysis with linear mixed model; no dimensionality reduction",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "IITC von Frey mesh stand with individual Plexiglas testing enclosures",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enclosed refuge in apparatus",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "mesh stand floor, no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting material in apparatus",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment objects in apparatus",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "individual Plexiglas enclosure is a single compartment",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "rats placed in individual Plexiglas testing enclosures",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in testing apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "responses were measured every other day during week 1, and then weekly for the next three weeks",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Session duration not explicitly stated; brief threshold testing",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 2,
+          "value": "8-14",
+          "evidence": "baseline (Day -1), Day 0, Day 1, days 3, 5, 7, 14, 21, 28 = 9 recording days",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "We first measured baseline responses to mechanical and thermal stimuli",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "attenuation of mechanical hypersensitivity persisted for 28 days after psilocybin injection",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Nociceptive responses were obtained between 12:00 and 14:00; no session ≥6 h",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      }
+    },
+    {
+      "assay_name": "Hot Plate Test (thermal hyperalgesia)",
+      "assay_description": "Thermal sensitivity assessed on a metal hot plate set at 52.5 °C with a clear acrylic cylinder confining the rat; latency to paw withdrawal/lick (seconds) measured. Tested across multiple days (Day -1, Day 0, Day 1, then days 3, 5, 7, 14, 21, 28).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.v.",
+          "evidence": "intravenous bolus of 1 mg/kg psilocybin ... 10 mg/kg psilocybin",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "habituation explicitly described for von Frey only",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "clear acrylic cylinder placed atop to confine the rats in a specified observation field",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard testing apparatus with no food in the chamber; ad libitum food in home cage",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard testing apparatus with no water in the chamber; ad libitum water in home cage",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 180,
+          "evidence": "Approximately 3 h after psilocybin or vehicle infusion, we measured responses ... thereafter the responses were measured every other day during week 1, and then weekly for the next three weeks",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 42,
+        "n_male": 21,
+        "n_female": 21,
+        "n_per_group_min": 12,
+        "evidence": "Group 1 (n = 14, 6 male, 8 female) ... Group 2 (n = 12, 6 male, 6 female) ... Group 3 (n = 13, 6 male, 7 female)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin showed limited efficacy on formalin-induced thermal hyperalgesia. High dose (10 mg/kg) significantly attenuated hyperalgesia only on the day of administration and day 5; low dose (1 mg/kg) attenuated it only on days 3, 5, and 21 post-injection.",
+        "statistics": "high dose: p = 0.008 (day of administration), p = 0.02 (day 5); low dose: p = 0.04 (day 3), p = 0.01 (day 5), p = 0.01 (day 21)",
+        "direction": "increase",
+        "dose_dependent": "no",
+        "sex_dependent": "no",
+        "time_dependent": "yes",
+        "evidence": "the rats treated with high-dose psilocybin showed a significant attenuation of formalin-induced thermal hyperalgesia only on the day of psilocybin administration (p = 0.008) and on day 5 after psilocybin injection (p = 0.02) ... Low-dose psilocybin attenuated formalin-induced thermal hyperalgesia only on day 3 (p = 0.04), day 5 (p = 0.01), and day 21 (p = 0.01) post-psilocybin injection",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "thermal hyperalgesia was expressed as paw withdrawal latency (seconds)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "single latency value per session",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no behavioural sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "paw withdrawal/lick is a reflexive nociceptive response",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "rat tested alone in acrylic cylinder",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "reflexive thermal response, no learning required",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "observer-scored withdrawal latency",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate analysis only",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "metal hot plate with clear acrylic cylinder",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "transparent cylinder is not an enclosed refuge",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "metal hot plate surface, no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting material in apparatus",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment objects in apparatus",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "hot plate is a single open testing area",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individual testing in cylinder",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in testing apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "responses were measured every other day during week 1, and then weekly for the next three weeks",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Session duration not explicitly stated; brief latency measurement",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 2,
+          "value": "8-14",
+          "evidence": "baseline (Day -1), Day 0, Day 1, days 3, 5, 7, 14, 21, 28 = 9 recording days",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "We first measured baseline responses to mechanical and thermal stimuli",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "thermal responses measured up to 28 days after psilocybin injection",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Nociceptive responses obtained between 12:00 and 14:00; no session ≥6 h",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      }
+    }
+  ],
+  "judge_notes": [
+    "Two distinct behavioural assays identified: von Frey (mechanical) and hot plate (thermal). All three candidates agreed on this split.",
+    "B1 for von Frey set to 1 (2-3 measures) because ipsilateral and contralateral paw thresholds are reported as separate measures (gptoss interpretation supported by the text); hot plate reports a single latency measure so B1=0.",
+    "D1 scored as 'Multiple discrete sessions' (score 1) — repeated test sessions across days, not continuous monitoring.",
+    "time_to_assay set to 'multiple' since recordings occurred at 3 h, day 3, 5, 7, 14, 21, 28 post-dose, with value_minutes=180 reflecting the first timepoint.",
+    "food/water_restriction set to 'during' per the rubric's guidance that standard short tests without food/water in the apparatus = 'during'.",
+    "Outcome direction scored as 'increase' since psilocybin increased paw withdrawal threshold/latency (i.e., decreased the hypersensitivity/hyperalgesia measure). Note candidates split between 'decrease' (attenuation of hypersensitivity) and 'increase' (raw threshold); using increase consistent with the directly measured variable."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 6.82,
+    "behavioural_complexity_mean": 0.62,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 6.82
+  },
+  "low_confidence_count": 6,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 40923,
+    "output_tokens": 6240,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

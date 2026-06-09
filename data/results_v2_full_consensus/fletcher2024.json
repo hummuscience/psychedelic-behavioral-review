@@ -1,0 +1,298 @@
+{
+  "study_id": "Fletcher2024",
+  "doi": null,
+  "species": "mouse",
+  "strain": "DBA/2J",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 42,
+    "age_max_days": 49,
+    "evidence": "Male DBA/2J mice, aged 6 weeks at the time of purchase... Beginning one week after arrival mice were handled extensively over 5 days.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 80,
+    "n_female": null,
+    "evidence": "Male DBA/2J mice... Forty mice were allocated to 4 groups of 10 [Experiment 1]... Forty mice were used [Experiment 2]",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin, TCB-2",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        0.3,
+        1.0
+      ],
+      "doses_raw": "0.3 and 1 mg/kg",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "repeated",
+      "evidence": "Psilocybin... were dissolved in 0.9 % saline solution. Psilocybin was administered subcutaneously... once a day for 5 consecutive days",
+      "confidence": "high"
+    },
+    {
+      "compound": "TCB-2",
+      "doses_mg_per_kg": [
+        1.0,
+        3.0
+      ],
+      "doses_raw": "1 and 3 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "repeated",
+      "evidence": "TCB-2... were dissolved in 0.9 % saline solution... TCB-2 was injected intraperitoneally... once a day for 5 consecutive days",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "Beginning one week after arrival mice were handled extensively over 5 days.",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Mice were housed four per cage",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12 -12 h light-dark cycle (lights on at 8 a.m.)... tested in the same chamber between 11 a.m. and 2 p.m.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Locomotor Activity Test",
+      "assay_description": "Locomotor activity measured in Med Associates activity monitor chambers (40 × 40 × 35 cm) using 16x16 infrared photocells. 15-min sessions with data binned in 3-min intervals. Ambulatory counts measured during EtOH sensitization induction (9 or 11 injections), psilocybin/TCB-2 treatment (days 1 and 5), and two EtOH challenge tests (11 and 18 days post-sensitization).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "Psilocybin was administered subcutaneously, and TCB-2 was injected intraperitoneally.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Mice were then habituated to the activity monitors on three consecutive days.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "mice were placed in the centre of the activity chamber and the test was started",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Food and water were freely available except during testing sessions.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Food and water were freely available except during testing sessions.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 15,
+          "evidence": "On the first and 5th days only, 15 min after injection mice were placed in the locomotor activity cages... The EtOH challenge phase began 96 h (4 days) later... challenge tests occurred 11 and 18 days after the last injection of the sensitization protocol.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 80,
+        "n_male": 80,
+        "n_female": null,
+        "n_per_group_min": 9,
+        "evidence": "Forty mice were allocated to 4 groups of 10 [Experiment 1]... Forty mice were used [Experiment 2]... One mouse in Group 2 died after the sensitization phase; data for this group were obtained from 9 mice.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Repeated 2.2 g/kg EtOH injections induced locomotor sensitization. Psilocybin (0.3, 1 mg/kg s.c.) and TCB-2 (1, 3 mg/kg i.p.) both reduced spontaneous locomotor activity on treatment days 1 and 5 (no tolerance). However, neither drug reversed the established sensitized locomotor response to a 1.8 g/kg EtOH challenge administered 11 and 18 days after sensitization.",
+        "statistics": "Exp1 sensitization: F3,36=15.6, p<0.0001; Exp1 psilocybin effect: F3,36=11.21, p<0.001 (Day 1); F3,36=10.41, p<0.001 (Day 5); Exp1 challenges: F3,36=5.21 and 4.35, p<0.01. Exp2 sensitization: F3,35=7.83, p<0.001; Exp2 TCB-2 effect: F3,36=11.21, p<0.001 (Day 1); F3,36=10.41, p<0.001 (Day 5); Exp2 challenges: F3,35=5.56 and 5.28, p<0.004.",
+        "direction": "mixed",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "Psilocybin-treated mice had significantly reduced activity levels at both doses and both time points compared to saline treated mice... Locomotor activity in both groups of EtOH sensitized mice treated with psilocybin were also higher than in the naïve control group but did not differ significantly from activity levels measured in the EtOH sensitized control condition.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Locomotor activity measured as 'ambulatory counts' was analysed",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "data were collected in 3-min bins... activity declined across the session [F4,144 = 63.0, and 84.18, p < 0.001]",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural sequences or transitions reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Assay measured photobeam-derived locomotor counts only.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Each mouse was always tested in the same chamber",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor activity test does not require learning or memory.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "activity monitor chambers (Med Associates)... array of 16 × 16 externally mounted infrared photocells",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "analysed using one or two way analysis of variance",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "eight activity monitor chambers (Med Associates, Fairfax, VT) measuring 40 × 40 × 35cm",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard open chamber; definitionally absent.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding mentioned in the activity monitor chamber.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in test apparatus.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects reported in the test arena.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "activity monitor chambers... 40 × 40 × 35cm",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each mouse was always tested in the same chamber",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Food and water were freely available except during testing sessions.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Locomotor activity was measured for 15 min... On the first and 5th days only... two challenge tests conducted 11 and 18 days after the last sensitizing EtOH treatment.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "All sessions were 15 min in duration",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 2,
+          "value": "8-14",
+          "evidence": "Experiment 1: 5 sensitization recording days (injections 1,3,5,7,9) + 2 treatment days (psilocybin day 1 and 5) + 2 challenge days = 9 recording days. Experiment 2: 6 sensitization recording days + 2 treatment + 2 challenge = 10 recording days.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Locomotor activity scores on habituation days were used to allocate animals into experimental groups, balanced for baseline activity.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "challenge tests occurred 11 and 18 days after the last injection of the sensitization protocol",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "All sessions were 15 min in duration",
+          "confidence": "high"
+        },
+        "raw_total": 6
+      }
+    }
+  ],
+  "judge_notes": [
+    "All three candidates identified a single behavioural paradigm (locomotor activity in Med Associates chambers). Merged into one assay as the same apparatus and measurement were used across sensitization induction, drug treatment, and EtOH challenge phases — per rubric, same paradigm with different manipulations/timepoints = one assay.",
+    "B1 scored 0 (single measure: ambulatory counts) — majority of candidates agreed; glm's score of 1 for category '1' was inconsistent with rubric (1 measure = 0 points).",
+    "D2 scored 1 (15 min falls in 15–60 min inclusive range per rubric). Two candidates incorrectly scored 0; rubric explicitly includes 15 min in the 1-point bin.",
+    "Combined both Psilocybin (Exp 1) and TCB-2 (Exp 2) dosing into the dosing array as both are tested compounds (TCB-2 is a 5-HT2A agonist, included as a psychedelic-relevant compound per study design).",
+    "Application_type set to 'multiple' because the two psychedelic-relevant compounds in this single assay were administered via different routes (s.c. for psilocybin, i.p. for TCB-2)."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 8.18,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 8.18
+  },
+  "low_confidence_count": 1,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 44048,
+    "output_tokens": 4565,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

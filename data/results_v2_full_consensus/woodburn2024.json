@@ -1,0 +1,285 @@
+{
+  "study_id": "Woodburn2024",
+  "doi": "10.1021/acschemneuro.4c00279",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 49,
+    "age_max_days": 56,
+    "evidence": "Animals were 7-8 weeks old at the start of behavioral studies.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": 56,
+    "n_female": 56,
+    "evidence": "In this study, we used auditory delay fear conditioning and determined the effects of psilocybin on fear extinction, extinction retention, and fear renewal in 112 male and female mice.",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        0.5,
+        1.0,
+        2.0
+      ],
+      "doses_raw": "0.5, 1, or 2 mg/kg, i.p.",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "On day 3, the mouse was given psilocybin (0.5, 1, or 2 mg/kg, i.p.) or saline vehicle.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Paper does not describe a handling protocol prior to testing.",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "animals were kept in a climate-controlled room and were housed in groups of 4 mice per cage with ad libitum access to food and water.",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "Mice were kept on a 12 h light/dark cycle (lights on between 08:00 and 16:00 h [sic; likely 20:00]), with behavioral testing occurring between 08:30 and 13:00 h.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Paper does not address home-cage enrichment.",
+      "confidence": "high"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Auditory Delay Fear Conditioning with Extinction, Retention, and Renewal",
+      "assay_description": "Day 1 fear conditioning in context A (5 CS-US pairings); day 3 extinction in context B (15 CS, drug given 30 min prior); day 4 extinction retention in context B (15 CS); day 11 fear renewal in context C (15 CS). Variants: psilocybin given before conditioning, or immediately after extinction. Cotreatment with 5-HT2A (MDL100907) or 5-HT1A (WAY100635) antagonists. Primary measure: conditioned freezing via VideoFreeze.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Injections, including vehicle controls, were performed intraperitoneally (i.p.) at a volume of 10 mL/kg.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Prior to each session, mice were brought into a side room separated from the fear conditioning system where they habituated for 30 min. Each conditioning trial began with a 3 min habituation period.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "the mouse was individually placed in the conditioning chamber",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard fear conditioning chamber; ad libitum food in home cage but not in apparatus.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard fear conditioning chamber; no water bottle in the apparatus.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 30,
+          "evidence": "Psilocybin given 30 min before extinction (day 3); extinction retention tested 24 h after dose (day 4); fear renewal tested 8 days after dose (day 11).",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 112,
+        "n_male": 56,
+        "n_female": 56,
+        "n_per_group_min": 8,
+        "evidence": "N = 32, including 4 males and 4 females for vehicle, and 4 males and 4 females for each of the psilocybin conditions. ... N = 64 including 8 males and 8 females for vehicle + vehicle, 8 males and 8 females for vehicle + psilocybin, and 4 males and 4 females each for MDL100907 + vehicle, MDL100907 + psilocybin, WAY100635 + vehicle, and WAY100635 + psilocybin.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin (0.5, 1, 2 mg/kg) given 30 min before extinction acutely reduced conditioned freezing at all doses. Only 1 mg/kg produced persisting reductions in extinction retention (day 4) and fear renewal (day 11). Females showed a narrower effective dose range. Psilocybin had no effect when given before conditioning or immediately after extinction. MDL100907 (5-HT2A antagonist) blocked psilocybin's effects on extinction, retention, and renewal; WAY100635 (5-HT1A antagonist) blocked only the renewal effect.",
+        "statistics": "Extinction day 3: main effect of dose F(3,420)=6.223, p<0.001; all doses vs vehicle p<0.001. Retention day 4: F(3,420)=4.387, p=0.005; 1 mg/kg vs vehicle p<0.001. Renewal day 11: F(3,420)=5.72, p<0.001; 1 mg/kg vs vehicle p=0.001. Sex×dose interaction extinction: F(3,360)=3.018, p=0.03. Antagonist×psilocybin interaction extinction: F(2,870)=3.604, p=0.028. Antagonist×psilocybin×time retention: F(28,870)=1.791, p=0.007.",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "yes",
+        "time_dependent": "yes",
+        "evidence": "Psilocybin robustly enhances fear extinction when given acutely prior to testing for all doses tested. Psilocybin also exerts long-term effects to elevate extinction retention and suppress fear renewal in a novel context, although these changes were sensitive to dose.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "1",
+          "evidence": "Conditioned freezing was used as the primary readout for behavior",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "we binned the data to calculate the freezing responses, where bin 'Hab' corresponds to the 3 min habituation period... bin 1 corresponds to CS period during tones 1-3... bin 5 corresponds to CS period during tones 13-15.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition/sequence analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Conditioned freezing is not a natural ethological behaviour scored as distinct acts.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "the mouse was individually placed in the conditioning chamber",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Auditory cued fear conditioning, extinction, retention, and renewal — requires learning and memory.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The videos captured by the near-infrared camera were analyzed with automated procedures using the VideoFreeze software from Med Associates Inc.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Conditioned freezing data were analyzed with generalized linear mixed effects modeling — univariate.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "behavioral testing was conducted in a near-infrared video fear conditioning system (MED-VFC2-SCT-M, Med Associates Inc.)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Fear conditioning chamber has no enclosed refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Context A metal grid floor; context B white plastic floor; context C striped plastic floor — no bedding.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in fear conditioning chamber.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in testing apparatus.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Each fear conditioning chamber is a single compartment; contexts A/B/C are different apparatuses used on different days, not multiple zones within one apparatus.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "the mouse was individually placed in the conditioning chamber",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in fear conditioning chamber.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Recordings on day 1 (conditioning), day 3 (extinction), day 4 (retention), and day 11 (renewal).",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "3 min habituation + 15 CS (30 s each) with 15 s ITI ≈ 15 min per extinction session; conditioning ~ 11 min.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Behavioural data collected on 4 distinct days (day 1, 3, 4, 11).",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Day 1 fear conditioning data is recorded prior to drug administration on day 3 and is reported/analyzed.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Extinction retention tested 24 h after drug (day 4) and fear renewal tested 8 days after drug (day 11).",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Each session ~15 min; no session spans ≥6 hours.",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      }
+    }
+  ],
+  "judge_notes": [
+    "Both candidates identified a single behavioural assay (fear conditioning/extinction paradigm); merged into one entry encompassing all phases (acquisition, extinction, retention, renewal) and all manipulations (doses, timing variants, receptor antagonists), per rubric rule that different phases and pharmacological manipulations of the same paradigm = 1 assay.",
+    "E6 spatial: rescored to 0 (single open space). Contexts A/B/C are separate apparatus configurations used on different days, not multiple compartments within one apparatus during a single recording — the rubric defines E6 as physically distinct areas within the testing apparatus. Overrode both candidates.",
+    "time_to_assay set to 'multiple' because the same assay was recorded at 30 min, 24 h, and 8 days post-dose.",
+    "D3 set to 2-7 (4 recording days), overriding glm's '8-14' which was incorrect.",
+    "Housing handling/enrichment set to not_reported with high confidence since the methods describe housing in detail but omit these specific items."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 6.82,
+    "behavioural_complexity_mean": 3.75,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 6.82
+  },
+  "low_confidence_count": 0,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm"
+  ],
+  "judge_usage": {
+    "input_tokens": 42094,
+    "output_tokens": 4694,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

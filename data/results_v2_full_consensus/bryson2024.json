@@ -1,0 +1,505 @@
+{
+  "study_id": "Bryson2024",
+  "doi": "10.1021/acschemneuro.4c00058",
+  "species": "rat",
+  "strain": "Wistar (FST); Sprague-Dawley (HTR/PK)",
+  "psychedelic": "RE104 (4-OH-DiPT glutarate prodrug), RE109 (psilocin glutarate prodrug), 4-OH-DiPT",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 56,
+    "age_max_days": 70,
+    "evidence": "Adult male Wistar rats 8-10 weeks of age",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 48,
+    "n_female": null,
+    "evidence": "Antidepressant-like effects were evaluated using a modified FST in Wistar rats (exclusively males to limit potential variability)",
+    "confidence": "high"
+  },
+  "dosing": [
+    {
+      "compound": "RE104",
+      "doses_mg_per_kg": [
+        1.0,
+        2.0
+      ],
+      "doses_raw": "1 mg/kg (FST); 2 mg/kg IV and SC (HTR/PK)",
+      "vehicle": "not_reported",
+      "route": "multiple",
+      "schedule": "acute",
+      "evidence": "single SC intraperitoneal injection dose of vehicle ... 1 mg/kg RE104 ... IV or SC administration of 2 mg/kg RE104",
+      "confidence": "high"
+    },
+    {
+      "compound": "RE109",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "1 mg/kg",
+      "vehicle": "not_reported",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "equivalent dose of 1 mg/kg RE109",
+      "confidence": "high"
+    },
+    {
+      "compound": "4-OH-DiPT",
+      "doses_mg_per_kg": [
+        1.39
+      ],
+      "doses_raw": "1.39 mg/kg IV and SC",
+      "vehicle": "not_reported",
+      "route": "multiple",
+      "schedule": "acute",
+      "evidence": "dose of 4-OH-DiPT was adjusted to 1.39 mg/kg to match the molar dose (5.34 µmol/kg) of RE104",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not stated",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "not stated",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "not stated",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not stated",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head-Twitch Response",
+      "assay_description": "Rats observed for head twitches (wet dog shakes) after IV or SC administration of RE104 (2 mg/kg) or 4-OH-DiPT (1.39 mg/kg). HTRs manually counted in 10 min intervals up to 2 h post-dose and again at 3, 3.5, and 4 h.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "IV and SC administration of 2 mg/kg RE104 and 1.39 mg/kg 4-OH-DiPT",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not stated",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "HTRs were manually counted... observing rats for automatisms",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "not_reported",
+          "evidence": "not stated",
+          "confidence": "low"
+        },
+        "water_restriction": {
+          "value": "not_reported",
+          "evidence": "not stated",
+          "confidence": "low"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "HTRs were manually counted using 10 min intervals up to 2 h after dosing and again at 3, 3.5, and 4 h after dosing",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 12,
+        "n_male": 12,
+        "n_female": null,
+        "n_per_group_min": 3,
+        "evidence": "groups of 3 rats",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "RE104 (2 mg/kg) and 4-OH-DiPT (1.39 mg/kg) induced head-twitch responses that peaked immediately after IV administration and within 1 h after SC administration, then declined over the 4 h observation period. Mean HTR values correlated with plasma 4-OH-DiPT concentrations (r² = 0.7019).",
+        "statistics": "r² = 0.7019 (correlation between HTR and plasma 4-OH-DiPT concentration)",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "HTR peaked immediately after IV administration of 2 mg/kg RE104 and 1.39 mg/kg 4-OH-DiPT and declined over the 4 h observation period.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "mean number of HTRs counted",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "mean number of HTRs counted over 10 min intervals... as a function of time",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no sequence/transition analysis reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is explicitly excluded from ethological behaviours per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual observation",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "reflexive pharmacological response",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTRs were manually counted",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no multivariate analysis reported",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "standard observation chamber",
+          "confidence": "medium"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported; not part of HTR observation",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single observation chamber",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "rats observed individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in observation chamber during recording",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "HTRs counted continuously across 10 min bins from dosing through 4 h on the dosing day",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "observation extended up to 4 h after dosing",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "single day of observation after dosing",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug HTR baseline reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "observation period <24 h",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "4 h session <6 h",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    },
+    {
+      "assay_name": "Forced Swim Test",
+      "assay_description": "Modified FST in male Wistar rats. 15 min pre-test exposure 24 h before, then 5 min test sessions in a 20 × 45 cm glass cylinder (35 cm of 25°C water) on days 7, 14, and 28 post-dose. Immobility, swimming, and climbing times scored by blinded observer from video.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "single SC intraperitoneal injection dose of vehicle, 1 mg/kg RE104, an equivalent dose of RE109 (1 mg/kg), or ketamine (5 mg/kg, IP, single dose)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Each rat was placed in a water-filled cylinder (20 cm in diameter and 45 cm in height) for 15 min for initial exposure 24 h before the test",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "animals were placed individually in the glass cylinder",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "standard FST apparatus (water-filled cylinder); no food accessible during the 5 min test",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no drinking water accessible in the water-filled cylinder during the test",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 10080,
+          "evidence": "FST measurements were performed on days 7, 14, and 28",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 48,
+        "n_male": 48,
+        "n_female": null,
+        "n_per_group_min": 11,
+        "evidence": "n = 12 per treatment group; figure caption indicates n = 11-12",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "A single SC dose of RE104 (1 mg/kg) significantly reduced mean immobility time relative to vehicle on days 7, 14, and 28, with concomitant increases in swimming and climbing. RE109 (1 mg/kg) produced significant reductions in immobility on days 14 and 28.",
+        "statistics": "one-way ANOVA with Dunnett's multiple comparison test or unpaired t-test; P < 0.001 for RE104 at day 7; P < 0.05 for RE104 on days 14 and 28 and RE109 on days 14 and 28",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "A significant decrease in mean immobility time was observed for RE104 on days 7, 14, and 28, and for RE109 on days 14 and 28 (P < 0.05), demonstrating persistent effects with both compounds.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Immobility time, swimming time, and climbing time (in seconds) were measured",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "single total measured over the 5 min session",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no sequence/transition analysis reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST immobility explicitly excluded from ethological behaviours per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "rats tested individually; not a social assay",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST does not require learning or memory",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "measured from recorded videos by a blinded observer using a stopwatch",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate analyses only (ANOVA, t-tests)",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "glass cylinder (20 cm diameter, 45 cm height) with water",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent in FST cylinder",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "water-filled cylinder, no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single cylinder",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "animals were placed individually in the glass cylinder",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no accessible food/water during 5 min test",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "FST measurements were performed on days 7, 14, and 28",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "5 min session from recorded videos",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "three recording days: 7, 14, and 28",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "15 min pre-exposure was habituation only; no pre-drug behavioural data reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "FST on days 7, 14, 28 — all ≥24 h after dosing",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5 min session",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    }
+  ],
+  "judge_notes": [
+    "Two behavioural assays retained: Head-Twitch Response (HTR/wet dog shakes) and Forced Swim Test. PK, receptor binding, prodrug cleavage, and metabolite profiling are non-behavioural and excluded.",
+    "B1 for HTR scored 0 (single measure: HTR count); B1 for FST scored 1 (immobility, swimming, climbing = 3 measures).",
+    "HTR D1 set to 'Single session' (score 0): the 4 h observation on the dosing day is a continuous within-session time course, not discrete sessions across days.",
+    "Strain noted as Wistar for FST (the only behavioural assay using strain explicitly named) and Sprague-Dawley for HTR/PK; reported both in 'strain' field.",
+    "Housing conditions and most experimental_conditions metadata for HTR set to not_reported (paper silent)."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 4.09,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 3.41
+  },
+  "low_confidence_count": 8,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 52084,
+    "output_tokens": 5783,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

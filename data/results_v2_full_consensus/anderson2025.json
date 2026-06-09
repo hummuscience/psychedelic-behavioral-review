@@ -1,0 +1,83 @@
+{
+  "study_id": "Anderson2025",
+  "doi": null,
+  "species": "rat",
+  "strain": "Sprague Dawley",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Male Sprague Dawley rats (Rattus norvegicus), weighing 200-250 g",
+    "confidence": "medium"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male Sprague Dawley rats",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [],
+      "doses_raw": "10 µM",
+      "vehicle": "other",
+      "route": "other",
+      "schedule": "acute",
+      "evidence": "In DOI experiments, DOI (10 µM) was present in the continuously perfused recording aCSF.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "Animals were individually housed, with food and water available ad libitum in the home cage.",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "A 12 h light/dark cycle was used with the lights on at 7 A.M.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [],
+  "judge_notes": [
+    "This study contains no behavioural assays. All experiments are ex vivo slice electrophysiology (whole-cell patch-clamp recordings of CLA-ACC neurons) measuring synaptic plasticity (LTP/LTD) and intrinsic AP properties. Per rubric, electrophysiology recordings are explicitly excluded from scoring.",
+    "DOI was bath-applied to brain slices (10 µM in aCSF), not administered systemically to behaving rodents. Route coded as 'other' (bath application) and vehicle as 'other' (aCSF).",
+    "All three candidates agreed there are no scorable behavioural assays; assays array is empty."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0,
+    "environmental_complexity_max": 0,
+    "recording_duration_max": 0,
+    "behavioural_complexity_mean": 0,
+    "environmental_complexity_mean": 0,
+    "recording_duration_mean": 0
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 38432,
+    "output_tokens": 857,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

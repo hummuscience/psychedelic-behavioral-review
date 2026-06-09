@@ -1,0 +1,481 @@
+{
+  "study_id": "Rogers2025",
+  "doi": "10.1038/s41593-025-01964-9",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 56,
+    "age_max_days": 112,
+    "evidence": "Males of 8–10 weeks of age underwent viral injection surgeries, followed by implantation of ... GRIN lens at 10–12 weeks, and behavior at 12–16 weeks",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 25,
+    "n_female": null,
+    "evidence": "Only males were used in the imaging experiment due to lower throughput nature of the technique",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "1.0 mg kg−1, i.p.",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Mice were administered psilocybin (1.0 mg kg−1, i.p., n = 15) or saline (n = 10) 30 min before Extinction 1.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Paper does not describe a deliberate handling habituation protocol beyond miniscope habituation.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "Mice were singly housed following implant surgery.",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "yes",
+      "evidence": "Mice were kept on a reverse 12-h light/12-h dark cycle. Behavior was performed at least 1 h and no more than 4 h following lights-off.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Paper describes housing conditions but does not mention home-cage enrichment.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Trace Fear Conditioning and Extinction",
+      "assay_description": "5-day TFC paradigm (Habituation, Acquisition, Extinction 1–3) in Med Associates fear conditioning chambers. CS = 4 kHz, 75 dB tone (25 s); 20 s trace; 1–2 mA, 2 s shock on Acquisition only. Freezing scored as % time immobile via ezTrack. Psilocybin given 30 min before Extinction 1.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "psilocybin (1.0 mg kg−1, i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "One week before behavioral testing, GRIN lens-implanted mice were habituated to the Miniscope for 2 days in 10-min sessions in the home cage. Day 1 of the paradigm is also a Habituation session in context A.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice moved freely in Med Associates fear conditioning chambers; only a miniscope was attached.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard fear conditioning chambers; no food in apparatus during recording.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard fear conditioning chambers; no water in apparatus during recording.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 30,
+          "evidence": "Mice were injected 30 min before Extinction 1; behavior was also recorded on Extinction 2 (~24 h post) and Extinction 3 (~48 h post).",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 25,
+        "n_male": 25,
+        "n_female": null,
+        "n_per_group_min": 4,
+        "evidence": "psilocybin (n = 15) or saline (n = 10); low-freezing saline n=4, high-freezing saline n=6, low-freezing psilocybin n=7, high-freezing psilocybin n=8",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "On average, psilocybin had no effect on extinction, but freezing was highly skewed. A GMM-defined low-freezing psilocybin subgroup froze significantly less than low-freezing saline mice during the trace period of early Extinction 3. Acutely (Extinction 1), psilocybin increased bout number and decreased bout length, indicating disrupted sustained freezing.",
+        "statistics": "Extinction 1: F(treatment)(1,21)=35.93, P=0.0087 (bouts); Extinction 3: F(interaction)(1,21)=5.99, P=0.0233; F(group)(3,21)=20.53, P<0.0001 (two-way RM ANOVA with Sidak correction).",
+        "direction": "mixed",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "Low-freezing psilocybin mice froze significantly less than low-freezing saline mice in Extinction 3, particularly during the trace period of early Extinction 3.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "Percent freezing, freezing bouts per minute, median bout length, transitions between freezing/motion, and d' discriminability were reported.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Average freezing was assessed ... in the first three trials (early) and last three trials (late) of the session.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Transitions from freezing to motion and vice versa were robustly encoded ... d' was calculated between motion and freezing.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Conditioned freezing is not an ethological behaviour per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice tested individually in fear conditioning boxes.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Trace fear conditioning is a model of complex fear learning ... requiring protracted attention to associate temporally distant stimuli.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Freezing scored by ezTrack pixel-change thresholding (position-tracking style), not a behavioural classifier.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "GMM classification of mice and PCA of neural/behavioural trajectories used; linear regression of distance in PC space against freezing.",
+          "confidence": "medium"
+        },
+        "raw_total": 6
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Med Associates fear conditioning boxes.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard fear conditioning chamber; no enclosed refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "In context B, the shock grid floor was exposed, mouse bedding was placed in a tray under the floor.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in the apparatus.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in the apparatus.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single-compartment Med Associates chambers.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice tested individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water inside the chamber during testing.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "5 days of behavioral testing consisted of Habituation, Acquisition, and Extinction 1–3.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "Habituation and Acquisition: 8 trials with 60±10 s ITIs; Extinctions: 6 trials. With ~60 s/trial plus ITI and baseline, sessions span ~15–20 min.",
+          "confidence": "medium"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "5 days of recording for this assay (Hab, Acq, Ext1–3).",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Average freezing was assessed at baseline (first 2 min of session); Habituation session recorded pre-drug.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Extinction 2 (~24 h) and Extinction 3 (~48 h) recorded after psilocybin administration.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No session spans ≥6 hours.",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      }
+    },
+    {
+      "assay_name": "Open Field Locomotion (dark arena)",
+      "assay_description": "Mice placed in a sealed, soundproof, dark open-field arena. Recorded under infrared for ~60 min total: 15 min pre-injection baseline, then 1 mg/kg psilocybin i.p., then ~45 min post-injection. Behaviors (stillness, walking, rearing, grooming, licking) scored using DeepLabCut + A-SOiD/B-SOiD.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Mice were injected with 1 mg kg−1 psilocybin 15 min after session start.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No habituation to the open-field arena described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice moved freely in the open-field arena.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in the open-field arena during recording.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in the open-field arena during recording.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Mice were injected 15 min into the session and recorded for another 45 min; recording continued immediately post-injection.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 3,
+        "n_male": 3,
+        "n_female": null,
+        "n_per_group_min": 3,
+        "evidence": "N = 3 GRIN lens-implanted mice were placed in dark open-field arenas.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute 1 mg/kg psilocybin did not significantly alter immobility bouts, total time immobile, or single-cell/population discriminability of motion vs. immobility in the open field, although median bout length decreased modestly.",
+        "statistics": "Immobility bouts: p=0.5515; median bout length: p=0.0459; total time immobile: p=0.1081; single-cell d': p=0.8208; population PC distance: p=0.2882 (paired t tests).",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Acute effects of 1 mg kg−1 psilocybin on locomotion encoding were not observed in open-field controls.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "Immobility bouts/min, median bout length, total time immobile, PC-space distance, single-cell d'; behavioral classes (stillness, walking, rearing, grooming, licking).",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Pre- vs post-injection blocks compared (between-period); no within-session time-binned dynamics analyzed.",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Trajectories between immobility-on and immobility-off were analyzed in PC space.",
+          "confidence": "medium"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Behavior was scored ... which scores stillness, walking, rearing, grooming, licking left hindpaw and licking right hindpaw.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice tested alone.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open-field locomotion does not require learning or memory.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Behavior was scored using a DeepLabCut-powered algorithm paired with supervised A-SOiD and unsupervised B-SOiD behavior segmentation algorithms.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "PCA-based population analysis and d' discriminability applied to neural/behavioural data.",
+          "confidence": "medium"
+        },
+        "raw_total": 6
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Dark open-field arena.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter in the arena.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding mentioned.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single-compartment open-field arena.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice tested individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the arena.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "One continuous recording bout per mouse.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "Mice were recorded for ~60 min total (15 min pre- + 45 min post-injection).",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single recording day.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Minutes 2–15 pre-injection were analyzed for within-subject comparisons.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No ≥24 h post-injection recording in this assay.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session <6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    }
+  ],
+  "judge_notes": [
+    "Sex consolidated to 'male': although a pilot non-imaged behavior-only experiment used both sexes, the methods state that pilot was cut in the final revision and only males were used in the imaging experiment (n=25 = 15 psilo + 10 saline). gptoss inherited the cut pilot from the reporting summary.",
+    "B7 for TFC scored 0 (ezTrack is a pixel-change/position tracker, not a behavioural classifier). The DeepLabCut+A-SOiD/B-SOiD pipeline was used only for the open-field assay, where B7=1.",
+    "E3 (bedding) for TFC scored 1 based on the explicit mention of bedding in context B under the shock grid floor (acquisition context); bedding is physically present in the apparatus during recording.",
+    "time_to_assay for TFC set to 'multiple' because the same assay is recorded acutely (30 min post) and at 24 h (Ext2) and 48 h (Ext3) post-dose.",
+    "B2 for OFT scored 0: candidates split, but pre- vs post-injection is a between-period comparison rather than within-session minute-by-minute dynamics; B3 retained as Yes because PC-space trajectories around immobility transitions were analyzed.",
+    "Excluded all neural/calcium imaging and TCA components as scorable assays per rubric (neural recording, not behaviour)."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 7.5,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 6.82,
+    "behavioural_complexity_mean": 7.5,
+    "environmental_complexity_mean": 0.68,
+    "recording_duration_mean": 4.78
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 107288,
+    "output_tokens": 6947,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

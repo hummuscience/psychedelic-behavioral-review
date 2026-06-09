@@ -1,0 +1,484 @@
+{
+  "study_id": "OlejnikovaLadislavova2024",
+  "doi": "10.1016/j.pbb.2024.173903",
+  "species": "rat",
+  "strain": "Wistar",
+  "age": {
+    "value": "adult",
+    "age_min_days": 90,
+    "age_max_days": 90,
+    "evidence": "SPF animals, 3-month old",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 410,
+    "n_female": null,
+    "evidence": "A total of 410 experimentally naive Wistar male rats",
+    "confidence": "high"
+  },
+  "psychedelic": "Mescaline",
+  "dosing": [
+    {
+      "compound": "Mescaline",
+      "doses_mg_per_kg": [
+        10.0,
+        20.0,
+        100.0
+      ],
+      "doses_raw": "10, 20, and 100 mg/kg",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "Mescaline.HCl (Sigma Aldrich) was dissolved in physiological saline and administered at doses of 10, 20, and 100 mg/kg, 60 min before testing. All drugs were administered subcutaneously at a volume of 2 ml/kg.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not mentioned in methods",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "housed in pairs in plastic cages",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "All experiments were conducted between 7 a.m. and 1 p.m.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not mentioned in methods",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "Square black plastic box arena (68 × 68 × 30 cm); rats placed in center; locomotion (trajectory length) and time spent in center (9 central zones of 5x5 grid) measured for 30 min in 5-min intervals using EthoVision. Tested with mescaline (10, 20, 100 mg/kg) alone or in combination with 5-HT1A, 5-HT2A, 5-HT2B, or 5-HT2C antagonists.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "All drugs were administered subcutaneously at a volume of 2 ml/kg",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "no apparatus habituation described for OFT",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "rats were placed in the center of the testing arena, and locomotion was measured for 30 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "standard OFT apparatus; food not accessible during recording",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "standard OFT apparatus; water not accessible during recording",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 60,
+          "evidence": "administered at doses of 10, 20, and 100 mg/kg, 60 min before testing",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 190,
+        "n_male": 190,
+        "n_female": null,
+        "n_per_group_min": 9,
+        "evidence": "Each experimental group consisted of 9 to 10 animals for locomotor activity measurements (N = 190)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Mescaline produced biphasic effects on locomotion: low doses (10, 20 mg/kg) decreased locomotion in the first 5-10 min, while 100 mg/kg induced hyperlocomotion across all time intervals. The hyperlocomotion at 100 mg/kg was fully reversed by 5-HT2A antagonist M100907 and partially reversed by SB215505 (5-HT2B), SB242084 (5-HT2C), and WAY100635 (5-HT1A). Time spent in center was increased at 100 mg/kg and attenuated by all antagonists except WAY100635.",
+        "statistics": "Total locomotion: F(3,176)=55.70, p<0.001 (dose); F(4,176)=30.77, p<0.001 (treatment); interaction F(12,176)=10.37, p<0.001. Time in center: F(4,174)=10.46, p<0.001; F(3,174)=4.06, p=0.0081; interaction F(12,174)=2.77, p=0.0018. RM ANOVA: F(15,143)=23.11, p<0.001; F(5,715)=393.83, p<0.001; F(75,715)=4.18, p<0.001.",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "low doses of mescaline (10 and 20 mg/kg) significantly decreased locomotion in the first (0-5 min) and second (5-10 min) time intervals, while mescaline 100 mg/kg significantly increased locomotion compared to saline in all time intervals",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "locomotion (trajectory length) and its spatial characteristics (time spent in the center of the arena)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "locomotor activity was measured in 5-min intervals... two-way RM ANOVA with time interval as a repeated measures factor",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no analysis of behavioural sequences reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "measures were trajectory length and time in center (spatial measures)",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "no social component in OFT",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "open field does not require learning or memory",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "analyzed using EthoVision version 3.1.1 software (position tracking)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "only separate univariate ANOVAs reported",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "square black plastic box arena (68 × 68 × 30 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "open field arena without shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "plastic box arena cleaned with 10% ethanol after each test",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting material mentioned",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment objects mentioned",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "open field with virtual zones only",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "rats were placed in the center of the testing arena (individually)",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food or water in the arena",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "locomotion was measured for 30 min; Each experimental subject was tested only once",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "locomotion was measured for 30 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Each experimental subject was tested only once",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline recording reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "tested 60 min after administration; no follow-up >=24 h",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "session duration 30 min",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Prepulse Inhibition of Acoustic Startle Reaction",
+      "assay_description": "Startle chambers (SR-LAB) with Plexiglas cylinder (8.2 cm diameter) on piezoelectric platform. After 5-min acclimatization with 65 dB background, five initial 120 dB startle trials (excluded), then pseudo-random presentation of pulse alone (120 dB), prepulse+pulse, prepulse alone (70 dB), and no-stimulus trials. Measures ASR amplitude and %PPI.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "All drugs were administered subcutaneously at a volume of 2 ml/kg",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "5-min acclimatization within the test session, but no separate pre-test habituation described",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "Plexiglas cylinder of 8.2 cm diameter (startle chamber restraint)",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "standard PPI apparatus; food not accessible during recording",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "standard PPI apparatus; water not accessible during recording",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 60,
+          "evidence": "administered at doses of 10, 20, and 100 mg/kg, 60 min before testing",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 220,
+        "n_male": 220,
+        "n_female": null,
+        "n_per_group_min": 10,
+        "evidence": "10 to 12 animals for sensorimotor gating testing (N = 220)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Mescaline produced PPI deficits across doses without significantly altering ASR amplitude. The 5-HT2A antagonist M100907 restored PPI deficits at all mescaline doses, while the 5-HT2C antagonist SB242084 partially restored the deficit at 20 mg/kg mescaline. Other antagonists had minimal effects on PPI.",
+        "statistics": "ASR: F(3,182)=5.038, p=0.022 (dose); F(4,182)=13.333, p<0.001 (treatment). PPI: F(4,182)=5.960, p<0.001 (treatment); F(3,182)=9.971, p<0.001 (dose). M100907 restored PPI p<0.05-0.01; SB242084 at 20 mg/kg p=0.0017.",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "only M100907 restored PPI ASR deficit for all mescaline doses (p < 0.05 -0.01) and SB242084 at a dose of 20 mg/kg of mescaline (p = 0.0017)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Acoustic startle amplitude (ASR) and percentage PPI were measured",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no within-session time-course analysis reported",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no analysis of behavioural sequences reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "startle is a reflex, not an ethological behaviour",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "no social component in PPI",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "PPI is a sensorimotor gating reflex, not learned",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "piezoelectric accelerometer measures startle amplitude; no behavioural classification",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "only univariate ANOVAs reported",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "startle chambers (SR-LAB, San Diego Instruments)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Plexiglas cylinder without shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Plexiglas cylinder on platform; no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting material in startle chamber",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment objects in startle chamber",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single Plexiglas cylinder chamber",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "each rat tested individually in startle chamber",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food or water accessible during the test",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Each experimental subject was tested only once",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "5-min acclimatization plus brief startle/prepulse trials; total session duration not explicitly stated but standard PPI is short",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Each experimental subject was tested only once",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline recording reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "tested 60 min after administration; no follow-up >=24 h",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "session does not span >=6 hours",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    }
+  ],
+  "judge_notes": [
+    "All three candidates agreed on two assays (Open Field Test and PPI ASR) — kept as-is.",
+    "Set day_night_flipped to 'no' (per glm) based on explicit statement 'All experiments were conducted between 7 a.m. and 1 p.m.' (light phase testing).",
+    "PPI setup_restrain: scored 'yes' per qwen and glm — the rubric explicitly lists PPI startle chambers with body-restraint tubes/cylinders as restraint. The 8.2 cm Plexiglas cylinder restricts movement during recording.",
+    "Food/water restriction: scored 'during' for both assays per rubric guidance that standard short tests where the apparatus has no food/water = 'during'.",
+    "OFT time_dependent: scored 'yes' because effect direction varies across the 30-min session (hypolocomotion early, hyperlocomotion sustained at 100 mg/kg) — though all timepoints are within one session, the 5-min interval analysis shows time-dependent modulation.",
+    "PPI D2 session duration scored 0 (<15 min) with low confidence — total session duration not explicitly stated in numbers.",
+    "DOI backfilled from user-edited prisma_problems.numbers: was None, now '10.1016/j.pbb.2024.173903'"
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 1.88,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 0.68
+  },
+  "low_confidence_count": 5,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 49532,
+    "output_tokens": 6619,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

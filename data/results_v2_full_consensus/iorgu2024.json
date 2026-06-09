@@ -1,0 +1,87 @@
+{
+  "study_id": "Iorgu2023",
+  "doi": null,
+  "species": "rat",
+  "strain": "Sprague-Dawley",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 84,
+    "age_max_days": 84,
+    "evidence": "Experiments were performed in 12-week-old female Sprague-Dawley rats",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "female",
+    "n_male": null,
+    "n_female": 24,
+    "evidence": "12-week-old female Sprague-Dawley rats; saline (n=4), psilocybin 5 mg/kg (n=6), psilocybin 20 mg/kg (n=6), S-ketamine 100 mg/kg (n=4), MK-801 1 mg/kg (n=4)",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        5.0,
+        20.0
+      ],
+      "doses_raw": "psilocybin 5 mg/kg, psilocybin 20 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Animals were treated intraperitoneally with: (1) vehicle (0.9% NaCl, 10 ml/kg), (2) S-ketamine 100 mg/kg, (3) psilocybin 5 mg/kg, (4) psilocybin 20 mg/kg",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [],
+  "judge_notes": [
+    "No behavioural assays were conducted in this study. The paper exclusively performs immunohistochemical whole-brain mapping for HSP70 expression after psilocybin/ketamine/MK-801 administration. Per rubric, histological/anatomical endpoints (HSP70 staining, cell counting) are explicitly excluded from scoring.",
+    "All three candidates correctly returned an empty assays array.",
+    "Consolidated age as 'young_adult' (12 weeks = 84 days, in young_adult range) over 'adult' label used by 2 candidates.",
+    "n_female = 24 reflects total female subjects summed from group ns reported in Fig. 2 caption."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0,
+    "environmental_complexity_max": 0,
+    "recording_duration_max": 0,
+    "behavioural_complexity_mean": 0,
+    "environmental_complexity_mean": 0,
+    "recording_duration_mean": 0
+  },
+  "low_confidence_count": 4,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 28990,
+    "output_tokens": 969,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

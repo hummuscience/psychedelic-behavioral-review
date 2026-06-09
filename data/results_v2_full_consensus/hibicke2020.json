@@ -1,0 +1,703 @@
+{
+  "study_id": "Hibicke2020",
+  "doi": "10.1021/acschemneuro.9b00493",
+  "species": "rat",
+  "strain": "Wistar-Kyoto (WKY)",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 50,
+    "age_max_days": 56,
+    "evidence": "Male WKY rats aged 50 -56 days were obtained from Charles River",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male WKY rats aged 50 -56 days were obtained from Charles River... females were excluded from this study",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin, LSD",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "PSI = 1.0 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "A single bolus injection of sterile saline or drug in saline vehicle was administered in a volume of 1 mL/kg intraperitoneally (IP) to each rat... (PSI = 1.0 mg/kg)",
+      "confidence": "high"
+    },
+    {
+      "compound": "LSD",
+      "doses_mg_per_kg": [
+        0.15
+      ],
+      "doses_raw": "LSD = 0.15 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "A single bolus injection of sterile saline or drug in saline vehicle was administered... (LSD = 0.15 mg/kg)",
+      "confidence": "high"
+    },
+    {
+      "compound": "Ketamine",
+      "doses_mg_per_kg": [
+        5.0,
+        20.0,
+        100.0
+      ],
+      "doses_raw": "KET = 5.0, 20, or 100 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "A single bolus injection of sterile saline or drug in saline vehicle was administered... (KET = 5.0, 20, or 100 mg/kg)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "Rats were pair-housed with a standard 12:12 light-dark cycle, handled daily",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Rats were pair-housed",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "standard 12:12 light-dark cycle (direction/time of lights on not stated)",
+      "confidence": "medium"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Paper does not address home-cage enrichment",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Forced Swim Test",
+      "assay_description": "5 min test swim in a plastic cylindrical tank (114 cm × 30.5 cm) with 30 cm water at 28-30 °C, preceded by a 15 min pre-exposure swim. Behaviours scored manually as immobility, swimming, climbing (diving not observed).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "A single bolus injection... was administered in a volume of 1 mL/kg intraperitoneally (IP)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "A 15 min preexposure to the paradigm is required to elicit measurable depressive-like behavior",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "rats were placed into a plastic cylindrical tank... could not support themselves by touching the bottom",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Food not present in the FST cylinder during the recording session",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No drinking water accessible inside the FST cylinder",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 10080,
+          "evidence": "tested in the FST on days 7, 14, 21, 28, and 35... iPSI pre-exposed on day 34 and tested on day 35; LSD tested on day 35; ketamine groups tested across multiple weeks",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "SAL (n=8), rPSI (n=8), iPSI (n=8); LSD experiment SAL (n=6), LSD (n=6); ketamine groups (n=6 each); final experiment SAL/KET/PSI (n=6 each)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "A single i.p. dose of psilocybin (1 mg/kg) or LSD (0.15 mg/kg) significantly reduced immobility and increased swimming (and climbing for psilocybin) in the FST up to 5 weeks post-administration in male WKY rats. Low-dose ketamine (5 mg/kg) reduced immobility at 1 and 2 weeks post-injection but the effect was transient and absent at 3-5 weeks; 20 and 100 mg/kg ketamine had no effect.",
+        "statistics": "rPSI vs SAL: p<0.05 (day 28), p<0.05 (day 35); iPSI vs SAL: immobility p<0.0001, swimming p<0.0001, climbing p<0.0001; LSD vs SAL: immobility p<0.05, swimming p<0.05, climbing p<0.05; KET 5 mg/kg vs SAL: p<0.001 (week 1), p<0.01 (week 2); PSI vs SAL day 7: p<0.0001; PSI vs SAL day 35: p<0.001",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "Both psilocybin and LSD significantly reduced depressive-like behaviors 5 weeks after administration... 5.0 mg/kg, but not 20 or 100 mg/kg, ketamine significantly reduced immobility in the FST 1 week (p < 0.001) and 2 weeks (p < 0.01) following ketamine administration",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "2-3",
+          "evidence": "scored for immobility, swimming, climbing, or diving... No diving was observed",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5 min swim scored as totals using modified sampling technique",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural sequences or transitions reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST immobility/swimming/climbing are not ethological behaviours per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Rats tested individually; no social component",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST is a behavioural despair paradigm; no learning required",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Behaviors were manually scored by two independent observers blind to the treatments",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Data were compared by t test or two-way ANOVA with repeated measures",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "plastic cylindrical tank (114 cm × 30.5 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent in FST cylinder",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Tank contained water only",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single cylindrical tank",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each rat tested alone in the tank",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water accessible during 5 min test",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "tested in the FST on days 7, 14, 21, 28, and 35",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "the rats were exposed to a 5 min swim",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "tested in the FST on days 7, 14, 21, 28, and 35 (5 recording days for the rPSI experiment)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only a pre-exposure swim was performed; no pre-drug baseline FST data reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "FST recorded up to 5 weeks after a single drug administration",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5 min test session",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Open Field (Locomotor Activity)",
+      "assay_description": "Square open field arena (61 × 61 cm) with 45 cm opaque walls; rats explored freely for 5 min immediately prior to each FST. Distance traveled (cm) was scored using EthoVision XT 8.5.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "drugs were administered intraperitoneally (IP) on day 0",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Paper does not describe a separate pre-test habituation to the open field arena",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "allowing the rats to explore freely for 5 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in the open field arena during recording",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in the open field arena during recording",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 10080,
+          "evidence": "LCA was assessed in the open field immediately prior to each FST (days 7, 14, 21, 28, 35)",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "Same animals as FST experiments; SAL/rPSI/iPSI n=8; LSD/SAL n=6; KET/PSI n=6",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "No differences in overt locomotor activity were observed between psilocybin-, LSD-, or ketamine-treated rats and saline controls at any timepoint, indicating no persistent stimulant or sedative effects.",
+        "statistics": "",
+        "direction": "no_effect",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "No differences in overt locomotor activity (LCA) were observed between treatment and control rats (Supplementary Figure S1)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "scored for distance traveled (cm)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single 5 min total distance reported",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transitional/sequential analysis reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor distance is not an ethological behaviour per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Rats tested individually",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open field locomotion does not require learning",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "scored for distance traveled (cm) using EthoVision XT 8.5 tracking software",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single univariate measure",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "square open field arena (61 × 61 cm) with opaque walls 45 cm high",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter described in the open field",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding mentioned in arena",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in arena",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in arena",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single open field arena",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each rat placed individually in the arena",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in arena during 5 min test",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "LCA was assessed in the open field immediately prior to each FST (days 7, 14, 21, 28, 35)",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "allowing the rats to explore freely for 5 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Up to 5 separate days of LCA recording (days 7, 14, 21, 28, 35)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline LCA recording reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Recordings 1-5 weeks post-injection",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5 min sessions",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Elevated Plus Maze",
+      "assay_description": "Plus-shaped maze with four equally sized arms (two open, two enclosed; arms 50 × 10 cm; maze 114 cm externally). Following ≥15 min room habituation, rats were placed at the central junction facing an open arm and explored freely for 5 min. Time in open arms and closed arms scored with EthoVision 8.5.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "drugs were administered intraperitoneally (IP) on day 0",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Each rat was allowed to habituate to the testing room for at least 15 min prior to exposure to the maze (room habituation only, not apparatus habituation)",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "allowed to explore freely for 5 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in the EPM apparatus during recording",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in the EPM apparatus during recording",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "long_term_over7d",
+          "value_minutes": 57600,
+          "evidence": "Rats were tested for anxiety-like behaviors in the EPM on day 40 (LSD) or day 41 (psilocybin/ketamine experiments)",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "SAL n=8, rPSI n=7 (one excluded), iPSI n=8; LSD/SAL n=6; PSI/KET/SAL n=6",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin-treated rats that had weekly open-field exposures (rPSI and PSI groups) spent significantly more time in the open arms and less in the closed arms of the EPM than saline controls, indicating an anxiolytic effect. iPSI (psilocybin without weekly arena exposure), LSD, and ketamine did not differ from saline.",
+        "statistics": "rPSI vs SAL: open arms p<0.05, closed arms p<0.05; PSI vs SAL: open arms p<0.05, closed arms p<0.05; iPSI, LSD, KET: not significantly different from SAL",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "rPSI (n = 7 due to exclusion) spent significantly more time in the open arms of the EPM (p < 0.05) and significantly less time in the closed arms of the EPM (p < 0.05) than SAL (n = 8)... PSI (n = 6) rats spent significantly more time in the open arms (p < 0.05) and significantly less time in the closed arms (p < 0.05) than SAL rats. KET (n = 6) rats were not statistically different from SAL (n = 6) rats.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "scored for time spent in the open arms, the closed arms, and the junction",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total time over 5 min reported",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequential analysis reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Time in zones is a spatial measure, not ethological",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Rats tested individually",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Approach-avoidance assay based on innate anxiety",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "scored... using EthoVision 8.5 (position tracking only)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate t tests/ANOVA on arm times",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Standard elevated plus maze with four arms",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EPM closed arms are not scored as shelter per rubric",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding in EPM",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "EPM arms are open-ended extensions, scored 0 per rubric",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each rat tested individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in EPM",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "EPM tested once (day 40 or 41)",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "allowed to explore freely for 5 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "EPM data collected on one day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug EPM baseline reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "EPM tested 40-41 days after drug administration",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5 min session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Consolidated three assays: Forced Swim Test, Open Field (locomotor activity), and Elevated Plus Maze, present across all candidates.",
+    "Collapsed all drug arms (psilocybin, LSD, ketamine doses; rPSI/iPSI/PSI groupings) into single assay entries per rubric (same paradigm, different manipulations).",
+    "B1 for FST set to score 2 (3 measures: immobility, swimming, climbing) following glm/qwen; gptoss undercounted to 2-3 range but assigned score 1.",
+    "Set EPM setup_habituation to 'no' because the paper describes only room habituation, which the rubric explicitly excludes from setup_habituation.",
+    "day_night_flipped marked not_reported (medium confidence) — paper states 12:12 cycle but does not specify direction or testing phase.",
+    "DOI taken from masthead reference (10.1021/acschemneuro.9b00493), agreed by two candidates."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 4.09,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 3.18
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 60133,
+    "output_tokens": 8695,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

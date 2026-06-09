@@ -1,0 +1,1677 @@
+{
+  "study_id": "Pogorelov2023",
+  "doi": "10.3389/fmolb.2023.1233743",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "adult",
+    "age_min_days": 90,
+    "age_max_days": 240,
+    "evidence": "Adult male and female 3-8 month-old WT and global βArr1-KO... WT and global βArr2-KO... WT and VMAT2-HET mice",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Adult male and female 3-8 month-old WT and global βArr1-KO... mice",
+    "confidence": "high"
+  },
+  "psychedelic": "Lisuride, LSD",
+  "dosing": [
+    {
+      "compound": "Lisuride",
+      "doses_mg_per_kg": [
+        0.01,
+        0.05,
+        0.1,
+        0.5,
+        1,
+        2,
+        4
+      ],
+      "doses_raw": "0.01, 0.05, 0.1, 0.5, 1, 2, 4 mg/kg",
+      "vehicle": "cyclodextrin",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "The vehicle for lisuride... consisted of N,N-dimethyllacetamide (final volume 0.5%)... and it was brought to volume with 5% 2-hydroxypropylβ-cyclodextrin in sterile water... All drugs were injected (i.p.) in a 5 ml/kg volume.",
+      "confidence": "high"
+    },
+    {
+      "compound": "LSD",
+      "doses_mg_per_kg": [
+        0.3,
+        0.5
+      ],
+      "doses_raw": "0.3 mg/kg LSD; 0.5 mg/kg LSD",
+      "vehicle": "cyclodextrin",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "LSD-tartrate (NIDA Drug Supply Program)... The vehicle for lisuride, LSD, MDL, reserpine, SCH23390, and GR127935 consisted of N,N-dimethyllacetamide... 5% 2-hydroxypropylβ-cyclodextrin... All drugs were injected (i.p.)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Mice were housed 3-5 per cage according to sex and genotype",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12:12 h light:dark cycle (lights on 0700 h)... Behavioral experiments were conducted between 0900-1700 h",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "21×21×30 cm clear Plexiglas arena; locomotor distance, vertical rearing counts and stereotypy counts recorded in 5-min bins for 30 min baseline + 90 min post-injection.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs were injected (i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Mice were placed into the open field, 30 min later they were injected... and immediately returned to the open field for 90 min (baseline is data collection, not habituation)",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice were placed into the open field... freely moving",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Plexiglas arena; no food in the apparatus during recording",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Plexiglas arena; no water in the apparatus during recording",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "injected... and immediately returned to the open field for 90 min",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "n = 8-15 mice/genotype/treatment",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Lisuride dose-dependently reduced cumulative locomotor and rearing activities in both βArr1 and βArr2 mice. Stereotypies showed a U-shaped dose-response. Locomotion was lower overall in KO than WT animals.",
+        "statistics": "Locomotion: two-way ANOVA genotype [F(1,161)=4.050, p=0.046], treatment [F(7,161)=33.270, p<0.001]; βArr2 genotype [F(1,157)=11.710, p<0.001]. Rearing ANCOVA treatment [F(7,160)=27.412, p<0.001]. Stereotypy ANCOVA [F(7,160)=14.609, p<0.001].",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "With lisuride, locomotion in both genotypes decreased in a dose-dependent fashion from 0.01 to 0.5 mg/kg lisuride relative to vehicle (p-values ≤ 0.005)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "2-3",
+          "evidence": "Fusion Integra software recorded locomotor activity (distance traveled), rearing (vertical beam-breaks), and stereotypical activities",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Fusion Integra software recorded... in 5-min blocks",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "rearing (vertical counts) is a natural ethological behaviour",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "single animal in open field",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning required",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Fusion Integra (beam-break/position tracking)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "only univariate ANOVAs reported",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "clear Plexiglas arena 21×21×30 cm",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "open arena",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "clear Plexiglas arena",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no objects reported",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "open field arena",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "single mouse",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in arena",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "one 30+90 min test per animal",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min-6 h",
+          "evidence": "30 min baseline + 90 min post-injection = continuous recording in apparatus",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "tested on a single day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Baseline activities were monitored from 0 to 30 min",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no later sessions reported",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "single 2-h session",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Head Twitch Response",
+      "assay_description": "Head twitches scored manually (Observer XT 16) during the first 30 min post-injection of vehicle, LSD (0.3 mg/kg), or lisuride (0.01-4 mg/kg), filmed during open field test.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs were injected (i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "filmed during the motor activity test; no separate apparatus habituation",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "freely moving in open field",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in arena",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water in arena",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "scored over the initial 30-min post-injection period",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "n = 8-15 mice/genotype/treatment",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Lisuride produced very few HTRs (<7/30 min even at 4 mg/kg) in both βArr1 and βArr2 mice. By contrast, LSD (0.3 mg/kg) robustly induced HTRs in WT and βArr1-KOs but the effect was lost in βArr2-KOs.",
+        "statistics": "βArr1 treatment [F(8,177)=89.256, p<0.001]; βArr2 genotype [F(1,175)=23.388, p<0.001], treatment [F(8,175)=57.323, p<0.001], interaction [F(8,175)=13.667, p<0.001]",
+        "direction": "no_effect",
+        "dose_dependent": "no",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "Even with this high 4 mg/kg dose less than 7 HTRs were identified over the 30-min post-injection period",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "numbers of head twitches",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "total counts only",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR explicitly excluded from ethological behaviours in rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "no social component",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning required",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "scored by observers using Observer XT 16 (manual scoring)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate only",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "open field arena",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "open arena",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Plexiglas arena",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no objects",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "open field",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "single mouse",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "30 min scoring",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "scored over the first 30 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "single day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug HTR baseline",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no follow-up",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30 min",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Serotonin Syndrome-Associated Behaviors",
+      "assay_description": "Hunched posture, paw kneading, rigid posture, flat posture, Staub tail, and tremor/body shaking scored manually (Observer XT 16) during first 30 min post-injection in open field.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs were injected (i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "filmed during open field motor test",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "freely moving in open field",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in arena",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water in arena",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "scored over the initial 30-min post-injection period",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "n = 8-15 mice/genotype/treatment",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Lisuride dose-dependently increased 5-HT syndrome-associated behaviors, particularly in WT mice. βArr2-KOs showed markedly reduced responses across 0.05-4 mg/kg, while βArr1-KOs only showed reduction at 4 mg/kg.",
+        "statistics": "βArr1 treatment [F(7,161)=26.264, p<0.001], interaction [F(7,161)=3.918, p<0.001]; βArr2 genotype [F(1,157)=153.263, p<0.001], treatment [F(7,157)=22.422, p<0.001], interaction [F(7,157)=7.193, p<0.001]",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "Within WT mice 5-HT syndrome-associated responses were expressed at higher levels with 0.05, 0.1, 1, 2 and 4 mg/kg lisuride than vehicle",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "hunched posture, repetitive paw kneading, rigid posture, flat posture, Staub tail, and tremor or body shaking",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "cumulative responses only",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "natural ethological postures/responses (paw kneading, Staub tail, tremor)",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "no social component",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning required",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "scored by observers blinded using Observer XT 16 (manual)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate stats",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "open field arena",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "open arena",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Plexiglas arena",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no objects",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "open field",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "single mouse",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "30 min scoring",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "30 min scoring",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "single day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no follow-up",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30 min",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Grooming",
+      "assay_description": "Time spent grooming scored (TopScan) over the first 30 min post-injection in the open field.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs were injected (i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "filmed during motor activity test",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "freely moving",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in arena",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water in arena",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "scored over the initial 30-min post-injection period",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "n = 8-15 mice/genotype/treatment",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Lisuride decreased grooming in βArr1 mice (0.05-1, 4 mg/kg) but produced an inverted U-shaped response in βArr2 mice (increase at 0.05-0.5 mg/kg, decrease at 4 mg/kg).",
+        "statistics": "p ≤ 0.030 for βArr1 doses; p = 0.021 for βArr2 0.05 mg/kg increase; p = 0.006 for βArr2 4 mg/kg decrease",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "time spent grooming in βArr1 mice decreased with 0.05-1 and 4 mg/kg lisuride... In βArr2 animals lisuride produced an inverted U-shaped function",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "time spent grooming",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "total time only",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "grooming is a natural ethological behaviour",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "no social component",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning required",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "TopScan (position tracking)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "open field",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "open arena",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Plexiglas arena",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no objects",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "open field",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "single mouse",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "30 min scoring",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "30 min scoring",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "single day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no follow-up",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30 min",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Retrograde Walking",
+      "assay_description": "Number of retrograde walking events scored (TopScan) over the first 30 min post-injection in the open field.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs were injected (i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "filmed during motor activity test",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "freely moving",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in arena",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water in arena",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "scored over the initial 30-min post-injection period",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "n = 8-15 mice/genotype/treatment",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Retrograde walking showed a biphasic U-shaped dose-response in both βArr1 and βArr2 mice — decreased at low/mid doses then increased at 2-4 mg/kg.",
+        "statistics": "p < 0.001 for low-dose decreases; p ≤ 0.021 for high-dose increases",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "Retrograde walking assumed a biphasic U-shaped curve across doses",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "number of retrograde walking events",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "total count only",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "retrograde walking not a typical natural ethological behaviour",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "no social component",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning required",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "TopScan (position tracking)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "open field",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "open arena",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Plexiglas arena",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no objects",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "open field",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "single mouse",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "30 min scoring",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "30 min scoring",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "single day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no follow-up",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30 min",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Prepulse Inhibition",
+      "assay_description": "Acoustic startle and PPI in SR-LAB chambers; 10 min habituation followed by 42 trials (null, pulse-alone, prepulse-pulse at 4/8/12 dB). %PPI calculated. Tested with lisuride alone and with antagonists (MDL100907, raclopride, clozapine, SCH23390, GR127935).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs were injected (i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "After 10 min of habituation to a white-noise background (64 dB)",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "PPI startle chamber (SR-LAB) — rubric lists PPI startle chambers with body-restraint tubes as restrained",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in PPI chamber",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water in PPI chamber",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 10,
+          "evidence": "Following drug administration, the animals were placed into the PPI apparatus. After 10 min of habituation... a series of 42 trials was given",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "n = 8-16 mice/genotype/treatment",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Lisuride (0.5 mg/kg) disrupted PPI in βArr1 mice but not βArr2 mice. MDL100907 failed to rescue PPI; raclopride normalized PPI only in WT, not in βArr1-KOs. Clozapine, SCH23390, and GR127935 normalized PPI in both βArr1 genotypes.",
+        "statistics": "RMANOVA PPI [F(2,164)=406.059, p<0.001], PPI×treatment [F(6,164)=7.644, p<0.001], treatment [F(3,82)=8.814, p<0.001]; raclopride 3-way interaction [F(6,152)=5.510, p<0.001]",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "0.5 mg/kg lisuride reduced PPI overall relative to all treatment groups (p-values ≤ 0.007)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "%PPI, null activity, and startle activity examined",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "%PPI summary only",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "PPI startle is explicitly not ethological in rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "single mouse",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning required",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "SR-LAB startle system",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate ANOVAs",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "SR-LAB chambers",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "startle chamber",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "startle chamber",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no objects",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single startle tube",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "single mouse in chamber",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "one PPI test per condition",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "42 trials with 80 ms ISI — short PPI session; duration not explicitly stated",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "single test day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug PPI baseline",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no follow-up",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "short session",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "Sucrose Preference Test",
+      "assay_description": "Two-bottle choice in home cage. Days 1: water-water baseline; Day 2: vehicle + sucrose-water; Day 3: lisuride (1 mg/kg i.p.) + sucrose-water; Days 4-6: sucrose-water. 2-h sessions after 4 h fluid restriction.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered 1 mg/kg lisuride (i.p.) and 5 min later were given S-W",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "mice housed individually for 7 days prior; metering bottles filled with water repeated until consumption stable with no side-bias",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "home cage, freely moving",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "Food was available ad libitum",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "before",
+          "evidence": "water bottle was removed 2.5 h from the home-cage before the beginning of the dark cycle... 4 h total fluid deprivation",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 5,
+          "evidence": "administered 1 mg/kg lisuride (i.p.) and 5 min later were given S-W",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 10,
+        "evidence": "n = 10-14 mice/genotype/treatment",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "VMAT2-HET mice showed no sucrose preference on Day 2 (anhedonia). A single lisuride dose on Day 3 robustly increased preference in VMAT2-HETs, persisting on Day 4, then declining to vehicle levels by Days 5-6. WTs maintained preference throughout.",
+        "statistics": "RMANOVA day [F(5,110)=8.939, p<0.001], day×genotype [F(5,110)=9.414, p<0.001], genotype [F(1,22)=7.863, p=0.010]",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "yes",
+        "evidence": "VMAT2-HETs' sucrose preference exceeded WTs (p=0.003) and was significantly higher from their selections on days 1 and 2... by days 5 and 6 sucrose preference in VMAT2-HET mice fell from WT levels",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "sucrose preference and total fluid intake",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "daily totals only, not within-session",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "preference score from volumes; not a scored ethological act",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "housed individually",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "innate preference test",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "bottles weighed",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "VMAT2 mice were housed individually... pair of bottles was presented to mice",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "standard home cage; no specific shelter mentioned",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "standard home cage with bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "home cage is single compartment",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "housed individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Food was available ad libitum; bottles of sucrose/water during test",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "2-h sessions on days 1-6",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min-6 h",
+          "evidence": "allowed to drink for 2 h",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "days 1-6 (6 days)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The final W-W pairing occurred on day 1; vehicle S-W on day 2",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "S-W pairings days 4-6, ≥24 h after lisuride dosing on day 3",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "2-h sessions <6 h",
+          "confidence": "high"
+        },
+        "raw_total": 6
+      }
+    },
+    {
+      "assay_name": "Tail Suspension Test",
+      "assay_description": "6-min tail suspension via Med Associates hook + load cell measuring immobility. Tested acutely (30 min post-injection, or 2 h post-LSD) and on days 1, 3, 5 post-injection in VMAT2 mice and reserpinized C57BL/6J mice.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs were injected (i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "Mice were suspended by the tail for 6 min using medical tape attached to a Med Associates tail suspension hook",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food during suspension",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water during suspension",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 30,
+          "evidence": "tested 30 min later... LSD tested 2 h later... tested 30 min and 1, 3, or 5 days later",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 9,
+        "evidence": "n = 9-10 mice/genotype/treatment",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "In VMAT2-HETs, acute 0.5 mg/kg lisuride, LSD, and fluoxetine all reduced immobility vs vehicle; lisuride and LSD effects were lost by day 1 while fluoxetine persisted to day 1. 1 mg/kg lisuride was ineffective in HETs and increased immobility in WTs at day 1. In reserpinized C57BL/6J mice, 0.5 mg/kg lisuride reduced immobility at 24 h.",
+        "statistics": "WT: day×treatment [F(12,123)=2.758, p=0.002], treatment [F(4,41)=4.591, p=0.004]. VMAT2-HET: day [F(3,120)=26.715, p<0.001], day×treatment [F(12,120)=2.901, p=0.001], treatment [F(4,40)=8.027, p<0.001]",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "not_reported",
+        "time_dependent": "yes",
+        "evidence": "In VMAT2-HETs acute administration of fluoxetine, LSD, or 0.5 mg/kg lisuride reduced immobility times compared to vehicle (p-values ≤ 0.043)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "immobility times",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "total immobility per 6 min session",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "immobility in tail suspension is not ethological per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "single mouse",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning required",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Med-Associates load-cell-based Tail Suspension Software",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Med Associates tail suspension hook",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "suspended",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "suspended",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no objects",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "suspended in air",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "single mouse suspended",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "tested acutely and on days 1, 3, and 5",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "suspended by the tail for 6 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "acute + days 1, 3, 5 (4 days)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline tail suspension reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "responses assessed on days 1, 3, and 5 post-injection",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "6 min per session",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    }
+  ],
+  "judge_notes": [
+    "Merged candidates that listed Open Field, HTR, 5-HT syndrome, grooming, and retrograde walking — kept these as 5 separate assays per gptoss/glm because each measures a distinct behavioural domain even though all were filmed during the same recording session.",
+    "PPI scored as setup_restrain=yes because rubric explicitly lists 'PPI startle chambers with body-restraint tubes' as restrained.",
+    "Open Field setup_habituation = no: the 30-min pre-injection period was a recorded baseline (data collected), not a habituation without data collection.",
+    "Sucrose preference: scored as Yes for setup_habituation because mice were habituated to two-bottle drinking until intake was stable and no side-bias detected.",
+    "B7 (automated classification) scored 0 for all assays per rubric — Fusion Integra is beam-break and TopScan is centroid-tracking based on the description; neither qualifies as behavioural classification.",
+    "Tail Suspension D1 corrected to 1 (Multiple discrete sessions across days 1, 3, 5) — gptoss had inconsistent score=0 with value 'Multiple discrete sessions'.",
+    "Dosing for LSD includes both 0.3 mg/kg (HTR comparison) and 0.5 mg/kg (TST comparison) doses as listed in the paper."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 5.0,
+    "environmental_complexity_max": 4.09,
+    "recording_duration_max": 8.18,
+    "behavioural_complexity_mean": 1.56,
+    "environmental_complexity_mean": 0.51,
+    "recording_duration_mean": 2.73
+  },
+  "low_confidence_count": 6,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 89790,
+    "output_tokens": 17673,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

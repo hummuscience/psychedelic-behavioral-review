@@ -1,0 +1,683 @@
+{
+  "study_id": "Fiorillo2026",
+  "doi": "10.1186/s12868-026-01003-8",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 56,
+    "age_max_days": 70,
+    "evidence": "Only adult (8-10 weeks of age) male mice were used",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Only adult (8-10 weeks of age) male mice were used to establish foundational experimental outcomes.",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        0.1,
+        0.3,
+        0.56,
+        1.0,
+        2.0
+      ],
+      "doses_raw": "0.1, 0.3, 0.56, 1.0, or 2.0 mg/kg; prophylactic experiments used 0.3 or 1.0 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "DOI and LPS, or vehicle control (sterile 0.9% saline), were administered intraperitoneally (i.p.) at 10 ml/kg ... mice were injected (i.p.) with varying doses of DOI (0.1, 0.3, 0.56, 1.0, or 2.0 mg/kg) or vehicle",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "Mice were allowed one week to acclimate after arrival and were handled for two consecutive days prior to all experiments to minimize stress.",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Animals were housed in cages with up to 4 littermates",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12 h light/dark cycle (lights on 6 am-6 pm) ... behavioral experiments between 10 am-3 pm",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "Locomotor activity measured in 25 × 25 × 20 cm open-field Plexiglas chambers for 10 min using an automated 16-beam infrared detection system; total distance and proportion of center time were recorded.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "DOI and LPS, or vehicle control (sterile 0.9% saline), were administered intraperitoneally (i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Mice were allowed to acclimate to the behavioral room for 1 h prior to testing ... Mice were then placed in individual locomotion chambers for 10 min (room acclimation only, no apparatus habituation).",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice were placed in individual locomotion chambers (25 × 25 × 20 cm open-field Plexiglas cages) for 10 min — freely moving.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard OFT chamber; no food in apparatus during the 10-min test.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard OFT chamber; no water in apparatus during the 10-min test.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "short_term_1to7d",
+          "value_minutes": 2880,
+          "evidence": "DOI ... was administered 24 h prior to LPS ... and behavioral testing was conducted 24 h later (i.e., ~48 h after DOI).",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 48,
+        "n_male": 48,
+        "n_female": null,
+        "n_per_group_min": 12,
+        "evidence": "Mice (n = 12) were pretreated (i.p.) with DOI (0.3 or 1 mg/kg) or saline 24 h prior to LPS (1 mg/kg, i.p.), and locomotor activity (A) and center time (B) in the OFT was tested (for 10 min) 24 h later.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "LPS significantly reduced total locomotor activity compared to saline. DOI 0.3 mg/kg pretreatment prevented this deficit and restored locomotor activity to control levels, whereas 1 mg/kg did not. Center time was unaffected by either LPS or DOI.",
+        "statistics": "Total distance: F[3,44] = 5.46, p < 0.01; Center time: F[3,44] = 0.17, p > 0.05",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "LPS significantly reduced total locomotor activity compared with saline controls ... Pretreatment with DOI at 0.3 mg/kg effectively prevented these deficits, restoring locomotor activity to control levels ... the 1 mg/kg treatment did not mitigate the LPS-induced behavioral deficit",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Total distance is expressed as the sum of surround and center distances. Center time was calculated as the proportion of time spent moving in the center of the arena.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Outcomes reported as totals/proportions over the entire 10-min session.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition or sequence analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only locomotor distance and zone time were measured.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice tested individually in locomotion chambers.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "OFT measures innate exploratory locomotion.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Automated detection system composed of 16 infrared light beam rays (position/beam-break tracking only).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate analyses reported.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Individual locomotion chambers (25 × 25 × 20 cm open-field Plexiglas cages).",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open-field Plexiglas cage with no shelter.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bare Plexiglas open-field chamber.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in apparatus.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in apparatus.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Open-field Plexiglas cage; single arena.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice were placed in individual locomotion chambers.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the OFT chamber.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Mice were placed in individual locomotion chambers for 10 min.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "for 10 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "OFT performed on a single day, 24 h after LPS.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug OFT baseline recorded.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "DOI was administered 24 h prior to LPS, and behavioral testing was conducted 24 h later — ~48 h after the last DOI dose.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "10-min session.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Forced Swim Test",
+      "assay_description": "6-min forced swim test measuring immobility time as an index of passive coping/behavioral despair; tested 24 h after LPS (~48 h after DOI). Some cohorts had OFT 2 h prior; pooled with FST-only cohort after confirming no effect of prior OFT.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "DOI (0.3 or 1.0 mg/kg) or vehicle was administered 24 h prior to LPS (1 mg/kg) or vehicle ... administered intraperitoneally (i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Mice were habituated to the testing room for 1 h before each assay (room acclimation only, no apparatus habituation).",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice swim freely in the cylinder; no head/body restraint applied.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food accessible inside the swim cylinder during the 6-min test.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No drinking water accessible; test medium is water but not drinkable.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "short_term_1to7d",
+          "value_minutes": 2880,
+          "evidence": "DOI ... administered 24 h prior to LPS ... behavioral testing was conducted 24 h later (~48 h after DOI).",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 16,
+        "evidence": "Mice (n = 16-21) were pretreated (i.p.) with DOI (0.3 or 1 mg/kg) or saline 24 h prior to LPS (1 mg/kg, i.p.), and immobility time in the FST was tested 24 h later.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "LPS markedly increased FST immobility time relative to saline controls. DOI pretreatment significantly reduced LPS-induced immobility at both 0.3 and 1 mg/kg, with a stronger effect at the lower dose.",
+        "statistics": "F[3,67] = 24.60, p < 0.001",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "LPS markedly increased immobility time relative to saline treatment ... DOI pretreatment significantly reduced LPS-induced immobility at both tested doses, with the effect more pronounced at the lower dose (0.3 mg/kg) compared with the higher dose (1 mg/kg).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Only immobility time was reported.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total immobility over 6-min session reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence/transition analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST immobility is not an ethological behaviour (rubric example).",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice tested individually.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST does not require learning or memory.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pose-estimation or ML-based behavioural classifier described.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single univariate outcome.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Standard FST cylinder.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent in FST cylinder.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent (water cylinder).",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single cylindrical compartment.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice tested individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or drinking water accessible during FST.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Animals underwent the FST for 6 min.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "FST for 6 min.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "FST performed on a single day per cohort.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No baseline FST recorded.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "FST conducted ~48 h after DOI administration (≥24 h after last drug).",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "6-min session.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Body Weight Monitoring",
+      "assay_description": "Daily body-weight measurement immediately before LPS and once daily for 7 days following LPS challenge to assess recovery from LPS-induced weight loss; data analysed as time course and AUC.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Mice were pretreated (i.p.) with DOI (0.3 or 1 mg/kg) or saline 24 h prior to LPS (1 mg/kg, i.p.).",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Not reported (weighing in home cage).",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Brief weighing only; no restraint described during the measurement.",
+          "confidence": "medium"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "food and water provided ad libitum",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "food and water provided ad libitum",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 1440,
+          "evidence": "body weight was measured immediately before LPS injection and once daily for the following 7 days (first post-DOI measurement at 24 h, last at ~8 days post-DOI).",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "Mice (n = 6-8) ... body weight was measured immediately before LPS injection and once daily for the following 7 days.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "LPS produced a sharp drop in body weight within 24 h followed by slow recovery, significantly increasing 7-day AUC of weight change. DOI pretreatment at both 0.3 and 1 mg/kg significantly attenuated cumulative body-weight loss.",
+        "statistics": "AUC: F[3,24] = 70.61; Repeated-measures: time F[7,168] = 197.9, p < 0.001; treatment F[3,24] = 39.81, p < 0.001; interaction F[21,168] = 16.18, p < 0.001",
+        "direction": "increase",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "LPS significantly increased the AUC relative to saline controls ... Pretreatment with DOI at both 0.3 and 1 mg/kg significantly attenuated this cumulative weight loss.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Body weight only.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Across-day comparison (between-session), not within-session dynamics.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No behavioural sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Body weight is a physiological measure.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social construct.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No cognitive demand.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Manual weighing.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate analysis.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "Mice were returned to their home cages; body weight measured in home-cage housing.",
+          "confidence": "medium"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "low"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Home cage with standard bedding (implied by group housing in cages).",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Standard home cage.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Brief individual weighing.",
+          "confidence": "medium"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "food and water provided ad libitum in home cage.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "body weight was measured immediately before LPS injection and once daily for the following 7 days.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Each weighing is brief (<15 min).",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Measured before LPS and daily for 7 days following (≥7 recording days).",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "body weight was measured immediately before LPS injection",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Daily measurements for 7 days post-LPS (and ≥24 h after DOI).",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Each weighing brief; no single session ≥6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    }
+  ],
+  "judge_notes": [
+    "All candidates agreed on OFT and FST as separate assays; consolidated both with modal scoring.",
+    "Added Body Weight Monitoring as a third assay — candidates omitted it but the paper explicitly measures and analyzes daily body weight over 7 days as a behavioural/physiological readout following DOI+LPS, reported with statistics and group comparisons (Fig. 6D-E). Scored conservatively as home-cage measure.",
+    "B1 for OFT scored 1 (2-3 measures: total distance + center time); FST B1 scored 0 (immobility only).",
+    "OFT outcome direction: judged 'mixed' — LPS decreased locomotion, DOI 0.3 mg/kg restored to control, 1 mg/kg did not; primary directional framing ambiguous, but the paper's narrative is restoration (which could be 'increase' from LPS-depressed baseline). Selected 'mixed' to reflect divergent dose effects.",
+    "setup_habituation scored 'no' for OFT/FST since the paper describes only room acclimation (1 h), which per rubric does NOT count as apparatus habituation.",
+    "time_to_assay = short_term_1to7d (~48 h after last DOI dose) because behavioral testing is 24 h after LPS, which itself is 24 h after DOI.",
+    "DOI dose list consolidated to include all five tested doses (0.1, 0.3, 0.56, 1.0, 2.0 mg/kg) used in the dose-response study, even though only 0.3 and 1.0 were used prophylactically.",
+    "enrichment_housing kept as 'not_reported' — paper describes housing but does not mention enrichment items."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 4.09,
+    "recording_duration_max": 5.45,
+    "behavioural_complexity_mean": 0.42,
+    "environmental_complexity_mean": 1.36,
+    "recording_duration_mean": 2.72
+  },
+  "low_confidence_count": 5,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 57564,
+    "output_tokens": 9239,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "study_id": "Tyls2023",
+  "doi": "10.3389/fnins.2023.1152578",
+  "species": "rat",
+  "strain": "Wistar",
+  "age": {
+    "value": "adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "The experiments were performed on adult male Wistar rats (SPF Velaz, s.r.o., Czechia) weighing 280-300 g at the time of surgery.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "adult male Wistar rats",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocin",
+  "dosing": [
+    {
+      "compound": "Psilocin",
+      "doses_mg_per_kg": [
+        4.0
+      ],
+      "doses_raw": "4 mg/kg subcutaneously (SC)",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "Psilocin (PSI, THC-Pharm GmbH, Germany) was dissolved in 2 ml of saline (0.9% NaCl) acidified by 10 m l of glacial acetic acid... administrated in a dose of 4 mg/kg subcutaneously (SC).",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "The animals were housed in pairs and were regularly handled every second day.",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "The animals were housed in pairs... The rats were then housed individually in cages in order to prevent damage to implanted electrodes (housing during testing period was individual).",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12-h light/dark regime... The experiments were conducted during the daytime between 8:00 and 14:00.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Home-cage enrichment not described.",
+      "confidence": "low"
+    }
+  },
+  "assays": [],
+  "judge_notes": [
+    "Primary endpoint of the paper is qEEG (power, coherence, GFC), which is a neural recording and per the rubric is NOT scored as a behavioural assay.",
+    "The only behavioural readout reported is the active/inactive ratio scored concurrently in the home cage during EEG recording (Section 2.6, Figures 2A/3A). This is included as one home-cage behavioural activity assay, matching the qwen candidate's interpretation; the glm candidate produced no assays.",
+    "Group housing scored 'no' because during behavioural testing rats were housed individually (paired pre-surgery only) — rubric specifies housing during testing period.",
+    "application_type set to 'multiple' since psilocin (s.c.) was co-administered with antagonists (s.c.) or clozapine (i.p.) depending on the arm."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0,
+    "environmental_complexity_max": 0,
+    "recording_duration_max": 0,
+    "behavioural_complexity_mean": 0,
+    "environmental_complexity_mean": 0,
+    "recording_duration_mean": 0
+  },
+  "low_confidence_count": 1,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm"
+  ],
+  "judge_usage": {
+    "input_tokens": 40594,
+    "output_tokens": 3855,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

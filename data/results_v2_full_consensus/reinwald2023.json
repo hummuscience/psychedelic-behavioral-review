@@ -1,0 +1,85 @@
+{
+  "study_id": "Reinwald2023",
+  "doi": "10.1038/s41398-023-02690-1",
+  "species": "rat",
+  "strain": "Wistar",
+  "age": {
+    "value": "adult",
+    "age_min_days": 434,
+    "age_max_days": 476,
+    "evidence": "at the age of 62–68 weeks, all rats underwent two scanning sessions",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "female",
+    "n_male": null,
+    "n_female": 25,
+    "evidence": "Twenty-five two-month-old female Wistar rats ... were used for the experiments",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "1 mg/kg bodyweight, s.c.",
+      "vehicle": "water",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "Psilocybin (1 mg/kg bodyweight, s.c.) was administered exactly 10 min after the start of the rsfMRI acquisition. Psilocybin ... was dissolved in Ampuwa (aqua ad iniectabilia).",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "All animals were housed individually in standard rat cages",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12-h artificial light/dark cycle (lights on at 6:00 a.m.)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [],
+  "judge_notes": [
+    "Study contains no scoreable behavioural assays — the only in vivo readout in psilocybin-treated rodents is pharmaco-fMRI (resting-state functional connectivity under anesthesia), which is a neural-imaging readout, not a behavioural assay per rubric exclusion criteria.",
+    "Alcohol drinking measurement (ADE relapse intake) is a phenotyping measure used as a covariate; no psychedelic was administered during the drinking measurement, so it is not scored as a psychedelic-administration assay.",
+    "All three candidates correctly returned an empty assays list; identity and housing metadata reconciled via modal values. Sex n_female set to 25 (total enrolled female subjects per Methods); 4 controls were excluded post-hoc due to brain tumors."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0,
+    "environmental_complexity_max": 0,
+    "recording_duration_max": 0,
+    "behavioural_complexity_mean": 0,
+    "environmental_complexity_mean": 0,
+    "recording_duration_mean": 0
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 50898,
+    "output_tokens": 952,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

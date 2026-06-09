@@ -1,0 +1,680 @@
+{
+  "study_id": "Moghadam2026",
+  "doi": "10.1002/jnr.70107",
+  "species": "rat",
+  "strain": "Wistar",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 56,
+    "age_max_days": 70,
+    "evidence": "Male Wistar rats (220-250 g, 8-10 weeks old)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 40,
+    "n_female": null,
+    "evidence": "Male Wistar rats (220-250 g, 8-10 weeks old)",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybe azurescens (psilocybin-containing mushroom)",
+  "dosing": [
+    {
+      "compound": "Psilocybe azurescens (whole mushroom powder)",
+      "doses_mg_per_kg": [
+        10.0,
+        100.0,
+        250.0
+      ],
+      "doses_raw": "10, 100, and 250 mg/kg",
+      "vehicle": "saline",
+      "route": "p.o.",
+      "schedule": "repeated",
+      "evidence": "The powder was mixed with sterile normal saline and administered orally by gavage (2 mL/kg) to the animals at three doses of 10, 100, and 250 mg/kg ... every other day for 14 days.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Not mentioned in methods.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "Housing density not stated.",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "The animals were housed under a 12 h/12 h light/dark cycle (direction not specified).",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Not mentioned in methods.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Three-Chamber Test",
+      "assay_description": "Three-chamber sociability and social novelty test; social preference phase (empty box vs. stranger 1) followed immediately by social novelty phase (stranger 1 vs. stranger 2). Each phase recorded for 10 min. Outcomes: time spent in chambers, exploring time, sociability index, social novelty index.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "p.o.",
+          "evidence": "administered orally by gavage",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No pre-test apparatus habituation described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Animals freely explored chambers; behavior was recorded by a camera.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard three-chamber test; no food present in apparatus.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard three-chamber test; no water present in apparatus.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "Behavioral assessments were started one day after the last dose.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 40,
+        "n_male": 40,
+        "n_female": null,
+        "n_per_group_min": 10,
+        "evidence": "randomly divided into four experimental groups (n = 10/group)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "P. azurescens at 100 and 250 mg/kg reduced exploration of the stranger rat and decreased both the sociability index and social novelty index, indicating dose-dependent disruption of social interaction and social recognition. The 10 mg/kg dose did not alter these measures.",
+        "statistics": "Sociability index F(3,36)=6.418, p<0.01; Social novelty index F(3,36)=10.06, p<0.001; Exploring Stranger 1 F(3,36)=8.91, p<0.001; Exploring Stranger 2 F(3,36)=5.958, p<0.01.",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "The sociability index was lower in P. azurescens 100 and 250 mg/kg than in the control group (p<0.05 and p<0.01, respectively). Treatment with P. azurescens at 100 and 250 mg/kg doses reduced the social novelty index versus the control (p<0.001).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "time in chambers, exploring time for empty box, exploring time for stranger 1, exploring time for stranger 2, sociability index, social novelty index",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Totals over 10-min phases; no within-session time-course analysis.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition or sequence analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Social investigation (exploring/sniffing stranger rat) was quantified.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 2,
+          "value": "Restricted social interaction",
+          "evidence": "Stranger rat was placed in lateral chamber enclosed by a box (barrier).",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Social novelty preference phase requires recognition memory of the first stranger.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "All variables were scored using a chronometer by a blind experimenter.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVAs only.",
+          "confidence": "high"
+        },
+        "raw_total": 6
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Three-chamber test apparatus.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter/refuge in apparatus.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding mentioned in apparatus.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "Three distinct chambers separated by walls.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 1,
+          "value": "Stimulus behind barrier",
+          "evidence": "Stranger rat enclosed in a box during recording.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in apparatus.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Two phases run back-to-back on a single test day.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "10 min social preference + 10 min social novelty = ~20 min total session.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test day.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline for this assay.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Test conducted ~24 h after the last dose.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session <6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    },
+    {
+      "assay_name": "Elevated Plus Maze",
+      "assay_description": "Plus-shaped plexiglass maze with two open and two closed arms. Animal placed in center facing an open arm; 5-min recording. Measures: open/closed arm time and entries, total arm time, total arm entries, anxiety index.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "p.o.",
+          "evidence": "administered orally by gavage",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No pre-test apparatus habituation described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Animals freely explored the maze.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard EPM; no food in apparatus.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard EPM; no water in apparatus.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "Behavioral assessments were started one day after the last dose.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 40,
+        "n_male": 40,
+        "n_female": null,
+        "n_per_group_min": 10,
+        "evidence": "n = 10/group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "All doses of P. azurescens (10, 100, 250 mg/kg) decreased open-arm time and entries, increased closed-arm time and entries, and increased the anxiety index compared to control, indicating anxiety-like behavior at all tested doses.",
+        "statistics": "Open-arm time F(3,36)=25.98, p<0.001; Open-arm entries F(3,36)=26.19, p<0.001; Anxiety index F(3,36)=34.77, p<0.001; Total arm time F(3,36)=3.441, p<0.05; Total entries F(3,36)=1.446, p=0.246.",
+        "direction": "increase",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "All doses of P. azurescens decreased open-arm time (p<0.001) and open-arm entries (p<0.001) ... All P. azurescens doses increased the anxiety index compared to the control (p<0.001).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "open-arm time, open-arm entries, closed-arm time, closed-arm entries, total arm time, total arm entries, anxiety index",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single 5-min totals.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Zone preference time is a spatial measure, not an ethological behaviour.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate avoidance test; no learning/memory required.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Manual chronometer scoring.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVAs only.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Plus-shaped plexiglass maze.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EPM closed arms are part of apparatus design, not a shelter.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Plexiglass floor; no bedding.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "EPM arms are open extensions of a central platform.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Only the focal animal in the apparatus.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in apparatus.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Single 5-min EPM test.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Recorded for 5 min.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test day.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug EPM baseline.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Test ~24 h after final dose.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session <6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Forced Swimming Test",
+      "assay_description": "FST in a cylinder tank (50 cm height x 30 cm width) filled with water (23-27 degC). 15-min habituation swim on day 1; 5-min test swim on day 2. Measures: swimming, climbing (active), immobility (passive).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "p.o.",
+          "evidence": "administered orally by gavage",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "The experiment consisted of a habituation phase on the first day (15 min of swimming) and a testing phase (5 min of swimming) on the second day.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "FST cylinder is treated as a restraint apparatus per rubric.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in apparatus during test.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No drinking water accessible during test (animal is submerged).",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "Behavioral assessments were started one day after the last dose.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 40,
+        "n_male": 40,
+        "n_female": null,
+        "n_per_group_min": 10,
+        "evidence": "n = 10/group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "P. azurescens at 100 and 250 mg/kg decreased active behavior (swimming + climbing) and increased passive behavior (immobility) versus control, indicating dose-dependent depressive-like behavior; 10 mg/kg had no effect.",
+        "statistics": "Active behavior F(3,36)=10.38, p<0.001; Passive behavior F(3,36)=10.9, p<0.001.",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Administration of P. azurescens 100 and 250 mg/kg decreased active behavior (swimming and climbing) (p<0.05 and p<0.01) and increased passive behavior (immobility) (p<0.05 and p<0.001) compared to the control.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Active behavior (swimming + climbing reported jointly) and passive behavior (immobility).",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single 5-min totals.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST immobility is not an ethological behaviour per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning/memory component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Manual chronometer scoring.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVAs only.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Cylinder tank (FST).",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No refuge available.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Water-filled cylinder; no bedding.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single cylinder.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Single rat per test.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No accessible food/water (water is the test medium).",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Habituation swim on day 1 (15 min) and test swim on day 2 (5 min).",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "Habituation phase on day 1 = 15 min of swimming (longest single session).",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Day 1 habituation swim + day 2 test swim = 2 days animal was in the apparatus.",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Day-1 habituation data not reported as analyzed baseline.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Behavioral assessments started one day after the last dose.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sessions <6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    }
+  ],
+  "judge_notes": [
+    "Three candidates agreed on three behavioural assays: Three-Chamber Test, Elevated Plus Maze, and Forced Swimming Test. No merges or drops required.",
+    "Psychedelic compound entered as Psilocybe azurescens whole mushroom powder (not isolated psilocybin); the paper administered dried mushroom material, not a purified compound.",
+    "Three-Chamber D2 set to 15-60 min because the test consists of two consecutive 10-min phases (~20 min total within a single continuous session), per qwen's interpretation; glm and gptoss scored only one 10-min phase.",
+    "FST D3 scored as 2-7 days (2 days): habituation day 1 + test day 2 both involve the animal in the apparatus and constitute distinct recording days for this assay (per rubric example for fear conditioning train+test).",
+    "FST setup_restrain = yes per rubric explicit listing of FST cylinder as restraint apparatus (overriding glm/gptoss 'no').",
+    "Housing day_night_flipped set to not_reported (high confidence) because the paper states a 12:12 cycle but does not specify direction — informative silence.",
+    "DOI 10.1002/jnr.70107 taken from the article URL string visible in the markdown (onlinelibrary.wiley.com/doi/10.1002/jnr.70107)."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 7.5,
+    "environmental_complexity_max": 2.73,
+    "recording_duration_max": 5.45,
+    "behavioural_complexity_mean": 3.75,
+    "environmental_complexity_mean": 0.91,
+    "recording_duration_mean": 3.18
+  },
+  "low_confidence_count": 5,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 57890,
+    "output_tokens": 7845,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

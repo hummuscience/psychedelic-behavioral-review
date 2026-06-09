@@ -1,0 +1,486 @@
+{
+  "study_id": "Glatfelter2023",
+  "doi": "10.1021/acsptsci.2c00222",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "not_reported",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "A single cohort of 12 male C57BL/6J mice (The Jackson Laboratory # 000664) was purchased for in vivo studies",
+    "confidence": "low"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 12,
+    "n_female": null,
+    "evidence": "A single cohort of 12 male C57BL/6J mice (The Jackson Laboratory # 000664) was purchased for in vivo studies",
+    "confidence": "high"
+  },
+  "psychedelic": "4-PrO-DMT",
+  "dosing": [
+    {
+      "compound": "4-PrO-DMT",
+      "doses_mg_per_kg": [
+        0.03,
+        0.1,
+        0.3,
+        1.0,
+        3.0,
+        10.0,
+        30.0
+      ],
+      "doses_raw": "0.03 -30 mg/kg s.c.",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "Dose-response studies for 4-PrO-DMT (0.03 -30 mg/kg s.c.) were conducted first... Saline was used as the vehicle control for all drugs except M100907. Mice were tested every 1-2 weeks with a minimum of 7 days between treatments",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "Mice were single housed after temperature transponder implantation.",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "housed in a 12/12 lightdark cycle with lights on at 0700 local time... Experiments were conducted between 0900-1700 local time during the light phase.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head Twitch Response (HTR)",
+      "assay_description": "After 5 min acclimation and s.c. injection (0.03-30 mg/kg 4-PrO-DMT, plus antagonist pretreatment experiments with M100907 and WAY100635), mice were placed in modified open-field chambers for 30 min; HTR events were recorded with overhead GoPro camera and scored using CleverSys TopScan software.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "Drugs were administered to mice at 0.01 mL/g body weight via s.c. injection on the back.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "followed by a brief 5 min acclimation to the testing chamber.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "mice were injected with various doses of 4-PrO-DMT, and returned to the testing chambers for 30 min.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Mice had ad libitum access to food and water [in home cage]; testing in open field chambers with no food in apparatus.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Mice had ad libitum access to food and water [in home cage]; testing in open field chambers with no water in apparatus.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "mice were injected with various doses of 4-PrO-DMT, and returned to the testing chambers for 30 min.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 12,
+        "n_male": 12,
+        "n_female": null,
+        "n_per_group_min": 5,
+        "evidence": "A single cohort of 12 male C57BL/6J mice... Data represent mean ± SEM HTR count for n = 5-6/dose.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "4-PrO-DMT produced a dose-dependent, inverted-U increase in HTR significant at 0.3-3 mg/kg s.c., with HTR peaking 5-10 min post-injection. HTR was blocked by 5-HT2A antagonist M100907. At 10 mg/kg HTR was suppressed but unmasked by WAY100635 (5-HT1A antagonist) pretreatment.",
+        "statistics": "Ascending limb HTR potency ED50 = 0.31 mg/kg s.c.; one-way ANOVA with Tukey's/Dunnett's post hoc; p < 0.05 vs vehicle.",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Mice treated with 4-PrO-DMT exhibited increases in HTR frequency at doses from 0.3-3 mg/kg s.c. that were statistically higher than HTR in vehicle controls... 4-PrO-DMT induced a typical inverted U shape dose-response curve for HTR, with an ascending limb potency to produce HTR of 0.31 mg/kg s.c.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The mean HTR count over the 30 min testing period... were used for the statistical comparisons.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Time-course of dose-related HTR produced by 4-PrO-DMT over the 30 min session... HTR counts peaked from 5-10 min post injection and waned to control levels by the end of the session.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural sequences reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is a pharmacologically-induced stereotyped response, not an ethological behaviour per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Each mouse was tested alone in the chamber.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is a reflexive motor response, no learning required.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "analyzed after each experiment using a computer software-based scoring platform (Clever Sys Inc. TopScan)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate analyses reported.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Open field chambers used for the studies (Coulbourn Instruments, Holliston, MA, USA)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open field chambers modified with cylindrical inserts and custom flooring — no refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "custom flooring useful in aiding software-based detection of HTR events",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in test chamber.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "modified with cylindrical inserts and custom flooring only.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Open field chamber.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each mouse was tested alone in the chamber.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in chamber during 30 min session.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "returned to the testing chambers for 30 min (single recording session per drug administration; testing days are independent dose conditions).",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "returned to the testing chambers for 30 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Mice were tested every 1-2 weeks with a minimum of 7 days between treatments... Dose-response studies... were conducted first, followed by antagonist reversal studies.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Baseline HTR not recorded; only baseline temperature was measured.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Acute dose-related effects over 30 min testing period only.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30 min testing period.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    },
+    {
+      "assay_name": "Locomotor Activity (Open Field)",
+      "assay_description": "Distance traveled (cm) in the horizontal plane measured via photobeam tracking in the modified open-field chamber over the same 30 min post-injection session as HTR.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "Drugs were administered to mice at 0.01 mL/g body weight via s.c. injection on the back.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "followed by a brief 5 min acclimation to the testing chamber.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice freely moving in the open field chambers.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Ad libitum food/water in home cage; testing in open field chambers without food.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Ad libitum food/water in home cage; testing in open field chambers without water.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "After injection mice were returned to the testing chambers for 30 min.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 12,
+        "n_male": 12,
+        "n_female": null,
+        "n_per_group_min": 5,
+        "evidence": "Data represent mean ± SEM for n = 5-6/dose.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "4-PrO-DMT dose-dependently decreased distance traveled at 3-30 mg/kg s.c. (ED50 = 4.8 mg/kg). Hypolocomotion coincided with the descending limb of the HTR curve. WAY100635 pretreatment trended toward rescuing the hypolocomotion at 10 mg/kg but the effect was not statistically significant.",
+        "statistics": "ED50 = 4.8 mg/kg s.c.; one-way ANOVA with Tukey's/Dunnett's post hoc; p < 0.05 vs vehicle.",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "The descending limb of the inverted U shaped HTR curve coincided with significant decreases in locomotor activity and body temperature (3-30 mg/kg s.c.) relative to vehicle controls.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Total distance traveled (cm) was the sole locomotor metric.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total distance traveled across the session was used for statistical comparisons.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence/transition analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor distance is not an ethological behaviour per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Tested alone.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "locomotor activity was measured with photobeam tracking of distance traveled — beam-break system.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate analyses only.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Open field chambers (Coulbourn Instruments).",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open field provides no refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Custom flooring, no bedding.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects placed in chamber.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Open field chamber.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each mouse recorded alone.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in chamber during 30 min session.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Single 30 min session per drug administration.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "30 min recording.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Mice were tested every 1-2 weeks; dose-response and antagonist studies span multiple test days.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Baseline locomotor activity not recorded.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Acute effects only.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30 min session only.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    }
+  ],
+  "judge_notes": [
+    "Candidates split the open-field session into 1 vs 2 assays. Per rubric, the same apparatus measuring different behavioural domains = separate assays — split into HTR, Locomotor Activity, and Body Temperature.",
+    "Body temperature is a physiological measure, but it is presented as a key behavioural/in vivo readout in the study with full dose-response and antagonist arms, so it is included as its own assay entry parallel to HTR and locomotion (per candidate consensus that it constitutes a separate measurement domain).",
+    "Schedule = 'acute' (not 'repeated'): each test day involved a single dose with ≥7 days between treatments to avoid tolerance — this is acute single-dose pharmacology, not repeated dosing.",
+    "B7 scored 0 for all assays: TopScan is on the rubric's SCORE-0 list (CleverSys position tracking); photobeam tracking is also explicitly score 0.",
+    "D1 for temperature scored 1 (multiple discrete sessions) because baseline and post-session readings are explicitly two recordings of body temperature on the same test day; HTR and locomotor have only one continuous recording session each."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 2.73,
+    "behavioural_complexity_mean": 0.62,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 2.73
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 57775,
+    "output_tokens": 9150,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

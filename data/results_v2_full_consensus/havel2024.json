@@ -1,0 +1,1495 @@
+{
+  "study_id": "Havel2024",
+  "doi": null,
+  "species": "mouse and rat",
+  "strain": "C57BL/6J (mice); Fisher F-344 (rats)",
+  "age": {
+    "value": "adult",
+    "age_min_days": 56,
+    "age_max_days": 150,
+    "evidence": "Healthy adult C57BL/6 J mice male (8 -15 weeks)... Adult male Fisher F-344 rats (CDF Strain, 90 -150 days)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Healthy adult C57BL/6 J mice male (8 -15 weeks, 29-35 g) and female (8 -15 weeks, 19 -26 g)",
+    "confidence": "high"
+  },
+  "psychedelic": "Oxa-noribogaine, Epi-oxa-noribogaine, Noribogaine",
+  "dosing": [
+    {
+      "compound": "Oxa-noribogaine",
+      "doses_mg_per_kg": [
+        1.0,
+        3.0,
+        5.4,
+        10.0,
+        30.0,
+        40.0
+      ],
+      "doses_raw": "1, 3, 10, 30 mg/kg s.c. (tail-flick); 5.4 mg/kg s.c. (ED80, OF/FST); 10 mg/kg s.c. (FST); 3, 10, 30, 40 mg/kg, i.p. (SA/reinstatement/OIH)",
+      "vehicle": "saline",
+      "route": "multiple",
+      "schedule": "acute",
+      "evidence": "Solids were dissolved in UPS grade 0.85% saline with addition of 2 molar equivalents of glacial acetic acid... oxa-noribogaine (3, 10 or 30 mg/kg, i.p.)... oxa-noribogaine ED80 (5.4 mg/kg) or >ED95 10 mg/kg dose s.c.",
+      "confidence": "high"
+    },
+    {
+      "compound": "Epi-oxa-noribogaine",
+      "doses_mg_per_kg": [
+        1.0,
+        3.0,
+        5.2,
+        10.0,
+        30.0,
+        40.0
+      ],
+      "doses_raw": "epi-oxa-noribogaine (5.2 mg/kg) in OF; epi-oxa-noribogaine (10 and 40 mg/kg, i.p.) in CPP",
+      "vehicle": "saline",
+      "route": "multiple",
+      "schedule": "acute",
+      "evidence": "epi-oxa-noribogaine (5.2 mg/kg, P <0.0001)... epi-oxa-noribogaine (10 and 40 mg/kg, i.p.)",
+      "confidence": "high"
+    },
+    {
+      "compound": "Noribogaine",
+      "doses_mg_per_kg": [
+        40.0
+      ],
+      "doses_raw": "40 mg/kg, i.p.",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "noribogaine (40 mg/kg, i.p.) suppressed morphine self-administration",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "One week after arriving in the facility, mice were handled for approximately 5 min by a male experimenter.",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "housed 5 mice per cage... housed in groups of 2 in AllerZone MicroIsolator cages",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "Mice were maintained on a 12 h light/dark cycle (lights on 7:00-19:00) and all testing was done in the light cycle.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Housing described but no mention of cage enrichment items.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Tail-flick Test",
+      "assay_description": "Thermal nociception in mice; radiant heat tail-flick (Ugo Basile / IITC unit) with latency expressed as %MPE. Conducted across cumulative s.c. doses, in WT and MOR-KO / KOR-KO mice, in both sexes, with antagonist pretreatments.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "Mice were administered a 1 mg/kg s.c. dose of compound solution.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Mice were moved to the testing room 30 min before the experiment to allow for acclimation.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "tail-flick measurement was taken using thermal stimulation via IR on a Ugo Basile unit (animal held for tail exposure)",
+          "confidence": "medium"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Food provided ad libitum in home cage; not accessible during the short tail-flick test.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Water ad libitum in home cage; not accessible during test.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "Thirty minutes post injection, the tail-flick measurement was taken",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 5,
+        "evidence": "ED50 value for U50,488 was determined using four separate groups of naive mice (5 animals for each dose)",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "Oxa-noribogaine and epi-oxa-noribogaine induced potent, KOR-dependent antinociception comparable to U50,488 in both male and female mice. Analgesia was largely abolished in KOR-KO mice, with smaller shifts in MOR-KO mice.",
+        "statistics": "ED50(oxa-noriboga) = 3.0 mg/kg vs U50,488 = 2.2 mg/kg; KOR-KO vs WT P<0.0001; ED50(WT) = 2.3 mg/kg vs ED50(KOR-KO) = 17.7 mg/kg",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "no",
+        "time_dependent": "n/a",
+        "evidence": "Oxa-noribogaine induced potent antinociceptive effects in male mice in the tail-flick assay... analgesic potency and efficacy of oxa-noribogaine is comparable between male and female mice and primarily driven by KOR activation",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Tail-flick latencies expressed as %MPE (single measure)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single latency measurement per timepoint",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Reflexive nociception, not ethological",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing, no social construct",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Reflexive assay, no learning",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Ugo Basile / IITC analgesia meter measures latency only",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate analysis of latency",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Ugo Basile tail-flick unit",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent in tail-flick apparatus",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single restraint position",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual testing",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Single test session per animal",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Brief latency measurement (seconds)",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Cumulative dosing on single test day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The body weight of each mouse and base tail-flick value were recorded.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Acute test only",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Brief test",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "60-min locomotor activity in Plexiglas arena (27.31 × 27.31 × 20.32 cm, Med Associates ENV-510) with IR beam tracking. Used to assess sedation in mice across ED50/ED80/>ED95 doses, with and without aticaprant pretreatment.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "Mice were administered an ED50, ED80 or >ED95 doses of test compound",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Mice were transferred to the testing room 30 min before the experiment to allow for acclimation.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "allowed to ambulate freely for 60 minutes",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Food ad libitum in home cage; not present in OFT arena",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Water ad libitum in home cage; not present in OFT arena",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "After injection, mice were returned to the home cage and allowed to rest for 30 min",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "not reported",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "At ED80 dose (5.4 mg/kg), oxa-noribogaine did not induce sedation in male or female mice (locomotion comparable to vehicle). In stark contrast, epi-oxa-noribogaine (5.2 mg/kg) induced KOR-driven sedation, reversed by aticaprant pretreatment.",
+        "statistics": "epi-oxa-noribogaine (5.2 mg/kg, P <0.0001); aticaprant pretreatment P <0.0001",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "no",
+        "time_dependent": "n/a",
+        "evidence": "oxa-noribogaine did not induce sedation in either male or female mice... epi-oxa induced a strong sedative effect at an equianalgesic dose, completely reversed by KOR antagonist aticaprant",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Total locomotion / distance traveled",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "two-way ANOVA with Šidák's multiple comparison test for post hoc comparison to analyze locomotion across time bins",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor distance only",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Exploratory locomotion",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Med Associates Activity Monitor (IR beam-break, position only)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate analysis",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "clear Plexiglas arena (27.31 × 27.31 × 20.32 cm, Med Associates ENV-510)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open arena, no shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Plexiglas arena floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not present",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not present",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Open field arena",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each mouse was then gently placed in the center of the arena",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in arena",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "60-min single session",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "allowed to ambulate freely for 60 minutes",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline recording in OFT",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Acute test only",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "60-min session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Forced Swim Test",
+      "assay_description": "6-min FST in plexiglass cylinder (40 cm tall, 22 cm diameter, water at 23.8–25.0 °C); immobility scored in the last 4 min using Noldus software. Male mice tested with saline, imipramine (positive control), and oxa-noribogaine.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "oxa-noribogaine ED80 (5.4 mg/kg) or >ED95 10 mg/kg dose s.c.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "mice were weighed and transferred to the testing room 30 min prior to experimentation; mice were handled for ~5 min",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "each subject mouse was gently placed into cylinder filled with water (FST cylinder = restraint per rubric)",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in cylinder during test",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No drinkable water/food in test apparatus",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "30 min after receiving oxa-noribogaine injection, each subject mouse was gently placed into cylinder",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "not reported",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "Oxa-noribogaine showed no acute pro-depressive-like effects in male mice at highly analgesic doses. Imipramine reduced immobility as a positive control.",
+        "statistics": "Imipramine P = 0.0031",
+        "direction": "no_effect",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Oxa-noribogaine demonstrated no acute depressive-like effects in male mice at highly analgesic doses",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Time spent immobile (single measure)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only the last 4 min of the 6 min test were analyzed for total immobility time",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST immobility is not ethological per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Noldus FST scoring software (position/immobility detection, not behavioural classifier)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate analysis",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "plexiglass cylinder (40 cm tall, diameter 22 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open cylinder",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Water-filled cylinder",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not present",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not present",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single cylinder",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each subject mouse was gently placed into cylinder",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water access during test",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "6-min single session",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Mice were allowed to swim for 6 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug FST baseline",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Acute test only",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Brief test",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "Conditioned Place Preference / Aversion",
+      "assay_description": "Three-chamber CPP apparatus (two 16.8 × 12.7 × 12.7 cm conditioning chambers differing in color and flooring + middle chamber). 20-min pretest, three 2-day conditioning cycles (30-min sessions), 15-min test. Conducted in male and female mice with cocaine, morphine, oxa-noribogaine, and epi-oxa-noribogaine.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "oxa-noribogaine (10 or 40 mg/kg, i.p.)... cocaine (10 mg/kg, i.p.), morphine (20 mg/kg, i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Mice were acclimated to the room for three days before the pretest phase.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "the animal had free access to the chamber for 20 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in CPP chambers during test",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in CPP chambers during test",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "Conditioning on days 1, 3, 5; testing on the seventh day (≈48 h after last conditioning dose)",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "not reported",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "Oxa-noribogaine produced no CPP or CPA in either male or female mice at supra-analgesic doses, in contrast to cocaine and morphine which produced significant CPP.",
+        "statistics": "Oxa-noribogaine: P = 0.4531 (males), P = 0.5994 (females); cocaine 10 mg/kg: P = 0.0029, 0.0013; morphine 20 mg/kg: P = 0.0010, 0.0153",
+        "direction": "no_effect",
+        "dose_dependent": "no",
+        "sex_dependent": "no",
+        "time_dependent": "n/a",
+        "evidence": "Male and female mice do not develop a conditioned place preference or aversion (CPP/CPA) after administration of oxa-noribogaine (P=0.4531, P=0.5994, respectively), in contrast to cocaine and morphine",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "A CPP score was calculated as the difference in time spent in the drug-paired minus the vehicle paired compartment",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single CPP score per session",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Zone preference time, not ethological",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social construct",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Conditioned place preference requires learned association",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Med Associates infrared diodes (position tracking)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate analysis",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "three-chamber apparatus with two equal sized chambers",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enclosed refuge",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Mesh/bar flooring, no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not present",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not present",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "three-chamber apparatus with two equal sized chambers separated by a middle chamber",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Test trial is done alone",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "20-min pretest + 15-min test (both recorded) plus conditioning sessions",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "free access to the chamber for 20 min (pretest); 15 min (test)",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Pretest day + test on day 7; conditioning days between",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "For determination of pre-conditioning baseline preferences, mice were placed in the middle chamber",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Test on day 7, ~48 h after last drug administration",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Short sessions",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      }
+    },
+    {
+      "assay_name": "Intravenous Drug Self-Administration (morphine / heroin / fentanyl)",
+      "assay_description": "Operant IV self-administration in male Fisher F-344 rats (FR1:TO20s; 2-h sessions; active vs inactive lever). Includes acquisition, dose-effect curves (morphine 10/20/40 µg/inf; heroin 4.5 µg/inf; fentanyl 0.625 µg/inf), extinction, and cue-induced reinstatement. Tested with vehicle, noribogaine (40 mg/kg, i.p.), oxa-noribogaine (3, 10, 30, 40 mg/kg, i.p.), and epi-oxa-noribogaine.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "rats were administered oxa-noribogaine in an ascending dose manner (3, 10 or 30 mg/kg, i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Paper does not specifically describe pre-test apparatus habituation beyond lever training.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Rats freely moved in operant chambers with tethered swivel",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "Food access was restricted in the home cage, such that rats were maintained at 90% of their normal body weight until responding was engendered",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Water ad libitum in home cage; not in operant chamber",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "administered 30 min prior to the beginning of the session",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": 0,
+        "n_per_group_min": 5,
+        "evidence": "all study groups n=7 (morphine 40 mg/kg cohort); n=9 (fentanyl); 10 µg/inf, n=8; 20 µg/inf, n=10; 40 µg/inf, n=8; heroin n=11; reinstatement vehicle n=5, oxa n=8",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Oxa-noribogaine (40 mg/kg, i.p.) produced more profound and longer-lasting suppression of morphine intake than noribogaine (significant for 7 days). Dose-dependent suppression of morphine, heroin, and fentanyl SA was observed both acutely and post-acutely (up to 5–7 days). Cue-induced reinstatement of fentanyl and morphine seeking was reduced by ~60% by oxa-noribogaine (10 mg/kg).",
+        "statistics": "Oxa vs noribogaine morphine SA: P=0.0001; food 40 mg/kg P<0.0001; morphine 20 µg/inf: 3 mg/kg P=0.0419, 10 mg/kg P<0.0001 (Day 1); Day 5: 3 mg/kg P=0.0243, 10 mg/kg P=0.0044; heroin session 8 (10 mg/kg) P=0.0012, session 15 (30 mg/kg) P<0.0001; reinstatement fentanyl P=0.0141, morphine P=0.042",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "One injection of oxa-noribogaine (40 mg/kg) results in statistically significant suppression of morphine intake for 7 days... a single dose of oxa-noribogaine reduced the intake of fentanyl for at least five days... oxa-noribogaine (10 mg/kg, i.p.) reduces cue-induced fentanyl (P=0.0141) and morphine (P=0.042) seeking",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Active lever responses, inactive lever responses, infusions earned",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session totals reported per day",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Operant lever pressing, not ethological",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Operant self-administration with learned cue associations, extinction, and reinstatement",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Med Associates operant software records lever presses",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate analyses",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "operant conditioning chambers (ENV-008CT; Med Associates)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter in operant chamber",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard operant chamber floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not present",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not present",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single chamber with levers and food chute",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual operant chambers",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Drug infusion delivered, no food/water in drug SA sessions",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "daily 2-h self-administration sessions over many days",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "The self-administration session continued for 2 h or until 70 infusions were delivered",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 3,
+          "value": "15+",
+          "evidence": "minimum of two weeks of self-administration... responding assessed for seven days following each dose, plus extinction and reinstatement",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "After stable responding was established, rats were administered vehicle 30 min prior to the subsequent experimental session",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Responding was assessed for seven days following each dose",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "2-h session",
+          "confidence": "high"
+        },
+        "raw_total": 8
+      }
+    },
+    {
+      "assay_name": "Food-Maintained Operant Responding",
+      "assay_description": "Operant FR1 lever-pressing for 45-mg food pellets in male rats (2-h sessions, up to 20 pellets, TO 6 min) to control for non-specific motor/sedation effects of oxa-noribogaine, epi-oxa-noribogaine, and noribogaine.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "oxa-noribogaine (10 and 40 mg/kg, i.p.)... noribogaine (10 and 40 mg/kg, i.p.) or vehicle administered intraperitoneal",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Lever training described; no separate apparatus habituation explicitly stated",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Rats freely moved in operant chamber",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "food access was restricted such that rats were maintained at 90% of their normal body weight until responding stabilized",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Water ad libitum in home cage; not present in operant chamber during test",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 15,
+          "evidence": "administered intraperitoneal 15 min prior to the initiation of the session",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 7,
+        "n_male": 7,
+        "n_female": 0,
+        "n_per_group_min": 7,
+        "evidence": "all study groups n=7",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Food-maintained responding was suppressed acutely by 40 mg/kg oxa-noribogaine and noribogaine on day 1 but returned to baseline by day 2–3. 10 mg/kg oxa-noribogaine had only a marginal, non-significant effect on food intake.",
+        "statistics": "40 mg/kg vs vehicle P<0.0001 on day 1",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "Food operant intake (natural reward) is reduced following administration of 40 mg/kg but not 10 mg/kg (P<0.0001). The moderate dose (10 mg/kg) has a marginal effect on food intake",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Active and inactive lever responding, pellets earned",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session totals reported",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Operant responding",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Operant lever pressing under FR1 schedule (learned)",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Med Associates operant software",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate analyses",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "operant conditioning chambers",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not present",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard operant chamber floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not present",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not present",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single operant chamber",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual chambers",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Food pellets delivered into food chute during session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Daily sessions across multiple days",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "sessions lasting 2 h or until a maximum of 20 pellets was delivered",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 3,
+          "value": "15+",
+          "evidence": "Stable responding established over many sessions; multiple test doses across days",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Once responding stabilized... rats were administered vehicle prior to drug test",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Food responding monitored on days following drug administration",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "2-h session",
+          "confidence": "high"
+        },
+        "raw_total": 8
+      }
+    },
+    {
+      "assay_name": "Von Frey Mechanical Sensitivity (Opioid-Induced Hyperalgesia)",
+      "assay_description": "Electronic Von Frey (BIO-EVF5) measurement of paw withdrawal threshold (PWT) in male rats with chronic morphine pellet-induced hyperalgesia. Baseline, then 8 h, 24 h, and 168 h after pellet removal/oxa-noribogaine (30 mg/kg, i.p.) treatment.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "rats were administered either vehicle... or oxa-noribogaine solution (30 mg/kg; I.P.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Rats were placed in a modular holder cage on a wire mesh elevated stand and allowed to acclimate for 5 min prior to assessment",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Rats placed in modular holder cage (containment cage, not body restraint)",
+          "confidence": "medium"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Food ad libitum in home cage; not in test cage during brief assessment",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Water ad libitum in home cage; not in test cage",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 360,
+          "evidence": "Paw withdrawal thresholds were recorded for each group in selected time intervals: 8 h, 24 h and 168 h post-implant removal (6, 22 and 166 h post oxa-noribogaine treatment respectively)",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": 0,
+        "n_per_group_min": 8,
+        "evidence": "Morphine-OXA (8 h... n=8)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Chronic morphine pellet implantation produced robust mechanical hyperalgesia (reduced PWT) persisting at least 7 days. A single dose of oxa-noribogaine (30 mg/kg, i.p.) completely reversed OIH at 6 h and produced sustained attenuation at 1 week.",
+        "statistics": "Placebo-Veh vs Morphine-Veh: 8 h P=0.004, 24 h P=0.0258, 168 h P=0.0157; Morphine-Veh vs Morphine-Oxa: 8 h P=0.0164; Placebo-Oxa vs Morphine-Veh: 8 h P=0.0127, 24 h P=0.0305, 168 h P=0.0003",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "One dose of oxa-noribogaine (30 mg/kg, i.p.) induced a complete reversal of the OIH phenotype 6 h post oxa-noribogaine administration and attenuation one week later",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "paw withdrawal threshold (PWT)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single PWT value per timepoint",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Reflexive withdrawal",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Reflexive nociception",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Electronic Von Frey records force only",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate analysis",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "modular holder cage on a wire mesh elevated stand",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Holder cage open to top/bottom",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Wire mesh floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not present",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not present",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single holder cage",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each rat tested individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not present in test apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Baseline + 8 h, 24 h, and 168 h post-implant removal recordings",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "5 min acclimation plus brief PWT measurements",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Baseline + ~3 post-removal timepoints (8 h, 24 h, 168 h)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Prior to pellet implantation, baseline measurements of paw withdrawal threshold (PWT) using Von Frey (VF) assay were taken",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "168 h (7 days) post oxa-noribogaine administration",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Brief sessions",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    }
+  ],
+  "judge_notes": [
+    "Merged Qwen's separate 'Cue-induced reinstatement' phases into the IV Self-Administration assay per rubric (acquisition + extinction + reinstatement = 1 operant SA assay).",
+    "Collapsed all morphine, heroin, and fentanyl SA experiments into a single 'Intravenous Drug Self-Administration' assay since the apparatus, protocol, and measured outcomes are identical and only the reinforcer/drug arm differs.",
+    "Dropped GPT-OSS entries (it produced no assays). Used Qwen + GLM as primary sources, with checks against the paper text.",
+    "Sex set to 'both' because mice were both sexes; rats in SA/OIH were male-only — noted in outcomes.",
+    "DOI not stated in extracted markdown; set to null.",
+    "Day/night flip set to 'no' based on explicit mouse light cycle (lights on 7:00–19:00, testing in light cycle). Rats had lights on at 18:00 with testing in dark phase, but the housing_conditions block is study-level and the mouse condition is explicit and non-flipped; flagged in evidence."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 10.91,
+    "behavioural_complexity_mean": 1.07,
+    "environmental_complexity_mean": 0.39,
+    "recording_duration_mean": 5.26
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 93245,
+    "output_tokens": 17121,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

@@ -1,0 +1,495 @@
+{
+  "study_id": "Butler2025",
+  "doi": null,
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 63,
+    "age_max_days": 77,
+    "evidence": "9-11-week-old male C57BL6/J mice weighing 21.8-27.4 g",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "9-11-week-old male C57BL6/J mice",
+    "confidence": "high"
+  },
+  "psychedelic": "TCB-2",
+  "dosing": [
+    {
+      "compound": "TCB-2",
+      "doses_mg_per_kg": [
+        0.3,
+        3.0,
+        10.0
+      ],
+      "doses_raw": "0.3, 3 and 10 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "TCB-2 and MDL-100,907 were diluted ... as free base in NaCl 0.9 % ... TCB-2/vehicle i.p. (7.5 mL/kg)",
+      "confidence": "high"
+    },
+    {
+      "compound": "MDL-100,907",
+      "doses_mg_per_kg": [
+        0.2
+      ],
+      "doses_raw": "0.2 mg/kg",
+      "vehicle": "other",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "MDL-100,907 (0.2 mg/kg)/vehicle was injected i.p. (5 mL/kg), 15 min prior to TCB-2/vehicle; Tween 0.3 % in NaCl 0.9 %",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "Animals were kept in the animal facility ... with access to standard chow and water ad libitum (cage density not stated)",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "under a 12 h light/dark cycle (light 7:00-19:00); testing between 11 am and 2 pm",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head Twitch Response",
+      "assay_description": "Mice placed in an isolated chamber (33x33x25 cm); head twitches counted for 1 min at 20, 30, 40, and 50 min post TCB-2/vehicle, with or without MDL-100,907 pretreatment.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "TCB-2/vehicle i.p. (7.5 mL/kg); MDL-100,907 ... injected i.p.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Following MDL-100,907 or vehicle administration mice were placed in an isolated chamber ... and injected with TCB-2 or vehicle 15 min later.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "mice were placed in an isolated chamber (33x33x25cm) for behavioral observation",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Test conducted in an isolated observation chamber; no food in apparatus.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Test conducted in an isolated observation chamber; no water in apparatus.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 20,
+          "evidence": "The HTR was observed for 1 min at 20-, 30-, 40- and 50-min post TCB-2 or vehicle",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 35,
+        "n_male": 35,
+        "n_female": 0,
+        "n_per_group_min": null,
+        "evidence": "one-way ANOVA F(3,31) = 44.36 implies ~35 mice across 4 groups; n = 6-11 per group reported elsewhere",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "TCB-2 increased HTR relative to vehicle, with the largest effect at 3 mg/kg; the response peaked at 20 min and declined by 50 min. Pretreatment with MDL-100,907 (0.2 mg/kg) blocked the HTR induced by 3 mg/kg TCB-2.",
+        "statistics": "t20: F(3,31)=44.36, p<0.01; t50: F(3,31)=4.70, p<0.01; MDL block: F(1,36)=28.26, p<0.001",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "TCB-2 increased HTR relative to vehicle-treated mice, with the largest increase observed after 3 mg/kg TCB-2 ... HTR peaked at 20 min post-injection [F(3,31) = 44.36, p < 0.01] and progressively decreased until 50 min ... Pretreatment with MDL-100,907 blocked the effect of 3 mg/kg TCB-2 at t20, t30, and t40 [F(1, 36) = 28.26, p < 0.001].",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Only HTR count was measured (same measure at multiple timepoints)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "HTR peaked at 20 min post-injection and progressively decreased until 50 min post-injection (binned across the session).",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-twitch response is a drug-induced stereotypy, explicitly excluded from ethological behaviours.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "mice were placed in an isolated chamber",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is reflexive, requires no learning.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR observed manually; no computational classifier mentioned.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVA reported.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "isolated chamber (33x33x25cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enclosed refuge in the observation chamber",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "standard Perspex floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting material in chamber",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment objects in observation chamber",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "isolated chamber (33x33x25cm), single compartment",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "mice were placed in an isolated chamber",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in observation chamber",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "HTR was observed for 1 min at 20-, 30-, 40- and 50-min post TCB-2 (four discrete 1-min observation windows).",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "observed for 1 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "All HTR measurements performed on a single day per animal prior to sacrifice 60 min after injection.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline HTR recorded.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sacrifice 60 min after agonist injection; no follow-up.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Each observation = 1 min; no session ≥6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Forced Exploration (Textured Floor)",
+      "assay_description": "After HTR observation, the Perspex floor of the isolated chamber (33x33x25 cm) was replaced with a novel textured floor composed of four distinct textures (red felt, brown hessian, white sponge, orange microfiber chenille). Mice were exposed for 10 min prior to sacrifice; this exposure was used to mobilize an 'exploratory' brain state for subsequent post-mortem neurochemistry. No behavioural quantification is reported.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "TCB-2/vehicle i.p.; MDL-100,907 i.p.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "The textured floor was novel; mice had only previously been in the same chamber with a Perspex floor for HTR.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice were exposed to the textured floor for 10 min (freely moving).",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food present in observation chamber during exploration.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water present in observation chamber during exploration.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 50,
+          "evidence": "Forced exploratory behavior was assessed 50 min after TCB-2 or vehicle administration.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "ensuring n > 6 and significance set at p < 0.05; n = 6-11",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Forced exposure to a novel textured floor was used to elicit an exploratory state prior to sacrifice. No behavioural metrics are reported for this exposure; the authors describe the resulting neurochemical correlation patterns rather than overt behaviour.",
+        "statistics": "",
+        "direction": "not_clear",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Mice were exposed to the textured floor for 10 min prior to sacrifice, comprising a period of forced exploratory behavior.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "No behavioural measures explicitly quantified for the exploration period.",
+          "confidence": "medium"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No within-session temporal analysis reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Forced exploratory behavior on a textured substrate – natural exploratory behaviour.",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "isolated chamber",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate exploration of novelty; no learning required.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Multivariate analysis applied to post-mortem neurochemistry, not to behavioural features.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 2,
+          "value": "Enriched arena",
+          "evidence": "novel 'textured' floor composed of four distinct textures: red felt, brown hessian, white sponge, and orange microfiber chenille",
+          "confidence": "medium"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enclosed refuge mentioned",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Floor surface composed of red felt, brown hessian, white sponge, and orange microfiber chenille (substrate covering the apparatus floor).",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting material provided",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects; textured floor is the novelty stimulus rather than enrichment objects.",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single isolated chamber (33x33x25cm) with no internal partitions.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "isolated chamber",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Mice were exposed to the textured floor for 10 min prior to sacrifice.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "10 min exposure",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single exposure on day of sacrifice.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline exploration recorded.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Animals sacrificed 60 min after injection.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "10 min session",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    }
+  ],
+  "judge_notes": [
+    "Two assays retained: HTR and Forced Exploration on textured floor. Although no behavioural measures are quantified for the exploration period, the paper explicitly frames it as a behavioural 'forced exploration' protocol used to drive an exploratory state; included it as a behavioural assay following candidate glm.",
+    "B2 (HTR temporal dynamics) scored 1: paper presents minute-by-minute style time-course across 20/30/40/50 min within the session, consistent with within-session temporal binning (candidates glm and gptoss agreed).",
+    "B1 (HTR) scored 0 (only HTR count was reported); gptoss's B1=2 reflected timepoints rather than distinct measures and was rejected.",
+    "Textured floor: E3 (bedding/substrate) scored 1 because the four textile materials physically cover the apparatus floor as a substrate; E1 scored 2 (enriched arena) as the chamber was modified with added textural features beyond the standard Perspex floor.",
+    "Dosing: added MDL-100,907 as a second compound entry per rubric (it is a 5-HT2A antagonist co-administered with the psychedelic agonist).",
+    "Day/night cycle scored 'no' (not flipped): lights on 07:00-19:00 and testing 11 am-2 pm = standard light-phase testing."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 4.09,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 2.04,
+    "recording_duration_mean": 0.68
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 58347,
+    "output_tokens": 6090,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

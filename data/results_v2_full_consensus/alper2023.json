@@ -1,0 +1,679 @@
+{
+  "study_id": "Alper2023",
+  "doi": "10.3389/fphar.2022.1074633",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "adult",
+    "age_min_days": 70,
+    "age_max_days": 126,
+    "evidence": "adult male and female C57BL/6J mice (10 -18 weeks old; Jackson Laboratory United States)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "adult male and female C57BL/6J mice",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        0.1,
+        0.5,
+        1.0,
+        2.0
+      ],
+      "doses_raw": "0.1, 0.5, 1.0, or 2.0 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "administered vehicle (saline) or psilocybin as a single dose of 0.1, 0.5, 1.0, or 2.0 mg/kg body weight i. p.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "handling not mentioned",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "Mice were housed individually",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "yes",
+      "evidence": "habituated to a reverse light-dark cycle for at least 1 week",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "enrichment not described",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Two-bottle choice alcohol drinking",
+      "assay_description": "Mice housed individually were offered 20% ethanol vs water for 24 h starting at dark phase; consumption and preference measured daily for 3 days post-injection, 2-day withdrawal, then 2 more days of access. Doses 0.1, 0.5, 1.0, 2.0 mg/kg psilocybin i.p.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "psilocybin ... i. p.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Mice were exposed to ethanol for 4 weeks to acquire ethanol consumption",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "mice freely moving in home cage",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "Mice were given unlimited access to standard mouse chow ... throughout the entire study",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "water throughout the entire study",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 20,
+          "evidence": "Twenty minutes after the administration of psilocybin two bottles ... were offered",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "sample sizes not explicitly reported in text",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "Psilocybin dose-dependently reduced ethanol consumption and preference in male mice during the 3-day post-treatment interval at doses ≥0.5 mg/kg. No effect was observed in female mice at any dose. The effect did not persist after a 2-day ethanol withdrawal.",
+        "statistics": "Males all-dose Days 1-3: consumption F(4)=3.73, p=0.0101; preference F(4)=3.89, p=0.0082. 1.0 mg/kg: consumption F=15.25, p=0.0009; preference F=15.77, p=0.0008. Females: all p>0.34. Post-withdrawal males: F=0.18, p=0.9452.",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "yes",
+        "time_dependent": "yes",
+        "evidence": "Ethanol consumption and preference were reduced in male mice during the 3-day interval that immediately followed psilocybin administration ... In contrast to males, psilocybin had no significant effect on ethanol consumption or preference in female mice.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "ethanol consumption, ethanol preference, total fluid consumption, water consumption (in males/females)",
+          "confidence": "medium"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "consumption measured daily at 24-h intervals; no within-session time-course",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no behavioural sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "fluid intake measured, not ethological acts",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice were housed individually",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning component required",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "drinking measured by bottle weight",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "MLM used, no dimensionality reduction",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "Mice were housed individually ... bottles placed in cage",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no shelter described in home cage testing",
+          "confidence": "low"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "bedding not explicitly mentioned",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "nesting material not mentioned",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment described",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "home cage is a single compartment",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice were housed individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "unlimited access to standard mouse chow and water throughout the study",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "measured daily for 3 days post-drug, then 2 more days after withdrawal",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 3,
+          "value": ">6 h",
+          "evidence": "measured daily at 24-h time intervals",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "3 days + 2 days = 5 recording days for the assay",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "mice were divided into groups of equal ethanol intake based on the amount of ethanol consumed on the preceding day",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "subsequent resumption of ethanol availability for two more days",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "24-h recording sessions span ≥6 h",
+          "confidence": "high"
+        },
+        "raw_total": 8
+      }
+    },
+    {
+      "assay_name": "Quinine preference (two-bottle choice)",
+      "assay_description": "Two-bottle choice between water and 0.06 mM quinine, 24-h consumption measured daily for 3 days following a single psilocybin dose (0.5, 1.0, or 2.0 mg/kg i.p.) administered 20 min before access.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "psilocybin (0.5, 1.0, or 2.0 mg/kg body weight, i. p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Mice were habituated to two bottles, one containing water and one containing quinine (0.06 mM) for a week",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "freely moving in home cage",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "unlimited access to standard mouse chow throughout the entire study",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "water bottles continuously available",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 20,
+          "evidence": "Bottles containing quinine and water were offered 20 min posttreatment",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "sample sizes not reported",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "Psilocybin had no effect on quinine preference in either male or female mice at any tested dose, indicating that the reduction in ethanol consumption was not due to altered taste perception.",
+        "statistics": "Males F=0.43, df=3, p=0.734; Females F=0.50, df=3, p=0.685",
+        "direction": "no_effect",
+        "dose_dependent": "no",
+        "sex_dependent": "no",
+        "time_dependent": "n/a",
+        "evidence": "psilocybin had no effect on quinine preference in both males (F = 0.43, df = 3, p = 0.734) and females (F = 0.50, df = 3, p = 0.685)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "consumption of water and quinine; preference for quinine calculated",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "measured daily, no within-session time course",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "fluid intake measure",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "tested alone in home cage",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "drinking measured by bottle weight",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no dimensionality reduction",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "bottles offered in home cage",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not described",
+          "confidence": "low"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "bedding not mentioned",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "nesting not mentioned",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "enrichment not mentioned",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "home cage single compartment",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice were housed individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "water and quinine bottles offered; chow available ad libitum",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "measured daily for 3 days",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 3,
+          "value": ">6 h",
+          "evidence": "24-h intervals",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "3 days of measurement",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "habituation week but no baseline data reported/compared",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "recordings continued days 2-3 after drug",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "24-h sessions span ≥6 h",
+          "confidence": "high"
+        },
+        "raw_total": 7
+      }
+    },
+    {
+      "assay_name": "Locomotor activity (infrared beam)",
+      "assay_description": "Ambulatory beam-break counts and distance travelled measured with an infrared activity sensor (ATM3, Columbus Instruments) over a 24-h period beginning at the dark cycle following a single psilocybin dose (0.5, 1.0, 2.0 mg/kg i.p.) in alcohol-naïve mice.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "psilocybin (0.5, 1.0, and 2.0 mg/kg body weight, i. p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "habituation to activity chamber not described",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "freely moving in activity chamber with beam-break tracking",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "not_reported",
+          "evidence": "food access in the activity chamber not specified",
+          "confidence": "low"
+        },
+        "water_restriction": {
+          "value": "not_reported",
+          "evidence": "water access in the activity chamber not specified",
+          "confidence": "low"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "over a 24-h period beginning at the dark cycle following administration",
+          "confidence": "medium"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "sample sizes not reported",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "Psilocybin had no significant effect on ambulatory counts or distance travelled in male mice. In females, ambulatory counts were significantly affected, driven by increases at the 0.5 mg/kg dose during the first 8 h; distance travelled was not affected. Locomotor effects did not explain the sex-dependent ethanol findings.",
+        "statistics": "Males ambulatory F=0.158, df=3, p=0.923; Females ambulatory F=4.316, df=3, p=0.013. Distance: males F=0.128, p=0.943; females F=1.412, p=0.261.",
+        "direction": "mixed",
+        "dose_dependent": "no",
+        "sex_dependent": "yes",
+        "time_dependent": "n/a",
+        "evidence": "The effect of psilocybin on ambulatory counts in male mice was not significant ... but was significant in females ... driven by larger counts for the 0.5 mg/kg dosage during the first 8 h",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "ambulatory counts and distance travelled",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "effect driven by larger counts during the first 8 h of the 24-h period of observation",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "locomotor counts, not ethological acts",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "mouse tested alone",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "infrared beam-break system",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no dimensionality reduction",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "infrared beam-based activity sensor (ATM3; Columbus Instrument)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "bedding not mentioned",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single activity chamber",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "tested alone",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "food/water in chamber not specified; standard activity test",
+          "confidence": "low"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 2,
+          "value": "Continuous monitoring",
+          "evidence": "over a 24-h period",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 3,
+          "value": ">6 h",
+          "evidence": "24-h recording period",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "single 24-h recording",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no baseline recording reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no recording ≥24 h after dosing",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "24-h recording spans ≥6 h",
+          "confidence": "high"
+        },
+        "raw_total": 6
+      }
+    }
+  ],
+  "judge_notes": [
+    "Three distinct behavioural assays were identified, consistent across all candidates: two-bottle choice ethanol drinking, two-bottle choice quinine preference, and infrared beam locomotor activity. Total fluid consumption was treated as an additional measure within the ethanol assay rather than a separate assay.",
+    "B1 for ethanol assay set to 4-6 (score 2): ethanol consumption, ethanol preference, total fluid consumption, and water consumption are reported as distinct measures.",
+    "E2/E3/E5 for home-cage drinking assays set to 0 with low confidence because the paper does not explicitly state presence of shelter/bedding/enrichment in the testing cage; candidates' 'yes' inferences were not supported by explicit text.",
+    "Locomotor D1 set to 'Continuous monitoring' (24-h uninterrupted infrared beam recording) overriding gptoss's 'Single session'.",
+    "Time_to_assay for locomotor assay marked acute_0to2h with value_minutes=0 since recording began at the dark cycle following injection."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 2.73,
+    "recording_duration_max": 10.91,
+    "behavioural_complexity_mean": 2.08,
+    "environmental_complexity_mean": 1.82,
+    "recording_duration_mean": 9.55
+  },
+  "low_confidence_count": 15,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 61401,
+    "output_tokens": 7448,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

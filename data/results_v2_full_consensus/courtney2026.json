@@ -1,0 +1,481 @@
+{
+  "study_id": "Courtney2025",
+  "doi": "10.1101/2025.09.30.677638",
+  "species": "mouse",
+  "strain": "CD-1",
+  "age": {
+    "value": "adult",
+    "age_min_days": 90,
+    "age_max_days": 90,
+    "evidence": "we evaluated offspring at P90 on prepulse inhibition of acoustic startle (PPI) and open-field behavior",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Unless stated, experiments used equal numbers of males and females.",
+    "confidence": "high"
+  },
+  "psychedelic": "LSD",
+  "dosing": [
+    {
+      "compound": "LSD",
+      "doses_mg_per_kg": [
+        0.3
+      ],
+      "doses_raw": "0.3 mg kg⁻¹",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "multiple",
+      "evidence": "Timed-pregnant dams received subcutaneous injections in sterile 0.9% saline: ... (+)-lysergic acid diethylamide tartrate (LSD) 0.3 mg kg⁻¹ ... Pregnant mice received either one single LSD injection at E12.5 (acute) or daily injections from E12.5 to E16.5 (repeated)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "12-h light/dark",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "Adult offspring (P90) explored a 40×40 cm arena for 15 min. Primary outcomes: total distance traveled and rotational stereotypy; spatial occupancy heatmaps as descriptive visualizations.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "Timed-pregnant dams received subcutaneous injections ... LSD 0.3 mg kg⁻¹",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Adult CD-1 mice... explored a 40×40 cm arena for 15 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Animals tested in 40×40 cm arena (no food in apparatus)",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Animals tested in 40×40 cm arena (no water in apparatus)",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "long_term_over7d",
+          "value_minutes": null,
+          "evidence": "offspring at P90 ... maternal injections at E12.5 to E16.5",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 30,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 10,
+        "evidence": "Adult CD-1 mice (n=10 per condition unless noted)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Prenatal LSD exposure increased rotational stereotypy in adult offspring (acute: 136.2±31.3; repeated: 81.4±18.8; control: 54.2±12.6 rotations) without large changes in total distance or velocity. 'High-rotators' were more frequent in LSD groups.",
+        "statistics": "Group LR χ²=8.02, P=0.018; Tukey control vs acute P=0.013",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "Total rotations were increased following prenatal LSD (negative-binomial GLM, Group LR χ²=8.02, P=0.018; back-transformed means ±SE: control 54.2 ±12.6, acute 136.2 ±31.3, repeated 81.4 ±18.8; Tukey control vs acute P=0.013).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Primary outcomes were total distance traveled and rotational stereotypy",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Data reported as total distance and total rotations over the 15-min session",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural sequences reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Rotational stereotypy and locomotion not ethological repertoire",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animal explored arena alone",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open-field test assesses locomotion/anxiety, not learning",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Rotations quantified from instantaneous heading angle; no pose-estimation or ML classifier described",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Analyses reported as separate univariate tests",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "40×40 cm arena",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent in open field",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard open field with no bedding described",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "40×40 cm arena",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Animal tested alone in arena",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in arena",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "explored a 40×40 cm arena for 15 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "explored a 40×40 cm arena for 15 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "offspring at P90; single session",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline recorded in offspring",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "offspring evaluated at P90, well over 24h after last prenatal dose",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "15 min session",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    },
+    {
+      "assay_name": "Prepulse Inhibition of Acoustic Startle",
+      "assay_description": "Acoustic startle chamber: background 60 dB, prepulses 70/74/78/82 dB (20 ms), startle 105 dB (40 ms), 100 ms ISI, 10-30 s ITI. Measures %PPI, startle amplitude, startle latency.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "Timed-pregnant dams received subcutaneous injections ... LSD 0.3 mg kg⁻¹",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "PPI startle chambers (typically use body-restraint holders)",
+          "confidence": "medium"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard PPI session, no food in chamber",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard PPI session, no water in chamber",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "long_term_over7d",
+          "value_minutes": null,
+          "evidence": "evaluated offspring at P90 on prepulse inhibition; maternal injections at E12.5 to E16.5",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 30,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 10,
+        "evidence": "Adult CD-1 mice (n=10 per condition unless noted)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Prenatal LSD exposure reduced PPI in adult offspring, with the most robust reduction in males after repeated exposure. Startle amplitude was higher in females in both LSD conditions; startle latency was largely unchanged.",
+        "statistics": "",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "yes",
+        "time_dependent": "n/a",
+        "evidence": "When sexes were combined, PPI was reduced after prenatal LSD ... males showed reduced PPI following repeated exposure, whereas females did not differ at the group level",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "%PPI, startle amplitude, and startle latency reported",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Reported as overall %PPI per session",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence/transition analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "PPI startle magnitude is not ethological",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animal tested alone in startle chamber",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "PPI assesses sensorimotor gating",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard startle response system",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate comparisons",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Standard acoustic startle chamber",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter in startle chamber",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Startle chamber has solid floor, no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single startle chamber",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Animal tested alone",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "PPI measured in a single session",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Session duration not explicitly stated",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single testing day at P90",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline in offspring",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "P90 testing follows prenatal maternal exposure (E12.5-E16.5)",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Short session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Only two behavioural assays in offspring were scored: Open Field Test and Prepulse Inhibition. Pharmacokinetic LC-MS/MS measurements, Fos qPCR/IHC in choroid plexus, light-sheet imaging, cortical marker quantification, and body/brain weight measurements are not behavioural assays and were excluded.",
+    "D5 (post-acute follow-up) scored Yes for both assays because adult offspring testing at P90 occurs >24h after the last prenatal maternal dose (overriding gptoss which scored 0).",
+    "B1 scored 1 (2-3 measures) for OFT: total distance + rotational stereotypy; for PPI: %PPI + startle amplitude + startle latency.",
+    "Setup_restrain for PPI scored 'yes' since standard startle chambers use body-restraint tubes, per rubric examples; confidence medium since not explicitly stated.",
+    "Dosing schedule marked 'multiple' because both acute (single dose) and repeated (5 doses over 5 days) regimens were used in the same assay.",
+    "DOI backfilled from Zotero (BetterBibTeX citekey lookup): was None, now '10.1101/2025.09.30.677638'"
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 2.73,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 2.04
+  },
+  "low_confidence_count": 7,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 49712,
+    "output_tokens": 5291,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

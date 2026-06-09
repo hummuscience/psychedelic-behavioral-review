@@ -1,0 +1,531 @@
+{
+  "study_id": "Agrawal2025",
+  "doi": "10.1021/acschemneuro.5c00667",
+  "species": "mouse and rat",
+  "strain": "Sprague-Dawley (rat); C57BL/6J (mouse)",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 35,
+    "age_max_days": 70,
+    "evidence": "Male Sprague-Dawley rats... aged 7-9 weeks; Young adult C57BL/6J male mice (5-6 weeks old at arrival)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male Sprague-Dawley rats... were used; Young adult C57BL/6J male mice",
+    "confidence": "high"
+  },
+  "psychedelic": "Zalsupindole, Psilocybin, DMT, DOI",
+  "dosing": [
+    {
+      "compound": "Zalsupindole",
+      "doses_mg_per_kg": [
+        3.0,
+        10.0,
+        30.0
+      ],
+      "doses_raw": "zalsupindole (3, 10, and 30 mg/kg; N = 10 each dose); ZAL (10 mg/kg, IP) in FST; ZAL (10 mg/kg, 30 mg/kg, IP) in HTR",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "zalsupindole (3, 10, and 30 mg/kg; N = 10 each dose) with an injection volume of 1 mL/kg via intraperitoneal (IP) route... dissolved in sterile 0.9% saline",
+      "confidence": "high"
+    },
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        1.0,
+        3.0
+      ],
+      "doses_raw": "psilocybin (1 and 3 mg/kg; N = 10 each dose); psilocybin (1 mg/kg, IP) in HTR",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "psilocybin (1 and 3 mg/kg; N = 10 each dose)... dissolved in sterile 0.9% saline... via intraperitoneal (IP) route",
+      "confidence": "high"
+    },
+    {
+      "compound": "DMT",
+      "doses_mg_per_kg": [
+        10.0
+      ],
+      "doses_raw": "DMT (10 mg/kg)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "DMT (10 mg/kg)... dissolved in 0.9% saline... intraperitonially injected",
+      "confidence": "high"
+    },
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "DOI (1 mg/kg, IP)",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "receive psilocybin (1 mg/kg, IP), DOI (1 mg/kg, IP)",
+      "confidence": "high"
+    },
+    {
+      "compound": "Ketamine",
+      "doses_mg_per_kg": [
+        10.0
+      ],
+      "doses_raw": "ketamine (10 mg/kg)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "10 mg/kg ketamine (n = 10)... dissolved in sterile 0.9% saline... via intraperitoneal (IP) route",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "During the period of acclimation, rats were examined, handled daily, and weighed",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "group housed with three rats per cage; C57BL/6J mice were housed in groups of 4-5 per cage",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12/12 h light/dark cycle (lights on at 7:00 am); All testing was performed during the lights-on phase",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Forced Swim Test",
+      "assay_description": "Rats placed in clear acrylic cylinder (height 40 cm, diameter 20.3 cm) filled with water (23 ± 1 °C). Preswim 15 min on day 0; 5-min test swim 24 h after dosing and again 7 days post-injection. Immobility, climbing, and swimming behaviors scored via 5-s time sampling by blinded technicians.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Rats were given intraperitoneal injections of either saline, ketamine (10 mg/kg), or zalsupindole (10 mg/kg)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "The first swim session (preswim) lasted for 15 min",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Only one rat was placed in the swim chamber at a time",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Food and water provided ad libitum in home cage; no food in FST chamber during the 5-min test",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No drinking water available in the swim chamber during the test",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 1440,
+          "evidence": "Rats were given intraperitoneal injections... ~24 h prior to the FST. Same rats were retested on day 7 post injection.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 30,
+        "n_male": 30,
+        "n_female": null,
+        "n_per_group_min": 10,
+        "evidence": "Male Sprague-Dawley rats... (N = 10 per treatment group)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "A single IP dose of zalsupindole (10 mg/kg) produced a rapid (24 h) decrease in immobility in the FST that was sustained at 7 days, comparable to ketamine (10 mg/kg).",
+        "statistics": "one-way ANOVA with Dunnett's post hoc test; * P < 0.05, ** P < 0.01, *** P < 0.001, **** P < 0.0001 as compared to the VEH control",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "ZAL produced a rapid (within 24 h) decrease in immobility (Figure 5B) that was sustained for at least a week (Figure 5C).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "The measures were immobility, climbing, and swimming behaviors.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Time-sampled scoring over the 5-min session; no within-session temporal binning reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition or sequence analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST immobility/swim/climb are stress-coping measures, not natural ethological behaviours.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Only one rat was placed in the swim chamber at a time.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning or memory component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Scoring of the swim test was performed by trained technicians using a time sampling technique.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No PCA or multivariate analysis reported.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Each FST chamber was constructed of clear acrylic (height = 40 cm; diameter = 20.3 cm).",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open cylinder with no refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Water-filled cylinder; definitionally absent.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single cylindrical chamber.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Only one rat was placed in the swim chamber at a time.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or drinking water accessible during the test.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "All rats were exposed to two swim sessions... Same rats were retested on day 7 post injection.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "the second swim session... lasted for 5 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Test 24 h after dosing and again on day 7 post injection.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Preswim was 15 min before dosing but its data is not reported as a scored outcome (used for habituation).",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Same rats were retested on day 7 post injection.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5-min test session.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Head-Twitch Response",
+      "assay_description": "C57BL/6J male mice habituated to test cage for 30 min, then injected IP with psilocybin (1 mg/kg), DOI (1 mg/kg), or zalsupindole (10 or 30 mg/kg) and placed back in cage. HTR (rapid side-to-side head shaking) scored in real time by blinded observers over a 20-min observation period.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "receive psilocybin (1 mg/kg, IP), DOI (1 mg/kg, IP), zalsupindole (10 mg/kg, IP), or zalsupindole (30 mg/kg, IP)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "The C57BL/6J male mice were habituated to the test cage for at least 30 min prior to the test.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "the mice were placed back in the test cage for a 20 min observation period",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard short HTR test; no food provided in test cage during recording.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard short HTR test; no water in test cage during recording.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Test compounds were injected immediately prior to testing. Directly post-treatment, the mice were placed back in the test cage for a 20 min observation period.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 70,
+        "n_male": 70,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "Young adult C57BL/6J male mice (5-6 weeks old at arrival; N = 70)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin (1 mg/kg) and DOI (1 mg/kg) induced robust head-twitch responses, whereas zalsupindole (10 or 30 mg/kg) did not induce HTR, consistent with its proposed nonhallucinogenic profile.",
+        "statistics": "",
+        "direction": "no_effect",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "ZAL does not induce a mouse head-twitch response (HTR).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The HTR activity was defined as rapid side to side head shaking",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total HTRs over 20 min reported; no within-session time-course analysis.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition/sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-twitch response is explicitly listed as NOT ethological in the rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice tested individually.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning/memory component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "scored by experienced, blinded testers in real time",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single univariate measure.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "habituated to the test cage",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enclosed refuge mentioned in test cage.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not described as present in test cage.",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not present.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not present in test cage.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single test cage.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice tested individually in the test cage.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in test cage during recording.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "20 min observation period",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "for a 20 min observation period",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test day per animal.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug HTR data reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No follow-up HTR recording reported.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "20-min session.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Included two behavioural assays: Forced Swim Test (rats) and Head-Twitch Response (mice). Dropped electrophysiology (sEPSCs), Golgi-Cox dendritic spine analysis, microdialysis, pharmacokinetics, radioligand binding, and in vitro neurite outgrowth assays as non-behavioural.",
+    "Species reported as 'mouse and rat' since FST used rats and HTR used mice; strain captures both.",
+    "HTR outcome direction set to 'no_effect' for the psychedelic of primary interest (zalsupindole), while noting psilocybin/DOI positive controls did induce HTR; this matches the rubric's framing of direction for ZAL.",
+    "Added Ketamine to dosing list (active comparator) and included DMT (used in sEPSC dosing) even though DMT was not used in a scored behavioural assay, to preserve compound metadata.",
+    "Preswim in FST treated as habituation, not a scored baseline (D4=0), since preswim data is not reported as an analysed outcome."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 4.09,
+    "behavioural_complexity_mean": 0.62,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 2.73
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 57653,
+    "output_tokens": 6956,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

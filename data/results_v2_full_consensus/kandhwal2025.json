@@ -1,0 +1,677 @@
+{
+  "study_id": "Kandhwal2025",
+  "doi": null,
+  "species": "mouse",
+  "strain": "Swiss Albino",
+  "age": {
+    "value": "not_reported",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Swiss Albino mice (male, 25-30 g) were used in the current study.",
+    "confidence": "low"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 56,
+    "n_female": null,
+    "evidence": "Swiss Albino mice (male, 25-30 g) were used in the current study. ... The study was conducted exclusively in male mice",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        5.0
+      ],
+      "doses_raw": "5 mg/kg, s.c.",
+      "vehicle": "not_reported",
+      "route": "s.c.",
+      "schedule": "chronic",
+      "evidence": "Group 6 was DOI (2,5-dimethoxy-4-iodoamphetamine) per se (5 mg/kg, s.c); Group 7 was given DOI (5 mg/kg.,s.c) and HSP (200 mg/kg;p.o.). ... All the treatments were given once daily for 21 days.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not addressed in methods",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "not addressed in methods",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "light cycle not specified",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "home-cage enrichment not described",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Forced Swim Test",
+      "assay_description": "Mice placed in a glass rectangular chamber (14 x 20 cm) with water at 23 °C for 6 min; immobility time scored over the last 4 min.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "DOI (5HT2A agonist) was administered subcutaneously.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "no habituation to FST apparatus described",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "Animals were allowed to swim in a glass rectangular chamber... until they were appeared as immobile (FST cylinder counted as restraint per rubric).",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in FST chamber during testing",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No drinking water in FST chamber during testing",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 60,
+          "evidence": "On day 21, the behavioural tests were performed one hour after the administration of drugs.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 56,
+        "n_male": 56,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "Animals were randomly assigned to 7 groups (8 animals per group).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "CUMS increased immobility time. DOI (5 mg/kg s.c.) alone did not alter immobility relative to CUMS, but pre-administration of DOI abolished hesperidin's antidepressant-like reduction in immobility.",
+        "statistics": "one-way ANOVA followed by Tukey's multiple comparison test; ****p<0.0001, ***p<0.001, **p<0.01, ns",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "DOI administered alone to CUMS-exposed animals did not alter immobility time compared to CUMS animals. However, pre-administration of DOI, a 5-HT2A agonist, prior to HSP abolished HSP's antidepressant-like effects.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Total time of animal immobility was noted for the last 4 min.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single total immobility value reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence/transition analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST immobility is not ethological per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Single mouse in chamber.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST does not require learning.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Manual scoring; no DLC/MoSeq.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVA only.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "glass rectangular chamber",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter in FST cylinder.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Water-filled chamber, no bedding.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single chamber.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Single mouse tested.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water accessible during FST.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Single FST on day 21.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "6 min swim.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "FST performed on day 21 only.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug FST baseline reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Test 1 h after drug, not ≥24 h.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "6 min session.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "Square arena (50 x 50 x 40 cm) with floor divided into 25 squares; number of squares crossed counted over 5 min.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "DOI (5HT2A agonist) was administered subcutaneously.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No habituation to OFT apparatus described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Each mouse was placed individually into the centre and allowed to explore freely.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in OFT arena during recording.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in OFT arena during recording.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 60,
+          "evidence": "On day 21, the behavioural tests were performed one hour after the administration of drugs.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 56,
+        "n_male": 56,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "Animals were randomly assigned to 7 groups (8 animals per group).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "CUMS reduced number of crossings; DOI alone did not significantly affect crossings, and DOI co-administration abolished hesperidin's restoration of locomotor activity.",
+        "statistics": "one-way ANOVA followed by Tukey's multiple comparison test",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "DOI alone did not significantly affected the number of crossings relative to the naïve group. However, the beneficial effects of HSP were abolished when pre-administered with DOI.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The number of squares crossed by the animals with all paws (crossing) was observed and counted.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single total count over 5 min.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor crossings not scored as ethological acts.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Single mouse.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "OFT does not require learning.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Manually observed and counted.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVA only.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "square arena (50 × 50 × 40 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open arena, no shelter.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Floor was marked with black lines; cleaned with alcohol between mice.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single open arena.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each mouse was placed individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in OFT arena.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Single OFT on day 21.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "This process continued for 5 min.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "OFT performed on day 21 only.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug OFT baseline reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Test 1 h after drug.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5 min session.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "Sucrose Preference Test",
+      "assay_description": "Two-bottle choice (2% sucrose vs water). Baseline training before CUMS (24 h acclimation + 24 h two-bottle exposure, then 24 h food/water deprivation, 1 h test). Test on day 22 with 1 h preference recording.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "DOI (5HT2A agonist) was administered subcutaneously.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Prior to the initiation of the CUMS protocol, mice were acclimatized to drinking regular water from two bottles for a 24-h period.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice given unrestricted access to both bottles in their cage.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "Following this, the animals were deprived of food and water for 24 h.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "before",
+          "evidence": "Following this, the animals were deprived of food and water for 24 h.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "On the 22nd day (24 h after exposure to the final stressor), the mice were again presented with both sucrose solution and drinking water for 1 h.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 56,
+        "n_male": 56,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "Animals were randomly assigned to 7 groups (8 animals per group).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "CUMS decreased sucrose preference; HSP reversed this decline, while DOI alone had no effect and DOI co-administration abolished HSP's restoration of sucrose preference.",
+        "statistics": "one-way ANOVA followed by Tukey's multiple comparison test",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "DOI administered alone, however, had no significant impact on sucrose preference compared to the CUMS + vehicle group... when DOI was administered before HSP in CUMS-exposed mice, the sucrose preference returned to levels comparable to the CUMS + vehicle group.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Sucrose preference calculated as a single percentage of total liquid consumed.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single preference value per session.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bottle preference is not an ethological behavioural act per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Anhedonia preference, no learning required.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bottle weights measured manually.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVA only.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "two-bottle choice setup",
+          "confidence": "medium"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "low"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Two bottles in single cage, no partitions described.",
+          "confidence": "medium"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual mouse intake measured.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "mice were again presented with both sucrose solution and drinking water for 1 h.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Baseline training session preference recorded before CUMS, then test session on day 22. 'At baseline, sucrose preference was consistent across all groups'.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "given a 1-h period to choose between the two bottles",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Baseline preference day before CUMS plus test on day 22.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "At baseline, sucrose preference was consistent across all groups, indicating no initial differences in reward-seeking behavior.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "On the 22nd day (24 h after exposure to the final stressor)",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "1 h session.",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      }
+    }
+  ],
+  "judge_notes": [
+    "Three behavioural assays were identified: FST, OFT, SPT. All candidates agreed on these.",
+    "DOI dose corrected to 5.0 mg/kg (gptoss erroneously converted to 0.005); paper clearly states 5 mg/kg s.c.",
+    "DOI schedule classified as 'chronic' (once daily for 21 days = >7 days), overriding qwen/glm 'repeated'.",
+    "FST setup_restrain scored 'yes' per rubric explicit listing of FST cylinder as restraint.",
+    "SPT D1/D3/D4 scored as multiple sessions because the paper describes a baseline training preference session and a day-22 test, with baseline data referenced ('At baseline, sucrose preference was consistent across all groups').",
+    "Outcome direction for each assay set to 'no_effect' for DOI alone (the psychedelic-relevant comparison), since DOI per se did not differ from CUMS+vehicle on any behavioural measure."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0.0,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 6.82,
+    "behavioural_complexity_mean": 0.0,
+    "environmental_complexity_mean": 0.45,
+    "recording_duration_mean": 2.27
+  },
+  "low_confidence_count": 10,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 58390,
+    "output_tokens": 7287,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

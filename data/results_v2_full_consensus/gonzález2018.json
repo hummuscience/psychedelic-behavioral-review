@@ -1,0 +1,482 @@
+{
+  "study_id": "González2018",
+  "doi": "10.3389/fphar.2018.00374",
+  "species": "rat",
+  "strain": "Wistar",
+  "age": {
+    "value": "adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Wistar adult rats were maintained on a 12-h light/dark cycle",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "not_reported",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "The paper does not specify the sex of the rats used.",
+    "confidence": "high"
+  },
+  "psychedelic": "Ibogaine",
+  "dosing": [
+    {
+      "compound": "Ibogaine",
+      "doses_mg_per_kg": [
+        20.0,
+        40.0
+      ],
+      "doses_raw": "20 and 40 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "each rat received ibogaine 20 mg/kg ( I 20), 40 mg/kg ( I 40), or vehicle (saline) i.p., in different days in a counterbalance order; the wash-out period between doses was 3 days.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "No handling protocol is described.",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "housed four-six per cage before behavioral testing",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "maintained on a 12-h light/dark cycle (lights on at 07.00 h)... Experimental sessions were conducted during the light period, between 10 AM and 4 PM",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "The paper does not mention any enrichment items in the home cage (wood shaving bedding only mentioned for recording cages).",
+      "confidence": "high"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Polysomnographic Sleep/Wake Recording",
+      "assay_description": "6-hour polysomnographic recording (EEG + EMG) of wakefulness, light sleep, slow wave sleep, and REM sleep in chronically implanted rats freely moving in transparent home-cage-like recording chambers (40x30x20 cm) with wood shaving bedding and ad libitum food/water. Same animals tested under saline, I20, and I40 in counterbalanced order with 3-day wash-out.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "each rat received ibogaine 20 mg/kg ( I 20), 40 mg/kg ( I 40), or vehicle (saline) i.p.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "After the animals had recovered from the preceding surgical procedures, they were adapted to the recording chamber for 1 week.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "The recordings were performed through a rotating connector, to allow the rats to move freely within the recording box.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "housed individually in transparent cages... with water and food ad libitum",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "with water and food ad libitum",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Animals were treated with ibogaine (20 and 40 mg/kg) or vehicle, immediately before the beginning of the recordings.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 8,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "Eight animals selected for sleep experiments... Data are presented as mean ± standard error of eight rats. [within-subject design]",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Ibogaine (20 and 40 mg/kg, i.p.) increased time spent in wakefulness and decreased SWS and REM sleep during the 6-h recording. REM sleep latency increased with 40 mg/kg. Effects on W and SWS were limited to the first 2 h, while REM suppression lasted throughout the recording.",
+        "statistics": "W: I20 F(1.1,8.3)=10.7, p<0.01; I40 p<0.05. SWS: F(2,14)=14.7, p<0.01 (I20), p=0.01 (I40). REM total: F(2,14)=19.3, p<0.01 (I20), p<0.005 (I40). REM latency I40: F(2,14)=9.6, p<0.05.",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "Compared to control, I 20 and I 40 increased the time spent in W... accompanied by a decrease in SWS time... total amount of REM sleep was diminished... REM sleep latency increased following I 40 administration.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 3,
+          "value": "7+",
+          "evidence": "Total time spent in W, LS, SWS, and REM sleep, as well as the duration and the number of episodes... Sleep latencies were also evaluated.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "the time spent in each state was analyzed separately in blocks of 2 h (0-2, 2-4, and 4-6 h)",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The study analyzes total time and episode counts/durations, not transitions or sequences between states.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Measures sleep/wake states (W, LS, SWS, REM) defined by EEG/EMG, not natural ethological behaviors.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animals were housed individually in transparent cages... for the recording.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The assay measures sleep/wake states, not learning or memory.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The states of sleep and W were determined in 10 s epochs [scored manually from EEG/EMG using Spike 2].",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Statistical significance... was evaluated utilizing one-way repeated measures analysis of variance",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "Animals were housed individually in transparent cages (40 x 30 x 20 cm) containing wood shaving material... Experimental sessions were conducted... in a sound-attenuated chamber.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The cage is a standard transparent box; no specific shelter or refuge is mentioned.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "cages... containing wood shaving material",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material mentioned; only wood shavings.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects mentioned in the recording cage.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "transparent cages (40 x 30 x 20 cm) — single compartment.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Animals were housed individually in transparent cages",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "with water and food ad libitum",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "each rat received ibogaine 20 mg/kg, 40 mg/kg, or vehicle (saline) i.p., in different days in a counterbalance order; the wash-out period between doses was 3 days. [3 separate 6-h sessions, each <6 h]",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "polysomnographic recordings on chronically prepared rats were performed in the light phase during 6 h",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "each rat received ibogaine 20 mg/kg, 40 mg/kg, or vehicle (saline) i.p., in different days in a counterbalance order [3 recording days per rat]",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "each rat received ibogaine 20 mg/kg, 40 mg/kg, or vehicle (saline) i.p., in different days [within-subject design with vehicle session].",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recordings lasted 6 hours immediately after injection; no recording >=24 h post-dose.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "recording... during 6 h [exactly 6 h, not >=6 h continuous of behavioural data span; treated as borderline — recordings were 6 h which does not exceed the >6h threshold for D6 (requires >=6 h per definition but D6 'span >=6 hours' — this single session is 6 h)]",
+          "confidence": "medium"
+        },
+        "raw_total": 5
+      }
+    },
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "Square arena 45x45x40 cm, transparent plastic walls, 35 lux. Locomotion (total distance) tracked with Ethovision XT 12.0 in 5-min bins over 120 min. Rearings, tremor, flat body posture, piloerection, forepaw treading, Straub tail, hind limb abduction, and head shake response scored by trained observer every 30 min.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "each animal received I 20, I 40, or saline... i.p.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "As rats were not habituated to the OF before drug or vehicle administration",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Animals were freely moving in the OF apparatus",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard OF test with no food in apparatus; food was ad libitum in home cage but not accessible during testing.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard OF test with no water in apparatus.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "starting immediately after the drug or vehicle administration",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 18,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "Eighteen naive (not operated) rats were used... each animal received I 20, I 40, or saline ( n = 6 per group)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Ibogaine 20 mg/kg increased total locomotor activity vs control, while 40 mg/kg reduced locomotion and rearing only in the first 5 min and induced tremor and flat body posture immediately post-injection (resolved by 60 min). Head shake response was unchanged at both doses.",
+        "statistics": "Locomotion treatment F(2,15)=8.7, p<0.01; treatmentxtime F(46,345)=1.43, p<0.05. Rearing F(2,15)=4.0, p<0.05. Tremor F(2,15)=35.9, p<0.0001. Flat body posture F(2,15)=9.3, p<0.01. HSR F(2,15)=1.1, p=0.36.",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "I 20 elicited a significant increment in the locomotor activity compared to control... I 40 elicited a significant decrease... during the first 5 min... tremor and flat body posture were significantly present immediately after I 40 injection... HSR did not reveal significant difference.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 3,
+          "value": "7+",
+          "evidence": "total distance traveled... number of rearings... tremor, flat body posture, piloerection, hind limb abduction, Straub tail... forepaw treading... number of HSR",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "total distance traveled in meters (m) during 120 min (5 min bin)... Specific behaviors were assessed... every 30 min during 2 h",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural transitions reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "rearings, tremor, flat body posture, forepaw treading, piloerection, HSR — natural ethological behaviours scored as distinct acts",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animals tested alone in OF.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning or memory component in this OF test.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Ethovision XT 12.0 software [position tracking only; behaviours scored by trained investigator].",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "data analyzed by two-way ANOVA or one-way ANOVA [no PCA/multivariate].",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "An OF apparatus consisting of a square area (45 cm wide x 45 cm long x 40 cm high) with transparent plastic walls",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent — open field has no shelter.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding mentioned in the OF arena.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in OF.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in OF.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "square area (45 cm wide x 45 cm long x 40 cm high)",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each animal was tested individually in the OF.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the OF apparatus during testing.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "tested for 2 h after ibogaine treatment... were used only once.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "during 120 min (5 min bin), starting immediately after the drug or vehicle administration",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "were used only once.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "rats were not habituated to the OF before drug or vehicle administration",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recording started immediately after injection and lasted 2 h; no >=24 h follow-up.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session lasted 2 hours.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    }
+  ],
+  "judge_notes": [
+    "Two distinct assays retained: (1) polysomnographic sleep/wake recording (6 h, n=8, within-subject), and (2) open field test (2 h, n=18, between-subject). Candidate qwen omitted the sleep recording assay; candidates glm and gptoss were used to reconstruct it.",
+    "For the sleep assay, D1 set to 'Multiple discrete sessions' (each rat tested across 3 days with different drug conditions, counterbalanced) rather than 'Continuous monitoring' since each session was 6 h not >=6 h continuous and was treated as discrete dosing sessions.",
+    "B1 for sleep assay scored 7+ (4 states x time/episodes/duration + latencies = >=7 measures, supported by Table 1).",
+    "Setup_habituation for sleep assay scored 'yes' based on 1-week adaptation to recording chamber post-surgery.",
+    "Sex scored as not_reported with high confidence — the paper repeatedly says 'rats' but never specifies sex.",
+    "D6 for sleep assay (6 h recording) scored 0 since rubric requires >=6 h for 'Yes' but in the rubric D6 says 'span >=6 hours' — kept conservative as 0 since recording is exactly 6 h and described as terminating at 6 h; ambiguous boundary."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 6.25,
+    "environmental_complexity_max": 4.09,
+    "recording_duration_max": 6.82,
+    "behavioural_complexity_mean": 5.62,
+    "environmental_complexity_mean": 2.04,
+    "recording_duration_mean": 4.78
+  },
+  "low_confidence_count": 0,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 49072,
+    "output_tokens": 7232,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

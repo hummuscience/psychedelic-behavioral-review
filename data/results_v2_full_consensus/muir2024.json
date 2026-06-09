@@ -1,0 +1,678 @@
+{
+  "study_id": "Muir2024",
+  "doi": "10.1126/science.adl0666",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 42,
+    "age_max_days": 49,
+    "evidence": "6-7-week-old male and female C57BL/6J mice",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "6-7-week-old male and female C57BL/6J mice",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        2.0,
+        6.0
+      ],
+      "doses_raw": "6 mg/kg (primary); 2 mg/kg (dose-response)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "DOI (6 mg/kg) or saline was delivered via IP injection 30 minutes before the start of behavior. For dose response experiments at 2 mg/kg, DOI was dissolved in saline.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Mice were left undisturbed for 1-week following arrival before the start of testing; no explicit handling protocol described.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "group-housed with 4 same-sex cage mates",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "yes",
+      "evidence": "maintained on a 12h reverse light-dark cycle (lights on at 9PM)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "no",
+      "evidence": "cages were not enriched",
+      "confidence": "high"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Marble Burying Test",
+      "assay_description": "Novel arena (41x28x15 cm) with 5 cm corn cob bedding and 20 marbles. Mice explored for 30 min; marbles counted at 10, 20, 30 min. Tested at 30 min, 6 h, and 24 h post-DOI, and on Day 2 with optogenetic reactivation of scFLARE2-tagged neurons.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "DOI (6 mg/kg) or saline was delivered via IP injection 30 minutes before the start of behavior.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Mice were placed in the corner of a novel arena",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice were allowed to explore the arena for 30 minutes",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food was present in the testing arena during the 30-min session.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water source was present in the testing arena.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 30,
+          "evidence": "Mice were run on the marble burying test 30 minutes following injection... 6 hours following injection... 24 hours post-injection",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 5,
+        "evidence": "n = 20 mice per group (30 min); n = 12 mice per group (6 h); n = 5 mice per group (dose response)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute DOI (6 mg/kg) reduced marble burying at 30 min and 6 h post-injection (anxiolytic). At 24 h, DOI-treated mice buried more marbles than saline controls (rebound anxiogenic), an effect more apparent in males. Optogenetic reactivation of DOI-tagged mPFC neurons on Day 2 recapitulated the reduced burying.",
+        "statistics": "Unpaired Student's t test; *P<0.05, **P<0.01, ***P<0.001, ****P<0.0001. Two-way ANOVA with Tukey's multiple comparisons for Day 1/Day 2 reactivation analyses.",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "yes",
+        "time_dependent": "yes",
+        "evidence": "mice still exhibited a reduction in marble burying... mice injected with DOI were examined again 24 hours later, they unexpectedly buried more marbles... This rebound anxiety-like effect was more apparent in males than in females",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "2-3",
+          "evidence": "marbles buried, head twitch count, velocity/locomotion",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The number of buried marbles were counted 10-, 20-, and 30-minutes following the start of the test",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural sequences reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "digging/burying behavior was captured",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice were placed in the corner of a novel arena (tested alone).",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate anxiety/compulsivity test, no learning required.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotion was scored post-hoc using behavioral tracking software (Ethovision XT 15, Noldus); HTR scored manually.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "LDA performed on single variables; no multivariate dimensionality reduction across features.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "novel arena (41x28x15 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enclosed refuge in the arena.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "filled with 5 cm of 1/8 inch corn cob bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material reported.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only marbles (test stimuli) present; not enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Arena is a single open compartment.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Focal mouse was the only animal in the arena.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the testing apparatus during the 30-min test.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Tested at 30 min, 6 h, 24 h post-injection, and again on Day 2 with reactivation.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "Mice were allowed to explore the arena for 30 minutes",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "30 min, 6 h, 24 h post-injection sessions plus Day 2 reactivation.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline MBT recorded.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "24 hours post-injection, they were reintroduced to the marble burying test",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Each session was 30 min; none exceeded 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    },
+    {
+      "assay_name": "Head Twitch Response",
+      "assay_description": "Number of head twitches (rapid side-to-side rotational head movements) scored manually by a blinded experimenter during the first 10 minutes of the MBT session. Measured at 30 min, 6 h post-DOI and on Day 2 during optogenetic reactivation.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "DOI (6 mg/kg) or saline was delivered via IP injection 30 minutes before the start of behavior.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Mice were placed in the corner of a novel arena",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice freely explored the arena.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in the testing arena.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in the testing arena.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 30,
+          "evidence": "30 minutes following injection... 6 hours following injection... 24 hours later (Day 2 reactivation)",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "n = 8 mice per group (Fig 1F); n = 10-11 mice per group (Fig 1J); n = 9-10 mice per group (Fig 5K)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI significantly elevated HTRs at 30 min post-injection but not at 6 h. Optogenetic reactivation of DOI-tagged mPFC neurons on Day 2 did NOT elicit elevated HTRs, dissociating the anxiolytic and hallucinogenic-like effects.",
+        "statistics": "Unpaired Student's t test (Fig 1F, 1J); two-way ANOVA with Tukey's multiple-comparisons test (Fig 5K). ****P<0.0001; ns reported for 6 h and Day 2.",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "yes",
+        "evidence": "mice also showed an elevated HTR 30 min after DOI injection... no longer exhibited elevated HTRs [at 6 h]... did not increase HTRs during orange light stimulation of DOI-activated neurons on day 2",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Number of HTRs during the first 10 min of the MBT",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total count over the first 10 min only.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence/transition analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is treated as a drug-evoked response, not a natural ethological behaviour (per rubric).",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mouse alone in arena.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Reflexive drug response, no learning.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTRs scored by experimenter blind to conditions.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single univariate measure.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Same arena as MBT (41x28x15 cm).",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter in arena.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "5 cm corn cob bedding in arena.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material reported.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single open arena.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Animal alone during testing.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in arena.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "HTR scored at 30 min, 6 h, and again on Day 2.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Number of HTRs during the first 10 min of the MBT",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Multiple recording days (30 min/6 h and Day 2 reactivation).",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug HTR baseline reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Day 2 (24 h) HTR scoring during reactivation.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "10-min scoring window.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Elevated Plus Maze",
+      "assay_description": "Cross-shaped maze with 2 open and 2 closed arms (30x5 cm). Mice placed in centre and allowed to explore for 10 min. Primary measures: % time in open arms, closed arms, centre, and velocity (Ethovision tracking). Tested at 30 min, 6 h, 24 h post-DOI and during Day 2 optogenetic reactivation.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "DOI (6 mg/kg) or saline was delivered via IP injection 30 minutes before the start of behavior.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Mice were placed in the center of a cross shaped maze (no prior habituation described).",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "allowed to explore for 10 minutes",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in the EPM during testing.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in the EPM during testing.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 30,
+          "evidence": "EPM performed 30 min, 6 hours, and 24 hours following injection with DOI or saline; also performed on Day 2 during optogenetic reactivation.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 7,
+        "evidence": "n = 8 to 10 mice per group (30 min); n = 7 to 9 mice per group (6 h); n = 10 to 11 mice per group (Fig 5F)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI increased time spent in open arms at 30 min and 6 h post-injection (anxiolytic). At 24 h, a trend towards more time in closed arms was observed (rebound anxiogenic). Optogenetic reactivation of DOI-tagged neurons on Day 2 increased time spent in the open arms, recapitulating the anxiolytic effect.",
+        "statistics": "Two-tailed Student's t-test; unpaired Student's t test (Fig 5F). *P<0.05, **P<0.01.",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "not_reported",
+        "time_dependent": "yes",
+        "evidence": "DOI-treated mice spending more time in the open arms compared with saline-treated mice... EPM showed a trend for this anxiogenic effect at 24 hours, with more time spent in the closed arms... orange light stimulation of DOI-tagged neurons increased the amount of time that mice spent in the open arms of the EPM",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "% time in open arms, % time in closed arms, % time in centre, velocity",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total time over the 10-min session reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Zone-preference (innate avoidance), not ethological.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mouse tested alone.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate-avoidance test; no learning required.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Ethovision XT 15 (centroid position tracking only).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate analyses across measures.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "cross shaped maze with 2 open arms and 2 closed arms",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EPM closed arms are part of apparatus design, not a shelter (per rubric).",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding in EPM.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "EPM arms are extensions of a central platform, not separate compartments (per rubric).",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Animal tested alone.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in maze.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "EPM tested at 30 min, 6 h, 24 h, and on Day 2.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "allowed to explore for 10 minutes",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Multiple recording days (30 min/6 h/24 h cohorts and Day 2 reactivation).",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug EPM baseline.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "EPM at 24 h and Day 2 reactivation (≥24 h after last drug).",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "10-min session.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    }
+  ],
+  "judge_notes": [
+    "Three behavioural assays retained: Marble Burying Test, Head Twitch Response (scored during MBT session window but a distinct behavioural domain/measure), and Elevated Plus Maze. Two candidates (glm, gptoss) merged HTR into MBT; one candidate (qwen) separated them. Per rubric, same apparatus used for different behavioural domains = separate assays, so HTR is kept as its own entry.",
+    "All assays collapsed across timepoints (30 min, 6 h, 24 h) and Day 2 optogenetic reactivation per rubric ('Same test at different timepoints' = 1 assay; 'Same test under optogenetic manipulations' = 1 assay).",
+    "Did not score the in vivo two-photon calcium imaging, psychLight2 fiber photometry, scFLARE2 tagging, or snRNA-seq components — these are neural recording/molecular readouts, not behavioural assays.",
+    "B4 (ethological) for MBT scored Yes (digging/burying is natural ethological behaviour); for HTR scored No per rubric explicit guidance.",
+    "B1 for MBT scored 2 (2-3 measures: marbles buried, HTR count, locomotor velocity) — gptoss/glm reasoning. Note HTR is counted as a separate assay here, but locomotion is also reported in MBT analyses, so 2-3 measures applies.",
+    "Housing handling marked not_reported (low confidence) — the 1-week undisturbed period before testing does not constitute a deliberate handling/habituation protocol."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 5.0,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 5.45,
+    "behavioural_complexity_mean": 2.5,
+    "environmental_complexity_mean": 0.91,
+    "recording_duration_mean": 4.54
+  },
+  "low_confidence_count": 1,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 53195,
+    "output_tokens": 8491,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

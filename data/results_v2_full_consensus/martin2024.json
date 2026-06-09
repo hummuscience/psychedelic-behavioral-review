@@ -1,0 +1,290 @@
+{
+  "study_id": "Martin2024",
+  "doi": "10.1038/s41386-024-01912-4",
+  "species": "rat",
+  "strain": "Sprague-Dawley",
+  "age": {
+    "value": "not_reported",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Paper does not state age of subjects explicitly.",
+    "confidence": "low"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": 16,
+    "n_female": 14,
+    "evidence": "The water behavioral economics experiment used a cohort of 8 rats (n = 4 male; n = 4 female), and the food behavioral economics experiment used a separate cohort of 14 rats (n = 7 male; n = 7 female). For photometry experiments, two cohorts were run separately and their data were combined (combined n = 5male,n = 3 female).",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        0.4,
+        0.5,
+        0.8,
+        1.0,
+        1.2
+      ],
+      "doses_raw": "0.8 mg/kg i.p. (behavioral economics); cumulative 400 µg/kg × 3 = 0.4/0.8/1.2 mg/kg (auditory-cued task); cumulative 500 µg/kg × 2 = 0.5/1.0 mg/kg (lever-cued task)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "DOI (0.8 mg/kg i.p) or vehicle (saline) were given 25 min prior to test sessions... 3 cumulative DOI doses were given as a series of 3 injections (400 µg/kg, i.p. for each injection)... 2 cumulative DOI doses were given as a series of 2 injections (500 µg/kg, i.p. for each injection)... 2,5-Dimethoxy-4-iodoamphetamine (DOI, Cayman) was dissolved in sterile saline vehicle.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "No handling protocol described.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "Rats were single-housed (supplementary methods).",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "yes",
+      "evidence": "maintained on a 12:12h reverse light-dark cycle (ZT0 at 1900) and experiments were performed during the dark cycle.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Home-cage enrichment not described.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Behavioral economics operant task (food and water)",
+      "assay_description": "Within-session escalating fixed-ratio operant task in Med Associates chambers, 30 min sessions of 10 × 3-min bins, separate cohorts pressing for water or food pellets. Outcomes: rewards earned per price, Q0 (consumption at low cost), α (demand elasticity). DOI (0.8 mg/kg) vs saline in within-subject counterbalanced design.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "DOI (0.8 mg/kg i.p) or vehicle (saline) were given 25 min prior to test sessions",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No specific pre-test apparatus habituation described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Experiments were conducted in individual sound-isolated standard experimental chambers; rats freely moving.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "For conditions using food reward, rats were mildly food restricted to maintain a stable weight of ~95% free feeding weight",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "before",
+          "evidence": "For conditions using water reward, rats were water restricted ~23 hours prior to the experiment",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 25,
+          "evidence": "DOI (0.8 mg/kg i.p) or vehicle (saline) were given 25 min prior to test sessions",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 22,
+        "n_male": 11,
+        "n_female": 11,
+        "n_per_group_min": 8,
+        "evidence": "water behavioral economics experiment used a cohort of 8 rats (n = 4 male; n = 4 female), and the food behavioral economics experiment used a separate cohort of 14 rats (n = 7 male; n = 7 female).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI (0.8 mg/kg) produced bidirectional effects on reward value at low prices: decreased Q0 for food but increased Q0 for water. DOI increased demand elasticity (α) for both rewards, indicating reduced motivation at high costs regardless of reward type. No significant sex × drug interactions.",
+        "statistics": "Q0 Reward × Treatment interaction F(1,20)=7.429, p=0.013; Food Q0 p=0.041; Water Q0 p=0.0042; main effect of Drug on α F(1,20)=16.37, p=0.0006.",
+        "direction": "mixed",
+        "dose_dependent": "n/a",
+        "sex_dependent": "no",
+        "time_dependent": "n/a",
+        "evidence": "DOI decreases Q0 for food (p = 0.041) but increases Q0 for water (p = 0.0042)... DOI increases economic demand elasticity (α)... for both water and food reward (main effect of Drug, F(1, 20) = 16.37, p = 0.0006).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "Rewards earned at each price, Q0, α, and food/water consumption.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "within-session, escalating-price design wherein fixed ratios (FRs) were increased across the 30 min session comprised of 10 three-minute bins",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition/sequence analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Operant lever pressing, not ethological behaviours.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual operant testing.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Instrumental operant task requiring learned action-outcome contingencies.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Med Associates beam-break / standard operant data collection.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVAs and curve fits; no PCA/clustering.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "standard experimental chambers (25 × 27 × 30 cm; Med Associates)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter in operant chamber.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard operant chamber, no bedding.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in chamber.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in chamber.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single operant chamber with lever and reward port.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Experiments were conducted in individual sound-isolated standard experimental chambers",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "completion of FRs resulted in activation of syringe pumps delivering 95 uL of water... or the delivery of (2) 45 mg food pellets",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "each subject received DOI or saline on alternate test days, separated by a retraining session",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "30 min session comprised of 10 three-minute bins",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "DOI and saline test sessions on alternate days.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Saline session is a comparator under drug condition; no pre-drug baseline within same assay reported for analysis.",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Acute testing only; no ≥24 h post-drug behavioural recording.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30 min session; does not span ≥6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    }
+  ],
+  "judge_notes": [
+    "Three distinct behavioural paradigms retained: (1) behavioural economics operant task (food + water cohorts), (2) auditory-cued Pavlovian water task with photometry, (3) lever-cued Pavlovian task with photometry (food + water). Did not split food vs water cohorts because the rubric specifies different reinforcers within the same paradigm are still one assay.",
+    "Fiber photometry was retained as a behavioural readout context (animals were performing tasks), but per the rubric the photometry recording itself is a neural readout; behavioural measures (latency, poke probability, lever press time) are scored. B1 counted only behavioural measures, not dopamine signal measures.",
+    "DOI doses consolidated to 0.4, 0.5, 0.8, 1.0, 1.2 mg/kg across cumulative dosing series and the behavioural economics 0.8 mg/kg dose.",
+    "Group housing scored 'no' based on consistent candidate agreement citing single-housing in supplementary methods; light cycle 'yes' (reversed) is supported by quoted methods.",
+    "D4 baseline scored 'Yes' for photometry assays because vehicle control sessions are recorded within the same within-subject crossover design and used as baseline; for the behavioural economics assay, the vehicle session functions similarly but is a separate test day rather than a pre-drug baseline within the same session, scored 0 conservatively.",
+    "E8 food/water scored 'Yes' for all assays because reward (food pellets or water drops) is delivered into the apparatus during the recording session and is accessible to the animal.",
+    "B1 measures: Behavioural economics has 4-6 measures (rewards/price, Q0, α, consumption at multiple FRs) → score 2; auditory Pavlovian primarily 2-3 behavioural measures (latency + poke probability across trial types) → score 1; lever Pavlovian has 4-6 measures (lever press time, poke probability, proximal latency, distal latency, by reinforcer) → score 2."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 5.0,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 4.09,
+    "behavioural_complexity_mean": 5.0,
+    "environmental_complexity_mean": 1.36,
+    "recording_duration_mean": 4.09
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 55911,
+    "output_tokens": 9500,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

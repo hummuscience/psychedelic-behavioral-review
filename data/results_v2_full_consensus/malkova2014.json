@@ -1,0 +1,284 @@
+{
+  "study_id": "Malkova2014",
+  "doi": "10.1073/pnas.1323287111",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 56,
+    "age_max_days": 70,
+    "evidence": "Eight- to 10-wk old control and MIA offspring",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Only male offspring were tested to avoid the effects of ovarian hormones on female behavior.",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        1.0,
+        2.0
+      ],
+      "doses_raw": "1 or 2 mg/kg, i.p.",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Eight- to 10-wk old control and MIA offspring received ( ± )DOI hydrochloride (1 or 2 mg/kg, i.p.) (Sigma) or saline.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Handling protocol not described in methods.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "males were caged in groups of two to four.",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "All behavioral tests were conducted between 900 and 1700 h during the light phase of the circadian cycle.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "housed under standard laboratory conditions; enrichment not specified.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head Twitch Response",
+      "assay_description": "Mice injected i.p. with DOI (1 or 2 mg/kg) or saline; head twitches counted manually in the home cage for 30 min by an experimenter blind to treatment. Includes variants with chronic ketanserin pretreatment and MnCl2 pretreatment.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "received ( ± )DOI hydrochloride (1 or 2 mg/kg, i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Animals were single-housed and moved to a quiet testing room 24 h before injection, but no apparatus habituation is described (test is in the home cage).",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Behavioral responses to the drug or vehicle were recorded in the home cage for 30 min after the injection.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "Test in home cage under standard laboratory conditions; no restriction mentioned.",
+          "confidence": "low"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "Test in home cage under standard laboratory conditions; no restriction mentioned.",
+          "confidence": "low"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Behavioral responses to the drug or vehicle were recorded in the home cage for 30 min after the injection.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 9,
+        "evidence": "n = 9 -13 from three to four litters per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI induced head twitches in a dose-dependent manner in both groups, but MIA offspring displayed significantly more head twitches than controls at both 1 and 2 mg/kg. Chronic ketanserin pretreatment reduced DOI-induced head twitching in MIA offspring but had no effect in controls.",
+        "statistics": "F(1,28)=75.6, P<0.0001 and F(1,33)=116.4, P<0.0001 for 1 and 2 mg/kg DOI; MIA vs control: F(1,28)=3.884, P=0.059, post hoc P<0.05 (1 mg/kg); F(1,33)=3.56, P=0.068, post hoc P<0.01 (2 mg/kg); ketanserin: F(1,34)=8.787, P<0.01.",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "compared with controls, MIA offspring display a significantly greater response [for 1 mg/kg DOI, F (1, 28) = 3.884, P = 0.059; post hoc test, P < 0.05; for 2 mg/kg DOI, F (1, 33) = 3.56, P = 0.068; post hoc test, P < 0.01].",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Head twitches were defined as rapid radial movements of the head and were counted by an experimenter blind to the treatment group.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total count over 30 min reported; no within-session time-course analysis.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head twitches counted as discrete events; no sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is explicitly excluded from ethological behaviours per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Twenty-four hours before injection, the animals were single housed.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate pharmacological response, no learning component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "counted by an experimenter blind to the treatment group.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate analysis (ANOVA on head twitch counts) only.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "Behavioral responses to the drug or vehicle were recorded in the home cage for 30 min after the injection.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter described in home cage during recording.",
+          "confidence": "low"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Standard home cage testing — bedding is part of standard home cage.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Nesting material not mentioned.",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment described.",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Standard home cage is a single compartment.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Twenty-four hours before injection, the animals were single housed.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Recording in home cage with standard food/water access.",
+          "confidence": "medium"
+        },
+        "raw_total": 3
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "recorded in the home cage for 30 min after the injection.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "recorded ... for 30 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single behavioural test day per animal.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline recording for HTR.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No post-acute follow-up recording reported.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30 min session.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Only one behavioural assay was scored: the Head Twitch Response. The MEMRI imaging is a neural activity readout (not behaviour) and was excluded per rubric. qRT-PCR for IEGs and 5-HT2AR signaling molecules are molecular endpoints, also excluded. PPI is mentioned only in Fig. S3 reference and is not described in the main methods; not scored as a separate assay.",
+    "Merged candidate variants (DOI alone, DOI+ketanserin, DOI+MnCl2) into one HTR assay per rubric (same paradigm under different pharmacological manipulations = 1 assay).",
+    "E3 bedding scored Yes (standard home cage testing implies bedding); E8 food/water Yes (home-cage test with standard ad lib access). GLM also scored E2 shelter as Yes based on 'home cage' but home cage shelter not explicitly described — kept as No with low confidence.",
+    "setup_habituation marked not_reported: animals were moved to a testing room and single-housed 24h prior, but apparatus (home cage) habituation is not separate exposure."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0.0,
+    "environmental_complexity_max": 4.09,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 0.0,
+    "environmental_complexity_mean": 4.09,
+    "recording_duration_mean": 1.36
+  },
+  "low_confidence_count": 8,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 53954,
+    "output_tokens": 3850,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

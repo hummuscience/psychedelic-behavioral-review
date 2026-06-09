@@ -1,0 +1,890 @@
+{
+  "study_id": "Duarte-Filho2022",
+  "doi": "10.1177/02698811221104050",
+  "species": "mouse",
+  "strain": "Swiss",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 42,
+    "age_max_days": 56,
+    "evidence": "Swiss male mice ( Mus musculus ), weighing between 30 and 40 g with 6-8 weeks of age",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Swiss male mice ( Mus musculus )",
+    "confidence": "high"
+  },
+  "psychedelic": "DMT (Mimosa tenuiflora standardized extract); Harmine",
+  "dosing": [
+    {
+      "compound": "DMT",
+      "doses_mg_per_kg": [
+        0.5,
+        1.5,
+        4.5,
+        13.5,
+        40
+      ],
+      "doses_raw": "20.5, 61.5, 185, 550, or 1,650 mg/kg of SEMT p.o. corresponding to approximately 0.5, 1.5, 4.5, 13.5, and 40 mg of DMT per kilo, respectively",
+      "vehicle": "saline",
+      "route": "p.o.",
+      "schedule": "acute",
+      "evidence": "Mice were treated with 20.5, 61.5, 185, 550, or 1,650 mg/kg of SEMT p.o. corresponding to approximately 0.5, 1.5, 4.5, 13.5, and 40 mg of DMT per kilo, respectively. All treatments were diluted or dissolved using a vehicle composed of 90% of saline (NaCl 0.9% w/v) and 10% of dimethyl sulfoxide (v/v).",
+      "confidence": "high"
+    },
+    {
+      "compound": "Harmine",
+      "doses_mg_per_kg": [
+        5.6
+      ],
+      "doses_raw": "5.6 mg/kg, p.o.",
+      "vehicle": "saline",
+      "route": "p.o.",
+      "schedule": "acute",
+      "evidence": "another five-group of mice received the doses of SEMT mixed with a fixed dose of harmine (5.6 mg/kg, p.o.)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not described in methods",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "housed in polyethylene cages ventilated by stainless steel grids",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "light/dark cycle of 12/12 h (direction not specified)",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not described in methods",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Tail Suspension Test",
+      "assay_description": "Mice suspended by the tail (taped) for 6 min; immobility time recorded with a stopwatch. Used to test SEMT alone, SEMT + harmine, SEMT + ketanserin pretreatment, and sub-dose SEMT + ketamine combinations.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "SEMT p.o.; ketanserin 1 mg/kg i.p.; ketamine i.p.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Only room acclimatization (2 h) described; no apparatus habituation reported.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "the animals are suspended by their tails, which are secured with adhesive tape, in a position where they cannot escape",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "In the second [hour of acclimatization], they were fasted, in order to minimize possible interactions between food and SEMT",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Water not accessible in the apparatus during the test.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "the animals were subjected to the tests 30 min after the administration of the treatments",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "13 groups with 14-15 animals each (screening); six groups with eight animals each (sub-dose combination); n=8 (ketanserin experiment)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "SEMT (185 and 550 mg/kg p.o.) significantly reduced immobility time in the TST compared to vehicle, independent of added harmine. Ketanserin pretreatment (1 mg/kg i.p.) blocked the antidepressant-like effect of SEMT550. Sub-effective doses of SEMT (61.5 mg/kg) combined with sub-effective ketamine (0.1 mg/kg) also reduced immobility.",
+        "statistics": "F(5,84)=11.12, SEMT185 p=0.000552, SEMT550 p=0.000195; ketanserin×SEMT F(3,28)=3.98, p=0.0193; sub-dose F(2,28)=5.07, p=0.015584",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "significant reduction [F(5,84)=11.12] in immobility time of mice treated with SEMT185 (88.4±13.3 s, p=0.000552) and SEMT550 (94.5±14.1 s, p=0.000195) in comparison to the vehicle group",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "the immobility time was recorded using a stopwatch",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "immobility reported as a single total over the 6 min test",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no sequence analysis reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "TST immobility is not an ethological behaviour",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "each mouse tested alone",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "TST does not require learning",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "immobility scored manually with a stopwatch by a blinded observer",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "only univariate ANOVA reported",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Tail suspension apparatus",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "suspended in air; no shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent in TST",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent in TST",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment in TST setup",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single suspension point",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "each mouse tested individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water accessible during 6 min test",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Each animal was used only once.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "During this test, lasting 6 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Each animal was used only once.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline TST reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "test at 30 min post-dose; no ≥24 h follow-up",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "6 min session",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "Forced Swim Test",
+      "assay_description": "3-L glass beaker, water 22 cm at 24±1°C, 6 min session; last 4 min scored for immobility.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "SEMT p.o.; ketamine and harmine i.p.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "no apparatus habituation described",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "animals could swim freely for 6 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "In the second [hour of acclimatization], they were fasted",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "drinking water not accessible in the apparatus",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "the animals were subjected to the tests 30 min after the administration of the treatments",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 14,
+        "evidence": "13 groups with 14-15 animals each",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "SEMT at 61.5 and 185 mg/kg p.o. significantly reduced immobility in the FST relative to vehicle. The 550 mg/kg dose was not effective and the 1650 mg/kg dose was excluded due to abnormal spiraling swimming.",
+        "statistics": "F(4,68)=8.48; SEMT61.5 p=0.005279; SEMT185 p=0.000010",
+        "direction": "decrease",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "significant reduction [F(4,68)=8.48] in the immobility time of mice treated with SEMT61.5 (146.2±7.1 s, p=0.005279) and SEMT185 (128.1±8.9 s, p=0.000010)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "only the last 4 min was considered for immobility time assessment",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "single immobility total reported",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST immobility is not ethological",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "tested alone",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST does not require learning",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "scored from video by an observer",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate ANOVA only",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "glass beaker (3 liters)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no shelter in FST cylinder",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "water-only cylinder; no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting material",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment objects",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single cylinder of water",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "tested individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water access during test",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Each animal was used only once.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "swim freely for 6 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "single FST session per animal",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "tested 30 min post-dose only",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "6 min session",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "Acrylic dome (60 cm diameter), 5 min free exploration; total horizontal distance covered tracked with a custom MATLAB centroid algorithm.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "SEMT p.o.; ketamine i.p.; harmine p.o.; sub-dose SEMT+ketamine combination (p.o./i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "no apparatus habituation described",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "they were able to move freely for 5 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "In the second [hour of acclimatization], they were fasted",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water in OFT apparatus",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "the animals were subjected to the tests 30 min after the administration of the treatments",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 56,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 7,
+        "evidence": "the animals were divided into eight groups of seven individuals",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "SEMT (61.5, 185, 550 mg/kg) did not significantly alter horizontal mobility relative to vehicle. Harmine (5.6 mg/kg p.o.) significantly increased distance traveled, suggesting a stimulant effect. SEMT + sub-dose ketamine combination also did not affect locomotion.",
+        "statistics": "F(5,42)=5.64, harmine vs vehicle p=0.000453; SEMT+ket combination t-test p=0.434381",
+        "direction": "no_effect",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "The groups treated with ketamine 10 mg/kg, SEMT61.5, SEMT185, and SEMT550 showed no significant difference in comparison to the group treated with the vehicle",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "horizontal mobility was assessed, given by the total distance covered in centimeters",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "single total distance reported",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "locomotor distance is not ethological",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "placed one at a time",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "MATLAB algorithm tracks centroid position only (largest white circle defines animal's position)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "single univariate measure",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "acrylic dome (60 cm in diameter)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "open dome; no shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "acrylic floor cleaned with ethanol between tests",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting material",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment objects",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single circular arena",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "placed one at a time",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Each animal was used only once",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "move freely for 5 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "single OFT session per animal",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "tested 30 min post-dose only",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5 min session",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "5-HTP-induced Head Twitch Test",
+      "assay_description": "Mice placed in 3-L glass beakers; head twitches counted in five 2-min windows (min 14-16, 24-26, 34-36, 44-46, 54-56) after 5-HTP (75 mg/kg i.p.) injection. SEMT or fluoxetine pretreatment 30 min before 5-HTP.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "SEMT p.o.; 5-HTP i.p.; fluoxetine p.o.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "no apparatus habituation described",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "placed in 3-liter glass beakers; free to move",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "In the second [hour of acclimatization], they were fasted",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water in beaker",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "treated... 30 min before the injection of 75 mg/kg of 5-HTP i.p.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 40,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 10,
+        "evidence": "four groups with ten animals each",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "SEMT550 (p.o.) potentiated 5-HTP-induced head twitches (median 12.5, IQR 5-25) relative to vehicle+5-HTP (median 1.0), comparable to fluoxetine+5-HTP (median 18.0), suggesting serotonergic action via 5-HT2A/2C receptors.",
+        "statistics": "Kruskal-Wallis with Dunn's post hoc; SEMT550 vs control p=0.000177; fluoxetine vs control p=0.004665",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Mice pretreated with fluoxetine and SEMT550 presented head twitches median of 18.0 (16-20) and 12.5 (5-25), respectively, representing a significant increase (p=0.004665 and p=0.000177, respectively)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "the number of 'head twitches' was counted",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Although counted in five 2-min bins, total score per animal was the analyzed measure; no within-session time-course analysis reported.",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no sequence/transition analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "head-twitch response (HTR) is explicitly excluded from ethological behaviours",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "tested alone",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "After analyzing the video files, the number of 'head twitches' was calculated (manual scoring)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate Kruskal-Wallis",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "3-liter glass beakers",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no shelter in beaker",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "bare beaker",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting material",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single beaker, no compartments",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "tested individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in beaker",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "head-twitch counted across intervals within one continuous observation per mouse",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "the number of 'head twitches' was counted at five intervals of 2 min each (between minutes 14 and 16, ..., 54 and 56)",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "single test day per animal",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no ≥24 h follow-up",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "session <6 h",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Four distinct assays identified: TST, FST, OFT, and 5-HTP-induced head twitch test. All candidates agreed on this set.",
+    "Merged TST analyses with ketanserin pretreatment and with sub-dose ketamine combination into a single TST assay (same paradigm under different pharmacological manipulations).",
+    "B7 scored 0 for OFT: MATLAB centroid tracking is position-tracking, not behavioural classification.",
+    "D2 for head-twitch test: scored 1 (15–60 min) because the observation window extends to minute 56 post-injection, exceeding 15 min total session duration even though scoring is in 2-min bins.",
+    "B2 for head-twitch test: although counted in five 2-min bins, the paper reports a total score per animal (Corne et al. 1963 method); no within-session time-course analysis is presented, so scored 0.",
+    "Harmine added to dosing block as it is a β-carboline psychoactive compound co-administered with DMT/SEMT.",
+    "Food restriction scored as 'before' because animals were fasted during the second hour of acclimatization before testing."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0.0,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 0.0,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 0.34
+  },
+  "low_confidence_count": 4,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 66314,
+    "output_tokens": 9848,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

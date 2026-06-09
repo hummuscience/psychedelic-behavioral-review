@@ -1,0 +1,482 @@
+{
+  "study_id": "Liao2019",
+  "doi": "10.1016/j.brainresbull.2019.07.027",
+  "species": "rat",
+  "strain": "Wistar",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 42,
+    "age_max_days": 49,
+    "evidence": "Male Wistar rats (6 weeks old, weight 220-330 g) ... acclimatized for 1 week before the experiment procedure started",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male Wistar rats (6 weeks old, weight 220-330 g)",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        0.2,
+        1.0
+      ],
+      "doses_raw": "DOI (200 µg/kg, i.v.) on day 14 and DOI (1 mg/kg, i.p.) on day 15",
+      "vehicle": "PBS",
+      "route": "multiple",
+      "schedule": "repeated",
+      "evidence": "rats were given intravenous (i.v.) injection of DOI (200 µg/kg) as a primary treatment on day 14 and intraperitoneal (i.p.) injection of DOI (1 mg/kg in phosphate-buffered saline, PBS) as the secondary treatment on day15",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "housed in the specific pathogen-free room at the Laboratory Animal Center (cage density not specified)",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "a 12 h light/dark cycle (direction not specified)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "water and chow were provided ad libitum (no mention of enrichment)",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Tic-like behavior observation",
+      "assay_description": "35-min video recording in a clear cage immediately after DOI injection; manual scoring of back muscle contraction (BMC), wet dog shake (WDS), and stereotyped behaviors (grooming/self-gnawing), summed as total tic-like behaviors. Tested with PS128 (low/medium/high doses), haloperidol, and saline controls.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "rats were given intravenous (i.v.) injection of DOI (200 µg/kg) ... on day 14 and intraperitoneal (i.p.) injection of DOI (1 mg/kg) ... on day15",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "rats were individually transferred to another clear cage for video recording immediately (no prior habituation described)",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "rats were individually transferred to another clear cage for video recording immediately",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "rats were individually transferred to another clear cage for video recording; food not present in recording cage",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "rats were individually transferred to another clear cage for video recording; water not present in recording cage",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "After the i.p. injection, rats were individually transferred to another clear cage for video recording immediately",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 50,
+        "n_male": 50,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "n = 10/group (main experiment); dose-response experiment n = 6/group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Two-day DOI administration significantly increased back muscle contractions, wet dog shakes, and total tic-like behaviors. Oral PS128 (10^9 and 10^10 CFU/day) significantly reduced DOI-induced BMC and total tic-like behaviors (effect was threshold-dependent, not strictly dose-dependent); WDS was not significantly reduced. Haloperidol also reduced tic-like behaviors.",
+        "statistics": "BMC: F(4,44)=42.5, p<0.001; WDS: F(4,45)=6.63, p<0.05; total tic-like behaviors: F(4,51)=22.4, p<0.01; dose-response total tics: F(5,63)=13.2, p<0.01",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Oral gavage of PS128 (10^10 CFU, daily) alleviated the DOI-induced BMC (F(4,44)=42.5, p<0.01), total tic-like behaviors (F(4,51)=22.4, p<0.01) ... but not on WDS",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "counted the numbers of back muscle contraction (BMC), wet dog shake (WDS) and stereotyped behaviors ... total tic-like behaviors as the sum",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "From the 35-min recording period we counted the numbers (totals only)",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence/transition analysis described",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Perseverative head or body grooming or self-gnawing were counted as stereotyped behaviors",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "rats were individually transferred to another clear cage",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning/memory component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "recording video file names were converted into random number-code and were analyzed by at least two different counters",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Separate univariate ANOVAs reported",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "transferred to another clear cage for video recording",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "clear cage with no refuge",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described in recording cage",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment items described",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single clear cage",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "rats were individually transferred to another clear cage",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in recording cage",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "recorded the tic-like behaviors ... immediately after the 2nd-day injection",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "From the 35-min recording period we counted the numbers",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Behavioural data for the formal experiment was recorded on day 15 only",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline recording reported for the formal experiment",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "After video recording, all rats were anesthetized and sacrificed",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "35-min recording period",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Prepulse Inhibition (PPI)",
+      "assay_description": "Acoustic startle reflex and PPI measured in Med Associates Startle Reflex System with rat restrained in acrylic animal holder. 5 min acclimatization, then 32 trials (24 prepulse+startle at 75/80/85 dB, 8 startle-alone at 120 dB), 1 min ITI. Tested 5 min after DOI/PBS i.p. on day 15.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "i.v. DOI on day 14 and i.p. DOI on day 15; PPI tested 5 min after i.p. injection",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "We give the rats three training sessions before the oral administration of PS128, saline, or haloperidol",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "Rat was fixed in an acrylic animal holder on a calibrated platform in a soundproof chamber",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Startle chamber contains no food",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Startle chamber contains no water",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 5,
+          "evidence": "on day 15, 5 min after the i.p. injection of PBS or DOI we give the rats three more startle sessions",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 50,
+        "n_male": 50,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "n = 10/group (main); n = 6/group for dose-response",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI reduced PPI percentage indicating sensorimotor gating deficit. Oral PS128 (10^9 and 10^10 CFU/day) and haloperidol significantly restored PPI percentage toward control levels.",
+        "statistics": "F(4,32)=13.3, p<0.001 (DOI vs saline); PS128 high dose vs DOI: p<0.05; dose-response: F(5,31)=7.98, p<0.05",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Oral gavage of PS128 (10^10 CFU, daily) alleviated ... the reduction on percentage of PPI (F(4,32)=13.3, p<0.05)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "startle amplitude (S1, S2) and PPI percentage at three prepulse intensities",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Averaged across trials; no within-session time-course reported",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "PPI startle magnitude is not an ethological behaviour",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Rat tested alone in startle chamber",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "PPI does not require learning",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Med Associates Startle Reflex System - position/transducer-based",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVAs only",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Med Associates Startle Reflex System / soundproof chamber",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter in startle holder",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Acrylic animal holder, no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment in startle chamber",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single startle chamber/holder",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Rat fixed in acrylic holder alone",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in startle chamber",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Day 15 post-injection PPI test (data session)",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "5 min acclimatization + 32 trials at 1 min ITI ≈ 37 min total",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "PPI data collected on day 15; pre-administration sessions described as 'training sessions'",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Pre-administration sessions were training sessions, not reported as analyzed baseline data",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No post-acute follow-up reported",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single session <6 h",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Two assays retained: tic-like behavior observation and PPI. Both are behavioural; merged candidates' identical assay structures.",
+    "B4 (ethological) on tic-like assay: scored 1 because perseverative grooming and self-gnawing (natural rodent behaviours) were explicitly counted as part of stereotyped behaviors, in addition to HTR/WDS. Candidates split (qwen/gpt-oss=0, glm=0); overrode based on explicit text mentioning grooming/self-gnawing.",
+    "PPI D2 session duration: 5 min acclimatization + 32 trials with 1 min ITI is explicitly stated, giving ~37 min — scored 1 (15-60 min). gpt-oss scored 0/low; this is supported by explicit ITI text.",
+    "Age scored as young_adult (6 weeks + 1 week acclimation = ~7 weeks at experiment start); range 42-49 days.",
+    "Vehicle for DOI: PBS explicitly stated for i.p. dose; gpt-oss said saline — corrected to PBS based on paper text.",
+    "Housing items kept as not_reported per rubric since paper does not explicitly state handling, cage density, light cycle direction, or enrichment status."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 2.5,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 1.36
+  },
+  "low_confidence_count": 4,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 67278,
+    "output_tokens": 6488,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

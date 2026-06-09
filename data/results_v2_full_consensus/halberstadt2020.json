@@ -1,0 +1,286 @@
+{
+  "study_id": "Halberstadt2019",
+  "doi": "10.1016/j.neuropharm.2019.107856",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 42,
+    "age_max_days": 56,
+    "evidence": "Male C57BL/6J mice (6-8 weeks old)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 35,
+    "n_female": null,
+    "evidence": "Male C57BL/6J mice (6-8 weeks old) obtained from Jackson Laboratories",
+    "confidence": "high"
+  },
+  "psychedelic": "ALD-52",
+  "dosing": [
+    {
+      "compound": "ALD-52",
+      "doses_mg_per_kg": [
+        0.03,
+        0.1,
+        0.3,
+        1.0
+      ],
+      "doses_raw": "0, 0.03, 0.1, 0.3, 1 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "ALD-52 was dissolved in isotonic saline and administered by the intraperitoneal (IP) route (5 mL/kg).",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Paper does not mention deliberate handling protocol beyond acclimatization.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "housed up to four per cage in a climate-controlled room",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "yes",
+      "evidence": "12-h reverse-light cycle (lights on at 1900 h, off at 0700 h)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "No mention of home-cage enrichment.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head-Twitch Response (HTR)",
+      "assay_description": "Mice with head-mounted magnets were placed in a glass cylinder surrounded by a magnetometer coil. Head twitches were recorded for 30 min immediately after i.p. injection of ALD-52 (0.03-1 mg/kg) or vehicle, with a blockade experiment using M100,907 (0.1 mg/kg s.c.) pretreatment.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "ALD-52 was dissolved in isotonic saline and administered by the intraperitoneal (IP) route",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Paper does not describe pre-test apparatus habituation.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "HTR activity was recorded in a glass cylinder surrounded by a magnetometer coil",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Food and water were available ad libitum except during behavioral testing",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Food and water were available ad libitum except during behavioral testing",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Test compounds were injected immediately prior to testing... HTR activity was recorded... for 30 min",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 35,
+        "n_male": 35,
+        "n_female": null,
+        "n_per_group_min": 5,
+        "evidence": "Mice (n=5/group, 25 total) were treated with ALD-52... Mice (n = 5/group, 10 total) were pretreated with vehicle or 0.1 mg/kg M100,907",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "ALD-52 produced a dose-dependent increase in head-twitch response counts in male C57BL/6J mice (ED50 = 297.2 nmol/kg), about half the potency of LSD. The effect was abolished by pretreatment with the 5-HT2A antagonist M100,907, confirming 5-HT2A receptor mediation.",
+        "statistics": "F(4,20) = 16.74, p < 0.0001; ED50 = 297.2 nmol/kg (95% CI 213.2-413.9); M100,907 blockade t(8) = 7.65, p < 0.0001; extra-sum-of-squares vs LSD F(1,22) = 12.08, p = 0.0021",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "ALD-52 induced the HTR when tested in mice (F(4,20) = 16.74, p < 0.0001)... ALD-52 (0.3 mg/kg) did not induce head twitches in mice pretreated with 0.1 mg/kg M100,907 (t(8) = 7.65, p < 0.0001)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Only head twitch counts were analyzed.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Data are presented as group means ± SEM for the entire 30-min test sessions",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition or sequence analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is explicitly excluded from ethological behaviours per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice were tested individually in a glass cylinder.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR does not require learning or memory.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head twitches were identified manually based on the following criteria...",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head twitch counts were analyzed using one-way analyses of variance (ANOVA)",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "HTR activity was recorded in a glass cylinder surrounded by a magnetometer coil",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Glass cylinder provides no enclosed refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Glass cylinder; no bedding mentioned.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in the testing cylinder.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in the cylinder.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Glass cylinder is a single open arena.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice were injected and then HTR activity was recorded in a glass cylinder (individually).",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Food and water were available ad libitum except during behavioral testing",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "HTR activity was recorded... for 30 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "HTR activity was recorded in a glass cylinder surrounded by a magnetometer coil for 30 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Each mouse tested in a single session; ' with at least 7 days between sessions to avoid carryover effects' applies to repeated drug tests but each assay is one recording day per dose.",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Test compounds were injected immediately prior to testing",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No recordings >=24 h after dosing reported.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session was 30 min.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "All three candidates identified a single HTR assay; consolidated as such.",
+    "Psychedelic field restricted to ALD-52 since LSD/1P-LSD/1B-LSD HTR data are explicitly cited as previously reported (Halberstadt & Geyer 2013; Brandt et al. 2016, 2019) and not newly collected in this paper.",
+    "n_total set to 35 (25 from dose-response + 10 from M100,907 blockade), aligning with the paper's two HTR experiments in this study.",
+    "B1 scored 0 (one measure: head twitch counts) rather than 1, following rubric (1 measure = 0 points)."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0.0,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 0.0,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 1.36
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 52897,
+    "output_tokens": 3782,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

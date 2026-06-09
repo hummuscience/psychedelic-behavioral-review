@@ -1,0 +1,889 @@
+{
+  "study_id": "Wojtas2020",
+  "doi": "10.1007/s12640-020-00297-8",
+  "species": "rat",
+  "strain": "Wistar-Han",
+  "age": {
+    "value": "adult",
+    "age_min_days": 120,
+    "age_max_days": 180,
+    "evidence": "weighting from 280 to 350 g (age of 120-180 PND)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male Wistar-Han rats (Charles River, Sulzfeld, Germany)",
+    "confidence": "high"
+  },
+  "psychedelic": "25B-NBOMe, LSD",
+  "dosing": [
+    {
+      "compound": "25B-NBOMe",
+      "doses_mg_per_kg": [
+        0.1,
+        0.3,
+        1.0,
+        3.0,
+        10.0
+      ],
+      "doses_raw": "0.1, 0.3, 1, 3, and 10 mg/kg",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "animals received subcutaneous ( sc ) single injections of 25B-NBOMe dissolved in 0.9% NaCl at five doses of 0.1, 0.3, 1, 3, and 10 mg/kg",
+      "confidence": "high"
+    },
+    {
+      "compound": "LSD",
+      "doses_mg_per_kg": [
+        0.1
+      ],
+      "doses_raw": "0.1 mg/kg",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "LSD was injected ip at a dose of 0.1 mg/kg",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Paper does not describe handling protocol",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "housed (5 per cage)",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12-h light/dark cycle (the light was switched on at 6 a.m.)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "no",
+      "evidence": "enriched environment was not applied",
+      "confidence": "high"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head and Body Twitch Response (WDS)",
+      "assay_description": "Head and body twitches (wet dog shakes) counted by an experienced blinded observer immediately after injection for 240 min; scores summed across 12 observation periods.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "25B-NBOMe administered s.c.; LSD administered i.p. at 0.1 mg/kg as reference",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No mention of pre-test apparatus habituation",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "behavior defined as rapid shaking of the head, neck, and trunk... observed during 240-min observation period",
+          "confidence": "medium"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard observation cage; no food in apparatus during recording",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard observation cage; no water in apparatus during recording",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "counted immediately after drug injection during 240-min observation period",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 56,
+        "n_male": 56,
+        "n_female": 0,
+        "n_per_group_min": 8,
+        "evidence": "n = 8 per experimental group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "25B-NBOMe induced head and body twitches (WDS) in rats in an inverted U-shaped dose-response manner, with 0.3 mg/kg most potent and other doses (0.1, 1, 3, 10 mg/kg) weaker but still significant. LSD (0.1 mg/kg) was nearly equally potent as the highest 25B-NBOMe dose.",
+        "statistics": "F(6,49)=127, p<0.0001",
+        "direction": "increase",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "25B-NBOMe induced head and body twitches (WDS) in rats... The dose of 0.3 mg/kg produced the most potent effect (Fig. 5). The effect of 0.1, 1, 3, and 10 mg/kg doses was weaker but significant (F 6,49 = 127, p < 0.0001).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The number of episodes counted for 240 min",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Results were expressed as an average of sum values of all episodes during the observation time",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not analysed",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "WDS/HTR is explicitly excluded from ethological behaviours by rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning or memory component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "counted by an experienced observer who was blind to the treatments",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not applied",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Observation cage (standard apparatus for WDS counting)",
+          "confidence": "medium"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported / definitionally absent",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single observation cage",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual observation",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "240-min observation period starting immediately after injection",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "240-min observation period",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test session",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline recorded",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No post-acute follow-up",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "240 min < 6 h",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    },
+    {
+      "assay_name": "Novel Object Recognition Test (NOR)",
+      "assay_description": "Wooden closed square arena (60×60×40 cm); introductory session (5 min, 2 identical objects) followed by recognition session (5 min, one object replaced with novel) with 30 min inter-session interval. Animals pre-familiarized to arena 24 h before. Co-administration with scopolamine in some groups.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "25B-NBOMe (0.3 and 3 mg/kg, sc); scopolamine i.p. as adjunct",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Each animal was familiarized with the arena (pre-test, without any object) 24 h before the testing day",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Animals freely exploring the arena",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in testing arena",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in testing arena",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 20,
+          "evidence": "The introductory session was performed 20 min after injection of a drug",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "n = 6-10 per experimental group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "25B-NBOMe (3 mg/kg) lowered the recognition index vs control, indicating impaired short-term memory; 0.3 mg/kg had no effect. Scopolamine (1 mg/kg) reversed the 25B-NBOMe-induced decrease in Ri.",
+        "statistics": "F(2,23)=278, p<0.0001 (exploration time); F(2,23)=139, p<0.0001 (Ri); F(3,27)=40, p<0.0001 and F(3,27)=18, p<0.01 (scopolamine reversal)",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "There was a significant difference in the Ri between animals treated with the higher dose of 25B-NBOMe and the control group (Fig. 6b; F 2,23 = 139, p < 0.0001). Importantly, the Ri in the control and low-dose 25B-NBOMe-treated group reached ca. 72% and 68%, respectively, while in the 25B-NBOMe 3 mg/kg group, it was 45%.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Exploration time for familiar and novel objects, and recognition index",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single total per session reported",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not analysed",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Exploration of an object was defined as follows: licking, sniffing, or touching the object",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Novel object recognition test requires recognition memory",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Exploration time was measured using a digital laboratory timer by two independent observers",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not applied",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "wooden closed square arena with painted black walls (60×60×40 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open arena, no shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported; arena cleaned after each session implies bare floor",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not present",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only test objects present",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Square arena, single space",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual testing",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in arena",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "The NOR test consisted of two sessions: introductory and recognition one (5 min each) with a 30 min inter-session interval",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "5 min each",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Both sessions on testing day; pre-familiarization day had no data collected",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Pre-familiarization without data collection; no pre-drug baseline reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Acute testing only",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5 min sessions",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Open Field Test (OF)",
+      "assay_description": "Round black arena (1 m diameter) virtually divided into 8 sections; behavior recorded for 10 min starting 30 min after injection. Measures: time of walking, number of line crossings, episodes of peeping under arena, grooming events, rearings. Some groups co-treated with scopolamine.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "Rats were placed in the middle of the arena 30 min after 25B-NBOMe subcutaneous injection",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No pre-test apparatus habituation described for OF",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Animals free to move in arena",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in arena",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in arena",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "30 min after 25B-NBOMe subcutaneous injection",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "n = 6-10 per experimental group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "25B-NBOMe dose-dependently decreased locomotor activity: reduced walking time, line crossings, and peeping episodes. No rearing or grooming was observed in treated animals. Scopolamine alone increased walking and crossing but did not reverse 25B-NBOMe-induced decreases.",
+        "statistics": "F(2,19)=134, p<0.0001 (walking); F(2,19)=110, p<0.0001 (crossing); F(2,19)=32, p<0.0001 (peeping)",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "25B-NBOMe decreased the time of walking (F 2,19 = 134, p < 0.0001) and the number of episodes of crossing (F 2,19 = 110, p < 0.0001) and peeping (F 2,19 = 32, p < 0.0001) in a dose-dependent manner",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "time of walking, number of line crossings, episodes of peeping under the arena, number of events of grooming, and number of rearings",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single totals over 10 min",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not analysed",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "number of events of grooming, and number of rearings",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learned component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Manual observation; no automated classifier described",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate statistics only",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "round black arena (1 m in diameter)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open arena",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported; standard arena floor",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not present",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No objects in arena",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Round arena virtually divided into 8 sections",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual testing",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in arena",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "behavior was recorded for 10 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "10 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single testing day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Acute testing only",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "10 min session",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "Light/Dark Box Test (LDB)",
+      "assay_description": "Med Associates Seamless Open Field Arena (43×43×30 cm) divided by dark insert into light and dark compartments connected by a hole. Rats placed in dark compartment 20 min after injection and allowed to explore freely for 15 min. Measured: time in dark/light, immobility, ambulatory distance, vertical activity, stereotypical activity, via infrared beam-break (Activity Monitor).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "25B-NBOMe administered subcutaneously; rat placed in dark compartment 20 min after injection",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No pre-test habituation to LDB apparatus described",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "was allowed to explore freely for 15 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in apparatus",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in apparatus",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 20,
+          "evidence": "The rat was placed in the dark compartment 20 min after injection of a drug",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 24,
+        "n_male": 24,
+        "n_female": 0,
+        "n_per_group_min": 8,
+        "evidence": "n = 8 per experimental group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "25B-NBOMe (3 mg/kg) significantly prolonged time spent in the dark zone and decreased time in the light zone compared to control, indicating an anxiogenic effect. Both doses (0.3 and 3 mg/kg) significantly decreased ambulatory distance, vertical activity, and stereotypical activity in both zones.",
+        "statistics": "U=0, p<0.001 (dark zone time vs control at 3 mg/kg); U=0, p<0.001 (light zone time at 3 mg/kg); multiple U=0, p<0.001 for activity measures",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "the time was longer and statistically significant in the rats treated with 25B-NBOMe at the dose of 3 mg/kg as compared to control (U=0, p<0.001). Accordingly, the time spent by all animals in the light zone was shorter and was decreased in the 25B-NBOMe 3 mg/kg group in comparison to control",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "immobility time, ambulatory distance, vertical activity time, stereotypical activity time, and the time spent in the dark and light compartment",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single totals reported",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not analysed",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Zone time and activity counts; no natural-repertoire behaviour scored",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate avoidance, no learning",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Med Associates Activity Monitor (infrared beam-break) — position/activity tracking only",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate statistics only",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Seamless Open Field Arenas for rats (43×43×30 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "A dark insert was used to divide the chamber into two equally sized compartments: a light compartment and a dark compartment",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported; standard arena floor",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not present",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "divide the chamber into two equally sized compartments... A hole in the insert enabled rats to move freely between compartments",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual testing",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "allowed to explore freely for 15 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "15 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test session",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Acute testing only",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "15 min session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Excluded microdialysis (neurochemistry) and comet assay (genotoxicity) as non-behavioural endpoints per rubric.",
+    "Four distinct behavioural assays retained: WDS, NOR, OF, LDB. Both candidates agreed on these.",
+    "NOR scored as Multiple discrete sessions (D1=1) because introductory and recognition sessions are separately recorded with a 30-min interval on the same day — followed glm candidate.",
+    "OF B1 scored 2 (4–6 measures: walking, crossings, peeping, grooming, rearing) — followed qwen since 5 measures were explicitly reported even if some had zero values.",
+    "WDS application_type set to 'multiple' to capture LSD i.p. reference; 25B-NBOMe was s.c.",
+    "B7 set to 0 for LDB even though Med Associates Activity Monitor was used, because beam-break systems are explicitly listed as score 0 per rubric.",
+    "B4 for NOR scored Yes because sniffing/licking object exploration is an ethological act explicitly defined; B4 for OF scored Yes because grooming and rearing are listed as measured behaviours."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 2.73,
+    "recording_duration_max": 2.73,
+    "behavioural_complexity_mean": 2.5,
+    "environmental_complexity_mean": 0.68,
+    "recording_duration_mean": 1.36
+  },
+  "low_confidence_count": 5,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm"
+  ],
+  "judge_usage": {
+    "input_tokens": 69540,
+    "output_tokens": 9939,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

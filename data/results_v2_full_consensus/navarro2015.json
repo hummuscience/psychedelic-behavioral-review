@@ -1,0 +1,286 @@
+{
+  "study_id": "Navarro2014",
+  "doi": "10.1007/s00213-014-3715-5",
+  "species": "rat",
+  "strain": "Wistar",
+  "age": {
+    "value": "adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "weighing approximately 275-300 g at the start of the experiments",
+    "confidence": "medium"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 57,
+    "n_female": null,
+    "evidence": "A total of 57 male Wistar rats (Harlan Ibérica, Barcelona, Spain)",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        0.1,
+        0.3,
+        0.5
+      ],
+      "doses_raw": "0.1, 0.3 and 0.5 mg/kg",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "DOI hydrochloride ((±)-2,5-dimethoxy-4-iodoamphetamine) ... were dissolved in 0.9 % saline ... injected subcutaneously. The drug doses and the time to injection, approximately 30 min before behavioural testing",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "The animals were housed three rats per cage (50×15×25 cm)",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "yes",
+      "evidence": "12:12-h light-dark cycle (light off at 08:00 h) ... All testing was performed between 09:00 and 14:00 h",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Schedule-Induced Polydipsia (SIP)",
+      "assay_description": "Operant SIP chambers (32×25×34 cm, MED Associates) with a fixed-time 60-s (FT-60s) schedule of food pellet delivery during 60-min sessions; a water bottle (100 ml) was available. Measures: total water intake (ml), total licks, and total magazine entries. HD vs LD rats selected from 20 acquisition sessions; drug effects tested using Latin-square design with ≥72 h between drug sessions.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "DOI hydrochloride ... and ketanserin tartrate ... were dissolved in 0.9 % saline. Both drugs were ... injected subcutaneously.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Paper describes a baseline water ingestion test in chambers but does not describe a separate apparatus habituation prior to SIP acquisition.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Rats were tested freely moving in operant SIP chambers (32×25×34 cm); no restraint described.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "the rats were gradually reduced to 85 % of their free-feeding body weight through controlled feeding ... Food was provided by daily feedings of lab chow approximately 30 min after each experimental session",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "Water bottles containing 100 ml of fresh water were provided during each session; home cage water provided ad libitum.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "the time to injection, approximately 30 min before behavioural testing",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 57,
+        "n_male": 57,
+        "n_female": null,
+        "n_per_group_min": 9,
+        "evidence": "A total of 57 male Wistar rats ... the number of animals in each group of LD and HD rats was n =9 -10",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI (0.1, 0.3, 0.5 mg/kg s.c.) dose-dependently reduced compulsive water intake and total licks in high-drinker (HD) rats without affecting low-drinker (LD) rats. Citalopram also reduced HD drinking, while atomoxetine had no effect on intake (only reduced magazine entries). The 5-HT2C antagonist SB242084 increased HD water intake when given alone. DOI's effect in HD rats was blocked by 5-HT2A antagonists ketanserin (1 mg/kg) and M100907 (1 mg/kg) but not by SB242084 (1 mg/kg).",
+        "statistics": "DOI: group × drug interaction F(3,54)=8.75, p<0.0001; drug F(3,54)=24.43, p<0.0001; ketanserin × DOI × group F(2,36)=3.52, p<0.05; M100907 × DOI × group F(1,17)=7.04, p<0.01; SB242084: group × drug F(4,64)=4.09, p<0.01",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "DOI significantly reduced water intake in HD on SIP (group × drug interaction, F 3,54=8.75, p <0.0001) ... DOI produced a dose-dependent reduction in water intake in the HD group at 0.1, 0.3 and 0.5 mg/kg (p<0.001) compared with saline",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "The following measures were recorded for each rat: (a) total amount of water (millilitres) removed from the bottle, (b) total number of licks to the bottle and (c) total number of entries into the food magazine",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Data reported as totals over the 60-min session; no within-session time bins analysed.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural transitions or sequences reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Measures are intake/lick/magazine counts; no natural ethological behaviours scored.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Rats tested individually in operant chambers.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "SIP is an adjunctive/compulsive drinking model; no learning or memory probe.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "scheduling and recording ... controlled using a computer and commercial software Med PC — beam/lick counts only, no behavioural classifier.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Separate ANOVAs reported for each measure; no PCA/cluster analysis.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "13 operant SIP chambers (32×25×34 cm) (MED Associates)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard operant chamber; no shelter described.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard operant chamber floor; no bedding described.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in apparatus.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in operant chamber.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single operant chamber with water bottle and food magazine.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Animals tested individually in SIP chambers.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Water bottles containing 100 ml of fresh water were provided during each session; food pellets delivered on FT-60s schedule.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "20 daily acquisition sessions plus drug-test sessions on Tuesdays and Fridays separated by ≥72 h between drug sessions.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "FT-60s schedule of food pellet presentation in 60-min sessions",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 3,
+          "value": "15+",
+          "evidence": "After 20 daily sessions, the animals were separated into ... HD and LD ... drug test sessions on Tuesdays and Fridays, baseline on Mondays and Thursdays across multiple drug experiments (acquisition alone = 20 recording days).",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Over two successive days, a water ingestion test was given (baseline) ... the amount of water consumed by each rat in 60 min was measured.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Behavioural testing occurred ~30 min after acute dosing; no recordings ≥24 h post-dose.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sessions were 60 min, well under 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 6
+      }
+    }
+  ],
+  "judge_notes": [
+    "Both candidates identified a single SIP assay; consolidated as one assay covering all drug/antagonist manipulations (DOI, citalopram, atomoxetine, ketanserin, M100907, SB242084 and combinations) per rubric rule that drug manipulations within one paradigm = one assay.",
+    "Day/night flipped: set to 'yes' because lights off at 08:00 h and testing occurred 09:00-14:00 h (i.e., during the dark/active phase), consistent with a reversed cycle.",
+    "B1: reconciled to score 1 (2-3 measures: water intake, licks, magazine entries) — glm's score of 2 was inconsistent with its own 2-3 value.",
+    "D3: scored 15+ because the SIP acquisition alone comprised 20 daily recording sessions for this assay, plus additional drug test/baseline days.",
+    "Food restriction: 'before' selected per rubric (chronic 85% body weight maintenance before testing); water was freely available during testing so water_restriction = no.",
+    "DOI route: subcutaneous per Methods (DOI and ketanserin injected s.c.); other drugs were i.p. but the psychedelic compound in this study is DOI."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 8.18,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 1.36,
+    "recording_duration_mean": 8.18
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 48493,
+    "output_tokens": 4421,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

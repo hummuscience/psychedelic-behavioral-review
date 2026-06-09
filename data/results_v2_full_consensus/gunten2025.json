@@ -1,0 +1,285 @@
+{
+  "study_id": "VonGunten2025",
+  "doi": "10.1101/2025.06.12.658958",
+  "species": "mouse",
+  "strain": "CD1 GAD67-GFP knock-in",
+  "age": {
+    "value": "mixed",
+    "age_min_days": 21,
+    "age_max_days": 65,
+    "evidence": "Male and female CD1 GAD67-GFP knock-in mice (heterozygous; P21-P65)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male and female CD1 GAD67-GFP knock-in mice (heterozygous; P21-P65) produced by the Tamamaki laboratory were used",
+    "confidence": "high"
+  },
+  "psychedelic": "LSD",
+  "dosing": [
+    {
+      "compound": "LSD",
+      "doses_mg_per_kg": [
+        0.03,
+        0.3
+      ],
+      "doses_raw": "low dose of LSD (0.03 mg/kg); high dose of LSD (0.3 mg/kg)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "repeated",
+      "evidence": "A second group received the same morphine treatment schedule but was co-administered a low dose of LSD (0.03 mg/kg) alongside morphine on days 0, 2, 4, and 6... The third group also received morphine on days 0, 2, 4, and 6... instead of saline on day 7, these mice received a high dose of LSD (0.3 mg/kg).",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "Conditioning and testing sessions were performed between 3-7 pm; light cycle direction not stated",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Conditioned Place Preference",
+      "assay_description": "Three-compartment biased CPP apparatus (drug/vehicle chambers 20x20x18 cm with distinct visual cues and floor textures, middle neutral chamber 20x6.5x18 cm). Protocol: 2-day habituation, pretest, 8 conditioning days (4 morphine or morphine+LSD; 4 saline alternating; 50 min/session), 3-day preference testing (30 min/session). High-dose LSD (0.3 mg/kg) administered after morphine conditioning; low-dose LSD (0.03 mg/kg) co-administered with morphine. Measures: time in each chamber, distance, entries; CPP score computed.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "received intraperitoneal (IP) injections according to the designated schedule",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "mice were allowed to habituate to the CPP chambers for two days, 30 minutes each day",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Behavior was videoed with a GoPro camera and Anymaze data analysis software was used to measure the amount of time spent in each chamber and distance traveled",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Food not described as present in CPP apparatus; standard short test with no food in chamber",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Water not described as present in CPP apparatus during testing",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": null,
+          "evidence": "For high-dose group, LSD given after conditioning on day 7, preference testing performed for the subsequent 3 days (24h, 48h, 72h post-dose). For low-dose group, LSD co-administered with morphine on days 0,2,4,6.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 28,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 9,
+        "evidence": "n = 10 [morphine only]; n = 9 [morphine + high dose LSD]; n = 9 [morphine + low dose LSD]",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Morphine-conditioned mice displayed CPP for the morphine-paired chamber across 3 days post-conditioning. A single high dose of LSD (0.3 mg/kg) given after conditioning, or 4 co-administered low doses of LSD (0.03 mg/kg) during conditioning, both accelerated extinction: preference was retained on day 1 but absent on days 2-3. CPP scores were significantly lower in both LSD groups vs morphine-only on days 2-3; entries into the drug-paired chamber did not differ.",
+        "statistics": "morphine vs pretest p < 0.01 for all 3 days (n=10); high-dose LSD: day 1 p < 0.05, days 2-3 p > 0.05 (n=9); low-dose LSD: day 1 p < 0.05, days 2-3 p > 0.05 (n=9); LSD groups vs morphine on days 2-3 p < 0.05; entries p > 0.05",
+        "direction": "decrease",
+        "dose_dependent": "no",
+        "sex_dependent": "not_reported",
+        "time_dependent": "yes",
+        "evidence": "significantly decreased CPP scores on days 2 and 3 of preference testing for both the single high dose of LSD, and the 4 low doses of LSD groups compared to the morphine-treated mice who did not receive any LSD treatment. (p < 0.05).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Anymaze data analysis software was used to measure the amount of time spent in each chamber and distance traveled during testing... Number of entries into the drug paired chamber",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Testing sessions lasted 30 min; no within-session temporal binning reported",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition or sequence analysis reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Measures are zone-time, distance, and entries - not ethological behaviours",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice tested alone in CPP apparatus; no social construct",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Conditioned place preference - requires learned association between drug and context",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Anymaze data analysis software was used (position tracking, not behavioural classifier)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Separate univariate analyses; no PCA/clustering",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "The conditioned place preference (CPP) apparatus was composed of 3 compartments",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enclosed shelter described in CPP chambers",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Chambers have textured floors (dimpled/line) but no bedding substrate described",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in CPP apparatus",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in CPP apparatus",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "apparatus was composed of 3 compartments, a neutral middle chamber, a chamber with visual cues... and a chamber with no visual cues",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Focal mouse tested alone in apparatus",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in CPP chambers during testing",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "pretest to assess initial preference... Preference testing was performed for the subsequent 3 days after the last conditioning session",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "Testing sessions lasted for 30 minutes.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Pretest day plus three preference testing days = 4 recording days",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "This was followed by a pretest to assess initial preference to either chamber",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Preference testing was performed for the subsequent 3 days after the last conditioning session (>=24h post-dose for high-dose LSD)",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Testing sessions lasted 30 minutes",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      }
+    }
+  ],
+  "judge_notes": [
+    "Only one behavioural assay (CPP) qualifies. Electrophysiology (whole-cell LTD recording in VTA GABA neurons) and DNA methylation analysis are excluded per rubric (neural recording and ex vivo molecular work).",
+    "CPP variants (morphine alone, morphine + low-dose LSD co-admin, morphine + high-dose LSD post-conditioning) merged into single CPP assay per rubric (same paradigm, different drug arms).",
+    "B1 scored 1 (2-3 measures: time in chamber, distance, entries); CPP score is derived from time in zones.",
+    "Schedule labelled 'repeated' since LSD was given on multiple days in low-dose arm and single dose in high-dose arm — 'repeated' covers the multi-dose arm; both arms collapsed into one compound entry.",
+    "time_to_assay set to 'multiple' since the low-dose arm involves repeated dosing with testing across days, and high-dose arm has 24h/48h/72h post-dose testing."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 6.82,
+    "behavioural_complexity_mean": 2.5,
+    "environmental_complexity_mean": 1.36,
+    "recording_duration_mean": 6.82
+  },
+  "low_confidence_count": 4,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 45510,
+    "output_tokens": 3976,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

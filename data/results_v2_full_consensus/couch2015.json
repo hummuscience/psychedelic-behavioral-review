@@ -1,0 +1,283 @@
+{
+  "study_id": "Couch2015",
+  "doi": "10.1371/journal.pone.0130643",
+  "species": "mouse",
+  "strain": "CD-1",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 56,
+    "age_max_days": 56,
+    "evidence": "Adult, outbred, male CD-1 mice (8 weeks) were obtained from Harlan (UK)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 12,
+    "n_female": null,
+    "evidence": "Adult, outbred, male CD-1 mice (8 weeks)",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "1mg/kg i.p.",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Mice received a single dose of DOI (1mg/kg i.p.) and were observed for 20 minutes",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Handling protocol not described; only acclimatisation to housing mentioned",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Animals were housed in groups of 4 in a standard open cage",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "housed under a standard 12 hour light/dark cycle... All testing was carried out between the hours of 10:00 and 16:00 of the light phase",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "yes",
+      "evidence": "standard open cage with sawdust substrate and enrichment (card house, plastic tube, nesting material)",
+      "confidence": "high"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "DOI-Induced Head-Twitch Response",
+      "assay_description": "Mice received a single dose of DOI (1 mg/kg i.p.) 24 h after LPS or saline pretreatment and were observed for 15–20 minutes; the number of head-twitches was counted as a measure of 5-HT2A receptor function.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Mice received a single dose of DOI (1mg/kg i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No apparatus habituation specific to the HTR test is described",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice were observed freely after DOI injection; no restraint described",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food provided in the observation apparatus during the 15–20 min HTR session",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water provided in the observation apparatus during the test",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Mice received a single dose of DOI (1mg/kg i.p.) and were observed for 20 minutes",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 12,
+        "n_male": 12,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "Data are mean ± SEM n=6",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI induced head-twitch behaviour in both saline- and LPS-pretreated mice. LPS administered 24 h before DOI significantly enhanced the head-twitch response compared with saline pretreatment, consistent with increased 5-HT2A receptor function.",
+        "statistics": "p < 0.05 (Fig 4B)",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "DOI had a significant effect on head-twitch behaviours in animals treated with both saline and LPS, however, this was elevated in animals receiving a single dose of LPS 24 hours before, compared to those receiving DOI alone (p < 0.05; Fig 4B).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "the number of head-twitches were counted as a measure of 5-HT2A activity",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total head-twitches reported as a single count over the session",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transitional or sequence analysis described",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-twitch response (HTR) is explicitly excluded as an ethological behaviour per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice tested individually with no social component",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning or memory component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-twitches were counted manually (video-scored)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single univariate measure analysed",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Mice observed in standard cage after DOI injection",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter described in observation apparatus",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bedding in the HTR apparatus not described",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Nesting material in the HTR apparatus not described",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in HTR observation apparatus",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single observation cage without compartments",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice observed individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in HTR observation apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "One 15–20 minute observation session",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "Mice received a single dose of DOI (1mg/kg i.p.) and were observed for 20 minutes",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "HTR performed on a single day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Baseline (no DOI) data referenced as dotted line but no per-animal pre-drug HTR recording reported",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No post-acute follow-up beyond the single DOI test",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session 20 minutes, well under 6 h",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Only the DOI head-twitch assay involves psychedelic administration to rodents; LPS-only behavioural assays (OFT, EPM, FST, sucrose preference, marble burying, locomotor) were excluded as no psychedelic compound was administered for those tests.",
+    "All three candidates agreed on a single HTR assay; consolidated using modal values.",
+    "B1 set to 0 (1 measure = 0 points per rubric; glm candidate's score of 1 was incorrect).",
+    "Session duration in methods states 20 min (Fig 4B caption says 15 min); used 20 min per Methods, both fall in 15–60 min bin → score 1."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0.0,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 0.0,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 1.36
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 42245,
+    "output_tokens": 3435,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

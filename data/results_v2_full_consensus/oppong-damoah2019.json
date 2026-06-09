@@ -1,0 +1,875 @@
+{
+  "study_id": "Oppong-Damoah2019",
+  "doi": null,
+  "species": "mouse",
+  "strain": "Swiss-Webster (CFW)",
+  "age": {
+    "value": "not_reported",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "weighed between 25 and 40 g",
+    "confidence": "low"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male Swiss-Webster mice (CFW; Charles River Laboratories, Inc.; Wilmington, MA) served as the subjects of all in vivo experiments.",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        1.0,
+        3.0,
+        10.0
+      ],
+      "doses_raw": "1, 3, and 10 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "repeated",
+      "evidence": "(+/-)-2,5-Dimethoxy-4-iodoamphetamine (DOI) was synthesized at the Research Triangle Institute (Research Triangle Park, NC) and dissolved in normal saline. ... Vehicle or DOI (3 mg/kg) was administered ... acute treatment ... also administered immediately following removal ... for each of the four afternoon ethanol conditioning sessions ... subchronic treatment.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "With the exception of the two-bottle choice study, all mice were housed in groups of 4",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "The lights were turned off at 7 p.m. every evening and turned back on at 7 a.m. every morning, and experiments were conducted during the light phase",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head-Twitch Response (HTR)",
+      "assay_description": "Video recorded head-twitches from 5 to 15 min after DOI (1, 3, or 10 mg/kg, i.p.) injection; raw count of twitches per animal.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "DOI was dissolved in normal saline and administered intraperitoneally",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "HTR behavior was video recorded in each subject; standard HTR is unrestrained",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard HTR chamber; food not present in recording apparatus",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard HTR chamber; water not present in recording apparatus",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 5,
+          "evidence": "HTR behavior was video recorded in each subject from 5 to 15 min after the injection of (+/-)-DOI",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 24,
+        "n_male": 24,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "N = 8 per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI produced an inverted-U dose-response for head twitches, with 3 mg/kg inducing significantly more head twitches than either 1 or 10 mg/kg.",
+        "statistics": "F(2,23)=19.79, p<0.001; 3 mg/kg vs 1 mg/kg q=8.614, p<0.001; 3 mg/kg vs 10 mg/kg q=6.238, p<0.001",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "we found a main effect of (+/-)-DOI on the HTR (F 2,23 = 19.79; p < 0.001), with a dose of 3 mg/kg inducing significantly more head twitches than either 1 (q = 8.614) or 10 (q = 6.238) mg/kg (p < 0.001)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The head-twitch response is expressed as a raw count",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Counts were summed over the 5-15 min window",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is explicitly excluded from ethological behaviours per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing, not a social assay",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Reflexive response, no learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-twitches counted from video, no ML classifier reported",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "One-way ANOVA only",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "HTR recording chamber",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter in recording chamber",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported; standard HTR chamber",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single recording chamber",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual testing",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water present during HTR recording",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Single recording from 5-15 min post-injection",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "from 5 to 15 min after the injection (10 min window)",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test session",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline recording",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No follow-up recording",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "10 min session",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "Conditioned Place Preference (CPP)",
+      "assay_description": "Ethanol-induced (1.8 g/kg) CPP in plastic 46x30 cm two-compartment boxes. 2 days habituation (30 min/day), 15-min pretest, 4 days conditioning (2 sessions/day), 15-min post-test. DOI (3 mg/kg) given acutely 30 min before post-test or subchronically immediately after each conditioning session.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Vehicle or DOI (3 mg/kg) was administered 30 min prior to introduction of the mouse to the CPP chamber",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Prior to conditioning, mice underwent 2 days of habituation with a 30-min session each day, where they had unrestricted access to both sides of the chamber",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice were placed freely in the CPP apparatus",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard CPP apparatus, no food present during test",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard CPP apparatus, no water present during test",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "Vehicle or DOI (3 mg/kg) was administered 30 min prior to introduction of the mouse to the CPP chamber during the final post-test session",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 32,
+        "n_male": 32,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "N = 8 per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Ethanol (1.8 g/kg) induced a significant CPP in saline-treated mice. Both acute (30 min pre-test) and subchronic (post-conditioning) treatment with DOI (3 mg/kg) prevented the expression of ethanol CPP.",
+        "statistics": "Acute: trial F(1,28)=18.80, p<0.001; treatment F(1,28)=14.55, p<0.001; interaction F(1,28)=12.97, p<0.01; saline T(7)=4.33, p<0.01. Subchronic: trial F(1,28)=5.42, p<0.05; treatment F(1,28)=10.30, p<0.01; interaction F(1,28)=5.75, p<0.05; saline T(7)=3.99, p<0.01.",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "both acute or subchronic treatment with DOI prevented the expression of ethanol CPP",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The proportion of time spent in the less preferred compartment served as the dependent measure of conditioning",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only total proportion of session time reported",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Time in zone is a spatial measure, not ethological",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice tested individually",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "CPP requires learning of a drug-context association",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Med Associates soundproof boxes; no ML behavioural classifier reported",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Two-way ANOVA only",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "CPP experiments were performed in plastic 46 cm × 30 cm boxes",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Two open compartments of equal size, no shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Different floor textures (smooth versus hole board); no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported; definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "each separated by a removable partition into two compartments of equal size",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Tested individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in CPP apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "15-min pretest and 15-min post-test on different days",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "2 days of habituation with a 30-min session each day",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Habituation (2 days), pretest (day 3), 4 days conditioning, post-test",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "On the third day, mice were placed in the chamber for a 15-min pretest with unrestricted access to establish which environment was preferred",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Post-test occurred shortly after final conditioning",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sessions ≤30 min",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    },
+    {
+      "assay_name": "Two-Bottle Choice Ethanol Drinking",
+      "assay_description": "Individually housed mice given intermittent access (M/W/F) to 20% v/v ethanol and water. DOI (3 mg/kg, i.p.) or saline administered 30 min before ethanol provision; M100907 (0.1 mg/kg) given 15 min before DOI. Ethanol intake, preference, and total fluid intake assessed at 1 h and 24 h. Mice split into high vs low drinkers.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "mice were injected with DOI (3 mg/kg) or saline intraperitoneally 30 min prior to the provision of ethanol",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Acquisition phase but apparatus habituation not explicitly described",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice drank freely in home cage",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "Animals had access to food (Laboratory Rodent Diet) and water ad libitum",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "one containing water and the other containing ethanol... animal allowed to drink overnight",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "mice were injected with DOI (3 mg/kg) or saline intraperitoneally 30 min prior to the provision of ethanol",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 19,
+        "n_male": 19,
+        "n_female": null,
+        "n_per_group_min": 9,
+        "evidence": "high drinking group (N = 10) and a low drinking group (N = 9)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI (3 mg/kg) significantly suppressed ethanol intake at 24 h and decreased ethanol preference at 1 h and 24 h in high-drinking mice; effects reversed by 5-HT2A antagonist M100907. No effect on total fluid intake. No effect of DOI on intake, preference, or fluid intake in low-drinking mice.",
+        "statistics": "High drinkers: intake 24h F(3,39)=5.94, p<0.01, DOI vs saline q=5.946, p<0.01; preference 1h F(3,35)=6.33, p<0.01, q=5.716, p<0.01; preference 24h F(3,35)=8.54, p<0.001, q=6.754, p<0.001; M100907 reversal q=4.041, p<0.05 (1h) and q=5.389, p<0.01 (24h)",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "DOI significantly suppressed ethanol intake relative to the saline injection (q = 5.946, p < 0.01), which was reversed (p < 0.05) by pretreatment with the selective 5-HT2A receptor antagonist M100907",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Ethanol intake, preference for ethanol, and total fluid intake",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Two between-session timepoints (1h, 24h), not within-session dynamics",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Drinking volume is not listed among the ethological behaviours per rubric",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice housed individually for testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Voluntary consumption model, no learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bottle weighing only",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "One-way repeated measures ANOVA only",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "mice weighed between 25 and 55 g and were housed individually to collect individual drinking data",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported in home cage",
+          "confidence": "low"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Standard home-cage bedding present during home-cage testing",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Standard single-compartment home cage",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice housed individually to collect individual drinking data",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "presented with two 25-ml pipette bottles fitted with stainless steel metal sippers, with one containing water and the other containing ethanol",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Acquisition (~9 sessions) + treatment sessions on Mondays with assessments at 1h and 24h",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min-6 h",
+          "evidence": "animal allowed to drink overnight; measured at 1 h and 24 h",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 2,
+          "value": "8-14",
+          "evidence": "Stable drinking typically emerged within 9 sessions, after which mice were divided into the high and low drinking groups",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Baseline drinking established during acquisition before DOI administration",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Ethanol consumption and preference were assessed 1 h and 24 h after the provision of ethanol",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "animal allowed to drink overnight; 24-h measurement window",
+          "confidence": "high"
+        },
+        "raw_total": 8
+      }
+    },
+    {
+      "assay_name": "Loss of Righting Reflex (LORR)",
+      "assay_description": "Mice given DOI (3 mg/kg) or saline 15 min before ethanol (3 g/kg, i.p.). 10 min after ethanol, placed supine in a plastic trough; time to recover three righting responses within 30 s was measured.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Mice (N = 8 per group) were administered saline or DOI (3 mg/kg) 15 min prior to the injection of ethanol",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "each mouse was placed in the supine position in a plastic trough; recovery measured by righting, not restraint",
+          "confidence": "medium"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in plastic trough during LORR measurement",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in plastic trough during LORR measurement",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 15,
+          "evidence": "administered saline or DOI (3 mg/kg) 15 min prior to the injection of ethanol",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 16,
+        "n_male": 16,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "Mice (N = 8 per group)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI (3 mg/kg) significantly increased the duration of loss of righting reflex induced by 3 g/kg ethanol, indicating enhanced ethanol sedation.",
+        "statistics": "T(6)=4.08, p<0.01",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "DOI significantly (T 6 = 4.08; p < 0.01) increased sensitivity to the sedating effects of ethanol as assessed by paired t test",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Recovery time from LORR was the only dependent measure",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only total recovery time reported",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Righting reflex is not an ethological behaviour",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Tested individually",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Reflex assay, no learning",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Manual scoring of righting",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Paired t test only",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "plastic trough",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open plastic trough, no shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bare plastic trough",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single plastic trough",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Tested individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in trough",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Single LORR test per animal",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "Recovery from a 3 g/kg ethanol dose typically extends beyond 15 min; specific duration not stated",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single day of LORR testing",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No follow-up recording",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session much less than 6 h",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Dropped non-behavioural outputs: blood ethanol pharmacokinetics (physiological sampling) and the RAW264.7 macrophage nitric oxide assay (in vitro cell culture) — neither is a rodent behavioural assay.",
+    "Retained four assays: HTR, CPP (acute + subchronic DOI collapsed into one CPP entry per rubric), two-bottle choice (high + low drinkers and M100907 antagonist collapsed into one entry), and LORR.",
+    "DOI schedule classified as 'repeated' because the CPP subchronic arm administered DOI on 4 consecutive conditioning days; HTR/2BC/LORR involved acute doses but the study-level schedule entry covers all administrations.",
+    "Two-bottle choice E3 bedding scored Yes (home-cage testing with standard bedding present), D6 circadian scored Yes (overnight drinking spans >6 h), D2 scored 2 (61 min–6 h boundary; the 24-h measurement window is the longest continuous bout but rubric caps practical home-cage drinking sessions here).",
+    "Age scored not_reported: only body weights (25–40 g) were given, no age in days or weeks.",
+    "DOI sex_dependent and time_dependent set to n/a where only one sex/timepoint relevant; CPP time_dependent = no because acute and subchronic both blocked CPP."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 4.09,
+    "recording_duration_max": 10.91,
+    "behavioural_complexity_mean": 0.62,
+    "environmental_complexity_mean": 1.36,
+    "recording_duration_mean": 4.43
+  },
+  "low_confidence_count": 9,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 66150,
+    "output_tokens": 10350,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

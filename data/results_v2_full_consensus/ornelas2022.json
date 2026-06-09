@@ -1,0 +1,286 @@
+{
+  "study_id": "Ornelas2022",
+  "doi": "10.1016/j.expneurol.2022.114148",
+  "species": "rat",
+  "strain": "Wistar",
+  "age": {
+    "value": "mixed",
+    "age_min_days": 60,
+    "age_max_days": 540,
+    "evidence": "young (2 months, n = 21), adult (9 months, n = 38), and old (12-18 months, n = 17) animals",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 76,
+    "n_female": null,
+    "evidence": "Wistar male rats (n = 76)",
+    "confidence": "high"
+  },
+  "psychedelic": "LSD",
+  "dosing": [
+    {
+      "compound": "LSD",
+      "doses_mg_per_kg": [
+        0.065,
+        0.13,
+        0.39
+      ],
+      "doses_raw": "0.065 mg/kg, 0.13 mg/kg, and 0.39 mg/kg",
+      "vehicle": "water",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "The study used high-purity LSD dissolved in ultrapure water... Each animal received 1 or 3 daily intraperitoneal injections of saline or LSD (0.065 mg/kg, 0.13 mg/kg, and 0.39 mg/kg)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Before injection, animals were housed with other animals... After that, each animal was housed in cages with 4 other animals.",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Novel Object Preference Task",
+      "assay_description": "Cubic arena (44 x 44 x 41 cm) with two objects fixed 11 cm apart. 3 days habituation (10 min/day), training session with two identical objects, test session 30 min later with one familiar and one novel object. Discrimination index calculated from time exploring novel vs familiar object.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Each animal received 1 or 3 daily intraperitoneal injections of saline or LSD",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "For three days preceding the task, animals were habituated for 10 min in the arena.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "animals were placed facing the same arena wall, with the objects on their back",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in the testing arena (standard NOR apparatus)",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in the testing arena (standard NOR apparatus)",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "short_term_1to7d",
+          "value_minutes": 4320,
+          "evidence": "After the last dose, animals were given a short (3 days) or long (9 days) washout interval, to characterize the timeframe of the drug's effect.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 76,
+        "n_male": 76,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "Wistar male rats (n = 76)... young (2 months, n = 21), adult (9 months, n = 38), and old (12-18 months, n = 17)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "LSD pre-treatment (0.13 mg/kg) significantly increased time exploring the novel object in the test session. The effect was greatest in adult rats at the intermediate dose of 0.13 mg/kg, with daily 3-day dosing being less effective than a single dose. The efficacy correlated negatively with age and weight, though no significant LSD-Age interaction was observed.",
+        "statistics": "LSD effect: p = 0.03; Age effect: p = 0.05; LSD-Age effect: p = 0.42",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "In the test session, LSD dosing increased the time exploring the novel object... a maximum of novel object preference was found for the intermediate dose of 0.13 mg/kg",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "time exploring novel object, time exploring familiar object, discrimination index (DI)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single total/discrimination index over the session; no within-session time-course analysis",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural sequences or transitions reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "preference for the novel object indicates... the animal is intrinsically motivated to explore the novel object (i.e. curious about the unknown) - natural exploratory behaviour",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animals were tested alone in the arena",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "novel object preference task to measure the subacute effects of LSD pre-treatment on hippocampus-dependent memory processes",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No automated behavioural classification software described beyond video recording",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Analyses performed with univariate ANOVAs; no PCA or multivariate method",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "cubic arena (44 cm x 44 cm x 41 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter or refuge described in the arena",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described in the testing arena",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in the arena",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Objects are test stimuli, not enrichment",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single cubic arena with no walls or partitions",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "animals were kept alone while being video recorded",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the testing arena",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Training session... The test session was performed 30 min after the end of the training session",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Exact session duration not explicitly stated; habituation was 10 min and standard NOR sessions are typically short",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Training and test sessions occurred 30 min apart on the same day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline behavioural recording in the NOR task",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "After the last dose, animals were given a short (3 days) or long (9 days) washout interval",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No single recording session spans >=6 h",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    }
+  ],
+  "judge_notes": [
+    "Only the rat novel object preference task is a scorable in vivo rodent behavioural assay. Brain organoid proteomics, human behavioural tasks, and the computational model are excluded per rubric.",
+    "Vehicle resolved to 'water' based on Methods: 'high-purity LSD dissolved in ultrapure water... for brain organoids and rats'.",
+    "Schedule scored as 'acute' since the primary effective protocol was a single dose; the 3-daily-dose variant is still <=7 doses and the assay reports a single dose as most effective. Either 'acute' or 'repeated' is defensible; chose 'acute' to match the dominant finding.",
+    "B4 scored Yes (exploration of objects is natural exploratory behaviour scored as a distinct act) per modal candidate position.",
+    "D3 scored 1 (single recording day): training and test occurred 30 min apart on the same day; habituation days had no data collection reported."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 2.73,
+    "behavioural_complexity_mean": 3.75,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 2.73
+  },
+  "low_confidence_count": 4,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 57228,
+    "output_tokens": 3737,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

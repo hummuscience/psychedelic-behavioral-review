@@ -1,0 +1,83 @@
+{
+  "study_id": "LimaDaCruz2018",
+  "doi": "10.3389/fnmol.2018.00312",
+  "species": "mouse",
+  "strain": "C57BL/6J and DCX-CreER T2::tdTom lox/lox",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 55,
+    "age_max_days": 70,
+    "evidence": "Adult C57BL6J and DCX-CreER T2 ::tdTom lox = lox transgenic mice from both sex aged between 55-70 days were used in this study.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "mice from both sex aged between 55-70 days were used in this study.",
+    "confidence": "high"
+  },
+  "psychedelic": "5-MeO-DMT",
+  "dosing": [
+    {
+      "compound": "5-MeO-DMT",
+      "doses_mg_per_kg": [],
+      "doses_raw": "100 µg 5-MeO-DMT in 10% DMSO/90% saline (1 µL, ICV)",
+      "vehicle": "saline",
+      "route": "i.c.v.",
+      "schedule": "acute",
+      "evidence": "received a single ICV injection of 1 µL 5-MeO-DMT solution (100 µg 5-MeO-DMT in 10% DMSO/90% saline) prepared fresh ... control groups received 1 µL of 10% DMSO in saline",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "Animals were housed under a 12 h light/12 h dark cycle.",
+      "confidence": "medium"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [],
+  "judge_notes": [
+    "Paper contains no behavioural assays — all endpoints are histological (BrdU, DCX::tdTom counts, Sholl/dendritic morphology) or ex vivo slice electrophysiology (whole-cell patch clamp). Per rubric, these are explicitly excluded (BrdU neuronal survival, cell counting, neurogenesis, dendritic analysis, slice physiology). All three candidates correctly returned an empty assays array.",
+    "Strain field merged to reflect both lines used (C57BL/6J wildtype and DCX-CreERT2::tdTom transgenic).",
+    "Dose normalization: 100 µg ICV total cannot be converted to mg/kg (intracerebroventricular bolus, not body-weight-scaled), so doses_mg_per_kg left empty per rubric."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0,
+    "environmental_complexity_max": 0,
+    "recording_duration_max": 0,
+    "behavioural_complexity_mean": 0,
+    "environmental_complexity_mean": 0,
+    "recording_duration_mean": 0
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 36067,
+    "output_tokens": 1061,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

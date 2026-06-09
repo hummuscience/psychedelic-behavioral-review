@@ -1,0 +1,509 @@
+{
+  "study_id": "Ben-Tal2025",
+  "doi": "10.1038/s41398-025-03428-x",
+  "species": "mouse",
+  "strain": "ICR",
+  "age": {
+    "value": "not_reported",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "The study was carried out on male ICR mice (30.0 ± 2.0 g). Only body weight reported; age not stated.",
+    "confidence": "low"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "The study was carried out on male ICR mice",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        1.5,
+        4.4
+      ],
+      "doses_raw": "4.4 mg/kg; 1.5 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Psilocybin (PSIL): 4.4 mg/kg dissolved in the vehicle... Additional experiments were performed with a DSER dose of 1500 mg/kg (and PSIL 1.5 mg/kg)... Drugs were administered by intraperitoneal (i.p.) injection",
+      "confidence": "high"
+    },
+    {
+      "compound": "D-serine",
+      "doses_mg_per_kg": [
+        1500,
+        3000
+      ],
+      "doses_raw": "3000 mg/kg; 1500 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "D-seine (DSER) 3000 mg/kg... Additional experiments were performed with a DSER dose of 1500 mg/kg",
+      "confidence": "high"
+    },
+    {
+      "compound": "D-cycloserine",
+      "doses_mg_per_kg": [
+        22.2,
+        176.19,
+        320,
+        440.47
+      ],
+      "doses_raw": "320 mg/kg; 22.2 mg/kg, 176.19 mg/kg, and 440.47 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "D-Cycloserine (DCS) 320 mg/kg dissolved in the VEH... DCS doses 22.2 mg/kg, 176.19 mg/kg, and 440.47 mg/kg",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "No specific handling protocol described beyond acclimatization week.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "Cage density not described.",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "12-h light/dark cycle (phase of testing not specified)",
+      "confidence": "medium"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "No mention of home-cage enrichment.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head Twitch Response (HTR)",
+      "assay_description": "Electromagnetic detection of head twitches via ear-tag magnets in a magnetometer apparatus immediately after i.p. injection; recorded over 20-30 min. Tested with psilocybin alone and in combination with DSER or DCS at multiple doses.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Drugs were administered by intraperitoneal (i.p.) injection",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "After a 7-day recovery period, the ear-tagged animals were placed inside a magnetometer apparatus immediately after IP injection",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice were placed inside the magnetometer apparatus; no restraint during recording is described. Restraint was only used briefly for ear tag placement, not during recording.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in magnetometer apparatus during recording (standard short test).",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in magnetometer apparatus during recording.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "placed inside a magnetometer apparatus immediately after IP injection",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "Fig. 1A: F = 15.33, df 3, 34 (~38 animals across 4 groups); Fig. 2A: F = 39.10, df 3, 36 (~40 animals). Exact per-group n not stated.",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "Psilocybin (1.5 and 4.4 mg/kg) significantly increased HTR vs vehicle. DSER and DCS alone had no effect. Co-administration of DSER (1500 or 3000 mg/kg) completely attenuated HTR; DCS dose-dependently reduced HTR with complete block at 440.47 mg/kg.",
+        "statistics": "Fig. 1A: F(3,34)=15.33, p<0.0001; Fig. 1B: F(3,20)=32.17, p<0.0001; Fig. 2A: F(3,36)=39.10, p<0.0001; Fig. 2B: F(7,38)=35.04, p<0.0001",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "PSIL (4.4 mg/kg) induced a significant increase in HTR compared to vehicle control (p < 0.0001)... The combination of PSIL and DSER completely attenuated HTR... A combination of PSIL and DCS 440.47 mg/kg completely blocked HTR",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Number of head twitches recorded as the sole outcome.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Reported as total HTR over 20-30 min; no within-session time course.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition/bout analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-twitch response is not an ethological behaviour per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice tested individually in magnetometer.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR does not require learning or memory.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "A custom MATLAB script processed the magnetometer signal to detect current peaks; this is signal peak-detection, not video-based behavioural classification.",
+          "confidence": "medium"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate HTR counts analyzed.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "magnetometer apparatus",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter in magnetometer.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Magnetometer is a single recording chamber.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each mouse recorded individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in apparatus.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Single recording session over 20-30 min.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "HTR over 30 min; HTR over 20 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "HTR performed on a single day per animal.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline recording.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No post-acute follow-up recording.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session <6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "MK-801-induced hyperactivity (Open Field)",
+      "assay_description": "Mice received vehicle, PSIL, DSER, DCS, or combinations i.p.; 30 min later MK-801 (0.5 mg/kg) i.p.; 30 min after that placed in 50x50x40 cm open field for 60 min. Total distance traveled measured via EthoVision XT-17.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Mice were injected intraperitoneally with VEH, PSIL 4.4 mg/kg, DSER 3000 mg/kg, DCS 320 mg/kg or combinations",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Mice were placed individually in the center of the open field and allowed to freely explore; no prior apparatus habituation described.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "allowed to freely explore the apparatus for 60 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in open field arena during recording.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in open field arena during recording.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 60,
+          "evidence": "After 30 min, the mice were injected IP with MK-801 0.5 mg/kg, and 30 min later, they were placed in the open field arena",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "Fig. 3A: df 3, 35 (~39); Fig. 3B: df 3, 28 (~32). Per-group n not explicitly stated.",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "Psilocybin, DSER, or DCS alone did not significantly affect MK-801-induced hyperlocomotion. Combined PSIL+DSER and PSIL+DCS each significantly reduced MK-801-induced hyperactivity vs MK-801+vehicle.",
+        "statistics": "Fig. 3A: F(3,35)=4.069, p=0.0140 (PSIL+DSER vs MK+VEH p=0.0101); Fig. 3B: F(3,28)=4.15, p=0.02 (PSIL+DCS p=0.0166)",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Mice treated with PSIL + DSER prior to MK-801 had a statistically significant reduction in hyperlocomotion compared to MK + VEH... the combination of PSIL and DCS significantly reduced the MK-801-induced hyperactivity",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The total distance traveled (centimeters) was measured.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total distance over 60 min reported; no within-session time-course.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence/transition analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor distance is not ethological.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice placed individually.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning/memory component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Ethovision XT-17 Video Tracking System (position tracking, on SCORE-0 list).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate distance only.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "open field apparatus (50x50x40 cm) with white walls and black floor",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open arena with no refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Black floor; no bedding.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single open-field arena.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice were placed individually in the center of the open field.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in arena.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Single 60-min session.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "allowed to freely explore the apparatus for 60 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Hyperactivity test on a single day.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline recording.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No follow-up recording.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session <6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Two assays retained: HTR and MK-801-induced hyperactivity (open field). All three candidates agreed on these.",
+    "Excluded Western blot of synaptic proteins (GAP43, PSD95, synaptophysin, SV2A) as it is a molecular/biochemical endpoint, not a behavioural assay.",
+    "B7 (automated classification) for HTR: gptoss scored 1 citing the custom MATLAB script, but the script processes a magnetometer current signal (peak detection) rather than classifying behavioural states from video. Rubric examples for score 1 are pose estimation/MoSeq/SimBA/supervised ML video classifiers. Scored 0 in agreement with qwen and glm.",
+    "B1: counts of head twitches and total distance are each single behavioural measures; scored 0 per rubric (1 measure -> 0 points).",
+    "time_to_assay for MK-801 open field: time since LAST drug administration is 30 min (MK-801 was injected 30 min before recording start), which falls in acute_0to2h. Used 60 min as time from psychedelic pretreatment; either way bin is acute_0to2h."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0.0,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 0.0,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 1.36
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 53019,
+    "output_tokens": 6306,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

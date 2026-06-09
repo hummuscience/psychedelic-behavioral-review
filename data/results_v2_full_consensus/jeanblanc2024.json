@@ -1,0 +1,285 @@
+{
+  "study_id": "Jeanblanc2024",
+  "doi": null,
+  "species": "rat",
+  "strain": "Long-Evans",
+  "age": {
+    "value": "adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Sixty-six male adult Long-Evans rats (452-605 g at the start of the injection period)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 66,
+    "n_female": null,
+    "evidence": "Sixty-six male adult Long-Evans rats",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "1 mg/kg (2 ml/kg) i.p.; 0.15 µg (1 mM in aCSF, 0.6 µl) intra-NAcc or intra-VTA",
+      "vehicle": "saline",
+      "route": "multiple",
+      "schedule": "acute",
+      "evidence": "intraperitoneal (i.p.) injection of psilocybin at 1 mg/kg (2 ml/kg)... microinfused with either artificial CSF (aCSF; Harvard Apparatus) or psilocybin (1 mM in aCSF) at the rate of 0.3 µl/min, to a total volume of 0.6 µl",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Paper does not describe a handling protocol",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "Animals were individually housed under a light/dark cycle of 12 h",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "light/dark cycle of 12 h (lights on at 7:00 a.m.)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "No mention of home-cage enrichment",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Operant Ethanol Self-Administration",
+      "assay_description": "Rats trained to lever-press (FR3) for 0.1 ml of 20% ethanol solution in Med Associates operant chambers during 15-min sessions, 5 days/week. Outcomes: lever presses, ethanol deliveries, cumulative consumption (3-min bins), latencies to first/last reward. Psilocybin tested via i.p. (1 mg/kg) and intra-NAcc/VTA microinfusion (0.15 µg), with ketanserin antagonism.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "intraperitoneal (i.p.) injection... or directly within the nucleus accumbens core or the ventral tegmental area",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Paper describes training but not separate apparatus habituation",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "rats were placed in the operant self-administration chamber for a regular FR3-15 session",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Food and water available ad libitum in home cage; no food in operant chamber during 15-min session",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Food and water available ad libitum in home cage; no water in operant chamber during 15-min session",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 240,
+          "evidence": "psilocybin (1 mg/kg, 4 h before the test)",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 26,
+        "n_male": 26,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "Experiment 2: n = 10; Experiment 3: saline (n = 8); and psilocybin (1 mg/kg) (n = 8); Experiment 4: group of eight... and a group of eight",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute psilocybin (1 mg/kg i.p., 4 h before session) reduced total rewards by ~48% and ethanol intake by ~51%. Intra-left NAcc microinfusion of psilocybin (0.15 µg) similarly reduced rewards/intake by ~38-39%, while right NAcc or left VTA infusions had no effect. Effects were blocked by intra-left NAcc ketanserin (5-HT2AR antagonist). Psilocybin shortened the consummatory episode (earlier termination) without altering initiation.",
+        "statistics": "F(1,14) = 19.66, P < 0.001 (treatment effect); F(1,14) = 0.73, P = 0.725 (order); F(1,14) = 0.65, P = 0.44 (interaction); P < 0.0001 for systemic psilocybin reduction; P < 0.05 for intra-left NAcc effect; P < 0.01 for ketanserin blockade",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Psilocybin significantly reduced (by 50%) ethanol self-administration when injected 4 h before the session either intraperitoneally (1 mg/kg) or directly within the left nucleus accumbens (0.15 μg) but not the right nucleus accumbens or the left ventral tegmental area. The effect of intraperitoneal injection of psilocybin was prevented by intra-left nucleus accumbens injection of 0.3 μg of the 5-HT2A receptor antagonist ketanserin.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "number of lever presses, ethanol deliveries and time... cumulative consumption... latencies to first and last rewards... active and inactive lever presses",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The cumulative consumption (3 min-intervals; Fig. 2H) showed that psilocybin did not alter the initiation of the consummatory episode, whereas it reduced the duration by ending it earlier",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural transitions or sequences reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Measures are operant lever pressing and ethanol intake, not natural ethological behaviours",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Rats tested individually in operant chambers",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "trained to self-administer 20% ethanol solution in operant cages... three presses induced the delivery",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "recorded using MED-PC IV software (Med Associates Inc., VT, USA)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Analyses used ANOVA on individual measures; no PCA/UMAP reported",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "operant cages (Med Associates)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Operant chamber has no refuge",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard operant chamber, no bedding mentioned",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in operant chamber",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects reported in operant chamber",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Standard operant chamber with single compartment",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "rats were placed in the operant self-administration chamber",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "three presses induced the delivery of 0.1 ml of 20% ethanol solution (ethanol/fluid reward delivered in the chamber)",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "5 days a week... Each infusion was delayed from the previous one by at least 3 days... vehicle/psilocybin tests counterbalanced across multiple sessions",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "during 15 min sessions",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 3,
+          "value": "15+",
+          "evidence": "trained to self-administer 20% ethanol solution in operant cages... 5 days a week... 2 months of stable baseline ethanol... self-administration... plus multiple test sessions in Experiments 2-5",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The randomization was based on the basal levels of ethanol self-administration",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Testing 4 h after drug administration; no ≥24 h post-drug behavioural recording reported as outcome",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "15 min sessions",
+          "confidence": "high"
+        },
+        "raw_total": 6
+      }
+    }
+  ],
+  "judge_notes": [
+    "Only one behavioural assay (operant ethanol self-administration). All systemic and intracerebral psilocybin manipulations, ketanserin antagonism, left vs right NAcc, and VTA infusions are variants of the same assay per the rubric's decision rule.",
+    "Gene expression experiments (qPCR in NAcc/PFC) are explicitly excluded by the rubric (ex vivo molecular work) and not scored as assays.",
+    "B1 set to 4-6 (modal among candidates considering lever presses, ethanol deliveries, cumulative consumption, latencies, active/inactive lever presses).",
+    "D3 set to 15+ based on operant training 5 days/week over 2 months plus multiple counterbalanced test sessions across Experiments 2-5; this is more accurate than 2-7 days.",
+    "E8 set to Yes because ethanol (a fluid reward) is delivered in the chamber during the session — this falls under food/water accessible per rubric (operant tasks with reward delivery).",
+    "food_restriction/water_restriction scored as 'during' because food/water are not in the testing apparatus during the 15-min session (rubric default for standard operant apparatus where only the reinforcer is delivered)."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 5.0,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 8.18,
+    "behavioural_complexity_mean": 5.0,
+    "environmental_complexity_mean": 1.36,
+    "recording_duration_mean": 8.18
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 44075,
+    "output_tokens": 4372,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

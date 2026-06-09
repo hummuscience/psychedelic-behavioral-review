@@ -1,0 +1,886 @@
+{
+  "study_id": "Brownstien2024",
+  "doi": "10.1038/s41380-024-02786-0",
+  "species": "mouse",
+  "strain": "SAPAP3 KO",
+  "age": {
+    "value": "adult",
+    "age_min_days": 210,
+    "age_max_days": 231,
+    "evidence": "Adult (6.5-7-month-old) SAPAP3 male and female mice ... Age 30-33 weeks",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": 28,
+    "n_female": 22,
+    "evidence": "randomized controlled trial of psilocybin in 50 SAPAP3 KO mice (28 male, 22 female)",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin, Psychedelic mushroom extract",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        4.4
+      ],
+      "doses_raw": "4.4 mg per kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "PSIL was provided by USONA and was administered at a dose of 4.4 mg per kg ... All treatments were administered by intraperitoneal (i.p.) injection.",
+      "confidence": "high"
+    },
+    {
+      "compound": "Psychedelic mushroom extract",
+      "doses_mg_per_kg": [
+        4.4
+      ],
+      "doses_raw": "4.4 mg per kg of psilocybin (PME adjusted)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "The dose of PME was adjusted so that each mouse received 4.4 mg per kg of psilocybin ... All treatments were administered by intraperitoneal (i.p.) injection.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "Both female and male experimenters handled the mice and performed the studies.",
+      "confidence": "medium"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Mice were housed under standardized conditions ... up to 8 per cage.",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "Mice were housed under standardized conditions with a 12 h light/dark cycle (direction not specified)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Not addressed in methods",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Self-grooming and head-body twitch observation",
+      "assay_description": "1-h video recording in a transparent plastic box (40 × 60 × 75 cm) with wood bedding; 30-min habituation prior to recording. Manually scored measures: total grooming duration, total grooming bouts, short bouts (<3 s), long bouts (>3 s), and total head-body twitches. Performed at baseline and 2, 12, and 21 days post-treatment, with follow-up extending to 28/42 days.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All treatments were administered by intraperitoneal (i.p.) injection.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "There was a half-hour of habituation to the setup prior to the video recording.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice were temporarily separated from their littermates for a 1-h video recording session in a transparent plastic box",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Recording took place in a plastic box with bedding only; no food provided.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Recording took place in a plastic box with bedding only; no water provided.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 2880,
+          "evidence": "Evaluations of grooming behavior and head body twitches were performed 48 h, 12 days, and 21 days after treatment",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 50,
+        "n_male": 28,
+        "n_female": 22,
+        "n_per_group_min": 16,
+        "evidence": "Vehicle (n = 18) ... psilocybin (n = 16) ... psychedelic mushroom extract (n = 16); Number of mice (male/female) Vehicle 10/8, PSIL 9/7, PME 9/7",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "A single i.p. dose of psilocybin (4.4 mg/kg) or psilocybin-containing mushroom extract reduced excessive self-grooming and head-body twitches in SAPAP3 KO mice; vehicle-treated mice showed a 118.71% increase in total grooming, whereas PSIL and PME groups showed ~14.6% and ~19.2% decreases, respectively, over 21 days. Beneficial effects persisted up to 42 days in responders. No sex differences observed.",
+        "statistics": "Total grooming duration: F(time)=5.61, df 3,135, p=0.001; F(time×treatment)=10.65, df 2,45, p<0.0001; PSIL vs VEH day 12 p=0.003; PME vs VEH day 12 p<0.0001. Grooming bouts: F(treatment)=6.317, df 2,47, p=0.003. Head-body twitches: F=3.939, df 2,47, p=0.026; PSIL p=0.01, PME p=0.01 at day 12.",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "no",
+        "time_dependent": "yes",
+        "evidence": "total self-grooming decreased by 14.60 ± 17.90% in mice treated with psilocybin (n = 16) and by 19.20 ± 20.05% in mice treated with psychedelic mushroom extract (n = 16) (p = 0.001 for effect of time; p = 0.0001 for time × treatment interaction).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "Total grooming duration, total grooming bouts, short grooming bouts, long grooming bouts, total head-body twitches.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "All measures reported as totals over the 1-h session.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition/sequence analysis described.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Self-grooming includes face-wiping, licking, scratching, rubbing the head, snout, ears, and full body grooming - natural rodent behaviours scored as distinct acts.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice were temporarily separated from their littermates for a 1-h video recording session",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate grooming behaviour; no learning component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "All videos were scored by one rater (MB) who was blind to treatment assignment.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate ANOVAs reported.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "transparent plastic box (40 × 60 × 75 cm) filled with regular wood bedding",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Transparent plastic box with no shelter described.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "filled with regular wood bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material mentioned.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects mentioned.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single transparent plastic box without dividers.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice were temporarily separated from their littermates for recording.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in recording box.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Evaluations were performed 48 h, 12 days, and 21 days after treatment, with additional 28 and 42 day follow-ups.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "1-h video recording session",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 2,
+          "value": "8-14",
+          "evidence": "Baseline + 2, 12, 21, 28, 42 days post-treatment; plus second-injection follow-up days (28 and 42 days after first injection, i.e. 7 and 21 days after second).",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "percent change in total grooming score over 1 h from the pretreatment score to 21 days",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Recordings at 48 h, 12, 21, 28 and 42 days post-injection.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Each recording session lasted 1 h.",
+          "confidence": "high"
+        },
+        "raw_total": 6
+      }
+    },
+    {
+      "assay_name": "Marble Burying Test",
+      "assay_description": "30-min test in a transparent covered cage with 4.5 cm of fresh bedding and 20 glass marbles arranged in a 5×4 pattern; marbles ≥2/3 covered counted as buried. Performed pre-treatment and 3 days post-treatment.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All treatments were administered by intraperitoneal (i.p.) injection.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Habituation to the MBT apparatus not mentioned.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "A mouse was placed in a separate transparent cage ... free to move.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Test cage contained bedding and marbles only; no food provided during 30-min test.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Test cage contained bedding and marbles only; no water provided during 30-min test.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "short_term_1to7d",
+          "value_minutes": 4320,
+          "evidence": "MBT and OFT 3 days; EPM 5 days following treatment.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 50,
+        "n_male": 28,
+        "n_female": 22,
+        "n_per_group_min": 16,
+        "evidence": "Vehicle (n=18), PSIL (n=16), PME (n=16); df 2,47 in ANOVA",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "SAPAP3 KO mice buried fewer marbles than WT at baseline; both PSIL and PME strikingly increased marble burying after treatment, with PME effect being significantly stronger. Authors interpret this as reflecting reduced anxiety / increased exploration rather than a typical anti-compulsive effect.",
+        "statistics": "Two-way ANOVA: time F=49.16, df 1,47, p<0.0001; treatment F=12.67, df 2,47, p<0.0001; time×treatment F=12.67, df 2,47, p<0.0001. Post-hoc PSIL p<0.0001 and PME p<0.0001 after vs. before treatment.",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "Marble burying was strikingly increased by both treatments and two-way ANOVA revealed a highly significant effect of time (F = 49.16, df 1,47 p < 0.0001) and treatment (F = 12.67, df 2,47 p < 0.0001)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "the number of covered marbles was determined",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single 30-min total count reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence/transition analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Marble burying is a compulsive-like screen, not a directly measured natural behaviour during the recording.",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mouse tested alone.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Manual marble count.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate ANOVA.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "separate transparent cage with a cover",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter in apparatus.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "filled with 4.5 cm of new bedding shred",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Marbles are test stimuli, not enrichment.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single cage compartment.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "A mouse was placed in a separate transparent cage.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in test cage.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Performed 2-6 days before trial initiation and 3-5 days after treatment.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "After a 30 min test, the number of covered marbles was determined.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Baseline (pre-trial) and post-treatment (day 3) MBT.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "These tests were performed 2-6 days before the initiation of the trial and then 3-5 days after treatment.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Post-treatment test 3 days after injection (>=24 h).",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30-min session.",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      }
+    },
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "10-min test in 50×50×40 cm square wooden arena; time in center, time in periphery, and total distance traveled tracked via Ethovision XT-12. Performed pre-trial and ~3 days post-treatment.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All treatments were administered by intraperitoneal (i.p.) injection.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Habituation to OFT apparatus not described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "a mouse was placed in the arena center and was free to explore it for 10 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Open field arena contained no food.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Open field arena contained no water.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "short_term_1to7d",
+          "value_minutes": 4320,
+          "evidence": "MBT and OFT 3 days ... following treatment.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 50,
+        "n_male": 28,
+        "n_female": 22,
+        "n_per_group_min": 16,
+        "evidence": "Vehicle (n=18), PSIL (n=16), PME (n=16); df from OFT ANOVA consistent",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "PME significantly increased time spent in the center of the open field compared with vehicle and psilocybin, indicating an anxiolytic effect specific to PME. No significant difference in total distance traveled between groups.",
+        "statistics": "Center duration: time F=5.04, df 1,96, p=0.009; treatment F=4.17, df 2,96, p=0.018; interaction F=4.17, df 2,96, p=0.018; PME vs VEH p=0.0002, PME vs PSIL p=0.002.",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "time spent in the center of the open field was significantly greater following treatment in mice that received PME compared to mice that received VEH (p = 0.0002) or PSIL (p = 0.002).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Total duration of time (s) spent in center arena, total duration of time (s) spent in periphery arena, and total distance traveled (cm)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Reported as totals over 10 min.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence/transition analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Zone time and locomotor distance are not ethological behaviours.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mouse tested alone.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate anxiety test.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "measured by the Ethovision XT-12 Video Tracking System (position tracking only).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVA only.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "square wooden arena (50 × 50 × 40 cm) with white walls and floor",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open arena, no shelter.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "White walls and floor; no bedding.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single open arena.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Single mouse placed in arena.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in arena.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Tests performed 2-6 days before the trial and 3-5 days after treatment.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "free to explore it for 10 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Pre-trial baseline + post-treatment OFT.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Pre-trial OFT recorded before drug administration.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "OFT performed 3 days after treatment (>=24 h).",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "10-min session.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    },
+    {
+      "assay_name": "Elevated Plus Maze",
+      "assay_description": "6-min EPM with two open and two closed arms on a central platform elevated 75 cm above the floor; time in open and closed arms tracked via Ethovision XT-12. Performed pre-trial and 5 days post-treatment.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All treatments were administered by intraperitoneal (i.p.) injection.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Habituation to EPM apparatus not described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "The animal is placed on the central platform and can explore the arena freely for 6 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in EPM apparatus.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in EPM apparatus.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "short_term_1to7d",
+          "value_minutes": 7200,
+          "evidence": "EPM 5 days following treatment.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 48,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 15,
+        "evidence": "df 1,45 in EPM open arm ANOVA suggests ~48 animals across 3 treatments.",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "PME significantly increased open-arm time on the EPM after treatment compared to its pre-treatment value, indicating reduced anxiety; PSIL did not produce a significant change. No significant differences in closed-arm time.",
+        "statistics": "Open-arm time: F=6.82, df 1,45, p=0.012; PME post-hoc p=0.04.",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "time spent in the open arms was significantly increased after treatment for mice that received PME (p = 0.04).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Time spent in open arms and time spent in closed arms measured.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total times over 6 min reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Zone times reflect innate avoidance, not ethological acts.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mouse tested alone.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate anxiety test.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Ethovision XT-12 Video Tracking System (position tracking only).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVA only.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Standard elevated plus maze.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EPM closed arms are part of apparatus design, not shelter.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding on EPM surface.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "EPM arms are open-ended extensions of central platform, not distinct compartments per rubric.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Single mouse on central platform.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in apparatus.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "EPM tested before trial and 5 days post-treatment.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "explore the arena freely for 6 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Pre-trial baseline + post-treatment EPM.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Pre-trial EPM recorded before drug administration.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "EPM performed 5 days after treatment.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "6-min session.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    }
+  ],
+  "judge_notes": [
+    "Identified 4 distinct behavioural assays: (1) self-grooming/head-body twitch home-arena observation, (2) marble burying test, (3) open field test, (4) elevated plus maze. All candidates agreed on this set.",
+    "For B1 in grooming assay, used '4-6' (score 2) since 5 distinct measures are reported (duration, total bouts, short bouts, long bouts, head-body twitches).",
+    "E1 for grooming assay scored 0 (Standard apparatus): the 40×60×75 cm transparent plastic recording box is a standard testing arena (not the animal's home cage); overrode glm's 'Home cage' value.",
+    "D3 for grooming assay scored 2 (8-14 days): study includes baseline + 2, 12, 21 days, plus follow-up at 28 and 42 days, plus second-injection follow-up at 28 and 42 days (= 5-6 distinct recording days for primary cohort, extending into 8-14 range when follow-up cohort is included). Conservative score 2 reflects total recording-day footprint of this assay.",
+    "B4 for marble burying scored 0: rubric explicitly treats marble burying as a screen rather than a directly measured ethological behaviour in the standard repertoire; digging is implicit but not scored as a distinct act.",
+    "time_to_assay: grooming = 'multiple' (48h, 12d, 21d, etc.); MBT/OFT/EPM = 'short_term_1to7d' (3 and 5 days post-treatment).",
+    "day_night_flipped set to 'not_reported' because the paper states a 12 h light/dark cycle without specifying direction or testing phase relative to it."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 8.18,
+    "behavioural_complexity_mean": 1.56,
+    "environmental_complexity_mean": 0.68,
+    "recording_duration_mean": 6.47
+  },
+  "low_confidence_count": 4,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 69939,
+    "output_tokens": 10919,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

@@ -1,0 +1,285 @@
+{
+  "study_id": "Marek2018",
+  "doi": "10.3389/fphar.2018.00089",
+  "species": "rat",
+  "strain": "Sprague-Dawley",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "weighing between 150 and 300 g at the initial behavioral testing",
+    "confidence": "low"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 112,
+    "n_female": null,
+    "evidence": "Male Sprague-Dawley rats ( n D 112) weighing between 150 and 300 g at the initial behavioral testing were used",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        1.25
+      ],
+      "doses_raw": "1.25 mg/kg, i.p.",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "A dose of DOI (1.25 mg/kg, i.p.) producing a near-maximum of head shakes over a 30 min period was chosen for experiments testing suppression of head shakes by clenbuterol",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "All the rats were habituated to the testing environment with a saline injection at least several days prior to the first DOI/vehicle, DOI and clenbuterol/vehicle, or DOI/clenbuterol/ICI-188,551/vehicle injection.",
+      "confidence": "medium"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "They were housed in suspended stainless wire cages (18 cm x 36 cm x 20 cm) with two to four rats occupying each cage.",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "The room was illuminated 12 h/day (07:00-19:00). All experiments were performed between 09:00 and 16:00.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head Twitch Response (HTR)",
+      "assay_description": "Rats were placed in a clear polycarbonate cage (43 x 21.5 x 20 cm) with a sawdust-covered floor and observed during consecutive 5-min periods for a total of 30 min following DOI injection. Head twitches, cage crosses (forward locomotion) and rearing were manually counted. Tested with clenbuterol (0.3-3 mg/kg, i.p.) pretreatment and ICI-118,551 (0.01-1 mg/kg, i.p.) co-pretreatment.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "injected i.p. in a volume of 1 ml/kg body weight",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "All the rats were habituated to the testing environment with a saline injection at least several days prior to the first DOI/vehicle ... injection.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "The animals were transferred to a clear polycarbonate cage ... The animals were observed during consecutive 5 min periods",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "All rats had free access to laboratory chow (Teklad 4% Rat Diet) and water except during experimental sessions.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "All rats had free access to laboratory chow ... and water except during experimental sessions.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 1,
+          "evidence": "The observations began 1 min after injecting DOI to allow time for drug absorption.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 112,
+        "n_male": 112,
+        "n_female": null,
+        "n_per_group_min": 12,
+        "evidence": "Male Sprague-Dawley rats ( n D 112) ... a different cohort of rats was used for each dose ( n D 12/group) ... ( n D 16/each group)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI (1.25 mg/kg, i.p.) induced ~25.9 head twitches per 30 min. The b2-adrenergic agonist clenbuterol (0.3-3 mg/kg, i.p.) dose-dependently suppressed DOI-induced head twitches by ~55% at 1 and 3 mg/kg, without affecting locomotion or rearing. The selective b2 antagonist ICI-118,551 (0.01-1 mg/kg, i.p.) dose-dependently reversed the clenbuterol suppression, with significant reversal at 0.1 and 1 mg/kg.",
+        "statistics": "Clenbuterol: F(3,33)=3.58, p<0.05; Dunnett p<0.05 at 1 and 3 mg/kg. ICI-118,551 reversal: F(3,60)=4.63, p<0.01; Dunnett p<0.05 at 1 mg/kg. Locomotion: F(3,33)=1.46, p>0.2. Rearing: F(3,33)=0.96.",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "The b 2-adrenergic receptor agonist clenbuterol (0.3-3 mg/kg, i.p.) suppressed DOI (1.25 mg/kg)-induced head twitches in a dose-dependent manner [ F (3,33) D 3.58, p < 0.05] ... The selective b 2-adrenergic receptor antagonist ICI-118,551 (0.01-1 mg/kg, i.p.) appeared to at least partially reverse the suppression by clenbuterol",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "2-3",
+          "evidence": "In addition to counting each head shake response, forward locomotion (movement from one end to the other end of the cage was scored as one cross) and rearing (rising up on hind limbs) were recorded.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The animals were observed during consecutive 5 min periods for a total of 30 min ... data analyzed as totals per 30 min (no within-session time-course analysis reported).",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head twitch response (HTR) is excluded per rubric; locomotor cage crosses and rearing are scored as basic locomotor/exploratory totals, not as discrete ethological acts.",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animals tested individually in a polycarbonate observation cage; no social construct.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is an unconditioned drug-induced behaviour; no learning or memory component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The animals were observed ... head shake response ... were recorded (manual scoring).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "A one-factor ANOVA was carried out for measurement of head shakes, rearing, and horizontal locomotor activity.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "The animals were transferred to a clear polycarbonate cage (43 cm x 21.5 cm x 20 cm) with a sawdust-covered floor.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Clear polycarbonate observation cage with no enclosed refuge described.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "clear polycarbonate cage (43 cm x 21.5 cm x 20 cm) with a sawdust-covered floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described in the testing cage.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects described in the testing cage.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single clear polycarbonate cage with no internal partitions.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Animals were observed individually following DOI/clenbuterol/ICI-118,551 injections.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "All rats had free access to laboratory chow ... and water except during experimental sessions.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "The animals were observed during consecutive 5 min periods for a total of 30 min following the DOI injection.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "observed during consecutive 5 min periods for a total of 30 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single 30-min observation session per animal following DOI injection.",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Habituation saline injection prior to testing but no pre-drug behavioural baseline data reported.",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No recording >=24 h after drug administration reported.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "total of 30 min",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Only one behavioural assay (DOI-induced head twitch response in rats) was scored; electrophysiology experiments (epinephrine effects on EPSPs in slice) were excluded per rubric as ex vivo / non-behavioural.",
+    "All three candidates identified the same single HTR assay; merged into one entry.",
+    "B1: scored 2 (2-3 measures) - head twitches, cage crosses, and rearing are three distinct measures (matches glm).",
+    "B2: scored 0; although data were collected in 5-min bins, the paper reports only 30-min totals in the analyses shown, so no within-session temporal dynamics analysis is demonstrated.",
+    "B4: scored 0; HTR is excluded by rubric, and locomotion/rearing counts as basic locomotor totals rather than discrete ethological acts (overrides gptoss's score of 1).",
+    "Handling scored 'yes' based on explicit habituation/saline-injection handling protocol described."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 2.5,
+    "environmental_complexity_mean": 1.36,
+    "recording_duration_mean": 1.36
+  },
+  "low_confidence_count": 1,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 44791,
+    "output_tokens": 4420,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

@@ -1,0 +1,889 @@
+{
+  "study_id": "Odland2019",
+  "doi": "10.1016/j.neuropharm.2019.107838",
+  "species": "mouse",
+  "strain": "C57BL/6JOlaHsd",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 56,
+    "age_max_days": 112,
+    "evidence": "were 8-16 weeks old at the time of testing",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 120,
+    "n_female": null,
+    "evidence": "Male C57BL/6JOlaHsd mice obtained from Envigo (120 animals total) were used for the tests",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI, 25CN-NBOH",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        0.1,
+        0.3,
+        1.0
+      ],
+      "doses_raw": "0.1, 0.3, 1.0 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "DOI was administered 30 min before start of the tests... All compounds were dissolved in 0.9% (w/v) NaCl... All compounds were administered by intraperitoneal injection in a volume of 10 mL/kg.",
+      "confidence": "high"
+    },
+    {
+      "compound": "25CN-NBOH",
+      "doses_mg_per_kg": [
+        1.0,
+        3.0,
+        5.0
+      ],
+      "doses_raw": "1.0, 3.0, 5.0 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "8-OH-DPAT and 25CN-NBOH were administered 15 min before start of the tests... All compounds were dissolved in 0.9% (w/v) NaCl... administered by intraperitoneal injection in a volume of 10 mL/kg.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "The animals were group housed maximum five mice per cage in individually ventilated cages",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "The animals were housed on a 12-h light/dark cycle with lights on at 7 a.m. All experiments were conducted in the light phase between 9 a.m. and 5 p.m.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Marble Burying Test",
+      "assay_description": "Transparent type III H cage (42.5×26.5×18 cm) with 20 glass marbles placed in 5×4 pattern on ~5 cm sawdust; 30-min test; buried marbles (>2/3 covered) counted at 10, 20, and 30 min by a treatment-blinded observer.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All compounds were administered by intraperitoneal injection in a volume of 10 mL/kg",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Animals were acclimatized to the experimental rooms for at least 1 h before behavioral testing; no apparatus-specific habituation described",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice placed freely in the cage with marbles; no restraint",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Food and water were not available during experiments",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Food and water were not available during experiments",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "DOI was administered 30 min before start of the tests. 8-OH-DPAT and 25CN-NBOH were administered 15 min before start of the tests.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 40,
+        "n_male": 40,
+        "n_female": null,
+        "n_per_group_min": 10,
+        "evidence": "n = 10 (figure legends for Fig. 1 and Fig. 2)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Both DOI and 25CN-NBOH dose-dependently reduced compulsive-like digging. DOI 1.0 mg/kg significantly reduced total marbles buried over 30 min; 0.3 and 1.0 mg/kg reduced digging in the first 10 min. 25CN-NBOH 3.0 and 5.0 mg/kg significantly reduced total marbles buried.",
+        "statistics": "DOI: F3,36 = 38.46, p < 0.0001; 25CN-NBOH: F3,36 = 2.96, p = 0.0453; 3.0 mg/kg p = 0.0149, 5.0 mg/kg p = 0.0214",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "1.0 mg/kg DOI significantly reduced compulsive-like digging (p < 0.0001) during 30 min... 3.0 (p = 0.0149) and 5.0 mg/kg (p = 0.0214) 25CN-NBOH significantly reduced compulsive-like digging during 30 min",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Counted marbles at 10, 20, 30 min plus total — single behavioural variable (marbles buried) at multiple time bins",
+          "confidence": "medium"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The number of marbles buried within 10-min time bins were analyzed by two-way repeated measures ANOVA with treatment as independent factor and time as repeated factor",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transitional/sequential analysis reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Digging is a natural ethological behaviour from the species' repertoire (compulsive-like digging in the marble burying test)",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice tested individually with no social construct",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Test does not require learning or memory",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "A treatment-blinded observer counted the visible marbles",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVAs only",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "transparent type III H cages (L x W x H: 42.5 × 26.5 × 18 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter/refuge in test cage",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "a layer of ~5 cm sawdust",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in the test apparatus",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Marbles are test stimuli, not enrichment",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single cage arena",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual testing",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Food and water were not available during experiments",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "30 min test",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "30-min test",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test day per animal for MB",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Acute effects only",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30 min < 6 h",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Spontaneous Alternation Behavior Test (Y-maze)",
+      "assay_description": "Non-baited three-armed Y-maze (40 × 7 cm) under red light; 10-min test; arm entry series recorded by treatment-blinded observer; alternation ratio = correct alternations/(total arm visits - 2). Tested alone and combined with 8-OH-DPAT.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All compounds were administered by intraperitoneal injection in a volume of 10 mL/kg",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Room acclimation described; no apparatus habituation specified",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Animals freely explored the Y-maze",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Food and water were not available during experiments",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Food and water were not available during experiments",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "DOI was administered 30 min before start of the tests. 8-OH-DPAT and 25CN-NBOH were administered 15 min before start of the tests.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 80,
+        "n_male": 80,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "n = 8-12 (figure legends for Fig. 3 and Fig. 4)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "8-OH-DPAT reduced alternation ratio. DOI alone significantly decreased alternation at 0.1, 0.3, 1.0 mg/kg, but 0.3 and 1.0 mg/kg DOI reversed the 8-OH-DPAT-induced deficit. 25CN-NBOH alone had no effect; 3.0 mg/kg partially reversed the 8-OH-DPAT-induced deficit.",
+        "statistics": "DOI × 8-OH-DPAT interaction: F3,76 = 6.46, p = 0.0006; 8-OH-DPAT main effect: F1,76 = 19.33, p < 0.0001; 25CN-NBOH × 8-OH-DPAT: F3,76 = 1.37, p = 0.2598; 3.0 mg/kg 25CN-NBOH+8-OH-DPAT vs VEH+8-OH-DPAT p = 0.0385",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "DOI alone significantly reduced alternation ratio at 0.1 (p = 0.0052), 0.3 (p = 0.0006) and 1.0 mg/kg (p = 0.0169)... 3.0 mg/kg 25CN-NBOH significantly reversed the 8-OH-DPAT-induced reduction in alternation ratio (p = 0.0385)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Alternation ratio and total number of arm visits",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single 10-min ratio reported, no within-session time-binning",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "A treatment-blinded observer recorded the series and number of entries... correct alternation when they visited three consecutive different arms — sequential structure of arm entries is analyzed",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Spatial arm entries scored, not ethological behaviours",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing, no social construct",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Spontaneous alternation requires working memory/spatial cognition",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "A treatment-blinded observer recorded the series and number of entries",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVAs only",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "three-armed Y-maze (L x W: 40 × 7 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open arms, no enclosed refuge",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Maze cleaned with water and paper towels; no bedding mentioned",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "Three-armed Y-maze with physically distinct arms",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual testing",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Food and water were not available during experiments",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "10-min test period",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "10-min test period",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test day per animal for SAB",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Acute effects only",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "10 min < 6 h",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "Locomotor Activity Test",
+      "assay_description": "Transparent type III H cages (42.5×26.5×18 cm); 30-min recording in 5-min time bins via EthoVision XT video tracking; distance traveled measured.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All compounds were administered by intraperitoneal injection in a volume of 10 mL/kg",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "The mice were not acclimatized to the test cages, and the recording was started immediately after placing the animals in the test cages",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Animals freely moving in test cages",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Food and water were not available during experiments",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Food and water were not available during experiments",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 15,
+          "evidence": "25CN-NBOH were administered 15 min before start of the tests",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 40,
+        "n_male": 40,
+        "n_female": null,
+        "n_per_group_min": 10,
+        "evidence": "n = 10 (figure legend for Fig. 5)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "25CN-NBOH dose-dependently increased locomotor activity. 3.0 mg/kg significantly increased total distance traveled and activity at 5, 10, 15, and 25 min; 5.0 mg/kg increased activity at 5, 10, and 15 min.",
+        "statistics": "Total distance: F3,36 = 2.60, p = 0.0672; 3.0 mg/kg pairwise p = 0.0120; time-bin treatment effect F3,36 = 3.00, p = 0.0433",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "3.0 mg/kg 25CN-NBOH significantly increased locomotor activity at 5 (p = 0.0031), 10 (p = 0.0013), 15 (p = 0.0055), and 25 (p = 0.0375) minutes",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Distance traveled served as a measure of LA (single behavioural variable; time bins are temporal sub-divisions of one measure)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Movement was recorded for 30 min in 5-min time bins... analyzed by two-way RM ANOVA with treatment as independent factor and time as repeated factor",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition/sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor distance only, no ethological behaviours scored",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor activity, no cognitive component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EthoVision XT — position tracking only, not behavioural classification",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVAs only",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "transparent type III H cages (42.5 × 26.5 × 18 cm) on a white background",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No refuge in test cage",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Placed on a white background; no bedding mentioned for LA test",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single cage arena",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual testing",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Food and water were not available during experiments",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "30 min recording",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "30 min recording",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test day per animal for LA",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Acute effects only",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30 min < 6 h",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "V-maze Test",
+      "assay_description": "Y-maze adapted with plexiglass doors to separate runway arm, familiar arm, and novel arm. Mice exposed to familiar arm for 5 min, then novel arm opened and time spent in each arm recorded for 2 min by a blinded observer. Discrimination index calculated. Used to assess effects of 8-OH-DPAT on spatial attention; DOI/25CN-NBOH were not directly administered in this assay.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All compounds were administered by intraperitoneal injection (8-OH-DPAT only in this assay)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No apparatus habituation described",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Animals freely explored the maze",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Food and water were not available during experiments",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Food and water were not available during experiments",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 15,
+          "evidence": "8-OH-DPAT was administered 15 min before start of the tests",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 18,
+        "n_male": 18,
+        "n_female": null,
+        "n_per_group_min": 9,
+        "evidence": "n = 9 (Fig. 6 legend)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "8-OH-DPAT did not significantly affect time spent in the novel vs. familiar arm or the discrimination index, indicating intact spatial attention. Both vehicle and 8-OH-DPAT animals spent more time in the novel arm.",
+        "statistics": "Treatment: F1,16 = 2.87, p = 0.1097; Treatment × arm interaction: F1,16 = 0.12, p = 0.7357; arm main effect F1,16 = 13.42, p = 0.0021; discrimination index t16 = 0.52, p = 0.6108",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "8-OH-DPAT did not affect V-maze performance, supporting that the decrease in alternation ratio in the SAB test is not due to a deficit in spatial attention.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Time in novel arm, time in familiar arm, discrimination index",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total time over 2 min reported, no within-session bins",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transitional analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Time in zones scored, not ethological behaviours",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Novel vs familiar arm preference requires memory of familiar arm",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Time recorded by a treatment-blinded observer",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate analyses only",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Y-maze with plexiglass doors",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enclosed refuge",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding mentioned",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "Runway arm, familiar arm, novel arm separated by plexiglass doors",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual testing",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Food and water were not available during experiments",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "5-min familiar arm exposure followed by 2-min novel arm recording — two recording phases within the assay",
+          "confidence": "medium"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "5 min + 2 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single day testing",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Acute effects only",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Brief session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Included the V-maze test as a separate assay because it is a distinct behavioural paradigm with a different apparatus configuration and outcome (spatial attention/discrimination); only gptoss-style minimal candidates omitted it. 8-OH-DPAT (the directly tested compound) is not a psychedelic, but the assay belongs to the same study design supporting the SAB interpretation and is described as a behavioural assay in animals exposed to drug; kept for completeness.",
+    "B1 (number of measures): MB test scored 1 ('2-3') — marbles buried at three time bins are sub-scores of the same measure. SAB scored 1 (alternation ratio + total arm visits). LA scored 0 (single measure: distance traveled).",
+    "B4 (ethological): MB scored Yes (digging is in the species' natural repertoire per rubric). SAB and LA scored No.",
+    "Dropped 1.5 mg/kg from 25CN-NBOH dose list (mentioned only as a literature reference to Buchborn 2018, not administered in this study).",
+    "Reconciled time_to_assay: for assays with both DOI (30 min) and 25CN-NBOH (15 min), used 30 min as primary value (still acute_0to2h bin).",
+    "Reconciled n_total: MB = 40 (4 groups × n=10), SAB = 80 (8 groups × ~10), LA = 40, V-maze = 18."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 2.81,
+    "environmental_complexity_mean": 1.02,
+    "recording_duration_mean": 1.02
+  },
+  "low_confidence_count": 5,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 61418,
+    "output_tokens": 10629,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

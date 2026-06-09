@@ -1,0 +1,484 @@
+{
+  "study_id": "Sabanovic2024",
+  "doi": "10.1038/s41380-024-02439-2",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 42,
+    "age_max_days": 70,
+    "evidence": "C57BL/6J mice were between 5- and 6-week-old at arrival, after which they were acclimatized for one week",
+    "confidence": "medium"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 82,
+    "n_female": null,
+    "evidence": "Adult male C57BL/6J mice (Charles River, Kent, UK) were used for all experiments",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        0.5,
+        1.0,
+        2.0
+      ],
+      "doses_raw": "0.5, 1, and 2 mg/kg; main experiments used 2 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "(±)-DOI hydrochloride was dissolved in 0.9% saline... Each animal received only one injection, administered intraperitoneally at 5 ml/kg. A 2 mg/kg dose of (±)-DOI was used for all experiments as it resulted in near-peak acute psychedelic effects",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "using a standardized way of tunnel handling to minimize stress",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "All animals were housed in groups of 3-4 in open-top cages",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12h light/dark cycle (lights off at 7PM), with all procedures done during the light phase",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "yes",
+      "evidence": "open-top cages with sawdust and enrichment available (sizzle nest, and cardboard tunnel and house)",
+      "confidence": "high"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head-twitch / ear-scratch response",
+      "assay_description": "Mice placed in a 42 × 20 × 20 cm clear Plexiglass box and video-recorded for the first 30 min after a single i.p. injection; head-twitches and ear-scratches manually scored. Includes a dose-response cohort (0.5, 1, 2 mg/kg) and confirmation in the three main two-step cohorts.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered intraperitoneally",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "habituated to the recording box... 5 min of free exploration before injection",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice were video-recorded while freely moving in the box",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in the recording box",
+          "confidence": "low"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water in the recording box",
+          "confidence": "low"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "recorded in the first 30 min after injection",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 82,
+        "n_male": 82,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "n group = 8 per dose for dose-response; n Veh = 13, n DOI = 13 (Exp1); n Veh = 15, n DOI = 14 (Exp2); n Veh = 13, n DOI = 14 (Exp3)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI dose-dependently increased head-twitches and ear-scratches relative to saline; 2 mg/kg produced near-peak responses and was used as the standard dose.",
+        "statistics": "Exp 1: t14.9=16.58, P<0.001, d=6.5; Exp 2: t13.3=15.61, P<0.001, d=5.9; Exp 3: t13.4=14.24, P<0.001, d=5.5",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "(±)-DOI induced a high frequency head-twitch response... and ear-scratch response",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "head-twitches and ear-scratches were video recorded and quantified",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Reported as total counts over 30 min",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is explicitly excluded as ethological per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animal tested alone",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning/memory component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "quantified manually by the same trained experimenter",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate analyses only",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "42 × 20 × 20 cm clear Plexiglass box",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "clear Plexiglass box, no refuge",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no bedding reported in the recording box",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in test box",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment in test box",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single chamber",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Focal mouse alone in box",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in test box",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "one 30-min session per mouse",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "first 30 min after injection",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Each animal received only one injection",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline HTR recorded",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only acute recording",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30 min session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Two-step probabilistic reversal learning task",
+      "assay_description": "Operant task in custom 12×12 cm boxes with 5 nose-poke ports; water-restricted mice initiate trial, choose left/right (step 1) leading probabilistically to up/down step-2 ports for water reward. Reward probabilities reversed serially; a single novel transition reversal (TR) was introduced at 1 day (Exp 2) or 1 week (Exp 1 & 3) post-DOI. 90-min sessions, daily.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered intraperitoneally",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Training consisted of multiple stages with increasing complexity",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "freely moving in operant box",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "All animals had a food pellet available in the operant box during behavioural training and testing",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "before",
+          "evidence": "Mice tested in the two-step task were water-restricted for motivation",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 1440,
+          "evidence": "starting one day later, continued tracked their daily task performance over the course of one week; transition reversal one day (Exp 2) or one week (Exp 1 & 3) post-treatment",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 82,
+        "n_male": 82,
+        "n_female": null,
+        "n_per_group_min": 13,
+        "evidence": "Exp 1: nVeh=13, nDOI=13; Exp 2: nVeh=15, nDOI=14; Exp 3: nVeh=13, nDOI=14",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI did not change overall accuracy or trial counts, but when a novel transition reversal was introduced 1 week post-dose (Exp 1), DOI-treated mice adapted faster and uniquely began learning from reward omissions. No effect when reversal occurred 1 day post-dose (Exp 2). When mice received no intervening task experience (Exp 3), DOI mildly slowed adaptation, indicating a time- and experience-dependent effect.",
+        "statistics": "Exp 1 Transition×Outcome P=0.004; Omission-by-transition slope=-0.112 [-0.192,-0.032], P=0.007; Exp 2 all P>0.5; Exp 3 Vehicle line vs one-phase P=0.016; 3-way ANOVA Drug×Experiment P=0.035, ηp²=0.08",
+        "direction": "mixed",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "(±)-DOI's effects on cognitive flexibility were contingent on the timing between drug treatment and the novel reversal, as well as on the nature of the intervening experience",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 3,
+          "value": "7+",
+          "evidence": "trials, correct choices, reward reversals, choice probability trajectories, tau-fast/slow adaptation constants, and logistic regression predictors (Outcome, Transition, Transition×Outcome, Reward-by-transition, Omission-by-transition)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "choice probability in the first 20 post-reversal trials; time series of regression coefficients fitted with nonlinear regression",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Trial-by-trial logistic regression on stay/switch sequences based on previous transitions and outcomes; lagged regression analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Operant nose-pokes, not natural behaviours",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Tested alone",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "probabilistic reversal learning task",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "pyControl for trial events; no pose estimation or ML classifier of behavioural states",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Logistic regression on trial features and exponential fits; no PCA/UMAP/clustering of behavioural profiles",
+          "confidence": "medium"
+        },
+        "raw_total": 6
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "custom-built 12×12 cm operant boxes",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No refuge in operant box",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Solid floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only operant ports",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single operant chamber with ports on one wall, no physical dividers",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Focal mouse alone in operant box",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "All animals had a food pellet available in the operant box during behavioural training and testing; water rewards delivered in-task",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "daily sessions across pre-drug, post-drug week, and 2 post-TR weeks",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "90 min sessions were used at the final training stage and throughout subsequent testing",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 3,
+          "value": "15+",
+          "evidence": "~27 training sessions plus one post-drug week and two post-TR weeks of daily testing",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Pre-drug performances were compared via unpaired t-tests / RM ANOVA",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Testing continued from 24 h to 3 weeks post-injection",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "90 min sessions",
+          "confidence": "high"
+        },
+        "raw_total": 8
+      }
+    }
+  ],
+  "judge_notes": [
+    "Excluded ex vivo MRI analyses (anatomical/structural endpoint, not a behavioural assay) per rubric.",
+    "Consolidated two assays: head-twitch/ear-scratch response and the two-step probabilistic reversal learning task. All three two-step experiments (different TR timing/experience) were merged into a single assay entry per rubric (same paradigm, different manipulations).",
+    "Adopted gptoss's higher B1 score (7+) for the two-step task since the paper reports trials, correct choices, reward reversals, choice probability, tau-fast/slow, and 4-5 logistic-regression predictors — clearly ≥7 measures.",
+    "B3 set to Yes for two-step task: trial-by-trial lagged logistic regression on stay/switch sequences qualifies as transitional/sequential analysis.",
+    "E6 scored 0 for the operant box: ports on a single wall do not constitute physical compartments separated by walls.",
+    "water_restriction set to 'before' for the two-step task (chronic water-restriction protocol for motivation, water available as reward during session).",
+    "Age range extended to cover acclimation + ~3-4 weeks training; conservative bound."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 7.5,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 10.91,
+    "behavioural_complexity_mean": 4.38,
+    "environmental_complexity_mean": 0.68,
+    "recording_duration_mean": 6.13
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 60835,
+    "output_tokens": 5939,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

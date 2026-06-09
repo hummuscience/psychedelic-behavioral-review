@@ -1,0 +1,88 @@
+{
+  "study_id": "Effinger2024",
+  "doi": "10.1038/s41467-024-49741-9",
+  "species": "rat",
+  "strain": "Sprague Dawley",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 56,
+    "age_max_days": 84,
+    "evidence": "Male and female Sprague Dawley rats (~8 weeks old) ... Animals underwent fiber photometry/behavioral recordings at ~12 weeks of age.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male and female Sprague Dawley rats (200-400g, ~8-weeks old at arrival)",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocin",
+  "dosing": [
+    {
+      "compound": "Psilocin",
+      "doses_mg_per_kg": [
+        2.0
+      ],
+      "doses_raw": "2 mg/kg, s.c.",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "psilocin (Cayman Chemical) was dissolved in 2% glacial acetic acid and brought up to a 1 mg/ml dilution in 0.9% saline. Animals then received subcutaneous (s.c.) injections of either vehicle (2% glacial acetic acid in 0.9% saline) or psilocin",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "no explicit handling protocol described",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "Following intracranial surgery at ~8 weeks of age, animals were single-housed in flat-lid cages with waterspout access, and food bowls to avoid damage to implants.",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "12 hr light/dark cycle (direction not stated)",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not mentioned",
+      "confidence": "low"
+    }
+  },
+  "assays": [],
+  "judge_notes": [
+    "Merged candidates' separate 'Open Field habituation' and 'Air-puff' assays into a single assay because they occur in the same apparatus, same recording session (10-min habituation immediately followed by air-puff trials), and measure overlapping locomotor/threat-response variables. Per rubric, dose/timepoint/active-vs-passive subgroup splits do not create separate assays.",
+    "Excluded c-Fos histology (non-behavioural), fiber photometry signal analysis (neural recording), and CORT ELISA (physiological) from assay list per rubric.",
+    "Excluded restraint stress as separate assay - it is a stressor manipulation prior to the air-puff recording, not an independent behavioural test.",
+    "Group housing scored 'no' because methods explicitly state animals were single-housed after surgery (during the experimental period).",
+    "D2 scored 1 (15-60 min): habituation (10 min) + post-puff/ISI period (5 min minimum) likely exceeds 15 min total recording per session, though exact total session length not explicitly stated.",
+    "DOI backfilled from Zotero (BetterBibTeX citekey lookup): was None, now '10.1038/s41467-024-49741-9'"
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0,
+    "environmental_complexity_max": 0,
+    "recording_duration_max": 0,
+    "behavioural_complexity_mean": 0,
+    "environmental_complexity_mean": 0,
+    "recording_duration_mean": 0
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 58233,
+    "output_tokens": 4187,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

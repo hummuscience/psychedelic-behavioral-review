@@ -1,0 +1,724 @@
+{
+  "study_id": "Cunningham2023",
+  "doi": "10.1021/acschemneuro.2c00597",
+  "species": "mouse",
+  "strain": null,
+  "age": {
+    "value": "mixed",
+    "age_min_days": 120,
+    "age_max_days": 365,
+    "evidence": "Auxilin KO treated with (R)-Ariadne (n = 7, age = 4-9 months, 3 of 12 months, sex balanced). HTR/OFT/EPM/NSF cohort ages not explicitly stated.",
+    "confidence": "medium"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "pilot study with mixed cohorts of males and females of different ages; sex balanced",
+    "confidence": "medium"
+  },
+  "psychedelic": "Ariadne (and analogs), DOPR",
+  "dosing": [
+    {
+      "compound": "Ariadne",
+      "doses_mg_per_kg": [
+        6.0,
+        10.0,
+        30.0
+      ],
+      "doses_raw": "6 and 10 mg/kg (NSF/EPM); 10 mg/kg and 30 mg/kg (OFT/HTR); 10 mg/kg i.p. (Aux KO)",
+      "vehicle": "saline",
+      "route": "multiple",
+      "schedule": "acute",
+      "evidence": "(R)-Ariadne treatment groups received 10 mg/kg body weight of (R)-Ariadne dissolved in 0.85% saline with the addition of 2 molar equivalents of glacial acetic acid... injected intraperitoneal; administered subcutaneously for HTR/OFT/EPM/NSF",
+      "confidence": "high"
+    },
+    {
+      "compound": "DOPR",
+      "doses_mg_per_kg": [],
+      "doses_raw": "dose-response curves shown; peak HTR at 1 mg/kg s.c.",
+      "vehicle": "not_reported",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "racemic DOPR... 1 mg/kg (s.c. administration)",
+      "confidence": "high"
+    },
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [],
+      "doses_raw": "HTR dose-response shown (Figure 6D)",
+      "vehicle": "not_reported",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "HTR dose-response curves for DOPR, Ariadne, and its analogs (Figure 6D)",
+      "confidence": "low"
+    },
+    {
+      "compound": "4C-TFM",
+      "doses_mg_per_kg": [],
+      "doses_raw": "HTR dose-response shown",
+      "vehicle": "not_reported",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "HTR of (R)-Ariadne and (rac)-4C-TFM was completely inhibited by MDL100,907",
+      "confidence": "medium"
+    },
+    {
+      "compound": "MDL100907",
+      "doses_mg_per_kg": [
+        0.01,
+        0.032
+      ],
+      "doses_raw": "0.01 and 0.032 mg/kg, i.p., 15 min prior",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Effect of 5-HT2A receptor antagonist MDL100907 (0.01 and 0.032 mg/kg, i.p., 15 min prior) on (R)-Ariadne (10 mg/kg, s.c.)-induced HTR",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not addressed in methods",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "not addressed in methods",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "not addressed in methods",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not addressed in methods",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head Twitch Response (HTR)",
+      "assay_description": "Head twitch counts scored over a 15 min window (t = 5-20 min post s.c. injection); dose-response for DOPR, Ariadne enantiomers and analogs; antagonist blockade with MDL100907; time course also reported.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "10 mg/kg, s.c.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not described",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "freely moving observation; no restraint mentioned",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "standard HTR chamber; no food present during recording",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "standard HTR chamber; no water present during recording",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 5,
+          "evidence": "HTR behavior was assessed for 15 min (t = 5-20 min post subcutaneous injection)",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 5,
+        "evidence": "n = 5/group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Ariadne induced a dose-dependent but markedly attenuated HTR relative to DOPR (>3-fold lower counts, peak shifted to 10 mg/kg vs 1 mg/kg for DOPR). HTR was abolished by 5-HT2A antagonist MDL100907, confirming 5-HT2A mediation. 5C-D (α-propyl) was indistinguishable from vehicle.",
+        "statistics": "One-way ANOVA with Tukey's post hoc; **** p < 0.0001",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "racemic Ariadne showed a markedly attenuated HTR response (> 3-fold decrease in HTR count per 15 min) with the maximum at a one-log higher dose (10 mg/kg, s.c.)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "head twitch count",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Time course of HTR events in vehicle, DOPR, and (R)-Ariadne-treated mice (Figure 6B)",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is excluded from ethological behaviours per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "manual scoring",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate analysis",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "standard HTR observation chamber",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single chamber",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individual testing",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in chamber",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "single 15 min session per mouse",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "HTR behavior was assessed for 15 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "single test day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "acute only",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "<6 h session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "5 min novelty-induced locomotion in open field arena tracked with Noldus EthoVision; total distance and time moving measured for (R)-Ariadne (10, 30 mg/kg s.c.) and DOPR.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "administered subcutaneously",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not described",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "freely moving in arena",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in arena during test",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water in arena during test",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": null,
+          "evidence": "acute test post s.c. injection (timing not explicitly stated in min)",
+          "confidence": "medium"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "n = 8/group, administered subcutaneously",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "(R)-Ariadne produced a minor sedative effect at 10 mg/kg and marked sedation at 30 mg/kg in the open field. DOPR showed no significant locomotor effect with a trend toward increased locomotion at 1 mg/kg.",
+        "statistics": "",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "minor sedative effect at the peak HTR dose of (R)-Ariadne (10 mg/kg, s.c.) and a marked sedation at 30 mg/kg",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Total distance traveled and % time spent moving",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "totals over 5 min only",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "locomotion only",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Noldus EthoVision (position tracking, score 0 per rubric)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "open field arena",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "open field",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individual testing",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "5 min single session",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "videotaped for 5 minute periods",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "single test day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "acute only",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "<6 h",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "Elevated Plus Maze",
+      "assay_description": "Time spent in open vs closed arms and arm entries recorded at 30 min and 4 h post s.c. injection of (R)-Ariadne or (rac)-DOPR.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "30 min and 4 h post a single subcutaneous injection",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not described",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "freely moving",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in maze during test",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water in maze during test",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 30,
+          "evidence": "30 min and 4 h post a single subcutaneous injection",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 10,
+        "evidence": "n = 10/group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "(R)-Ariadne and (rac)-DOPR decreased time spent in and entries into the open arms at 30 min, indicating an acute anxiogenic-like effect; effect reduced by 4 h.",
+        "statistics": "Two-way ANOVA with Dunnett's post hoc; **** p < 0.0001",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "decreased entries and time spent in the open arms of the elevated plus maze (EPM), indicating an acute anxiogenic-like effect of (R)-Ariadne",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "time in open vs closed arms and arm entries",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "totals only",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "zone preference measure",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "innate avoidance",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not specified beyond standard tracking",
+          "confidence": "medium"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "elevated plus maze",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EPM closed arms do not count as shelter per rubric",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "EPM arms not separate enclosed compartments per rubric",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individual testing",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "recorded at 30 min and 4 h post-injection",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "duration not explicitly stated; standard EPM ~5 min",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "both timepoints on same day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "longest interval 4 h <24 h",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "<6 h sessions",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Merged candidate assay lists into 6 distinct paradigms: HTR, OFT, EPM, NSF, Balance Beam, Hind Limb Clasping. Treated different drugs/doses within HTR (DOPR, Ariadne, analogs, MDL100907 antagonism) as the SAME assay per rubric.",
+    "Strain: glm asserted 'C57BL/6J' and 'male only' without textual evidence in the paper; overrode to null and sex='both' based on the explicit Aux KO methods statement of 'sex balanced'.",
+    "Housing items set to not_reported because paper does not describe handling, group housing, light cycle, or enrichment for behavioral cohorts.",
+    "Balance beam and hind limb clasping: scored D1=Multiple sessions and D3=2-7 days because pretreatment and post-treatment behavioral data were both collected and reported 1 week apart for the same assay.",
+    "NSF: B4 ethological scored 1 (feeding is a natural behaviour). E8 food/water scored 1 because the food pellet is physically present in the apparatus.",
+    "OFT B1: candidates split between 1 (qwen/gptoss) and 2 (glm); chose score=1 (2-3 measures) reflecting two reported measures (distance and % time moving).",
+    "Hind limb clasping setup_restrain=yes (animal lifted by tail during recording).",
+    "DOPR/DOI exact doses for HTR dose-response curves not numerically stated in the markdown text; doses_mg_per_kg left empty with low confidence where unclear."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 4.09,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 0.23,
+    "recording_duration_mean": 2.04
+  },
+  "low_confidence_count": 11,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 93727,
+    "output_tokens": 12933,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

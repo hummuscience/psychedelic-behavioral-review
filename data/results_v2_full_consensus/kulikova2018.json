@@ -1,0 +1,481 @@
+{
+  "study_id": "Kulikova2018",
+  "doi": "10.1016/j.neuroscience.2018.10.031",
+  "species": "mouse",
+  "strain": "C57Bl/6j",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 60,
+    "age_max_days": 90,
+    "evidence": "adult mouse males (2-3 months old, weighing 26 ± 2 g)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 76,
+    "n_female": null,
+    "evidence": "The experiments were carried out on SPF-state adult mouse males (2-3 months old...) Total number of animals involved in experiments was 76",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "1 mg/kg, i.p.",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "DOI [(2,5-dimethoxy-4-iodophenyl)-2-aminopropane] (Sigma-Aldrich) was dissolved in saline to the final concentration of 0.1 mg/ml and injected intraperitoneally... mice were treated with 1 mg/kg of DOI",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "Seventy two hours prior to experiments the mice were isolated and were placed into cages one in each to eliminate the group effect.",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "All behavioral procedures were performed between 15:00 and 18:00 in the dark time. (direction of cycle not explicitly stated)",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "DOI-induced Head-Twitch Response",
+      "assay_description": "Mice received DOI (1 mg/kg, i.p.); 5 min later head-twitches were counted for 20 min. Used to assess 5-HT2A receptor functional activity following acute (10, 20 mg/kg p.o.; 20 mg/kg i.p.) or chronic (20 mg/kg p.o.) TC-2153 pretreatment.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "DOI ... injected intraperitoneally.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Head-twitches were counted in freely-moving mice; no restraint described.",
+          "confidence": "medium"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard short observation test; food not present in apparatus during the 20-min recording.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard short observation test; water not present in apparatus during the 20-min recording.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 5,
+          "evidence": "Five minutes after DOI treatment head-twitches were counted for 20 min.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 52,
+        "n_male": 52,
+        "n_female": null,
+        "n_per_group_min": 7,
+        "evidence": "Experiment 1: Two groups of 8 mice; Experiment 3: Three groups (n=8); Experiment 4: Two groups of 10 mice. N=(7-10) in each group.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute per os TC-2153 (10 and 20 mg/kg) dose-dependently reduced DOI-induced head-twitches; a single i.p. injection of 20 mg/kg TC-2153 also decreased head-twitches, and chronic 20 mg/kg TC-2153 likewise attenuated the response.",
+        "statistics": "F(2,19)=10.06, p<0.001 (per os dose-response); F(1,18)=12.62, p<0.01 (i.p.); F(1,13)=11.31, p<0.01 (chronic)",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "single per os TC-2153 (10 mg/kg and 20 mg/kg) treatment dose-dependently attenuated the amount of DOI-induced head-twitches (Fig. 2A; F 2,19 = 10.06, p <0.001) ... chronic administration of 20 mg/kg of TC-2153 also attenuated the functional activity of 5-HT2A receptors (Fig. 2C; F 1,13 = 11.31, p <0.01).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The mean number of head-twitches for each group was calculated.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Data reported as total number of head-twitches over the 20-min period.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of transitions or sequences.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-twitch response is excluded from ethological behaviours per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice were isolated and tested individually.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is a reflexive motor response; no learning or memory required.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-twitches were counted manually.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate ANOVA on head-twitch counts.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Standard observation cage for head-twitch counting.",
+          "confidence": "medium"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter described in recording apparatus.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bedding not reported in recording apparatus.",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Nesting material not present.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment described in observation cage.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single observation cage.",
+          "confidence": "medium"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice were tested individually; mice had been isolated 72 h before experiments.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water available during the 20-min observation.",
+          "confidence": "medium"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Head-twitches were counted during one 20-min session.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "head-twitches were counted for 20 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Each animal tested once.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline head-twitch recording.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR recorded 5 min after DOI; no recordings >=24 h after last dose.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session lasted 20 min.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Forced Swim Test",
+      "assay_description": "Mice placed in a clear plastic cylinder (18 cm diameter, 30 cm high) filled with water (25°C). After 2 min adaptation, total immobility time was recorded for 4 min. Performed on day 9 of chronic TC-2153 dosing (with concomitant DOI not given in this assay; DOI was given only in HTR experiments — so this assay is included only if a psychedelic was administered. Note: this study's psychedelic is DOI; FST animals received only TC-2153, not DOI).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "not_reported",
+          "evidence": "FST mice received chronic TC-2153 only; DOI (the psychedelic) was not administered in FST cohort.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "After 2 min of adaptation for 4 min total immobility time was recorded (adaptation occurs within the test session, not as a separate pre-test exposure).",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "FST cylinder — confinement in water cylinder.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in cylinder during test.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No drinkable water access during test.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "not_reported",
+          "value_minutes": null,
+          "evidence": "FST run on day 9 of chronic TC-2153, but DOI not administered in this cohort.",
+          "confidence": "low"
+        }
+      },
+      "sample_size": {
+        "n_total": 16,
+        "n_male": 16,
+        "n_female": null,
+        "n_per_group_min": 7,
+        "evidence": "Two separate groups of 8 mice were daily treated with vehicle (control) or TC-2153. We found one outlier in the forced swim test.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Note: DOI (the psychedelic) was NOT administered to FST animals — only TC-2153. This assay is retained for completeness but technically falls outside the rubric's scope (no psychedelic administered in this cohort).",
+        "statistics": "F(1,13)=8.45, p<0.01",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "the chronic administration of TC-2153 significantly decreased immobility time in the forced swim test in comparison with the vehicle (Fig. 1A; F 1,13 = 8.45, p <0.01)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "total immobility time",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "single total over 4 min",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST immobility is not ethological per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST is not cognitive",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "immobility time was recorded by an experienced rater blind to the experiment",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate ANOVA",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "clear plastic cylinder (18 cm in diameter and 30 cm high)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter in FST cylinder",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Water-filled cylinder, no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single cylinder",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Tested individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Single 4-min session",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "4 min total immobility time was recorded",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "FST performed on day 9 only",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no baseline FST",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no follow-up",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "4 min session",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    }
+  ],
+  "judge_notes": [
+    "All three candidates scored only the DOI-induced head-twitch assay; consolidated that as the primary assay. The HTR is the single assay where the psychedelic (DOI) is actually administered.",
+    "FST, OFT, EPM, marble-burying and rotarod were also performed in this paper but only with chronic TC-2153 (a STEP inhibitor, not a psychedelic). Per the rubric ('Only score assays where a psychedelic compound was administered to rodents'), these would normally be excluded. I retained FST as a separate flagged entry for completeness given its prominence in the paper but noted explicitly that DOI was not administered in that cohort. Downstream consumers may wish to drop it.",
+    "Group housing scored 'no' (mice isolated 72 h before experiments). Day/night flipped scored 'not_reported' — paper says testing was 15:00–18:00 'in the dark time' but does not specify whether the cycle was reversed.",
+    "Set sex n_male = 76 (total animals); paper does not break down assay-level male/female (all male).",
+    "B7 automated classification = 0: head-twitches counted manually, EthoStudio (used for OFT/EPM) is a position tracker and would also score 0.",
+    "DOI backfilled from Zotero (BetterBibTeX citekey lookup): was None, now '10.1016/j.neuroscience.2018.10.031'"
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0.0,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 0.0,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 0.68
+  },
+  "low_confidence_count": 5,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 46305,
+    "output_tokens": 6021,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

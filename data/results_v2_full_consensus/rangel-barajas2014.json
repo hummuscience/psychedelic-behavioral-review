@@ -1,0 +1,287 @@
+{
+  "study_id": "Rangel-Barajas2014",
+  "doi": null,
+  "species": "mouse",
+  "strain": "DBA/2J",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 56,
+    "age_max_days": 56,
+    "evidence": "Mice were received when they were approximately 8 weeks old.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male DBA/2J and C57BL/6J mice were purchased from Jackson Laboratories",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        1.0,
+        5.0
+      ],
+      "doses_raw": "1 mg/kg and 5 mg/kg of DOI",
+      "vehicle": "DMSO",
+      "route": "i.p.",
+      "schedule": "repeated",
+      "evidence": "intraperitoneal (i.p.) injection of vehicle (5% DMSO in sterile deionized water) or test drug. Five minutes later the DOI was administered ... DOI (5 mg/kg) ... administered every other day (48 h) or on a weekly basis",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Mice were housed at ≤5 animals per cage with unlimited access to food and fresh water.",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head Twitch Response (HTR)",
+      "assay_description": "Mice placed individually in an open-ended Plexiglas cylinder (21 × 34 cm) with a clean paper towel floor, habituated 15 min, injected i.p. with vehicle/test drug, then 5 min later with DOI. Head twitches were counted visually by two observers in 5-min intervals over 30 min (or 2 h in some experiments). Tested across multiple dosing regimens (daily, every-other-day, weekly) and with multiple D2-like antagonists.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "intraperitoneal (i.p.) injection of vehicle ... DOI was administered",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Animals were allowed to habituate to the cylinder for 15 min prior to the intraperitoneal (i.p.) injection",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "placed individually in an open ended Plexiglas cylinder",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Testing apparatus is a Plexiglas cylinder with a paper towel floor; no food in apparatus during recording",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water present in the testing cylinder during recording",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Five minutes later the DOI was administered and returned to the cylinder ... head twitches started at approximately 90 s after DOI injection",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 4,
+        "evidence": "n = 6 (Fig 1); n = 4 (1 mg/kg, Fig 2); n = 9 (Fig 3A); n = 6 (Fig 3B); n = 7 (Fig 4); n = 6 (Fig 5); n = 8 (Fig 6)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI dose-dependently increased head-twitch frequency in DBA/2J mice (5 mg/kg > 1 mg/kg), with DBA/2J showing significantly more HTRs than C57BL/6J. Daily dosing produced tolerance, while every-other-day or weekly dosing did not. D2-like antagonists (haloperidol, pimozide, benperidol, N-methylbenperidol, SV 293, SV-III-130s) significantly attenuated DOI-induced HTR; eticlopride did not.",
+        "statistics": "Strain p<0.001; tolerance F(6,48)=55.3, p<0.0001; antagonist effect F(3.037,15.9)=18.62, p<0.0001; benperidol F(5,25)=47.5, p<0.0001; N-methylbenperidol F(5,25)=8.08, p<0.0001; haloperidol F(5,25)=14.7, p<0.0001; pimozide F(5,47)=3.03, p=0.01; SV compounds F(4,30)=16.31, P<0.0001",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "DBA/2J mice exhibited a significantly higher response compared to C57BL/6J ... intensity and cumulative number of head twitches was found to be greater at the higher dose of DOI ... significant reduction in the number of head twitches observed on each consecutive day",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "number of head twitches counted by two observers",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "the number of head twitches was recorded in 5-min intervals ... temporal effect over a 30 min time period",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no analysis of transitions or behavioural sequences",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is not a natural ethological behaviour (per rubric)",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "placed individually in an open ended Plexiglas cylinder",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning or memory component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Two observers counted the number of head twitches by visual examination",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate ANOVA only; no PCA or clustering",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "open ended Plexiglas cylinder (21 × 34 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "open-ended cylinder, no refuge",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "with a clean paper towel floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting material in apparatus",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment objects in testing apparatus",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "open-ended Plexiglas cylinder",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "placed individually in an open ended Plexiglas cylinder",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food or water in testing cylinder",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "DOI was administered on days 1, 2, 3, 4, 11 and 18 ... weekly injections, VC#1-VC#5",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "We examined the cumulative number of head twitches over a 2 h period of time",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 2,
+          "value": "8-14",
+          "evidence": "Weekly vehicle control tests (VC#1-VC#5) alternating with weekly test drug administration plus tolerance experiment on days 0,1,2,3,4,11,18",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "On day 0 mice were injected with vehicle and the number of head twitches was determined",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "On day 11 DOI ... was again administered ... On day 18, animals were administered DOI",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "longest session 2 h, well under 6 h",
+          "confidence": "high"
+        },
+        "raw_total": 7
+      }
+    }
+  ],
+  "judge_notes": [
+    "All three candidates identified a single HTR assay; consolidated as one assay per rubric (same paradigm under different drug/dose/regimen conditions = 1 assay).",
+    "B1 scored 0 (single measure: head twitch count); gptoss's '2-3' was inconsistent because cumulative vs binned counts are the same measure analyzed differently.",
+    "D2 scored 2 (61 min–6 h) because the paper explicitly reports cumulative HTR over a 2 h period.",
+    "D3 scored 2 (8–14 days): weekly VC tests across ~5 weeks plus tolerance days 0,1,2,3,4,11,18 yields >7 recording days for this assay.",
+    "E3 scored 1 (paper towel floor counted as substrate per rubric — present in apparatus during recording).",
+    "Vehicle harmonized to 'DMSO' (5% DMSO in deionized water explicitly stated).",
+    "Schedule = 'repeated' since DOI was given on multiple days across dosing protocols."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 9.55,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 1.36,
+    "recording_duration_mean": 9.55
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 48701,
+    "output_tokens": 3778,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

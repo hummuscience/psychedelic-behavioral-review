@@ -1,0 +1,675 @@
+{
+  "study_id": "Camargo2024",
+  "doi": null,
+  "species": "rat",
+  "strain": "Wistar",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 60,
+    "age_max_days": 60,
+    "evidence": "A total of 104 male Wistar rats, aged 60 days, weighing on average 250 g",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 104,
+    "n_female": null,
+    "evidence": "A total of 104 male Wistar rats",
+    "confidence": "high"
+  },
+  "psychedelic": "Ayahuasca (DMT + harmine + harmaline + tetrahydroharmine)",
+  "dosing": [
+    {
+      "compound": "Ayahuasca",
+      "doses_mg_per_kg": [],
+      "doses_raw": "1, 2, and 4 mL/kg of undiluted AYA (DMT 1.40 mg/mL, harmine 2.43 mg/mL, harmaline 0.10 mg/mL, tetrahydroharmine 1.43 mg/mL)",
+      "vehicle": "other",
+      "route": "p.o.",
+      "schedule": "repeated",
+      "evidence": "The animals received gavage administration of the test substance (saline solution or 1, 2, or 4 mL/kg of AYA) for three consecutive days",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Paper describes housing and habituation to facility but not a handling protocol",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "The animals were housed 4 per cage",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "with a 12-h light/dark cycle",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "No mention of home-cage enrichment",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Elevated Plus Maze",
+      "assay_description": "5-min test in a dark room with red light; rats individually explored EPM freely. Parameters: time spent and entries in open/closed arms, total locomotion, average velocity. Scored with ANYmaze.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "p.o.",
+          "evidence": "gavage administration of the test substance",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No pre-test EPM habituation described",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "allowing free exploration",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Food was not present in EPM during the 5-min test",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Water was not present in EPM during the 5-min test",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "short_term_1to7d",
+          "value_minutes": 2880,
+          "evidence": "Twenty-four hours after the third (and last) pretreatment, the rats underwent the CLP procedure... Behavioral tests were performed on days 1-4 post-CLP procedure",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 12,
+        "evidence": "N = 12-13 rats/group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "AYA pretreatment at all tested doses increased time spent in the open arms and decreased time spent in the closed arms in both Sham and CLP rats, indicating an anxiolytic-like effect. CLP increased time in closed arms vs Sham-saline.",
+        "statistics": "F(2,36)=4.518, p=0.0087 (interaction); F(2,36)=57.13, p<0.0001 (AYA); F(10,64)=11.67, p=0.0051 (CLP); CLP+AYA 1 mL/kg p=0.0170, 2 and 4 mL/kg p<0.0001 (open arm time)",
+        "direction": "increase",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "all doses of AYA increased the time spent in the open arms compared to CLP rats receiving saline",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "time spent and number of entries in the open and closed arms, total locomotion, and average locomotion velocity",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total values over 5-min session only",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition/sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Spatial/locomotor measures only",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individually tested",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate anxiety assay",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "assessed with the software ANYmaze (position tracking)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVAs only",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Elevated plus maze",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EPM closed arms do not count as shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bare EPM surface, cleaned with 10% alcohol",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "EPM arms are open-ended extensions, not enclosed compartments per rubric",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "animals were individually tested",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "tested in the EPM for a period of 5 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "5 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "EPM performed once per animal",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug EPM baseline reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Behavioral tests performed on days 1-4 post-CLP, >24 h after last AYA dose",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5-min session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "5-min exploration of a 100 × 100 × 40 cm arena under red light. Measured: locomotion, center visits, grooming, average velocity, rearing, defecations. Scored by two blinded evaluators.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "p.o.",
+          "evidence": "gavage administration of the test substance",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "OFT habituation not described for the OFT session itself",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "allowed to freely explore for 5 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in OFT arena",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in OFT arena",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "short_term_1to7d",
+          "value_minutes": null,
+          "evidence": "Behavioral tests were performed on days 1-4 post-CLP procedure",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 9,
+        "evidence": "N = 9-13 rats/group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "AYA pretreatment at all doses prevented the CLP-induced increase in grooming and rearing. AYA 1 mL/kg increased locomotion in Sham rats. No significant effects on average velocity, center entries, or defecations after post-hoc testing.",
+        "statistics": "Grooming: F(10,64)=73.31, p<0.0001 (CLP); F(2,36)=49.09 (interaction); AYA 1,2,4 mL/kg p<0.0001. Rearing: F(10,64)=11.73, p=0.0050; F(2,36)=5.546, p=0.0031 (interaction); all doses p<0.0001 vs CLP-saline.",
+        "direction": "mixed",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "All doses of AYA in the CLP group completely prevented the increase in grooming behavior... significantly reduced rearing compared to saline-treated CLP rats",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "locomotion, number of center visits, grooming, average velocity, rearing, and the number of defecations",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Totals over 5-min session only",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "grooming and rearing scored as distinct natural behaviours",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individually placed",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Exploratory/emotional, not learning",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Animal behavior was scored by two evaluators blind to treatment",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVAs",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Open field arena",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bare floor divided into 12 quadrants, cleaned with alcohol",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single open arena",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Animals individually placed",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "freely explore for 5 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "5 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "OFT performed once per animal",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline OFT",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Tested 1-4 days post-CLP, >24 h after last AYA dose",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5 min",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Object Recognition Test",
+      "assay_description": "Conducted in OFT arena on days 3 and 4 post-CLP. Includes habituation, then STM and LTM trials with novel-vs-familiar object exposure. Measures: exploration (sniffing/touching) time and recognition index.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "p.o.",
+          "evidence": "gavage administration of the test substance",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "24 h before the test, the animals explored the OFT arena for 10 min to allow for habituation... for three consecutive days before the test, the animals explored the OFT arena for 5 min",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Animals freely explored the arena",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in arena during ORT",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in arena during ORT",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "short_term_1to7d",
+          "value_minutes": null,
+          "evidence": "object memory on days 3 and 4 post-CLP",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 13,
+        "evidence": "N = 13 rats/group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "A significant main effect of AYA dosage was detected on the recognition index, and significant interactions were observed for exploration differences (dosage × procedure, dosage × memory type, three-way), but post-hoc tests did not identify significant group differences.",
+        "statistics": "F(2,46)=2.943, p=0.0423 (Dosage); F(2,46)=3.568, p=0.0207 (Dosage×Procedure); F(2,46)=4.845, p=0.0050 (Dosage×Memory); F(46,64)=5.732, p=0.0206 (three-way)",
+        "direction": "no_effect",
+        "dose_dependent": "not_reported",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "Post-hoc analyses did not identify any statistically significant differences among the groups",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "exploration time of each object; ORT recognition index; difference of exploration between the two objects",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Totals/indices only",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Exploration time of objects scored as a single measure, not as distinct ethological acts",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animal alone",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "evaluates the memory of object location and identification",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Manual scoring",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate/ANOVA",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "conducted in the OFT arena",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bare floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Novel objects are test stimuli, not enrichment",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "OFT arena",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Animal alone",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "None",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Two trials (sample + test) for STM and again for LTM on days 3 and 4 post-CLP",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Trials short (habituation 10 min; trials not exceeding 15 min)",
+          "confidence": "medium"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "object memory on days 3 and 4 post-CLP",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug ORT baseline",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Days 3-4 post-CLP, >24 h after last AYA dose",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Short trials",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    }
+  ],
+  "judge_notes": [
+    "Three behavioural assays identified: EPM, OFT, and ORT. All candidates agreed on this set.",
+    "doses_mg_per_kg left empty because AYA is a multi-compound decoction administered by mL/kg; component doses are in dosing evidence.",
+    "D5_followup scored Yes for all assays: testing occurred 1-4 days post-CLP, which is >=24 h after the final AYA pretreatment.",
+    "B7 scored 0 for EPM despite ANYmaze use (position tracking, not behavioural classification per rubric).",
+    "B4 scored 0 for ORT (object exploration time treated as a single composite measure, not distinct ethological acts) — overrode gptoss candidate.",
+    "ORT D1/D3 set to Multiple/2-7 because the test spans STM (day 3) and LTM (day 4) trials with separate recording sessions."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 4.09,
+    "behavioural_complexity_mean": 2.92,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 2.27
+  },
+  "low_confidence_count": 5,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 79728,
+    "output_tokens": 7499,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

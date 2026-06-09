@@ -1,0 +1,484 @@
+{
+  "study_id": "Afrooghe2025",
+  "doi": null,
+  "species": "mouse",
+  "strain": "NMRI",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 35,
+    "age_max_days": 42,
+    "evidence": "Male Naval Medical Research Institute (NMRI) mice aged 5-6 weeks (outbred, mean age: 5.5)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male Naval Medical Research Institute (NMRI) mice",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocin",
+  "dosing": [
+    {
+      "compound": "Psilocin",
+      "doses_mg_per_kg": [
+        0.3,
+        1.0,
+        3.0
+      ],
+      "doses_raw": "0.3, 1, and 3 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Psilocin hydrochloride and 1-MT were dissolved in physiological saline (NaCl 0.9%) and administered via the intraperitoneal (IP) route. Psilocin was administered at doses of 0.3, 1, and 3 mg/kg",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Paper does not describe a separate handling/habituation-to-experimenter protocol beyond apparatus habituation.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "The mice were housed in cages with a floor area of 500 cm2 (cage density not stated)",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "light-dark cycle (lights on from 8:00 AM to 8:00 PM)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Home-cage enrichment is not addressed in the methods.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Scratching Behavior (Compound 48/80 itch model)",
+      "assay_description": "Mice were placed in acrylic boxes (10x10x13 cm) with bedding. Psilocin (0.3, 1, 3 mg/kg, i.p.) was administered 1 h before intradermal C 48/80 (100 µg/site) to the shaved rostral back. Scratching bouts were quantified manually from video over 60 min. A psilocin (1 mg/kg) + 1-MT (0.3 mg/kg) co-administration arm was also tested.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Psilocin... administered via the intraperitoneal (IP) route",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Before the commencement of behavioral experiments, a habituation process was undertaken for 30 min daily. During this period, animals were placed in acrylic boxes measuring 10 × 10 × 13 cm",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "mice were briefly removed from their enclosures to receive injections, after which they were smoothly returned to their original boxes",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Testing occurred in acrylic recording boxes; no food was provided in the apparatus during recording.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Testing occurred in acrylic recording boxes; no water was provided in the apparatus during recording.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 60,
+          "evidence": "Psilocin was administered 1 h prior to the injection of C 48/80. Scratching behavior was recorded for 60 min following the C 48/80 injection.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 48,
+        "n_male": 48,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "Each group comprised eight randomly selected animals (Sham, Ctrl, Psil 0.3, Psil 1, Psil 3, Psil + 1-MT)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocin (0.3, 1, 3 mg/kg, i.p.) dose-dependently reduced C 48/80-induced scratching bouts, with 1 mg/kg producing the largest effect. Co-administration of psilocin (1 mg/kg) with 1-MT (0.3 mg/kg) further enhanced antipruritic action.",
+        "statistics": "F(4,35) = 50.49; P < 0.0001 (Ctrl vs Sham); Psil 0.3 P<0.01, Psil 1 P<0.0001, Psil 3 P<0.05 vs Ctrl; F(3,28) = 65.89; P<0.05 (Psil 1 + 1-MT vs Psil 1)",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Three different doses of psilocin (0.3, 1, and 3 mg/kg) were able to mitigate pruritus compared to the 'Ctrl' group significantly... giving 1-MT (0.3 mg/kg) alongside the most optimal dose of psilocin (1 mg/kg) reduced pruritus more potently as compared to giving psilocin (1 mg/kg) alone",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Only scratching bouts were quantified.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Scratching bouts during a 60-min period (single total).",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition/sequence analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Scratching behavior involves the raising of the hind paw toward the injection area — a natural ethological response.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice tested individually.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate itch response; no learning/memory requirement.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "blinded investigators analyzed the recorded footage to quantify scratching attempts",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVA only.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "acrylic boxes measuring 10 × 10 × 13 cm",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No refuge in the acrylic box.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Each box contained a small amount of bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects described.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single acrylic box compartment.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each mouse tested individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in test apparatus.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Scratching behavior was recorded for 60 min following the C 48/80 injection.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "60-min recording",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "each mouse used only once throughout the experiments",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline recording reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No ≥24-h follow-up.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session <6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Head-Twitch Response (HTR)",
+      "assay_description": "Mice were placed in acrylic boxes (10x10x13 cm) with bedding. HTR was counted manually from video for 15 min following i.p. psilocin (0.3, 1, 3 mg/kg) or saline vehicle.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Psilocin... administered via the intraperitoneal (IP) route",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Before the commencement of behavioral experiments, a habituation process was undertaken for 30 min daily. During this period, animals were placed in acrylic boxes",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice freely moved within the acrylic boxes; no restraint described.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Recording occurred in acrylic boxes; no food in apparatus.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Recording occurred in acrylic boxes; no water in apparatus.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "HTR was assessed for 15 min following the administration of psilocin",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 32,
+        "n_male": 32,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "'Vehicle-HTR' group and 'Psil-HTR' groups at 0.3, 1, 3 mg/kg, each n=8",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocin at 1 and 3 mg/kg significantly increased head-twitch counts vs vehicle, with a bimodal temporal peak at 3–6 min and 9–12 min post-injection.",
+        "statistics": "P<0.0001 (1 mg/kg) and P<0.001 (3 mg/kg) vs Vehicle-HTR; bimodal: P<0.0001 and P<0.001 for 3-6 and 9-12 min windows",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "when administered at 1 and 3 mg/kg, psilocin was able to induce hallucination in mice as compared to the vehicle group (P < 0.0001 and P < 0.001 respectively)... the most hallucinogenic effects of psilocin were documented during 3-6 min, and again at 9-12 min after the injection",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Number of head-twitch responses only.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Bimodal within-session pattern: 3-6 min and 9-12 min after injection.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence/transition analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is a pharmacologically-evoked response, explicitly excluded from ethological behaviours.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Tested individually.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "the number of HTR was recorded manually by a single blinded observer",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVA only.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "acrylic boxes measuring 10 × 10 × 13 cm",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No refuge inside the acrylic box.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Each box contained a small amount of bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects described.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single compartment acrylic box.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice recorded individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in test apparatus.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "HTR was assessed for 15 min following the administration of psilocin",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "15-min recording",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "each mouse used only once throughout the experiments",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No ≥24-h follow-up.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session <6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Two assays retained: scratching behavior (60-min C48/80 itch model) and HTR (15-min). All candidates agreed.",
+    "B1 scored 0 for both (single measure: bouts/twitches). One candidate (glm) scored B1=1; corrected to 0 per rubric (1 measure = 0 points).",
+    "B4 scored 1 for scratching (ethological behavior with hind-paw raising) and 0 for HTR (rubric explicitly lists HTR as non-ethological).",
+    "B2 scored 1 for HTR due to bimodal within-session temporal analysis (3-6 min, 9-12 min), 0 for scratching (only total over 60 min reported).",
+    "Housing: handling and group_housing set to not_reported (paper does not state cage density or a separate handling protocol). 30-min apparatus habituation is captured in setup_habituation, not handling.",
+    "Food/water restriction set to 'during' for both assays — animals tested in acrylic recording boxes with no food/water available during recording.",
+    "DOI not retrievable from the provided markdown; set to null."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 1.36,
+    "recording_duration_mean": 1.36
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 53953,
+    "output_tokens": 6058,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

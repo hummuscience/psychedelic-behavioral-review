@@ -1,0 +1,483 @@
+{
+  "study_id": "Rambousek2014",
+  "doi": null,
+  "species": "rat",
+  "strain": "Wistar",
+  "age": {
+    "value": "adult",
+    "age_min_days": 84,
+    "age_max_days": 98,
+    "evidence": "Male adult Wistar rats (12-14 weeks, weighing 250-350 g)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 72,
+    "n_female": null,
+    "evidence": "Male adult Wistar rats (12-14 weeks, weighing 250-350 g) ... Seventy-two animals were used in total.",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocin",
+  "dosing": [
+    {
+      "compound": "Psilocin",
+      "doses_mg_per_kg": [
+        1.0,
+        4.0
+      ],
+      "doses_raw": "1 and 4 mg/kg",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "repeated",
+      "evidence": "Psilocin 1 and 4 mg/kg ... was dissolved in saline (0.9% NaCl) acidified with 10 m l of glacial acetic acid. All injections were administered subcutaneously (s.c.) at a volume of 2 ml/kg. Rats were trained 4 days, 30 min after psilocin injection.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Animals were housed in pairs in 30 cm × 30 cm × 40 cm transparent plastic cages",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12:12 light/dark cycle with lights on at 7:00",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Carousel maze (active place avoidance)",
+      "assay_description": "Active place avoidance on a rotating circular arena (82 cm diameter, 1 rpm). 4 acquisition sessions (days 1-4, psilocin 30 min before) + 1 drug-free session on day 5. Measures: total distance traveled, number of entrances into shock sector, maximum time avoided.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "All injections were administered subcutaneously (s.c.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "rats freely moving on rotating arena; harness with LED only",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Water and food were available ad libitum throughout the experiments (none in apparatus during testing).",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Water and food were available ad libitum throughout the experiments (none in apparatus during testing).",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "Rats were trained 4 days, 30 min after psilocin injection",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 24,
+        "n_male": 24,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "Eight animals were used in each group (24 rats in total).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocin impaired acquisition of the Carousel maze at both 1 and 4 mg/kg, indicated by more entrances into the shock sector and lower maximum time avoided. The 4 mg/kg dose reduced locomotor activity in early sessions and blocked learning even in the drug-free day-5 session.",
+        "statistics": "Locomotion: F(2,22)=8.51, P<0.001; sessions F(4,88)=44.4, P<0.0001; interaction F(8,88)=3.47, P<0.001. Entrances: F(2,20)=6.86, P<0.01; F(4,80)=20.64, P<0.0001; interaction F(8,80)=3.95, P<0.001. Max time avoided: F(2,20)=15.7, P<0.0001.",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Psilocin significantly impaired the acquisition of the Carousel maze at both doses (1 and 4 mg/kg). The higher dose of psilocin blocked the learning processes even in an additional session when the rats received only saline.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "total distance traveled ... number of entrances ... maximum time between the two entrances",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total/summary measures per session; repeated-measures ANOVA across sessions is between-session, not within-session temporal dynamics.",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Measures are locomotion and shock-sector entries, not natural ethological behaviours",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "single rat tested alone",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "spatial task requiring navigation using distal cues, attention, and cognitive coordination",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "A computer-based tracking system (iTrack; Biosignal Group, USA) ... recorded the rat's position every 40 ms (position tracking only).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate ANOVAs on separate measures",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "smooth metallic circular arena (82 cm in diameter), enclosed with a 30-cm high transparent Plexiglas wall",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "open rotating arena, no refuge",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "smooth metallic arena floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment objects in arena",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "circular arena with a virtual sector, no physical compartments",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "single rat tested at a time",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food or water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Rats were trained 4 days ... On the fifth day, animals were tested without the presence of the drug",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Session duration not explicitly stated as a number in the paper.",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "four acquisition sessions + drug-free session 5 = 5 recording days",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug recording session in the Carousel maze; first session was under psilocin",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "On the fifth day, animals were tested without the presence of the drug (after-session) — 24 h after last dose.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "sessions not ≥6 hours",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Morris water maze",
+      "assay_description": "Spatial navigation in a circular pool (180 cm diameter, water 20 °C, 40 cm deep) with hidden platform in NE quadrant. Eight swims per session, max 60 s/trial. Two experiments: (1) reinforced retrieval — 4 drug-free acquisition days, Day 5 test under psilocin (1 or 4 mg/kg, 30 min pre), drug-free re-acquisition 5 days later; (2) consolidation — Day 1 16-trial training followed by post-training psilocin injection, Day 2 drug-free re-test. Measure: escape latency.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "psilocin was applied s.c. (1 or 4 mg/kg) 30 min prior to testing",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Rats were released facing the wall ... freely swimming",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Water and food were available ad libitum throughout the experiments (none in apparatus during testing).",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Water and food were available ad libitum throughout the experiments (none in apparatus during testing).",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 30,
+          "evidence": "psilocin was applied s.c. (1 or 4 mg/kg) 30 min prior to testing (retrieval); psilocin was injected immediately after the last swim (consolidation), tested on subsequent day",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 48,
+        "n_male": 48,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "Eight animals were used in each group (24 rats in total) [for retrieval]; Eight animals were used in each group (24 rats in total) [for consolidation].",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocin 4 mg/kg disrupted reinforced retrieval (increased escape latency on Day 5), and the impairment persisted in a drug-free re-acquisition 5 days later; 1 mg/kg had no significant effect. Neither dose injected post-training affected memory consolidation tested on Day 2.",
+        "statistics": "Retrieval Day 5: F(2,20)=4.88, P<0.01; F(7,140)=4.7, P<0.0001; 4 mg/kg vs control P<0.01. Drug-free re-test: F(2,20)=5.91, P<0.01; F(7,140)=6.46, P<0.0001; P<0.01. Consolidation: F(2,42)=1.110, P=0.3390; F(1,42)=1.163, P=0.2870.",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "The dose of 4 mg/kg disrupted reinforced retrieval in the MWM. However, the application of a lower dose was without any significant effect. Finally, neither the low nor high dose of psilocin injected post-training caused a deficit in memory consolidation in the MWM.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "we recorded the latency to find the platform as a measure of spatial memory",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Repeated measures across sessions/days, but no within-session time-course analysis",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "escape latency only",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "single rat tested alone",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "spatial memory ... allocentric spatial memory ... acquisition, consolidation, and retrieval",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The escape latency was recorded by the experimenter using a stopwatch",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate ANOVA on single measure",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "blue-painted metallic circular tank (180 cm in diameter, 50 cm high) filled with water",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "open water tank; submerged platform is the goal, not a refuge",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "water-filled tank",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment objects",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "circular tank, single space",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "rat tested alone",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "four acquisition sessions ... On Day 5 ... Five days later ... On the subsequent day (Day 2)",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "One daily session consisted of eight swims; if the rat failed to find the platform in 60 s, the trial was stopped, plus 10 s on platform — eight trials yields a session of roughly 15–60 min.",
+          "confidence": "medium"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Retrieval experiment: 4 acquisition days + Day 5 test + Day 10 drug-free re-test = 6 recording days. Consolidation experiment: Day 1 + Day 2 = 2 days.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Animals from all groups were pre-trained in the reference memory version of the MWM for 4 days without drug injections",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Five days later, drug-free animals underwent another re-acquisition; consolidation tested 24 h after dosing",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "sessions not ≥6 hours",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      }
+    }
+  ],
+  "judge_notes": [
+    "Two assays retained: Carousel maze and Morris water maze. MWM reinforced-retrieval and post-training consolidation experiments collapsed into ONE MWM assay per rubric (same apparatus, same paradigm, different drug timing).",
+    "Psilocin dosing schedule scored 'repeated' for Carousel maze (4 daily doses) but kept single dosing entry at study level; chose 'repeated' as the dominant regimen since Carousel used 4 daily doses and MWM used 1 dose.",
+    "B2 (temporal dynamics) scored 0 for both assays: repeated-measures ANOVA across sessions/days is between-session, not within-session minute-by-minute analysis.",
+    "MWM D2 scored 1 (15–60 min) based on the explicit 8 swims × up to 60 s + 10 s platform structure, giving session durations within that bin; medium confidence as exact session length not stated as a single number.",
+    "Carousel D2 scored 0 with low confidence — no explicit per-session duration stated.",
+    "Session 5 of Carousel maze is a drug-free re-test 24 h after last dose, qualifying for D5 follow-up.",
+    "MWM time_to_assay marked 'multiple' because reinforced retrieval (30 min post-dose) and consolidation (24 h post-dose) timepoints are merged into one assay entry."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 6.82,
+    "behavioural_complexity_mean": 1.88,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 5.46
+  },
+  "low_confidence_count": 5,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 46062,
+    "output_tokens": 6337,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

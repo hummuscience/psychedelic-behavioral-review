@@ -1,0 +1,484 @@
+{
+  "study_id": "Li2025",
+  "doi": "10.1016/j.ejphar.2025.178170",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 42,
+    "age_max_days": 56,
+    "evidence": "Male C57BL/6J mice (6 -8 weeks old, weighing 21 -24 g)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male C57BL/6J mice (6 -8 weeks old, weighing 21 -24 g)",
+    "confidence": "high"
+  },
+  "psychedelic": "DOM",
+  "dosing": [
+    {
+      "compound": "DOM",
+      "doses_mg_per_kg": [
+        0.3,
+        1.0,
+        3.0,
+        10.0
+      ],
+      "doses_raw": "0.3, 1, or 3 mg/kg; 10 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "DOM was dissolved in saline... All drugs were administered intraperitoneally (i.p.) at a volume of 10 ml/kg body weight... mice were placed into the behavioral apparatus 5 min after an i. p. Injection of DOM (0.3, 1, or 3 mg/kg)... DOM administered at 10 mg/kg",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Methods describe acclimation and CatWalk training but no explicit handling habituation protocol",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "housed with six animals per cage",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12-h light/dark cycle (lights on: 08:00 -20:00)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Home cage enrichment not addressed in methods",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "CatWalk Voluntary Gait Analysis",
+      "assay_description": "Mice traversed an enclosed glass-plate runway in a darkened environment; 5-min recording session starting 5 min after i.p. DOM injection. Multiple gait parameters extracted: speed, cadence, stride length, stance/swing time, contact area, plantar pressure, support patterns, base of support, print positions, phase dispersions. Includes pharmacological pretreatment arms with MDL100907 (5-HT2A antagonist) and SB242084 (5-HT2C antagonist).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs were administered intraperitoneally (i.p.) at a volume of 10 ml/kg body weight",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "The mice were habituated to the experimental environment for 5-7 days. They were trained on the CatWalk system for at least 3 days before the experiment",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "mice were placed on the runway for 5 min; CatWalk measures gait in a natural state",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Food and water were available ad libitum (home cage); no food in CatWalk runway during the 5-min recording",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Food and water were available ad libitum (home cage); no water in CatWalk runway during the 5-min recording",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 5,
+          "evidence": "mice were placed into the behavioral apparatus 5 min after an i. p. Injection of DOM",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 48,
+        "n_male": 48,
+        "n_female": null,
+        "n_per_group_min": 12,
+        "evidence": "(n = 12, mean ± SEM, one-way ANOVA compared with the saline group)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOM (0.3-3 mg/kg) dose-dependently increased locomotor velocity by shortening step cycle (mainly reduced stance) and increasing stride length and swing speed (~47% increase in average speed at 1 mg/kg). DOM also decreased mean plantar pressure, reduced forepaw print areas, decreased base of support, and increased temporal regularity of paw placement. MDL100907 (0.1 mg/kg, 5-HT2A antagonist) normalized DOM-induced gait alterations, whereas SB242084 (1 mg/kg, 5-HT2C antagonist) did not. 10 mg/kg DOM suppressed voluntary locomotion, reversible by 5-HT2C antagonism.",
+        "statistics": "duration F(3,44)=8.401, P=0.0002; cadence F(3,44)=10.95, P<0.0001; average speed F(3,44)=8.574, P=0.0001; step cycle FRF(3,44)=12.10, P<0.0001; stride length FLH(3,44)=10.68, P<0.0001; stance time FRF(3,44)=10.19, P<0.0001; MDL100907 effect on speed F(1,44)=5.136, P=0.0284; cadence F(1,44)=11.66, P=0.0014",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "DOM treatment reduced duration (F(3,44)=8.401, P=0.0002) and elevated cadence and average speed... The average speed showed a 47 % increase compared with the saline control group.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 3,
+          "value": "7+",
+          "evidence": "duration, cadence, average speed, body speed (per paw), step cycle, stance time, swing time, swing speed, stride length, max contact area, max/mean intensity, single stance, dual stance, support patterns, base of support, print positions, phase dispersions",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Data reported as overall means across the 5-min session; no within-session time-course analysis",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Phase dispersions describe temporal relationship between paws within a step cycle; six gait patterns (Cruciate/Rotate/AA/AB/CB/RB) analyzed for sequence distribution; Cstat and Cstat R quantify inter-paw transition timing",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Gait kinematics are motor parameters, not species-typical ethological acts like grooming, social investigation, or USVs",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual mice tested alone on runway",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Spontaneous locomotion; no learning/memory component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "CatWalk XT (Noldus) — commercial position/pressure-based tracking, not pose estimation or supervised behavioural classifier",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Separate one-way/two-way ANOVAs per parameter; no PCA, clustering, or multivariate analysis reported",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "CatWalk XT gait analysis system consists of an enclosed runway in a darkened environment",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Glass runway with no enclosed refuge",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The runway floor comprises a glass plate illuminated by green light",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent in gait runway",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in runway",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Linear runway, no distinct compartments",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual mice traversed runway alone",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in runway during the 5-min session",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "recorded for a 5-min session",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "recorded for a 5-min session",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test day for gait data collection; training days did not collect analyzed data",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline gait recording reported as data",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Testing only 5 min post-injection; no ≥24 h follow-up reported",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5-min session",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "DigiGait Forced Treadmill Gait Analysis",
+      "assay_description": "Forced treadmill gait analysis (DigiGait system) at fixed 12 cm/s with no incline, used to assess whether 10 mg/kg DOM impaired motor capacity when voluntary CatWalk locomotion was suppressed.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs were administered intraperitoneally (i.p.) at a volume of 10 ml/kg body weight",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No DigiGait-specific habituation protocol described",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice ran on treadmill at fixed velocity; no physical restraint described",
+          "confidence": "medium"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Treadmill apparatus has no food access during the test",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Treadmill apparatus has no water access during the test",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 5,
+          "evidence": "Same dosing window as CatWalk; mice tested shortly after 10 mg/kg DOM injection",
+          "confidence": "low"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "Details in Supplementary Table 1; n not specified in main text",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "At 10 mg/kg DOM, mice that could not voluntarily traverse the CatWalk runway still maintained the ability to run at a constant speed on the DigiGait treadmill, indicating preserved motor capacity and suggesting the locomotor suppression reflects reduced motivation rather than motor impairment.",
+        "statistics": "",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "the mice maintained the ability to run at a constant speed on the treadmill in the passive gait (DigiGait) analysis system even at this dose (Supplementary Table 1)",
+        "confidence": "medium"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Main text reports only ability to run at a constant speed",
+          "confidence": "low"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Forced treadmill locomotion is not a species-typical ethological behaviour",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning/memory component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "DigiGait commercial paw-tracking system",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "DigiGait treadmill system",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter on treadmill",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Treadmill belt; no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single treadmill lane",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual testing",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "None during test",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Single treadmill run",
+          "confidence": "medium"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Duration not specified; standard DigiGait runs are brief",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test day",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline reported",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No follow-up testing reported",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Short session",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    }
+  ],
+  "judge_notes": [
+    "Two assays retained: CatWalk voluntary gait analysis (main study, all doses + 5-HT2A/2C antagonist arms collapsed into one assay per rubric) and DigiGait forced treadmill (distinct apparatus and paradigm, used for 10 mg/kg DOM).",
+    "B3 scored 1 for CatWalk: phase dispersions and 6-pattern gait sequence distribution constitute analysis of sequential/transitional structure between paws within step cycles — overriding two candidates that scored 0.",
+    "B4 scored 0 for CatWalk: gait kinematics are motor parameters, not species-typical ethological acts (grooming, social investigation, USVs). Overrides gptoss which scored 1.",
+    "B7 scored 0: CatWalk XT and DigiGait are commercial pressure/position-tracking systems, not pose-estimation or supervised behaviour classifiers.",
+    "Housing enrichment scored not_reported (low confidence) — paper is silent; overrides gptoss which inferred 'no'.",
+    "Food/water_restriction = 'during' for both assays: paper states ad libitum food/water in home cage and apparatus clearly excludes food/water during the short test."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 5.0,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 0.0,
+    "behavioural_complexity_mean": 2.5,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 0.0
+  },
+  "low_confidence_count": 5,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 50494,
+    "output_tokens": 6656,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

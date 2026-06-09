@@ -1,0 +1,679 @@
+{
+  "study_id": "Kolasa2024",
+  "doi": "10.1007/s00213-024-06644-3",
+  "species": "rat",
+  "strain": "Wistar Han and Wistar-Kyoto",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 49,
+    "age_max_days": 49,
+    "evidence": "Male Wistar Han rats (7 weeks old, weighing approximately 220 g) and Wistar-Kyoto rats (7 weeks old, weighing approximately 200 g)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male Wistar Han rats ... and Wistar-Kyoto rats ... were used for the experiments.",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        0.3
+      ],
+      "doses_raw": "0.3 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Psilocybin was dissolved in physiological saline (vehicle) and administered intraperitoneally (i.p.) at a single dose of 0.3 mg/kg of body weight.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "No handling protocol described in methods.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "Housing density not specified.",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12-hour light/dark cycle (lights on at 7 a.m.). Behavioral testing was conducted during the light phase of the light/dark cycle.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "No mention of home-cage enrichment.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Novel Object Recognition Task",
+      "assay_description": "Open field arena (66 × 56 × 30 cm, 25 lx). Two 3-min trials separated by 24 h ITI (familiarization T1, retention T2). Repeated 6 days later (NORT 1 at 4 h post-drug; NORT 2 at 6 days post-drug). Measures: Discrimination Index, novel/familiar object exploration time, total exploration, distance traveled.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered intraperitoneally (i.p.) at a single dose of 0.3 mg/kg",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Prior to testing, each rat was habituated to the arena (without any objects) for 5 min, 24 h before the actual test.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Rats were tested in a dimly lit open field; freely moving.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in the open-field arena during the 3-min trial.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in the open-field arena during the 3-min trial.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 240,
+          "evidence": "The acquisition phase of the NORT test was conducted 4 h and 6 days after drug administration.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 9,
+        "evidence": "n = 9-10 rats per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin did not significantly affect the Discrimination Index, total exploration time, or distance traveled at either 4 h or 6 days post-administration. WKY rats showed lower DI and shorter distance traveled than WIS rats, independent of treatment.",
+        "statistics": "Strain effect on DI: F(1,34)=12.68, p=0.001; distance traveled strain effect F(1,34)=24.82, p<0.001; phase F(1,34)=27.20, p<0.001; time, treatment and interactions nonsignificant.",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "time, treatment, and interactions between factors were nonsignificant",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "DI, exploration time of novel object, exploration time of familiar object, total exploration time, distance traveled.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "3-min trial totals reported; no within-session time-bin analysis.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition or sequence analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Object exploration defined as looking/licking/sniffing/touching — task-defined exploration, not natural repertoire scoring.",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animal tested alone in object arena.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "NORT assesses recognition memory.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Any-Maze tracking system (position tracking); exploration manually scored.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Repeated-measures ANOVA on univariate measures.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "open field made of dull grey plastic (66 × 56 × 30 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open field provides no enclosed refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bare plastic floor.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in arena.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Test objects do not count; no other enrichment.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single open arena.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each rat tested alone.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in apparatus.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "NORT 1 (4 h post) and NORT 2 (6 days post), each with T1 and T2 trials.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Two 3-minute trials.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "NORT 1 at 4 h, NORT 2 at 6 days; each with T1 and T2 on consecutive days = multiple recording days.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Drug administered before T1; no pre-drug recording.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "NORT 2 recorded 6 days post-treatment.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "3-min trials.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Social Interaction Test",
+      "assay_description": "Dimly lit open field (57 × 67 × 30 cm, 15 lx). Pairs of unfamiliar same-treatment rats interact for 10 min. Behaviors scored: sniffing, anogenital sniffing, social grooming, climbing, following, crawling (duration and episode counts). Conducted 2 days (SI 1) and 8 days (SI 2) post-PSI.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered intraperitoneally (i.p.) at a single dose of 0.3 mg/kg",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Rats were individually placed in the open field for 5 min one day before the test to adapt them to the testing area.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Freely moving in open-field arena.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in arena during 10-min test.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in arena during 10-min test.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 2880,
+          "evidence": "The SI test was conducted 2 days and 8 days after PSI administration.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 9,
+        "evidence": "n = 9-10 per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin increased total social interaction time across strains, with a strain-specific temporal pattern: WIS rats showed significant increase at SI 1 (2 d), while WKY rats showed significant increase at SI 2 (8 d). Specific behaviors increased included anogenital sniffing and following.",
+        "statistics": "Strain F(1,34)=16.36, p<0.001; drug F(1,34)=8.95, p=0.005; WIS SI 1 p=0.029; WKY SI 2 p<0.001.",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "PSI increased the time of social interactions in both strains... In WIS rats, SI 1 p=0.029; in WKY rats, SI 2 p<0.001.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 3,
+          "value": "7+",
+          "evidence": "Total interaction time + duration AND number of episodes for sniffing, anogenital sniffing, grooming, climbing, following, crawling.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total durations/counts over the 10-min session.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence or transition analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Sniffing, anogenital sniffing, social grooming, climbing, following, crawling — natural social repertoire.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 3,
+          "value": "Free social interaction",
+          "evidence": "Two unfamiliar rats were placed in the open-field arena and behaviors were recorded for 10 min.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning/memory component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Videos analyzed offline using Noldus EthoVision XT (position tracking).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Repeated-measures ANOVA on univariate variables.",
+          "confidence": "high"
+        },
+        "raw_total": 7
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "open field (57 × 67 × 30 cm, black Plexiglas)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open field; no refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bare Plexiglas floor.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single open arena.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 2,
+          "value": "Free social group",
+          "evidence": "Two unfamiliar rats placed together in the open-field arena without barrier.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in apparatus.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "SI 1 at 2 d and SI 2 at 8 d post-treatment.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "recorded for 10 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Two recording days (SI 1 and SI 2).",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug SI recording.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "SI tests performed 2 and 8 days post-treatment (>24 h).",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "10-min sessions.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Forced Swim Test",
+      "assay_description": "Opaque cylinders (21 cm diameter, water 23-25 °C, depth 30 cm). Pre-test 15 min, test 5 min 24 h later; repeated at 23 days post-PSI. 5-min test scored in 60 × 5-s intervals for immobility, swimming, climbing.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered intraperitoneally (i.p.) at a single dose of 0.3 mg/kg",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Pre-test (15 min) recorded but is part of the FST procedure, not separate habituation; no habituation to apparatus prior to pre-test reported.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "FST cylinder — animal in water cylinder with no escape (rubric classifies FST cylinder as restraint).",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in cylinder during the test.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No drinking water available; cylinder contains immersion water.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 12960,
+          "evidence": "The FST was performed 9 days and 23 days after drug administration.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 7,
+        "evidence": "n = 7-10 per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin reduced immobility in WKY rats at FST 1 (9 d post) with concomitant increase in climbing; in WIS rats, PSI reduced immobility at FST 2 (23 d post) with increased swimming and climbing. Effects were strain- and time-dependent.",
+        "statistics": "Immobility: strain F(1,28)=43.88, p<0.001; drug F(1,28)=5.54, p=0.026; time×drug F(1,28)=6.84, p=0.014; time×strain×drug F(1,28)=6.45, p=0.017. WKY FST 1 p=0.0495; WIS FST 2 p=0.012; WKY climbing FST 1 p=0.030; WIS swimming FST 2 p=0.049.",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "Post hoc pairwise comparisons revealed differences in immobility time between VEH- and PSI-treated WKY rats in FST 1 (p = 0.0495)... in FST 2, there was a significant reduction in immobility time in WIS rats after PSI treatment (p = 0.012).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "Immobility, swimming, climbing — durations and 5-s interval mean counts for each.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5-min session divided into 5-s intervals for scoring, but data aggregated as mean counts; no within-session time-course analysis reported.",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition or sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST immobility/swimming/climbing not classified as ethological per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Single animal in cylinder.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning component scored.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Experienced observer manually categorized behavior.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Repeated-measures ANOVA on univariate measures.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "opaque cylinders (21 cm in diameter), filled with water",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No refuge in cylinder.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Cylinder filled with water.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single cylinder.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each rat tested alone.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/drinking water available.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Pre-test (15 min) and test (5 min) on consecutive days at 8-9 d; repeated again at 22-23 d post-PSI.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "Pre-test session lasted 15 min.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Pre-test day + FST 1 + pre-test 2 + FST 2 across the schedule = multiple recording days within 2-7 range.",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug FST baseline recorded.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "FST conducted 9 and 23 days post-PSI.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sessions ≤15 min.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    }
+  ],
+  "judge_notes": [
+    "Three assays identified: NORT, SI, FST. All candidates agreed on this set.",
+    "B1 for NORT set to 2 (4-6 measures: DI, novel exploration, familiar exploration, total exploration, distance) consistent with gptoss/glm; qwen undercounted.",
+    "B1 for SI set to 3 (7+) given duration AND episode counts across 6 behaviors plus total time — matches gptoss.",
+    "B4 for NORT scored 0: object exploration is task-defined, not natural-repertoire scoring per rubric examples.",
+    "FST D2 scored 1 (15-60 min) because the 15-min pre-test recording session counts as the longest single session for this assay; gptoss correctly flagged this.",
+    "FST setup_restrain set to yes per rubric ('FST cylinder' is explicitly listed as restraint).",
+    "B2 for FST scored 0: although the 5-min session was binned into 5-s intervals for scoring, no within-session time-course was analyzed/reported as temporal dynamics — only mean counts.",
+    "Housing fields (handling, group_housing, enrichment) marked not_reported with low confidence; light cycle is reported as standard (not flipped)."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 8.75,
+    "environmental_complexity_max": 2.73,
+    "recording_duration_max": 5.45,
+    "behavioural_complexity_mean": 5.0,
+    "environmental_complexity_mean": 0.91,
+    "recording_duration_mean": 4.54
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 72911,
+    "output_tokens": 9038,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

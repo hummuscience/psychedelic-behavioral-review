@@ -1,0 +1,1269 @@
+{
+  "study_id": "delaFuenteRevenga2021",
+  "doi": "10.1016/j.celrep.2021.109836",
+  "species": "mouse",
+  "strain": "129S6/SvEv; C57BL/6NTac; C57BL/6J; 5-HT2AR-/-",
+  "age": {
+    "value": "adult",
+    "age_min_days": 70,
+    "age_max_days": 140,
+    "evidence": "Experiments were performed on adult (10 - 20 weeks old) male mice",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Experiments were performed on adult (10 - 20 weeks old) male mice randomly allocated into the different pre-treatment groups",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        2.0
+      ],
+      "doses_raw": "2 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Drug/s were administered (i.p.) diluted in saline (0.9%); vehicle refers to the saline solution alone... DOI (2 mg/kg, i.p.)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "Mice were handled for 2 min (each) on the 2 days prior to the start of the testing",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "Animals were housed on a 12 h light/dark cycle at 23°C with food and water ad libitum (cage density not specified for general housing)",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "except during behavioral testing (always during the light cycle)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Home-cage enrichment is not addressed in the methods",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "Locomotor activity monitored in a Plexiglas open field (25×25×20 cm) for 90 min using infrared beam-break system (Fusion v5.3, Omnitech). Horizontal activity measured in 5-min bins.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "injected with DOI (2 mg/kg, i.p.) or vehicle",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Mice were allowed to acclimate to the behavioral room for 1h prior to monitoring",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "monitoring their individual locomotor activity on a commercial Plexiglas open field",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "food and water ad libitum, except during behavioral testing",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "food and water ad libitum, except during behavioral testing",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "Evaluation of locomotor activity was conducted 24h after drug administration",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 12,
+        "n_male": 12,
+        "n_female": 0,
+        "n_per_group_min": 6,
+        "evidence": "n = 6 mice per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "A single 2 mg/kg i.p. dose of DOI 24 h prior did not alter total horizontal activity or its 5-min time-course in the open field.",
+        "statistics": "F[1,10]=0.006, p>0.05; t10=0.07, p>0.05",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Lack of effect of DOI on exploratory behavior in an open field (n = 6 mice per group). Time-course (F[1,10] = 0.006, p > 0.05) and total horizontal activity (t10 = 0.07, p > 0.05).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Time-course and total horizontal activity",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Horizontal activity is measured ... in 5 min periods",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Horizontal activity measured as beam interruptions (locomotor distance)",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "monitoring their individual locomotor activity",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor activity in a novel environment, as a model of exploratory behavior",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Fusion v5.3 (Omnitech) infrared beam-break system",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no multivariate analysis reported",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "commercial Plexiglas open field (25 × 25 × 20 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Plexiglas open field, cleaned with 1% Roccal-D",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "open field arena",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individual locomotor activity",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "90 min monitoring session",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "90 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Evaluation of locomotor activity was conducted 24h after drug administration",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline recorded",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "tested 24 h after drug administration",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "90 min session",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Light-Dark Box",
+      "assay_description": "15-min anxiety/conflict test in a commercial apparatus with equally sized light and dark compartments (25×12×20 cm each) connected by a 5×5 cm opening; activity tracked via infrared beams.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Animals were injected with DOI (2 mg/kg, i.p.) or vehicle",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "After 1h acclimation to the behavioral room",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "freely moving in light/dark apparatus",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "food/water ad libitum except during behavioral testing",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "food/water ad libitum except during behavioral testing",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1080,
+          "evidence": "preference assessed 18h after drug administration",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 10,
+        "n_male": 10,
+        "n_female": 0,
+        "n_per_group_min": 5,
+        "evidence": "n = 5 mice per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI (2 mg/kg, 18 h prior) did not affect time spent in the light zone or total exploratory time.",
+        "statistics": "F[1,8]=0.08, p>0.05; t8=1.14, p>0.05",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Lack of effect of DOI on dark-light choice test... Time (s) spent in the light zone (F[1,8] = 0.08, p > 0.05) and total exploratory time during the 15-min test (t8 = 1.14, p > 0.05).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Time in light zone and total exploratory time",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "total exploratory time during the 15-min test",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "zone-preference proxy for anxiety",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "conflict paradigm, innate avoidance",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Fusion v5.3 (Omnitech) infrared beam-break system",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no multivariate analysis",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "commercial light-dark box",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "fully enclosed dark compartment",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "light and dark areas connected through a small opening",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "mice individually placed",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "15-min test",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "15-min test",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "18h after drug administration",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline recorded",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "tested only at 18 h; no recording ≥24 h post-dose for this assay",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "15-min session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Forced Swim Test",
+      "assay_description": "6-min swim in 2 L beakers (12.5 cm diameter × 21 cm height) two-thirds filled with ~23°C water; immobility scored during last 4 min by a blinded observer. Tested at 24 h and 7 days post-DOI.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "DOI (2 mg/kg, i.p.) or vehicle administration",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "including a 1h acclimation to the behavioral room",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "FST cylinder (per rubric, FST cylinder counts as restraint)",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in cylinder",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "water is test medium, not accessible for drinking",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 1440,
+          "evidence": "tested 24h (G) or 7 days (H) after a single injection of DOI",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 30,
+        "n_male": 30,
+        "n_female": 0,
+        "n_per_group_min": 5,
+        "evidence": "10 mice per group (24h); 5 mice per group (7d)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "A single dose of DOI reduced immobility time in the FST at both 24 h and 7 days post-administration, indicating reduced behavioral despair.",
+        "statistics": "24h: t18=3.80, p<0.01; 7d: t8=2.96, p<0.05",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "Reduction of immobility time (s) during the last 4 min of the 6-min forced swimming test (10 mice per group, t18 = 3.80; p < 0.01); the trend for reduction in immobility time was also evident 7 days after DOI administration (5 mice per group, t8 = 2.96; p < 0.05).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "immobility time only",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "immobility scored during the last 4 min as a single measure",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST immobility (per rubric, not ethological)",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "model of behavioral despair/passivity",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "scored by a trained analyst blind to pre-treatment",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no multivariate analysis",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "2 L beakers (12.5 cm × 21 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "water-filled beakers",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single cylinder",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "single mouse in beaker",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "water is test medium, not drinkable",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "tested at 24 h and 7 days",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "6-min session",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "24 h (G) or 7 days (H)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug FST baseline reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "tested 7 days after DOI administration",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "6-min session",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Novel Object Recognition",
+      "assay_description": "Opaque rectangular arena (32×20×23 cm). 20-min habituation, 5-min acquisition (two identical objects), 5-min recognition (one novel object); 5-min inter-stage intervals. Exploration time scored from video by a blinded observer.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "mice that received DOI (2 mg/kg, i.p.) or vehicle 24h prior",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "a 20 min habituation to the field",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "freely moving in container",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in apparatus",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water in apparatus",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "mice that received DOI (2 mg/kg, i.p.) or vehicle 24h prior",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 12,
+        "n_male": 12,
+        "n_female": 0,
+        "n_per_group_min": 6,
+        "evidence": "n = 6 mice per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI 24 h prior did not alter exploratory preference for the novel object; recognition memory was intact.",
+        "statistics": "acquisition vs recognition F[1,20]=13.06, p<0.01; vehicle vs DOI F[1,20]=0.16, p>0.05",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Lack of effect of DOI on the novel-object recognition test (n = 6 mice per group, ... vehicle versus DOI, F[1,20] = 0.16, p > 0.05).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "exploration time during acquisition and recognition",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "preference computed across the recognition stage",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "object exploration scored as a memory readout, not ethological repertoire",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Preference for a novel object as opposed to a familiar one (recognition memory)",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "assessed on digital video by a trained analyst",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no multivariate analysis",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "opaque rectangular plastic container with open top",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "open top container",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no bedding reported",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "objects are test stimuli, not enrichment",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single rectangular container",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "single mouse",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food or water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "habituation, acquisition, recognition all within one test day",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "20 min habituation + 5 min + 5 min stages",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "tested 24h prior on a single day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline recorded",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "tested 24 h after DOI administration",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "stages <60 min",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    },
+    {
+      "assay_name": "Prepulse Inhibition of Startle",
+      "assay_description": "~30-min session in SR-LAB startle chambers; 119 dB startle stimulus preceded (80 ms ISI) by 73, 77, or 85 dB prepulses; %PPI calculated.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Mice that had received DOI (2 mg/kg) or vehicle 24h prior",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Mice were habituated to the testing room at least 1h prior... allowed to acclimate to chamber and background noise for 5 min",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "Animals were placed in the mouse-sized startle chambers (per rubric, PPI startle chambers count as restraint)",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in chamber",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water in chamber",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "received DOI (2 mg/kg) or vehicle 24h prior",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 10,
+        "n_male": 10,
+        "n_female": 0,
+        "n_per_group_min": 5,
+        "evidence": "n = 5 mice per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI 24 h prior did not affect prepulse inhibition of the acoustic startle response across prepulse intensities.",
+        "statistics": "F[1,24]=0.41, p>0.05",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Lack of effect of DOI on the PPI of startle (n = 5 mice per group, F[1,24] = 0.41, p > 0.05).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "PPI measured for three prepulse intensities",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no within-session time-course reported",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "PPI startle magnitude (per rubric, not ethological)",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "sensorimotor gating, not learning",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "SR-LAB Startle Response System",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no multivariate analysis",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "mouse-sized startle chambers",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single startle chamber",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "single mouse in chamber",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food or water",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Each session lasted about a total of 30 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "about a total of 30 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "24h prior, single test day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5 stimulus-only trials used for control, not included in analysis",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "tested 24 h after DOI administration",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "~30-min session",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    },
+    {
+      "assay_name": "Contextual Fear Conditioning and Extinction",
+      "assay_description": "Med Associates NIR Video Freeze chambers (32×25×25 cm) with grid floor in two contexts (A and B) with different visual/olfactory cues (bedding with lemon or cardamom scent). Day 1: acquisition (6 × 0.7 mA shocks) + expression in context A. Day 2: generalization in context B (5 min) + extinction in context A (20 min). Freezing automatically scored (≥1 s no-movement). Run in 5-HT2AR+/+ and 5-HT2AR-/- mice with DOI given either 10 min after expression or 24 h before acquisition.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "DOI (2 mg/kg, i.p.) or vehicle was administered 10 min after the expression stage or 24h prior to the acquisition stage",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Mice were acclimated to the behavioral testing room ... for at least 1h in the 2 days prior to experimental sessions. Mice were handled for 2 min (each) on the 2 days prior",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "freely moving in polycarbonate chambers",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food accessible in chamber",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water in chamber",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 10,
+          "evidence": "DOI administered 10 min after the expression stage or 24h prior to the acquisition stage",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 67,
+        "n_male": 67,
+        "n_female": 0,
+        "n_per_group_min": 6,
+        "evidence": "n = 11-15 mice per group (5-HT2AR+/+); n = 6 mice per group (5-HT2AR-/-); n = 14-15 mice per group (post-DOI acquisition cohort)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "A single dose of DOI accelerated contextual fear extinction in 5-HT2AR+/+ mice (reduced freezing across the extinction session) without affecting fear acquisition or expression; this effect was absent in 5-HT2AR-/- littermates. DOI given before acquisition also reduced freezing during generalization and extinction in WT mice. In 5-HT2AR-/- mice, DOI reduced freezing during generalization.",
+        "statistics": "Extinction WT: F[1,96]=5.51, p<0.05; KO extinction: F[1,40]=2.29, p>0.05; KO generalization: t10=3.04, p<0.05; pre-acquisition cohort extinction: F[1,104]=10.65, p<0.01; generalization (pre-acquisition): t27=2.34, p<0.05",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "5-HT2AR+/+ mice that had previously received a single dose of DOI showed faster development of contextual fear extinction... an effect that was not observed in 5-HT2AR-/- littermates",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "Freezing measured across acquisition, expression, generalization (context B) and extinction phases",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "observed for freezing behavior over time in periods of 5 min in the absence of any aversive stimuli (within-session extinction time-course)",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no transition/sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "conditioned freezing (per rubric, not ethological)",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "fear acquisition, expression, generalization and extinction require associative learning",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Med Associates NIR Video Freeze (motion-based freezing detection), not a behavioural ML classifier",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no multivariate analysis reported",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "polycarbonate test chambers",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no refuge in chamber",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "lemon scent on the bedding... cardamom scent on the bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single chamber per context (no internal partitions); contexts A and B are separate apparatuses",
+          "confidence": "medium"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "mouse alone during recording",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in chamber",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Experimental sessions were performed on two consecutive days (acquisition+expression; generalization+extinction)",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "20-min extinction session is the longest single bout",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "two consecutive days of recording",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "After a 90 s stimulus-free period at the beginning of the experiment (baseline)... Freezing time was measured during the baseline",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "extinction session is <24 h after the post-expression DOI injection in one cohort and ~24 h after pre-acquisition DOI in the other; not clearly >=24 h after the last drug administration for the recorded session of interest",
+          "confidence": "medium"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "sessions <6 h",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    }
+  ],
+  "judge_notes": [
+    "All three candidates identified the same six behavioural assays (OFT, light-dark, FST, NOR, PPI, contextual fear conditioning/extinction). LTP/whole-cell patch-clamp and dendritic spine analysis are not behavioural assays (in vitro electrophysiology and histology) and were correctly excluded.",
+    "Strain field consolidated to list all relevant lines used (129S6/SvEv for spines/sequencing, C57BL/6 for LTP, 5-HT2AR-/- and littermates from backcrossed line for fear conditioning).",
+    "group_housing scored 'not_reported' (qwen/glm) rather than 'yes' (gptoss) because gptoss's evidence quote 'Animals were housed in pairs' is not present in the paper; only LTP companion-pair housing is described, which is specific to that experiment.",
+    "FST setup_restrain set to 'yes' following rubric (FST cylinder explicitly listed as restraint).",
+    "FST D2 session duration scored 0 (<15 min) since the actual recording bout is 6 min; gptoss incorrectly placed it in 15–60 min bin.",
+    "D5_followup scored 'Yes' for assays whose recording occurred ≥24 h after the last drug administration (OFT 24 h, NOR 24 h, PPI 24 h, FST 7 d). Light-dark box at 18 h does not meet ≥24 h cutoff so scored No.",
+    "Fear conditioning B1 set to 2 (4-6 measures: freezing across acquisition, expression, generalization, extinction phases) following gptoss; B2 set to Yes following glm/gptoss (within-session 5-min binned freezing during extinction).",
+    "OFT B1 collapsed to '2-3' (time-course + total activity) per all candidates; B2 = Yes (5-min binned within-session time-course).",
+    "E6 for fear conditioning scored 0: per rubric a single chamber is one zone even though contexts A and B are different apparatuses used across days.",
+    "food/water restriction scored 'during' for all assays (food/water ad libitum in home cage but not accessible during recording), consistent with rubric guidance."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 5.0,
+    "environmental_complexity_max": 2.73,
+    "recording_duration_max": 5.45,
+    "behavioural_complexity_mean": 2.08,
+    "environmental_complexity_mean": 0.68,
+    "recording_duration_mean": 3.41
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 95746,
+    "output_tokens": 13716,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

@@ -1,0 +1,478 @@
+{
+  "study_id": "Sarkar2014",
+  "doi": "10.1016/j.biopsych.2013.11.005",
+  "species": "rat",
+  "strain": "Sprague-Dawley",
+  "age": {
+    "value": "adult",
+    "age_min_days": 90,
+    "age_max_days": 110,
+    "evidence": "assessed for anxiety behavior on the open field test (OFT) (P90) and elevated plus maze (EPM) (P100)... subjected to gene expression analysis in the prefrontal cortex in adulthood (P110)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male Sprague-Dawley rats bred in the Tata Institute of Fundamental Research animal facility... male pups were group housed into adulthood",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        2.0
+      ],
+      "doses_raw": "DOI (2 mg/kg) orally from P2 to P21",
+      "vehicle": "other",
+      "route": "p.o.",
+      "schedule": "chronic",
+      "evidence": "pups received DOI (2 mg/kg, Sigma-Aldrich) orally from P2 to P21 (PNDOI) or vehicle (5% sucrose) (Ctrl)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "paper mentions 'within 3 minutes to minimize handling stress' for drug administration but does not describe a separate handling habituation protocol",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "male pups were group housed into adulthood",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "maintained on a 12-hour light-dark cycle... behavioral tests were carried out within the light phase",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "Open field arena (100 x 100 x 70 cm), dim illumination, 5-min recording of exploratory behavior in adulthood (P90); measured total distance, path length, time and visits to center, and rears. Used to assess effect of postnatal DOI on anxiety.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "p.o.",
+          "evidence": "pups received DOI (2 mg/kg, Sigma-Aldrich) orally from P2 to P21",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "no pre-test apparatus exposure described",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Animals were released at one corner of the arena and exploratory behavior was recorded",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in the OFT apparatus during recording",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water in the OFT apparatus during recording",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "long_term_over7d",
+          "value_minutes": 99360,
+          "evidence": "pups received DOI... from P2 to P21... assessed for anxiety behavior in the open field test (OFT) (P90)",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "n = 6 -8 per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Chronic postnatal DOI treatment (P2-P21) increased anxiety-like behavior in adulthood, with significantly decreased percent path length and percent time in the center of the OFT arena, and a trend toward fewer center visits.",
+        "statistics": "Student t test; percent path length and percent time in center significantly decreased (p<.05); number of visits trend p=.08",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Postnatal DOI animals showed a significant decline in percent path length (Figure 3C), percent time spent (Figure 3D), and a trend (p = .08) toward a decline in the number of visits (Figure 3E) to the center of the OFT arena.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "We assessed total distance covered within the arena, path length, and time spent in the center; number of visits to the center; and number of rears in the arena.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "exploratory behavior was recorded with an automated tracking system for 5 minutes (single total measure)",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "number of rears in the arena",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual testing in OFT; no social component",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open field test analysis for anxiety behavior",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "All behavioral tracks were analyzed using the Ethovision tracking system",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate ANOVA and t tests only",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "the arena (100 cm x 100 cm x 70 cm) was placed in a dimly illuminated room",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "open arena, no refuge",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent in OFT",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "arena (100 cm x 100 cm x 70 cm)",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Animals were released at one corner of the arena",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in arena",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "exploratory behavior was recorded with an automated tracking system for 5 minutes",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "recorded for 5 minutes",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "OFT (P90)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline recording in OFT",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "DOI administered P2-P21; OFT performed at P90, well over 24h after last dose",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5-minute session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Elevated Plus Maze",
+      "assay_description": "EPM elevated 50 cm with two open and two closed arms (45 x 10 cm); 5-min recording at P100. Measured total distance, path length, time in open/closed arms, number of rears. Used to assess effect of postnatal DOI on anxiety.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "p.o.",
+          "evidence": "pups received DOI (2 mg/kg, Sigma-Aldrich) orally from P2 to P21",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "no pre-test apparatus exposure described",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Animals were released into the center of the maze facing the open arm",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in EPM apparatus during recording",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water in EPM apparatus during recording",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "long_term_over7d",
+          "value_minutes": 113760,
+          "evidence": "pups received DOI... from P2 to P21... elevated plus maze (EPM) (P100)",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "n = 6 -8 per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Postnatal DOI treatment evoked anxiety-like behavior on the EPM in adulthood, with significant decreases in percent path length in the open arms and increased percent path length in the closed arms; percent time in closed arms showed a trend toward increase (p=.07).",
+        "statistics": "Student t test; significant differences for percent path length open and closed arms; trend p=.07 for time in closed arms",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "PNDOI animals showed a significant decrease in percent path length in the open arms (Figure 3H), increased percent path length in the closed arm (Figure 3I), and a trend (p = .07) toward an increase in time spent in the closed arms (Figure 3J)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "Analysis was performed for total distance covered within the maze, path length, and time spent in the open and closed arms and the number of rears in the maze.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "behavioral measures were assessed for 5 minutes (single total)",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "number of rears in the maze",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual testing; no social component",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Elevated plus maze analysis for anxiety behavior",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "All behavioral tracks were analyzed using the Ethovision tracking system",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate tests only",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "platform elevated 50 cm from the ground with two open and closed arms (45 x 10 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EPM closed arms are part of the apparatus design, not a shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Per rubric: EPM arms are open-ended extensions of a central platform, not distinct enclosed compartments",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Animals were released into the center of the maze",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "behavioral measures were assessed for 5 minutes",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "assessed for 5 minutes",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "EPM (P100)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "DOI dosing P2-P21; EPM at P100, well >24 h post last dose",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5-minute session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Only DOI is a psychedelic; fluoxetine, ketanserin, MDL100907, SB242084, and WAY-100635 are not psychedelics, so only the DOI (PNDOI) experiments are scored as psychedelic-administered assays.",
+    "Two assays retained: OFT (P90) and EPM (P100) for the PNDOI cohort. FST was not performed on the DOI cohort.",
+    "B4 scored Yes for rears (an ethological behavior explicitly measured in both OFT and EPM); candidates split on this and qwen's interpretation matches the paper's reported measures.",
+    "Ethovision is explicitly listed in the rubric as position-tracking (B7=0)."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 3.75,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 1.36
+  },
+  "low_confidence_count": 5,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm"
+  ],
+  "judge_usage": {
+    "input_tokens": 55293,
+    "output_tokens": 5960,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

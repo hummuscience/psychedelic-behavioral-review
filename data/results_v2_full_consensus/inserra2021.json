@@ -1,0 +1,90 @@
+{
+  "study_id": "Inserra2021",
+  "doi": null,
+  "species": "mouse",
+  "strain": "C57/BL6",
+  "age": {
+    "value": "adult",
+    "age_min_days": 60,
+    "age_max_days": 70,
+    "evidence": "Adult male C57/BL6 mice ... aged 60-70 days",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 30,
+    "n_female": null,
+    "evidence": "Adult male C57/BL6 mice (Charles Rivers, Saint-Constant, Quebec, Canada) (N = 30)",
+    "confidence": "high"
+  },
+  "psychedelic": "LSD",
+  "dosing": [
+    {
+      "compound": "LSD",
+      "doses_mg_per_kg": [
+        0.005,
+        0.01,
+        0.02,
+        0.04,
+        0.08,
+        0.16
+      ],
+      "doses_raw": "5, 10, 20, 40, 80, and 160 µg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "LSD ... was dissolved in a 0.9% NaCl vehicle (VEH) solution and injected intraperitoneally (i.p.). Cumulative doses of 5, 10, 20, 40, 80, and 160 µg/kg were administered acutely in dose-response experiments.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Paper does not mention a handling protocol.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Animals were housed in a maximum number of five per cage.",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12 h light-dark cycle (lights off at 19:00 h) ... All experiments were performed between 09:00 h and 17:00 h",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "yes",
+      "evidence": "enriched with nesting material",
+      "confidence": "high"
+    }
+  },
+  "assays": [],
+  "judge_notes": [
+    "Paper contains only in vivo extracellular single-unit electrophysiology in anesthetized mice (reticular thalamus, mediodorsal thalamus, IL-PFC). Per rubric, neural recordings are explicitly excluded as non-behavioural assays. No behavioural assays were performed; assays list is therefore empty.",
+    "All three candidates correctly produced an empty assays array, agreeing this is a pure electrophysiology study.",
+    "Age scored as 'adult' (modal); GPT-OSS used 'young_adult' but 60-70 days in mice is within the standard adult range per rubric usage."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0,
+    "environmental_complexity_max": 0,
+    "recording_duration_max": 0,
+    "behavioural_complexity_mean": 0,
+    "environmental_complexity_mean": 0,
+    "recording_duration_mean": 0
+  },
+  "low_confidence_count": 1,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 42650,
+    "output_tokens": 1002,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

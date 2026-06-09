@@ -1,0 +1,680 @@
+{
+  "study_id": "Favaro2015",
+  "doi": "10.1371/journal.pone.0145840",
+  "species": "rat",
+  "strain": "Wistar",
+  "age": {
+    "value": "adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Male Wistar rats weighing 300-350g",
+    "confidence": "low"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male Wistar rats weighing 300-350g were provided by the Centro de Desenvolvimento de Modelos Experimentais para Medicina e Biologia",
+    "confidence": "high"
+  },
+  "psychedelic": "Ayahuasca",
+  "dosing": [
+    {
+      "compound": "Ayahuasca",
+      "doses_mg_per_kg": [
+        120,
+        240,
+        480
+      ],
+      "doses_raw": "120, 240 and 480 mg/kg",
+      "vehicle": "water",
+      "route": "p.o.",
+      "schedule": "chronic",
+      "evidence": "The following freeze-dried ayahuasca extract doses were utilized: 120, 240 and 480 mg/kg ... administered orally by gavage ... Long-term administration consisted of a daily oral dose for 30 days by gavage.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "The animals were housed in group of 5 animals per cage",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12 hour light/dark cycle (lights on at 7:00 a.m.)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Elevated Plus Maze",
+      "assay_description": "EPM with two open arms (50×10×1 cm) and two enclosed arms (50×10×40 cm), elevated 50 cm. Rats placed on the center facing an open arm and allowed to move freely for 5 min. Measures: % open arm time, % open arm entries, rearing frequency, head dip frequency.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "p.o.",
+          "evidence": "administered orally by gavage",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "allowed to move freely for 5 minutes",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in apparatus during 5-min EPM test",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in apparatus during test",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 2880,
+          "evidence": "Forty-eight hours after the last administration, the subjects were placed on the center of the EPM",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 70,
+        "n_male": 70,
+        "n_female": null,
+        "n_per_group_min": 11,
+        "evidence": "Exp 1: Water (12), Aya 120 (11), Aya 240 (12), Aya 480 (11). Exp 2: Water (12), Aya 120 (12).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Long-term ayahuasca administration (120, 240, 480 mg/kg for 30 days) did not affect anxiety-like behaviour in the EPM. No significant differences in % open arm time, % open arm entries, rearing, or head dip frequency.",
+        "statistics": "Exp 1: F(3,42)=0.54, P=0.65 (open arm time); F(3,42)=0.50, P=0.68 (open arm entries); F(3,42)=0.74, P=0.53 (rearing); F(3,42)=0.05, P=0.98 (head dip). Exp 2: t(21)=0.87, P=0.39 (open arm time).",
+        "direction": "no_effect",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "the one-way ANOVA showed no difference among groups in any parameters investigated",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "%Open arm time spent, %Open arm entries, Frequency of rearing, Frequency of head dip",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5-min session reported as totals",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Frequency of rearing and head dip scored as distinct natural exploratory acts",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "subjects were placed on the center of the EPM",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EPM is an innate anxiety test",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "behavior was video recorded; no ML/pose-estimation classifier mentioned",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate ANOVAs only",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Elevated plus maze with open and enclosed arms",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EPM closed arms are apparatus design, not a shelter (definitionally absent)",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard EPM, no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "EPM arms are open-ended extensions of central platform, not distinct enclosed compartments",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "subjects were placed individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "5-minute test session",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "allowed to move freely for 5 minutes",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "EPM conducted once per animal",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline EPM recorded",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Forty-eight hours after the last administration",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5-minute session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Fear Conditioning",
+      "assay_description": "Contextual and tone fear conditioning in MED-Associates chamber (30×24×21 cm) with stainless steel grid floor. Background: 5 tone-footshock pairings (80dB, 5kHz, 5s; 1s 0.6mA shock). Foreground: 5 footshocks alone. Tests assess freezing during 300-s re-exposure to training context (CFC), novel context with tone (TFC, Exp 1) or novel context B (Exp 2), and 5 repeated context A sessions on days 7, 14, 21, 28, 35.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "p.o.",
+          "evidence": "administered orally by gavage",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "rats placed individually in chamber and allowed to move freely",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in conditioning chamber during test",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in chamber",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 2880,
+          "evidence": "Forty-eight hours after the last administration, the subjects were submitted to ... conditioning chamber",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 70,
+        "n_male": 70,
+        "n_female": null,
+        "n_per_group_min": 11,
+        "evidence": "Exp 1: Water (12), Aya 120 (11), Aya 240 (12), Aya 480 (11). Exp 2: Water (12), Aya 120 (12).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Long-term ayahuasca 120 mg/kg increased contextual freezing in both background and foreground fear conditioning paradigms. Effect was specific to training context A (not novel context B), and the elevated freezing relative to control persisted across repeated context A sessions over 35 days. Tone fear conditioning was not selectively affected (pre-CS freezing also elevated at 120 mg/kg, attributed to context generalization).",
+        "statistics": "Exp 1 CFC: F(3,42)=3.8, p=0.01 (Tukey: 120 mg/kg > control). Exp 1 TFC: group F(3,42)=2.76, p=0.05; time F(1,42)=324.8, p≤0.001; interaction F(3,42)=2.05, p=0.12. Exp 2 Context A: t(22)=-2.32, p=0.03; Context B: t(22)=-1.09, p=0.28. Repeated sessions: group F(1,22)=9.4, p<0.001; time F(4,88)=34.4, p<0.001; interaction F(4,88)=1.91, p=0.11.",
+        "direction": "increase",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "animals that received the 120mg/kg ayahuasca dose had increased fear responses when compared with the control group in CFC test ... the ayahuasca group maintained the initial difference from the control group",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Freezing in CFC, pre-CS freezing in TFC, post-CS freezing in TFC",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "freezing reported as total per 300s session",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Freezing is conditioned immobility, excluded from ethological behaviours",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "rats placed individually",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "fear conditioning is a model of associative emotional learning",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "freezing scored as complete immobility; no ML classifier mentioned",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate ANOVA/t-tests only",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "conditioning chamber (MED-Associates, Inc.)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no shelter in conditioning chamber",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "floor consisted of 19 stainless steel rods",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "conditioning chamber is a single compartment; context A vs context B are separate apparatuses used on different days",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "rats placed individually in the chamber",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food or water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Training + CFC (24h) + TFC (48h) + repeated context A sessions on days 7, 14, 21, 28, 35",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "assessing freezing ... for 300s",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 2,
+          "value": "8-14",
+          "evidence": "Training + CFC test + context B + 5 repeated context A sessions (days 7-35) ≈ 8 recording days for Exp 2",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline freezing in same assay",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "testing began 48h after last dose and extended to 35 days post-training",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "300s sessions",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    },
+    {
+      "assay_name": "Morris Water Maze",
+      "assay_description": "Spatial version MWM in 200 cm diameter black circular pool with submerged 10 cm platform. Training: 4 trials/day for 5 consecutive days (1 min trial max, 30 s ITI). Probe session: 1 min free swim without platform. Tracked using Noldus EthoVision v7.0. Measures: escape latency across training days and time in target quadrant during probe.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "p.o.",
+          "evidence": "administered orally by gavage",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "free swimming in pool",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in pool",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No drinking water accessible during trial",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 2880,
+          "evidence": "Forty-eight hours after the last administration, the subjects were trained on the MWM",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 24,
+        "n_male": 24,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "Water (6), Aya 120 (6), Aya 240 (6), Aya 480 (6)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Long-term ayahuasca administration (120, 240, 480 mg/kg) did not affect MWM acquisition (latency declined across days for all groups) or probe-test memory (all groups spent more time in target quadrant). No dose-dependent effects on spatial learning.",
+        "statistics": "Training: day effect F(4,368)=59.9, p≤0.001; group F(3,92)=0.67, p=0.57; interaction F(12,368)=1.11, p=0.54. Probe: quadrant F(3,60)=110.96, p≤0.001; group F(3,20)=0.68, p=0.57; interaction F(9,60)=0.51, p=0.85.",
+        "direction": "no_effect",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "no group effects [F(3,92) = 0.67; p = 0.57] or group × training period interactions [F(12,368) = 1.11; p = 0.54] were observed in the MWM training",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Latency to platform (training) and time in target quadrant (probe)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Across-day training is between-session, not within-session temporal dynamics",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "swimming latency not an ethological behaviour",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "animals tested individually",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "MWM accesses hippocampus-dependent spatial memory",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Noldus EthoVision v7.0 - position tracking only",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate repeated-measures ANOVAs",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "200cm diameter black circular pool",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no shelter in pool",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "water-filled pool, no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "pool divided into virtual quadrants, single open arena",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "animals tested individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no consumable food/water",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "4 trials/day for 5 consecutive days + probe session",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "trials capped at 1 min with 30s ITI; probe 1 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "5 training days + 1 probe day = 6 days",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline MWM recorded",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "training began 48h after last dose",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "trials ≤ 1 minute",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    }
+  ],
+  "judge_notes": [
+    "Three assays identified: EPM, Fear Conditioning (combining contextual + tone + foreground/background + repeated extinction sessions as one paradigm under the rubric), and Morris Water Maze.",
+    "B1 for EPM scored 2 (4-6 measures: open arm time, open arm entries, rearing, head dip) per modal candidate agreement (qwen, gptoss).",
+    "B4 for EPM scored 1 (Yes): rearing and head dipping are natural exploratory acts scored as distinct ethological behaviours, agreeing with glm and gptoss.",
+    "E6 for fear conditioning scored 0: training and test happen in same single-compartment chamber; context A vs B are separate apparatuses used on different days, not multi-zone within one session (overriding glm).",
+    "D3 for Fear Conditioning scored 2 (8-14 days) covering Exp 2: training day + 24h CFC + 24h context B + 5 repeated sessions on days 7, 14, 21, 28, 35 = 8 recording days for this assay.",
+    "time_to_assay set to early_2to24h with 2880 min (48 h post-last-dose) per rubric definition; qwen mislabeled bin as short_term_1to7d for 48h, corrected here.",
+    "Housing: handling and enrichment_housing kept as not_reported (paper is silent); group housing and standard light cycle explicitly stated."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 5.45,
+    "behavioural_complexity_mean": 2.92,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 3.63
+  },
+  "low_confidence_count": 5,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 55504,
+    "output_tokens": 8134,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

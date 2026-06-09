@@ -1,0 +1,692 @@
+{
+  "study_id": "Liu2023",
+  "doi": "10.1016/j.pbb.2023.173659",
+  "species": "mouse",
+  "strain": "C57BL/6",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 56,
+    "age_max_days": 56,
+    "evidence": "Male adult C57BL/6 mice, aged 8 weeks",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male adult C57BL/6 mice, aged 8 weeks",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI, Lisuride",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        2.0,
+        4.0
+      ],
+      "doses_raw": "DOI (2.0 or 4.0 mg/kg)",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Saline (10 ml/kg), DOI (2.0 or 4.0 mg/kg), lisuride (1.0 or 2.0 mg/kg), or arketamine (10 mg/kg) was administered intraperitoneally (i.p.) to male mice 6 days before administration of LPS",
+      "confidence": "high"
+    },
+    {
+      "compound": "Lisuride",
+      "doses_mg_per_kg": [
+        1.0,
+        2.0
+      ],
+      "doses_raw": "lisuride (1.0 or 2.0 mg/kg)",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Saline (10 ml/kg), DOI (2.0 or 4.0 mg/kg), lisuride (1.0 or 2.0 mg/kg), or arketamine (10 mg/kg) was administered intraperitoneally (i.p.)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "were housed under controlled temperatures and 12-h light/dark cycles",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12-h light/dark cycles (lights on between 07:00 -19:00 h)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Locomotion Test",
+      "assay_description": "Mice placed in experimental cages (560 × 560 × 330 mm); cumulative locomotor activity recorded for 60 min using SCANETMV-40. Performed in both LPS and CRS cohorts.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered intraperitoneally (i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "The mice were placed in experimental cages... The cumulative exercise was recorded for 60 min.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in apparatus during test (standard locomotion cage)",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no water in apparatus during test (standard locomotion cage)",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "long_term_over7d",
+          "value_minutes": 10080,
+          "evidence": "DOI/lisuride administered 6 days before LPS; Locomotion test performed 22 h after LPS injection (~7 days after drug)",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 45,
+        "n_male": 45,
+        "n_female": 0,
+        "n_per_group_min": 9,
+        "evidence": "The data represent the mean ± S.E.M. ( n = 9 or 10).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "No effect of DOI, lisuride, or arketamine on locomotor activity in either LPS-treated or CRS-exposed mice compared to saline controls.",
+        "statistics": "LPS: F(4,44) = 0.667, P = 0.618; CRS: F(4,42) = 1.128, P = 0.3565",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "There were no alterations in locomotion among the five groups (Fig. 1C). No difference was found in locomotor activity among the five groups (Fig. 2C).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The cumulative exercise was recorded for 60 min.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "cumulative exercise only; no within-session binning reported",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no analysis of behavioural sequences",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "locomotion distance only",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "mouse tested alone",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "animal movement analysis system SCANETMV-40 (position tracking)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate ANOVA only",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "experimental cages (length × width × height: 560 × 560 × 330 mm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enclosed refuge in the cage",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single rectangular cage",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "mouse tested alone",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "single 60 min recording",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "recorded for 60 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "test performed on day 8 only",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline recorded",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "test ~7 days after drug administration",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "60 min session <6 h",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    },
+    {
+      "assay_name": "Forced Swimming Test",
+      "assay_description": "Mice placed individually in a cylinder (23 cm diameter, 31 cm height) containing 15 cm of water at 23 ± 1°C; immobility recorded for 6 min via automated SCANETMV-40. Run in both LPS and CRS cohorts.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered intraperitoneally (i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "mouse placed individually in a cylinder containing 15 cm of water (FST counts as restraint per rubric)",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "no food in cylinder during test",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "no drinkable water source in cylinder during test",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "long_term_over7d",
+          "value_minutes": 10080,
+          "evidence": "DOI/lisuride administered 6 days before LPS; FST performed 24 h after LPS injection (~7 days after drug)",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 45,
+        "n_male": 45,
+        "n_female": 0,
+        "n_per_group_min": 9,
+        "evidence": "The data represent the mean ± S.E.M. ( n = 9 or 10).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Pretreatment with arketamine, but not DOI (2 or 4 mg/kg) or lisuride (1 or 2 mg/kg), significantly attenuated the increased FST immobility in both LPS-treated and CRS-exposed mice.",
+        "statistics": "LPS: F(4,44) = 3.769, P = 0.010; CRS: F(4,42) = 3.466, P = 0.0156",
+        "direction": "no_effect",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "both DOI and lisuride lessened the increased immobility time of FST in the LPS-treated mice; however, statistical analysis did not reach significance (Fig. 1D)... Pretreatment with arketamine, but not DOI and lisuride, significantly ameliorated CRS-induced increase in the immobility time of FST (Fig. 2D).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "immobility time was the sole outcome",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "total immobility over 6 min; no time bins",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST immobility is not ethological per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "mouse tested alone",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "automated forced-swim apparatus SCANETMV-40 (movement detection)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate ANOVA only",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "cylinder (diameter: 23 cm; height: 31 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no refuge in cylinder",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "water-filled cylinder, no bedding (definitionally absent)",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent in FST",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment in FST cylinder",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "cylinder is a single open volume",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "mouse placed individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food or drinkable water source",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "single 6 min recording",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "immobility time recorded for 6 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "test performed on day 8 only",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline recorded",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "test ~7 days after drug administration",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "6 min session <6 h",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Sucrose Preference Test",
+      "assay_description": "Mice exposed to water and 1% sucrose for 48 h, followed by 4 h water/food deprivation, then 1 h two-bottle choice (water vs 1% sucrose). Preference calculated as % sucrose consumption. Performed in CRS cohort.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered intraperitoneally (i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Mice were exposed to water and 1 % sucrose solution for 48 h (pre-test habituation to bottles)",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "freely accessing bottles",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "followed by 4 h of water and food deprivation and a 1-hour exposure to two identical bottles",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "before",
+          "evidence": "followed by 4 h of water and food deprivation",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "long_term_over7d",
+          "value_minutes": 11520,
+          "evidence": "Saline... DOI... was administered i.p. to mice 24 h before the start of CRS (7 days)... Behavioral tests including ... SPT were performed",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 47,
+        "n_male": 47,
+        "n_female": 0,
+        "n_per_group_min": 9,
+        "evidence": "Data are shown as mean ± S.E.M (n = 9 or 10).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Pretreatment with arketamine, but not DOI (2 mg/kg) or lisuride (1 mg/kg), significantly ameliorated the CRS-induced reduction in sucrose preference.",
+        "statistics": "F(4,42) = 5.014, P = 0.0021",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Pretreatment with arketamine, but not DOI and lisuride, significantly ameliorated CRS-induced reduction of sucrose preference of SPT (Fig. 2E).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "sucrose preference (single derived measure)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "bottles weighed before and at end; no within-session bins",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "drinking preference reported only as a ratio",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "tested alone",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "bottle weight measurement; no automated behavior classification",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate ANOVA only",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "two-bottle SPT typically conducted in home cage with two bottles",
+          "confidence": "medium"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single home cage with two bottles; no partitioned compartments",
+          "confidence": "medium"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individual SPT testing implied",
+          "confidence": "medium"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "1-hour exposure to two identical bottles, one is water, and another is 1 % sucrose solution",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "1-hour exposure",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "1-hour exposure to two identical bottles",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "single 1 h test session",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline preference recorded",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "tested >7 days after drug administration",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "1 h session <6 h",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    }
+  ],
+  "judge_notes": [
+    "All three candidates agreed on three distinct assays: Locomotion Test, Forced Swimming Test, and Sucrose Preference Test. Merged as such.",
+    "Western blot / ELISA / spleen weight excluded as non-behavioural (per rubric).",
+    "B1 scored 0 (single measure) per rubric (locomotion distance, FST immobility, sucrose preference ratio each = 1 measure); glm gave 1 erroneously.",
+    "SPT: food/water_restriction set to 'before' because the paper explicitly states '4 h of water and food deprivation' prior to the 1 h test; during the test, both fluids were available (E8 = Yes).",
+    "Setup habituation: SPT had 48 h prior sucrose/water exposure, scored 'yes'. Locomotion and FST: not reported.",
+    "Group housing: paper only states 'housed under controlled temperatures and 12-h light/dark cycles' without specifying density — scored 'not_reported' (gptoss inferred 'yes' without evidence).",
+    "E6 for SPT scored 0: two bottles in a home cage do not constitute physically distinct compartments separated by walls (gptoss scored 1 erroneously)."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0.0,
+    "environmental_complexity_max": 2.73,
+    "recording_duration_max": 2.73,
+    "behavioural_complexity_mean": 0.0,
+    "environmental_complexity_mean": 0.91,
+    "recording_duration_mean": 2.27
+  },
+  "low_confidence_count": 12,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 53908,
+    "output_tokens": 7582,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

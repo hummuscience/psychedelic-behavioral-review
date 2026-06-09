@@ -1,0 +1,285 @@
+{
+  "study_id": "Ivan2024",
+  "doi": "10.1016/j.bpsgos.2023.07.008",
+  "species": "mouse",
+  "strain": "Thy1-GCaMP6m",
+  "age": {
+    "value": "adult",
+    "age_min_days": 270,
+    "age_max_days": 330,
+    "evidence": "Adult (9- to 11-month-old) Thy1-GCaMP6m mice",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": 5,
+    "n_female": 3,
+    "evidence": "Thy1-GCaMP6m mice (N=8; 3 female/5 male)",
+    "confidence": "high"
+  },
+  "psychedelic": "Ibogaine",
+  "dosing": [
+    {
+      "compound": "Ibogaine",
+      "doses_mg_per_kg": [
+        40.0
+      ],
+      "doses_raw": "40 mg/kg",
+      "vehicle": "water",
+      "route": "i.p.",
+      "schedule": "repeated",
+      "evidence": "Ibogaine HCl was obtained ... diluted in sterile water to a concentration of 10 to 12 mg/mL to achieve a dose of 40 mg/kg ... (intraperitoneal administration). ... 3 days (test days 1-3) of ibogaine HCl (40 mg/kg; n = 6)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Paper does not describe a handling habituation protocol.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "housed in standard rodent cages (cage density not specified)",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "maintained at 24°C under a 12-hour light/dark cycle. All experiments were performed during the light cycle (between 7:30 AM and 7:30 PM).",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "housed in standard rodent cages (no mention of enrichment items)",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head-fixed treadmill virtual navigation task",
+      "assay_description": "Head-fixed mice ran on a 150 cm × 4 cm Velcro treadmill belt with 3 tactile cues, receiving a 10% sucrose drop reward on each lap. Behavioural measures (trial completion rate, lick counts, running speed, stopping probability) recorded in 10-min epochs before and after ibogaine (40 mg/kg, i.p.) or saline injection.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "intraperitoneal administration",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Head-fixed mice were trained to run on a treadmill using a positive reinforcement paradigm.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "head-fixed mice running on a treadmill",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "Mice had free access to food and water before training.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "before",
+          "evidence": "Animals were water restricted during the training and testing. They had ad libitum access to water for up to 30 minutes per day",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 10,
+          "evidence": "Mice were then given an injection of ibogaine or saline and waited 10 minutes ... The second epoch of the task and recording began again for 10 minutes (minutes 20-30 of the experiment). The third 10-minute recording epoch began 30 minutes after injection.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 8,
+        "n_male": 5,
+        "n_female": 3,
+        "n_per_group_min": 2,
+        "evidence": "N=8; 3 female/5 male ... 3 days (test days 1-3) of ibogaine HCl (40 mg/kg; n = 6) or 3 days of saline (n = 2)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Mice continued to perform the treadmill task after ibogaine but showed moderate decreases in movement velocity and other behavioural metrics (trial completion, licking, running speed, stopping). Saline had no significant effect on task performance.",
+        "statistics": "",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "no",
+        "evidence": "mice continued to perform the task after ibogaine with only moderate decreases in movement velocity and other metrics (Figure S1). ... Ibogaine somewhat reduced motivation and motoric output in the current study.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "Rate of trial completion, average number of spout licks, average running speed, probability of stopping (Figure S1)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Metrics summarised per 10-min epoch, not analysed as within-session time courses.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural transitions or sequences reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Measured behaviours are reward-directed licking and treadmill locomotion, not species-typical ethological behaviours.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Head-fixed single animal task; no social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Task requires path integration / cognitive map inference of position between tactile landmarks.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Behaviour recorded via capacitive lick sensor and optical encoder; no pose-estimation or ML behavioural classifier used.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Behavioural data reported as separate univariate measures.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Head-fixed treadmill with belt and lick spout.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-fixed animal on a treadmill, no shelter available.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The treadmill belt consisted of a Velcro strip; no bedding.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent in head-fixed treadmill apparatus.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only three tactile cues on belt for the task; no enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single linear treadmill belt 150 cm long, 4 cm wide.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Head-fixed mouse alone in the apparatus during recording.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "They received a drop of 10% sucrose solution on every trial",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "There were 3 10-minute epochs of recording while mice performed the task, one before drug or saline and two afterward.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "There were 3 10-minute epochs of recording.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Each animal was imaged in 1 session before receiving any injections (predrug day 1) for 2 days of saline injections and then either 3 days (test days 1-3) of ibogaine HCl ... or 3 days of saline.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The first 10-minute epoch in every session was the baseline condition before injection.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "3 days (test days 1-3) of ibogaine HCl ... with a baseline epoch each session, so days 2 and 3 recordings occur ≥24 h after prior dosing.",
+          "confidence": "medium"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Longest epoch was 10 min; no session spanned ≥6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    }
+  ],
+  "judge_notes": [
+    "Dropped the two-photon calcium imaging of RSC neurons as a non-behavioural neural recording per rubric exclusions; scored only the head-fixed treadmill behavioural task.",
+    "Merged all candidates' versions of the treadmill task into a single assay (B1 set to 4-6 measures based on Fig S1 reporting trial completion, lick count, running speed, and stopping probability).",
+    "E8 scored Yes because sucrose reward was delivered inside the testing apparatus on every trial.",
+    "D5 scored Yes because mice received ibogaine on test days 1-3 with baseline recordings each subsequent day (≥24 h post prior dose); held at medium confidence.",
+    "Vehicle resolved to water (ibogaine HCl 'diluted in sterile water'); saline was used only as the control injection, not as the ibogaine vehicle.",
+    "Housing fields kept as not_reported (handling, group housing, enrichment) given the paper only states 'standard rodent cages'."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 5.45,
+    "behavioural_complexity_mean": 3.75,
+    "environmental_complexity_mean": 1.36,
+    "recording_duration_mean": 5.45
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 39638,
+    "output_tokens": 4017,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

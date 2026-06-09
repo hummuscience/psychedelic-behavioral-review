@@ -1,0 +1,676 @@
+{
+  "study_id": "Sahoo2026",
+  "doi": "10.1038/s41386-026-02356-8",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "adolescent",
+    "age_min_days": 40,
+    "age_max_days": 50,
+    "evidence": "All experiments were started on postnatal day (PND) 40... The time from postnatal day 40-50 is recognized as mid to late adolescence in mice",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": 14,
+    "n_female": 14,
+    "evidence": "Twenty-eight C57BL/J6 mice, half male/half female",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        3.0
+      ],
+      "doses_raw": "3.0 mg/kg",
+      "vehicle": "saline",
+      "route": "p.o.",
+      "schedule": "repeated",
+      "evidence": "Each mouse received a 100 µl gavage... for an approximate dose of 3.0 mg/kg of PSI... The vehicle group received a comparable volume 0.9% saline. Mice were gavaged every other day for 10 days for a total of five treatments.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Animals were housed in plastic cages (3-5 per cage)",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "yes",
+      "evidence": "maintained ... on a 12:12 reverse light:dark cycle (lights off at 09:00 h)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "1764 cm² Plexiglas arena divided into 16 zones (4 center, 12 periphery); 4-min free exploration under dim red light; ANYMaze software analyzed video for center time, center entries, total distance, average speed, center crossings.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "p.o.",
+          "evidence": "Each mouse received a 100 µl gavage... for an approximate dose of 3.0 mg/kg of PSI.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Animals explored a 1764 cm² Plexiglas arena... for 4 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Food and water were provided ad libitum [in home cage]; no food in apparatus.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Food and water were provided ad libitum [in home cage]; no water in apparatus.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "long_term_over7d",
+          "value_minutes": 50400,
+          "evidence": "Five weeks post-PSI administration, anxiety and locomotion were assessed using the Open Field test",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 28,
+        "n_male": 14,
+        "n_female": 14,
+        "n_per_group_min": 14,
+        "evidence": "When the data between sexes were collapse (vehicle n = 14, PSI n = 14)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Adolescent psilocybin exposure reduced locomotor activity in females; vehicle-treated females showed greater total distance, speed and center crossings than PSI-treated females, yielding a significant sex × treatment interaction for center crossings. Males were not significantly affected.",
+        "statistics": "Center Crossing interaction: F = 10.780, p = 0.003; Total Distance: F = 3.579, p = 0.070; Average Speed: F = 3.063, p = 0.093; collapsed Total Distance p = 0.0287; Average Speed p = 0.042",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "yes",
+        "time_dependent": "n/a",
+        "evidence": "there was a significant interaction between sex by treatment for Center Crossing (F=10.780, p=0.003)... PSI treatment significantly decreased female behavior as compared to vehicle treated females.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "center time, center entries, locomotion... Total Distance traveled, Average Speed, Center Crossings",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Measures reported as totals over the 4-min session.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural sequences described.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only locomotor and spatial measures recorded.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Single mouse in arena.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "anxiety and locomotion were assessed",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "ANYMaze software analyzed video recordings (position tracking).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Two-way ANOVA, separate univariate tests.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "1764 cm² Plexiglas arena",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open field - no refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Plexiglas arena, no bedding described.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Plexiglas arena (divided into 16 virtual zones)",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Single mouse in arena.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in apparatus.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Single 4-min OFT session.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "explored... for 4 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test session reported.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug OFT baseline reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Five weeks post-PSI administration... assessed using the Open Field test.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "4 min session.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Light/Dark Box",
+      "assay_description": "Two adjoining compartments (27×27×27 cm each); bright open area at 1000 lux and dark enclosed chamber <1 lux connected by 7×7 cm opening; 10-min session videotaped and scored for latency to first enter light, total transitions, and cumulative time in each compartment.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "p.o.",
+          "evidence": "Each mouse received a 100 µl gavage... for an approximate dose of 3.0 mg/kg of PSI.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "allowed the mice to move freely between the two sections",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Food and water were provided ad libitum [in home cage]; no food in apparatus.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Food and water were provided ad libitum [in home cage]; no water in apparatus.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "long_term_over7d",
+          "value_minutes": 40320,
+          "evidence": "Four weeks post treatment mice were evaluated in the Light/Dark Box",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 27,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 13,
+        "evidence": "When the data between sexes were collapsed (vehicle n = 13, PSI n = 14)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "No significant effect of adolescent psilocybin exposure on Light/Dark Box measures (latency, transitions, time in compartments) in either sex.",
+        "statistics": "time in light: F=2.089, p=0.162; time in dark: F=2.072, p=0.164; light box entries p=0.6020; dark box entries p=0.567",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "no",
+        "time_dependent": "n/a",
+        "evidence": "A two-way ANOVA showed no significant differences for each dependent measure in the Light/Dark box (p > 0.05).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "scored for the latency to first enter the light compartment, total number of transitions between compartments and cumulative time spent in each compartment.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Cumulative totals over 10-min session.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Transitions counted as a total, not analyzed as sequences.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only spatial/zone measures recorded.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Single mouse tested.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate anxiety test, no learning component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "videotaped and scored, no advanced classifier described.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Separate univariate ANOVAs.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "two adjoining compartments... standard light-dark box",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "a dark, enclosed chamber of the same dimensions, illuminated at <1 lux",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not described.",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "two adjoining compartments... connected by a small opening (7 × 7 cm)",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Single mouse tested.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in apparatus.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "The testing session lasting 10 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "10 min recording.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test session reported.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Four weeks post treatment mice were evaluated in the Light/Dark Box",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "10 min session.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Odor-induced BOLD imaging (almond/TMT)",
+      "assay_description": "Awake fMRI BOLD scanning of mice (after 5-day acclimation to imaging procedure) during nose-cone delivery of a rewarding odor (benzaldehyde/almond) and, two weeks later, an aversive predator odor (TMT/fox). Each session = 150 scan repetitions over 15 min; 5-min baseline followed by continuous odor stimulus. Primary outcome was odor-evoked BOLD signal change across 139 atlas-defined brain areas; the behavioural readout is the animal's neural/sensory response to natural rewarding vs. aversive olfactory stimuli during head-restrained awake imaging.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "p.o.",
+          "evidence": "Each mouse received a 100 µl gavage... for an approximate dose of 3.0 mg/kg of PSI.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "These functional imaging studies were done in fully awake mice following five days of acclimation to the awake imaging procedure.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "awake imaging procedure... odor stimulant was introduced through nose cone attached to a pump (awake head-fixed MRI)",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in MRI scanner.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in MRI scanner.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "long_term_over7d",
+          "value_minutes": 190080,
+          "evidence": "on PND 176, ca 20 weeks post exposure, odor-induced changes in BOLD activity were conducted",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 22,
+        "n_male": 12,
+        "n_female": 10,
+        "n_per_group_min": 4,
+        "evidence": "female vehicle n = 4, male vehicle n = 6, female PSI n = 6, and male PSI n = 6",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "PSI-exposed mice showed reduced positive BOLD responses to the rewarding almond odor (50/139 regions lower than vehicle) and enhanced negative BOLD responses to the aversive fox odor (TMT) (27/139 regions), indicating dampened brain sensitivity to both rewarding and aversive olfactory stimuli after adolescent psilocybin exposure.",
+        "statistics": "voxel-wise one-sample t-tests, two-tailed, p < 0.05 with Benjamini-Hochberg FDR Q = 0.05; 50/139 regions positive BOLD higher in vehicle vs PSI (almond); 27/139 regions negative BOLD higher in PSI vs vehicle (TMT)",
+        "direction": "mixed",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "50/139 brain areas showing higher positive BOLD signal in veh over PSI... PSI mice showed a significantly higher negative BOLD as compared to vehicle in 27/139 brain areas",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Positive BOLD response to almond and negative BOLD response to TMT measured.",
+          "confidence": "medium"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Voxel comparisons were made between baseline (1-50 image acquisitions) and the initial odor presentation (51-100 image acquisitions)",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition/sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Outcome is neural BOLD response, not natural behavioural acts.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning component; innate olfactory responses.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Voxel-wise statistical mapping, not behavioural classification.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Voxel-wise univariate t-tests with FDR correction.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "MRI scanner with awake-imaging head holder.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter in scanner.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding in scanner.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Head-restrained in MRI bore.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Single animal scanned at a time.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in scanner.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "almond session, then TMT session two weeks later",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "uninterrupted data acquisitions... 150 scan repetitions or acquisitions for a total elapsed time of 15 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Two weeks later mice were exposed to TMT (two recording days)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug BOLD recording prior to adolescent PSI exposure.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "on PND 176, ca 20 weeks post exposure",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "15 min session.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    }
+  ],
+  "judge_notes": [
+    "Both Qwen and GLM and GPT-OSS scored only the two overt behavioural assays (OFT and Light/Dark Box). The odor-induced awake BOLD imaging combines an active sensory-behavioural stimulation with restraint; per rubric, fMRI with a behavioural/sensory task is scorable as the behavioural component. Added as a third assay.",
+    "rsFC (resting state) and VBM/DWI structural scans are pure neural/anatomical imaging without a behavioural task and were correctly omitted by all candidates.",
+    "Strain harmonized to C57BL/6J (paper text 'C57BL/J6' is the same strain with a typographic variant).",
+    "time_to_assay for OFT and L/D box: paper states 'Five weeks post-PSI administration' (OFT) and 'Four weeks post treatment' (L/D). Both fall in long_term_over7d; minutes are approximate.",
+    "B1 for OFT: candidates report 4 measures (center time, center entries, total distance, average speed, center crossings) → category 4-6 → score 2."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 2.73,
+    "recording_duration_max": 5.45,
+    "behavioural_complexity_mean": 2.08,
+    "environmental_complexity_mean": 0.91,
+    "recording_duration_mean": 2.72
+  },
+  "low_confidence_count": 5,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 56599,
+    "output_tokens": 8005,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

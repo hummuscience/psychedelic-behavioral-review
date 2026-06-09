@@ -1,0 +1,481 @@
+{
+  "study_id": "Nogueira2025",
+  "doi": "10.1038/s41380-024-02655-w",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "adult",
+    "age_min_days": 56,
+    "age_max_days": 84,
+    "evidence": "Adult male C57BL6J mice (n = 66), 8-12 weeks old",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 66,
+    "n_female": null,
+    "evidence": "Adult male C57BL6J mice (n = 66)",
+    "confidence": "high"
+  },
+  "psychedelic": "5-MeO-DMT",
+  "dosing": [
+    {
+      "compound": "5-MeO-DMT",
+      "doses_mg_per_kg": [
+        20.0
+      ],
+      "doses_raw": "20 mg/kg, i.p.; subgroup i.c.v. 100 µg/µl, 1 µl",
+      "vehicle": "saline",
+      "route": "multiple",
+      "schedule": "acute",
+      "evidence": "single intraperitoneal (i.p.) injection of 20 mg/kg, prepared fresh in saline (300 µl, 0.9%) ... A subgroup of mice received an intracerebroventricular (i.c.v.) injection of 5-MeO-DMT (100 µg/µl, 1 µl volume)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Methods do not mention experimenter handling beyond injection.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "housed under a 12 h light/dark cycle, with food and water ad libitum and controlled temperature at 23 °C — cage density not stated",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "housed under a 12 h light/dark cycle — direction not stated",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Home-cage enrichment not described.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Elevated Plus Maze",
+      "assay_description": "EPM (closed and open arms 33 × 6 cm; center 6 × 6 cm; height: 60 cm). Animals placed in the middle facing a closed arm and video recorded for 10 min. Measures: time in open arms, entries into open arms, plus ethological scoring (protected/unprotected head dips, rearing, return, grooming, fecal boli). Tested 24 h or 5 days after i.p. 5-MeO-DMT/saline, and 5 days after i.c.v. injection in acutely stressed mice.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "single intraperitoneal (i.p.) injection of 20 mg/kg ... A subgroup of mice received an intracerebroventricular (i.c.v.) injection of 5-MeO-DMT",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Paper does not describe pre-test apparatus habituation.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "animals were placed in the middle facing a closed arm, and ... video recorded",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Animals tested in EPM; food was not present in the apparatus during the 10-min recording. Home cage food was ad libitum.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Animals tested in EPM; water was not present in the apparatus during the 10-min recording. Home cage water was ad libitum.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 1440,
+          "evidence": "Mice treated with 5-MeO-DMT or saline, 24 h or 5 days before ... were tested in the Elevated Plus Maze; stressed cohort tested 5 days after i.c.v.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 35,
+        "n_male": 35,
+        "n_female": null,
+        "n_per_group_min": 5,
+        "evidence": "male mice (n = 24) ... four experimental groups, n = 6 per group ... Mice (n = 11, randomized by raffle) ... 5-MeO-DMT (n = 6) or saline (n = 5)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "5-MeO-DMT increased the proportion of entries into the open arms compared to saline at both 24 h and 5 days, and showed a trend toward more time in open arms 5 days post-treatment. In stressed mice (i.c.v.), 5-MeO-DMT pretreatment markedly increased time in open arms (~4.16x). Ethological scoring showed increased unprotected and decreased protected head dips.",
+        "statistics": "Time in OA (5 d): estimate = 0.98539, Z = 1.83972, p = 0.06581; Entries into OA: estimate = 1.18149, Z = 5.21038, p = 1.8845e-7; day effect Z = -4.62789, p = 3.6942e-6; Stressed mice time in OA: estimate = 1.58672, Z = 3.73221, p = 0.00019; head-dip p = 0.032 / 0.018 / 0.016 / 0.001 / 0.007",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "5-MeO-DMT to increase the mean ratio of entries into open arms compared to saline (p = 1.8845e-7) ... 5 days after treatment the animals receiving 5-MeO-DMT spent 2.60 times more time in the open arms compared to the saline group ... stressed mice pre-treated with 5-MeO-DMT stayed in open arms 4.16 times longer (p = 0.00019)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 3,
+          "value": "7+",
+          "evidence": "time in open arms, entries into open arms, protected head dips, unprotected head dips, rearing, return, grooming, fecal boli",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Analyses based on totals over the 10-min session; no within-session time binning.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition or sequence analyses reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Ethological analysis of videos was done manually and blinded, quantifying protected and unprotected head dips, rearing, return, grooming, and fecal boli.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "EPM does not target social behaviour; focal mouse tested alone.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EPM measures innate avoidance, no learning required.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotion analyzed by custom centroid-tracking software; ethological scoring done manually.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "GLM and beta regression used; no PCA/clustering across behavioural features.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Elevated Plus Maze (closed and open arms 33 × 6 cm; center 6 × 6 cm; height: 60 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EPM closed arms are part of apparatus design, not a shelter (definitionally absent).",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Arenas were cleaned with ethanol 70% between sessions; no bedding mentioned.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in apparatus.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in apparatus.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "EPM arms are open-ended extensions of a central platform, not distinct enclosed compartments.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Focal mouse tested alone in apparatus.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in maze during testing.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Each animal tested once in EPM (10 min/arena).",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "video recorded ... for 10 min/arena",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Each animal tested on a single recording day (24 h or 5 days post-treatment); independent cohorts.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug EPM baseline recorded.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Tested 24 h or 5 days after a single 5-MeO-DMT dose.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "10-min session does not span ≥6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "Open field arena 45 × 34 × 16.5 cm; mouse placed in the center (60% of total area) and video recorded for 10 min. Measures: time in central zone, frequency of entries into central zone, trajectory/heatmaps of locomotion. Tested 24 h or 5 days after i.p. 5-MeO-DMT/saline, and 5 days after i.c.v. in acutely stressed mice.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "single intraperitoneal (i.p.) injection of 20 mg/kg ... A subgroup of mice received an intracerebroventricular (i.c.v.) injection of 5-MeO-DMT",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Paper does not describe pre-test apparatus habituation.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "mice were placed in the center (60% of total area) and video recorded",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Food was not present in the OF arena during the 10-min recording; home-cage food ad libitum.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Water was not present in the OF arena during recording; home-cage water ad libitum.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 1440,
+          "evidence": "Mice tested in the Open Field 24 h or 5 days after treatment; stressed cohort tested 5 days after i.c.v.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 35,
+        "n_male": 35,
+        "n_female": null,
+        "n_per_group_min": 5,
+        "evidence": "Mice (n = 24; 4 experimental groups) ... i.c.v injected (n = 6 5-MeO-DMT, n = 5 saline)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "5-MeO-DMT reduced the frequency of entries into the central zone by ~36% compared to saline (no effect on time in centre) — suggesting an anxiogenic-like signal in naive mice. In stressed mice, 5-MeO-DMT pretreatment increased time in the central zone by ~155%, consistent with anxiolytic action under stress.",
+        "statistics": "Time in CZ: estimate = -0.05061, Z = -0.24253, p = 0.80837; Entries CZ: estimate = -0.44569, Z = -4.83081, p = 1.3598e-6; Stressed time in CZ: estimate = 0.93576, Z = 3.30058, p = 0.00096",
+        "direction": "mixed",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "5-MeO-DMT treatment to reduce entries to the central zone by 35.96% compared to saline (p = 1.3598e-6) ... pretreatment with 5-MeO-DMT increased duration in the central zone by 154.92% (p = 0.00096)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Quantifying time in the central zone ... frequency of entries into the central zone",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total time/entries over the 10-min session; no within-session time binning.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition/sequence analyses reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "OF measures spatial zone occupancy; no ethological scoring.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mouse tested alone; no social construct.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate anxiety test; no learning required.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotion analysed by custom centroid-tracking software; not pose estimation or ML behaviour classification.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "GLM analyses only; no PCA/clustering across behavioural features.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Open Field (45 × 34 × 16.5 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter in open field arena.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Arenas cleaned with ethanol between sessions; no bedding.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in arena.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in arena.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Open field is a single arena with virtual central zone.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Focal mouse alone in arena.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in arena during testing.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Each animal recorded once in OF for 10 min.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "video recorded ... for 10 min/arena",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Each animal tested on a single OF day (24 h or 5 days post-treatment); independent cohorts.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug OF baseline recorded.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Tested 24 h or 5 days after 5-MeO-DMT dose.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "10-min session does not span ≥6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Two assays retained: EPM and OFT. Both tested under multiple drug-route (i.p./i.c.v.) and timepoint (24 h, 5 d) conditions; consolidated per rubric (single assay each).",
+    "B1 for EPM set to 7+ (score 3): time in OA, entries to OA, protected head dips, unprotected head dips, rearing, return, grooming, fecal boli — 8 distinct measures (matches gptoss; qwen/glm undercounted by collapsing).",
+    "D1 set to 'Single session' for both assays: each animal was tested once at a single timepoint; different cohorts at different timepoints do not equal multiple sessions per animal. D3 = 1 accordingly.",
+    "Application_type set to 'multiple' for both assays because i.p. and i.c.v. were both used across cohorts within the same assay.",
+    "Housing items left not_reported (low confidence): paper mentions 12 h light/dark and ad lib food/water but does not state cage density, handling, light-cycle direction, or enrichment.",
+    "Dosing collapsed into one entry with route=multiple to reflect that both i.p. and i.c.v. delivered the same compound."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 5.0,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 3.12,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 1.36
+  },
+  "low_confidence_count": 6,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 55224,
+    "output_tokens": 7156,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

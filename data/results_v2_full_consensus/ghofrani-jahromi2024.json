@@ -1,0 +1,678 @@
+{
+  "study_id": "Ghofrani-Jahromi2024",
+  "doi": "10.1037/bne0000579",
+  "species": "rat",
+  "strain": "Wistar",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 56,
+    "age_max_days": 63,
+    "evidence": "108 male Wistar rats (180-200 g, 8-9 weeks old)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 108,
+    "n_female": null,
+    "evidence": "108 male Wistar rats",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybe cubensis extract (psilocybin-containing)",
+  "dosing": [
+    {
+      "compound": "Psilocybe cubensis extract",
+      "doses_mg_per_kg": [
+        25.0
+      ],
+      "doses_raw": "25 mg/kg in a volume of 1 mL",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Psilocybe cubensis was injected intraperitoneal at the dose of 25 mg/kg (single administration) before (pretrain) or after (posttrain) shocks, or before the test (pretest).",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "No handling protocol described.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "The rats were housed six per Plexiglas cage (25 × 50 × 25 cm)",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "a 12 hr:12 hr light/dark cycle (lights on at 7:00 hr) ... all the experiments were done during the light hours (9:00 a.m. to 3:00 p.m.)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "No mention of enrichment in home cage.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Fear Conditioning Test",
+      "assay_description": "Plexiglas chamber (30 × 25 × 30 cm) with shock-grid floor. Rats received 3 tone-shock pairings (75 dB, 3 s tone; 0.8 mA, 3 s shock); on test day (1, 3, or 21 days later) tone presented 3 times (30 s interval) without shock; freezing (episodes >1 s of no movement) was manually scored.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Psilocybe cubensis was injected intraperitoneal",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No pre-test apparatus habituation described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "rats were placed on the apparatus again ... freezing rate was manually measured",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food present in fear-conditioning chamber; rats had free access to food in home cage.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water present in chamber during test.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 60,
+          "evidence": "pretrain (1 hr before shocks), posttrain (5 min after shocks), or pretest (1 hr before test); test performed 1, 3, or 21 days after conditioning",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 108,
+        "n_male": 108,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "Each experimental group consisted of six rats ... 18 experimental groups (n = 6)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Pre- or post-train Psilocybe cubensis (25 mg/kg) potently decreased freezing 1 and 3 days after fear conditioning, but not at 21 days. Pre-test administration decreased freezing only at 1 day.",
+        "statistics": "Psilocybe cubensis F(1,90)=325.57, p<.001; injection time F(2,90)=7.29, p<.001; days F(2,90)=128.12, p<.001; 3-way interaction F(4,90)=3.96, p=.005; Dunnett post-hoc p<.001",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "pre- or posttrain Psilocybe cubensis potently decreased PTSD-like behavior after 1 or 3 days but not 21 days of shock exposure (p < .001) ... Pretest Psilocybe cubensis decreased PTSD-like behavior only after 1 day of shock exposure",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The freezing rate (episodes over > 1 s of no movement) was manually measured",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single total freezing rate reported, no within-session time-binning.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition or sequence analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Conditioned freezing is not counted as ethological in this rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Fear conditioning requires learned tone-shock association.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "freezing rate was manually measured by experimenter",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate ANOVA reported.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "transparent Plexiglas chamber (30 × 25 × 30 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open chamber with no refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "metal rods on its bottom",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single chamber without partitions.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Focal rat tested alone.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in apparatus.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Each rat tested on one of days 1, 3, or 21 (one recording session for that animal).",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Three tone presentations with 30 s intervals; total session well under 15 min.",
+          "confidence": "medium"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Each cohort tested on a single day (1, 3, or 21 days post-conditioning); no baseline pre-test was recorded.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline freezing recorded.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Tests performed at 1, 3, or 21 days after last drug injection (≥24 h for many groups).",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Short session.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "Clear perspex box (30 × 30 × 40 cm) divided into 16 squares. Locomotor activity (number of square crossings) and anxiety (time in 4 middle squares) manually scored over 300 s. Conducted 60 min after fear-conditioning test on day 1, 3, or 21.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Psilocybe cubensis was injected intraperitoneal",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No pre-test apparatus habituation described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Rats moved freely in the open field box.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in OFT arena.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in OFT arena.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 60,
+          "evidence": "Drug administered pretrain (1 h pre-shocks), posttrain (5 min post-shocks), or pretest (1 h pre-test); OFT performed 60 min after fear test on day 1, 3, or 21.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 108,
+        "n_male": 108,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "Each experimental group consisted of six rats; all six rats in each group used for all tests.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybe cubensis decreased locomotor activity at 1 and 3 days (pretrain/posttrain) and at all timepoints (pretest), but not at 21 days for pre/posttrain. Anxiety (time in middle squares) was increased only at 21 days for pretrain/posttrain groups.",
+        "statistics": "Locomotor: Psilocybe cubensis F(1,90)=530.78, p<.001; 3-way interaction F(4,90)=8.00, p<.001. Anxiety: main effect F(1,90)=1.86, p>.05; Psilocybe Cubensis × Days F(2,90)=19.46, p<.001; 3-way F(4,90)=6.09, p<.001.",
+        "direction": "mixed",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "pre- or posttrain Psilocybe cubensis potently decreased locomotor activity after 1 or 3 days but not 21 days ... Pretest Psilocybe cubensis decreased locomotor activity in all groups ... pre- or posttrain Psilocybe cubensis potently decreased anxiety-like behavior only after [21] days",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "number of crossings ... time spent in the four middle squares",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total counts over 300 s session; no time-binning.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Crossings and centre time are spatial measures, not ethological acts.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "OFT relies on innate exploration/avoidance.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The scores were manually measured by experimenter",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate ANOVAs.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "clear perspex container box (30 × 30 × 40 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No refuge in arena.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bare perspex floor.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "16 virtual squares, no physical partitions.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual testing.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in apparatus.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "One 5-min OFT trial per rat.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Locomotor activity was evaluated ... during 300 s",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Each cohort tested on a single day (1, 3, or 21 days post-conditioning).",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug OFT baseline.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Some cohorts tested 3 or 21 days after last drug administration.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5-min session.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Hot Plate Test",
+      "assay_description": "Hot plate at 50 °C with 120 s cutoff. Latency to paw-lick or step change (pain subthreshold) automatically recorded. Performed 10 min after OFT on day 1, 3, or 21.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Psilocybe cubensis was injected intraperitoneal",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No pre-test apparatus habituation described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "rat was placed on the hot sheet (no restraint described)",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food on hot plate.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water on hot plate.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 70,
+          "evidence": "Drug given pretrain/posttrain/pretest; hot plate ran 10 min after OFT (~70 min after fear test) on day 1, 3, or 21.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 108,
+        "n_male": 108,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "Each experimental group consisted of six rats; all six rats used for all tests.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybe cubensis (25 mg/kg) significantly increased pain subthreshold (longer latency to nociceptive response) in all injection-timing groups and at all test timepoints (1, 3, 21 days).",
+        "statistics": "Psilocybe cubensis F(1,90)=1429.03, p<.001; days F(2,90)=12.43, p<.001; Psilocybe × Days F(2,90)=27.07, p<.001; 3-way F(4,90)=2.80, p=.040; Dunnett p<.001.",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "Psilocybe cubensis in all groups potently increased pain subthreshold (p < .001) in comparison with its' related saline group",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "pain subthreshold was recorded",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single latency value.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Nociceptive reflex.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning required.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Device records latency timing only; no behavioural classifier.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate analysis.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Hot plate apparatus was a sheet getting hot by electric current",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bare hot plate.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single platform.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual testing.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "One hot-plate trial per rat.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "The cutoff time was 120 s",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Each cohort tested on a single day (1, 3, or 21 days post-conditioning).",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug hot-plate baseline.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Cohorts tested 3 or 21 days after last drug injection.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Short trial.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Three distinct behavioural paradigms identified: Fear Conditioning Test (freezing recall), Open Field Test (locomotor + anxiety zone measures), and Hot Plate Test. All three are scored as separate assays (different apparatuses, different behavioural domains).",
+    "Per rubric, all dose-timing variants (pretrain/posttrain/pretest) and test-day variants (1, 3, 21 days) of each test are collapsed into one assay entry.",
+    "D3 (recording days) corrected to 1 for each assay: each animal cohort was tested on a SINGLE day (1, 3, or 21 days post-conditioning); different cohorts ≠ multiple recording days for one assay. Candidates qwen/glm/gptoss over-counted this.",
+    "D1 corrected to 'Single session': each rat undergoes one recording per assay; no baseline pre-test was performed.",
+    "B1 for Fear Conditioning: freezing rate is a single measure (score 0, category '1'). Glm's score of 1 was inconsistent with rubric (1 measure → 0 pts).",
+    "OFT outcome direction set to 'mixed' because locomotor decreased while anxiety-related centre time increased at 21 days.",
+    "Housing handling and enrichment marked 'not_reported' (paper silent)."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 0.83,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 1.36
+  },
+  "low_confidence_count": 5,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 60987,
+    "output_tokens": 8013,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

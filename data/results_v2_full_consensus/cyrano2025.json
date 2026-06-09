@@ -1,0 +1,329 @@
+{
+  "study_id": "Cyrano2024",
+  "doi": null,
+  "species": "rat",
+  "strain": "Wistar",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "24 male Wistar rats (Charles River, Germany) weighing approximately 225-250 g upon arrival ... acclimatized for approximately three weeks before the start of the experiments",
+    "confidence": "medium"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 24,
+    "n_female": null,
+    "evidence": "Experiments were conducted on 24 male Wistar rats",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        0.3125,
+        0.625,
+        1.25,
+        2.5
+      ],
+      "doses_raw": "0.3125, 0.625, 1.25, and 2.5 mg/kg",
+      "vehicle": "water",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "DOI ... was tested at four doses of 0.3125, 0.625, 1.25, and 2.5 mg/kg ... All compounds were administered intraperitoneally (IP) in a volume of 1 ml/kg. DOI was injected immediately before the test ... All compounds were dissolved in sterile water immediately before use",
+      "confidence": "high"
+    },
+    {
+      "compound": "Ketanserin",
+      "doses_mg_per_kg": [
+        0.625
+      ],
+      "doses_raw": "0.625 mg/kg",
+      "vehicle": "water",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "The serotonin receptor antagonist ketanserin ... was administered at a single dose of 0.625 mg/kg ... ketanserin, SB 699,551, and ASP 5736 were administered 30 min before the test",
+      "confidence": "high"
+    },
+    {
+      "compound": "SB 699551",
+      "doses_mg_per_kg": [
+        3,
+        10
+      ],
+      "doses_raw": "3 and 10 mg/kg",
+      "vehicle": "water",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "The 5-HT5A receptor antagonist SB 699,551 ... was used at doses of 3 and 10 mg/kg",
+      "confidence": "high"
+    },
+    {
+      "compound": "ASP 5736",
+      "doses_mg_per_kg": [
+        0.01,
+        0.03
+      ],
+      "doses_raw": "0.01 and 0.03 mg/kg",
+      "vehicle": "water",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "ASP 5736 ... was administered at doses of 0.01 and 0.03 mg/kg",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "The animals were acclimatized for approximately three weeks before the start of the experiments, during which time they were handled and familiarized with the experimental apparatus",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "The animals were housed in groups of four per cage in standard laboratory conditions",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12-hour light/dark cycle (lights on at 06:00) ... Tests were conducted during the light phase of the light/dark cycle",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "housed in groups of four per cage in standard laboratory conditions; no mention of enrichment items",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head-Twitch Response (HTR)",
+      "assay_description": "Rats were placed individually in a small upside-down glass aquarium (17 × 10.5 × 9 cm) on a wire mesh frame inside a sound-attenuating box with high-speed cameras. Behaviour was video-recorded for 45 min and head-twitch responses were detected using DeepLabCut pose-estimation and SimBA machine-learning classification. Tested under DOI alone (0.3125-2.5 mg/kg) and under DOI (1.25 mg/kg) with pretreatment by ketanserin, SB 699,551, or ASP 5736.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All compounds were administered intraperitoneally (IP) in a volume of 1 ml/kg",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "during which time they were handled and familiarized with the experimental apparatus",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "the animals could move freely from side to side",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Food and water were provided ad libitum [in home cage]; rats placed in glass aquarium with no food present during the 45-min test",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Food and water were provided ad libitum [in home cage]; rats placed in glass aquarium with no water present during the 45-min test",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "DOI was injected immediately before the test, while ketanserin, SB 699,551, and ASP 5736 were administered 30 min before the test",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 24,
+        "n_male": 24,
+        "n_female": null,
+        "n_per_group_min": 4,
+        "evidence": "Experiments were conducted on 24 male Wistar rats ... The number of measurements per dose tested was 4-7 [Exp 1] ... For each measurement, the N = 8 [Exp 2]",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI dose-dependently increased head-twitch responses in male rats, with significant effects at 1.25 and 2.5 mg/kg (ED50 = 1.163 mg/kg). The 5-HT2A antagonist ketanserin (0.625 mg/kg) attenuated DOI (1.25 mg/kg)-induced HTR, whereas the 5-HT5A antagonists SB 699,551 (3, 10 mg/kg) and ASP 5736 (0.01, 0.03 mg/kg) did not. Digital (DeepLabCut+SimBA) counts correlated very highly with human observer counts (r² = 0.9985).",
+        "statistics": "Exp 1: KW(5)=17.04, p<0.01; 1.25 mg/kg vs vehicle p<0.05; 2.5 mg/kg vs vehicle p<0.001; ED50=1.163 mg/kg (CI 0.8370-1.560), Hill slope=2.187. Exp 2: KW(7)=25.97, p<0.001; DOI 1.25 mg/kg vs vehicle p=0.0204; ketanserin+DOI vs DOI p=0.0282. Human vs machine: r²=0.9985 (CI 0.9518-1.045), p<0.0001.",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Following DOI administration, the animals displayed a dose-related increase in the head-twitch response ... ketanserin attenuated DOI-induced head-twitch response (p = 0.0282), the 5-HT5A receptor antagonists SB 699,551 and ASP 5736 did not affect DOI's action",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "number of responses detected by DeepLabCut and SimBA digital workflow over the 45-minute test sessions",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Data reported as total/mean number of responses over the 45-min session; no within-session time-course analysis described",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition/sequence/microstructure analysis reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-twitch response (HTR/WDS) is explicitly excluded from ethological behaviours per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Single rat placed alone in the aquarium; no social component",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is an innate pharmacologically-evoked response with no learning or memory requirement",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "High-speed videos were analyzed using the DeepLabCut neural network to track head movements, and the Simple Behavioral Analysis (SimBA) toolkit was employed to build models identifying specific head-twitch responses",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate counts of HTR reported; no PCA/UMAP/clustering of behavioural features",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "a glass aquarium (17 × 10.5 × 9 cm) was placed 'upside-down' on a wire mesh frame",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open glass aquarium with no enclosed refuge",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Aquarium placed upside-down on a wire mesh frame; no bedding mentioned",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in the testing apparatus",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects mentioned in the testing apparatus",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single glass aquarium with no compartments or dividers",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Following drug administration, the animals were gently placed into the aquarium [individually]",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water source inside the testing aquarium during the 45-min session",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Their behaviors were digitally video recorded for 45 min [per test]; each test is a single session for that condition",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "Their behaviors were digitally video recorded for 45 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "No more than two tests per animal per week were conducted ... treatments were administered in a random order [across multiple drug doses/conditions, so each animal was tested on multiple days]",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline recording reported for this assay",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "DOI was injected immediately before the test; no recording ≥24 h post-dose",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "45-min recording session, well under 6 h",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    }
+  ],
+  "judge_notes": [
+    "All candidates identified a single HTR assay; consolidated as one entry.",
+    "DOI was the only psychedelic; ketanserin, SB 699,551, and ASP 5736 included as additional administered compounds in dosing (antagonists co-administered with the psychedelic).",
+    "Vehicle set to 'water' per explicit statement that all compounds were dissolved in sterile water (overriding gptoss's 'saline').",
+    "DOI: doses_mg_per_kg formatted as numeric list (qwen used trailing zeros, harmonized).",
+    "D1 set to 'Single session' (score 0): each treatment condition was a one-shot 45-min recording. Although animals were tested across multiple days under different drug conditions (within-subjects crossover), these are different assay-condition sessions, not repeated recordings of the same condition.",
+    "D3 set to 2-7 because individual rats were tested across multiple days (no more than 2/week) under different conditions, contributing recording data on multiple days for this assay.",
+    "B1 scored 0 (single measure: HTR count) per rubric (1 measure = 0 points); glm's score of 1 was an error.",
+    "DOI doses 0.3125/0.625 should not be confused with ketanserin 0.625; doses_mg_per_kg listed separately per compound.",
+    "Age scored young_adult based on 225-250 g + ~3 weeks acclimatization in adult-sized Wistar rats."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 2.73,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 2.73
+  },
+  "low_confidence_count": 1,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 41776,
+    "output_tokens": 4819,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

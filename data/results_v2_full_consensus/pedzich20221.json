@@ -1,0 +1,485 @@
+{
+  "study_id": "Pedzich2022",
+  "doi": "10.3390/ijms232315284",
+  "species": "mouse",
+  "strain": "C57BL/6JRj",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 56,
+    "age_max_days": 84,
+    "evidence": "Mice were 8-12 weeks old at the time of experiments",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "All experiments were carried out on male C57BL/6JRj mice",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        0.2,
+        2.0
+      ],
+      "doses_raw": "low dose: 0.2 mg/kg, high dose: 2.0 mg/kg",
+      "vehicle": "DMSO",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "DOI was diluted to the final concentration in an intraperitoneal (i.p.) injection volume of 10 mL/kg. The working solutions contained up to 5% V/V DMSO in sterile saline. ... The low (0.2 mg/kg) and high (2.0 mg/kg) doses were selected based on preliminary data",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "Before the first behavioral test, mice were habituated to handling by the male experimenter for approximately two minutes per day on three consecutive days.",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "were group-housed (5 per cage; 425 × 276 × 153 mm; 1290D Eurostandard Type III cages)",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "standard laboratory conditions with a 12/12 h day-night cycle... The behavioral experiments were carried out between 8:30 and 14:30.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "yes",
+      "evidence": "Cages were enriched with nesting material, gnawing sticks and a Mouse-House shelter",
+      "confidence": "high"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head Twitch Response (with locomotor activity)",
+      "assay_description": "Mice were placed in a single-housing cage (268 × 215 × 141 mm) with fresh bedding mixed with home-cage bedding, habituated for 60 min, then injected with vehicle or DOI (0.2 or 2.0 mg/kg i.p.). Behavior was video-recorded for 15 min; head twitches were scored manually by a blinded observer and distance traveled was extracted with Ethovision XT.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "DOI was diluted to the final concentration in an intraperitoneal (i.p.) injection volume of 10 mL/kg.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "mice were placed in a single housing cage ... in the experimental room for a habituation period of 60 min.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "mice were placed in a single housing cage ... and their behavior was recorded",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Testing in single housing cage with bedding only; food not mentioned as present in the testing cage",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Testing in single housing cage with bedding only; water not mentioned as present in the testing cage",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Behavior of mice was immediately recorded for locomotor activity and head twitch assessment.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 80,
+        "n_male": 80,
+        "n_female": null,
+        "n_per_group_min": 10,
+        "evidence": "vehicle solution (1% DMSO in saline, Con: n = 16, Str: n = 12) or DOI (low dose: 0.2 mg/kg, Con: n = 16, Str: n = 10; high dose: 2.0 mg/kg, Con: n = 16, Str: n = 10)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI dose-dependently increased head twitch responses, and this effect was not influenced by prior swim-stress exposure. DOI had no significant effect on distance traveled.",
+        "statistics": "HTR: treatment F(1,48)=152.9, p<0.0001; stress F(1,48)=0.005, p=0.95; interaction F(1,48)=0.18, p=0.67. Distance: treatment F(2,74)=0.66, p=0.52; stress F(1,74)=0.08, p=0.78; interaction F(2,74)=1.14, p=0.33.",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "DOI dose-dependently increased head twitch responses but the effect of DOI was not influenced by prior stress exposure (Figure 1B; treatment: F(1, 48) = 152.9, p < 0.0001).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "head twitch count and distance traveled (and velocity) were measured",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total head twitch count observed for 15 min after treatment",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no analysis of transitions or bout structure reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-twitch response is excluded from ethological behaviours per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "mice were placed in a single housing cage",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning or memory component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The activity of mice ... was analyzed with Ethovision XT ... and an observer ... scored the number of head twitch responses manually.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no multivariate analysis reported",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "single housing cage (268 × 215 × 141 mm; 1264C Eurostandard Type II cages) - a standard cage used as testing apparatus, not the animal's own home cage",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no shelter mentioned in the testing cage",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The testing cage had fresh bedding material mixed in with the bedding material of the homecage of the tested mouse",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "nesting material not mentioned in the testing cage",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment objects in the testing cage",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single housing cage, single compartment",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "mouse recorded alone in the cage",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food or water mentioned as accessible during the 15 min recording",
+          "confidence": "medium"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Mouse behavior was recorded for a duration of 15 min following drug administration.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "Mouse behavior was recorded for a duration of 15 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "On day 6, mice received a single injection... Behavior of mice was immediately recorded",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline recording reported for HTR/locomotion",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "recording immediately after dosing only; no >=24 h follow-up of HTR",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "15 min session, does not span >=6 hours",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "raw_total_recording_duration_note": "raw_total=1",
+      "recording_duration_raw_total": 1
+    },
+    {
+      "assay_name": "Forced Swim Test",
+      "assay_description": "Mice were placed in a brightly illuminated glass cylinder (16 cm diameter, 24 cm height) filled with water (25 ± 1 °C, 17 cm deep) for 5 min on day 7 (24 h after DOI). A blinded observer classified the predominant behavior (immobility, swimming, climbing) per 5 s interval; latency to immobility was also recorded. A 15 min pre-exposure to swim stress on day 0 served as the stress manipulation.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "DOI was diluted to the final concentration in an intraperitoneal (i.p.) injection volume of 10 mL/kg",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "No habituation to the swim apparatus is described prior to the 5-min test; the day-0 swim exposure is the stress manipulation, not apparatus habituation",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "mice were placed in a... cylinder glass tank... filled with tap water (25 ± 1 °C, 17 cm deep). FST cylinders are categorized as restraint per rubric.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "FST cylinder with water only; no food accessible during testing",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "FST cylinder; no drinking water accessible during testing",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "Mice received a single administration of DOI on day 6. The forced swim test was performed on day 7",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 80,
+        "n_male": 80,
+        "n_female": null,
+        "n_per_group_min": 10,
+        "evidence": "vehicle (Con: n = 16, Str: n = 12) or DOI (low dose: Con n = 16, Str n = 10; high dose: Con n = 16, Str n = 10); ANOVA df F(2,74) consistent with ~80 mice",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Prior swim stress reduced latency to immobility, eliminated climbing, and increased immobility. DOI treatment had a significant effect on immobility (F(2,74)=3.19, p=0.047): the low dose (0.2 mg/kg) significantly increased immobility in stress-exposed mice (p=0.01), while the high dose (2 mg/kg) had no significant effect. DOI did not significantly affect latency to immobility, climbing, or swimming.",
+        "statistics": "Latency: treatment F(2,74)=0.24, p=0.79; stress F(1,74)=85.75, p<0.0001; interaction F(2,74)=0.52, p=0.60. Immobility: treatment F(2,74)=3.19, p=0.047; stress F(1,74)=22.94, p<0.0001; interaction F(2,74)=2.70, p=0.07; post-hoc low dose vs vehicle in stressed mice p=0.01. Climbing: treatment F(2,74)=1.97, p=0.15; stress F(1,74)=64.91, p<0.0001. Swimming: treatment F(2,74)=2.62, p=0.08.",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Post-hoc analysis revealed that the lowest dose of DOI significantly increased immobility in mice previously exposed to swim stress (p = 0.01).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "Latency to immobility, immobility count, climbing behavior, swimming behavior (4 measures)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The analysis was performed on the counts of predominant behaviors (totals over the 5 min test)",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no analysis of transitions or behavioural sequences reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST immobility/swimming/climbing are not ethological per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual testing in the cylinder",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "innate stress-coping; no learning/memory required",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "An observer that was blinded to treatment analyzed the stress-coping behavior ... by classifying the most predominant behavior per 5 sec interval.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no multivariate analysis reported",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "cylinder glass tank (diameter: 16 cm, height: 24 cm) filled with tap water",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent - FST cylinder has no refuge",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "filled with tap water - no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "cylinder glass tank - single compartment",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "single mouse in cylinder",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent - no food/drinking water in FST",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "subjected to a 5 min forced swim test on day 7 (data analyzed from this single test; day-0 swim was stress manipulation only)",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "subjected to a 5 min forced swim test",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "FST behaviour analyzed on a single day (day 7); the day-0 15 min swim exposure was a stress manipulation, not analyzed as FST data here",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug FST data reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "DOI administered on day 6, FST performed on day 7 (~24 h post-dose)",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5 min session does not span >=6 hours",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Merged candidate gptoss's separate 'Head Twitch Response' and 'Locomotor Activity' assays into one entry because they were recorded simultaneously from the same 15-min video in the same testing cage; B1 captures both head-twitch and locomotion as distinct measures (score 2-3).",
+    "B1 for HTR assay set to 1 (2-3 measures) because both head-twitch count and locomotor distance were reported, consistent with qwen.",
+    "FST B1 set to 2 (4-6) reflecting latency, immobility, climbing, swimming (4 measures).",
+    "FST direction set to 'mixed': overall treatment ANOVA was significant (p=0.047) with low dose INCREASING immobility in stressed mice (opposite of antidepressant-like decrease), while other measures (latency, climbing, swimming) showed no significant DOI effect — does not fit a single clean direction.",
+    "Vehicle classified as DMSO (primary solvent of working solution: '5% V/V DMSO in sterile saline'); evidence mentions saline as diluent.",
+    "FST D3 = 1: the 15-min day-0 swim was the stress manipulation (not analyzed as an FST behavioural outcome in the paper); only the day-7 5-min test is the FST recording day.",
+    "FST setup_restrain = yes per rubric (FST cylinders explicitly listed as restraint)."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 1.88,
+    "environmental_complexity_mean": 0.68,
+    "recording_duration_mean": 1.36
+  },
+  "low_confidence_count": 0,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 57260,
+    "output_tokens": 6678,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

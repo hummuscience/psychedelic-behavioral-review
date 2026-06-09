@@ -1,0 +1,520 @@
+{
+  "study_id": "McGriff2025",
+  "doi": "10.1007/s00213-025-06795-x",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 63,
+    "age_max_days": 77,
+    "evidence": "C57BL/6J mice were received from Jackson Laboratory (Bar Harbor, ME, USA) at 8 weeks of age and were acclimated for 1-2 weeks",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": 36,
+    "n_female": 36,
+    "evidence": "Each drug was tested using groups of 12 mice per sex (i.e., 24 total mice per drug).",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI, LSD, Psilocybin",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        0.03,
+        0.1,
+        0.3,
+        1,
+        3,
+        10
+      ],
+      "doses_raw": "0.03-10 mg/kg",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "DOI, psilocybin, and LSD were dissolved in 0.9% saline and administered subcutaneously (s.c.)... Dose ranges for each drug were 0.03-10 mg/kg for DOI",
+      "confidence": "high"
+    },
+    {
+      "compound": "LSD",
+      "doses_mg_per_kg": [
+        0.003,
+        0.01,
+        0.03,
+        0.1,
+        0.3,
+        1
+      ],
+      "doses_raw": "0.003-1 mg/kg",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "Dose ranges for each drug were... 0.003-1 mg/kg for LSD",
+      "confidence": "high"
+    },
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        0.03,
+        0.1,
+        0.3,
+        1,
+        3,
+        10
+      ],
+      "doses_raw": "0.03-10 mg/kg",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "Dose ranges for each drug were... 0.03-10 mg/kg for psilocybin",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "At 1-2 weeks prior to the beginning of experiments, mice were habituated to handling and receiving s.c. saline injections.",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "Mice were initially group housed 4 per cage during acclimation... Mice were single housed post-implant, and for the duration of the experiments",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "Experiments were conducted during the light phase (1300-1700 local time; lights on = 0700 in a 12/12 light/dark cycle).",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head Twitch Response (HTR)",
+      "assay_description": "30-min session in TruScan locomotor arenas with cylindrical inserts and transparent flooring after s.c. drug injection; HTRs scored from overhead video (120 fps) using CleverSys software. Doses: DOI 0.03-10 mg/kg, LSD 0.003-1 mg/kg, psilocybin 0.03-10 mg/kg, in male and female mice.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "administered subcutaneously (s.c.) in an injection volume of 0.01 mL/g body weight",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Mice were then placed into experimental chambers for acclimation. After 5 min of acclimation, basal body temperature was recorded followed by s.c. injection",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "mice were returned to test chambers for 30 min (freely moving in TruScan arenas)",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Food and water were available ad libitum (in home cage); no food in testing apparatus during 30 min session",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Food and water were available ad libitum (in home cage); no water in testing apparatus during 30 min session",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "followed by s.c. injection of drug or vehicle, and mice were returned to test chambers for 30 min.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 24,
+        "n_male": 12,
+        "n_female": 12,
+        "n_per_group_min": 5,
+        "evidence": "Each drug was tested using groups of 12 mice per sex (i.e., 24 total mice per drug)... Fig. 2... DOI (n = 5-7), LSD (n = 6), and psilocybin (n = 5-6)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI, LSD, and psilocybin produced dose-related increases in HTR counts in both sexes, with similar potencies between males and females. Females exhibited significantly greater maximal HTR counts at high doses across all three drugs (DOI 10 mg/kg, LSD 1 mg/kg, psilocybin 3 mg/kg).",
+        "statistics": "LSD dose×sex F(6,71)=2.631, p=0.0232; psilocybin dose×sex F(6,62)=2.683, p=0.0222; DOI dose×sex F(6,72)=2.083, p=0.0657; post-hoc DOI 10 mg/kg p=0.0017, LSD 1 mg/kg p=0.0368, psilocybin 3 mg/kg p=0.0042; Emax DOI F(1,80)=8.450, p=0.0047; Emax LSD F(1,67)=8.385, p=0.0051",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "yes",
+        "time_dependent": "n/a",
+        "evidence": "females uniformly displayed more HTRs at high doses administered across chemotypes... significant dose x sex interactions were observed for LSD and psilocybin",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "HTR counts were the only behavioural variable analysed in this assay",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The time-course for the effects of the compounds on HTR were similar between sexes, with DOI (Fig. 3A-B), LSD (Fig. 3C-D), and psilocybin (Fig. 3E-F) showing peak effects within 5-10 min post drug administration.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of transitions, sequences, or bout structure",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is explicitly excluded as an ethological behaviour per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice tested alone in chambers",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR does not require learning or memory",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "analyzed using a commercially available software package from Clever Sys Inc. (CleverSys TopScan is on SCORE-0 list)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate dose-response analyses (ANOVA, regression)",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "TruScan mouse locomotor arenas equipped with photobeam arrays",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "cylindrical inserts with transparent flooring; no shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "transparent flooring to aid in semi-automated HTR detection",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in testing apparatus",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in arena",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "TruScan arena with cylindrical insert = single chamber",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice tested individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in testing chamber during 30 min session",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Each mouse was recorded for one 30-min session per dose; data across doses are independent dose-response observations, not multiple sessions for the same condition",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "mice were returned to test chambers for 30 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Experimental sessions were conducted once every 1-2 weeks for 2 months per drug... received different doses at each session (within-subject across ~6-7 dose sessions)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug HTR baseline data reported; vehicle controls used instead",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only acute (0-30 min post-injection) recording",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30 min session, <6 h",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    },
+    {
+      "assay_name": "Locomotor Activity",
+      "assay_description": "30-min recording of distance traveled (cm) in the same TruScan arena via photobeam tracking, following s.c. drug injection. Doses: DOI 0.03-10 mg/kg, LSD 0.003-1 mg/kg, psilocybin 0.03-10 mg/kg, in male and female mice.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "administered subcutaneously (s.c.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "After 5 min of acclimation... followed by s.c. injection",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "mice were returned to test chambers for 30 min (freely moving)",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in apparatus during 30 min recording; ad libitum in home cage",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in apparatus during 30 min recording; ad libitum in home cage",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "mice were returned to test chambers for 30 min after injection",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 24,
+        "n_male": 12,
+        "n_female": 12,
+        "n_per_group_min": 5,
+        "evidence": "Each drug was tested using groups of 12 mice per sex (i.e., 24 total mice per drug); same cohorts used for locomotor measurements (n = 5-7 per dose)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Locomotor effects were drug-specific: LSD decreased locomotion at 1 mg/kg; psilocybin produced mild increases at 0.3-1 mg/kg and decreased activity at 10 mg/kg; DOI had no significant locomotor effect. No sex differences were detected.",
+        "statistics": "No dose x sex interactions were observed for temperature or locomotor effects of the drugs (Table S4)",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "no",
+        "time_dependent": "n/a",
+        "evidence": "LSD produced mild hypothermia and decreased locomotion at the highest dose tested (1 mg/kg)... Psilocybin administration produced mild increases in locomotor activity after doses of 0.3-1 mg/kg, but decreased locomotor activity at the highest dose of 10 mg/kg.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "locomotor activity was quantified via photobeam tracking of distance traveled in cm",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total distance over the session reported, no within-session time-course analysis described",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bout/sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor distance is not an ethological behaviour per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice tested alone",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "photobeam tracking — position-tracking only (SCORE-0 per rubric)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVA only",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "TruScan mouse locomotor arenas",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter in arena",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "transparent flooring",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single chamber arena",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice tested individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in testing apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "30 min single session per dose-test",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "30 min recording",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Experimental sessions conducted once every 1-2 weeks for 2 months per drug; mice received different doses across sessions",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug locomotor baseline reported for this assay",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only acute post-injection recording",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30 min session",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    }
+  ],
+  "judge_notes": [
+    "Treated HTR and locomotor activity as two separate assays since they measure different behavioural domains (head twitch vs. spatial locomotion), even though recorded simultaneously in the same TruScan apparatus.",
+    "Excluded radioligand binding assays and body temperature measurements as non-behavioural (per rubric).",
+    "B1 scored 0 (single measure) for HTR — only HTR counts were analysed in this assay; temporal time-course of the same single measure does not add another measure but does trigger B2=Yes.",
+    "D1 scored 0 (Single session): although mice were tested across multiple dose sessions, each individual condition was recorded once; this is a within-subject dose-response design, not repeated sessions of the same condition.",
+    "Group housing scored 'no' because the paper explicitly states mice were single-housed post-transponder-implant and for the duration of experiments.",
+    "B7 scored 0: CleverSys (TopScan) and photobeam tracking are explicitly on the SCORE-0 list."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 2.73,
+    "behavioural_complexity_mean": 0.62,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 2.73
+  },
+  "low_confidence_count": 1,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 51005,
+    "output_tokens": 6437,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

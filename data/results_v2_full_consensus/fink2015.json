@@ -1,0 +1,483 @@
+{
+  "study_id": "Fink2015",
+  "doi": "10.1038/npp.2015.46",
+  "species": "rat",
+  "strain": "Sprague-Dawley",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Male, Sprague-Dawley rats (n = 167; Harlan, Houston, TX) weighing 250-275 g upon arrival",
+    "confidence": "medium"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 167,
+    "n_female": null,
+    "evidence": "Male, Sprague-Dawley rats (n = 167; Harlan, Houston, TX)",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        0.01,
+        0.03,
+        0.1,
+        1.0
+      ],
+      "doses_raw": "1 mg/kg (HTR); 0.01, 0.03, and 0.1 mg/kg (1-CSRT)",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "DOI (1 mg/kg) or vehicle (1 ml/kg, s.c.) ... DOI (0.01, 0.03, and 0.1 mg/kg; s.c.) ... injected 30 min before commencement of 1-CSRT task sessions",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Animals were acclimatized for 7 days to the colony room before the start of handling and experimental procedures (no specific handling protocol described).",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "housed two per cage under a 12-h light-dark cycle",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "12-h light-dark cycle (direction not specified)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Home-cage enrichment is not mentioned.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head-Twitch Response",
+      "assay_description": "Rats injected with DOI (1 mg/kg, s.c.) or vehicle were placed in a transparent cage (43 x 26 x 19 cm) and video-recorded for 30 min; head-twitches were manually scored over a 15-min window beginning 10 min after injection.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "DOI (1 mg/kg) or vehicle (1 ml/kg, s.c.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Paper does not describe prior habituation to the transparent recording cages.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "rats were immediately placed into transparent cages (43 cm by 26 cm by 19 cm) and video recorded",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "rats were kept in home cages for 3 days under maintenance of food restriction so as not to perturb 5-HT2AR sensitivity",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Animals placed in transparent recording cages; no water available in cage. Home-cage water was ad libitum.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 10,
+          "evidence": "scored manually by a blinded reviewer over a 15-min period beginning 10 min after injection",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 26,
+        "n_male": 26,
+        "n_female": null,
+        "n_per_group_min": 7,
+        "evidence": "Two outliers were removed from analysis using Cook's method (n = 26 rats analyzed). HI rats (n = 7) ... LI rats (n = 7)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute DOI (1 mg/kg, s.c.) elicited head-twitches; HI rats showed significantly more head-twitches than LI rats, and the number of head-twitches positively correlated with premature responses in the 1-CSRT task. Vehicle produced no head-twitches.",
+        "statistics": "p < 0.01 (HI vs LI); r = 0.499, p < 0.01 (correlation with premature responses)",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Administration of DOI (1 mg/kg) produced a greater head-twitch response in HI rats than LI rats (Figure 2a; p < 0.01). Regression analysis ... revealed a positive correlation between DOI-induced head twitches and premature responses (r = 0.499, p < 0.01).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Head twitches were operationally defined as a rapid rotational head movement and scored manually",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "scored manually over a 15-min period (single total)",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural sequences reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-twitch response is treated as a 5-HT2AR-mediated drug-induced response, not a natural ethological behaviour.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Rat alone in transparent cage during recording.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning or memory component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "scored manually by a blinded reviewer",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single univariate measure analyzed.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "placed into transparent cages (43 cm by 26 cm by 19 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Transparent cage with no enclosed refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described in transparent recording cages.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in recording cages.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in recording cages.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "transparent cages (43 cm by 26 cm by 19 cm) - single compartment",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "rats were immediately placed into transparent cages (one rat per cage)",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in recording cage.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "video recorded in high definition for 30 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "video recorded ... for 30 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single injection and single recording session.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No head twitches were observed following vehicle administration (data not shown) - no pre-drug baseline recorded for each rat.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No recordings >=24 h after injection.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30-min session does not span >=6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "1-Choice Serial Reaction Time Task",
+      "assay_description": "Operant 5-hole nose-poke task (Med Associates) with 100 trials/session (max 30 min), stimulus duration 0.5 s, ITI5 maintenance and ITI8 challenge sessions. Premature responses, reinforcers earned, omissions, accuracy and latency were recorded. Rats received DOI (0.01, 0.03, 0.1 mg/kg s.c.) or M100907 (0.001, 0.01, 0.1 mg/kg i.p.) 30 min before sessions.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "DOI (0.01, 0.03, and 0.1 mg/kg; s.c.) ... M100907 (0.001, 0.01, and 0.1 mg/kg; i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "in the pretraining stage, rats were habituated to the test chamber",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "standard five-hole nose-poke operant chambers (freely moving)",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "rats were food restricted to 90% free-feeding weight",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "water was available ad libitum except during daily operant sessions",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "Vehicle ... DOI ... or M100907 ... were injected 30 min before commencement of 1-CSRT task sessions",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 59,
+        "n_male": 59,
+        "n_female": null,
+        "n_per_group_min": 7,
+        "evidence": "cohort 2: n = 30 rats analyzed, cohort 3: n = 29 rats analyzed; HI (n = 9) and LI rats (n = 7) for DOI; HI (n = 8) and LI rats (n = 8) for M100907",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Baseline premature responses were higher in HI than LI rats. DOI (0.03 mg/kg) significantly increased premature responses in both phenotypes (no treatment x phenotype interaction). M100907 dose-dependently suppressed premature responses, with HI rats more sensitive (effective at 0.01 and 0.1 mg/kg) than LI rats (effective only at 0.1 mg/kg); M100907 also increased reinforcers earned selectively in HI rats.",
+        "statistics": "DOI premature: main effect phenotype F1,15 = 19.24, p < 0.001; main effect treatment F3,45 = 13.54, p < 0.0001; HI F3,35 = 5.31, p < 0.01; LI F3,28 = 4.84, p < 0.01. M100907 premature: main effect treatment F3,42 = 25.89, p < 0.0001; treatment x phenotype F3,42 = 3.68, p < 0.05; HI F3,28 = 8.99, p < 0.001; LI F3,28 = 4.24, p < 0.05.",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "DOI significantly increased premature responses at 0.03 mg/kg ... M100907 significantly suppressed premature responses at 0.01 and 0.1 mg/kg in HI rats ... Only the highest dose of M100907 (0.1 mg/kg) significantly suppressed premature responses in LI rats.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "The total number of responses (premature, correct, incorrect, and omissions) as well as the latency to collect the reinforcer were recorded ... reinforcers earned ... percent accuracy",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Behaviour reported as session totals; no within-session time-course analysis.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of response sequences or bout structure.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Operant performance metrics, not natural ethological behaviours.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Rats tested alone in operant chambers.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "1-choice serial reaction time task requires learned stimulus-response associations and attentional control",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "MedAssociates operant chambers - beam-break/operant response detection, not behavioural classification.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVAs on each behavioural metric.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "standard five-hole nose-poke operant chambers",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Operant chamber provides no shelter.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding in operant chamber.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in operant chamber.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in operant chamber.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "standard five-hole nose-poke operant chambers - single compartment with apertures",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Focal rat tested alone in operant chamber.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "external pellet dispenser capable of delivering 45 mg pellets ... delivery of one food pellet into the magazine",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Rats underwent five daily 1-CSRT task sessions per week ... ITI8 challenge sessions ... drug treatment sessions",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "daily sessions of 100 trials to be completed in a maximum of 30 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 3,
+          "value": "15+",
+          "evidence": "Acquisition (~25-30 days) plus ITI8 challenges, ITI5 restabilization, and weekly drug treatments (~4 drug days per cohort plus baseline vehicle days)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "rats were treated with vehicle the day before drug treatments ... Vehicle-treated HI rats demonstrated elevated premature responses relative to vehicle-treated LI rats",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No follow-up recording >=24 h after a single drug administration is reported; each weekly drug test is itself an acute test.",
+          "confidence": "medium"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sessions max 30 min; no single session spans >=6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 6
+      }
+    }
+  ],
+  "judge_notes": [
+    "Merged candidates' separate DOI-1-CSRT and M100907-1-CSRT entries (and other dose variants) into a single 1-CSRT assay per rubric rule that the same paradigm under different drugs/doses is one assay.",
+    "Two distinct assays scored: Head-Twitch Response (cohort 1) and 1-CSRT task (cohorts 2 and 3). Radioligand binding, immunoblot, qPCR, and co-IP experiments are ex vivo/biochemical and not scored.",
+    "D3 for 1-CSRT scored 15+ because of extensive acquisition (~25-30 days) plus multiple ITI8 challenges and weekly drug-test sessions, all of which produce behavioural data for this assay; candidates underestimated this.",
+    "food_restriction for HTR scored 'before' because rats were maintained on the 1-CSRT food restriction protocol at the time of testing (explicit in methods), even though no food was present in the recording cage.",
+    "DOI 1-CSRT direction recorded as 'mixed' at the assay level because the assay includes both DOI (increase) and M100907 (decrease) manipulations on the same measure."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 8.18,
+    "behavioural_complexity_mean": 1.88,
+    "environmental_complexity_mean": 0.68,
+    "recording_duration_mean": 4.77
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 56583,
+    "output_tokens": 6626,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

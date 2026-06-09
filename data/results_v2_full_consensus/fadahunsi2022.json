@@ -1,0 +1,1268 @@
+{
+  "study_id": "Fadahunsi2022",
+  "doi": "10.1038/s41398-022-02103-9",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "mixed",
+    "age_min_days": 56,
+    "age_max_days": 329,
+    "evidence": "Ages ranged from 8-week-old (basal physiology) to 46-47-week-old DIO mice and 21-week-old ob/ob mice across experiments.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Wild type male C57BL/6J mice (Janvier, FR), male leptin-deficient ob/ob mice... and male melanocortin4 receptor knockout mice were used.",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        0.3,
+        1.0,
+        3.0
+      ],
+      "doses_raw": "0.3 mg/kg, 1 mg/kg, 3 mg/kg psilocybin",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "multiple",
+      "evidence": "received a single intraperitoneal injection of 0.3 mg/kg psilocybin, 1 mg/kg psilocybin, 3 mg/kg psilocybin, or isotonic saline; daily intraperitoneal injections of psilocybin (0.3 mg/kg) for 5-7 days in microdosing studies",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "Prior to experiments, mice were acclimatized to housing conditions for a minimum of one week, and sham injected with isotonic saline in the 3 days preceding study start.",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Except otherwise stated, mice were group-housed.",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "All mice were kept under normal room temperature (22 °C) on a standard 12 h light-dark cycle.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Home-cage enrichment is not addressed.",
+      "confidence": "low"
+    }
+  },
+  "judge_notes": [
+    "Merged the home-cage food intake / body weight monitoring assays across DIO, ob/ob, MC4R-KO, the dietary intervention, the liraglutide combination, and microdosing experiments into a single 'Home-cage food intake and body weight' assay, since the behavioural paradigm and measurements are identical and differ only in cohort/manipulation.",
+    "Kept Head-twitch, Open Field, Voluntary wheel running, Binge-eating paradigm, and Sucrose preference as separate assays.",
+    "Excluded indirect calorimetry / body temperature / blood biochemistry as non-behavioural physiological measures.",
+    "B1 for HTR scored 0 (single measure - head twitch count); the time-course is captured in B2, not as a separate measure (per rubric: 'a single total or average...').",
+    "D2 for binge-eating and sucrose preference scored 2 (61 min-6 h) since the 24 h intake window is the recording session — corrected from candidate gptoss who placed 24h in the 15-60 min bin.",
+    "D2 for home-cage food intake scored 0 (daily weighing is brief, <15 min per session).",
+    "D2 for voluntary wheel running scored 2 (24 h cumulative recording windows, >60 min but discrete bins not >6 h)."
+  ],
+  "assays": [
+    {
+      "assay_name": "Head-twitch response",
+      "assay_description": "Mice received i.p. psilocybin (0.3, 1, 3 mg/kg) or saline, were placed in a new cage with bedding, and recorded by webcam for 20 min. Head twitches counted by two blinded observers; total count and time course reported.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "single intraperitoneal injection of 0.3 mg/kg psilocybin, 1 mg/kg psilocybin, 3 mg/kg psilocybin, or isotonic saline",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Mice used in the head-twitch study were not sham-injected. Following injection, each mouse was placed into its own new cage with bedding.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "each mouse was placed into its own new cage with bedding",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard testing cage with no food reported during the 20-min recording.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard testing cage with no water reported during the 20-min recording.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Following injection, each mouse was placed into its own new cage... behavior was recorded for 20 min.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 18,
+        "n_male": 18,
+        "n_female": null,
+        "n_per_group_min": 4,
+        "evidence": "Mice were randomized into treatment groups (n = 4-5)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin dose-dependently increased head-twitches; 1 and 3 mg/kg induced significantly more twitches than 0.3 mg/kg or vehicle, confirming psychoactive activation of 5-HT2AR.",
+        "statistics": "one-way ANOVA with Dunnett's test",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Consistent with existing literature, 1 and 3 mg/kg induced a greater number of head twitches than other doses (Fig. 1B, C).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The number of head twitches was counted.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Time course of head-twitch events (Fig. 1C).",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of sequences or transitions.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is explicitly excluded from ethological behaviours by the rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "each mouse was placed into its own new cage",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning or memory component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "counted by two observers blinded to the experimental conditions",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "placed into its own new cage with bedding",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter described in the new cage.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "each mouse was placed into its own new cage with bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects mentioned.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Standard cage, single compartment.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "each mouse was placed into its own new cage",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in test cage during the 20-min recording.",
+          "confidence": "medium"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "behavior of each mouse was recorded for 20 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "recorded for 20 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single day recording.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline recorded.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No follow-up >=24h.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "20-min session does not span >=6 hours.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "50 x 50 cm open field arena; 20-min recording starting 30 min after i.p. psilocybin (3 mg/kg) or saline; distance moved and time in center zone tracked via EthoVision XT.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "single intraperitoneal injection of either 3 mg/kg psilocybin or isotonic saline",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No mention of apparatus habituation before OFT.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "mice were placed in the open field arena, and their locomotor activity was recorded",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in OFT arena during recording.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in OFT arena during recording.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "Thirty minutes post-injection, mice were placed in the open field arena",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 16,
+        "n_male": 16,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "n = 8 per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin (3 mg/kg) significantly reduced total distance traveled and reduced time in center zone compared to vehicle, indicating decreased locomotion and increased thigmotaxis.",
+        "statistics": "unpaired two-tailed t-test",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Psilocybin-treated mice exhibited significantly less movement than mice treated with saline (Fig. 1E), and spent significantly less time in the center zone (Fig. 1F).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Distance moved and time spent in the center zone was calculated.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single totals over the 20-min session reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotion and zone preference are spatial measures, not ethological behaviours.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate anxiety test.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EthoVision XT is position tracking (per rubric, score 0).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "open field arena (w: 50 cm, h: 50 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open arena with no refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard OFT bare floor; bedding not mentioned.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not applicable.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No objects in arena.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Open field is a single arena.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Tested individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in arena.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "locomotor activity was recorded for 20 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "recorded for 20 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single day recording.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug OFT baseline recorded.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No follow-up.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "20-min session.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Voluntary wheel running",
+      "assay_description": "Single-housed mice in cages with running wheels (23 cm diameter). After 5 days familiarization, baseline measured days -2/-1; psilocybin (3 mg/kg) or saline given day 0; wheel distance recorded 4, 6, 8, 16, 24 h post-injection and days 2-5.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "injected intraperitoneally with either psilocybin or isotonic saline",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "After 5 days of familiarization with the wheels, the running distance was measured on days -2 and -1.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "single-housed in cages equipped with running wheels; freely moving.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "ad libitum access to water and a chow diet",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "ad libitum access to water",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 240,
+          "evidence": "running distance was measured 4, 6, 8, 16, and 24 h after injection and again on days 2, 3, 4, and 5",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 16,
+        "n_male": 16,
+        "n_female": null,
+        "n_per_group_min": 7,
+        "evidence": "n = 8 per group; two samples removed from psilocybin group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin (3 mg/kg) had no significant effect on acute or chronic voluntary wheel running compared to vehicle.",
+        "statistics": "repeated measures two-way ANOVA / mixed effects with Bonferroni",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "mice did not exhibit differences in acute or chronic treadmill running following administration of psilocybin (Fig. 1H, I).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Running distance was measured.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "running distance was measured 4, 6, 8, 16, and 24 h after injection (within-day time course)",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bout structure analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Wheel running not scored as natural behavioural repertoire here.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "single-housed",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No cognitive component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Running distance was measured by a computer (revolution counter).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "single-housed in cages equipped with running wheels",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter described.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Home cages with standard bedding.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "cages equipped with running wheels (23 cm in diameter)",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single-compartment cage.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "single-housed",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "ad libitum access to water and a chow diet in home cage",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "measured at 4, 6, 8, 16, 24 h and days 2-5",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min-6 h",
+          "evidence": "Cumulative 24-h interval recordings on follow-up days (continuous wheel monitoring across hours).",
+          "confidence": "medium"
+        },
+        "D3_recording_days": {
+          "score": 2,
+          "value": "8-14",
+          "evidence": "Baseline days -2/-1; injection day 0; follow-up days 2, 3, 4, 5 = 8 recording days.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "running distance was measured on days -2 and -1. These data were used to create two groups",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "measurements on days 2, 3, 4, and 5 post-injection",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Individual sampling intervals not described as continuous >=6 h.",
+          "confidence": "medium"
+        },
+        "raw_total": 7
+      }
+    },
+    {
+      "assay_name": "Home-cage food intake and body weight monitoring",
+      "assay_description": "Daily measurement of body weight and cumulative food intake in single-housed DIO, ob/ob, and MC4R-KO mice following single i.p. psilocybin (3 mg/kg) or microdosing (0.3 mg/kg daily), and in combination dietary/liraglutide interventions. Tracked for 7-14 days.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "single intraperitoneal injection of either 3 mg/kg psilocybin or isotonic saline; daily intraperitoneal injection of psilocybin (0.3 mg/kg) or vehicle",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "mice were acclimatized to housing conditions for a minimum of one week, and sham injected with isotonic saline in the 3 days preceding study start",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice freely moved in home cages.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "ad libitum access to chow / high-fat diet during recording",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "ad libitum access to water",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 1440,
+          "evidence": "food intake and body weight were measured daily, before the onset of the dark phase, for 7-12 days following injection",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 48,
+        "n_male": 48,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "DIO single dose n=8/group; ob/ob n=9 (psilo) / n=7 (saline); microdosing DIO n=7/n=6; MC4R KO n=8/group; combination liraglutide n=8/group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Neither a single high dose (3 mg/kg) nor microdosing (0.3 mg/kg daily) of psilocybin altered body weight or food intake in DIO, ob/ob, or MC4R-KO mice. Psilocybin did not enhance diet-induced or liraglutide-induced weight loss.",
+        "statistics": "RM two-way ANOVA with Bonferroni's test; one-way ANOVA with Bonferroni's test",
+        "direction": "no_effect",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "no difference was observed in body weight or food intake in the 12 days following injection (Fig. 2B, C)... a single dose of 3 mg/kg psilocybin does not influence the body weight or food intake of ob/ob mice on a high-fat diet... No significant effect was observed on either body weight or food intake using this approach... this effect was not augmented by co-administration of psilocybin.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "body weight and cumulative food intake reported",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Across-day measurements, not within-session dynamics.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Food intake/body weight not scored as ethological behaviour.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "single-housed",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No cognitive component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Manual weighing.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "single-housed in home cages with food/water during measurement",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter described.",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Standard home cages with bedding.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Standard cage.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "single-housed",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "ad libitum food and water in home cage",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "food intake and body weight were measured daily... for 12 days",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Each daily weighing is brief.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 2,
+          "value": "8-14",
+          "evidence": "12 days of daily measurements following injection",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline body weight reported as recording day for this assay.",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "measurements continued for up to 12 days post-injection",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Brief daily weighings.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    },
+    {
+      "assay_name": "Binge-eating paradigm",
+      "assay_description": "After establishing binge-like eating via intermittent high-fat diet cycles, mice received i.p. psilocybin (3 mg/kg), fluoxetine (30 mg/kg), or saline 30 min before 24-h free access to HFD and chow. Food intake measured at 2.5 h and 24 h.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "single intraperitoneal injection of fluoxetine (30 mg/kg), psilocybin (3 mg/kg), or isotonic saline",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Mice were cycled through 3 binge cycles, and pharmacological intervention occurred in the 3rd cycle.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "single-housed; freely moving in home cage",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "mice in the intermittent group had access to a chow diet only in the 6 days preceding the experiment",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "ad libitum water access",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "Thirty minutes following treatment, mice in the intermittent group were given 24 h access to a high-fat diet",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 23,
+        "n_male": 23,
+        "n_female": null,
+        "n_per_group_min": 5,
+        "evidence": "five mice from the continuous group... n = 6 per group (fluoxetine, psilocybin, saline)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Fluoxetine (30 mg/kg) significantly reduced binge-like HFD intake while psilocybin (3 mg/kg) had no effect at either 2.5 h or 24 h.",
+        "statistics": "mixed-effects analysis with Bonferroni's multiple comparison test",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "Administration of fluoxetine hydrochloride did ameliorate the binge-eating phenotype, but a 3 mg/kg dose of psilocybin failed to do so (Fig. 3J).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Chow and high-fat diet intake measured at 2.5 and 24 h.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Food intake measured at 2.5 h and 24 h within the test session.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Food intake (binge) not scored as ethological act.",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "single-housed",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No cognitive task.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Food weighed manually.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "Test performed in home cage with free access to chow and HFD.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter described.",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Standard home cage with bedding.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Standard cage.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "single-housed",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "given 24 h access to a high-fat diet and chow",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Food intake measured at 2.5 h and 24 h.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min-6 h",
+          "evidence": "24-h intake window constitutes recording session (>6 h actually).",
+          "confidence": "medium"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "2.5 h and 24 h timepoints span 2 calendar days.",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Establishment of binge eating-like behavior (cycles 1-2) provides baseline intake data prior to drug.",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No measurements beyond 24 h post-injection.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "24 h continuous access spans >=6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 6
+      }
+    },
+    {
+      "assay_name": "Sucrose preference test",
+      "assay_description": "Two-bottle choice (water vs 2% sucrose) in home cage over 24 h after i.p. psilocybin (3 mg/kg) or saline, repeated next day with bottles reversed (acute cohort). Second cohort received daily 0.3 mg/kg psilocybin or saline for 5 days with daily bottle weighing.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "injected intraperitoneally with psilocybin (3 mg/kg, n = 10) or isotonic saline (n = 10); daily intraperitoneal injections of psilocybin (0.3 mg/kg) or isotonic saline",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "acclimated to the presence of two water bottles in their home cage, for 24 h",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice freely moved in their home cage.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "ad libitum chow available",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "Mice were free to consume liquid from either bottle for 24 h",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "bottles were added to the home cages, and mice were subsequently injected intraperitoneally with psilocybin",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 36,
+        "n_male": 36,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "psilocybin (3 mg/kg, n = 10) or isotonic saline (n = 10); second cohort n = 8 per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "A single 3 mg/kg dose of psilocybin significantly reduced sucrose preference without affecting water intake. Repeated 0.3 mg/kg microdosing over 5 days had no effect on sucrose preference.",
+        "statistics": "one-way ANOVA with Bonferroni; unpaired t-test",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Psilocybin did lower sucrose preference following a single injection; mice treated with psilocybin drank significantly less sucrose without reducing their water intake (Fig. 3K). Repeated administration of 0.3 mg/kg psilocybin did not have an effect on sucrose preference in lean mice.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Sucrose intake and water intake reported separately, plus preference.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "24-h cumulative consumption only.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Consumption metric, not ethological act.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "single-housed",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Hedonic preference, not learning.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bottles weighed manually.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "bottles containing fresh water and a 2% sucrose solution were added to the home cages",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter described.",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Standard home cage with bedding.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Standard cage.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "single-housed",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Both water and sucrose bottles plus chow accessible during 24-h test.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "The study was repeated the next day, with the bottles reversed; microdose cohort daily for 5 days",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min-6 h",
+          "evidence": "Mice were free to consume liquid from either bottle for 24 h (>6 h cumulative drinking window).",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Acute cohort: 2 test days; microdose cohort: 5 days of daily bottle weighings.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The water bottles were weighed to obtain a baseline intake.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Microdose cohort: daily measurements over 5 days post-onset of dosing; acute cohort second test day = 24+ h after first dose.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Bottles available for 24 h continuous spanning >=6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 7
+      }
+    }
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 5.45,
+    "recording_duration_max": 9.55,
+    "behavioural_complexity_mean": 1.46,
+    "environmental_complexity_mean": 3.18,
+    "recording_duration_mean": 5.91
+  },
+  "low_confidence_count": 1,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 75936,
+    "output_tokens": 14414,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

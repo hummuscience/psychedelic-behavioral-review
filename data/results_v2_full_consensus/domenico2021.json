@@ -1,0 +1,289 @@
+{
+  "study_id": "Domenico2021",
+  "doi": "10.1016/j.celrep.2021.109714",
+  "species": "rat",
+  "strain": "Long-Evans",
+  "age": {
+    "value": "adult",
+    "age_min_days": 120,
+    "age_max_days": 270,
+    "evidence": "Twenty-three male Long-Evans rats between 4 and 9 months of age were used in this study.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 23,
+    "n_female": null,
+    "evidence": "Twenty-three male Long-Evans rats between 4 and 9 months of age were used in this study.",
+    "confidence": "high"
+  },
+  "psychedelic": "LSD",
+  "dosing": [
+    {
+      "compound": "LSD",
+      "doses_mg_per_kg": [
+        0.06,
+        0.24
+      ],
+      "doses_raw": "high dose of LSD at 0.24 mg/kg (LSDhigh), a low dose of LSD at 0.06 mg/kg (LSDlow)",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "The drug condition for the second administration was the injection of a high dose of LSD at 0.24 mg/kg (LSDhigh), a low dose of LSD at 0.06 mg/kg (LSDlow)... subcutaneous injection of 0.5 mL saline.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Handling protocol not described.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "Each rat was individually housed",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "Light cycle direction not specified.",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Home-cage enrichment not described.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "C-shaped track running task",
+      "assay_description": "Rats ran back and forth on a familiar 3.5 m C-shaped track for food rewards (condensed milk). PRE session (20-30 min) after saline; POST session (20-70 min) after LSD or control injection. Measures: lap rate, running speed, % immobility, head-twitch (HT) rate.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "subcutaneous injection of 0.5 mL saline... followed by another administration of 0.5 mL under various drug conditions",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Animals were pre-trained to run back and forth (two trajectories) for food reward... The pre-training lasted for at least 4 days.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "freely moving rats running on the track",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "Each rat was individually housed, food-restricted with weight maintained at or above 85% of ad libitum level",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "not_reported",
+          "evidence": "Water access not described.",
+          "confidence": "low"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 15,
+          "evidence": "Fifteen minutes after the second drug administration, the animal performed the same task",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 28,
+        "n_male": 28,
+        "n_female": null,
+        "n_per_group_min": 3,
+        "evidence": "LSDhigh (n = 10), LSDlow (n = 3, except for G, which is n = 4), and the Ctrl (n = 14) conditions.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "LSD dramatically reduced lap rate (~88%) and running speed (~54%), increased immobility (~34% higher), and induced head-twitches (~0.58/min) compared to PRE saline and controls. HT was abolished by 5HT2AR antagonist M100907.",
+        "statistics": "Lap rate p = 2.4e-4; speed p = 1.4e-10; immobility p = 0.017; HT rate p = 4.9e-4; LSD vs Ctrl lap rate p = 5.1e-5",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "The median lap rate in POST under LSD ... was dramatically reduced ... HT rate in POST under LSD was significantly higher than that in PRE",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "lap rate, running speed, percentage of immobility time, and the number of head twitches",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Behavioural metrics reported as session totals/medians; no within-session time-course analysis.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural transitions or sequences.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is excluded from ethological scoring per rubric; locomotor/immobility measures are not ethological.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Focal animal ran alone on the track.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Familiar track running for food reward; no learning/memory test during recording. Cognitive map analysis was via place cell recording, not a behavioural learning readout.",
+          "confidence": "medium"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Position tracked using two diodes via overhead camera; HTs visually identified or detected from EMG threshold. No pose-estimation/ML classifier.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate behavioural statistics only.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "C-shaped track, 3.5 m long.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter on the track.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described on track.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material on track.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects on track.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "C-shaped linear track without separate compartments.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Single rat on track during recording.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "ran for food rewards (condensed milk) on the track",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "two track-running sessions (PRE and POST), separated by a sleep session",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "POST sessions lasted 20-70 minutes; longest 70 min exceeds 60 min threshold.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "most of the rats (n = 14) only recorded 1 day per animal; PRE and POST occurred on the same day.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "PRE session with saline injection recorded before LSD administration in POST.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "POST recording within same day, ~15 min after LSD injection.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Longest session 70 min, well under 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    }
+  ],
+  "judge_notes": [
+    "All candidates identified a single behavioural assay (track running) — kept as one assay.",
+    "Excluded all electrophysiology, LFP, ripple, HVS, place cell, and MUA analyses per rubric (neural recordings, not behavioural assays).",
+    "B1 set to 4-6 (lap rate, running speed, % immobility, HT rate = 4 distinct measures) — agreeing with qwen and gptoss over glm.",
+    "B6 set to 0: although rats run on a familiar track (some memory required), the recording itself does not test learning/memory acquisition; aligned with glm/gptoss reasoning over qwen.",
+    "E8 = Yes because food rewards (condensed milk) are delivered on the track during the session.",
+    "D2 = 2 (61 min-6 h): POST sessions extended up to 70 min, which exceeds the 60-min cutoff.",
+    "D3 = 1: most rats recorded one day per animal with PRE+POST on the same calendar day.",
+    "food_restriction = 'before': chronic 85% body-weight maintenance is a pre-session restriction protocol.",
+    "setup_habituation = yes: ≥4 days of pre-training on the same track."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 5.45,
+    "behavioural_complexity_mean": 2.5,
+    "environmental_complexity_mean": 1.36,
+    "recording_duration_mean": 5.45
+  },
+  "low_confidence_count": 4,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 60867,
+    "output_tokens": 3571,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

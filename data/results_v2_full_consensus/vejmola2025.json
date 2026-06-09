@@ -1,0 +1,284 @@
+{
+  "study_id": "Vejmola2025",
+  "doi": "10.1016/j.bpsgos.2025.100524",
+  "species": "rat",
+  "strain": "Long-Evans",
+  "age": {
+    "value": "not_reported",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Age of rats not stated in the methods.",
+    "confidence": "low"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 10,
+    "n_female": null,
+    "evidence": "Ten male Long-Evans rats were housed in pairs",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocin",
+  "dosing": [
+    {
+      "compound": "Psilocin",
+      "doses_mg_per_kg": [
+        0.3
+      ],
+      "doses_raw": "0.3 mg/kg",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "Psilocin (0.3 mg/kg) or saline was subcutaneously injected in a 2 mL/kg volume 30 minutes before testing... freshly prepared in 0.9% NaCl with glacial acetic acid",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "No handling protocol described.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Ten male Long-Evans rats were housed in pairs",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "maintained at 22°C, 40% humidity, under a 12-hour light/dark cycle",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "yes",
+      "evidence": "housed in pairs in enriched plastic cages with chew toys and polyvinyl chloride (PVC) tubes",
+      "confidence": "high"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Two-choice visual discrimination maze (luminance- and motion-based tasks)",
+      "assay_description": "Rats performed a 2-choice visual discrimination task in a PVC Y-shaped maze with 2 arms (120°) ending in screens. Two task variants were used: a luminance-based task (black vs. white screens) and a motion-based task (static vertical square-wave gratings vs. dynamic distorted gratings). Correct responses were rewarded with a cornball; incorrect responses produced a 30-s confinement. Outcomes were correct ratio and decision time (time in a predefined decision zone), recorded from above using EthoVision Pro. Testing occurred 30 min after s.c. psilocin (0.3 mg/kg) or saline.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "Psilocin (0.3 mg/kg) or saline was subcutaneously injected",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No explicit habituation to the apparatus prior to training is described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Each trial began when the maze door opened, which allowed the rat to enter and choose between 2 screens.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "Food restriction ensured motivation for reward-based learning, with weights maintained above 90% of baseline.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "Water was available ad libitum.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "Psilocin (0.3 mg/kg) or saline was subcutaneously injected... 30 minutes before testing.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 6,
+        "n_male": 6,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "Six rats were tested in both tasks.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocin (0.3 mg/kg s.c.) significantly impaired discrimination of static vs. dynamic stimuli in the motion-based task (saline 93.3% vs. psilocin 72.7% correct), but did not significantly impair the luminance-based task, indicating a perceptual rather than general cognitive/motivational deficit. Decision time was inversely correlated with correct ratio.",
+        "statistics": "t11 = 4.693, p < .001 (correct ratio saline vs psilocin); r = -0.440, p < .05 (decision time vs correct ratio); t5 = 4.067, p < .001 (motion- vs luminance-based impairment)",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "The correct ratio was significantly lower in psilocin trials than in saline trials (dependent Student's t test, t11 = 4.693, p < .001)... Discrimination impairment varied by task complexity, being significantly greater in the motion-based task than the luminance-based task (t5 = 4.067, p < .001).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "the correct ratio was calculated as the proportion of correctly solved trials per session... decision time -the time spent in a predefined decision area per trial",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Outcomes were summarized as session-level correct ratio and decision time, with no within-session time-course analysis.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition or sequential/microstructure analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Outcomes are choice accuracy and decision latency in a trained discrimination task; no natural behaviours scored.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Task is solitary visual discrimination; no social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Rats were trained... until they achieved an 85% accuracy threshold over 3 consecutive sessions.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "decision time... was extracted from above-view video recordings using EthoVision Pro v.3.1.1.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate tests reported.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Rats were trained in a 2-choice visual discrimination task using a PVC-manufactured maze",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Maze is an open Y-shaped corridor with 2 arms; no shelter present.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "PVC-manufactured maze with no bedding described.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in the testing apparatus.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in the testing apparatus.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "62-cm entrance corridor with a sliding door leading to 2 arms positioned at a 120° angle.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each trial began when the maze door opened, which allowed the rat to enter and choose between 2 screens.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "A correct response triggered a cornball reward... Rewards were delivered via aluminum tubes ending 1 cm above the floor.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "The 3-day testing phase assessed psilocin's effect on visual discrimination. On the first day (baseline)... On the second day, rats received saline... On the third day, psilocin was administered.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Session was 24 testing trials with 30-s penalties; explicit duration not reported but consistent with short sessions.",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "3-day testing phase... A posttreatment training session was conducted the following day... After a 1-week washout period, rats were retrained on the luminance task and retested following the same protocol.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "On the first day (baseline), rats completed 20 training trials followed by 24 testing trials, where incorrect responses were rewarded.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "A posttreatment training session was conducted the following day to verify that psilocin exposure did not impair task retention — this was a training session, not a drug-effect recording; testing of psilocin effect occurred 30 min post-injection only.",
+          "confidence": "medium"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sessions are short trial-based blocks, well under 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    }
+  ],
+  "judge_notes": [
+    "Merged candidate glm's two separate assay entries (luminance-based vs. motion-based) into a single visual-discrimination-maze assay, because the same paradigm/apparatus/outcomes are used with only stimulus parameters differing — per rubric, same task with different stimulus parameters = 1 assay.",
+    "Set food_restriction = 'before' (chronic restriction maintained to ≥90% baseline weight), overriding qwen's 'no'.",
+    "Set water_restriction = 'no' (ad libitum), correcting qwen's 'during'.",
+    "B1 set to 1 (2–3 measures: correct ratio + decision time).",
+    "D3 set to 2–7 days: the testing-phase recording days for this assay number 3 (baseline + saline + psilocin), with an additional retention training and a retest after washout still falling in 2–7 bracket.",
+    "D5 set to No: the posttreatment session was a training/retention check, not a drug-effect follow-up ≥24 h after last psilocin dose."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 2.73,
+    "recording_duration_max": 4.09,
+    "behavioural_complexity_mean": 2.5,
+    "environmental_complexity_mean": 2.73,
+    "recording_duration_mean": 4.09
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm"
+  ],
+  "judge_usage": {
+    "input_tokens": 40245,
+    "output_tokens": 4238,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

@@ -1,0 +1,320 @@
+{
+  "study_id": "Nikolaus2024",
+  "doi": "10.1016/j.bbr.2024.115051",
+  "species": "rat",
+  "strain": "Wistar",
+  "age": {
+    "value": "adult",
+    "age_min_days": 90,
+    "age_max_days": 120,
+    "evidence": "age: 3 -4 months",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 92,
+    "n_female": null,
+    "evidence": "Studies were conducted on a total of 92 male Wistar rats",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "8-OH-DPAT",
+      "doses_mg_per_kg": [
+        3.0
+      ],
+      "doses_raw": "3 mg/kg intraperitonelly [i.p.], injection volume: 1 ml/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "8-OH-DPAT (Sigma-Aldrich... dose: 3 mg/kg intraperitonelly [i.p.], injection volume: 1 ml/kg, concentration: 3 mg/ml; n = 11)",
+      "confidence": "high"
+    },
+    {
+      "compound": "WAY100,635",
+      "doses_mg_per_kg": [
+        0.4
+      ],
+      "doses_raw": "0.4 mg/kg i.p.",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "WAY100,635... dose: 0.4 mg/kg i.p., injection volume: 1 ml/kg, concentration: 0.4 mg/ml; n = 12",
+      "confidence": "high"
+    },
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        0.5
+      ],
+      "doses_raw": "0.5 mg/kg i.p. (Methods); abstract states 0.1 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "(±)DOI hydrochloride... concentration: 0.5 mg/ml, dose: 0.5 mg/kg i.p., injection volume: 1 ml/kg; n = 12",
+      "confidence": "medium"
+    },
+    {
+      "compound": "Altanserin",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "1 mg/kg i.p.",
+      "vehicle": "DMSO",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "ALT... dose: 1 mg/kg i.p., injection volume: 1 ml/kg; n = 15; dimethyl sulfoxide [DMSO] for ALT",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "Rats were kept as previously described (e.g., [38])",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "Behavioral studies were conducted between 9:00 a.m. and 5:00 p.m.",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Object and Place Recognition Test (Open Field Novelty Preference)",
+      "assay_description": "PhenoTyper open field (45×45×56 cm, 19 lx, black plastic floor) with a 5-min sample trial (two identical polyhedrons) followed 30 min after i.p. drug/vehicle injection by a 5-min test trial in which one polyhedron is moved (novel place) and the other is replaced by a cylinder (novel object). Measures: object exploration durations/frequencies, what/where indices, ambulation, sitting, rearing, head-shoulder motility, grooming, overall distance, and boli excreted.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "dose: 0.5 mg/kg i.p.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "the rats were placed into the open field for 10 min per day for two consecutive days",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "rats were placed (freely) into the open field PhenoTyper",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard 5-min open field test with no food in apparatus",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard 5-min open field test with no water in apparatus",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "Thirty min later, the test trial was performed",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 92,
+        "n_male": 92,
+        "n_female": null,
+        "n_per_group_min": 11,
+        "evidence": "n = 11 (8-OH-DPAT), n = 12 (WAY100,635), n = 12 (DOI), n = 15 (ALT), n = 28 (SAL), n = 14 (DMSO)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "8-OH-DPAT (3 mg/kg) impaired place recognition (reduced where index), decreased rearing and sitting, and increased ambulation and head-shoulder motility. DOI (0.5 mg/kg) reduced rearing duration/frequency and increased head-shoulder motility but did not affect object or place recognition indices. WAY100,635 (0.4 mg/kg) had no significant behavioural effects relative to saline. ALT (1 mg/kg) decreased feces excretion relative to DMSO but did not impair recognition memory.",
+        "statistics": "Where index (duration): F=7.562, p<0.001; 8-OH-DPAT vs SAL p≤0.0001. Rearing duration: F=12.211, p<0.001; 8-OH-DPAT and DOI vs SAL p≤0.0001. Head-shoulder motility duration: F=9.558, p<0.001; 8-OH-DPAT p≤0.0001, DOI p=0.0006 vs SAL. Ambulation duration: F=6.635, p<0.001; 8-OH-DPAT vs SAL p≤0.0001. Boli: F=3.177, p=0.011; ALT vs DMSO p=0.001.",
+        "direction": "mixed",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Compared vehicle, administration of 8-OH-DPAT impaired memory for place, decreased rearing behavior, and increased ambulation as well as head-shoulder movements. DOI administration led to a reduction in rearing behavior but an increase in head-shoulder motility relative to vehicle. Feces excretion was diminished after ALT relative to vehicle.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 3,
+          "value": "7+",
+          "evidence": "overall activity, ambulation, sitting, rearing, head-shoulder motility, grooming, object exploration (polyhedron, cylinder), what/where indices, boli",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total durations/frequencies over the 5-min trial; no within-session time binning reported",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of transitions or behavioural sequences reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "rearing, grooming, head-shoulder exploratory movements, object investigation scored as distinct natural behaviours",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Focal animal tested alone; no social construct",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "recognition memory for object and place was assessed",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Evaluation was performed with EthoVision XT (position tracking)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "one-way ANOVAs were performed for each variable; no PCA/clustering",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "open field (PhenoTyper) box, 45×45×56 cm",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open field with Plexiglass walls, no refuge",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "black plastic floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting material reported in apparatus",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Objects served as test stimuli, not enrichment",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "open field without separate compartments",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Focal rat alone in the apparatus during recording",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water placed in arena during 5-min trial",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "5-min sample trial and 5-min test trial, both recorded",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "5-min sample trial and a 5-min test trial",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "On the following day, they were subjected to an object recognition test composed of a 5-min sample trial and a 5-min test trial (both same day after habituation)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Sample trial recorded before drug injection; data used in within-group what/where indices",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "test trial was performed 30 min after administration; no recording ≥24 h post-dose",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5-min trials only",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    }
+  ],
+  "judge_notes": [
+    "All three candidates identified a single behavioural paradigm (object/place recognition in the open field with embedded motor/exploratory and emotionality measures); consolidated as one assay.",
+    "Dosing: paper Methods explicitly state DOI 0.5 mg/kg i.p. (abstract says 0.1 mg/kg — likely a typo). Listed all four compounds administered (8-OH-DPAT, WAY100,635, DOI, altanserin) since the rubric requests every psychedelic/drug entry.",
+    "Habituation: candidates differed on D3 recording days. Habituation days had no behavioural data reported, so only the sample + test trial (same day) constitute recording days → D3 score 0 (1 day).",
+    "B1 set to 7+ (3 points) given the very large number of distinct measures (object exploration ×2, indices, ambulation, sitting, rearing, head-shoulder, grooming, overall activity, boli).",
+    "Food/water restriction set to 'during' (standard short open field with no food/water in apparatus); confidence medium because paper does not explicitly state."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 6.25,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 2.73,
+    "behavioural_complexity_mean": 6.25,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 2.73
+  },
+  "low_confidence_count": 4,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 56910,
+    "output_tokens": 4391,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

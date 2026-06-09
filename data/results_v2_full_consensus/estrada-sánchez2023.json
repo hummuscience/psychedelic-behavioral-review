@@ -1,0 +1,284 @@
+{
+  "study_id": "EstradaSanchez2023",
+  "doi": "10.3390/ijms24119300",
+  "species": "mouse",
+  "strain": "FvB/N",
+  "age": {
+    "value": "adult",
+    "age_min_days": 120,
+    "age_max_days": 180,
+    "evidence": "FvB/N background male mice (n = 22) from 4 to 6 months old",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 22,
+    "n_female": null,
+    "evidence": "FvB/N background male mice (n = 22) from 4 to 6 months old",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        5.0
+      ],
+      "doses_raw": "5 mg/kg",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "DOI (Sigma Aldrich Research Biochemicals Inc., Burlington, MA, USA) was administered intraperitoneally at a dose (5 mg/kg)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "housed in the Psychology building animal facility at Indiana University, Bloomington (no cage density stated)",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "maintained under controlled temperature and humidity conditions with a 12 h light/dark cycle; direction of cycle not stated",
+      "confidence": "medium"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head Twitch Response (HTR)",
+      "assay_description": "Mice freely explored an open-field arena; two blind observers scored head twitches (rapid left-right head movement without front paws) in 5-min bins for 30 min following DOI. Pretreatments (WC 44 full D3 agonist, WW-III-55 partial D3 agonist, or vehicle) were given i.p. 5 min before DOI.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Mice received an intraperitoneal injection of either WC 44, WW-III-55, or a vehicle five minutes before the administration of DOI.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "no mention of habituation to the open-field arena prior to testing",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "The mice were allowed to behave in an open-field arena where neuronal activity and behavior were recorded simultaneously",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Testing performed in an open-field arena; food not present during recording (home cage had free access to food)",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Testing performed in an open-field arena; water not present during recording (home cage had free access to water)",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "recorded simultaneously for a total of 35 min (5 min after the first injection, and 30 min after DOI)",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 20,
+        "n_male": 20,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "Control n = 7; WC 44 + DOI n = 7 and WW-III-55 + DOI n = 6",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI (5 mg/kg, i.p.) induced ~76 head twitches over 30 min. Pretreatment with the full D3 agonist WC 44 (5 mg/kg) or partial agonist WW-III-55 (6 mg/kg) significantly delayed onset latency (~1.2 min → ~5 min) and reduced the total number of head twitches (to ~40 and ~37, respectively).",
+        "statistics": "Onset: F(2,17)=24.18, p<0.0001; Total: F(2,17)=193.2, p<0.0001; temporal course p<0.005",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "WC 44 and WW-III-55 significantly decreased the total number of events (40.29 ± 1.44 and 36.83 ± 1.75, respectively), F(2, 17) = 193.2 (p < 0.0001)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "latency to onset, frequency over time (5-min bins), and total number of head twitches",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "the temporal course of head twitching indicated that D3 agonists effectively reduced the presence of head twitching during the following 30 min; quantified in 5 min intervals",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of sequences or transitions reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-twitch response is a drug-induced behaviour, explicitly listed as a non-ethological measure",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice tested individually; no social component",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning or memory component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Two independent (blind) observers identified instances of head twitching",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate analyses (ANOVA) only",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "open-field arena",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open-field arena provides no shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open-field floor; no bedding described",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in arena",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in arena",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "open-field arena",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice tested individually in the arena",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the open-field arena during recording",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "recorded simultaneously for a total of 35 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "30 min after DOI (total 35 min session)",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single behavioural recording session",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline behavioural recording reported for HTR",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No recordings ≥24 h after drug administration",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session duration was 35 min",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Only one behavioural assay identified: head-twitch response in open field. The simultaneous M1/DS electrophysiological recordings are neural recordings and excluded per rubric.",
+    "All three candidates agreed on a single HTR assay. Merged into one entry.",
+    "B1 set to 1 (2-3 measures: latency, temporal course, total count) per majority of candidates.",
+    "day_night_flipped: paper states 12h light/dark cycle and that recordings were during light phase, but does not specify whether the cycle was reversed — kept as not_reported with medium confidence.",
+    "Dosing: only DOI listed as the psychedelic; WC 44 and WW-III-55 are D3 dopamine agonists, not psychedelics, so they are described in assay_description but not added as separate psychedelic dosing entries."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 2.5,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 1.36
+  },
+  "low_confidence_count": 4,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 46221,
+    "output_tokens": 3631,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

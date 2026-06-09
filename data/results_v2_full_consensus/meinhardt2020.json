@@ -1,0 +1,497 @@
+{
+  "study_id": "Meinhardt2020",
+  "doi": "10.1038/s41386-020-0694-z",
+  "species": "rat",
+  "strain": "Wistar",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 60,
+    "age_max_days": 60,
+    "evidence": "Ninety-one 2-month-old male and female Wistar rats",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Ninety-one 2-month-old male and female Wistar rats",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin, LSD",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        0.1,
+        1.0,
+        2.5,
+        10.0
+      ],
+      "doses_raw": "1 mg/kg (Exp1, 5 doses); 2.5 mg/kg twice and 10 mg/kg twice (Exp2); 0.1 mg/kg microdose (Exp3, 8 doses)",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "multiple",
+      "evidence": "Experiment 1: ... moderate dose of psilocybin (1 mg/kg); Experiment 2: psilocybin (group 1: 2.5 mg/kg twice; group 2: 10 mg/kg twice); Experiment 3: psilocybin (0.1 mg/kg) ... two injections per week",
+      "confidence": "high"
+    },
+    {
+      "compound": "LSD",
+      "doses_mg_per_kg": [
+        0.08,
+        0.32
+      ],
+      "doses_raw": "0.08 mg/kg twice; 0.32 mg/kg twice",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "repeated",
+      "evidence": "LSD (group 1: 0.08 mg/kg twice; group 2: 0.32 mg/kg twice)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Methods do not describe a handling protocol.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "All animals were housed individually in standard rat cages",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12 h artificial light/dark cycle (lights on at 6:00 a.m.)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Methods do not address home-cage enrichment.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Alcohol Deprivation Effect (ADE) — home-cage voluntary alcohol drinking",
+      "assay_description": "Long-term voluntary alcohol consumption with repeated deprivation phases in home cages with continuous access to water and 5/10/20% ethanol solutions. Total ethanol intake (g/kg/day) and water intake (ml/kg/day) measured daily at ~9 a.m. for 1 week post-relapse plus 3 weeks follow-up, across three drug-administration schemes (sub-chronic psilocybin 1 mg/kg; high-dose psilocybin 2.5/10 mg/kg or LSD 0.08/0.32 mg/kg twice 7 days apart; microdose psilocybin 0.1 mg/kg 8x over 4 weeks).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "intraperitoneal (i.p.) injections",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Animals were tested in their own home cages; the home cage was the testing apparatus throughout long-term alcohol drinking.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "animals were freely moving in their home cages during recording",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "Standard laboratory rat food and water were provided ad libitum throughout the experimental period.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "Standard laboratory rat food and water were provided ad libitum throughout the experimental period.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": null,
+          "evidence": "Exp1: bottles reintroduced after the second injection (at ~9 a.m.); Exp2: second injection ~15 h before ADE; Exp3: bottles reintroduced 16 h after the last application.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 91,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "Ninety-one 2-month-old male and female Wistar rats; rats were divided into three groups (n = 8–10)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Sub-chronic psilocybin (1 mg/kg, 5 doses over 3 days) produced a short-lasting reduction of the ADE relative to vehicle. High-dose psilocybin (2.5 or 10 mg/kg, twice 7 days apart) and LSD (0.08 or 0.32 mg/kg, twice 7 days apart), as well as 4-week microdosing of psilocybin (0.1 mg/kg, 8 doses), had no effect on the ADE. Water intake and locomotion were unaffected. Sex was not a significant covariate.",
+        "statistics": "Exp1: factor day F(5,165)=2.59, p<0.027; treatment × day F(5,165)=3.89, p<0.002; sex covariate F(1,33)=0.84, p<0.36; water F(5,165)=0.42, p=0.83. Exp2: psilocybin factor day F(5,275)=14.42, p<0.0001; LSD F(5,250)=11.18, p<0.0001 (no treatment effect). Exp3: factor day F(5,165)=5.64, p<0.0001 (no treatment effect).",
+        "direction": "mixed",
+        "dose_dependent": "no",
+        "sex_dependent": "no",
+        "time_dependent": "yes",
+        "evidence": "psilocybin treatment reduced the expression of ADE ... Alcohol intake was significantly reduced in psilocybin-treated rats ... However, there was no difference of either psilocybin or LSD treatment for the tested doses on ADE ... no difference of psilocybin treatment compared to vehicle on ADE was observed",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Total ethanol (g/kg of body weight/day) and water intake (ml/kg of body weight/day) were measured daily",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Intake reported as daily totals; ANCOVA uses day as within-subject factor (between-session), no within-session time-course of drinking analyzed.",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural sequences or transitions reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Voluntary drinking is a natural ethological consummatory behaviour measured in the home cage.",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "All animals were housed individually in standard rat cages",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "ADE measures voluntary consumption; no explicit learning/memory task during the recording.",
+          "confidence": "medium"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bottle weighing for intake; no pose-estimation or ML behavioural classifier.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Two-way repeated measures ANCOVA; no dimensionality reduction or multivariate analysis reported.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "All animals were housed individually in standard rat cages ... home-cage drinking",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard rat cage; no shelter or refuge described.",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bedding not explicitly reported in the standard rat cages.",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Nesting material not reported.",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment items reported.",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Standard individual rat cage.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "All animals were housed individually in standard rat cages",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Standard laboratory rat food and water were provided ad libitum throughout the experimental period.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Baseline drinking measured daily for 1 week; intake measured daily for subsequent week and three more weeks of follow-up.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "Intake measured daily at ~9 a.m. reflecting 24 h consumption windows; however drinking sessions per bout not explicitly timed.",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 3,
+          "value": "15+",
+          "evidence": "Baseline week + 1 week post-relapse + 3 weeks follow-up = >15 recording days per experiment.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Baseline drinking was measured daily for 1 week.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Ethanol and water intake were measured for three more weeks to test for persistent treatment effects.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Daily 24-h intake measurements with continuous home-cage access span >=6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 9
+      }
+    },
+    {
+      "assay_name": "Home-cage locomotor activity",
+      "assay_description": "Continuous home-cage locomotor activity recorded by an infrared sensor (Mouse-E-Motion) placed 30 cm above each cage, sampling every second whether the rat had moved ≥1.5 cm, analyzed in 30-min blocks across baseline, drug administration, ADE and follow-up.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "psilocybin and LSD administered intraperitoneally",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Recording occurred in the animal's home cage with no separate apparatus habituation needed.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "the rat could be detected at any position inside the cage",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "Standard laboratory rat food and water were provided ad libitum throughout the experimental period.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "Standard laboratory rat food and water were provided ad libitum throughout the experimental period.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 0,
+          "evidence": "Locomotor activity monitored continuously; in Exp1 a 2 h reduction was observed immediately after psilocybin injection in males; recordings also span days/weeks post-dose.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 91,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "n = 8–10 per treatment condition and sex",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "No overall difference in home-cage locomotor activity between psilocybin/LSD and vehicle groups. A transient 2-h reduction in activity was observed after acute 1 mg/kg psilocybin injection in male rats only, not in females. No locomotor effects were observed in the high-dose or microdosing experiments.",
+        "statistics": "Treatment group × day interaction: F(8,152)=0.67, p=0.71 (Experiment 1).",
+        "direction": "mixed",
+        "dose_dependent": "n/a",
+        "sex_dependent": "yes",
+        "time_dependent": "yes",
+        "evidence": "a repeated measurement ANOVA revealed no significant difference in activity of rats treated with psilocybin ... [F(8,152) = 0.67, p = 0.71] ... locomotor activity was reduced for 2 h following psilocybin administration exclusively in males.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single measure: home-cage locomotor activity counts.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Home-cage locomotor activity measurements for the ADE experiment were analyzed in 30 min blocks over the entire experiment; transient 2 h post-injection reduction observed.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition or sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Movement counts (motion vs no motion); locomotion is not a scored ethological act per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animals housed and recorded individually.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Infrared beam/motion detection processed in Excel; no ML/pose estimation.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "ANOVA only; no multivariate analysis.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "home cage locomotor activity was monitored ... A Mouse-E-Motion device was placed above each cage",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard rat cage; no shelter described.",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bedding not explicitly reported.",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Nesting material not reported.",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment items reported.",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Standard individual rat cage.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "All animals were housed individually in standard rat cages",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Food and water provided ad libitum in the home cage during recording.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 2,
+          "value": "Continuous monitoring",
+          "evidence": "The device was sampling every second, whether the rat was moving or not ... over the entire experiment",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 3,
+          "value": ">6 h",
+          "evidence": "Continuous home-cage monitoring across days/weeks; single recording sessions span >6 h.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 3,
+          "value": "15+",
+          "evidence": "Locomotor activity monitored across baseline week, deprivation/drug period, ADE week and 3 weeks follow-up.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Food and water intake as well as locomotion was measured starting 3 days before the first injection.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Activity monitored for three weeks after ADE.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Continuous sampling every second across full days/nights spans >=6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 11
+      }
+    }
+  ],
+  "judge_notes": [
+    "Collapsed all three drug-administration experiments (sub-chronic psilocybin, high-dose psilocybin/LSD, microdose psilocybin) into a single ADE assay entry per rubric rule that the same behavioural paradigm under different drug/dose/schedule conditions is one assay.",
+    "Dropped 'Water consumption' as a separate assay (gptoss); water intake is one of the measures within the home-cage drinking ADE paradigm, not a distinct behavioural paradigm.",
+    "Kept 'Home-cage locomotor activity' as a separate assay because it uses a different measurement system (infrared motion sensor) and reports independent locomotor outcomes including within-session temporal dynamics (30-min bins, 2-h post-injection effect).",
+    "B2 for ADE scored 0: ANCOVA day factor is between-session (day-to-day), not within-session temporal dynamics.",
+    "Single Psilocybin dosing entry consolidates all three psilocybin schedules (acute/repeated/microdose) using schedule='multiple'.",
+    "Group housing scored 'no' because the paper explicitly states animals were housed individually."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 2.73,
+    "recording_duration_max": 15.0,
+    "behavioural_complexity_mean": 1.88,
+    "environmental_complexity_mean": 2.73,
+    "recording_duration_mean": 13.63
+  },
+  "low_confidence_count": 9,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 50583,
+    "output_tokens": 6750,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

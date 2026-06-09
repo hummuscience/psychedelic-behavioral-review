@@ -1,0 +1,497 @@
+{
+  "study_id": "Amodeo2020",
+  "doi": "10.1016/j.bbr.2020.112871",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 63,
+    "age_max_days": 70,
+    "evidence": "Male C57BL/6 J mice, 9-10 weeks old, were purchased from JAX labs",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male C57BL/6 J mice, 9-10 weeks old",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI, 25CN-NBOH",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        2.5
+      ],
+      "doses_raw": "2.5 mg/kg DOI",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "2.5 mg/kg 1-(2,5-dimethoxy-4-iodophenyl)-2-aminopropane (DOI; Sigma)... DOI and SER-082 were dissolved in saline... DOI was administered intraperitoneally (IP)",
+      "confidence": "high"
+    },
+    {
+      "compound": "25CN-NBOH",
+      "doses_mg_per_kg": [
+        0.3,
+        1.0,
+        3.0,
+        10.0,
+        30.0
+      ],
+      "doses_raw": "1.0 mg/kg (reversal learning); 0.3, 1, 3, 10, 30 mg/kg (locomotor)",
+      "vehicle": "water",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "25CN-NBOH was dissolved in water containing 1% Tween 80. 25CN-NBOH and SER-082 were administered subcutaneously (SC)... mice were treated with vehicle or with one of 5 doses of 25CN-NBOH (0.3, 1, 3, 10, 30 mg/kg) 10 min before testing",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Methods do not mention a pre-test handling protocol.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "Mice were housed in standard cages (28.4 × 18.4 × 12.5 cm) in an individually ventilated caging system with corncob bedding.",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "yes",
+      "evidence": "Mice were housed on a 12 h:12 h reversed light-dark cycle (lights off at 7:00 am)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Mice were housed in standard cages... with corncob bedding (no enrichment items mentioned).",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Probabilistic Spatial Discrimination and Reversal Learning (T-maze)",
+      "assay_description": "T-maze (36 × 12 × 12 cm arms) with 80/20 probabilistic reinforcement. Mice underwent acquisition (vehicle only), then 24 h later retention followed immediately by reversal under drug. Measures: trials to criterion (acquisition, retention, reversal), perseverative errors, regressive errors.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "DOI was administered intraperitoneally (IP)... 25CN-NBOH and SER-082 were administered subcutaneously (SC)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Mice were first trained to navigate the maze, followed by probabilistic spatial acquisition learning and reversal learning.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "the guillotine door was raised by the experimenter, allowing the animal to freely navigate both choice arms",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "mice were food restricted and maintained at 85% of their ad lib body weight",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "not_reported",
+          "evidence": "Water access not described.",
+          "confidence": "low"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 20,
+          "evidence": "Preinjection times were 30 min (SER-082), 20 min (DOI), and 20 min (25CN-NBOH) prior to the reversal learning phase.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 51,
+        "n_male": 51,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "Mice were injected with vehicle (n = 17), 2.5 mg/kg DOI (n = 8), 1.0 mg/kg SER-082 (n = 8), SER-082/DOI (n = 9), or 1.0 mg/kg 25CN-NBOH (n = 9).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "25CN-NBOH (1 mg/kg) and the SER-082/DOI combination significantly increased trials to criterion during reversal learning compared to vehicle; DOI alone or SER-082 alone did not. The SER-082/DOI group made more perseverative errors, while the 25CN-NBOH group made more regressive errors. Acquisition and retention did not differ across groups.",
+        "statistics": "Reversal trials-to-criterion: F(4,46)=3.77, p<0.05. Perseverative errors: F(4,46)=3.47, p<0.05. Regressive errors: F(4,46)=5.24, p<0.01. Acquisition: F(4,46)=1.55, NS. Retention: F(4,46)=0.53, NS.",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Mice treated with SER-DOI combination or 1.0 mg/kg of 25CN-NBOH required more trials to reach criterion compared to vehicle treated mice (p<0.05).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "trials to criterion on acquisition, retention, reversal; perseverative errors; regressive errors",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Outcomes reported as totals per session; no within-session time-course analysis.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Errors classified by phase (perseverative vs regressive) but no sequential/transition or Markov analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Measures are arm choices in an operant-like task, not natural ethological acts.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice were tested alone in the T-maze.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Probabilistic spatial discrimination and reversal learning task.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The initial arm choice was recorded for each trial (manual scoring).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Separate one-way ANOVAs were conducted for each measure.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "T-maze with equal sized arms... made of back Plexiglas",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "T-maze arms are open with a start area closed only by a guillotine door; no enclosed refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Maze made of Plexiglas; cleaned with 10% alcohol between trials; no bedding described.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in the maze.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in the apparatus.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "T-maze with start area and two choice arms separated by walls and guillotine/sliding doors.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each mouse was tested individually in the T-maze.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Food wells located at the end of both choice arms were baited with a ½ piece of Fruity Pebbles cereal.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Training across 2 consecutive days; acquisition; reversal learning was tested 24 h after acquisition testing, preceded by retention trials.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "Each training session lasted 15 min.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Training over 2 consecutive days, acquisition, then reversal tested 24 h later.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Mice first completed retention trials immediately before reversal trials to be certain that mice began reversal trials with similar recall of the originally learned discrimination.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Testing began 20-30 min after drug administration; no recordings ≥24 h post-dose.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sessions were 15 min; no session ≥6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    },
+    {
+      "assay_name": "Locomotor Activity (Behavioral Pattern Monitor)",
+      "assay_description": "Photobeam-based BPM (30 × 60 cm holeboard floor in ventilated outer box). Mice tested for 60 min, with distance travelled analysed in six 10-min blocks across five doses of 25CN-NBOH plus vehicle.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "25CN-NBOH and SER-082 were administered subcutaneously (SC).",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Mice were acclimated to the testing room for 60 min prior to a 60 min session in the BPM (room habituation only, not apparatus exposure).",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice freely moved in the 30 × 60 cm holeboard arena.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food was placed in the BPM during the 60-min recording session.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water was placed in the BPM during the 60-min recording session.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 10,
+          "evidence": "mice were treated with vehicle or with one of 5 doses of 25CN-NBOH (0.3, 1, 3, 10, 30 mg/kg) 10 min before testing",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 13,
+        "evidence": "n = 13-14/group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "25CN-NBOH dose-dependently affected locomotor activity: 10 and 30 mg/kg significantly reduced distance travelled vs vehicle, whereas 0.3, 1, and 3 mg/kg had no effect. This confirms that the 1 mg/kg dose used in reversal learning did not impair locomotion.",
+        "statistics": "Treatment: F(5,74)=32.41, p<0.01; time block: F(4,281)=73.06, p<0.01; treatment × time: F(25,370)=8.76, p<0.01.",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "treatment with 10 or 30 mg/kg 25CN-NBOH significantly reduced locomotor activity compared to vehicle-treated mice. However, 25CN-NBOH at 1.0 mg/kg... did not significantly alter locomotor activity",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Distance travelled was the sole reported behavioural measure.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Mean distance travelled in six 10-min blocks; main effect of 10-min time block F(4,281)=73.06, p<0.01.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence/transition analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor activity via beam breaks, not ethological acts.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice tested alone in BPM.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning/memory requirement.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Photobeam position tracking only; no pose-estimation or ML classifier.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Two-way ANOVA on a single measure; no dimensionality reduction.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "30 × 60 cm holeboard floor enclosed in a ventilated outer box.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enclosed refuge in BPM.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bare holeboard floor; no bedding described.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in BPM.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in BPM.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single 30 × 60 cm holeboard arena.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each mouse tested individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in BPM during testing.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "a 60 min session in the BPM",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "60 min session in the BPM.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single locomotor testing session reported.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline session reported for BPM.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Testing 10 min post-dose; no ≥24 h follow-up.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "60-min session, less than 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Two assays retained: (1) probabilistic T-maze reversal learning (collapses acquisition, retention, reversal phases per rubric), (2) BPM locomotor activity. Candidates agreed on assay set.",
+    "B1 for reversal scored 2 (4-6): trials-to-criterion for acquisition, retention, reversal, plus perseverative and regressive errors = 5 distinct measures.",
+    "D2 for reversal set to 15-60 min based on explicit '15 min session' statement; gptoss's 'low' confidence override rejected because the paper does state session length.",
+    "food_restriction in reversal scored 'before' (chronic body-weight maintenance at 85%) — preferred over 'during'/'no' per rubric guidance.",
+    "E8 for reversal = Yes because cereal food rewards were physically present in the apparatus during recording.",
+    "doi inferred from journal/year (Behavioural Brain Research, 2020) — kept as common candidate identifier."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 2.73,
+    "recording_duration_max": 5.45,
+    "behavioural_complexity_mean": 2.5,
+    "environmental_complexity_mean": 1.36,
+    "recording_duration_mean": 3.41
+  },
+  "low_confidence_count": 4,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 47371,
+    "output_tokens": 7061,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

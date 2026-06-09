@@ -1,0 +1,484 @@
+{
+  "study_id": "Du2023",
+  "doi": "10.1097/CM9.0000000000002647",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 56,
+    "age_max_days": 56,
+    "evidence": "Eight-week-old male C57BL/6J mice",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 100,
+    "n_female": null,
+    "evidence": "Eight-week-old male C57BL/6J mice (Beijing SPF Biotechnology...)",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        0.1,
+        0.5,
+        2.5
+      ],
+      "doses_raw": "0.1 mg/kg, 0.5 mg/kg, or 2.5 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Psilocybin... was dissolved in sterile 0.9% saline solution and administered intraperitoneally (i.p.)... we selected three different drug doses: 0.1 mg/kg, 0.5 mg/kg, and 2.5 mg/kg.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "Prior to FC, all mice were acclimated to the environment and handled for 7 days.",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "Eight-week-old male C57BL/6J mice... were individually housed",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12-12 h light-dark cycle (lights on from 8:00 A. M. to 8:00 P. M.)... All behavioral tests were performed between 9:00 A. M. and 5:00 P. M.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Auditory Cued Fear Conditioning and Extinction",
+      "assay_description": "Auditory cued FC in Context A (5 tone-shock pairings, day-2), psilocybin given 30 min before extinction training (12 CS, Context B, day 0), extinction testing 24 h later (12 CS, Context B), extinction retrieval on day 6 (4 CS, Context B), and fear renewal on day 7 (4 CS, Context A). Primary measure: percentage of freezing time.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered intraperitoneally (i.p.) in a volume of 0.1 mL/10 g of mouse body mass",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Prior to FC, all mice were acclimated to the environment and handled for 7 days (room/handling acclimation, not apparatus pre-exposure).",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "square chamber made of transparent plexiglas with a metal grid floor (freely moving)",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "water and food freely available in home cage; no food in FC chamber during testing",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "water and food freely available in home cage; no water in FC chamber during testing",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 30,
+          "evidence": "Psilocybin was administered 30 min prior to fear extinction training... fear extinction testing was performed... at 24 h after psilocybin administration... extinction retrieval... on the sixth day... fear renewal... on the seventh day",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 100,
+        "n_male": 100,
+        "n_female": null,
+        "n_per_group_min": 20,
+        "evidence": "A hundred of mice were randomly divided into two groups, non-fear-conditioned group (FC(-) Veh, n = 20) and fear-conditioned group (FC(+), n = 80)... n = 20 for each group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin (0.5 and 2.5 mg/kg) reduced freezing during extinction training; 2.5 mg/kg significantly reduced freezing at 24 h extinction testing, day 6 retrieval, and day 7 renewal, indicating rapid and sustained facilitation of fear extinction.",
+        "statistics": "Training: F(3,76)=5.171, P=0.003; 0.5 mg/kg P=0.010, 2.5 mg/kg P=0.002. 24-h test: F(3,76)=3.839, P=0.010; 2.5 mg/kg P=0.004. Day 6: F(3,76)=3.240, P=0.030; 2.5 mg/kg P=0.010. Day 7: F(3,76)=3.035, P=0.030; 2.5 mg/kg P=0.010.",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "A single dose of psilocybin (2.5 mg/kg, i.p.) reduced the increase in the percentage of freezing time induced by FC at 24 h, 6th day and 7th day after administration.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The variable of interest was the percentage of time spent freezing relative to the total duration of CS presentation.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Details regarding percentage of freezing time during fear extinction training and fear extinction testing from the first to the last CS presentation are shown in Supplementary Figure 2.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural transitions or sequences reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Freezing behavior was defined as the cessation of all movement except respiration and heartbeat (conditioned freezing, not ethological).",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component in the fear conditioning paradigm.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Fear extinction is a process that involves learning and memory.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Freezing time was recorded and analyzed by a FC video analysis system (position/motion-based detection).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No multivariate analysis reported.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "square chamber made of transparent plexiglas with a metal grid floor... triangular chamber made of non-transparent black and white plexiglas with a flat, solid floor",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter in the conditioning/extinction chambers.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "metal grid floor... flat, solid floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in apparatus.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in apparatus.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Each chamber (context A or B) is a single-compartment conditioning chamber.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice tested individually in the conditioning chambers.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the testing apparatus.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "fear extinction testing was performed on the first day; fear extinction retrieval and fear renewal were tested on the sixth and seventh days, respectively",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "12 CS presentations (30 s) with ITI 30 s ≈ 12 min for training/testing; FC day = 5 CS-US pairings with 120 s ITI ≈ 12 min; retrieval/renewal = 4 CS with 30 s ITI (~4 min).",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "FC day (day-2), extinction training (day 0), extinction testing (day 1), retrieval (day 6), renewal (day 7).",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The baseline percentage of freezing time was not significantly different among the groups (Supplementary Figure 1).",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "fear extinction retrieval and fear renewal were tested on the sixth and seventh days, respectively (>=24 h after single dose).",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No session lasts >=6 hours.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    },
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "Mice placed in the center of a 40 × 40 × 40 cm plastic box, allowed to acclimate for 2 min, then total distance traveled recorded over 5 min using Smart Video Tracing System. Performed 24 h after psilocybin administration.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Psilocybin... administered intraperitoneally (i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Mice were placed in the center of a plastic box... allowed to acclimate for 2 min (within-session only); no separate prior apparatus exposure described.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "mice were placed in the center of a plastic box... and allowed to move freely",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in OFT apparatus; food ad libitum in home cage.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in OFT apparatus; water ad libitum in home cage.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "we assessed the total distance traveled by mice in the OFT 24 h after psilocybin administration",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 80,
+        "n_male": 80,
+        "n_female": null,
+        "n_per_group_min": 20,
+        "evidence": "n = 20 per group for C-G",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin (0.1, 0.5, 2.5 mg/kg) did not significantly alter total distance traveled in the open field 24 h after administration, indicating that fear-extinction effects were not attributable to changes in locomotor activity.",
+        "statistics": "F(3,76)=0.957, P=0.417",
+        "direction": "no_effect",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Different doses of psilocybin had no effect on the total distance traveled (F 3, 76 = 0.957, P = 0.417).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "the total distance traveled over the next 5 min was recorded",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only total distance over 5 min reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor distance is not an ethological behaviour.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "OFT does not require learning or memory.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "analyzed by the Smart Video Tracing System (Smart version 3.0, Panlab) — centroid tracking.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "plastic box (40 cm × 40 cm × 40 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open field; no shelter.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Plastic box; no bedding mentioned.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "plastic box... with a base divided into 16 equal sectors (virtual zones only)",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice tested individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in apparatus.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "On the first day, we performed the OFT 2 h before fear extinction testing (single session).",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "the total distance traveled over the next 5 min was recorded",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "OFT performed on a single day, 24 h after psilocybin.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug OFT baseline reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only one OFT session, at 24 h; no further follow-up OFT.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5-min session.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    }
+  ],
+  "judge_notes": [
+    "Two assays retained: (1) Auditory cued fear conditioning + extinction (collapsing FC, extinction training, extinction testing, retrieval, renewal into a single learning paradigm per rubric) and (2) Open Field Test.",
+    "B2 for FC scored Yes because the paper explicitly reports per-CS freezing trajectories across the 12 CS presentations within sessions (Supplementary Figure 2) — overriding qwen's No.",
+    "D2 for OFT scored 0 (<15 min: 5 min recording + 2 min acclimation) — corrected gptoss which mistakenly scored 1.",
+    "D1 for OFT scored 0 (single session); gptoss inconsistently labeled value 'Single session' with score 1.",
+    "setup_habituation for the FC assay set to 'no' (handling/room acclimation does not count as apparatus habituation per rubric).",
+    "n_total for FC assay set to 100 (includes the FC(-) vehicle non-conditioned control group, n=20, plus 80 fear-conditioned mice across four dose groups).",
+    "enrichment_housing left as not_reported (low confidence) since paper is silent on home-cage enrichment."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 5.45,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 2.73
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 53530,
+    "output_tokens": 6758,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

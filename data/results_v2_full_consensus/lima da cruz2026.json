@@ -1,0 +1,1071 @@
+{
+  "study_id": "LimaDaCruz2026",
+  "doi": "10.1038/s41398-026-03852-7",
+  "species": "mouse",
+  "strain": "DCXCreERT2::TdTOM lox/lox (C57BL/6 background)",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 45,
+    "age_max_days": 70,
+    "evidence": "A total of 48 male DCXCreERT2::TdTOM lox/lox mice with a C57BL/6 genetic background, aged postnatal day 45-70, were used in this study.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 48,
+    "n_female": 0,
+    "evidence": "A total of 48 male DCXCreERT2::TdTOM lox/lox mice ... The decision to use only male animals was based on prior evidence...",
+    "confidence": "high"
+  },
+  "psychedelic": "DMT",
+  "dosing": [
+    {
+      "compound": "DMT",
+      "doses_mg_per_kg": [
+        30.0
+      ],
+      "doses_raw": "30 mg/kg, i.p.",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Mice in all DMT-treated groups received a single intraperitoneal injection of 30 mg/kg DMT ... diluted fresh in saline (1:9, DMSO:saline) on the day of treatment to reach 30 mg/kg dose.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "Non-UCMS mice underwent gentle handling during the same period as the stressors.",
+      "confidence": "medium"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "All mice were housed under standard conditions, including a 12 h light/dark cycle, with food and water available ad libitum.",
+      "confidence": "medium"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "All mice were housed under standard conditions, including a 12 h light/dark cycle",
+      "confidence": "medium"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Not mentioned in methods section",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "10 min session in a 40 × 32 × 15 cm open arena; measured distance travelled and time in center zone using AnimalTA tracking + MATLAB analysis.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "single intraperitoneal injection of 30 mg/kg DMT",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No apparatus habituation described for OFT",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Animals were always placed at the center of the arena",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard OFT apparatus; no food in the arena during testing",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard OFT apparatus; no water in the arena during testing",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "long_term_over7d",
+          "value_minutes": 21600,
+          "evidence": "The OFT was performed on day 4 [of behavioral testing]; DMT was given on day 58 and behavioral testing began on day 73, so OFT occurred ~15 days post-dose.",
+          "confidence": "medium"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": 0,
+        "n_per_group_min": null,
+        "evidence": "n's for OFT not explicitly stated separately",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "No significant differences between UCMS saline, Non-UCMS controls, or any treatment group in distance travelled or time spent in the center.",
+        "statistics": "one-way ANOVA, no significant differences reported",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "In the OFT (Supplementary Fig. 3A-C), we did not observe any statistically significant differences between UCMS saline-treated mice, Non-UCMS controls, or any of the treatment groups",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "distance travelled and time spent in the center",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total summed measures, no within-session time-course",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition or sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only locomotor / zone preference measures",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing, no social construct",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "OFT measures innate locomotion/anxiety",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "AnimalTA was used for tracking (centroid-based)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVAs only",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "open arena with dimensions of 40 cm × 32 cm × 15 cm",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open field, no refuge",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard OFT, no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in arena",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Open arena with virtual center zone",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual testing",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the OFT arena",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "OFT performed on day 4 of behavioral testing",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "10 min session",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single OFT session",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug OFT baseline reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "OFT performed ~15 days after DMT injection",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "10 min session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Elevated Plus Maze",
+      "assay_description": "10 min session in elevated cross-shaped maze (52 cm above ground; arms 62 × 6.5 cm; closed arms 20 cm walls); measured % time in open arms and manually-scored head dips.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "single intraperitoneal injection of 30 mg/kg DMT",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No apparatus habituation described for EPM",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Animals were placed in the center of the maze, facing an open arm",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in EPM apparatus",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in EPM apparatus",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "long_term_over7d",
+          "value_minutes": 36000,
+          "evidence": "EPM was conducted on day 15 of behavioral testing; DMT administered on day 58 and testing began day 73",
+          "confidence": "medium"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": 0,
+        "n_per_group_min": null,
+        "evidence": "n's for EPM not explicitly reported",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "No significant differences among groups in percentage of time in open arms or number of head dips; UCMS and DMT treatments did not detectably alter anxiety-like behaviour in the EPM.",
+        "statistics": "ANOVA, no significant differences",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "in the EPM ... ANOVA analysis revealed no significant differences across treatment groups, UCMS saline, or Non-UCMS controls in terms of the percentage of time spent in the open arms. We also found no significant differences in the number of head dips",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "% time in open arms and number of head dips",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No within-session time analysis",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head dips are apparatus-specific exploratory measure, not natural ethological behaviour per rubric",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing, no social component",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EPM measures innate anxiety",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "AnimalTA tracking only (centroid)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate analyses",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "cross-shaped maze elevated 52 cm",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EPM closed arms are not classified as shelter per rubric",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard EPM with bare floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "EPM arms are extensions of central platform; not separate compartments per rubric",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual testing",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "EPM conducted on day 15 of testing",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Each animal was tested for 10 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single EPM session",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "EPM performed >24 h post-treatment",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "10 min session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Sucrose Preference Test",
+      "assay_description": "Home-cage two-bottle choice test (1% sucrose vs water) over 48 h, with bottle positions switched at 24 h. Performed at baseline, post-UCMS, and post-treatment. Anhedonia measured as % sucrose consumed.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "DMT (30 mg/kg, i.p.) administered before post-treatment SPT",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Animals were first habituated to drinking water from two bottles for 24 h",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice singly housed in home cage during testing",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "food and water available ad libitum during home-cage testing",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "Two bottles (water and sucrose) accessible throughout 48 h",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": null,
+          "evidence": "SPT performed at baseline (pre-UCMS), post-UCMS (pre-treatment), and post-treatment (days 10-13 of behavioral testing)",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 42,
+        "n_male": 42,
+        "n_female": 0,
+        "n_per_group_min": 5,
+        "evidence": "Sample sizes (after exclusions) given in Fig. 2: Non-UCMS (n = 8), UCMS (n = 21), UCMS Fluoxetine (n = 8), UCMS DMT-d28 (n = 5); post-treatment SPT all groups n = 8",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "All DMT-treated groups (DMT, DMT+Iso, DMT-d28) significantly increased sucrose preference vs UCMS saline (all p < 0.0001), reversing anhedonia. Fluoxetine produced a modest but significant increase (p = 0.0179). DMT-d28 had already reversed anhedonia by the post-UCMS assessment.",
+        "statistics": "DMT, DMT+Iso, DMT-d28 vs UCMS-saline all p < 0.0001; Fluoxetine p = 0.0179; DMT vs Fluoxetine p = 0.0029",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "All DMT-treated groups, including DMT alone, DMT under isoflurane, and DMT-d28, exhibited significantly higher sucrose preference compared to UCMS saline controls (all p < 0.0001)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Sucrose preference (% sucrose consumed)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total 48 h consumption",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bout-level analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Consumption metric, not ethological act",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individually housed during testing, no social construct",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Hedonic preference, no learning",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Manual volume measurement",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVAs only",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "mice were individually housed beginning on the habituation day and remained singly housed throughout the test period",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard home cage, no shelter described",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Home-cage testing implies standard bedding present",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described in test",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects mentioned",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single home cage; two bottles do not constitute separate compartments",
+          "confidence": "medium"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Singly housed throughout test",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Two bottles (water + 1% sucrose) available throughout test",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "SPT performed at baseline, post-UCMS, and post-treatment",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 3,
+          "value": ">6 h",
+          "evidence": "Total volume consumed over the 48 h testing period was recorded",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Three distinct SPT timepoints",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Baseline SPT performed before UCMS and before treatment",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Post-treatment SPT performed >24 h after DMT injection",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "48 h SPT session spans >6 h",
+          "confidence": "high"
+        },
+        "raw_total": 8
+      }
+    },
+    {
+      "assay_name": "Tail Suspension Test",
+      "assay_description": "Mice suspended by tail (with anti-climb cuff) 45 cm above ground in a 60 × 15 × 70 cm box; immobility scored by DeepLabCut pose estimation and custom Python analysis.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "DMT (30 mg/kg, i.p.) administered before TST",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No apparatus habituation described for TST",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "Animals were suspended by their tails ... gently secured with adhesive tape to a wooden shaft",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in TST apparatus",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in TST apparatus",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "long_term_over7d",
+          "value_minutes": 28800,
+          "evidence": "TST conducted on day 7 of behavioral testing; DMT administered on day 58 and testing began day 73 (~20 days post-dose)",
+          "confidence": "medium"
+        }
+      },
+      "sample_size": {
+        "n_total": 37,
+        "n_male": 37,
+        "n_female": 0,
+        "n_per_group_min": 5,
+        "evidence": "Non-UCMS (n = 6), UCMS Saline (n = 5), UCMS Fluoxetine (n = 6), UCMS DMT (n = 7), UCMS DMT + Iso (n = 6), UCMS DMT-d28 (n = 7)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "All DMT regimens (DMT, DMT+Iso, DMT-d28) and fluoxetine significantly reduced TST immobility compared with UCMS-saline, with no significant differences among treatments.",
+        "statistics": "DMT p < 0.0001; DMT+Iso p < 0.0001; Fluoxetine p = 0.0001; DMT-d28 p = 0.0002 (vs UCMS saline)",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "all tested treatments, i.e., DMT (p < 0.0001), DMT+Iso (p < 0.0001), fluoxetine (p = 0.0001), and DMT-d28 (p = 0.0002), effectively reduced immobility compared to UCMS saline controls",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Immobility time",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total immobility reported",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bout/transition analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Immobility is not an ethological behaviour per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning required",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "DeepLabCut (DLC) was used for tracking, and the outputs were analyzed with a custom-made Python script",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVA only",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "60 × 15 × 70 cm suspension box",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter in TST apparatus",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single box",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual testing",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "TST performed on day 7 of behavioral testing only",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "TST duration not explicitly stated; standard TST is typically <15 min",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single TST session",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug TST baseline recorded",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "TST performed >24 h after DMT injection",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Brief test, <6 h",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Radial Arm Maze - Delayed Non-Matching to Place",
+      "assay_description": "8-arm radial maze (arms 30 × 8 × 30 cm, central 20 cm platform) with sample + test phases (~20 s delay, maze rotated). 4 trials/day × 15 days × 3 separation conditions (S2, S3, S4); reward = Fruit Loop. Correct first-choice and errors scored manually.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "DMT (30 mg/kg, i.p.) administered before RAM testing",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "animals had limited access to food during the 15 days of testing and were habituated to the reward five days prior to maze training",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Animal moved freely through the maze arms",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "To ensure task motivation, animals had limited access to food during the 15 days of testing",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water provided in maze during testing",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "long_term_over7d",
+          "value_minutes": 21600,
+          "evidence": "RAM testing spanned days 73-88 (post-treatment) — at least 15 days after DMT injection on day 58",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 48,
+        "n_male": 48,
+        "n_female": 0,
+        "n_per_group_min": 8,
+        "evidence": "Sample size: all groups, n = 8",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "UCMS-saline mice performed worse than Non-UCMS in the highest-difficulty condition (S2). DMT, DMT+Iso, and fluoxetine post-UCMS significantly improved S2 performance; DMT-d28 (administered during stress) did not rescue cognitive deficits. No group differences at lower difficulties (S3/S4).",
+        "statistics": "UCMS vs Non-UCMS p = 0.0165; DMT p < 0.0001; DMT+Iso p = 0.0108; Fluoxetine p = 0.0007 (vs UCMS-saline); two-way RM ANOVA treatment p < 0.0001, training p < 0.0001",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "animals treated with fluoxetine (p = 0.0007), DMT (p < 0.0001), and DMT+Iso (p = 0.0108) displayed significantly enhanced performance compared to the UCMS-saline group ... the DMT-d28 group did not significantly differ from saline-treated animals (p = 0.7273)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Correct first attempts and errors scored across S2, S3, S4 conditions",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Learning analyzed across days, not within-session time-course",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition/sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Operant foraging task; correct-arm scoring",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "DNMP-RAM task assessed cognitive function, specifically reference and working memory",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "All data were recorded manually during the experiment by an experienced researcher",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Separate ANOVAs per separation condition",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "8-arm radial maze, standard cognitive apparatus",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enclosed refuge",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Solid maze floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Reward wells are task stimuli, not enrichment",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "8 arms connected to central platform with removable doors",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual testing",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Fruit Loop reward placed in arms during trials",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "4 trials/day over 15 days for each separation condition",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "Test trials up to 4 min + correction phase up to 10 min × 4 trials/day",
+          "confidence": "medium"
+        },
+        "D3_recording_days": {
+          "score": 3,
+          "value": "15+",
+          "evidence": "DNMP-RAM protocol continuously for 15 days",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug RAM baseline reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "RAM testing began ~15 days post-DMT and continued for 15 more days",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No single session >6 h",
+          "confidence": "high"
+        },
+        "raw_total": 6
+      }
+    }
+  ],
+  "judge_notes": [
+    "Both candidates identified the same 5 behavioural assays (OFT, EPM, SPT, TST, DNMP-RAM); no merges or drops were needed.",
+    "For time_to_assay, behavioural testing began on day 73 (~15 days after the day-58 DMT injection), so all assays fall in long_term_over7d, overriding both candidates' early_2to24h.",
+    "B7 for TST scored 1 (DeepLabCut pose estimation), overriding qwen's earlier consistency — gptoss had this correct.",
+    "B5 for SPT scored 0 (anhedonia is a hedonic/reward construct, not a social construct as gptoss claimed).",
+    "SPT D6 scored 1 — the 48 h session clearly exceeds 6 h, even though measurements are taken at endpoints (the test session itself spans the full duration).",
+    "SPT E3 scored 1 (home-cage bedding present) and E6 scored 0 (a single home cage with two bottles is not multiple compartments per rubric).",
+    "DNMP-RAM E1 scored 0 (standard cognitive apparatus, not an enriched arena) and E5 scored 0 (reward wells are task stimuli per rubric).",
+    "DNMP-RAM D3 scored 3 (15+ days), overriding gptoss's misapplied category label.",
+    "Handling scored 'yes' at study level because Non-UCMS controls underwent gentle handling explicitly (\"Non-UCMS mice underwent gentle handling during the same period as the stressors\")."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 4.09,
+    "recording_duration_max": 10.91,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 1.36,
+    "recording_duration_mean": 4.63
+  },
+  "low_confidence_count": 6,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 72927,
+    "output_tokens": 12314,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

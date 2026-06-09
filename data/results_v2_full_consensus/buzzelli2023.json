@@ -1,0 +1,288 @@
+{
+  "study_id": "Buzzelli2022",
+  "doi": "10.1007/s00213-022-06286-3",
+  "species": "rat",
+  "strain": "Fmr1Δ exon 8 on Sprague-Dawley background",
+  "age": {
+    "value": "adolescent",
+    "age_min_days": 34,
+    "age_max_days": 49,
+    "evidence": "Male juvenile offspring were tested between PNDs 34 and 49.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male juvenile offspring were tested between PNDs 34 and 49.",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        0.1,
+        0.3,
+        1.0,
+        3.0
+      ],
+      "doses_raw": "1 or 3 mg/kg (i.p.); 0.1 mg/kg (i.p.); 0.1 or 0.3 mg/kg (p.o.)",
+      "vehicle": "saline",
+      "route": "multiple",
+      "schedule": "multiple",
+      "evidence": "Experiment 1: a single dose of either 1 or 3 mg/kg psilocybin... given intraperitoneally (i.p.) 8 days before behavioral testing... Experiment 2: repeated microdoses of psilocybin (0.1 mg/kg)... given i.p. three times every other day... Experiment 3: repeated microdoses of psilocybin (0.1 or 0.3 mg/kg)... given by oral gavage (per os, p.o.) three times every other day, for 2 consecutive weeks... Psilocybin... was dissolved in saline.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "On PND 21, the pups were weaned and housed in groups of three (same-sex and genotype).",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12/12 h light cycle with lights on at 07:00 h",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Novel Object Recognition (short-term)",
+      "assay_description": "Grey square arena (40 × 40 × 10 cm). Training trial: 5 min exploration of two identical objects. Test trial 30 min later: 5 min exploration of one familiar and one novel object. Measures: discrimination index, total sniffing time, line crossings (locomotion), rearings. Collapsed across three experiments with varying doses (0.1, 0.3, 1, 3 mg/kg), routes (i.p., p.o.), and schedules (acute, repeated microdosing).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "given intraperitoneally (i.p.)... given by oral gavage (per os, p.o.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "each rat was individually placed into an open-field arena... and allowed to explore the objects",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Short test in arena with no food present; ad libitum standard assumed but not explicit.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Short test in arena with no water present.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 11520,
+          "evidence": "Experiment 1: 8 days before behavioral testing; Experiments 2 & 3: behavioral testing starting 5 days after the last administration.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 166,
+        "n_male": 166,
+        "n_female": 0,
+        "n_per_group_min": 8,
+        "evidence": "Exp1: WT-VEH n=11; WT-PSY 1 n=10; WT-PSY 3 n=14; Fmr1-VEH n=13; Fmr1-PSY 1 n=13; Fmr1-PSY 3 n=14. Exp2: WT-VEH n=10; WT-PSY n=9; Fmr1-VEH n=9; Fmr1-PSY n=8. Exp3: WT-VEH n=9; WT-PSY 0.1 n=9; WT-PSY 0.3 n=9; Fmr1-VEH n=8; Fmr1-PSY 0.1 n=10; Fmr1-PSY 0.3 n=10.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute psilocybin (1 mg/kg i.p., 8 days pre-test) partially mitigated the short-term NOR deficit in Fmr1Δ exon 8 rats, while 3 mg/kg impaired performance in WT controls. Repeated microdosing (0.1 mg/kg i.p., or 0.1–0.3 mg/kg p.o., every other day) fully normalized the discrimination deficit in Fmr1Δ rats without affecting WT animals. Total exploration time, line crossings, and rearings were unaffected by treatment.",
+        "statistics": "Exp1: discrimination index F(genotype)1,69=4.574, p<0.05; F(treatment)2,69=2.67, n.s.; F(g×t)2,69=11.08, p<0.001. Exp2: F(genotype)1,32=10.23, p<0.01; F(treatment)1,32=5.75, p<0.05; F(g×t)1,32=10.53, p<0.01. Exp3: F(genotype)1,49=13.56, p<0.001; F(treatment)2,49=8.59, p<0.001; F(g×t)2,49=13.07, p<0.001.",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "not_reported",
+        "evidence": "repeated intraperitoneal treatment with psilocybin microdoses normalized the short-term object recognition deficit displayed by Fmr1Δ exon 8 rats... repeated oral treatment with psilocybin microdoses normalized the short-term object recognition deficit displayed by Fmr1Δ exon 8 rats, without affecting the cognitive performance of WT animals.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "discrimination index, total sniffing time, number of line crossings, number of rearings",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Data reported as totals across the 5-min test period.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transitional or sequence analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Spontaneous rearing behaviors, in which rodents stand on their hind legs with the intention of exploring, were also counted during the 5-min test period.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "each rat was individually placed into an open-field arena",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "novel object recognition test—a measure of exploratory behavior, perception, and recognition",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "A trained observer... scored the behavioral tests using the Observer 3.0 software (Noldus).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "analyzed by two-way ANOVA",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "grey square arena (40 × 40 × 10 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "open-field arena with no shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described in the arena.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only test objects present, no enrichment.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "grey square arena, single open field",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "each rat was individually placed into an open-field arena",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in apparatus during 5-min test.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Training trial (5 min) and test trial (5 min) 30 minutes later, both recorded.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "allowed to explore the objects for 5 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Training and test occurred on the same day, 30 min apart.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug behavioural baseline recorded; training occurred days/weeks after dosing began.",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Acute dose given 8 days before testing; repeated schedules tested 5 days after the last dose.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5 min session",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    }
+  ],
+  "judge_notes": [
+    "All three candidates identified a single behavioural paradigm (short-term NOR); collapsed the three experiments (different doses/routes/schedules) into one assay per rubric rules.",
+    "B1 scored 2 (4-6 measures: discrimination index, total sniffing time, line crossings, rearings) — agreeing with qwen/gptoss over glm's '2-3'.",
+    "B4 scored 1 (rearing explicitly counted as a natural exploratory behaviour) — agreeing with qwen/gptoss over glm.",
+    "D1 scored 1 (training trial + test trial both recorded and reported as separate sessions on same day) — agreeing with glm over qwen/gptoss.",
+    "D5 scored 1 (testing occurred 5 or 8 days post last dose, ≥24 h) — agreeing with glm/gptoss over qwen.",
+    "time_to_assay set to 'multiple' since acute (8 d) and repeated (5 d) post-dose timepoints used across experiments."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 5.0,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 2.73,
+    "behavioural_complexity_mean": 5.0,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 2.73
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 46375,
+    "output_tokens": 4120,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

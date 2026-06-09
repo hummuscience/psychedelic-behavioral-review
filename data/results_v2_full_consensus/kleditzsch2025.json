@@ -1,0 +1,494 @@
+{
+  "study_id": "Kleditzsch2025",
+  "doi": "10.1111/ejn.70351",
+  "species": "mouse",
+  "strain": "C57BL/6",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 60,
+    "age_max_days": 90,
+    "evidence": "Behavioural tests were conducted during the light cycle, between 9 AM and 3 PM, using 2-3 month old mice.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Female and male C57BL/6 mice were obtained from Ozgene ARC (Perth, Australia) at the age of 8 weeks.",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "1 mg/kg, i.p.",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Escitalopram (2.5-5 mg/kg) and psilocybin (1 mg/kg)... were dissolved in a saline solution (0.9%) and injected intraperitoneally (i.p.).",
+      "confidence": "high"
+    },
+    {
+      "compound": "Escitalopram",
+      "doses_mg_per_kg": [
+        2.5,
+        5.0
+      ],
+      "doses_raw": "2.5-5 mg/kg, i.p.",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Escitalopram was administered at 2.5 and 5 mg/kg... injected intraperitoneally (i.p.).",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Paper does not mention any handling protocol beyond habituation to housing.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "standard open-top boxes (34 × 16 × 16 cm; 4-6 mice/box)",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "housed in a 12-h light/dark cycle... Behavioural tests were conducted during the light cycle, between 9 AM and 3 PM.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Paper describes housing but does not mention enrichment items.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Locomotor Activity",
+      "assay_description": "Photo-beam activity chambers (26 × 26 × 38 cm; Coulburn Instruments). Distance travelled (cm) recorded in 5-min bins for 15 min before escitalopram, 30 min between injections, and 60 min after psilocybin.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "injected intraperitoneally (i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "An acclimatisation of at least 30 min to the experimental room took place before the commencement of each test (room acclimation, not apparatus).",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice were placed in photo-beam activity chambers",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard chow and drinking water were provided ad libitum [in home cage]; no food in test chamber.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard chow and drinking water were provided ad libitum [in home cage]; no water in test chamber.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Locomotion activity was measured... 60 min after psilocybin injection.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "n = 8-9 mice per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute psilocybin (1 mg/kg) significantly increased locomotor activity in both male and female mice. Escitalopram pretreatment (2.5 mg/kg) did not alter the psilocybin-induced hyperlocomotion and had no effect on locomotion alone.",
+        "statistics": "Male: psilocybin F(1,30)=6.58, p=0.016; escitalopram F(1,30)=0.02, p=0.903; interaction F(1,30)=0.22, p=0.646; time×escitalopram F(20,599)=2.02, p=0.006. Female: psilocybin F(1,32)=4.44, p=0.043; escitalopram F(1,32)=1.78, p=0.192; interaction F(1,32)=0.31, p=0.585.",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "no",
+        "time_dependent": "n/a",
+        "evidence": "A mixed-effects analysis revealed that psilocybin increased locomotion in male mice (F 1,30 = 6.58; p = 0.016)... Psilocybin increased locomotion in female mice (F 1,32 = 4.44; p = 0.043).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "We analysed distance travelled (cm) in 5 min bins",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "distance travelled (cm) in 5 min bins... interaction of time × escitalopram (F 20,599 = 2.02; p = 0.006)",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural sequences reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotion distance is not an ethological behaviour per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice were tested alone in the activity chamber.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning or memory component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Photo-beam activity chambers (beam-break system).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No multivariate analysis reported.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "photo-beam activity chambers (26 × 26 × 38 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Photo-beam activity chamber has no enclosed refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bare activity chamber floor; no bedding mentioned.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in apparatus.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in apparatus.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Photo-beam activity chamber is a single open arena.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice placed individually in activity chambers.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the activity chamber.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Locomotion activity was measured 15 min before escitalopram... and 60 min after psilocybin injection [continuous within one session].",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "15 min before escitalopram + 30 min between injections + 60 min after psilocybin = ~105 min total session.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "All measurements taken on a single test day.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "used the 40-45 min bin before the psilocybin injection as baseline",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No recordings ≥24 h post-drug.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session lasted ~105 min, far less than 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Head-Twitch Response",
+      "assay_description": "Video recorded from top view for 15 min after psilocybin injection; head twitches manually scored by a blinded researcher.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "psilocybin (1 mg/kg)... injected intraperitoneally (i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Only room acclimation (30 min) mentioned; no apparatus-specific habituation described.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice were freely moving in chamber during 15 min video recording.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard chow ad libitum in home cage; no food in test apparatus.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Drinking water ad libitum in home cage; no water in test apparatus.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "After the psilocybin injection... head twitches were video recorded for 15 min",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 5,
+        "evidence": "n = 5 (Sal-Sal male and female), 6 (Esc-Sal male and female) and 9 (Sal-Psil and Esc-Psil male and female) mice",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute psilocybin (1 mg/kg) markedly increased head twitches in both saline- and escitalopram-pretreated mice. Escitalopram (2.5 mg/kg) alone had no effect and did not alter psilocybin-induced HTR. No sex differences observed.",
+        "statistics": "Saline pretreatment: F(1,24)=144.30, p<0.0001; Escitalopram pretreatment: F(1,26)=100.60, p<0.0001; Escitalopram main effect: F(1,18)=0.48, p=0.496; Sex: F(1,50)=0.29, p=0.592.",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "no",
+        "time_dependent": "n/a",
+        "evidence": "psilocybin increased head twitches in both saline (F 1,24 = 144.30; p < 0.0001) and escitalopram (F 1,26 = 100.60; p < 0.0001) pretreated mice, whereas escitalopram itself had no effect on head twitches (F 1,18 = 0.48; p = 0.496). Notably, no sex differences were observed (F 1,50 = 0.29; p = 0.592).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Total amount of head twitches post-psilocybin or saline injection.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only total head-twitch count over 15 min reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-twitch response is explicitly excluded from ethological behaviours per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice recorded alone.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning/memory component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head twitches were scored manually by a trained researcher.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No multivariate analysis.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Recorded in photo-beam activity chamber after psilocybin injection.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter present in recording chamber.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding in test chamber.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single open chamber.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Focal mouse alone during recording.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in test chamber.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Head twitches were video recorded for 15 min after psilocybin injection.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "video recorded for 15 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test day.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline of HTR reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No post-acute follow-up.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "15 min session.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Two assays identified: Locomotor Activity and Head-Twitch Response. All three candidates agreed on this structure.",
+    "D2 for locomotor: total session ~105 min (15 baseline + 30 between + 60 post-psilocybin), so '61 min–6 h' (score 2) is correct, agreeing with qwen and glm over gptoss who scored only the longest segment.",
+    "D1 for locomotor: scored as Single session (continuous within-day recording), not multiple discrete sessions, since the chamber recording is continuous across the injection sequence.",
+    "B4 for HTR: scored No per rubric (HTR explicitly listed as not ethological).",
+    "DOI included as 10.1111/ejn.70351 based on peer review URL embedded in paper.",
+    "Handling and enrichment_housing scored not_reported since paper is silent."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 4.09,
+    "behavioural_complexity_mean": 0.62,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 2.73
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 46871,
+    "output_tokens": 5943,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

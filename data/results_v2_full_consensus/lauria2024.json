@@ -1,0 +1,1279 @@
+{
+  "study_id": "Lauria2024",
+  "doi": "10.1016/j.jep.2024.117710",
+  "species": "mouse",
+  "strain": "Swiss and C57BL/6",
+  "age": {
+    "value": "adult",
+    "age_min_days": 90,
+    "age_max_days": 180,
+    "evidence": "Male Swiss and C57BL/6 mice (Mus musculus), aged 3-6 months, weighing 20-25 g",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 257,
+    "n_female": null,
+    "evidence": "Male Swiss and C57BL/6 mice... Swiss mice (n = 114)... C57BL/6 mice (n = 143)",
+    "confidence": "high"
+  },
+  "psychedelic": "Ayahuasca, Harmine",
+  "dosing": [
+    {
+      "compound": "Ayahuasca",
+      "doses_mg_per_kg": [],
+      "doses_raw": "24, 120, 600, and 3000 µL/kg",
+      "vehicle": "water",
+      "route": "p.o.",
+      "schedule": "multiple",
+      "evidence": "Mice were orally pre-treated with ayahuasca (24, 120, 600, and 3000 µL/kg)... daily treatments once or twice a day for 14 days",
+      "confidence": "high"
+    },
+    {
+      "compound": "Harmine",
+      "doses_mg_per_kg": [
+        0.035,
+        0.35,
+        3.5,
+        35
+      ],
+      "doses_raw": "0.035, 0.35, 3.5, and 35 mg/kg",
+      "vehicle": "water",
+      "route": "p.o.",
+      "schedule": "multiple",
+      "evidence": "harmine (0.035, 0.35, 3.5, and 35 mg/kg)... daily oral treatments with harmine (3.5 mg/kg) twice a day for 14 days",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "no explicit handling protocol described",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Mice from the same experimental group were housed in pairs to allow nearly individualized consumption measurements while avoiding social isolation",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "under a 12-h light-dark cycle of artificial light (direction not specified)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Animals were kept in individually ventilated cages (Alesco) in a temperature-controlled room — enrichment not addressed",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Formalin Test",
+      "assay_description": "Mice received intraplantar 2.5% formaldehyde and were observed under glass cylinders for 30 min; time spent licking, shaking, or protecting the inoculated paw was scored separately in phase 1 (0-10 min) and phase 2 (10-30 min).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "p.o.",
+          "evidence": "Mice were orally pre-treated with ayahuasca",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "no pre-test apparatus habituation described",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "kept under glass cylinders in front of a mirror",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard test apparatus; no food in cylinder",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard test apparatus; no water in cylinder",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 40,
+          "evidence": "After 40 min, mice were inoculated by intraplantar route... and then... observed for 30 min",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 42,
+        "n_male": 42,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "n = 6 mice per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Ayahuasca dose-dependently reduced nociceptive behaviors in the second phase (120-3000 µL/kg) but had no effect in the first phase. ED50 in the second phase was 118.1 µL/kg.",
+        "statistics": "F(6, 34) = 22.88; p < 0.05 (phase 2); F(6, 35) = 20.26 (phase 1, morphine effect)",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "ayahuasca significantly reduced nociceptive behaviors at 120 µL/kg, 600 µL/kg, and 3000 µL/kg (F (6, 34) = 22,88; p < 0.05)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Time during which mice exhibited pain-like behaviors... divided into first phase and second phase",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The response was divided into first phase (0-10 min) and second phase (10-30 min)",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no transition/sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "licking, shaking, or protecting the inoculated paw",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "registered with a stopwatch",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate ANOVA only",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "kept under glass cylinders",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enclosed refuge in glass cylinder",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no bedding described",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting material",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment objects",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "glass cylinder is single compartment",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individual testing under glass cylinder",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "observed for 30 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "observed for 30 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "single test day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no pre-drug baseline for formalin test",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no >=24h follow-up",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30 min session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Von Frey Test (mechanical allodynia)",
+      "assay_description": "Mice placed on wired grid floor in acrylic boxes after 20-min adaptation; von Frey filaments applied to right hind paw with up-and-down method to determine 50% withdrawal threshold. Used across CFA model (timepoints 1, 2, 4, 6, 24 h) and partial sciatic nerve ligation neuropathy model (single dose at 1-10, 24 h; daily/twice-daily for 14 days); also used for antagonist pharmacology and harmine experiments.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "Oral ayahuasca/harmine treatments combined with i.p. antagonists (naloxone, bicuculline, phaclofen, methysergide, rimonabant) and i.p. gabapentin reference",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "After an adaptation period of 20 min, the right hind paw was touched",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice were placed in transparent acrylic boxes upon a wired grid floor",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard test; no food in apparatus",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard test; no water in apparatus",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 60,
+          "evidence": "assessed at 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, and 24 h after treatments; daily measurements over 14 days",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "n = 6 to 7 mice per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Ayahuasca (600-3000 µL/kg, p.o.) dose-dependently reduced CFA-induced and nerve-ligation-induced mechanical allodynia, peaking at 7 h. Daily dosing for 14 days maintained antinociception without tolerance, with twice-daily dosing producing a plateau effect. Bicuculline and methysergide reversed the effect; naloxone, phaclofen and rimonabant did not. Harmine (3.5 mg/kg) reproduced the effect.",
+        "statistics": "CFA: F(5,29)=3.304, p=0.0175; neuropathy single dose: F(7,43)=434.2, p<0.0001; once-daily 14d: F(6,38)=562.6, p<0.0001; twice-daily 14d: F(6,41)=612.3, p<0.0001; antagonists pre: F(7,40)=251.0, p<0.0001; antagonists post: F(7,40)=527.3, p<0.0001; harmine: F(7,42)=228.5, p<0.0001",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "Oral treatments with ayahuasca (24-3000 µL/kg) dose-dependently reduced mechanical allodynia compared to vehicle-treated neuropathic mice (p<0.05)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Mechanical nociceptive threshold (50% withdrawal) only",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "measurements at discrete timepoints, not within-session",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "withdrawal reflex is not ethological",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "reflex test, no learning",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "manual filament testing",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate analysis",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "transparent acrylic boxes upon a wired grid floor",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no shelter in von Frey box",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "wired grid floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting material",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single acrylic box",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individual testing",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "daily measurements over 14 days plus multiple hourly post-treatment timepoints",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "each filament-application session is brief (up-and-down method)",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 3,
+          "value": "15+",
+          "evidence": "Mechanical thresholds assessed daily during the 14 days of treatments plus baseline and post-surgery days",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Mechanical nociceptive thresholds were measured before the experiment (baseline)",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "thresholds assessed at 24 h after treatments in CFA model and across 14 days in neuropathy",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no single session >=6 h",
+          "confidence": "high"
+        },
+        "raw_total": 6
+      }
+    },
+    {
+      "assay_name": "Tail Flick Test",
+      "assay_description": "Restrained mice had ~3 cm of tail immersed in 48°C water; latency to withdrawal recorded by stopwatch (cut-off 10 s), three trials averaged per mouse. Tested at 1, 2, 4, 6 h after oral treatment.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "p.o.",
+          "evidence": "Mice were orally treated with ayahuasca",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Mice were acclimatized in restriction tubes for 15 min",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "The tip of restrained mice's tail (approximately 3 cm) was immersed in hot water",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard test; no food in apparatus",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard test; no water in apparatus",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 60,
+          "evidence": "The tail flick test was then performed at 1, 2, 4, and 6 h following treatments",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 36,
+        "n_male": 36,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "n = 6 mice per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Ayahuasca (24-3000 µL/kg) had no effect on tail flick latency at any timepoint, whereas morphine (5 mg/kg) increased latency at 1 and 2 h.",
+        "statistics": "F(5,29)=3.323, p=0.0171; time x treatment F(20,116)=12.82, p<0.0001",
+        "direction": "no_effect",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "None of the tested doses of ayahuasca affected the latency time of mice",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "latency in seconds only",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Measurements taken at separate post-dose timepoints, not within-session bins",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "tail flick is a reflex",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "reflex test",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "stopwatch timing",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate ANOVA",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "restriction tubes and hot water bath",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no shelter",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "restraint tube + water bath",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individual testing",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water accessible",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "performed at 1, 2, 4, and 6 h following treatments",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "three brief trials per mouse",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Baselines were determined for three consecutive days before the experiment",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Baselines were determined for three consecutive days before the experiment",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "max 6 h post-treatment",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "brief sessions",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Rotarod Test",
+      "assay_description": "Constant-speed rotarod (8 rpm); time spent on cylinder averaged over three 120-s attempts. Assessed on days 7 and 14 of repeated dosing protocol.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "p.o.",
+          "evidence": "daily oral treatments with ayahuasca (600 µL/kg) twice a day for 14 days",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "no habituation protocol described",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice must constantly move to remain on the cylinder",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard test; no food in apparatus",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard test; no water in apparatus",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": null,
+          "evidence": "evaluated on the 7th and 14th days of treatments",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "n's not specified for this assay",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "Ayahuasca (600 µL/kg) twice daily for 14 days did not affect motor coordination on the rotarod. Harmine (35 mg/kg) also did not affect rotarod performance.",
+        "statistics": "",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "Neither the acute oral treatment with ayahuasca... nor daily treatments with ayahuasca (600 µL/kg) twice a day for 14 days in neuropathic mice affected their motor coordination",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "average time spent on the device",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "three trials averaged",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "motor coordination task",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "motor task only",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "manual timing",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate analysis",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "rotarod apparatus",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no shelter on rotarod",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single rotating cylinder",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individual testing",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water accessible",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "evaluated on the 7th and 14th days",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "three attempts of 120 s",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "7th and 14th days of treatments",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no baseline rotarod measurement reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "performed during treatment",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "brief sessions",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    },
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "Individual mice placed in 50x45x60 cm acrylic arena divided into 12 squares; number of squares crossed during 3 min of free exploration recorded. Performed on days 7 and 14 of repeated dosing.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "p.o.",
+          "evidence": "daily oral treatments with ayahuasca",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "no apparatus habituation described",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "allowed to freely explore the arena",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard test; no food in arena",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard test; no water in arena",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": null,
+          "evidence": "evaluated on the 7th and 14th days of treatments",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "n's not specified for this assay",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "Ayahuasca (600 µL/kg) twice daily for 14 days did not affect spontaneous locomotion (squares crossed) in the open field.",
+        "statistics": "",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "daily treatments with ayahuasca (600 µL/kg) twice a day for 14 days did not affect... spontaneous locomotion",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "number of squares crossed",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "single total count over 3 min",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "locomotor distance only",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "manual scoring of squares crossed",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate analysis",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "acrylic arena (50 cm height x 45 cm width x 60 cm length)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no shelter in open field",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "bare acrylic floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "open arena divided into virtual squares only",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice were placed individually inside an acrylic arena",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no food/water in apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "evaluated on the 7th and 14th days of treatments",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "explore the arena for 3 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "7th and 14th days of treatments",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no baseline open field reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "performed during treatment",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "3 min session",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    },
+    {
+      "assay_name": "Home-cage body weight and food/water intake monitoring",
+      "assay_description": "Body weight (g) and food (g) / water (mL) intake monitored at the surgery day, first day of treatment, day 7, and day 14 of treatments. Mice housed in pairs to allow per-mouse consumption estimates.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "p.o.",
+          "evidence": "daily oral treatments with ayahuasca (600 µL/kg) twice a day for 14 days",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "measurements performed in home cage; no separate habituation needed",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "home cage monitoring; mice freely moving",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "food and water ad libitum",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "food and water ad libitum",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": null,
+          "evidence": "evaluated at four time points: surgery day, day 1 of treatments, day 7, day 14",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "n's not specified for this assay (supplementary)",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "Daily oral treatments with ayahuasca (600 µL/kg) twice a day for 14 days did not alter body weight or food and water intake compared to vehicle.",
+        "statistics": "",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "daily oral treatments with ayahuasca (600 µL/kg) twice a day for 14 days did not affect the body weight or the food and water intake (Fig. S4)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "body weight (g), food intake (g), water intake (mL)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "weekly totals only, not within-session",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no sequence analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "consumption totals are physiological measures, not ethological behaviours scored as acts",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "no social construct measured",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "manual weighing",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "univariate analyses",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "Mice from the same experimental group were housed in pairs... consumption measurements",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no explicit shelter described in home cage",
+          "confidence": "low"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "standard ventilated home cage with bedding (Alesco IVCs)",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no nesting material described",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "no enrichment described",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "standard cage",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 1,
+          "value": "Stimulus behind barrier",
+          "evidence": "Mice from the same experimental group were housed in pairs",
+          "confidence": "medium"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "food and water ad libitum; consumption measured in home cage",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "evaluated four times: surgery day, day 1 of treatments, day 7, day 14",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min-6 h",
+          "evidence": "weekly consumption integrated over 7 days (continuous home-cage access)",
+          "confidence": "medium"
+        },
+        "D3_recording_days": {
+          "score": 2,
+          "value": "8-14",
+          "evidence": "monitored throughout the 14-day twice-daily protocol",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "evaluated at the surgery day and first day of treatments, before treatment effects accumulated",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "monitored across 14 days of treatment",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "consumption integrated over 7-day periods, clearly spans >=6 h",
+          "confidence": "medium"
+        },
+        "raw_total": 8
+      }
+    }
+  ],
+  "judge_notes": [
+    "Merged all von Frey applications (CFA, partial sciatic nerve ligation single dose, repeated dosing once/twice daily, antagonist pharmacology, harmine experiments) into ONE Von Frey assay per rubric — same apparatus, same outcome, only manipulations differ.",
+    "Added a separate Home-cage body weight + food/water intake monitoring assay (only the gptoss candidate omitted it; the data are explicitly reported and described in methods as monitored throughout the 14-day protocol). Scored E1 as Home cage and E8 as Yes accordingly.",
+    "Excluded Fos immunohistochemistry — it is a histological readout (not behavioural).",
+    "Dosing schedule set to 'multiple' for both ayahuasca and harmine because the paper tested both acute and repeated (twice-daily 14-day) regimens of each compound.",
+    "Housing handling and enrichment scored 'not_reported' (paper does not address); light cycle 'not_reported' since direction (light/dark phase of testing) not specified.",
+    "B1 in Von Frey scored 0 (single threshold measure); B2 set to 'No' because measurements at multiple post-treatment hours are between-session timepoints rather than within-session temporal binning (one candidate over-scored).",
+    "Tail flick assigned setup_restrain=yes (mice in restriction tubes during recording), unlike other free-movement assays."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 5.45,
+    "recording_duration_max": 10.91,
+    "behavioural_complexity_mean": 0.83,
+    "environmental_complexity_mean": 0.91,
+    "recording_duration_mean": 5.0
+  },
+  "low_confidence_count": 8,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-4-7",
+  "judge_input_models": [
+    "qwen",
+    "glm",
+    "gptoss"
+  ],
+  "judge_usage": {
+    "input_tokens": 83266,
+    "output_tokens": 14038,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}
