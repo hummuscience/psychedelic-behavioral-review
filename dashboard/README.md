@@ -10,13 +10,15 @@ npm run dev      # live-reload preview at http://localhost:3000
 npm run build    # static build into dist/
 ```
 
-The data loaders in `src/data/*.py` read from the parent `scoring/` directory at build time:
-- `src/data/studies.json.py` → loads `../results_full_consensus/*.json`
-- `src/data/dosages.csv.py` → loads `../dosages_llm.csv`
-- `src/data/dosages-summary.csv.py` → loads `../dosages_llm_summary.csv`
-- `src/data/prisma.json.py` → loads `../prisma_accounting.csv`
+The Python data loaders in `src/data/*.py` read the published datasets from the
+repository's top-level `data/` directory at build time (standard library only):
+- `src/data/studies.json.py` → `data/results_v2_full_consensus/*.json` (+ registry, sex/age, assay catalog)
+- `src/data/dosages.csv.py` → dose records derived live from `data/results_v2_full_consensus/*.json`
+- `src/data/dosages-summary.csv.py` → `data/dosages_llm_summary.csv`
+- `src/data/prisma.json.py` → `data/prisma_accounting.csv` (+ consensus JSONs)
+- `src/data/assay_catalog.json.py` → `data/results/assay_catalog.json`
 
-To rebuild after the scoring pipeline updates: re-run `npm run build`.
+To rebuild after the data updates: re-run `npm run build`.
 
 ## Pages
 
@@ -36,37 +38,23 @@ To rebuild after the scoring pipeline updates: re-run `npm run build`.
 
 ## Deployment
 
-### Cloudflare Pages (recommended — free, fast)
+The dashboard deploys automatically to GitHub Pages via the workflow at
+`.github/workflows/deploy.yml` in the repository root: every push to `main` runs
+`OBSERVABLE_BASE=/psychedelic-behavioral-review npm run build` and publishes
+`dist/` to Pages. The live site is
+https://hummuscience.github.io/psychedelic-behavioral-review/.
+
+To preview the production (sub-path) build locally:
 
 ```bash
-# one-time
-npm install -g wrangler
-wrangler pages project create psychedelic-review
-# every deploy
-npm run build
-wrangler pages deploy dist --project-name psychedelic-review
+OBSERVABLE_BASE=/psychedelic-behavioral-review npm run build
+npx http-server dist   # or any static server
 ```
-
-A custom domain (e.g. `dashboard.zeronoise-lab.org`) can be wired up in the Cloudflare dashboard.
-
-### GitHub Pages
-
-```bash
-npm run build
-# push the dist/ folder to a gh-pages branch
-git subtree push --prefix dashboard/dist origin gh-pages
-```
-
-Then enable Pages on the gh-pages branch in repo settings. URL will be like
-`https://<username>.github.io/<repo>/`.
-
-### Netlify
-
-Drag-and-drop the `dist/` folder onto https://app.netlify.com/drop, or connect the repo and set build command `cd dashboard && npm install && npm run build`, output `dashboard/dist`.
 
 ## Citation
 
-When citing this dataset, please include both the paper and the Zenodo DOI for the dataset version (to be assigned upon archival).
+See `CITATION.cff` in the repository root. Please cite both the paper and the
+Zenodo DOI for the dataset version you used.
 
 ## License
 

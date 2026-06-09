@@ -14,11 +14,13 @@ import urllib.request
 import urllib.error
 import ssl
 
-# Paths
-CSV_PATH = "/Users/abdelhaym/cloud/zeronoise-lab/papers/behavior_review/scoring/results/pubmed_expansion.csv"
-PDF_DIR = "/Users/abdelhaym/cloud/zeronoise-lab/papers/behavior_review/scoring/pdfs_new"
-EXISTING_PDF_DIR = "/Users/abdelhaym/cloud/zeronoise-lab/papers/behavior_review/scoring/pdfs"
-NOT_FOUND_CSV = "/Users/abdelhaym/cloud/zeronoise-lab/papers/behavior_review/scoring/results/pdfs_not_found.csv"
+# Paths. Override any of these via environment variables; the defaults assume
+# you run this from your own working tree with PDFs alongside the scripts.
+# (Source PDFs are not redistributed — see the repo README.)
+CSV_PATH = os.environ.get("PUBMED_EXPANSION_CSV", "pubmed_expansion.csv")
+PDF_DIR = os.environ.get("PDF_DIR", "pdfs_new")
+EXISTING_PDF_DIR = os.environ.get("EXISTING_PDF_DIR", "pdfs")
+NOT_FOUND_CSV = os.environ.get("PDFS_NOT_FOUND_CSV", "pdfs_not_found.csv")
 
 # Compounds to KEEP
 KEEP_COMPOUNDS = {
@@ -29,7 +31,8 @@ KEEP_COMPOUNDS = {
 # Compounds to EXCLUDE
 EXCLUDE_COMPOUNDS = {"mdma", "ketamine"}
 
-EMAIL = "muad.abdelhay@esi-frankfurt.de"
+# Unpaywall / PMC require a contact email. Set your own via UNPAYWALL_EMAIL.
+EMAIL = os.environ.get("UNPAYWALL_EMAIL", "your-email@example.com")
 
 # SSL context (some servers need this)
 ssl_ctx = ssl.create_default_context()

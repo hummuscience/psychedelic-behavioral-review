@@ -7,8 +7,6 @@ from pathlib import Path
 
 ROOT = Path(__file__).parents[3] / "data"
 ACC = ROOT / "prisma_accounting.csv"
-NOT_FOUND = ROOT / "results" / "pdfs_not_found.csv"
-DOS = ROOT / "dosages_llm.csv"
 SUM = ROOT / "results_v2_full_consensus"
 
 if not ACC.exists():

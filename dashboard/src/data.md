@@ -41,7 +41,7 @@ If you use this dataset, please cite both the paper and (when archived to Zenodo
 ```
 Abd El Hay et al. (2026). Behavioural complexity in psychedelic rodent studies:
 a systematic-review companion dataset.
-Zenodo. https://doi.org/10.5281/zenodo.XXXXXXX
+Zenodo (DOI assigned upon archival — see the repository's CITATION.cff).
 ```
 
 ## License
