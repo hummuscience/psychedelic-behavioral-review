@@ -1,0 +1,45 @@
+// Observable Framework config — psychedelic review dashboard
+import {readFileSync, readdirSync} from "node:fs";
+import {join} from "node:path";
+
+// Enumerate per-study pages from the consensus directory.
+// Use readdirSync (not shell ls + xargs) so filenames with spaces
+// like "de la fuente revenga2021.json" are kept intact.
+function listStudyStems() {
+  try {
+    const dir = "../results_full_consensus";
+    return readdirSync(dir)
+      .filter(f => f.endsWith(".json") && !f.startsWith("_"))
+      .map(f => f.replace(/\.json$/, ""));
+  } catch {
+    return [];
+  }
+}
+
+export default {
+  title: "Psychedelic Behavioural-Review Dashboard",
+  root: "src",
+  output: "dist",
+  cleanUrls: true,
+  pages: [
+    {name: "Studies over time", path: "/"},
+    {name: "Assays",            path: "/assays"},
+    {name: "Conditions",        path: "/conditions"},
+    {name: "Complexity & duration space", path: "/cube"},
+    {name: "Compounds",         path: "/compounds"},
+    {name: "Dosages",           path: "/dosages"},
+    {name: "Application type",  path: "/applications"},
+    {name: "Restrictions",      path: "/restrictions"},
+    {name: "Studies table",     path: "/studies"},
+    {name: "Pipeline / PRISMA", path: "/pipeline"},
+    {name: "Methods",           path: "/methods"},
+    {name: "Data downloads",    path: "/data"},
+  ],
+  search: true,
+  theme: ["air", "near-midnight"],
+  dynamicPaths: () => listStudyStems().map(stem => `/study/${stem}`),
+  header: '<a href="/" style="color:inherit;text-decoration:none;">🧠 Psychedelic Behavioural Review</a>',
+  footer: 'Built with <a href="https://observablehq.com/framework/" target="_blank">Observable Framework</a>. Source on <a href="https://github.com/" target="_blank">GitHub</a>.',
+  toc: {label: "On this page", show: true},
+  head: `<link rel="stylesheet" href="${process.env.OBSERVABLE_BASE || ""}/style.css">`,
+};
