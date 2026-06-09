@@ -7,7 +7,7 @@ import {join} from "node:path";
 // like "de la fuente revenga2021.json" are kept intact.
 function listStudyStems() {
   try {
-    const dir = "../results_full_consensus";
+    const dir = "../data/results_v2_full_consensus";
     return readdirSync(dir)
       .filter(f => f.endsWith(".json") && !f.startsWith("_"))
       .map(f => f.replace(/\.json$/, ""));
@@ -16,10 +16,13 @@ function listStudyStems() {
   }
 }
 
+const BASE = process.env.OBSERVABLE_BASE || "";
+
 export default {
   title: "Psychedelic Behavioural-Review Dashboard",
   root: "src",
   output: "dist",
+  base: BASE || "/",
   cleanUrls: true,
   pages: [
     {name: "Studies over time", path: "/"},
@@ -38,8 +41,8 @@ export default {
   search: true,
   theme: ["air", "near-midnight"],
   dynamicPaths: () => listStudyStems().map(stem => `/study/${stem}`),
-  header: '<a href="/" style="color:inherit;text-decoration:none;">🧠 Psychedelic Behavioural Review</a>',
+  header: `<a href="${BASE || '/'}" style="color:inherit;text-decoration:none;">🧠 Psychedelic Behavioural Review</a>`,
   footer: 'Built with <a href="https://observablehq.com/framework/" target="_blank">Observable Framework</a>. Source on <a href="https://github.com/" target="_blank">GitHub</a>.',
   toc: {label: "On this page", show: true},
-  head: `<link rel="stylesheet" href="${process.env.OBSERVABLE_BASE || ""}/style.css">`,
+  head: `<link rel="stylesheet" href="/style.css">`,
 };
