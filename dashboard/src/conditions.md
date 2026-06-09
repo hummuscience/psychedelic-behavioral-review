@@ -54,16 +54,17 @@ const fields = HOUSING_FIELDS.concat(EXP_COND_FIELDS);
 ```
 
 ```js
-const VALUE_ORDER = ["yes", "no", "not_reported"];
+const VALUE_ORDER = ["yes", "no", "not reported"];
 const valueRank = v => { const i = VALUE_ORDER.indexOf(v); return i < 0 ? VALUE_ORDER.length : i; };
 
 const data = [];
 for (const f of fields) {
   for (const s of studies) {
-    data.push({field: FIELD_LABELS[f], rawField: f, value: valueFor(s, f) ?? 'not_reported', stem: s._stem, study_id: s.study_id});
+    const raw = valueFor(s, f) ?? 'not_reported';
+    data.push({field: FIELD_LABELS[f], rawField: f, value: String(raw).replace(/_/g, ' '), stem: s._stem, study_id: s.study_id});
   }
 }
-// Sort so each field's stack lays down yes → no → not_reported left to right.
+// Sort so each field's stack lays down yes → no → not reported left to right.
 data.sort((a, b) => valueRank(a.value) - valueRank(b.value));
 ```
 
@@ -86,7 +87,7 @@ const plotEl = (() => {
     x: {label: "studies", grid: true},
     y: {label: null, domain: fields.map(f => FIELD_LABELS[f])},
     color: {legend: true, type: "categorical",
-      domain: ["yes","no","not_reported"],
+      domain: ["yes","no","not reported"],
       range: ["#2ca02c","#9e9e9e","#bdbdbd"]},
     marks: [
       Plot.barX(data, Plot.groupY(
@@ -101,7 +102,7 @@ const plotEl = (() => {
     const r = ev.target.closest("rect[fill]");
     if (!r) return;
     const fill = r.getAttribute("fill");
-    const COLOR_TO_VAL = {"#2ca02c":"yes","#9e9e9e":"no","#bdbdbd":"not_reported"};
+    const COLOR_TO_VAL = {"#2ca02c":"yes","#9e9e9e":"no","#bdbdbd":"not reported"};
     const value = COLOR_TO_VAL[fill?.toLowerCase()];
     if (!value) return;
     // Determine which row by Y position
@@ -150,7 +151,7 @@ function renderStudyList(sel, data) {
       <p style="font-size:0.85rem;color:var(--theme-foreground-muted);">${matches.length} ${matches.length === 1 ? "study" : "studies"}</p>
     </div>
     <div style="font-size:0.92rem;line-height:1.7;">
-      ${matches.map(m => html`<a href="/study/${m.stem}" class="tag muted study-link">${m.study_id}</a> `)}
+      ${matches.map(m => html`<a href="study/${m.stem}" class="tag muted study-link">${m.study_id}</a> `)}
     </div>
   </div>`;
 }

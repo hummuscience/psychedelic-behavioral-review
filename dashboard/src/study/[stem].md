@@ -40,7 +40,7 @@ function joinAuthors(authors) {
 ```js
 if (!study) {
   display(html`<h1>Study not found</h1><p>No study with stem <code>${stem}</code> in the corpus.</p>
-    <p><a href="/studies">← back to all studies</a></p>`);
+    <p><a href="../studies">← back to all studies</a></p>`);
 }
 ```
 
@@ -172,7 +172,7 @@ if (study) {
       <ul>${study.judge_notes.map(n => html`<li>${n}</li>`)}</ul>
     </details>` : ""}
 
-    <p style="margin-top:32px;"><a href="/studies">← back to all studies</a></p>
+    <p style="margin-top:32px;"><a href="../studies">← back to all studies</a></p>
   </div>`);
 }
 ```

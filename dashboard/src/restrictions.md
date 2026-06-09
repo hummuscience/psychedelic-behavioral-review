@@ -41,15 +41,18 @@ const water = counts("water_restriction");
 const totalFood = food.reduce((s, d) => s + d.n, 0);
 const totalWater = water.reduce((s, d) => s + d.n, 0);
 
-const VALUE_ORDER = ["during","before","no","not_reported","yes","unknown"];
-const COLORS = {during:"#d32f2f", before:"#ff9800", no:"#9e9e9e", not_reported:"#bdbdbd", yes:"#2ca02c", unknown:"#7986cb"};
+const VALUE_ORDER = ["during","before","no","not reported","yes","unknown"];
+const COLORS = {during:"#d32f2f", before:"#ff9800", no:"#9e9e9e", "not reported":"#bdbdbd", yes:"#2ca02c", unknown:"#7986cb"};
+const prettify = v => String(v).replace(/_/g, " ");
 const long = [
-  ...food.map(d => ({field: "food restriction", value: d.value, n: d.n})),
-  ...water.map(d => ({field: "water restriction", value: d.value, n: d.n})),
+  ...food.map(d => ({field: "food restriction", value: prettify(d.value), n: d.n})),
+  ...water.map(d => ({field: "water restriction", value: prettify(d.value), n: d.n})),
 ];
+const foodPretty = food.map(d => ({...d, value: prettify(d.value)}));
+const waterPretty = water.map(d => ({...d, value: prettify(d.value)}));
 ```
 
-Per-paper modal value across the paper's assays. **`during`** = food/water unavailable during recording; **`before`** = explicit fasting before the test; **`no`** = ad libitum throughout; **`not_reported`** = paper silent.
+Per-paper modal value across the paper's assays. **`during`** = food/water unavailable during recording; **`before`** = explicit fasting before the test; **`no`** = ad libitum throughout; **`not reported`** = paper silent.
 
 ```js
 display(Plot.plot({
@@ -77,8 +80,8 @@ display(Plot.plot({
 display(html`<table>
   <tr><th>Value</th><th>Food restriction</th><th>Water restriction</th></tr>
   ${VALUE_ORDER.map(v => {
-    const f = food.find(x => x.value === v)?.n ?? 0;
-    const w = water.find(x => x.value === v)?.n ?? 0;
+    const f = foodPretty.find(x => x.value === v)?.n ?? 0;
+    const w = waterPretty.find(x => x.value === v)?.n ?? 0;
     if (f === 0 && w === 0) return "";
     return html`<tr><td><b>${v}</b></td><td>${f} (${(100*f/totalFood).toFixed(0)}%)</td><td>${w} (${(100*w/totalWater).toFixed(0)}%)</td></tr>`;
   })}

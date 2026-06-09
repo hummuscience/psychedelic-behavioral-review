@@ -61,6 +61,7 @@ const plotEl = (() => {
     marginLeft: 120,
     marginRight: 80,
     x: {label: "studies →"},
+    y: {tickFormat: d => String(d).replace(/_/g, " ")},
     marks: [
       Plot.barX(data, {
         y: "route", x: "n",
@@ -115,14 +116,14 @@ function renderDetail(route, studies) {
 
   return html`<div class="detail-body">
     <div class="detail-header">
-      <h2><span class="tag psychedelic">${route}</span></h2>
+      <h2><span class="tag psychedelic">${String(route).replace(/_/g, " ")}</span></h2>
       <p style="font-size:0.85rem;color:var(--theme-foreground-muted);">
         ${matching.length} ${matching.length === 1 ? "study" : "studies"}
         <span style="margin-left:8px;font-style:italic;">(click bar again to deselect)</span>
       </p>
     </div>
     <div style="line-height:1.8;">
-      ${matching.map(s => html`<a href="/study/${s._stem}" class="tag muted">${s.study_id}</a> `)}
+      ${matching.map(s => html`<a href="study/${s._stem}" class="tag muted">${s.study_id}</a> `)}
     </div>
   </div>`;
 }

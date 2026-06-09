@@ -84,7 +84,7 @@ function conditionValueFor(s, field) {
   return vs.length ? modalValue(vs) : null;
 }
 function conditionColorPalette() {
-  return {"yes":"#2ca02c","no":"#9e9e9e","not_reported":"#bdbdbd"};
+  return {"yes":"#2ca02c","no":"#9e9e9e","not reported":"#bdbdbd"};
 }
 ```
 
@@ -188,7 +188,7 @@ function renderCube(div) {
       if (colorMode === "Species") { pal = speciesColorPalette(); catFn = s => normalizeSpecies(s.species); }
       else if (colorMode === "Sex") { pal = sexColorPalette(); catFn = s => normalizeSex(s.sex); }
       else if (colorMode === "Assay Category") { pal = assayCategoryColorPalette(); catFn = s => (s.assays || []).find(a => a.category)?.category || "(no assays)"; }
-      else if (colorMode === "Condition") { pal = conditionColorPalette(); catFn = s => conditionValueFor(s, conditionField) ?? "not_reported"; }
+      else if (colorMode === "Condition") { pal = conditionColorPalette(); catFn = s => String(conditionValueFor(s, conditionField) ?? "not_reported").replace(/_/g, " "); }
       else { pal = compoundColorPalette(); catFn = s => compoundOf(s); }
       const groups = new Map();
       for (const s of items) {
@@ -370,7 +370,7 @@ function renderStudyDetail(study) {
       </div>
       <div style="margin-top:6px;font-size:0.85rem;">
         ${study.doi ? html`<a href="https://doi.org/${study.doi}" target="_blank" rel="noopener">doi:${study.doi}</a>` : ""}
-        ${study._stem ? html`&middot; <a href="/study/${study._stem}">full page →</a>` : ""}
+        ${study._stem ? html`&middot; <a href="study/${study._stem}">full page →</a>` : ""}
       </div>
     </div>
     <div class="score-grid">
@@ -623,6 +623,17 @@ function timelineChart(dim) {
 }
 ```
 
+```js
+// Re-render the cube whenever any reactive input changes. The initial render is
+// kicked off by the markdown IIFE that mounts <div id="cube">; subsequent updates
+// rely on this block.
+{
+  jitter; viewMode; colorMode; conditionField; filteredStudies;
+  const _div = document.querySelector("#cube");
+  if (_div) renderCube(_div);
+}
+```
+
 ## How each dimension developed over time
 
 Coloured line = yearly **median**; shaded band = **Q1–Q3 (interquartile range)**. Black line = OLS linear trend on individual studies (years with more papers contribute proportionally more, accounting for uneven sample size per year). Click any dot to load that study into the detail panel.
@@ -665,7 +676,7 @@ function renderGroupDetail(name) {
     </div>
     <h3>Studies</h3>
     <div style="font-size:0.9rem;line-height:1.7;">
-      ${sorted.map(s => html`<a href="/study/${s._stem}" class="tag muted">${s.study_id}</a> `)}
+      ${sorted.map(s => html`<a href="study/${s._stem}" class="tag muted">${s.study_id}</a> `)}
     </div>
   </div>`;
 }

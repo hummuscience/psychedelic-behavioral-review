@@ -276,7 +276,7 @@ function renderStudyList(sel, compound, unit) {
     </div>
     <div style="font-size:0.9rem;line-height:1.7;">
       ${studies.map(s => html`<div style="margin:4px 0;">
-        <a href="/study/${s.stem}" class="tag muted study-link">${s.stem}</a>
+        <a href="study/${s.stem}" class="tag muted study-link">${s.stem}</a>
         <span style="color:var(--theme-foreground-muted);font-size:0.82rem;">
           ${s.doses.map(d => `${d.raw}${d.route ? ` (${d.route})` : ""}`).join(", ")}
         </span>
