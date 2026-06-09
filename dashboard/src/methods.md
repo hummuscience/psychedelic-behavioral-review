@@ -37,9 +37,9 @@ How the corpus was assembled, scored, and reconciled, with the rubric, the data 
   <div class="pipe-node">Docling → markdown</div>
   <span class="pipe-arrow">→</span>
   <div class="pipe-stack">
-    <div class="pipe-node">qwen3-235b-a22b</div>
-    <div class="pipe-node">glm-4.6</div>
-    <div class="pipe-node">gpt-oss-120b</div>
+    <div class="pipe-node">Qwen3-VL</div>
+    <div class="pipe-node">Z.AI GLM-4.6</div>
+    <div class="pipe-node">OpenAI GPT-OSS-120B</div>
   </div>
   <span class="pipe-arrow">→</span>
   <div class="pipe-node judge">Claude Opus 4.7 judge</div>
@@ -47,7 +47,7 @@ How the corpus was assembled, scored, and reconciled, with the rubric, the data 
   <div class="pipe-node out">consensus JSON</div>
 </div>
 
-Each PDF is converted to markdown via [Docling](https://github.com/docling-project/docling), then scored independently by three SAIA-hosted open-weight models (qwen3-235b-a22b, glm-4.6, gpt-oss-120b). The three candidate scorings are passed to **Claude Opus 4.7** (the production judge) which produces a single consensus output following the same JSON schema. Temperature is 0.0 throughout. Each consensus record carries `judge_provider`, `judge_model`, and `judge_input_models` for full provenance.
+Each PDF is converted to markdown via [Docling](https://github.com/docling-project/docling), then scored independently by three large language models (Qwen3-VL, Z.AI GLM-4.6, OpenAI GPT-OSS-120B). The three candidate scorings are reconciled by a fourth model, **Claude Opus 4.7**, acting as a judge to produce a single consensus output in the same JSON schema. The judge's per-item outputs include an evidence quotation extracted verbatim from the paper, so every score is traceable. Temperature is 0.0 throughout. Each consensus record carries `judge_provider`, `judge_model`, and `judge_input_models` for full provenance.
 
 ## What gets scored per assay
 
@@ -138,11 +138,8 @@ Each script is `uv run python <name>.py --help`-able. Recent v2 runs cost ~$25 i
 
 ## Validation
 
-We benchmarked six judge models (Opus 4.7, Haiku 4.5, GPT-5 mini, Gemini 2.5 Flash, Kimi K2-0905, qwen3-235b-a22b) on a 13-paper subset against manual labels in `rodent_conditions.txt`. Opus 4.7 produced the highest exact agreement among the cost-effective options and was selected as production judge for v2. Provenance for every paper is recorded in the consensus JSON (`judge_provider`, `judge_model`, `judge_input_models`).
+To validate the pipeline, the consensus scores were compared against two independent human raters on the assays scored by all three (n = 41). The standard deviation of paired score differences was of comparable magnitude across all rater pairs, including human–human: 0.72 between the two human raters versus 0.86 (rater 1) and 0.55 (rater 2) against the consensus for behavioural complexity; 0.50 versus 0.75 and 0.69 for environmental complexity; and 1.60 versus 1.74 and 0.91 for recording duration. Exact-agreement rates followed the same pattern (e.g. behavioural complexity 66% between the two human raters versus 63% and 78% against the consensus).
 
-Disagreements with the manual annotation cluster on three fields where the strict rubric and the manual annotator's looser usage diverge:
+One human rater diverged from both the other human rater and the consensus on two recurring item types — the count of distinct behavioural measures and the number of recording days per assay — and spot-checking these cases against the source papers confirmed that such disagreements reflect genuine interpretive ambiguity in those items rather than a deficiency specific to the automated pipeline. Recording duration was the least reproducible dimension for all rater pairs, indicating intrinsic ambiguity in that dimension rather than a limitation specific to the automated scoring.
 
-- `food_restriction` / `water_restriction` — "during" used liberally in the manual sheet vs. strictly defined in the rubric (only when there's no access *during recording*).
-- `setup_restrain` — the manual sheet treats brief restraint for drug administration as `yes`; the rubric reserves `yes` for during-recording restraint only.
-
-These are documented in the rubric (see `scoring_guide.md`) and are **deliberate**, not model errors.
+Provenance for every paper is recorded in the consensus JSON (`judge_provider`, `judge_model`, `judge_input_models`).

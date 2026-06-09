@@ -268,7 +268,7 @@ function renderStudyList(sel) {
       <p style="font-size:0.85rem;color:var(--theme-foreground-muted);">${sel.n} ${sel.n === 1 ? "study" : "studies"}</p>
     </div>
     <div style="font-size:0.92rem;line-height:1.7;">
-      ${studies.map(s => html`<a href="/study/${s.stem}" class="tag muted study-link">${s.study_id}</a> `)}
+      ${studies.map(s => html`<a href="study/${s.stem}" class="tag muted study-link">${s.study_id}</a> `)}
     </div>
   </div>`;
 }
