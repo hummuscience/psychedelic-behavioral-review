@@ -1,7 +1,9 @@
 from pathlib import Path
+import pytest
 import rater_lib as rl
 
-ROOT = Path(__file__).resolve().parent.parent  # scoring/
+# Published datasets live in <repo>/data/ (figures/tests/ -> figures/ -> repo -> data/).
+DATA = Path(__file__).resolve().parent.parent.parent / "data"
 
 def test_paper_stems_count_and_goulart():
     assert len(rl.PAPER_STEMS) == 20
@@ -10,10 +12,20 @@ def test_paper_stems_count_and_goulart():
     assert rl.PAPER_STEMS[0] == "alper2018"
     assert rl.PAPER_STEMS[19] == "yu2023"
 
-def test_every_stem_has_consensus_and_docling():
+def test_every_stem_has_consensus():
+    # Every HITL-scored paper must have a published consensus record.
     for stem in rl.PAPER_STEMS:
-        assert (ROOT / "results_v2_full_consensus" / f"{stem}.json").exists(), stem
-        assert (ROOT / "pdfs" / f"{stem}.docling.md").exists(), stem
+        assert (DATA / "results_v2_full_consensus" / f"{stem}.json").exists(), stem
+
+def test_every_stem_has_docling():
+    # Docling markdown is derived from publisher PDFs, which are NOT redistributed
+    # in the public dataset. Skip this integrity check when pdfs/ is absent;
+    # it still runs in a local dev checkout that has the source PDFs.
+    pdf_dir = DATA / "pdfs"
+    if not pdf_dir.is_dir():
+        pytest.skip("pdfs/ not present (PDFs are not redistributed publicly)")
+    for stem in rl.PAPER_STEMS:
+        assert (pdf_dir / f"{stem}.docling.md").exists(), stem
 
 def test_hitl_roundtrip(tmp_path, monkeypatch):
     f = tmp_path / "hitl.json"
