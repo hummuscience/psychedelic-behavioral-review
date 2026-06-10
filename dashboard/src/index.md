@@ -326,6 +326,7 @@ function renderStudyList(sel) {
   display(Inputs.table(rows, {
     rows: 16,
     columns: ["year", "total", ...COMPOUNDS.filter(c => rows.some(r => r[c] > 0))],
+    format: {year: d => d == null ? "" : String(d)},
   }));
 }
 ```
