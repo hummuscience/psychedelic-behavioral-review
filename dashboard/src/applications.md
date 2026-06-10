@@ -22,18 +22,31 @@ const studies = _filters.filtered;
 ```
 
 ```js
-// Count each unique route a paper actually uses (no "multiple" aggregation)
+// Bucket each study by the route(s) the PSYCHEDELIC was actually administered
+// through — i.e. the structured `dosing[].route`, the same field the per-study
+// page and the manuscript donut figure use. We deliberately do NOT key off
+// per-assay `experimental_conditions.application_type`, because that field also
+// carries assays where no psychedelic was given (drug-free control cohorts,
+// non-psychedelic intracerebral infusions, etc.), which spuriously dropped
+// studies like Kulikova2018 / Dere2015 into the "not_reported" bucket even
+// though their psychedelic route is i.p.
+//
+// Route mapping mirrors plot_application_donut.py: raw v2 codes pass through;
+// `other` (always an intracerebral microinjection in this corpus) -> "i.c.";
+// missing / `not_reported` -> "not reported". "multiple" stays its own bucket.
+const DIRECT = new Set(["i.p.", "s.c.", "p.o.", "i.n.", "i.v.", "i.c.v."]);
+function routeKey(raw) {
+  const v = String(raw || "").trim().toLowerCase();
+  if (DIRECT.has(v)) return v;
+  if (v === "other") return "i.c.";
+  if (v === "multiple") return "multiple";
+  return "not reported";  // "" or "not_reported"
+}
 const counts = {};
 for (const s of studies) {
   const seen = new Set();
-  for (const a of (s.assays || [])) {
-    const v = a.experimental_conditions?.application_type?.value;
-    if (!v) continue;
-    for (const part of String(v).split(/[,;\/]/)) {
-      const k = part.trim().toLowerCase();
-      if (k && k !== 'multiple') seen.add(k);
-    }
-  }
+  for (const e of (s.dosing || [])) seen.add(routeKey(e?.route));
+  if (seen.size === 0) seen.add("not reported");  // study with no dosing entries
   for (const k of seen) counts[k] = (counts[k] || 0) + 1;
 }
 const data = Object.entries(counts).map(([route, n]) => ({route, n})).sort((a,b) => b.n - a.n);
@@ -45,7 +58,7 @@ const selectedRoute = Mutable(null);
 const setSelectedRoute = (v) => { selectedRoute.value = v; };
 ```
 
-Distribution of administration routes across the **${studies.length}-paper corpus**. Each study counted once per unique route it uses (papers using both i.p. and i.v.c. contribute to both buckets).
+Distribution of the routes by which the **psychedelic** was administered across the **${studies.length}-paper corpus**, taken from each study's structured dosing record. A study is counted once per distinct route it used for the psychedelic (a paper giving the drug both i.p. and s.c. contributes to both bars); routes used only for non-psychedelic agents (e.g. control infusions) are not counted.
 
 ${data.length ? html`<b>${total}</b> route-uses across ${studies.length} studies` : ''}
 
@@ -106,13 +119,11 @@ function renderDetail(route, studies) {
     </div>`;
   }
 
-  const matching = studies.filter(s =>
-    (s.assays || []).some(a => {
-      const v = a.experimental_conditions?.application_type?.value;
-      if (!v) return false;
-      return String(v).split(/[,;\/]/).map(p => p.trim().toLowerCase()).includes(route);
-    })
-  ).sort((a, b) => (yearOf(b) || 0) - (yearOf(a) || 0));
+  const matching = studies.filter(s => {
+    const keys = new Set((s.dosing || []).map(e => routeKey(e?.route)));
+    if (keys.size === 0) keys.add("not reported");
+    return keys.has(route);
+  }).sort((a, b) => (yearOf(b) || 0) - (yearOf(a) || 0));
 
   return html`<div class="detail-body">
     <div class="detail-header">
