@@ -93,6 +93,7 @@ display(Inputs.table(filtered, {
   },
   format: {
     study: d => html`<a href="study/${d.toLowerCase()}">${d}</a>`,
+    year: d => d == null ? "" : String(d),
     n_total_max: d => d == null ? "" : d,
     n_per_group_min: d => d == null ? "" : (
       d < 6 ? html`<span style="color:#c0392b;font-weight:600;">${d}</span>` : `${d}`
