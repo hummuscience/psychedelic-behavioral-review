@@ -24,20 +24,20 @@
       "doses_mg_per_kg": [],
       "doses_raw": "not reported in available text",
       "vehicle": "not_reported",
-      "route": "not_reported",
+      "route": "i.p.",
       "schedule": "acute",
-      "evidence": "single administration of LSD; specific dose/vehicle/route not stated in the available manuscript text",
-      "confidence": "low"
+      "evidence": "Route corrected to i.p. on manual verification of the source paper (the automated judge had marked it not_reported because the route was not in the extracted text excerpt; the paper administers LSD i.p.).",
+      "confidence": "high"
     },
     {
       "compound": "Psilocin",
       "doses_mg_per_kg": [],
       "doses_raw": "not reported in available text",
       "vehicle": "not_reported",
-      "route": "not_reported",
+      "route": "i.p.",
       "schedule": "acute",
-      "evidence": "PSI used in in vitro and behavioural assays; specific dose/vehicle/route not stated in the available manuscript text",
-      "confidence": "low"
+      "evidence": "Route corrected to i.p. on manual verification of the source paper (the automated judge had marked it not_reported because the route was not in the extracted text excerpt; the paper administers psilocin i.p.).",
+      "confidence": "high"
     }
   ],
   "housing_conditions": {
@@ -68,9 +68,9 @@
       "assay_description": "Count of head twitches following LSD administration in WT and Y433F+/- mice, with or without M100907 5-HT2A antagonist pretreatment.",
       "experimental_conditions": {
         "application_type": {
-          "value": "not_reported",
-          "evidence": "Route of LSD administration for HTR not explicitly stated in available text.",
-          "confidence": "low"
+          "value": "i.p.",
+          "evidence": "Route corrected to i.p. on manual verification of the source paper.",
+          "confidence": "high"
         },
         "setup_habituation": {
           "value": "not_reported",
@@ -264,9 +264,9 @@
       "assay_description": "Repeated forced swim stress model with immobility measured; LSD administered as single dose and antidepressant-like effect assessed 7 days later in WT and Y433F+/- mice, with or without M100907 pretreatment.",
       "experimental_conditions": {
         "application_type": {
-          "value": "not_reported",
-          "evidence": "Route not explicitly stated in available text.",
-          "confidence": "low"
+          "value": "i.p.",
+          "evidence": "Route corrected to i.p. on manual verification of the source paper.",
+          "confidence": "high"
         },
         "setup_habituation": {
           "value": "not_reported",
@@ -460,9 +460,9 @@
       "assay_description": "Contextual fear conditioning followed by extinction training; freezing behavior measured during extinction and recall at 3 days and 4 weeks after a single LSD injection in WT and Y433F+/- mice; control group tested for effect of LSD without extinction training.",
       "experimental_conditions": {
         "application_type": {
-          "value": "not_reported",
-          "evidence": "Route of LSD not explicitly stated in available text.",
-          "confidence": "low"
+          "value": "i.p.",
+          "evidence": "Route corrected to i.p. on manual verification of the source paper.",
+          "confidence": "high"
         },
         "setup_habituation": {
           "value": "not_reported",
@@ -656,6 +656,7 @@
     "All three candidates identified HTR, rFST, and contextual fear conditioning/extinction as the main behavioural assays; these were retained.",
     "Added a fourth assay (monocular deprivation / ocular dominance plasticity) which is described in the text ('LSD also promotes visual plasticity and facilitates a shift in ocular dominance...') and was missed by all candidates; scored conservatively with low confidence on procedural details since methods detail is sparse in available text.",
     "Dropped GLM's specific dose claims (0.2 mg/kg LSD, 2 mg/kg PSI) and i.p. route — these are not in the visible manuscript text and appear to be inferred/hallucinated; marked dosing as not_reported with low confidence.",
+    "MANUAL CORRECTION (post-judge): the i.p. route was restored after a human verified it directly against the source paper. Doses remain not_reported (still not confirmed). Only the route/application_type fields were changed from not_reported to i.p.",
     "For fear conditioning, used B6=1 (cognitive yes) as agreed by candidates; E6 scored 0 (single context chamber per session), overriding gptoss's score of 0 with 'Multiple zones' value mislabel.",
     "Strain consolidated to reflect both WT (C57BL/6JRccHsd) and Y433F heterozygous (C57BL/6NTac-NTrk2em6006) lines used in the study."
   ],
