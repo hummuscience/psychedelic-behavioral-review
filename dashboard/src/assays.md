@@ -195,7 +195,7 @@ const setSelectedAssay = v => { selectedAssay.value = v; };
         ${selectedAssay.category} · ${papers.length} papers
       </div>
       <div style="font-size:0.85rem;line-height:1.8">
-        ${sorted.map(s => html`<a href="study/${s._stem}" style="margin-right:4px;display:inline-block">${s.study_id}</a>`)}
+        ${sorted.map(s => html`<a href="study/${String(s._stem).toLowerCase().replace(/[^a-z0-9]/g, "")}" style="margin-right:4px;display:inline-block">${s.study_id}</a>`)}
       </div>
     </div>`);
   }

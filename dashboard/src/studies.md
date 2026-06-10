@@ -92,7 +92,7 @@ display(Inputs.table(filtered, {
     n_per_group_min: "min n / group",
   },
   format: {
-    study: d => html`<a href="study/${d.toLowerCase()}">${d}</a>`,
+    study: d => html`<a href="study/${String(d).toLowerCase().replace(/[^a-z0-9]/g, "")}">${d}</a>`,
     year: d => d == null ? "" : String(d),
     n_total_max: d => d == null ? "" : d,
     n_per_group_min: d => d == null ? "" : (

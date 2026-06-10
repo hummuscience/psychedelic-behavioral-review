@@ -123,7 +123,7 @@ function renderDetail(route, studies) {
       </p>
     </div>
     <div style="line-height:1.8;">
-      ${matching.map(s => html`<a href="study/${s._stem}" class="tag muted">${s.study_id}</a> `)}
+      ${matching.map(s => html`<a href="study/${String(s._stem).toLowerCase().replace(/[^a-z0-9]/g, "")}" class="tag muted">${s.study_id}</a> `)}
     </div>
   </div>`;
 }

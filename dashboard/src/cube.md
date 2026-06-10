@@ -370,7 +370,7 @@ function renderStudyDetail(study) {
       </div>
       <div style="margin-top:6px;font-size:0.85rem;">
         ${study.doi ? html`<a href="https://doi.org/${study.doi}" target="_blank" rel="noopener">doi:${study.doi}</a>` : ""}
-        ${study._stem ? html`&middot; <a href="study/${study._stem}">full page →</a>` : ""}
+        ${study._stem ? html`&middot; <a href="study/${String(study._stem).toLowerCase().replace(/[^a-z0-9]/g, "")}">full page →</a>` : ""}
       </div>
     </div>
     <div class="score-grid">
@@ -676,7 +676,7 @@ function renderGroupDetail(name) {
     </div>
     <h3>Studies</h3>
     <div style="font-size:0.9rem;line-height:1.7;">
-      ${sorted.map(s => html`<a href="study/${s._stem}" class="tag muted">${s.study_id}</a> `)}
+      ${sorted.map(s => html`<a href="study/${String(s._stem).toLowerCase().replace(/[^a-z0-9]/g, "")}" class="tag muted">${s.study_id}</a> `)}
     </div>
   </div>`;
 }

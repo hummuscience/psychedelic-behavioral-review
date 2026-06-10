@@ -151,7 +151,7 @@ function renderStudyList(sel, data) {
       <p style="font-size:0.85rem;color:var(--theme-foreground-muted);">${matches.length} ${matches.length === 1 ? "study" : "studies"}</p>
     </div>
     <div style="font-size:0.92rem;line-height:1.7;">
-      ${matches.map(m => html`<a href="study/${m.stem}" class="tag muted study-link">${m.study_id}</a> `)}
+      ${matches.map(m => html`<a href="study/${String(m.stem).toLowerCase().replace(/[^a-z0-9]/g, "")}" class="tag muted study-link">${m.study_id}</a> `)}
     </div>
   </div>`;
 }

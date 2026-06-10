@@ -16,6 +16,12 @@ function listStudyStems() {
   }
 }
 
+// URL slug for a study stem: lowercase, alphanumerics only. Keeps page URLs
+// space-free (e.g. "lima da cruz2026" -> "limadacruz2026") so hand-typed and
+// in-app links agree. The per-study page (study/[stem].md) matches the same
+// [^a-z0-9]-stripped key, and slugs are collision-free across the corpus.
+const studySlug = (stem) => String(stem).toLowerCase().replace(/[^a-z0-9]/g, "");
+
 const BASE = process.env.OBSERVABLE_BASE || "";
 
 export default {
@@ -40,7 +46,7 @@ export default {
   ],
   search: true,
   theme: ["air", "near-midnight"],
-  dynamicPaths: () => listStudyStems().map(stem => `/study/${stem}`),
+  dynamicPaths: () => listStudyStems().map(stem => `/study/${studySlug(stem)}`),
   header: `<a href="${BASE || '/'}" style="color:inherit;text-decoration:none;">🧠 Psychedelic Behavioural Review</a>`,
   footer: 'Built with <a href="https://observablehq.com/framework/" target="_blank">Observable Framework</a>. Source on <a href="https://github.com/" target="_blank">GitHub</a>.',
   toc: {label: "On this page", show: true},
