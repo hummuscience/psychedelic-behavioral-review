@@ -33,21 +33,37 @@ const studies = _filters.filtered;
 //
 // Route mapping mirrors plot_application_donut.py: raw v2 codes pass through;
 // `other` (always an intracerebral microinjection in this corpus) -> "i.c.";
-// missing / `not_reported` -> "not reported". "multiple" stays its own bucket.
+// `not_reported`/missing is dropped entirely (see weighting below). "multiple"
+// (one compound given via several routes, not separable) stays its own bucket.
 const DIRECT = new Set(["i.p.", "s.c.", "p.o.", "i.n.", "i.v.", "i.c.v."]);
 function routeKey(raw) {
   const v = String(raw || "").trim().toLowerCase();
   if (DIRECT.has(v)) return v;
   if (v === "other") return "i.c.";
   if (v === "multiple") return "multiple";
-  return "not reported";  // "" or "not_reported"
+  return null;  // "" or "not_reported" -> not counted
 }
+
+// Each study's distinct routes (excluding not_reported) for reuse below.
+function studyRoutes(s) {
+  const set = new Set();
+  for (const e of (s.dosing || [])) {
+    const k = routeKey(e?.route);
+    if (k) set.add(k);
+  }
+  return set;
+}
+
+// Fractional weighting: a study contributes a TOTAL weight of 1, split evenly
+// across its distinct routes. A study using i.p. + s.c. adds 0.5 to each; one
+// route adds 1.0; not_reported entries are excluded from both the share and
+// the denominator (a study with only not_reported contributes nothing).
 const counts = {};
 for (const s of studies) {
-  const seen = new Set();
-  for (const e of (s.dosing || [])) seen.add(routeKey(e?.route));
-  if (seen.size === 0) seen.add("not reported");  // study with no dosing entries
-  for (const k of seen) counts[k] = (counts[k] || 0) + 1;
+  const routes = studyRoutes(s);
+  if (routes.size === 0) continue;             // only not_reported / no dosing
+  const w = 1 / routes.size;
+  for (const k of routes) counts[k] = (counts[k] || 0) + w;
 }
 const data = Object.entries(counts).map(([route, n]) => ({route, n})).sort((a,b) => b.n - a.n);
 const total = data.reduce((s, d) => s + d.n, 0);
@@ -58,9 +74,9 @@ const selectedRoute = Mutable(null);
 const setSelectedRoute = (v) => { selectedRoute.value = v; };
 ```
 
-Distribution of the routes by which the **psychedelic** was administered across the **${studies.length}-paper corpus**, taken from each study's structured dosing record. A study is counted once per distinct route it used for the psychedelic (a paper giving the drug both i.p. and s.c. contributes to both bars); routes used only for non-psychedelic agents (e.g. control infusions) are not counted.
+Distribution of the routes by which the **psychedelic** was administered across the **${studies.length}-paper corpus**, taken from each study's structured dosing record. Each study contributes a total weight of **1**, split evenly across the distinct routes it used for the psychedelic — so a paper giving the drug both i.p. and s.c. adds 0.5 to each bar. Routes used only for non-psychedelic agents, and `not reported` entries, are excluded (they neither get a share nor dilute the others).
 
-${data.length ? html`<b>${total}</b> route-uses across ${studies.length} studies` : ''}
+${data.length ? html`<b>${total.toFixed(1)}</b> total weight across ${studies.length} studies (each study sums to 1)` : ''}
 
 <div class="viewer-shell">
   <div class="viewer-left">${plotEl}</div>
@@ -73,7 +89,7 @@ const plotEl = (() => {
     height: Math.max(300, data.length * 32 + 60),
     marginLeft: 120,
     marginRight: 80,
-    x: {label: "studies →"},
+    x: {label: "weighted studies →"},
     y: {tickFormat: d => String(d).replace(/_/g, " ")},
     marks: [
       Plot.barX(data, {
@@ -83,7 +99,7 @@ const plotEl = (() => {
       }),
       Plot.text(data, {
         y: "route", x: "n",
-        text: d => `${d.n} (${(100 * d.n / total).toFixed(0)}%)`,
+        text: d => `${d.n.toFixed(1)} (${(100 * d.n / total).toFixed(0)}%)`,
         dx: 6, textAnchor: "start", fontSize: 11,
       }),
       Plot.ruleX([0]),
@@ -119,22 +135,29 @@ function renderDetail(route, studies) {
     </div>`;
   }
 
-  const matching = studies.filter(s => {
-    const keys = new Set((s.dosing || []).map(e => routeKey(e?.route)));
-    if (keys.size === 0) keys.add("not reported");
-    return keys.has(route);
-  }).sort((a, b) => (yearOf(b) || 0) - (yearOf(a) || 0));
+  const matching = studies
+    .map(s => ({s, routes: studyRoutes(s)}))
+    .filter(({routes}) => routes.has(route))
+    .sort((a, b) => (yearOf(b.s) || 0) - (yearOf(a.s) || 0));
+
+  // Weight this route contributes per study (1 / number of distinct routes).
+  const sumWeight = matching.reduce((acc, {routes}) => acc + 1 / routes.size, 0);
 
   return html`<div class="detail-body">
     <div class="detail-header">
       <h2><span class="tag psychedelic">${String(route).replace(/_/g, " ")}</span></h2>
       <p style="font-size:0.85rem;color:var(--theme-foreground-muted);">
-        ${matching.length} ${matching.length === 1 ? "study" : "studies"}
-        <span style="margin-left:8px;font-style:italic;">(click bar again to deselect)</span>
+        ${matching.length} ${matching.length === 1 ? "study" : "studies"} ·
+        weight ${sumWeight.toFixed(1)}
+        <span style="margin-left:8px;font-style:italic;">(studies using multiple routes contribute a fraction; click bar again to deselect)</span>
       </p>
     </div>
     <div style="line-height:1.8;">
-      ${matching.map(s => html`<a href="study/${String(s._stem).toLowerCase().replace(/[^a-z0-9]/g, "")}" class="tag muted">${s.study_id}</a> `)}
+      ${matching.map(({s, routes}) => {
+        const w = 1 / routes.size;
+        const frac = routes.size > 1 ? html` <sup style="color:var(--theme-foreground-faint);">${w.toFixed(2)}</sup>` : "";
+        return html`<a href="study/${String(s._stem).toLowerCase().replace(/[^a-z0-9]/g, "")}" class="tag muted">${s.study_id}</a>${frac} `;
+      })}
     </div>
   </div>`;
 }
