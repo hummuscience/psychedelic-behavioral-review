@@ -8,6 +8,7 @@ toc: false
 ```js
 const allStudies = await FileAttachment("data/studies.json").json();
 const assayCatalog = await FileAttachment("data/assay_catalog.json").json();
+const multiRouteMap = await FileAttachment("data/multi_route_map.json").json();
 import * as Plot from "npm:@observablehq/plot";
 import {mountFilters, yearOf} from "./components/filters.js";
 ```
@@ -31,25 +32,65 @@ const studies = _filters.filtered;
 // studies like Kulikova2018 / Dere2015 into the "not_reported" bucket even
 // though their psychedelic route is i.p.
 //
-// Route mapping mirrors plot_application_donut.py: raw v2 codes pass through;
-// `other` (always an intracerebral microinjection in this corpus) -> "i.c.";
-// `not_reported`/missing is dropped entirely (see weighting below). "multiple"
-// (one compound given via several routes, not separable) stays its own bucket.
+// Route resolution mirrors plot_application_donut.py exactly, so this page and
+// the manuscript donut figure agree:
+//   - i.p./s.c./p.o./i.n./i.v. (and i.c.v.) -> [same code]
+//   - `other` (always an intracerebral microinjection here) -> ["i.c."]
+//   - `multiple` -> the hand-reviewed routes from multi_route_map.json, keyed
+//     by "stem|norm(compound)" (one editable source: the donut script's
+//     MULTI_ROUTE_MAP, which generates that JSON).
+//   - `not_reported` / missing -> [] (dropped: no administration data)
 const DIRECT = new Set(["i.p.", "s.c.", "p.o.", "i.n.", "i.v.", "i.c.v."]);
-function routeKey(raw) {
-  const v = String(raw || "").trim().toLowerCase();
-  if (DIRECT.has(v)) return v;
-  if (v === "other") return "i.c.";
-  if (v === "multiple") return "multiple";
-  return null;  // "" or "not_reported" -> not counted
+
+// Match the Python _norm(): lowercase, strip everything non-alphanumeric.
+const norm = s => String(s || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+
+// --- Psychedelic-only filter (ports plot_application_donut.py) -------------
+// Comparators/antagonists/tool compounds (ketamine, CNO, MDL100907, IgG, …)
+// are excluded so only the routes of the actual psychedelic count.
+const PSYCHEDELIC_ALLOWLIST = new Set(["4ctfm"]);
+const GENERA = ["psilocybe", "pholiotina", "panaeolus", "gymnopilus", "psilocin", "psilocybin"];
+
+function psychedelicTokens(field) {
+  const out = new Set();
+  for (const part of String(field || "").split(/[,;/]| and /)) {
+    for (const cand of [part, part.replace(/\(.*?\)/g, "")]) {
+      const n = norm(cand);
+      if (n.length >= 3) out.add(n);
+    }
+  }
+  return out;
 }
 
-// Each study's distinct routes (excluding not_reported) for reuse below.
+function isPsychedelicEntry(compound, tokens) {
+  const c = norm(compound);
+  if (!c) return false;
+  if (PSYCHEDELIC_ALLOWLIST.has(c)) return true;
+  for (const p of tokens) if (c === p || c.includes(p) || p.includes(c)) return true;
+  for (const g of GENERA) if (c.includes(g) && [...tokens].some(p => p.includes(g))) return true;
+  return false;
+}
+
+// Resolve one dosing entry to its list of slice routes (may be 0, 1, or many).
+function entryRoutes(stem, entry) {
+  const v = String(entry?.route || "").trim().toLowerCase();
+  if (DIRECT.has(v)) return [v];
+  if (v === "other") return ["i.c."];
+  if (v === "multiple") {
+    const key = `${norm(stem)}|${norm(entry?.compound)}`;
+    return multiRouteMap[key] || [];  // unmapped multiple -> dropped
+  }
+  return [];  // not_reported / empty -> dropped
+}
+
+// A study's distinct PSYCHEDELIC routes (excluding not_reported / comparators),
+// for weighting and the click-to-list detail.
 function studyRoutes(s) {
+  const tokens = psychedelicTokens(s.psychedelic);
   const set = new Set();
   for (const e of (s.dosing || [])) {
-    const k = routeKey(e?.route);
-    if (k) set.add(k);
+    if (!isPsychedelicEntry(e?.compound, tokens)) continue;
+    for (const r of entryRoutes(s._stem, e)) set.add(r);
   }
   return set;
 }
@@ -74,7 +115,7 @@ const selectedRoute = Mutable(null);
 const setSelectedRoute = (v) => { selectedRoute.value = v; };
 ```
 
-Distribution of the routes by which the **psychedelic** was administered across the **${studies.length}-paper corpus**, taken from each study's structured dosing record. Each study contributes a total weight of **1**, split evenly across the distinct routes it used for the psychedelic — so a paper giving the drug both i.p. and s.c. adds 0.5 to each bar. Routes used only for non-psychedelic agents, and `not reported` entries, are excluded (they neither get a share nor dilute the others).
+Distribution of the routes by which the **psychedelic** was administered across the **${studies.length}-paper corpus**, taken from each study's structured dosing record. Each study contributes a total weight of **1**, split evenly across the distinct routes it used for the psychedelic — so a paper giving the drug both i.p. and s.c. adds 0.5 to each bar. Studies coded `multiple` are unpacked into their real routes using the same hand-reviewed mapping as the manuscript donut figure. Routes used only for non-psychedelic agents (comparators, antagonists), and `not reported` entries, are excluded (they neither get a share nor dilute the others). These numbers match the manuscript donut figure exactly.
 
 ${data.length ? html`<b>${total.toFixed(1)}</b> total weight across ${studies.length} studies (each study sums to 1)` : ''}
 
