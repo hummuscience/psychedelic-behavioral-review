@@ -139,7 +139,6 @@ def plot(studies: list[dict]) -> None:
         ax.set_yticklabels(panel["yticklabels"], fontsize=8)
         ax.set_xlabel(panel["xlabel"], fontsize=10, fontweight="bold")
         ax.set_ylabel(panel["ylabel"], fontsize=10, fontweight="bold")
-        ax.set_title(panel["title"], fontsize=10, pad=10)
         ax.grid(True, linestyle=":", alpha=0.4, zorder=0)
         ax.spines["top"].set_visible(False)
         ax.spines["right"].set_visible(False)
