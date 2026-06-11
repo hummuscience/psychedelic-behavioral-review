@@ -35,10 +35,11 @@ REG = DATA / "paper_registry.json"
 OUT_PNG = OUTDIR / "conditions.png"
 OUT_PDF = OUT_PNG.with_suffix(".pdf")
 
-# Match the original supplementary figure palette.
-COL_YES     = "#4CB17C"   # green
-COL_NO      = "#E89BAE"   # pink
-COL_UNKNOWN = "#FFFFFF"   # white (with a faint grey border)
+# Match the Figure 1 (the_problem) palette: refined/good = orange,
+# classic = purple, not reported = grey.
+COL_YES     = "#f5a800"   # orange (refined, matches Figure 1)
+COL_NO      = "#b751da"   # purple (classic, matches Figure 1)
+COL_UNKNOWN = "#e6e6e6"   # grey (not reported, matches Figure 1)
 EDGE        = "#CCCCCC"
 
 # Column definitions: (display label, accessor function)
@@ -192,7 +193,7 @@ def plot(by_year: dict[int, list[dict]]) -> None:
     legend_handles = [
         patches.Patch(facecolor=COL_YES,     edgecolor="white", label="yes"),
         patches.Patch(facecolor=COL_NO,      edgecolor="white", label="no"),
-        patches.Patch(facecolor=COL_UNKNOWN, edgecolor=EDGE,    label="unknown"),
+        patches.Patch(facecolor=COL_UNKNOWN, edgecolor=EDGE,    label="not reported"),
     ]
     ax.legend(handles=legend_handles, loc="lower center",
               bbox_to_anchor=(0.5, -0.02), ncol=3, frameon=False, fontsize=9)

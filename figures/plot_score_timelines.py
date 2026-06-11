@@ -36,10 +36,11 @@ REG = DATA / "paper_registry.json"
 OUT_PNG = OUTDIR / "score_timelines.png"
 OUT_PDF = OUT_PNG.with_suffix(".pdf")
 
-# Match dashboard cube.md TIMELINE_DIMS colours.
+# Match the manuscript Figure 1 (the_problem) palette: amber + purple brand
+# colours, keeping blue for the third dimension.
 DIMS = [
-    ("Behavioural complexity",  "behavioural_complexity_max",   "#7B2FBE"),
-    ("Environmental complexity","environmental_complexity_max", "#E6550D"),
+    ("Behavioural complexity",  "behavioural_complexity_max",   "#b751da"),
+    ("Environmental complexity","environmental_complexity_max", "#f5a800"),
     ("Recording duration",      "recording_duration_max",       "#3a7acf"),
 ]
 

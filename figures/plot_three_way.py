@@ -332,12 +332,13 @@ def render_bland_altman(pairs: list[dict]) -> None:
 OUT_SUPP = _OUT / "supp_llm_vs_human_validation.png"
 
 # The three pairwise comparisons, with a fixed colour per pair. The two
-# human-vs-LLM pairs share a warm palette; the human-human pair is the
-# reference (grey) the others are judged against.
+# human-vs-LLM pairs use the manuscript Figure 1 brand colours (amber +
+# purple); the human-human pair is the neutral grey reference the others
+# are judged against.
 SUPP_PAIRS = [
-    ("rater 1 vs rater 2", "ana", "human", "#444444"),   # human-human reference
-    ("rater 1 vs LLM",     "ana", "llm",    "#E6550D"),
-    ("rater 2 vs LLM",     "human", "llm",  "#3a7acf"),
+    ("rater 1 vs rater 2", "ana", "human", "#444444"),   # human-human reference (grey)
+    ("rater 1 vs LLM",     "ana", "llm",    "#f5a800"),   # Fig 1 amber
+    ("rater 2 vs LLM",     "human", "llm",  "#b751da"),   # Fig 1 purple
 ]
 
 
@@ -440,6 +441,11 @@ def render_supp_figure(pairs: list[dict]) -> None:
     fig.suptitle(
         f"LLM vs human scoring agreement — n={n_common} assays scored by all raters",
         fontsize=13, fontweight="bold")
+    # Panel labels: A = Bland-Altman row (top), B = variability bars (bottom).
+    for ax_ref, letter in ((ba_axes[0], "A"), (bar_ax, "B")):
+        pos = ax_ref.get_position()
+        fig.text(pos.x0 - 0.05, pos.y1 + 0.015, letter,
+                 fontsize=18, fontweight="bold", va="bottom", ha="left")
     # explicit margins set in add_gridspec; no tight_layout (it would override them)
     fig.savefig(OUT_SUPP, dpi=200)
     print(f"Wrote {OUT_SUPP}  (common set n={n_common})")
