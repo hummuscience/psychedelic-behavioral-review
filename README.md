@@ -4,7 +4,7 @@ Open code and data companion to our systematic review of methodological rigour i
 psychedelic rodent behavioural research (*Translational Psychiatry*, 2026).
 
 **Live dashboard:** https://hummuscience.github.io/psychedelic-behavioral-review/
-
+[![DOI](https://zenodo.org/badge/1263903476.svg)](https://doi.org/10.5281/zenodo.20662839)
 ## What's here
 
 | Directory | Contents |
