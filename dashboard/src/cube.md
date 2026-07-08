@@ -14,7 +14,7 @@ const assayCatalog = await FileAttachment("data/assay_catalog.json").json();
 import {BUCKET_ORDER, compoundsOf} from "./components/dose-utils.js";
 import {mountFilters} from "./components/filters.js";
 import * as Plot from "npm:@observablehq/plot";
-const Plotly = (await import("https://cdn.jsdelivr.net/npm/plotly.js-dist-min@2.35.2/+esm")).default;
+const Plotly = (await import("https://esm.sh/plotly.js-dist-min@2.35.2")).default;
 ```
 
 ```js
