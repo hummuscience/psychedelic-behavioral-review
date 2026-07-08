@@ -156,7 +156,7 @@ const selectedAssay = Mutable(null);
 const setSelectedAssay = v => { selectedAssay.value = v; };
 ```
 
-<div style="display:flex;gap:24px;align-items:flex-start">
+<div class="assay-split" style="display:flex;gap:24px;align-items:flex-start">
 <div style="flex:1;min-width:0">
 
 ```js

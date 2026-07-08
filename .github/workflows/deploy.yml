@@ -36,6 +36,7 @@ jobs:
         working-directory: dashboard
         env:
           OBSERVABLE_BASE: /psychedelic-behavioral-review
+          UMAMI_WEBSITE_ID: ${{ vars.UMAMI_WEBSITE_ID }}
         run: npm run build
 
       - uses: actions/upload-pages-artifact@v3

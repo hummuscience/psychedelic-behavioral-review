@@ -3,6 +3,11 @@ title: Studies over time
 toc: false
 ---
 
+<div class="pub-banner">
+  This is the accompanying dashboard for the publication
+  <a href="https://doi.org/10.64898/2026.01.14.699469" target="_blank" rel="noopener"><em>Animal Models in Psychedelic Research — Tripping over Translation</em></a> (bioRxiv, 2026).
+</div>
+
 ```js
 const studies = await FileAttachment("data/studies.json").json();
 const prisma = await FileAttachment("data/prisma.json").json();

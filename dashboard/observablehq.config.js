@@ -24,6 +24,16 @@ const studySlug = (stem) => String(stem).toLowerCase().replace(/[^a-z0-9]/g, "")
 
 const BASE = process.env.OBSERVABLE_BASE || "";
 
+// Umami analytics (umami.is Cloud). The website ID is public (it ships in the
+// page source), so it can be hard-coded here or supplied via UMAMI_WEBSITE_ID
+// at build time. The script is injected only when an ID is set, so builds
+// without one never emit a broken tag.
+const UMAMI_SRC = process.env.UMAMI_SRC || "https://cloud.umami.is/script.js";
+const UMAMI_ID = process.env.UMAMI_WEBSITE_ID || "406008e8-3106-4bfb-931c-b79c39b0339e";
+const analyticsHead = UMAMI_ID
+  ? `\n<script defer src="${UMAMI_SRC}" data-website-id="${UMAMI_ID}"></script>`
+  : "";
+
 export default {
   title: "Psychedelic Behavioural-Review Dashboard",
   root: "src",
@@ -50,5 +60,5 @@ export default {
   header: `<a href="${BASE || '/'}" style="color:inherit;text-decoration:none;">🧠 Psychedelic Behavioural Review</a>`,
   footer: 'Built with <a href="https://observablehq.com/framework/" target="_blank">Observable Framework</a>. Source on <a href="https://github.com/" target="_blank">GitHub</a>.',
   toc: {label: "On this page", show: true},
-  head: `<link rel="stylesheet" href="/style.css">`,
+  head: `<link rel="stylesheet" href="/style.css">${analyticsHead}`,
 };
