@@ -22,8 +22,12 @@ Run:  python build_raters_json.py
 from __future__ import annotations
 
 import json
+import sys
+from pathlib import Path
 
-import rater_lib as rl
+# rater_lib lives with the figure code.
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "figures"))
+import rater_lib as rl  # noqa: E402
 
 OUT = rl.ROOT / "raters.json"
 

@@ -20,14 +20,10 @@ from pathlib import Path
 
 from find_pdf_duplicates import normalise as norm_surname, first_author_surname
 
-ROOT = Path(__file__).parent
-PUBMED_CSV = ROOT / "results" / "pubmed_expansion.csv"
-NOT_FOUND_CSV = ROOT / "results" / "pdfs_not_found.csv"
-PDFS_DIR = ROOT / "pdfs"
-DOSAGES_LLM = ROOT / "dosages_llm.csv"   # v1 snippet extraction — retained for fallback only
-CONSENSUS_DIR = ROOT / "results_v2_full_consensus"
-REGISTRY_JSON = ROOT / "paper_registry.json"
-MANUAL_DECISIONS_JSON = ROOT / "manual_decisions.json"
+from paths import (PUBMED_CSV, PDFS_NOT_FOUND_CSV as NOT_FOUND_CSV,
+                   PDF_DIR as PDFS_DIR, PDF_INVENTORY_CSV, DOSAGES_LLM_CSV as DOSAGES_LLM,
+                   CONSENSUS_DIR, REGISTRY_JSON, MANUAL_DECISIONS_JSON,
+                   PRISMA_CSV, REPORTS_DIR)
 
 
 def nfc_lower(s: str) -> str:
@@ -42,7 +38,10 @@ def nfc_lower(s: str) -> str:
 
 PSY_BUCKETS = {"Psilocybin/Psilocin", "LSD", "DMT", "DMT; 5-MeO-DMT",
                "DOI (2,5-dimethoxy-4-iodoamphetamine)", "Ibogaine", "Ayahuasca",
-               "Other serotonergic", "Psychedelic (general)"}
+               "Other serotonergic", "Psychedelic (general)",
+               # Missing from the original list; no published record depends on
+               # it (the one mescaline-only record was included via its PDF).
+               "Mescaline", "5-MeO-DMT"}
 
 # Manual disposition overrides — keyed by stem, win over the auto-derived
 # classification. Use for review chapters / book volumes / other edge cases
@@ -72,7 +71,7 @@ def stem_for(authors_short: str, year: str) -> str | None:
 
 
 def main():
-    rows = list(csv.DictReader(open(PUBMED_CSV)))
+    rows = list(csv.DictReader(open(PUBMED_CSV, encoding="utf-8")))
     n_found = len(rows)
     print(f"PubMed records identified: {n_found}")
 
@@ -82,6 +81,7 @@ def main():
     # used to bite us when fuzzing on stem strings.
     registry = json.load(open(REGISTRY_JSON)) if REGISTRY_JSON.exists() else {}
     doi_to_stem = {r["doi"]: stem for stem, r in registry.items() if r.get("doi")}
+    pmid_to_stem = {str(r["pmid"]): stem for stem, r in registry.items() if r.get("pmid")}
     print(f"Registry loaded: {len(registry)} stems, {len(doi_to_stem)} DOI keys")
 
     # User-driven triage decisions exported from papers_to_download_v2.html
@@ -95,10 +95,24 @@ def main():
     # NFC-normalise so accented-surname filenames (e.g. colaço, gonzález)
     # round-trip correctly through the membership checks below — see the
     # `nfc_lower` docstring.
-    pdfs_on_disk = {nfc_lower(p.removesuffix(".pdf"))
-                    for p in os.listdir(PDFS_DIR) if p.endswith(".pdf")}
-    md_cached = {nfc_lower(p.removesuffix(".docling.md"))
-                 for p in os.listdir(PDFS_DIR) if p.endswith(".docling.md")}
+    #
+    # The PDFs are not published, so "on disk" comes from data/pdf_inventory.csv
+    # (filenames only; rows in folder "pdfs", not "pdfs/_quarantine"), plus
+    # anything actually present in WORK_DIR/pdfs when run with the PDFs.
+    pdfs_on_disk: set[str] = set()
+    md_cached: set[str] = set()
+    if PDF_INVENTORY_CSV.exists():
+        for inv in csv.DictReader(open(PDF_INVENTORY_CSV, encoding="utf-8")):
+            if inv["folder"] != "pdfs":
+                continue
+            pdfs_on_disk.add(nfc_lower(inv["stem"]))
+            if inv["has_docling_md"] == "True":
+                md_cached.add(nfc_lower(inv["stem"]))
+    if PDFS_DIR.exists():
+        pdfs_on_disk |= {nfc_lower(p.removesuffix(".pdf"))
+                         for p in os.listdir(PDFS_DIR) if p.endswith(".pdf")}
+        md_cached |= {nfc_lower(p.removesuffix(".docling.md"))
+                      for p in os.listdir(PDFS_DIR) if p.endswith(".docling.md")}
 
     # Papers with at least one administered dose AND a consensus output.
     # v2 source of truth: each results_v2_full_consensus/*.json carries a
@@ -154,10 +168,18 @@ def main():
         stem_lc = stem.lower()
         original_stem_lc = stem_lc  # before any remapping below
         on_disk = False
-
-        # Primary lookup: DOI from the row → registry stem.
         row_doi = (r.get("doi") or "").strip().lower()
-        if row_doi and row_doi in doi_to_stem and original_stem_lc not in MANUAL_DISPOSITIONS:
+
+        # Records added by the monthly update (search_pubmed.py) map to the
+        # corpus only through the registry, by PMID then DOI. The surname/year
+        # fallback below was hand-checked for the original search; for new
+        # records it matches other papers by the same first author.
+        if (r.get("source") or "").startswith("update:"):
+            reg_stem = pmid_to_stem.get(r["pmid"].strip()) or doi_to_stem.get(row_doi)
+            stem_lc = original_stem_lc = (reg_stem or "").lower()
+            on_disk = bool(reg_stem) and nfc_lower(reg_stem) in pdfs_on_disk
+        # Primary lookup: DOI from the row → registry stem.
+        elif row_doi and row_doi in doi_to_stem and original_stem_lc not in MANUAL_DISPOSITIONS:
             stem_lc = doi_to_stem[row_doi]
             on_disk = True
         # Fallback: fuzzy stem match (kept for rows missing a DOI in pubmed)
@@ -240,9 +262,10 @@ def main():
     # run never silently destroys the prior accounting — the audit log is
     # too expensive to lose. Backups rotate (.preV2.bak holds the most
     # recent prior run; older backups are not retained by this script).
-    out_csv = ROOT / "prisma_accounting.csv"
+    out_csv = PRISMA_CSV
+    REPORTS_DIR.mkdir(parents=True, exist_ok=True)
     if out_csv.exists():
-        backup = out_csv.with_suffix(".csv.preV2.bak")
+        backup = REPORTS_DIR / "prisma_accounting.csv.preV2.bak"
         shutil.copy2(out_csv, backup)
         print(f"Backed up previous audit → {backup}")
     with open(out_csv, "w", newline="") as f:
@@ -328,7 +351,7 @@ def main():
     summary_lines.append(f"     administered drug dose to live animals)")
     summary_lines.append("")
 
-    out_txt = ROOT / "prisma_summary.txt"
+    out_txt = REPORTS_DIR / "prisma_summary.txt"
     out_txt.write_text("\n".join(summary_lines))
     print(f"Summary text → {out_txt}")
     print()
@@ -388,7 +411,7 @@ def main():
 
 \\end{{tikzpicture}}
 """
-    out_tex = ROOT / "prisma_diagram.tex"
+    out_tex = REPORTS_DIR / "prisma_diagram.tex"
     out_tex.write_text(tex)
     print(f"\nLaTeX block → {out_tex}")
 

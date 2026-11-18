@@ -21,8 +21,7 @@ import sys
 from datetime import date
 from pathlib import Path
 
-ROOT = Path(__file__).parent
-OUT = ROOT / "manual_decisions.json"
+from paths import MANUAL_DECISIONS_JSON as OUT
 
 REASON_TO_DISPOSITION = {
     "done":         "included_in_review",

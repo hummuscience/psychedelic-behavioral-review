@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 """
+Superseded by fetch_pdfs.py, which the monthly update uses. Kept as the record
+of how the original corpus was downloaded. Note: it skips any paper whose
+<surname><year>.pdf name is already taken, even when that file is a different
+paper; fetch_pdfs.py assigns unique stems instead.
+
 Download PDFs for new, relevant papers from PubMed expansion CSV.
 Filters out already-included, false positives, MDMA, and ketamine papers.
 Tries Unpaywall, PMC, and Europe PMC for open-access PDFs.
