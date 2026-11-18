@@ -6,8 +6,8 @@ between the last run and today. New PMIDs are classified on their title and
 appended to data/pubmed_expansion.csv with source = "update:<run date>".
 Existing rows are never rewritten.
 
-The first run starts at the published search cutoff (2026/04/01), so anything
-indexed after the original search is picked up once.
+The first run starts on 2026/03/29, the day after the newest record of the
+original search entered PubMed, so nothing indexed since then is missed.
 
 State lives in data/search_state.json. Full records (with abstracts, which are
 publisher copyright and so not committed) go to WORK_DIR/reports/.
@@ -49,14 +49,29 @@ METHODS_QUERY = (
 )
 # Same publication-year floor as the original search.
 YEAR_FLOOR = " AND 2014/01/01:3000/12/31[dp]"
-# The published search was run on 1 April 2026.
-FIRST_RUN_START = "2026/04/01"
+# The published search was run on 1 April 2026; its newest record entered
+# PubMed on 28 March. Start the day after, so records indexed 29–31 March
+# (7 checked on 2026-11-18, 1 relevant by title) aren't missed by both
+# searches. Overlap is harmless: known PMIDs are skipped.
+FIRST_RUN_START = "2026/03/29"
 
 # A new record whose title matches a corpus paper this closely is the same
 # study (typically the journal version of a preprint already scored). On the
 # original corpus, true duplicates score 1.0 and the closest unrelated pair 0.66.
 DUPLICATE_TITLE_RATIO = 0.9
 DUPLICATE_DISPOSITION = "excluded_duplicate_of_corpus"
+
+# PubMed publication types that can't contribute rodent data. Relevant records
+# with any of these are excluded before a PDF is fetched. PubMed often adds the
+# tag weeks after a record appears, so records still waiting for a PDF are
+# re-checked every run (recheck_publication_types).
+NON_PRIMARY_TYPES = {
+    "Review", "Systematic Review", "Scoping Review", "Meta-Analysis", "News",
+    "Newspaper Article", "Editorial", "Comment", "Letter", "Published Erratum",
+    "Retraction of Publication", "Expression of Concern", "Congress", "Interview",
+    "Lecture", "Biography",
+}
+NON_PRIMARY_DISPOSITION = "excluded_not_primary_research"
 
 CSV_FIELDS = ["pmid", "title", "authors_short", "year", "journal", "doi",
               "source", "already_included", "detected_compounds"]
@@ -82,6 +97,17 @@ def find_duplicate(rec: dict, registry: dict) -> str | None:
                 None, title, _norm_title(e["title"])).ratio() >= DUPLICATE_TITLE_RATIO:
             return stem
     return None
+
+
+def non_primary_type(publication_types: list[str]) -> str | None:
+    """The first non-primary PubMed publication type, if any."""
+    hits = sorted(NON_PRIMARY_TYPES & set(publication_types))
+    return hits[0] if hits else None
+
+
+def _non_primary_decision(today: date, pub_type: str) -> dict:
+    return {"applied_at": today.isoformat(), "disposition": NON_PRIMARY_DISPOSITION,
+            "duplicate_of": None, "reason": f"auto: PubMed publication type {pub_type}"}
 
 
 def known_ids() -> tuple[set[str], set[str]]:
@@ -136,6 +162,11 @@ def run(today: date | None = None, dry_run: bool = False) -> dict:
                 "applied_at": today.isoformat(), "disposition": DUPLICATE_DISPOSITION,
                 "duplicate_of": dup, "reason": "auto: same DOI or title as corpus paper",
             }
+        pub_type = None
+        if not dup and decision(label) == "relevant":
+            pub_type = non_primary_type(rec["publication_types"])
+            if pub_type and rec["doi"] and rec["doi"] not in decisions:
+                decisions[rec["doi"]] = _non_primary_decision(today, pub_type)
         rows.append({
             "pmid": rec["pmid"], "title": rec["title"],
             "authors_short": rec["authors_short"], "year": rec["year"],
@@ -143,15 +174,16 @@ def run(today: date | None = None, dry_run: bool = False) -> dict:
             "already_included": "no", "detected_compounds": label,
         })
         report.append({**rec, "detected_compounds": label,
-                       "decision": "duplicate" if dup else decision(label),
-                       "duplicate_of": dup})
+                       "decision": ("duplicate" if dup else
+                                    "not_primary" if pub_type else decision(label)),
+                       "duplicate_of": dup, "non_primary_type": pub_type})
 
     summary = {
         "run_date": today.isoformat(), "window": [start, end],
         "returned": len(pmids), "new": len(rows),
         "by_decision": {d: sum(1 for r in report if r["decision"] == d)
-                        for d in ("relevant", "duplicate", "mdma_only", "off_topic",
-                                  "false_positive")},
+                        for d in ("relevant", "not_primary", "duplicate", "mdma_only",
+                                  "off_topic", "false_positive")},
     }
     if not dry_run:
         if rows:
@@ -167,6 +199,34 @@ def run(today: date | None = None, dry_run: bool = False) -> dict:
             json.dumps(report, indent=2, ensure_ascii=False))
     summary["records"] = report
     return summary
+
+
+def recheck_publication_types(today: date | None = None, dry_run: bool = False) -> list[dict]:
+    """Exclude new relevant records still waiting for a PDF that PubMed has
+    since tagged as reviews, news, letters, etc. Returns the records excluded."""
+    today = today or date.today()
+    registry = json.loads(REGISTRY_JSON.read_text()) if REGISTRY_JSON.exists() else {}
+    have = ({str(e.get("pmid")) for e in registry.values() if e.get("pmid")}
+            | {(e.get("doi") or "").lower() for e in registry.values() if e.get("doi")})
+    decisions = (json.loads(MANUAL_DECISIONS_JSON.read_text())
+                 if MANUAL_DECISIONS_JSON.exists() else {})
+    with open(PUBMED_CSV, encoding="utf-8", newline="") as f:
+        waiting = [r for r in csv.DictReader(f)
+                   if r["source"].startswith("update:") and r["doi"]
+                   and decision(r["detected_compounds"]) == "relevant"
+                   and r["doi"].lower() not in decisions
+                   and r["pmid"] not in have and r["doi"].lower() not in have]
+    if not waiting:
+        return []
+    excluded = []
+    for rec in pubmed.efetch([r["pmid"] for r in waiting]):
+        pub_type = non_primary_type(rec["publication_types"])
+        if pub_type and rec["doi"]:
+            decisions[rec["doi"]] = _non_primary_decision(today, pub_type)
+            excluded.append({**rec, "non_primary_type": pub_type})
+    if excluded and not dry_run:
+        MANUAL_DECISIONS_JSON.write_text(json.dumps(decisions, indent=2, ensure_ascii=False))
+    return excluded
 
 
 def main() -> None:

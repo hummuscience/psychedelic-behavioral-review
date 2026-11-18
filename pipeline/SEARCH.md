@@ -108,9 +108,15 @@ How it runs:
 - **Incremental by Entrez date** (`[edat]`, when a record entered PubMed),
   from the previous run to today, with the original floor
   `2014/01/01:3000/12/31[dp]`. State is in `data/search_state.json`.
-- **First run** starts at the published cutoff, 2026/04/01. Records from before
-  then that the printed query finds but the CSV lacks (about 3,900) are **not**
-  backfilled: the published corpus stays as it is.
+- **First run** starts on 2026/03/29. The original search's newest record
+  entered PubMed on 28 March 2026 (its records arrive at 11–16 a month through
+  Jan–Mar 2026), so the search was run around 1 April as published. Starting the
+  day after its newest record closes the 29–31 March window (7 records, 1
+  relevant by title). Checked on 2026-11-18: records that entered PubMed before
+  1 April but carry print and online dates after it, which the original `[dp]`
+  filter would skip, number 1, and it is not relevant.
+- Records from before then that the printed query finds but the CSV lacks
+  (about 3,900) are **not** backfilled: the published corpus stays as it is.
 - New rows are appended to `data/pubmed_expansion.csv` with
   `source = "update:<run date>"`. Existing rows are never rewritten.
 - **Duplicates.** A new record with the same DOI as a corpus paper, or a title
@@ -119,6 +125,13 @@ How it runs:
   versions of preprints already in the corpus. The first run found three
   (`lu2025`, `welch2025`, `chiu2023`). On the corpus, true duplicates score 1.0
   and the closest unrelated pair 0.66.
+- **Not primary research.** Relevant records that PubMed tags as Review,
+  Systematic Review, Meta-Analysis, News, Editorial, Comment, Letter, Erratum
+  and similar are recorded as `excluded_not_primary_research` before any PDF is
+  fetched (5 of 83 relevant records in the first run). PubMed often adds these
+  tags weeks after a record appears, so records still waiting for a PDF are
+  re-checked on every run. Reviews PubMed hasn't tagged yet still get through
+  until it does.
 - **Mapping to the corpus.** `build_prisma_accounting.py` matches `update:` rows
   to papers only through the registry (PMID, then DOI), never by
   surname and year, which would attach a new Allen 2026 record to `allen2026`.

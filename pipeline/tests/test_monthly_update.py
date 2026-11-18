@@ -156,3 +156,51 @@ def test_taken_stems_cover_original_search_records() -> None:
     taken = taken_stems()
     assert "cavallaro2026" in taken  # only a PRISMA record, no PDF
     assert assign_stem("Cavallaro N et al.", "2026", taken) == "cavallaro2026b"
+
+
+# ── Reviews, news, letters: excluded before a PDF is fetched ────────────────
+
+def test_non_primary_types() -> None:
+    from search_pubmed import non_primary_type
+    assert non_primary_type(["Journal Article"]) is None
+    assert non_primary_type(["Journal Article", "Review"]) == "Review"
+    assert non_primary_type(["News"]) == "News"
+    assert non_primary_type(["Letter", "Comment"]) == "Comment"
+
+
+def test_recheck_excludes_records_tagged_later(data_copy: Path) -> None:
+    # A relevant record from an earlier run, still waiting for its PDF...
+    with open(data_copy / "data/pubmed_expansion.csv", "a", encoding="utf-8", newline="") as f:
+        csv.writer(f, lineterminator="\r\n").writerow(
+            ["99999997", "Psilocybin and the brain.", "Doe J et al.", "2026", "J",
+             "10.9999/review.2026", "update:2026-12-03", "no", "Psilocybin/Psilocin"])
+    # ...that PubMed has since tagged as a Review (PubMed call faked).
+    script = f"""
+import sys; sys.path.insert(0, {str(PIPELINE)!r})
+import pubmed, search_pubmed
+pubmed.efetch = lambda ids: [{{"pmid": "99999997", "doi": "10.9999/review.2026",
+    "title": "Psilocybin and the brain.", "publication_types": ["Journal Article", "Review"]}}]
+print(len(search_pubmed.recheck_publication_types()))
+"""
+    env = {**os.environ, "DATA_DIR": str(data_copy / "data"), "WORK_DIR": str(data_copy / "work")}
+    out = subprocess.run([sys.executable, "-c", script], env=env, check=True,
+                         capture_output=True, text=True).stdout.strip()
+    assert out == "1"
+    dec = json.loads((data_copy / "data/manual_decisions.json").read_text())
+    assert dec["10.9999/review.2026"]["disposition"] == "excluded_not_primary_research"
+    # PRISMA records it as such, and the PDF step no longer asks for it.
+    run("build_prisma_accounting.py", data_copy)
+    rows = {r["pmid"]: r for r in csv.DictReader(
+        open(data_copy / "data/prisma_accounting.csv", encoding="utf-8"))}
+    assert rows["99999997"]["disposition"] == "excluded_not_primary_research"
+    script = f"""
+import sys, json; sys.path.insert(0, {str(PIPELINE)!r})
+import fetch_pdfs as fp
+from paths import REGISTRY_JSON, MANUAL_DECISIONS_JSON
+p = fp.pending(fp._load_rows(), json.loads(REGISTRY_JSON.read_text()),
+               json.loads(MANUAL_DECISIONS_JSON.read_text()))
+print(any(r["pmid"] == "99999997" for r in p))
+"""
+    out = subprocess.run([sys.executable, "-c", script], env=env, check=True,
+                         capture_output=True, text=True).stdout.strip()
+    assert out == "False"
