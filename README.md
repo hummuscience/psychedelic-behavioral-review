@@ -96,8 +96,9 @@ you merge it. Each run:
 
 1. searches PubMed for records added since the last run, using the query printed
    in the paper's Methods (`pipeline/search_pubmed.py`);
-2. classifies them on title (`pipeline/classify_compounds.py`) and records
-   journal versions of preprints already in the corpus as duplicates;
+2. classifies them on title (`pipeline/classify_compounds.py`), excludes records
+   PubMed tags as reviews, news, letters and the like, and records journal
+   versions of preprints already in the corpus as duplicates;
 3. fetches open-access PDFs for relevant records (`pipeline/fetch_pdfs.py`);
 4. scores new papers with the same three models and judge as the published data
    (at most 30 per run by default);
@@ -137,8 +138,8 @@ chosen and validated.
    `JUDGE_PROVIDER` (`foundry` by default; set `anthropic` and add an
    `ANTHROPIC_API_KEY` secret to use the Anthropic API directly).
 4. **Run it once by hand:** Actions → *Monthly update* → *Run workflow*. The first
-   run catches up from the published cutoff (1 April 2026): about 430 records,
-   roughly 80 of them relevant.
+   run catches up from the end of the published search (late March 2026): about
+   440 records, roughly 80 of them relevant.
 
 ### Each month
 

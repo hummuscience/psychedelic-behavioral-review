@@ -155,7 +155,8 @@ def _route_multiple(stem: str) -> bool:
 
 
 def write_reports(today: date, search: dict, fetched: dict, scored: list[str],
-                  unfinished: list[str], scoring_ran: bool) -> dict:
+                  unfinished: list[str], scoring_ran: bool,
+                  rechecked: list[dict] | None = None) -> dict:
     REPORTS_DIR.mkdir(parents=True, exist_ok=True)
     reg = json.loads(REGISTRY_JSON.read_text())
     with_assays = [s for s in scored
@@ -173,6 +174,9 @@ def write_reports(today: date, search: dict, fetched: dict, scored: list[str],
         f"**{search['returned']}** returned, **{search['new']}** new.",
         "",
         f"- Relevant by title: {by['relevant']}",
+        f"- Not primary research (PubMed tags them as review, news, letter, …): "
+        f"{by['not_primary']}"
+        + (f", plus {len(rechecked)} earlier record(s) tagged since" if rechecked else ""),
         f"- Duplicates of corpus papers (e.g. journal version of a preprint): {by['duplicate']}",
         f"- Dropped by the classifier: {by['false_positive'] + by['off_topic'] + by['mdma_only']} "
         f"(no compound {by['false_positive']}, off-topic {by['off_topic']}, "
@@ -208,6 +212,16 @@ def write_reports(today: date, search: dict, fetched: dict, scored: list[str],
                   "Added to `data/manual_decisions.json` as `excluded_duplicate_of_corpus`:", ""]
         lines += [f"- PMID {r['pmid']} → `{r['duplicate_of']}`: {_md_escape(r['title'])}"
                   for r in dups]
+
+    non_primary = [r for r in recs if r["decision"] == "not_primary"] + (rechecked or [])
+    if non_primary:
+        lines += ["", "## Excluded as not primary research",
+                  "Tagged by PubMed as below, so no PDF was fetched. Recorded in "
+                  "`data/manual_decisions.json` as `excluded_not_primary_research`; to "
+                  "include one after all, change its disposition to `included_in_review`.",
+                  ""]
+        lines += [f"- {r['pmid']} · {r['non_primary_type']} · {_md_escape(r['title'])}"
+                  for r in non_primary]
 
     checks = ["- [ ] Spot-check a few of the new scores against the papers."]
     multi = [s for s in with_assays if _route_multiple(s)]
@@ -286,6 +300,9 @@ def main() -> None:
     log("searching PubMed")
     search = search_pubmed.run(today)
     log(f"{search['new']} new records, {search['by_decision']['relevant']} relevant")
+    rechecked = search_pubmed.recheck_publication_types(today)
+    if rechecked:
+        log(f"{len(rechecked)} waiting record(s) now tagged as non-primary; excluded")
 
     log("fetching PDFs")
     fetched = fetch_pdfs.run(today, offline=args.no_download)
@@ -312,7 +329,8 @@ def main() -> None:
     if run_script("build_prisma_accounting.py") != 0:
         sys.exit("build_prisma_accounting.py failed")
 
-    summary = write_reports(today, search, fetched, scored, unfinished_stems(), scoring_ran)
+    summary = write_reports(today, search, fetched, scored, unfinished_stems(), scoring_ran,
+                            rechecked)
     log(f"done: {len(summary['added_with_assays'])} studies added; "
         f"reports in {REPORTS_DIR}")
     if os.environ.get("GITHUB_OUTPUT"):
