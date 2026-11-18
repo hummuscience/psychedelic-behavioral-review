@@ -41,7 +41,8 @@ from unidecode import unidecode
 
 from classify_compounds import decision
 from paths import (CONSENSUS_DIR, MANUAL_DECISIONS_JSON, PDF_DIR, PDF_INVENTORY_CSV,
-                   PDFS_NOT_FOUND_CSV, PUBMED_CSV, REGISTRY_JSON, SUPP_DIR, WORK_DIR)
+                   PDFS_NOT_FOUND_CSV, PRISMA_CSV, PUBMED_CSV, REGISTRY_JSON, SUPP_DIR,
+                   WORK_DIR)
 
 INBOX_DIR = WORK_DIR / "inbox"
 USER_AGENT = ("psychedelic-behavioral-review/1.0 "
@@ -59,8 +60,22 @@ def _key(stem: str) -> str:
 
 
 def taken_stems() -> set[str]:
-    """Every stem in use anywhere in the published data (comparison keys)."""
+    """Every stem in use anywhere in the published data (comparison keys).
+
+    Includes the stems PRISMA accounting guesses for original-search records
+    (<surname><year>), so a new paper never takes the name of an old record:
+    the accounting would otherwise read the new PDF as that record's.
+    """
+    from build_prisma_accounting import stem_for
     taken = set()
+    if PRISMA_CSV.exists():
+        with open(PRISMA_CSV, encoding="utf-8") as f:
+            taken |= {_key(r["stem"]) for r in csv.DictReader(f) if r["stem"]}
+    if PUBMED_CSV.exists():
+        with open(PUBMED_CSV, encoding="utf-8") as f:
+            taken |= {_key(st) for r in csv.DictReader(f)
+                      if not r["source"].startswith("update:")
+                      and (st := stem_for(r["authors_short"], r["year"]))}
     if REGISTRY_JSON.exists():
         taken |= {_key(k) for k in json.loads(REGISTRY_JSON.read_text())}
     if CONSENSUS_DIR.exists():

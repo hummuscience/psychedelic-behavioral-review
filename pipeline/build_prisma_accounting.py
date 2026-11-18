@@ -82,6 +82,11 @@ def main():
     registry = json.load(open(REGISTRY_JSON)) if REGISTRY_JSON.exists() else {}
     doi_to_stem = {r["doi"]: stem for stem, r in registry.items() if r.get("doi")}
     pmid_to_stem = {str(r["pmid"]): stem for stem, r in registry.items() if r.get("pmid")}
+    # Papers added by the monthly update. Rows from the original search must
+    # never reach these through the surname/year fallback: a new paper can
+    # share an old record's <surname><year> (e.g. two Cavallaro 2026 papers).
+    monthly_stems = {nfc_lower(stem) for stem, r in registry.items()
+                     if r.get("match_via") == "monthly_update"}
     print(f"Registry loaded: {len(registry)} stems, {len(doi_to_stem)} DOI keys")
 
     # User-driven triage decisions exported from papers_to_download_v2.html
@@ -169,6 +174,7 @@ def main():
         original_stem_lc = stem_lc  # before any remapping below
         on_disk = False
         row_doi = (r.get("doi") or "").strip().lower()
+        via_registry = False
 
         # Records added by the monthly update (search_pubmed.py) map to the
         # corpus only through the registry, by PMID then DOI. The surname/year
@@ -178,18 +184,22 @@ def main():
             reg_stem = pmid_to_stem.get(r["pmid"].strip()) or doi_to_stem.get(row_doi)
             stem_lc = original_stem_lc = (reg_stem or "").lower()
             on_disk = bool(reg_stem) and nfc_lower(reg_stem) in pdfs_on_disk
+            via_registry = True
         # Primary lookup: DOI from the row → registry stem.
         elif row_doi and row_doi in doi_to_stem and original_stem_lc not in MANUAL_DISPOSITIONS:
             stem_lc = doi_to_stem[row_doi]
             on_disk = True
+            via_registry = True
         # Fallback: fuzzy stem match (kept for rows missing a DOI in pubmed)
         elif stem and original_stem_lc not in MANUAL_DISPOSITIONS:
-            if stem_lc in pdfs_on_disk:
+            if stem_lc in pdfs_on_disk and nfc_lower(stem_lc) not in monthly_stems:
                 on_disk = True
             else:
                 search_surname = norm_surname(first_author_surname(r["authors_short"]))
                 year = r["year"]
                 for cand in pdfs_on_disk:
+                    if cand in monthly_stems:
+                        continue
                     m = re.match(r"^(.*?)(\d{4})\d*$", cand)
                     if not m: continue
                     cand_surname, cand_year = m.groups()
@@ -201,9 +211,12 @@ def main():
         # Normalise the candidate stem to the same NFC-lowered form used by
         # the on-disk / consensus / admin-dose sets above.
         stem_key = nfc_lower(stem_lc)
-        has_md = stem_key in md_cached
-        in_consensus = stem_key in consensus_stems
-        has_admin_dose = stem_key in administered_stems
+        # A stem guessed from surname/year that belongs to a monthly-update
+        # paper is a different paper: none of its files count for this row.
+        borrowed = not via_registry and stem_key in monthly_stems
+        has_md = stem_key in md_cached and not borrowed
+        in_consensus = stem_key in consensus_stems and not borrowed
+        has_admin_dose = stem_key in administered_stems and not borrowed
 
         # User triage decision (DOI-keyed) wins over auto-classification
         if row_doi and row_doi in manual_decisions:
@@ -224,6 +237,11 @@ def main():
             disposition = "excluded_classifier_off_topic"
         elif not on_disk and is_relevant_class:
             disposition = "pdf_unavailable_relevant"
+        # A monthly-update paper with its PDF but no consensus JSON yet is
+        # waiting to be scored, not a paper without an animal dose.
+        elif (on_disk and stem_key in monthly_stems
+              and stem_key not in consensus_stems | no_assay_consensus_stems):
+            disposition = "pending_scoring"
         elif on_disk and not has_admin_dose and not in_consensus:
             disposition = "in_corpus_no_animal_dose"
         elif on_disk and (has_admin_dose or in_consensus):

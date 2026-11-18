@@ -42,6 +42,7 @@ from paths import (CANDIDATES_DIR, CONSENSUS_DIR, PDF_DIR,  # noqa: E402
                    PDF_INVENTORY_CSV, REGISTRY_JSON, REPORTS_DIR, SUPP_DIR, WORK_DIR)
 
 CANDIDATE_MODELS = "qwen,glm,gptoss"
+MAX_DROPPED_IN_PR = 100
 
 
 def log(msg: str) -> None:
@@ -219,14 +220,23 @@ def write_reports(today: date, search: dict, fetched: dict, scored: list[str],
     lines += ["", "## Review checklist", *checks]
 
     dropped = [r for r in recs if r["decision"] in ("false_positive", "off_topic", "mdma_only")]
+    dropped_lines = [f"- {r['pmid']} · {_md_escape(r['detected_compounds'])} · "
+                     f"{_md_escape(r['title'])}" for r in dropped]
+    (REPORTS_DIR / "dropped_titles.md").write_text(
+        f"# Titles dropped by the classifier ({today.isoformat()})\n\n"
+        + "\n".join(dropped_lines) + "\n")
     if dropped:
+        # GitHub caps a PR description at 65,536 characters; a normal month
+        # drops ~40 titles, the catch-up run drops ~350.
+        shown = dropped_lines[:MAX_DROPPED_IN_PR]
         lines += ["", "<details><summary>Titles dropped by the classifier "
                   f"({len(dropped)})</summary>", "",
                   "To rescue one, add its DOI to `data/manual_decisions.json` with "
                   '`"disposition": "included_in_review"`; the next run fetches and scores it.',
-                  ""]
-        lines += [f"- {r['pmid']} · {_md_escape(r['detected_compounds'])} · "
-                  f"{_md_escape(r['title'])}" for r in dropped]
+                  "", *shown]
+        if len(dropped) > len(shown):
+            lines += ["", f"…and {len(dropped) - len(shown)} more: see `dropped_titles.md` "
+                      "in this run's **monthly-update-reports** artifact (Actions tab)."]
         lines += ["", "</details>"]
     (REPORTS_DIR / "pr_body.md").write_text("\n".join(lines) + "\n")
 
