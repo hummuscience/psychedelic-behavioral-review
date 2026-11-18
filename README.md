@@ -70,23 +70,85 @@ uv run python figures/plot_human_vs_llm.py      # LLM-vs-human validation
 Each script reads the published datasets from `data/` and writes its PNG/PDF into
 `figures/output/`.
 
-To run the rater-library tests:
+To run the tests (rater library, and the monthly pipeline: offline, no keys):
 
 ```bash
-uv run python -m pytest figures/tests/
+uv run python -m pytest figures/tests/ pipeline/tests/
 ```
 
 ## Run the scoring pipeline (requires PDFs + API keys)
 
 ```bash
 cp .env.example .env     # then fill in your keys
-# obtain your own PDFs of the reviewed papers and point the pipeline at them
+# put your own PDFs of the reviewed papers in work/pdfs/ (or set WORK_DIR)
 bash pipeline/run_v2_rescore.sh
 ```
 
 The v2 pipeline runs three LLMs in parallel (`triple_score.py`), judges them to a
 consensus (`judge_consensus.py`), then rebuilds the registry, assay catalog, and
 PRISMA accounting.
+
+## Monthly update (living review)
+
+`.github/workflows/monthly-update.yml` runs `pipeline/monthly_update.py` on the
+3rd of every month and opens a pull request. Nothing reaches the dashboard until
+you merge it. Each run:
+
+1. searches PubMed for records added since the last run, using the query printed
+   in the paper's Methods (`pipeline/search_pubmed.py`);
+2. classifies them on title (`pipeline/classify_compounds.py`) and records
+   journal versions of preprints already in the corpus as duplicates;
+3. fetches open-access PDFs for relevant records (`pipeline/fetch_pdfs.py`);
+4. scores new papers with the same three models and judge as the published data
+   (at most 30 per run by default);
+5. adds them to the assay catalog, rebuilds PRISMA accounting, and opens the PR.
+   Paywalled papers are listed in a **"Monthly update: PDFs needed"** issue.
+
+Published records are never rewritten: every step only adds. See
+[`pipeline/SEARCH.md`](pipeline/SEARCH.md) for how the query and classifier were
+chosen and validated.
+
+### One-time setup
+
+1. **Repo → Settings → Actions → General:** under *Workflow permissions*, choose
+   *Read and write permissions* and tick *Allow GitHub Actions to create and
+   approve pull requests*.
+2. **A private folder for PDFs.** PDFs can't go in this public repo, so the
+   workflow keeps them in a WebDAV folder (for example, Nextcloud). Create a
+   folder and an app password for it.
+3. **Repo → Settings → Secrets and variables → Actions**, add these secrets:
+
+   | Secret | What |
+   |---|---|
+   | `SAIA_API_KEY` | GWDG SAIA key (Docling + the three candidate models) |
+   | `AZURE_FOUNDRY_API_KEY`, `AZURE_FOUNDRY_ENDPOINT` | the judge (Opus via Azure Foundry) |
+   | `CONTACT_EMAIL` | sent to NCBI and Unpaywall, which ask API users for one |
+   | `STORE_WEBDAV_URL` | the folder's WebDAV URL, e.g. `https://<host>/remote.php/dav/files/<user>/psychedelic-review` |
+   | `STORE_WEBDAV_USER`, `STORE_WEBDAV_PASSWORD` | the folder's user name and app password |
+   | `NCBI_API_KEY` | optional; raises PubMed's rate limit |
+
+   Optional variables: `AZURE_FOUNDRY_MODEL` (default `claude-opus-4-7`);
+   `JUDGE_PROVIDER` (`foundry` by default; set `anthropic` and add an
+   `ANTHROPIC_API_KEY` secret to use the Anthropic API directly).
+4. **Run it once by hand:** Actions → *Monthly update* → *Run workflow*. The first
+   run catches up from the published cutoff (1 April 2026): about 430 records,
+   roughly 80 of them relevant.
+
+### Each month
+
+- **Review the PR.** It lists the new studies with their scores, duplicates found,
+  and the titles the classifier dropped. Merge it to republish the dashboard. If it's
+  still open at the next run, that run continues from it (nothing is scored twice)
+  and the PR grows to cover both months.
+- **Paywalled papers:** for each item in the *PDFs needed* issue, save the PDF in
+  the folder's `inbox/` as `<pmid>.pdf` (supplement: `<pmid>_supp.pdf` or `.docx`).
+  The next run picks it up; to process it sooner, run the workflow by hand.
+- **Rescuing a dropped record:** add its DOI to `data/manual_decisions.json` with
+  `"disposition": "included_in_review"`; the next run fetches and scores it.
+
+To run it on your own machine instead, fill in `.env` (see `.env.example`), point
+`WORK_DIR` at a folder for PDFs, and run `uv run python pipeline/monthly_update.py`
+(`--skip-scoring` to search and fetch without LLM calls).
 
 ## The data
 
@@ -97,6 +159,11 @@ PRISMA accounting.
 | `results_v2_full_consensus/*.json` | One judge-consensus record per paper (287 papers): scored assays, dosing, sex, age, evidence |
 | `paper_registry.json` | Canonical per-paper metadata (DOI, title, authors, year, journal) |
 | `prisma_accounting.csv` | PRISMA flow: every screened record with its disposition |
+| `pubmed_expansion.csv` | Every PubMed record screened, with its title-classifier label; monthly additions have `source = update:<date>` |
+| `manual_decisions.json` | Hand triage decisions keyed by DOI (they override the classifier) |
+| `pdf_inventory.csv` | Which papers have a PDF (file names only; the PDFs aren't published) |
+| `pdfs_not_found.csv` | Relevant records with no retrievable PDF |
+| `search_state.json` | Where the next monthly search starts (created by the first run) |
 | `human_scores_hitl.json` | Rater 2's raw human-in-the-loop scores |
 | `raters.json` | Combined two-rater scores (`rater1`, `rater2` per paper/assay) — the single source for the inter-rater comparison (`figures/plot_three_way.py`); regenerate with `pipeline/build_raters_json.py` |
 | `scoring_guide_ana_v2.docx`, `scoring_guide_ana_version4.docx` | Human rater scoring guides (also inputs to the validation figures) |

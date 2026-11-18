@@ -1,22 +1,30 @@
-"""Build results/assay_catalog.json and results/paper_assays.json.
+"""Build data/results/assay_catalog.json and data/results/paper_assays.json.
 
-Reads every consensus JSON, normalises the free-text assay_name field to a
+Reads consensus JSONs, normalises the free-text assay_name field to a
 canonical assay name + category, and produces two artefacts:
 
   paper_assays.json   {stem: [{canonical, category, raw}]}
   assay_catalog.json  [{canonical, category, count, papers:[stems]}]
+
+Two modes:
+
+  --add STEM [STEM ...]   Add (or replace) only these papers on top of the
+                          committed files. Every other entry is left exactly
+                          as published. This is what the monthly update uses.
+  --rebuild               Rebuild both files from every consensus JSON. This
+                          changes published numbers, so run it deliberately.
 """
 from __future__ import annotations
-import json, os, re
-from collections import defaultdict
+import argparse, json, os, re, unicodedata
 from pathlib import Path
 
-ROOT = Path(__file__).parent
+from paths import CONSENSUS_DIR as _DEFAULT_CONSENSUS_DIR, RESULTS_DIR
+
 # CONSENSUS_DIR can be overridden by env var so the same script can build the
 # catalog from either the v1 or v2 consensus directory without code edits.
-CONSENSUS_DIR = Path(os.environ.get("CONSENSUS_DIR", str(ROOT / "results_full_consensus")))
-OUT_PAPER = ROOT / "results" / "paper_assays.json"
-OUT_CATALOG = ROOT / "results" / "assay_catalog.json"
+CONSENSUS_DIR = Path(os.environ.get("CONSENSUS_DIR", str(_DEFAULT_CONSENSUS_DIR)))
+OUT_PAPER = RESULTS_DIR / "paper_assays.json"
+OUT_CATALOG = RESULTS_DIR / "assay_catalog.json"
 
 # ── Canonical mapping ────────────────────────────────────────────────────────
 # Rules evaluated top-to-bottom; first match wins.
@@ -212,21 +220,13 @@ def normalise(raw: str) -> tuple[str, str]:
     return raw.strip(), "Miscellaneous"
 
 
-# ── Build paper_assays ───────────────────────────────────────────────────────
-paper_assays: dict[str, list[dict]] = {}
-catalog: dict[str, dict] = {}   # canonical → {category, count, papers}
+# ── Build ────────────────────────────────────────────────────────────────────
 
-for f in sorted(CONSENSUS_DIR.glob("*.json")):
-    if f.name.startswith("_"):
-        continue
-    try:
-        d = json.loads(f.read_text())
-    except Exception:
-        continue
-    stem = f.stem
-    seen = set()
+def assays_for(consensus: dict) -> list[dict]:
+    """Canonical assay rows for one consensus JSON (one row per canonical)."""
+    seen: set[str] = set()
     rows = []
-    for assay in (d.get("assays") or []):
+    for assay in (consensus.get("assays") or []):
         raw = (assay.get("assay_name") or "").strip()
         if not raw:
             continue
@@ -235,36 +235,112 @@ for f in sorted(CONSENSUS_DIR.glob("*.json")):
             continue
         seen.add(canonical)
         rows.append({"canonical": canonical, "category": category, "raw": raw})
-        if canonical not in catalog:
-            catalog[canonical] = {"canonical": canonical, "category": category,
-                                  "count": 0, "papers": []}
-        catalog[canonical]["count"] += 1
-        catalog[canonical]["papers"].append(stem)
-    paper_assays[stem] = rows
+    return rows
 
-# Sort catalog by count desc
-catalog_list = sorted(catalog.values(), key=lambda x: -x["count"])
 
-OUT_PAPER.parent.mkdir(exist_ok=True)
-OUT_PAPER.write_text(json.dumps(paper_assays, indent=2, ensure_ascii=False))
-OUT_CATALOG.write_text(json.dumps(catalog_list, indent=2, ensure_ascii=False))
+def catalog_from(paper_assays: dict[str, list[dict]],
+                 base: list[dict] | None = None) -> list[dict]:
+    """Aggregate per-paper rows into the catalog, sorted by count (stable)."""
+    catalog: dict[str, dict] = {e["canonical"]: e for e in (base or [])}
+    for stem, rows in paper_assays.items():
+        for r in rows:
+            if r["canonical"] not in catalog:
+                catalog[r["canonical"]] = {"canonical": r["canonical"],
+                                           "category": r["category"],
+                                           "count": 0, "papers": []}
+            catalog[r["canonical"]]["count"] += 1
+            catalog[r["canonical"]]["papers"].append(stem)
+    return sorted(catalog.values(), key=lambda x: -x["count"])
 
-# ── Summary ──────────────────────────────────────────────────────────────────
-from collections import Counter
-cat_counts = Counter(e["category"] for e in catalog_list)
-print(f"Papers processed:      {len(paper_assays)}")
-print(f"Canonical assays:      {len(catalog_list)}")
-print(f"\nCanonical assays by category:")
-for cat, n in sorted(cat_counts.items()):
-    print(f"  {cat:35s}  {n:3d} assays")
 
-print(f"\nTop 30 canonical assays by paper count:")
-for e in catalog_list[:30]:
-    print(f"  {e['count']:4d}  [{e['category']:30s}]  {e['canonical']}")
+def rebuild(consensus_dir: Path) -> tuple[dict, list]:
+    paper_assays: dict[str, list[dict]] = {}
+    for f in sorted(consensus_dir.glob("*.json")):
+        if f.name.startswith("_"):
+            continue
+        try:
+            d = json.loads(f.read_text())
+        except Exception:
+            continue
+        paper_assays[f.stem] = assays_for(d)
+    return paper_assays, catalog_from(paper_assays)
 
-# Warn about any raw names that hit the catch-all
-catchall = [e for e in catalog_list if e["category"] == "Miscellaneous" and e["count"] >= 2]
-if catchall:
-    print(f"\nMiscellaneous (≥2 papers) — may need a rule:")
-    for e in catchall:
-        print(f"  {e['count']:3d}  {e['canonical']}")
+
+def add_papers(stems: list[str], consensus_dir: Path = CONSENSUS_DIR,
+               out_paper: Path = OUT_PAPER, out_catalog: Path = OUT_CATALOG) -> list[str]:
+    """Add or replace `stems` in the committed files; leave the rest untouched.
+
+    Returns the stems actually written (those with a consensus JSON).
+    """
+    paper_assays = json.loads(out_paper.read_text()) if out_paper.exists() else {}
+    catalog = json.loads(out_catalog.read_text()) if out_catalog.exists() else []
+    nfc = lambda x: unicodedata.normalize("NFC", x)
+    added: dict[str, list[dict]] = {}
+    for stem in stems:
+        f = consensus_dir / f"{stem}.json"
+        if not f.exists():
+            continue
+        # Replacing a paper: take its old rows out of the catalog first.
+        for key in [k for k in paper_assays if nfc(k) == nfc(stem)]:
+            for r in paper_assays.pop(key):
+                e = next((e for e in catalog if e["canonical"] == r["canonical"]), None)
+                if e and key in e["papers"]:
+                    e["papers"].remove(key)
+                    e["count"] -= 1
+        added[stem] = assays_for(json.loads(f.read_text()))
+    catalog = [e for e in catalog if e["count"] > 0]
+    paper_assays.update(added)
+    catalog_list = catalog_from(added, base=catalog)
+    out_paper.parent.mkdir(parents=True, exist_ok=True)
+    out_paper.write_text(json.dumps(paper_assays, indent=2, ensure_ascii=False))
+    out_catalog.write_text(json.dumps(catalog_list, indent=2, ensure_ascii=False))
+    return list(added)
+
+
+def print_summary(paper_assays: dict, catalog_list: list) -> None:
+    from collections import Counter
+    cat_counts = Counter(e["category"] for e in catalog_list)
+    print(f"Papers processed:      {len(paper_assays)}")
+    print(f"Canonical assays:      {len(catalog_list)}")
+    print(f"\nCanonical assays by category:")
+    for cat, n in sorted(cat_counts.items()):
+        print(f"  {cat:35s}  {n:3d} assays")
+
+    print(f"\nTop 30 canonical assays by paper count:")
+    for e in catalog_list[:30]:
+        print(f"  {e['count']:4d}  [{e['category']:30s}]  {e['canonical']}")
+
+    # Warn about any raw names that hit the catch-all
+    catchall = [e for e in catalog_list if e["category"] == "Miscellaneous" and e["count"] >= 2]
+    if catchall:
+        print(f"\nMiscellaneous (≥2 papers) — may need a rule:")
+        for e in catchall:
+            print(f"  {e['count']:3d}  {e['canonical']}")
+
+
+def main() -> None:
+    ap = argparse.ArgumentParser(description=__doc__,
+                                 formatter_class=argparse.RawDescriptionHelpFormatter)
+    mode = ap.add_mutually_exclusive_group(required=True)
+    mode.add_argument("--add", nargs="+", metavar="STEM",
+                      help="add/replace these papers, keep everything else as published")
+    mode.add_argument("--rebuild", action="store_true",
+                      help="rebuild from every consensus JSON (changes published numbers)")
+    args = ap.parse_args()
+
+    if args.rebuild:
+        paper_assays, catalog_list = rebuild(CONSENSUS_DIR)
+        OUT_PAPER.parent.mkdir(parents=True, exist_ok=True)
+        OUT_PAPER.write_text(json.dumps(paper_assays, indent=2, ensure_ascii=False))
+        OUT_CATALOG.write_text(json.dumps(catalog_list, indent=2, ensure_ascii=False))
+        print_summary(paper_assays, catalog_list)
+    else:
+        written = add_papers(args.add)
+        print(f"Added/replaced {len(written)} paper(s): {', '.join(written) or '-'}")
+        missing = sorted(set(args.add) - set(written))
+        if missing:
+            print(f"No consensus JSON for: {', '.join(missing)}")
+
+
+if __name__ == "__main__":
+    main()

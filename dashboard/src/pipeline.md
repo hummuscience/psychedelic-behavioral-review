@@ -142,3 +142,4 @@ display(Plot.plot({
 - **pdf_unavailable_relevant** — paywalled and not retrievable.
 - **included_in_review** — final, scored corpus.
 - **manually_added_to_corpus** — papers added directly to the corpus outside the PubMed expansion.
+- **excluded_duplicate_of_corpus** — a later PubMed record of a paper already in the corpus (typically the journal version of a preprint); not scored twice.
