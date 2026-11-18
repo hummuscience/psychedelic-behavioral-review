@@ -110,24 +110,30 @@ chosen and validated.
 
 ### One-time setup
 
-1. **Repo → Settings → Actions → General:** under *Workflow permissions*, choose
-   *Read and write permissions* and tick *Allow GitHub Actions to create and
-   approve pull requests*.
+1. **Repo → Settings → Actions → General:** under *Workflow permissions*, tick
+   *Allow GitHub Actions to create and approve pull requests* and save. (The
+   read/write option above it can stay as it is: the workflow asks for the
+   access it needs.)
 2. **A private folder for PDFs.** PDFs can't go in this public repo, so the
-   workflow keeps them in a WebDAV folder (for example, Nextcloud). Create a
-   folder and an app password for it.
+   workflow keeps them in a WebDAV folder. With Nextcloud: create a folder with
+   an `inbox` subfolder, then share the folder by **share link** with permission
+   *Can edit*, a **password**, no expiry date and *Hide download* off. The part of
+   the link after `/s/` is the share token. A share link reaches only that folder;
+   an app password would open the whole account to the workflow.
 3. **Repo → Settings → Secrets and variables → Actions**, add these secrets:
 
    | Secret | What |
    |---|---|
    | `SAIA_API_KEY` | GWDG SAIA key (Docling + the three candidate models) |
    | `AZURE_FOUNDRY_API_KEY`, `AZURE_FOUNDRY_ENDPOINT` | the judge (Opus via Azure Foundry) |
-   | `CONTACT_EMAIL` | sent to NCBI and Unpaywall, which ask API users for one |
-   | `STORE_WEBDAV_URL` | the folder's WebDAV URL, e.g. `https://<host>/remote.php/dav/files/<user>/psychedelic-review` |
-   | `STORE_WEBDAV_USER`, `STORE_WEBDAV_PASSWORD` | the folder's user name and app password |
+   | `STORE_WEBDAV_URL` | for a Nextcloud share link: `https://<your-nextcloud-host>/public.php/webdav` |
+   | `STORE_WEBDAV_USER` | the share token |
+   | `STORE_WEBDAV_PASSWORD` | the share link's password |
+   | `CONTACT_EMAIL` | optional but recommended: sent to NCBI and Unpaywall, which ask API users for one. Without it, Unpaywall isn't tried and fewer open-access PDFs are found |
    | `NCBI_API_KEY` | optional; raises PubMed's rate limit |
 
-   Optional variables: `AZURE_FOUNDRY_MODEL` (default `claude-opus-4-7`);
+   And these variables (*Variables* tab): `STORE_WEBDAV_VENDOR` = `other` for a
+   share link. Optional: `AZURE_FOUNDRY_MODEL` (default `claude-opus-4-7`);
    `JUDGE_PROVIDER` (`foundry` by default; set `anthropic` and add an
    `ANTHROPIC_API_KEY` secret to use the Anthropic API directly).
 4. **Run it once by hand:** Actions → *Monthly update* → *Run workflow*. The first

@@ -120,3 +120,39 @@ def test_duplicate_detection() -> None:
            "title": registry["lu2025"]["title"].replace("’", "'")}
     assert find_duplicate(rec, registry) == "lu2025"
     assert find_duplicate({"doi": "", "title": "An unrelated title about rats."}, registry) is None
+
+
+# ── A new paper never changes an old record (Cavallaro 2026 case) ────────────
+
+def _add_monthly_paper(root: Path, stem: str, pmid: str, doi: str, authors: str) -> None:
+    """Simulate fetch_pdfs.py having added a paper (CSV row, registry, inventory)."""
+    with open(root / "data/pubmed_expansion.csv", "a", encoding="utf-8", newline="") as f:
+        csv.writer(f, lineterminator="\r\n").writerow(
+            [pmid, "Mescaline alters something in awake rats.", authors, "2026",
+             "Some journal", doi, "update:2026-12-03", "no", "Mescaline"])
+    reg_path = root / "data/paper_registry.json"
+    reg = json.loads(reg_path.read_text())
+    reg[stem] = {"stem": stem, "doi": doi, "pmid": pmid, "match_via": "monthly_update"}
+    reg_path.write_text(json.dumps(reg, indent=2, ensure_ascii=False))
+    with open(root / "data/pdf_inventory.csv", "a", encoding="utf-8", newline="") as f:
+        csv.writer(f, lineterminator="\r\n").writerow([stem, "pdfs", "True", "False"])
+
+
+def test_new_paper_with_an_old_records_stem_changes_nothing(data_copy: Path) -> None:
+    # The original search has "Cavallaro N et al." 2026 (stem cavallaro2026,
+    # no PDF). A different Cavallaro 2026 paper arrives under the same stem.
+    _add_monthly_paper(data_copy, "cavallaro2026", "99999998", "10.9999/cav.2026",
+                       "Cavallaro N et al.")
+    run("build_prisma_accounting.py", data_copy)
+    rows = {r["pmid"]: r for r in csv.DictReader(
+        open(data_copy / "data/prisma_accounting.csv", encoding="utf-8"))}
+    published = list(csv.DictReader(open(REPO / "data/prisma_accounting.csv", encoding="utf-8")))
+    assert all(rows[r["pmid"]] == r for r in published if r["pmid"])
+    assert rows["99999998"]["disposition"] == "pending_scoring"
+
+
+def test_taken_stems_cover_original_search_records() -> None:
+    from fetch_pdfs import taken_stems
+    taken = taken_stems()
+    assert "cavallaro2026" in taken  # only a PRISMA record, no PDF
+    assert assign_stem("Cavallaro N et al.", "2026", taken) == "cavallaro2026b"
