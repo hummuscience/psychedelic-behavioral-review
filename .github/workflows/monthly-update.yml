@@ -1,0 +1,141 @@
+name: Monthly update
+
+# Searches PubMed for new records, fetches open-access PDFs, scores new studies
+# and opens a pull request with the updated data. Nothing reaches the dashboard
+# until that PR is merged. Setup: see "Monthly update" in README.md.
+
+on:
+  schedule:
+    - cron: "17 4 3 * *" # 04:17 UTC on the 3rd of every month
+  workflow_dispatch:
+    inputs:
+      max_papers:
+        description: "Most papers to score in this run"
+        default: "30"
+      skip_scoring:
+        description: "Search and fetch PDFs only (no LLM calls)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: monthly-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      # If last run's PR hasn't been merged yet, continue from its data so its
+      # papers aren't searched and scored again; the PR then covers both runs.
+      - name: Build on the open update PR, if any
+        id: base
+        run: |
+          open=$(gh pr list --head monthly-update --state open --json number -q '.[0].number')
+          if [ -n "$open" ]; then
+            git fetch --depth=1 origin monthly-update
+            git checkout FETCH_HEAD -- data/
+            echo "Continuing from unmerged PR #$open"
+            echo "open_pr=$open" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          uv sync --frozen
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq rclone pandoc
+
+      - name: Connect the private PDF store
+        env:
+          STORE_URL: ${{ secrets.STORE_WEBDAV_URL }}
+          STORE_USER: ${{ secrets.STORE_WEBDAV_USER }}
+          STORE_PASS: ${{ secrets.STORE_WEBDAV_PASSWORD }}
+        run: |
+          if [ -z "$STORE_URL" ]; then
+            echo "::warning::No PDF store configured; PDFs from this run won't be kept."
+            exit 0
+          fi
+          obscured=$(rclone obscure "$STORE_PASS")
+          echo "::add-mask::$obscured"
+          {
+            echo "STORE_REMOTE=store:"
+            echo "RCLONE_CONFIG_STORE_TYPE=webdav"
+            echo "RCLONE_CONFIG_STORE_VENDOR=${{ vars.STORE_WEBDAV_VENDOR || 'nextcloud' }}"
+            echo "RCLONE_CONFIG_STORE_URL=$STORE_URL"
+            echo "RCLONE_CONFIG_STORE_USER=$STORE_USER"
+            echo "RCLONE_CONFIG_STORE_PASS=$obscured"
+          } >> "$GITHUB_ENV"
+
+      - name: Run the update
+        id: run
+        env:
+          SAIA_API_KEY: ${{ secrets.SAIA_API_KEY }}
+          AZURE_FOUNDRY_API_KEY: ${{ secrets.AZURE_FOUNDRY_API_KEY }}
+          AZURE_FOUNDRY_ENDPOINT: ${{ secrets.AZURE_FOUNDRY_ENDPOINT }}
+          AZURE_FOUNDRY_MODEL: ${{ vars.AZURE_FOUNDRY_MODEL || 'claude-opus-4-7' }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          JUDGE_PROVIDER: ${{ vars.JUDGE_PROVIDER || 'foundry' }}
+          NCBI_API_KEY: ${{ secrets.NCBI_API_KEY }}
+          NCBI_EMAIL: ${{ secrets.CONTACT_EMAIL }}
+          UNPAYWALL_EMAIL: ${{ secrets.CONTACT_EMAIL }}
+          MAX_PAPERS: ${{ inputs.max_papers || '30' }}
+        run: |
+          uv run python pipeline/monthly_update.py \
+            ${{ inputs.skip_scoring && '--skip-scoring' || '' }}
+          if [ -n "${{ steps.base.outputs.open_pr }}" ]; then
+            printf '\n> This run continued from the unmerged changes of the previous update; the PR contains both. The summary above covers the latest run only.\n' \
+              >> work/reports/pr_body.md
+          fi
+
+      - name: Keep the run reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: monthly-update-reports
+          path: |
+            work/reports/pr_body.md
+            work/reports/missing_pdfs.md
+            work/reports/run_summary.json
+            work/reports/prisma_summary.txt
+          if-no-files-found: ignore
+
+      # Opens the PR, or updates the open one. Does nothing if data/ is unchanged.
+      - name: Open or update the pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: monthly-update
+          base: main
+          commit-message: "data: monthly update (${{ steps.run.outputs.run_date }})"
+          title: "Monthly update (${{ steps.run.outputs.run_date }})"
+          body-path: work/reports/pr_body.md
+          labels: monthly-update
+          add-paths: data/
+
+      - name: Update the "PDFs needed" issue
+        run: |
+          gh label create pdfs-needed --color FBCA04 --force \
+            --description "Paywalled papers for the monthly update" >/dev/null
+          num=$(gh issue list --label pdfs-needed --state open --json number -q '.[0].number')
+          if [ "${{ steps.run.outputs.missing_pdfs }}" != "0" ]; then
+            if [ -n "$num" ]; then
+              gh issue edit "$num" --body-file work/reports/missing_pdfs.md
+            else
+              gh issue create --title "Monthly update: PDFs needed" --label pdfs-needed \
+                --body-file work/reports/missing_pdfs.md
+            fi
+          elif [ -n "$num" ]; then
+            gh issue close "$num" --comment "All relevant papers now have a PDF."
+          fi

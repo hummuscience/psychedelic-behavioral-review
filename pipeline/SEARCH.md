@@ -82,8 +82,46 @@ how many of the 532 `expanded` + `both` PMIDs each query returns):
 | Methods compounds `[ti]` only AND rodent `[tiab]`                         |   496 |   90 |        189 |
 
 The behaviour-restricted Methods query is the closest lead but still misses 134
-records. **Open item:** recover the expanded query (or decide which query the
-monthly update should use) before automating the search step.
+records. The exact expanded query remains unrecovered.
+
+## Query used by the monthly update
+
+The monthly update (`search_pubmed.py`) runs the **Methods query as printed**.
+Checked on 2026-11-18 against the papers that matter, the 263 PubMed records with
+`disposition = included_in_review` in `data/prisma_accounting.csv` (window
+`2014/01/01:2026/04/01[dp]`; "per month" = records added to PubMed over the 12
+months to 2026-09-30, divided by 12):
+
+| query                                   | total | included found | per month |
+|-----------------------------------------|------:|---------------:|----------:|
+| original 3-term query                   |   400 |        195/263 |        11 |
+| **Methods query as printed**            | 4,710 |    **261/263** |        51 |
+| Methods query AND `behav*[tiab]`        |   620 |        209/263 |        10 |
+
+It is the query the paper reports, and it finds all but two included papers. A
+`behav*` restriction loses a fifth of them, because many abstracts don't use the
+word. The cost is volume, about 51 records a month, most of which the
+classifier drops on title alone.
+
+How it runs:
+
+- **Incremental by Entrez date** (`[edat]`, when a record entered PubMed),
+  from the previous run to today, with the original floor
+  `2014/01/01:3000/12/31[dp]`. State is in `data/search_state.json`.
+- **First run** starts at the published cutoff, 2026/04/01. Records from before
+  then that the printed query finds but the CSV lacks (about 3,900) are **not**
+  backfilled: the published corpus stays as it is.
+- New rows are appended to `data/pubmed_expansion.csv` with
+  `source = "update:<run date>"`. Existing rows are never rewritten.
+- **Duplicates.** A new record with the same DOI as a corpus paper, or a title
+  at least 90% similar to one, is recorded in `data/manual_decisions.json` as
+  `excluded_duplicate_of_corpus` instead of being scored. This catches journal
+  versions of preprints already in the corpus. The first run found three
+  (`lu2025`, `welch2025`, `chiu2023`). On the corpus, true duplicates score 1.0
+  and the closest unrelated pair 0.66.
+- **Mapping to the corpus.** `build_prisma_accounting.py` matches `update:` rows
+  to papers only through the registry (PMID, then DOI), never by
+  surname and year, which would attach a new Allen 2026 record to `allen2026`.
 
 ## `already_included`
 
@@ -91,10 +129,34 @@ monthly update should use) before automating the search step.
 code is missing, but `build_prisma_accounting.py` carries the same 98 through as
 `already_in_original = True` in `data/prisma_accounting.csv`.
 
-## Compound classifier (missing)
+## Compound classifier (reconstructed)
 
-The classifier that filled `detected_compounds` was not found. Its output labels,
-with record counts (one record can carry several labels, separated by `; `):
+The original classifier was not found. `classify_compounds.py` reconstructs it.
+The original classified on the **title only**: on titles, simple keyword rules
+reproduce its labels almost exactly, while adding the abstract creates hundreds
+of disagreements. Measured against the 850 records PubMed still returns:
+
+- exact label string: 95%;
+- screening decision (relevant / MDMA-only / off-topic / false positive):
+  **98.9%** (841/850). Every disagreement is a record the original dropped and
+  the reconstruction keeps; it drops nothing the original kept;
+- every paper included through the classifier would still be sent to scoring.
+  Five included papers carried "Unclassified" in the original too; they came in
+  through `already_included` (3) or manual triage (2).
+
+Where the original was inconsistent, the rules lean towards keeping a record:
+the "Other serotonergic" label (5-HT2A, phenethylamines, NBOMe, 2C-x, DOB/DOM,
+lisuride) and bare "DOI". A wrongly kept record costs one scoring run and shows
+up in review; a wrongly dropped one silently loses a study. Each monthly PR
+lists the dropped titles so missed records can be rescued by adding their DOI to
+`data/manual_decisions.json` with `"disposition": "included_in_review"`.
+
+`build_prisma_accounting.py`'s relevant-label list lacked `Mescaline` and
+`5-MeO-DMT`; both are now in it. No published record changes: the one
+mescaline-only record was included through its PDF.
+
+Original output labels, with record counts (one record can carry several labels,
+separated by `; `):
 
 | label                                     | records |
 |-------------------------------------------|--------:|
