@@ -52,7 +52,14 @@ MODELS = [
     ("qwen",   "qwen3.5-397b-a17b"),
     ("glm",    "glm-4.7"),
     ("gptoss", "openai-gpt-oss-120b"),
+    # 2026-11: glm-4.7 and gpt-oss-120b are no longer served on SAIA. Candidate
+    # replacements for the monthly update (choose with --models / SCORING_MODELS):
+    ("glm53",     "glm-5.3-flash"),           # successor in the GLM family
+    ("deepseek4", "deepseek-v4-flash-0731"),  # different family
+    ("gemma4",    "gemma-4-31b-it"),          # different family
 ]
+# The published v2 ensemble; used when --models isn't given.
+PUBLISHED_TAGS = ("qwen", "glm", "gptoss")
 
 
 def score_one(provider: SaiaProvider, pdf_path: Path) -> dict:
@@ -88,7 +95,8 @@ def main():
     ap.add_argument("--limit", type=int, default=10,
                     help="Score only the first N PDFs (alphabetical) that have cached markdown")
     ap.add_argument("--models", type=str, default=None,
-                    help="Comma-separated subset of model tags to run (default: all)")
+                    help="Comma-separated model tags to run (default: the published "
+                         "v2 ensemble, " + ",".join(PUBLISHED_TAGS) + ")")
     ap.add_argument("--workers", type=int, default=1,
                     help="Total concurrent (model, paper) tasks (default: 1 = sequential). "
                          "Recommended: 6-12 (e.g. 3 models x 4 papers = 12).")
@@ -97,10 +105,11 @@ def main():
     if not os.environ.get("SAIA_API_KEY"):
         sys.exit("SAIA_API_KEY not set")
 
-    selected = (
-        [m for m in MODELS if m[0] in set(args.models.split(","))]
-        if args.models else MODELS
-    )
+    wanted = set(args.models.split(",")) if args.models else set(PUBLISHED_TAGS)
+    unknown = wanted - {tag for tag, _ in MODELS}
+    if unknown:
+        sys.exit(f"unknown model tag(s): {', '.join(sorted(unknown))}")
+    selected = [m for m in MODELS if m[0] in wanted]
 
     # Pick papers that have docling cache
     cached_pdfs: list[Path] = []

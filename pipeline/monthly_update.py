@@ -43,7 +43,9 @@ import store  # noqa: E402
 from paths import (CANDIDATES_DIR, CONSENSUS_DIR, PDF_DIR,  # noqa: E402
                    PDF_INVENTORY_CSV, REGISTRY_JSON, REPORTS_DIR, SUPP_DIR, WORK_DIR)
 
-CANDIDATE_MODELS = "qwen,glm,gptoss"
+# Candidate models (tags from triple_score.MODELS). The published v2 ensemble
+# was qwen,glm,gptoss; glm-4.7 and gpt-oss-120b are no longer served on SAIA.
+CANDIDATE_MODELS = os.environ.get("SCORING_MODELS", "qwen,glm53,deepseek4")
 MAX_DROPPED_IN_PR = 100
 
 
@@ -81,15 +83,25 @@ def saia_key_problem(base_url: str | None = None) -> str:
     req = urllib.request.Request(f"{base_url.rstrip('/')}/models",
                                  headers={"Authorization": f"Bearer {key}"})
     try:
-        with urllib.request.urlopen(req, timeout=30):
-            return ""
+        with urllib.request.urlopen(req, timeout=30) as r:
+            listed = {m.get("id") for m in json.loads(r.read() or b"{}").get("data", [])}
     except urllib.error.HTTPError as e:
         if e.code in (401, 403):
             detail = e.read()[:200].decode("utf-8", "replace").strip()
             return f"SAIA rejected the API key (HTTP {e.code}: {detail})"
         return ""
-    except (urllib.error.URLError, TimeoutError):
+    except (urllib.error.URLError, TimeoutError, ValueError):
         return ""
+    from triple_score import MODELS
+    ids = dict(MODELS)
+    tags = [t for t in CANDIDATE_MODELS.split(",") if t]
+    unknown = [t for t in tags if t not in ids]
+    if unknown:
+        return f"unknown model tag(s) in SCORING_MODELS: {', '.join(unknown)}"
+    missing = [ids[t] for t in tags if listed and ids[t] not in listed]
+    if missing:
+        return f"SAIA no longer offers {', '.join(missing)} (SCORING_MODELS={CANDIDATE_MODELS})"
+    return ""
 
 
 def score(stems: list[str], judge_provider: str, workers: int) -> None:

@@ -239,3 +239,107 @@ def test_saia_key_check(monkeypatch) -> None:
         assert monthly_update.saia_key_problem(base) == "SAIA_API_KEY is not set"
     finally:
         srv.shutdown()
+
+
+# ── Judge request shape for current Claude models (no API calls) ────────────
+
+class _FakeStream:
+    def __init__(self, message):
+        self.message = message
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *a):
+        return False
+
+    def get_final_message(self):
+        return self.message
+
+
+def _fake_message(stop_reason="end_turn", text='{"assays": []}', category=None):
+    from types import SimpleNamespace as NS
+    return NS(stop_reason=stop_reason,
+              stop_details=NS(category=category) if stop_reason == "refusal" else None,
+              content=[NS(type="thinking", thinking=""), NS(type="text", text=text)],
+              usage=NS(input_tokens=10, output_tokens=5, cache_read_input_tokens=0,
+                       cache_creation_input_tokens=0))
+
+
+class _FakeClient:
+    def __init__(self, replies):
+        self.calls, self.replies = [], dict(replies)
+        from types import SimpleNamespace as NS
+        self.messages = NS(stream=self._stream)
+
+    def _stream(self, **kwargs):
+        self.calls.append(kwargs)
+        return _FakeStream(self.replies[kwargs["model"]])
+
+
+def test_judge_request_has_no_temperature_and_explicit_effort(monkeypatch):
+    import judge_consensus as jc
+    monkeypatch.setattr(jc, "JUDGE_EFFORT", "high")
+    client = _FakeClient({"claude-opus-5-5": _fake_message()})
+    text, usage = jc.call_judge(client, "foundry", "claude-opus-5-5",
+                                [{"type": "text", "text": "sys"}], "paper")
+    call = client.calls[0]
+    assert "temperature" not in call
+    assert call["output_config"] == {"effort": "high"}
+    assert call["max_tokens"] == 64000
+    assert text == '{"assays": []}' and usage["served_by"] == "claude-opus-5-5"
+
+
+def test_judge_refusal_falls_back_and_is_recorded(monkeypatch):
+    import judge_consensus as jc
+    monkeypatch.setattr(jc, "JUDGE_FALLBACK_MODEL", "claude-opus-5")
+    client = _FakeClient({"claude-opus-5-5": _fake_message("refusal", category="bio"),
+                          "claude-opus-5": _fake_message()})
+    text, usage = jc.call_judge(client, "foundry", "claude-opus-5-5",
+                                [{"type": "text", "text": "sys"}], "paper")
+    assert [c["model"] for c in client.calls] == ["claude-opus-5-5", "claude-opus-5"]
+    assert usage["served_by"] == "claude-opus-5"
+    assert usage["fallback_from"] == {"model": "claude-opus-5-5", "category": "bio"}
+
+
+def test_judge_cut_off_output_is_an_error(monkeypatch):
+    import judge_consensus as jc
+    client = _FakeClient({"claude-opus-5-5": _fake_message("max_tokens")})
+    with pytest.raises(RuntimeError, match="max_tokens"):
+        jc.call_judge(client, "foundry", "claude-opus-5-5",
+                      [{"type": "text", "text": "sys"}], "paper")
+
+
+def test_saia_check_reports_models_it_no_longer_offers(monkeypatch):
+    import threading
+    from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+    import monthly_update
+
+    class Saia(BaseHTTPRequestHandler):
+        def log_message(self, *a):
+            pass
+
+        def do_GET(self):
+            body = json.dumps({"data": [{"id": "qwen3.5-397b-a17b"},
+                                        {"id": "glm-5.3-flash"}]}).encode()
+            self.send_response(200)
+            self.send_header("Content-Length", str(len(body)))
+            self.end_headers()
+            self.wfile.write(body)
+
+    srv = ThreadingHTTPServer(("127.0.0.1", 0), Saia)
+    threading.Thread(target=srv.serve_forever, daemon=True).start()
+    base = f"http://127.0.0.1:{srv.server_address[1]}/v1"
+    monkeypatch.setenv("NO_PROXY", "127.0.0.1")
+    monkeypatch.setenv("no_proxy", "127.0.0.1")
+    monkeypatch.setenv("SAIA_API_KEY", "good")
+    try:
+        monkeypatch.setattr(monthly_update, "CANDIDATE_MODELS", "qwen,glm53")
+        assert monthly_update.saia_key_problem(base) == ""
+        monkeypatch.setattr(monthly_update, "CANDIDATE_MODELS", "qwen,glm,gptoss")
+        msg = monthly_update.saia_key_problem(base)
+        assert "glm-4.7" in msg and "openai-gpt-oss-120b" in msg
+        monkeypatch.setattr(monthly_update, "CANDIDATE_MODELS", "qwen,nosuch")
+        assert "unknown model tag" in monthly_update.saia_key_problem(base)
+    finally:
+        srv.shutdown()
