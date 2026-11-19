@@ -353,7 +353,9 @@ def test_bridge_comparison_matches_published_validation(data_copy: Path) -> None
     work = data_copy / "work" / "bridge"
     (work / "consensus").mkdir(parents=True)
     for s in rl.PAPER_STEMS:  # "new" scores = the published ones
-        shutil.copy(REPO / "data/results_v2_full_consensus" / f"{s}.json", work / "consensus")
+        res = json.loads((REPO / "data/results_v2_full_consensus" / f"{s}.json").read_text())
+        res["judge_input_models"] = ["qwen", "glm53", "deepseek4"]
+        (work / "consensus" / f"{s}.json").write_text(json.dumps(res))
         for t in ("qwen", "glm53", "deepseek4"):
             (work / "candidates" / t).mkdir(parents=True, exist_ok=True)
             shutil.copy(REPO / "data/results_v2_full_consensus" / f"{s}.json", work / "candidates" / t)
@@ -365,3 +367,106 @@ def test_bridge_comparison_matches_published_validation(data_copy: Path) -> None
     assert res["rater 2 vs published LLM"]["B"]["n"] == 49
     assert round(res["rater 2 vs published LLM"]["B"]["icc"], 2) == 0.92
     assert all(res["published LLM vs new LLM"][d]["pct"] == 100 for d in "BED")
+
+    payload = json.loads(report.read_text())
+    assert payload["complete"] and all(p["judged"] for p in payload["papers"].values())
+
+
+def test_bridge_flags_incomplete_runs(data_copy: Path) -> None:
+    """Missing candidate scores, or verdicts judged from other models, fail the run."""
+    sys.path.insert(0, str(REPO / "figures"))
+    import rater_lib as rl
+    work = data_copy / "work" / "bridge"
+    (work / "consensus").mkdir(parents=True)
+    for i, s in enumerate(rl.PAPER_STEMS):
+        res = json.loads((REPO / "data/results_v2_full_consensus" / f"{s}.json").read_text())
+        res["judge_input_models"] = ["gemma4"]  # judged from one model only
+        (work / "consensus" / f"{s}.json").write_text(json.dumps(res))
+        for t in ("qwen", "glm53", "gemma4"):
+            if t == "glm53" and i >= 5:
+                continue  # glm53 scored only 5 papers
+            (work / "candidates" / t).mkdir(parents=True, exist_ok=True)
+            shutil.copy(REPO / "data/results_v2_full_consensus" / f"{s}.json", work / "candidates" / t)
+    env = {**os.environ, "DATA_DIR": str(data_copy / "data"), "WORK_DIR": str(data_copy / "work")}
+    r = subprocess.run([sys.executable, str(PIPELINE / "bridge_test.py"), "--compare-only",
+                        "--candidates", "qwen,glm53,gemma4", "--choose-from", "gemma4"],
+                       env=env, capture_output=True, text=True)
+    assert r.returncode == 1
+    assert "::error::Bridge test incomplete: `glm53` scored 5 of 20 papers" in r.stdout
+    payload = json.loads(next((data_copy / "data/calibration").glob("bridge_*.json")).read_text())
+    assert not payload["complete"]
+    assert not any(p["judged"] for p in payload["papers"].values())
+    md = next((data_copy / "data/calibration").glob("bridge_*.md")).read_text()
+    assert "Incomplete run" in md
+
+
+# ── SAIA client: waits out rate limits and busy models ──────────────────────
+
+def _saia_error(cls, status: int, msg: str, headers: dict | None = None):
+    import httpx
+    req = httpx.Request("POST", "https://chat-ai.academiccloud.de/v1/chat/completions")
+    return cls(msg, response=httpx.Response(status, request=req, headers=headers or {}), body=None)
+
+
+def test_saia_chat_retries_rate_limits_and_busy_models(monkeypatch) -> None:
+    import openai
+    import provider
+    monkeypatch.setattr(provider, "_saia_throttle", lambda: None)
+    errors = [
+        _saia_error(openai.RateLimitError, 429, "Rate limit exceeded. Retry after 1 seconds."),
+        _saia_error(openai.InternalServerError, 503,
+                    "All instances of service 'qwen3.5-397b-a17b' are at max capacity."),
+    ]
+
+    class Completions:
+        calls = 0
+
+        def create(self, **kw):
+            Completions.calls += 1
+            if errors:
+                raise errors.pop(0)
+            return "ok"
+
+    client = type("C", (), {"chat": type("Chat", (), {"completions": Completions()})()})()
+    waits: list[float] = []
+    assert provider.saia_chat(client, sleep=waits.append, model="m") == "ok"
+    assert Completions.calls == 3
+    assert 1.5 <= waits[0] <= 4      # Retry-After from the message, plus jitter
+    assert 24 <= waits[1] <= 36      # first busy-model wait (30 s ± 20%)
+
+
+def test_saia_chat_gives_up_on_client_errors(monkeypatch) -> None:
+    import openai
+    import provider
+    monkeypatch.setattr(provider, "_saia_throttle", lambda: None)
+
+    class Completions:
+        def create(self, **kw):
+            raise _saia_error(openai.AuthenticationError, 401, "invalid key")
+
+    client = type("C", (), {"chat": type("Chat", (), {"completions": Completions()})()})()
+    with pytest.raises(openai.AuthenticationError):
+        provider.saia_chat(client, sleep=lambda s: pytest.fail("should not wait"), model="m")
+
+
+def test_saia_throttle_caps_requests_per_10s(monkeypatch) -> None:
+    import provider
+    clock = {"t": 1000.0}
+    monkeypatch.setattr(provider.time, "monotonic", lambda: clock["t"])
+    monkeypatch.setattr(provider.time, "sleep", lambda s: clock.__setitem__("t", clock["t"] + s))
+    monkeypatch.setattr(provider, "_saia_recent", provider.deque())
+    for _ in range(provider.SAIA_MAX_REQUESTS_PER_10S + 1):
+        provider._saia_throttle()
+    assert clock["t"] >= 1010  # the extra request waited for the window to clear
+
+
+# ── Judge: malformed replies ────────────────────────────────────────────────
+
+def test_judge_json_extraction() -> None:
+    from judge_consensus import _extract_json
+    assert _extract_json('```json\n{"a": 1}\n```', "x", {}) == {"a": 1}
+    assert _extract_json('Here you go:\n{"a": {"b": 2}}\nDone.', "x", {}) == {"a": {"b": 2}}
+    with pytest.raises(ValueError, match="could not parse"):
+        _extract_json('{"a": 1 "b": 2}', "x", {})
+    with pytest.raises(ValueError, match="empty response"):
+        _extract_json("```\n```", "x", {})

@@ -300,6 +300,30 @@ def call_judge(client, provider: str, model: str, system_blocks: list[dict],
     return text, usage
 
 
+def _extract_json(text: str, stem: str, usage: dict) -> dict:
+    """The JSON object in a judge reply (tolerates fences and surrounding prose)."""
+    text = text.strip()
+    if text.startswith("```"):
+        lines = text.split("\n", 1)
+        text = lines[1] if len(lines) > 1 else ""
+    # Also strip a trailing fence (Haiku sometimes emits ``` only at the end).
+    text = text.strip()
+    if text.endswith("```"):
+        text = text.rsplit("```", 1)[0].strip()
+    if not text:
+        raise ValueError(
+            f"empty response from judge for {stem} "
+            f"(in_tokens={usage.get('input_tokens')}, out_tokens={usage.get('output_tokens')})"
+        )
+    first, last = text.find("{"), text.rfind("}")
+    if first >= 0 and last > first:
+        text = text[first: last + 1]
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError as e:
+        raise ValueError(f"could not parse JSON from judge for {stem} ({e})") from None
+
+
 def judge_one(client, provider: str, model: str, stem: str, pdf_dir: Path,
               candidates_root: Path, model_tags: list[str], max_tokens: int = 64000) -> dict:
     md_path = pdf_dir / f"{stem}.docling.md"
@@ -329,45 +353,25 @@ def judge_one(client, provider: str, model: str, stem: str, pdf_dir: Path,
         },
     ]
 
-    text, usage = call_judge(client, provider, model, system_blocks, user_msg, max_tokens=max_tokens)
-    raw = text
-    text = text.strip()
-    # Strip leading prose / fences if present
-    if text.startswith("```"):
-        # remove first fence line
-        lines = text.split("\n", 1)
-        text = lines[1] if len(lines) > 1 else ""
-    # Always strip a trailing fence too (Haiku sometimes emits ``` only at the
-    # end, even when no opening fence is present).
-    text = text.strip()
-    if text.endswith("```"):
-        text = text.rsplit("```", 1)[0].strip()
-    if not text:
-        raise RuntimeError(
-            f"empty response from judge for {stem} "
-            f"(in_tokens={usage['input_tokens']}, out_tokens={usage['output_tokens']})"
-        )
-    # Find first { and last } if there's surrounding prose
-    if not text.startswith("{"):
-        first = text.find("{")
-        last = text.rfind("}")
-        if first >= 0 and last > first:
-            text = text[first : last + 1]
-    elif not text.endswith("}"):
-        # Trim trailing prose
-        last = text.rfind("}")
-        if last > 0:
-            text = text[: last + 1]
-    try:
-        parsed = json.loads(text)
-    except json.JSONDecodeError:
-        # Save raw for inspection
-        debug_path = Path(f"/tmp/judge_raw_{stem}.txt")
-        debug_path.write_text(raw)
-        raise RuntimeError(
-            f"could not parse JSON from judge for {stem}; "
-            f"raw saved to {debug_path}"
-        )
+    # A malformed reply (e.g. a missing comma deep in the JSON) happens now and
+    # then; ask once more before giving up on the paper.
+    spent = {"input_tokens": 0, "output_tokens": 0}
+    for attempt in (1, 2):
+        text, usage = call_judge(client, provider, model, system_blocks, user_msg,
+                                 max_tokens=max_tokens)
+        try:
+            parsed = _extract_json(text, stem, usage)
+            break
+        except ValueError as e:
+            if attempt == 2:
+                debug_path = Path(f"/tmp/judge_raw_{stem}.txt")
+                debug_path.write_text(text)
+                raise RuntimeError(f"{e}; raw saved to {debug_path}") from None
+            print(f"  [judge] {stem}: {e}; asking again", flush=True)
+            for k in spent:
+                spent[k] += usage.get(k, 0)
+    for k in spent:
+        usage[k] = usage.get(k, 0) + spent[k]
     parsed = normalize_keys(parsed)
 
     filter_non_behavioural_assays(parsed)
