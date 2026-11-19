@@ -54,6 +54,12 @@ DEFAULT_JUDGE_MODELS = {
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 SAIA_BASE_URL = "https://chat-ai.academiccloud.de/v1"
 DEFAULT_MODELS = ["qwen", "glm", "gptoss"]
+# Depth of the judge's reasoning (output_config.effort). Recorded in each
+# consensus JSON as judge_effort.
+JUDGE_EFFORT = os.environ.get("JUDGE_EFFORT", "high")
+# Deployment/model to retry on if the judge declines (stop_reason "refusal").
+# Empty = no fallback. Recorded in judge_usage.fallback_from when used.
+JUDGE_FALLBACK_MODEL = os.environ.get("JUDGE_FALLBACK_MODEL", "")
 
 JUDGE_INSTRUCTIONS = r"""You are the JUDGE in an ensemble scoring task.
 
@@ -127,8 +133,16 @@ def build_messages(markdown: str, candidates: dict[str, dict]) -> list[dict]:
     return [{"role": "user", "content": user}]
 
 
+def _supports_effort(model: str) -> bool:
+    """output_config.effort is GA on Opus 4.5+ and every newer model; older
+    Sonnet/Haiku 4.5 and Claude 3.x reject it."""
+    return not any(x in model for x in ("haiku-4-5", "sonnet-4-5", "claude-3",
+                                        "opus-4-1", "opus-4-0", "sonnet-4-0"))
+
+
 def call_judge(client, provider: str, model: str, system_blocks: list[dict],
-               user_msg: str, max_tokens: int = 16000) -> tuple[str, dict]:
+               user_msg: str, max_tokens: int = 64000,
+               _allow_fallback: bool = True) -> tuple[str, dict]:
     """Call the judge model. Returns (text, usage_dict)."""
     if provider in ("anthropic", "foundry"):
         # Both use the Anthropic Messages API. Foundry's deployment may
@@ -136,16 +150,20 @@ def call_judge(client, provider: str, model: str, system_blocks: list[dict],
         sys_for_call = system_blocks
         if provider == "foundry":
             sys_for_call = [{"type": "text", "text": b["text"]} for b in system_blocks]
-        # Opus 4.7 (and newer reasoning models) reject `temperature`. Pass
-        # it only on older Claude versions where it's still supported.
+        # No sampling parameters: Opus 4.7 and every newer Claude model reject
+        # temperature/top_p/top_k with a 400, and the published v2 judge
+        # (Opus 4.7) never sent them.
         create_kwargs = dict(
             model=model,
             max_tokens=max_tokens,
             system=sys_for_call,
             messages=[{"role": "user", "content": user_msg}],
         )
-        if "opus-4-7" not in model and "haiku-4-5" not in model and "sonnet-4-6" not in model:
-            create_kwargs["temperature"] = 0.0
+        if _supports_effort(model):
+            # Set explicitly: the default differs by model (Opus 4.7: high,
+            # Opus 5.5: medium). On Opus 5.5 thinking is always on and effort
+            # is what controls its depth.
+            create_kwargs["output_config"] = {"effort": JUDGE_EFFORT}
         # Retry on 429 (rate limit). Foundry enforces 50k input tokens / 60s,
         # which our ~35k-token judge calls can easily exceed in concurrent
         # bursts. The error message includes a 'Please wait N seconds'
@@ -153,7 +171,10 @@ def call_judge(client, provider: str, model: str, system_blocks: list[dict],
         max_retries = 5
         for attempt in range(max_retries + 1):
             try:
-                resp = client.messages.create(**create_kwargs)
+                # Streamed, so a large max_tokens (thinking + the JSON reply)
+                # can't hit the HTTP timeout.
+                with client.messages.stream(**create_kwargs) as stream:
+                    resp = stream.get_final_message()
                 break
             except anthropic.RateLimitError as e:
                 if attempt == max_retries:
@@ -167,8 +188,27 @@ def call_judge(client, provider: str, model: str, system_blocks: list[dict],
                 print(f"  [judge] rate limit hit; sleeping {wait}s (attempt {attempt+1}/{max_retries})",
                       file=sys.stderr, flush=True)
                 time.sleep(wait)
+        if resp.stop_reason == "refusal":
+            details = getattr(resp, "stop_details", None)
+            category = getattr(details, "category", None) if details else None
+            fallback = JUDGE_FALLBACK_MODEL if _allow_fallback else ""
+            if fallback and fallback != model:
+                # Foundry has no server-side fallback, so retry once on the
+                # fallback deployment and record which model served the result.
+                print(f"  [judge] {model} declined (category={category}); "
+                      f"retrying on {fallback}", file=sys.stderr, flush=True)
+                text, usage = call_judge(client, provider, fallback, system_blocks,
+                                         user_msg, max_tokens=max_tokens,
+                                         _allow_fallback=False)
+                usage["fallback_from"] = {"model": model, "category": category}
+                return text, usage
+            raise RuntimeError(f"judge {model} declined the request "
+                               f"(stop_reason=refusal, category={category})")
+        if resp.stop_reason == "max_tokens":
+            raise RuntimeError(f"judge output was cut off at max_tokens={max_tokens}; "
+                               "raise --max-tokens")
         text = ""
-        for block in resp.content:
+        for block in resp.content:  # thinking blocks come first on Opus 5.5
             if getattr(block, "type", None) == "text":
                 text = block.text
                 break
@@ -179,6 +219,7 @@ def call_judge(client, provider: str, model: str, system_blocks: list[dict],
                 resp.usage, "cache_read_input_tokens", 0),
             "cache_creation_input_tokens": getattr(
                 resp.usage, "cache_creation_input_tokens", 0),
+            "served_by": model,
         }
         return text, usage
 
@@ -260,7 +301,7 @@ def call_judge(client, provider: str, model: str, system_blocks: list[dict],
 
 
 def judge_one(client, provider: str, model: str, stem: str, pdf_dir: Path,
-              candidates_root: Path, model_tags: list[str], max_tokens: int = 16000) -> dict:
+              candidates_root: Path, model_tags: list[str], max_tokens: int = 64000) -> dict:
     md_path = pdf_dir / f"{stem}.docling.md"
     if not md_path.exists():
         raise FileNotFoundError(f"missing markdown: {md_path}")
@@ -348,7 +389,9 @@ def judge_one(client, provider: str, model: str, stem: str, pdf_dir: Path,
     parsed["low_confidence_count"] = low_conf
 
     parsed["judge_provider"] = provider
-    parsed["judge_model"] = model
+    parsed["judge_model"] = usage.pop("served_by", model)
+    if provider in ("anthropic", "foundry") and _supports_effort(model):
+        parsed["judge_effort"] = JUDGE_EFFORT
     parsed["judge_input_models"] = list(candidates.keys())
     parsed["judge_usage"] = usage
     return parsed
@@ -384,8 +427,8 @@ def main():
                     help="Process a single paper by stem (overrides --limit)")
     ap.add_argument("--resume", action="store_true",
                     help="Skip stems already in output-dir")
-    ap.add_argument("--max-tokens", type=int, default=16000,
-                    help="Judge output token cap (default: 16000). Bump for papers with many assays.")
+    ap.add_argument("--max-tokens", type=int, default=64000,
+                    help="Judge output token cap, thinking included (default: 64000).")
     args = ap.parse_args()
 
     provider = args.judge_provider
