@@ -6,7 +6,10 @@ name: Monthly update
 
 on:
   schedule:
-    - cron: "17 4 3 * *" # 04:17 UTC on the 3rd of every month
+    - cron: "17 4 3 * *" # 04:17 UTC on the 3rd: search, fetch, score, open the PR
+    # 04:17 UTC on the 6th: picks up PDFs added to the inbox since the 3rd, e.g. by
+    # pipeline/fetch_institute.py on an institute computer (it continues the open PR).
+    - cron: "17 4 6 * *"
   workflow_dispatch:
     inputs:
       max_papers:
