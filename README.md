@@ -153,6 +153,33 @@ chosen and validated.
 - **Rescuing a dropped record:** add its DOI to `data/manual_decisions.json` with
   `"disposition": "included_in_review"`; the next run fetches and scores it.
 
+### Institute downloader (optional)
+
+Publishers grant subscription access by network address, so GitHub can't use it.
+`pipeline/fetch_institute.py` runs on a computer on your institute network: it
+reads the open *PDFs needed* issue, downloads what a publisher text-mining API
+covers, and uploads each PDF to the store's `inbox/` as `<pmid>.pdf`. The
+workflow's second monthly run (on the 6th) picks them up.
+
+- **Routes:** Wiley's TDM API (`WILEY_TDM_TOKEN`; free token from Wiley's text
+  and data mining page, works only from a subscribing institute's IP range) and
+  Elsevier's Article Retrieval API (`ELSEVIER_API_KEY`; full-text access must be
+  requested from Elsevier API Support). Other publishers' papers stay on the
+  manual list: their licences don't allow scripted downloading.
+- **Needs:** Python 3.8+, nothing else to install.
+- **Settings:** `~/.config/psychedelic-review/fetch.env` (`chmod 600`), with
+  `WILEY_TDM_TOKEN`, optional `ELSEVIER_API_KEY`, and the share-link
+  `STORE_WEBDAV_URL` / `STORE_WEBDAV_USER` / `STORE_WEBDAV_PASSWORD`.
+- **Try it:** `python3 pipeline/fetch_institute.py --check` (shows this
+  computer's public IP, tests the inbox and a sample download), then
+  `--dry-run`, then a normal run.
+- **Schedule:** e.g. a crontab line for the 4th of each month:
+  `17 6 4 * * cd ~/psychedelic-behavioral-review && git pull -q && python3 pipeline/fetch_institute.py >> ~/fetch_institute.log 2>&1`
+
+Publisher terms: download only for this non-commercial project, keep the PDFs in
+the private store, and delete them when the project ends (Wiley and Elsevier
+both require this).
+
 To run it on your own machine instead, fill in `.env` (see `.env.example`), point
 `WORK_DIR` at a folder for PDFs, and run `uv run python pipeline/monthly_update.py`
 (`--skip-scoring` to search and fetch without LLM calls).
