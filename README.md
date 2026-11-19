@@ -188,6 +188,20 @@ To run it on your own machine instead, fill in `.env` (see `.env.example`), poin
 `WORK_DIR` at a folder for PDFs, and run `uv run python pipeline/monthly_update.py`
 (`--skip-scoring` to search and fetch without LLM calls).
 
+### Bridge test (when the scoring models change)
+
+The published scores came from models that have since been retired. The *Bridge
+test* workflow (Actions tab, run by hand) re-scores the 20 papers the human
+raters scored with the current candidate models and judge, compares them item by
+item with the published scores and both raters, and picks the third ensemble
+model (the candidate closest to human rater 2). It opens a PR with the report in
+`data/calibration/`. Inputs: the published pipeline's Docling text of those
+papers, in the store's `calibration/` folder as `<stem>.docling.md` (and
+`colognesi2026_supp.docling.md`); papers without one are downloaded if open
+access. Scores are kept in `calibration/results/`, so a re-run only pays for
+what's missing. Cost: about $10–15 for the judge, 1–2 hours. Use the chosen tag
+in the `SCORING_MODELS` variable (default `qwen,glm53,deepseek4`).
+
 ## The data
 
 `data/` holds the derived (CC-BY-4.0) outputs only — never the source PDFs:

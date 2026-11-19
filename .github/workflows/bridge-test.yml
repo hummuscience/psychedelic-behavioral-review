@@ -1,0 +1,117 @@
+name: Bridge test (scoring models)
+
+# Re-scores the 20 human-rated papers with the current candidate models and
+# judge, and compares with the published scores and both human raters. Run it
+# by hand when models change. Inputs: the published pipeline's Docling text,
+# uploaded to the PDF store's calibration/ folder as <stem>.docling.md (papers
+# without one are downloaded if open access). See pipeline/bridge_test.py.
+
+on:
+  workflow_dispatch:
+    inputs:
+      candidates:
+        description: "Candidate model tags to score with"
+        default: "qwen,glm53,deepseek4,gemma4"
+      choose_from:
+        description: "Tags to choose the third ensemble model from"
+        default: "deepseek4,gemma4"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: bridge-test
+  cancel-in-progress: false
+
+jobs:
+  bridge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          uv sync --frozen
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq rclone pandoc
+
+      - name: Connect the private PDF store
+        env:
+          STORE_URL: ${{ secrets.STORE_WEBDAV_URL }}
+          STORE_USER: ${{ secrets.STORE_WEBDAV_USER }}
+          STORE_PASS: ${{ secrets.STORE_WEBDAV_PASSWORD }}
+        run: |
+          if [ -z "$STORE_URL" ]; then
+            echo "::warning::No PDF store configured; only open-access papers can be used."
+            exit 0
+          fi
+          obscured=$(rclone obscure "$STORE_PASS")
+          echo "::add-mask::$obscured"
+          {
+            echo "STORE_REMOTE=store:"
+            echo "RCLONE_CONFIG_STORE_TYPE=webdav"
+            echo "RCLONE_CONFIG_STORE_VENDOR=${{ vars.STORE_WEBDAV_VENDOR || 'nextcloud' }}"
+            echo "RCLONE_CONFIG_STORE_URL=$STORE_URL"
+            echo "RCLONE_CONFIG_STORE_USER=$STORE_USER"
+            echo "RCLONE_CONFIG_STORE_PASS=$obscured"
+          } >> "$GITHUB_ENV"
+
+      # Inputs from calibration/, plus results of an earlier attempt from
+      # calibration/results/ so a re-run doesn't pay for the judge twice.
+      - name: Pull inputs and earlier results
+        run: |
+          mkdir -p work/bridge/inputs
+          if [ -n "${STORE_REMOTE:-}" ]; then
+            rclone copy store:calibration work/bridge/inputs --exclude "results/**" || true
+            rclone copy store:calibration/results work/bridge || true
+          fi
+          echo "Inputs from the store:"; ls work/bridge/inputs || true
+
+      - name: Run the bridge test
+        id: run
+        env:
+          SAIA_API_KEY: ${{ secrets.SAIA_API_KEY }}
+          AZURE_FOUNDRY_API_KEY: ${{ secrets.AZURE_FOUNDRY_API_KEY }}
+          AZURE_FOUNDRY_ENDPOINT: ${{ secrets.AZURE_FOUNDRY_ENDPOINT }}
+          AZURE_FOUNDRY_MODEL: ${{ vars.AZURE_FOUNDRY_MODEL || 'claude-opus-5-5' }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          JUDGE_PROVIDER: ${{ vars.JUDGE_PROVIDER || 'foundry' }}
+          JUDGE_EFFORT: ${{ vars.JUDGE_EFFORT || 'high' }}
+          JUDGE_FALLBACK_MODEL: ${{ vars.JUDGE_FALLBACK_MODEL || 'claude-opus-5' }}
+          UNPAYWALL_EMAIL: ${{ secrets.CONTACT_EMAIL }}
+        run: |
+          uv run python pipeline/bridge_test.py \
+            --candidates "${{ inputs.candidates }}" --choose-from "${{ inputs.choose_from }}"
+
+      - name: Save results to the store
+        if: always()
+        run: |
+          if [ -n "${STORE_REMOTE:-}" ] && [ -d work/bridge ]; then
+            for d in candidates consensus; do
+              [ -d "work/bridge/$d" ] && rclone copy "work/bridge/$d" "store:calibration/results/$d" || true
+            done
+          fi
+
+      - name: Keep the report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bridge-test-report
+          path: data/calibration/
+          if-no-files-found: ignore
+
+      - name: Open a pull request with the report
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: bridge-test
+          base: main
+          commit-message: "data: bridge test of scoring models"
+          title: "Bridge test: scoring models (third candidate: ${{ steps.run.outputs.third }})"
+          body-path: ${{ steps.run.outputs.report }}
+          add-paths: data/calibration/
