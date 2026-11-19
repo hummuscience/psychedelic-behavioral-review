@@ -343,3 +343,25 @@ def test_saia_check_reports_models_it_no_longer_offers(monkeypatch):
         assert "unknown model tag" in monthly_update.saia_key_problem(base)
     finally:
         srv.shutdown()
+
+
+# ── Bridge test comparison reproduces the paper's validation ────────────────
+
+def test_bridge_comparison_matches_published_validation(data_copy: Path) -> None:
+    sys.path.insert(0, str(REPO / "figures"))
+    import rater_lib as rl
+    work = data_copy / "work" / "bridge"
+    (work / "consensus").mkdir(parents=True)
+    for s in rl.PAPER_STEMS:  # "new" scores = the published ones
+        shutil.copy(REPO / "data/results_v2_full_consensus" / f"{s}.json", work / "consensus")
+        for t in ("qwen", "glm53", "deepseek4"):
+            (work / "candidates" / t).mkdir(parents=True, exist_ok=True)
+            shutil.copy(REPO / "data/results_v2_full_consensus" / f"{s}.json", work / "candidates" / t)
+    run("bridge_test.py", data_copy, "--compare-only", "--candidates", "qwen,glm53,deepseek4",
+        "--choose-from", "deepseek4")
+    report = next((data_copy / "data/calibration").glob("bridge_*.json"))
+    res = json.loads(report.read_text())["assay_agreement"]
+    # Same numbers as figures/plot_three_way.py for rater 2 vs the published LLM
+    assert res["rater 2 vs published LLM"]["B"]["n"] == 49
+    assert round(res["rater 2 vs published LLM"]["B"]["icc"], 2) == 0.92
+    assert all(res["published LLM vs new LLM"][d]["pct"] == 100 for d in "BED")
