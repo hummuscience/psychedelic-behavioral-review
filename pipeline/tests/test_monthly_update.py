@@ -204,3 +204,38 @@ print(any(r["pmid"] == "99999997" for r in p))
     out = subprocess.run([sys.executable, "-c", script], env=env, check=True,
                          capture_output=True, text=True).stdout.strip()
     assert out == "False"
+
+
+# ── An expired SAIA key is reported, not silently skipped ───────────────────
+
+def test_saia_key_check(monkeypatch) -> None:
+    import threading
+    from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+    import monthly_update
+
+    class Saia(BaseHTTPRequestHandler):
+        def log_message(self, *a):
+            pass
+
+        def do_GET(self):
+            good = self.headers.get("Authorization") == "Bearer good"
+            body = b'{"data": []}' if good else b'{"detail":"API key has expired"}'
+            self.send_response(200 if good else 401)
+            self.send_header("Content-Length", str(len(body)))
+            self.end_headers()
+            self.wfile.write(body)
+
+    srv = ThreadingHTTPServer(("127.0.0.1", 0), Saia)
+    threading.Thread(target=srv.serve_forever, daemon=True).start()
+    base = f"http://127.0.0.1:{srv.server_address[1]}/v1"
+    monkeypatch.setenv("NO_PROXY", "127.0.0.1")
+    monkeypatch.setenv("no_proxy", "127.0.0.1")
+    try:
+        monkeypatch.setenv("SAIA_API_KEY", "good")
+        assert monthly_update.saia_key_problem(base) == ""
+        monkeypatch.setenv("SAIA_API_KEY", "expired")
+        assert "API key has expired" in monthly_update.saia_key_problem(base)
+        monkeypatch.delenv("SAIA_API_KEY")
+        assert monthly_update.saia_key_problem(base) == "SAIA_API_KEY is not set"
+    finally:
+        srv.shutdown()

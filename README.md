@@ -166,7 +166,11 @@ workflow's second monthly run (on the 6th) picks them up.
   Elsevier's Article Retrieval API (`ELSEVIER_API_KEY`; full-text access must be
   requested from Elsevier API Support). Other publishers' papers stay on the
   manual list: their licences don't allow scripted downloading.
-- **Needs:** Python 3.8+, nothing else to install.
+- **Needs:** Python 3.8+, nothing else to install. If the system `python3` is
+  older (3.6 fails with a SyntaxError), use a newer interpreter, e.g.
+  `/opt/conda/bin/python3`, in the commands and the crontab line below.
+- **Keep the clone on `main`**, so the monthly job only ever runs reviewed code
+  (`git -C ~/psychedelic-behavioral-review checkout main`).
 - **Settings:** `~/.config/psychedelic-review/fetch.env` (`chmod 600`), with
   `WILEY_TDM_TOKEN`, optional `ELSEVIER_API_KEY`, and the share-link
   `STORE_WEBDAV_URL` / `STORE_WEBDAV_USER` / `STORE_WEBDAV_PASSWORD`.
