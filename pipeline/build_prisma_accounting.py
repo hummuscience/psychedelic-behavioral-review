@@ -18,6 +18,7 @@ import shutil
 import unicodedata
 from pathlib import Path
 
+import preprints
 from find_pdf_duplicates import normalise as norm_surname, first_author_surname
 
 from paths import (PUBMED_CSV, PDFS_NOT_FOUND_CSV as NOT_FOUND_CSV,
@@ -228,6 +229,10 @@ def main():
             on_disk = False              # quarantined; not really in corpus
         elif stem_lc in MANUAL_DISPOSITIONS:
             disposition = MANUAL_DISPOSITIONS[stem_lc]
+        # New preprints are set aside for now (pipeline/preprints.py)
+        elif ((r.get("source") or "").startswith("update:") and is_relevant_class
+              and not in_consensus and preprints.deferred(row_doi, r.get("journal"))):
+            disposition = "deferred_preprint"
         # Final disposition: classifier-excluded vs corpus-status
         elif is_falsepos and not already and not on_disk:
             disposition = "excluded_classifier_false_positive"

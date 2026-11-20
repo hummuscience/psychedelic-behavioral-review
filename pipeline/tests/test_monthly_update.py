@@ -594,3 +594,88 @@ def test_rescore_comparison(data_copy: Path) -> None:
     prov = list(csv.DictReader((data_copy / "data/rescored/test/scoring_provenance.csv").open()))
     assert [r["stem"] for r in prov] == stems
     assert before == {p.name: p.read_bytes() for p in (data_copy / "data/results_v2_full_consensus").glob("*.json")}
+
+
+# ── New preprints are set aside for now ─────────────────────────────────────
+
+def _add_search_row(root: Path, pmid: str, title: str, doi: str,
+                    journal: str = "Some journal") -> None:
+    with open(root / "data/pubmed_expansion.csv", "a", encoding="utf-8", newline="") as f:
+        csv.writer(f, lineterminator="\r\n").writerow(
+            [pmid, title, "Doe J et al.", "2026", journal, doi, "update:2026-12-03", "no",
+             "Psilocybin/Psilocin"])
+
+
+def _pending_pmids(root: Path, **env_extra: str) -> set[str]:
+    env = {**os.environ, "DATA_DIR": str(root / "data"), "WORK_DIR": str(root / "work"),
+           **env_extra}
+    script = f"""
+import sys, json; sys.path.insert(0, {str(PIPELINE)!r})
+import fetch_pdfs as fp
+from paths import REGISTRY_JSON, MANUAL_DECISIONS_JSON
+p = fp.pending(fp._load_rows(), json.loads(REGISTRY_JSON.read_text()),
+               json.loads(MANUAL_DECISIONS_JSON.read_text()))
+print(json.dumps([r["pmid"] for r in p]))
+"""
+    return set(json.loads(subprocess.run([sys.executable, "-c", script], env=env, check=True,
+                                         capture_output=True, text=True).stdout))
+
+
+def test_preprints_are_set_aside(data_copy: Path) -> None:
+    import preprints
+    assert preprints.is_preprint("10.64898/2026.07.05.736652")
+    assert preprints.is_preprint("", "bioRxiv : the preprint server for biology")
+    assert not preprints.is_preprint("10.1016/j.pnpbp.2026.111940", "Prog Neuropsychopharmacol")
+    _add_search_row(data_copy, "99999990", "Psilocybin changes behaviour in mice.",
+                    "10.64898/2026.01.01.000001", "bioRxiv")
+    _add_search_row(data_copy, "99999991", "Psilocybin changes another behaviour in rats.",
+                    "10.9999/journal.2026")
+    run("build_prisma_accounting.py", data_copy)
+    rows = {r["pmid"]: r for r in csv.DictReader(
+        open(data_copy / "data/prisma_accounting.csv", encoding="utf-8"))}
+    assert rows["99999990"]["disposition"] == "deferred_preprint"
+    assert rows["99999991"]["disposition"] == "pdf_unavailable_relevant"
+    # Published preprints are untouched
+    published = list(csv.DictReader(open(REPO / "data/prisma_accounting.csv", encoding="utf-8")))
+    assert all(rows[r["pmid"]] == r for r in published if r["pmid"])
+    # Not fetched unless switched on, or included by hand
+    assert {"99999990", "99999991"} & _pending_pmids(data_copy) == {"99999991"}
+    assert {"99999990", "99999991"} <= _pending_pmids(data_copy, INCLUDE_PREPRINTS="true")
+    dec_path = data_copy / "data/manual_decisions.json"
+    dec = json.loads(dec_path.read_text())
+    dec["10.64898/2026.01.01.000001"] = {"disposition": "included_in_review"}
+    dec_path.write_text(json.dumps(dec))
+    assert "99999990" in _pending_pmids(data_copy)
+
+
+# ── Inbox files under any name are matched to their paper ──────────────────
+
+def test_inbox_files_are_matched_by_doi_or_title(tmp_path: Path, monkeypatch) -> None:
+    import fitz
+    import fetch_pdfs as fp
+    inbox = tmp_path / "inbox"
+    inbox.mkdir()
+    monkeypatch.setattr(fp, "INBOX_DIR", inbox)
+
+    def pdf(name: str, text: str) -> None:
+        doc = fitz.open()
+        doc.new_page().insert_text((50, 72), text, fontsize=10)
+        doc.save(inbox / name)
+
+    rows = [{"pmid": "111", "doi": "10.1016/j.pnpbp.2026.111940",
+             "title": "Serotonergic psychedelics and amphetamine shift male rat ultrasonic vocalizations."},
+            {"pmid": "222", "doi": "10.1177/02698811261478600",
+             "title": "Beyond head-twitch response: Acute psilocybin affects spontaneous "
+                      "behaviors in rats in a dose-dependent manner."},
+            {"pmid": "333", "doi": "", "title": "Psilocybin and something else in mice."}]
+    pdf("1-s2.0-S0278584626001234-main.pdf",
+        "Progress in Neuro-Psychopharmacology\nhttps://doi.org/10.1016/j.pnpbp.2026.111940.")
+    pdf("download (3).pdf", "Original Paper\nBeyond head-twitch\nresponse: Acute psilo-\n"
+        "cybin affects spontaneous behaviors in rats\nin a dose-dependent manner\nA. Author")
+    pdf("111_supp.pdf", "named by hand already")
+    pdf("mmc1.pdf", "Supplementary Table S1")
+    out = fp.match_inbox(rows)
+    assert sorted(out["matched"]) == [("1-s2.0-S0278584626001234-main.pdf", "111.pdf"),
+                                      ("download (3).pdf", "222.pdf")]
+    assert out["unmatched"] == ["mmc1.pdf"]
+    assert {p.name for p in inbox.iterdir()} == {"111.pdf", "222.pdf", "111_supp.pdf", "mmc1.pdf"}

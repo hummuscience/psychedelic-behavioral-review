@@ -39,6 +39,7 @@ from pathlib import Path
 
 from unidecode import unidecode
 
+import preprints
 from classify_compounds import decision
 from paths import (CONSENSUS_DIR, MANUAL_DECISIONS_JSON, PDF_DIR, PDF_INVENTORY_CSV,
                    PDFS_NOT_FOUND_CSV, PRISMA_CSV, PUBMED_CSV, REGISTRY_JSON, SUPP_DIR,
@@ -204,7 +205,8 @@ def pending(rows: list[dict], registry: dict, decisions: dict) -> list[dict]:
             if disp == "included_in_review":
                 out.append({**r, "_why": "manual_include"})
             elif disp is None and decision(r["detected_compounds"]) == "relevant":
-                out.append({**r, "_why": "classifier"})
+                if not preprints.deferred(doi, r.get("journal")):
+                    out.append({**r, "_why": "classifier"})
         # Records from the original search are only picked up when you put
         # their PDF in the inbox; their open-access search was done back then.
         elif in_inbox and (disp is None or disp in ("included_in_review",
@@ -226,10 +228,70 @@ def _append_csv(path: Path, fields: list[str], rows: list[dict]) -> None:
                        extrasaction="ignore").writerows(rows)
 
 
+DOI_RE = re.compile(r"10\.\d{4,9}/[^\s\"<>]+", re.I)
+INBOX_NAME_RE = re.compile(r"^\d+(_supp)?\.(pdf|docx)$", re.I)
+SUPP_NAME_RE = re.compile(r"supp|suppl|mmc\d|supporting|appendix", re.I)
+
+
+def _norm_text(s: str) -> str:
+    """Lowercase letters and digits only: line breaks and hyphenation don't matter."""
+    return "".join(ch for ch in unicodedata.normalize("NFKD", s).lower() if ch.isalnum())
+
+
+def _first_pages_text(path: Path, pages: int = 2) -> str:
+    import fitz  # PyMuPDF
+    with fitz.open(path) as doc:
+        return "".join(doc[i].get_text() for i in range(min(pages, len(doc))))
+
+
+def identify_pdf(path: Path, rows: list[dict]) -> dict | None:
+    """The search record a PDF belongs to: by a DOI on its first pages, else by
+    its title appearing there (only if exactly one title matches)."""
+    text = _first_pages_text(path)
+    by_doi = {r["doi"].strip().lower(): r for r in rows if r["doi"].strip()}
+    for m in DOI_RE.finditer(text):
+        doi = m.group(0).rstrip(".,;:)]}").lower()
+        if doi in by_doi:
+            return by_doi[doi]
+    page = _norm_text(text[:8000])
+    hits = {r["pmid"]: r for r in rows
+            if len(_norm_text(r["title"])) >= 30 and _norm_text(r["title"]) in page}
+    return next(iter(hits.values())) if len(hits) == 1 else None
+
+
+def match_inbox(rows: list[dict]) -> dict:
+    """Give inbox PDFs saved under any name the <pmid>.pdf name the pipeline uses.
+
+    Returns {"matched": [(file, new name)], "unmatched": [file]}."""
+    import store
+    out = {"matched": [], "unmatched": []}
+    if not INBOX_DIR.exists():
+        return out
+    for f in sorted(INBOX_DIR.iterdir()):
+        if not f.is_file() or INBOX_NAME_RE.match(f.name) or f.name.startswith("."):
+            continue
+        row = None
+        if f.suffix.lower() == ".pdf":
+            try:
+                row = identify_pdf(f, rows)
+            except Exception:  # unreadable or not a PDF
+                row = None
+        new = row and f"{row['pmid']}{'_supp' if SUPP_NAME_RE.search(f.stem) else ''}.pdf"
+        if not new or (INBOX_DIR / new).exists():
+            out["unmatched"].append(f.name)
+            continue
+        f.rename(INBOX_DIR / new)
+        store.rename_inbox(f.name, new)
+        out["matched"].append((f.name, new))
+    return out
+
+
 def run(today: date | None = None, offline: bool = False) -> dict:
-    """Fetch PDFs for pending rows. Returns {fetched: [...], missing: [...]}."""
+    """Fetch PDFs for pending rows. Returns {fetched: [...], missing: [...],
+    inbox: {matched, unmatched}}."""
     today = today or date.today()
     rows = _load_rows()
+    inbox = match_inbox(rows)
     registry = json.loads(REGISTRY_JSON.read_text()) if REGISTRY_JSON.exists() else {}
     decisions = (json.loads(MANUAL_DECISIONS_JSON.read_text())
                  if MANUAL_DECISIONS_JSON.exists() else {})
@@ -289,7 +351,7 @@ def run(today: date | None = None, offline: bool = False) -> dict:
     _append_csv(PDFS_NOT_FOUND_CSV,
                 ["pmid", "doi", "title", "year", "detected_compounds", "reason"],
                 [m for m in missing if m["pmid"] not in already])
-    return {"fetched": fetched, "missing": missing}
+    return {"fetched": fetched, "missing": missing, "inbox": inbox}
 
 
 def main() -> None:

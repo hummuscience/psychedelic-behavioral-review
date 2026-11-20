@@ -144,4 +144,5 @@ display(Plot.plot({
 - **manually_added_to_corpus** — papers added directly to the corpus outside the PubMed expansion.
 - **excluded_not_primary_research** — a record from a monthly update that PubMed tags as a review, news item, letter, editorial or similar; no PDF is fetched.
 - **pending_scoring** — a paper from a monthly update whose PDF has been retrieved but not scored yet.
+- **deferred_preprint** — a preprint found by a monthly update; preprints are set aside for now (the published review's preprints are unaffected).
 - **excluded_duplicate_of_corpus** — a later PubMed record of a paper already in the corpus (typically the journal version of a preprint); not scored twice.
