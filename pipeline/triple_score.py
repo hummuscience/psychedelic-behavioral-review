@@ -38,28 +38,8 @@ def safe_print(*a, **kw):
     with _print_lock:
         print(*a, flush=True, **kw)
 
-# (tag, full model id)
-# v2 ensemble: three SAIA reasoning models that survived the schema test —
-#   - qwen3.5-397b-a17b (huge MoE, gold standard but slow)
-#   - glm-4.7           (different lineage, fast)
-#   - openai-gpt-oss-120b (different lineage, fast)
-# We dropped:
-#   - deepseek-r1-distill-llama-70b (returns tool-call JSON, not the schema)
-#   - mistral-large-3-675b-instruct-2512 (not a reasoning model; times out at 480s)
-#   - llama-3.3-70b-instruct (instruct-only, not reasoning)
-#   - qwen3.5-122b-a10b (reasoning but redundant with qwen3.5-397b)
-MODELS = [
-    ("qwen",   "qwen3.5-397b-a17b"),
-    ("glm",    "glm-4.7"),
-    ("gptoss", "openai-gpt-oss-120b"),
-    # 2026-11: glm-4.7 and gpt-oss-120b are no longer served on SAIA. Candidate
-    # replacements for the monthly update (choose with --models / SCORING_MODELS):
-    ("glm53",     "glm-5.3-flash"),           # successor in the GLM family
-    ("deepseek4", "deepseek-v4-flash-0731"),  # different family
-    ("gemma4",    "gemma-4-31b-it"),          # different family
-]
-# The published v2 ensemble; used when --models isn't given.
-PUBLISHED_TAGS = ("qwen", "glm", "gptoss")
+# Candidate models: tags and SAIA model IDs are kept in provenance.py.
+from provenance import MODELS, PUBLISHED_TAGS, candidate_stamp  # noqa: E402
 
 
 def score_one(provider: SaiaProvider, pdf_path: Path) -> dict:
@@ -153,6 +133,7 @@ def main():
         t0 = time.time()
         try:
             result = score_one(provider, pdf)
+            result["scoring"] = candidate_stamp(tag, model_id)
             json_path.write_text(json.dumps(result, indent=2, ensure_ascii=False))
             dt = time.time() - t0
             sc = result["study_level_scores"]

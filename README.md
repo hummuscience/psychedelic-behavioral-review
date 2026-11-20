@@ -202,6 +202,16 @@ access. Scores are kept in `calibration/results/`, so a re-run only pays for
 what's missing. Cost: about $10–15 for the judge, 1–2 hours. Use the chosen tag
 in the `SCORING_MODELS` variable (default `qwen,glm53,deepseek4`).
 
+### Rescoring published papers
+
+61 published papers were judged with only one or two of the three candidate
+models (a model failed on them; see `data/scoring_provenance.csv`). The *Rescore
+published papers* workflow scores such papers again with the current setup and
+writes the results to `data/rescored/<ensemble>/` with a comparison against the
+published scores; `data/results_v2_full_consensus/` is not changed. Inputs: the
+published Docling text in the store's `rescore/inputs/` folder; scores are kept
+in `rescore/results/` so a re-run continues where the last one stopped.
+
 ## The data
 
 `data/` holds the derived (CC-BY-4.0) outputs only — never the source PDFs:
@@ -209,6 +219,7 @@ in the `SCORING_MODELS` variable (default `qwen,glm53,deepseek4`).
 | Path | What it is |
 |---|---|
 | `results_v2_full_consensus/*.json` | One judge-consensus record per paper (287 papers): scored assays, dosing, sex, age, evidence |
+| `scoring_provenance.csv` | Which models scored each paper: the ensemble asked for, the candidates the judge actually had, the judge (and the fallback, if it declined), effort, rubric and code versions, and a `setup_id` to group papers scored the same way. Built from the `scoring` block in each consensus JSON (`pipeline/provenance.py`); the published papers are `v2 (published)` |
 | `paper_registry.json` | Canonical per-paper metadata (DOI, title, authors, year, journal) |
 | `prisma_accounting.csv` | PRISMA flow: every screened record with its disposition |
 | `pubmed_expansion.csv` | Every PubMed record screened, with its title-classifier label; monthly additions have `source = update:<date>` |

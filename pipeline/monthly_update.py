@@ -194,6 +194,31 @@ def _route_multiple(stem: str) -> bool:
     return any((x.get("route") or "") == "multiple" for x in d.get("dosing") or [])
 
 
+def _setup_section(scored: list[str]) -> list[str]:
+    """Which models scored this run's papers (also in data/scoring_provenance.csv)."""
+    import provenance
+    rows = [provenance.describe(s, json.loads((CONSENSUS_DIR / f"{s}.json").read_text()))
+            for s in scored]
+    if not rows:
+        return []
+    setups: dict[tuple[str, str], int] = {}
+    for r in rows:
+        setups[(r["setup_id"], r["setup"])] = setups.get((r["setup_id"], r["setup"]), 0) + 1
+    lines = ["", "## Scoring setup",
+             "Per paper in `data/scoring_provenance.csv` (models, judge, rubric and code "
+             "versions).", ""]
+    lines += [f"- `{sid}` {setup}: {n} paper(s)" for (sid, setup), n in setups.items()]
+    short = [r for r in rows if r["missing_candidates"]]
+    if short:
+        lines.append("- Judged without every candidate (a model failed on the paper): "
+                     + ", ".join(f"`{r['stem']}` (no {r['missing_candidates']})" for r in short))
+    fallback = [r for r in rows if r["declined_by"]]
+    if fallback:
+        lines.append("- Judged by the fallback model after the judge declined: "
+                     + ", ".join(f"`{r['stem']}` ({r['judged_by']})" for r in fallback))
+    return lines
+
+
 def write_reports(today: date, search: dict, fetched: dict, scored: list[str],
                   unfinished: list[str], scoring_ran: bool,
                   rechecked: list[dict] | None = None, scoring_problem: str = "",
@@ -244,6 +269,7 @@ def write_reports(today: date, search: dict, fetched: dict, scored: list[str],
         lines += ["", "Scored but **no behavioural assay** found (they will show as "
                   "`in_corpus_no_animal_dose` in PRISMA): "
                   + ", ".join(f"`{s}`" for s in no_assays)]
+    lines += _setup_section(scored)
     lines += ["", "## Still in progress"]
     if not scoring_ran:
         lines.append("Scoring was skipped this run (no API keys, or `--skip-scoring`).")
@@ -390,6 +416,8 @@ def main() -> None:
         build_assay_catalog.add_papers(scored)
     if run_script("build_prisma_accounting.py") != 0:
         sys.exit("build_prisma_accounting.py failed")
+    import provenance
+    provenance.build()  # data/scoring_provenance.csv: models behind every score
 
     summary = write_reports(today, search, fetched, scored, unfinished_stems(), scoring_ran,
                             rechecked, scoring_problem, scoring_failed)

@@ -521,3 +521,75 @@ def test_bridge_ensemble_set_by_hand(data_copy: Path) -> None:
     assert all(p["judged"] for p in payload["papers"].values())
     md = next((data_copy / "data/calibration").glob("bridge_*.md")).read_text()
     assert "Ensemble set by hand" in md and "Choice of the third candidate" not in md
+
+
+# ── Provenance: which models scored each paper ──────────────────────────────
+
+def test_provenance_of_published_scores_is_reconstructed() -> None:
+    import provenance
+    d = json.loads((REPO / "data/results_v2_full_consensus/alper2018.json").read_text())
+    row = provenance.describe("alper2018", d)
+    assert row["setup"] == "v2 (published)" and row["judge"] == "claude-opus-4-7"
+    assert row["ensemble"] == "qwen3.5-397b-a17b; glm-4.7; openai-gpt-oss-120b"
+    short = provenance.describe("x", {**d, "judge_input_models": ["qwen", "glm"]})
+    assert short["missing_candidates"] == "openai-gpt-oss-120b"
+    assert short["setup_id"] == row["setup_id"]  # same setup, one model failed
+
+
+def test_provenance_of_new_scores(monkeypatch) -> None:
+    import provenance
+    monkeypatch.setenv("GITHUB_SHA", "abcdef1234567890")
+    cand = {"qwen": {"scoring": provenance.candidate_stamp("qwen", "qwen3.5-397b-a17b")},
+            "gemma4": {"scoring": provenance.candidate_stamp("gemma4", "gemma-4-31b-it")}}
+    assert cand["qwen"]["scoring"]["code"] == "abcdef1234"
+    s = provenance.judge_stamp(["qwen", "deepseek4", "gemma4"], cand, judge="claude-opus-5-5",
+                               judged_by="claude-opus-5", provider="foundry", effort="high",
+                               declined={"model": "claude-opus-5-5", "category": None},
+                               judge_instructions="judge prompt")
+    assert s["missing"] == ["deepseek4"]
+    assert s["ensemble"]["deepseek4"] == "deepseek-v4-flash-0731"
+    assert s["judged_by"] == "claude-opus-5" and s["declined_by"] == "claude-opus-5-5"
+    row = provenance.describe("p", {"scoring": s})
+    assert row["missing_candidates"] == "deepseek-v4-flash-0731"
+    assert row["candidates"] == "qwen3.5-397b-a17b; gemma-4-31b-it"
+    assert "judge claude-opus-5-5 (high)" in row["setup"]
+    # Same models, same judge, same rubric: same setup id regardless of what failed
+    s2 = provenance.judge_stamp(["qwen", "deepseek4", "gemma4"], {**cand, "deepseek4": {}},
+                                judge="claude-opus-5-5", judged_by="claude-opus-5-5",
+                                provider="foundry", effort="high", declined=None,
+                                judge_instructions="judge prompt")
+    assert s2["setup_id"] == s["setup_id"] and s2["missing"] == []
+
+
+def test_provenance_table_covers_every_scored_paper(data_copy: Path) -> None:
+    env = {**os.environ, "DATA_DIR": str(data_copy / "data"), "WORK_DIR": str(data_copy / "work")}
+    subprocess.run([sys.executable, str(PIPELINE / "provenance.py")], env=env, check=True,
+                   capture_output=True)
+    rows = list(csv.DictReader((data_copy / "data/scoring_provenance.csv").open()))
+    n = len(list((data_copy / "data/results_v2_full_consensus").glob("*.json")))
+    assert len(rows) == n and {r["setup"] for r in rows} == {"v2 (published)"}
+
+
+def test_rescore_comparison(data_copy: Path) -> None:
+    """Rescored = published copies: perfect agreement; published data untouched."""
+    rows = [r for r in csv.DictReader(open(REPO / "data/scoring_provenance.csv"))
+            if r["missing_candidates"]]
+    stems = [r["stem"] for r in rows[:3]]
+    trio = ["qwen", "deepseek4", "gemma4"]
+    new_dir = data_copy / "data/rescored/test/consensus"
+    new_dir.mkdir(parents=True)
+    for s in stems:
+        d = json.loads((REPO / "data/results_v2_full_consensus" / f"{s}.json").read_text())
+        d["judge_input_models"] = trio
+        (new_dir / f"{s}.json").write_text(json.dumps(d))
+    before = {p.name: p.read_bytes() for p in (data_copy / "data/results_v2_full_consensus").glob("*.json")}
+    run("rescore.py", data_copy, "--compare-only", "--stems", ",".join(stems),
+        "--ensemble", ",".join(trio), "--name", "test")
+    out = json.loads((data_copy / "data/rescored/test/comparison.json").read_text())
+    assert out["complete"] and out["papers_judged"] == stems
+    assert all(out["assay_agreement"][d]["pct"] == 100 for d in "BED" if out["assay_agreement"].get(d))
+    assert all(v["mean_abs_diff"] == 0 for v in out["study_level"].values())
+    assert set(out["published_missing"]) >= set(stems)
+    prov = list(csv.DictReader((data_copy / "data/rescored/test/scoring_provenance.csv").open()))
+    assert [r["stem"] for r in prov] == stems
+    assert before == {p.name: p.read_bytes() for p in (data_copy / "data/results_v2_full_consensus").glob("*.json")}
