@@ -191,19 +191,25 @@ def call_judge(client, provider: str, model: str, system_blocks: list[dict],
         if resp.stop_reason == "refusal":
             details = getattr(resp, "stop_details", None)
             category = getattr(details, "category", None) if details else None
+            # Everything the API says about the decline, for diagnosing it later:
+            # the explanation (not always present), the request id, and how far
+            # it got (0 output tokens = declined before writing anything).
+            declined = {"model": model, "category": category,
+                        "explanation": getattr(details, "explanation", None) if details else None,
+                        "request_id": getattr(resp, "_request_id", None) or getattr(resp, "id", None),
+                        "output_tokens": getattr(resp.usage, "output_tokens", None)}
             fallback = JUDGE_FALLBACK_MODEL if _allow_fallback else ""
             if fallback and fallback != model:
                 # Foundry has no server-side fallback, so retry once on the
                 # fallback deployment and record which model served the result.
-                print(f"  [judge] {model} declined (category={category}); "
+                print(f"  [judge] {model} declined ({declined}); "
                       f"retrying on {fallback}", file=sys.stderr, flush=True)
                 text, usage = call_judge(client, provider, fallback, system_blocks,
                                          user_msg, max_tokens=max_tokens,
                                          _allow_fallback=False)
-                usage["fallback_from"] = {"model": model, "category": category}
+                usage["fallback_from"] = declined
                 return text, usage
-            raise RuntimeError(f"judge {model} declined the request "
-                               f"(stop_reason=refusal, category={category})")
+            raise RuntimeError(f"judge {model} declined the request ({declined})")
         if resp.stop_reason == "max_tokens":
             raise RuntimeError(f"judge output was cut off at max_tokens={max_tokens}; "
                                "raise --max-tokens")
@@ -300,6 +306,30 @@ def call_judge(client, provider: str, model: str, system_blocks: list[dict],
     return text, usage
 
 
+def _extract_json(text: str, stem: str, usage: dict) -> dict:
+    """The JSON object in a judge reply (tolerates fences and surrounding prose)."""
+    text = text.strip()
+    if text.startswith("```"):
+        lines = text.split("\n", 1)
+        text = lines[1] if len(lines) > 1 else ""
+    # Also strip a trailing fence (Haiku sometimes emits ``` only at the end).
+    text = text.strip()
+    if text.endswith("```"):
+        text = text.rsplit("```", 1)[0].strip()
+    if not text:
+        raise ValueError(
+            f"empty response from judge for {stem} "
+            f"(in_tokens={usage.get('input_tokens')}, out_tokens={usage.get('output_tokens')})"
+        )
+    first, last = text.find("{"), text.rfind("}")
+    if first >= 0 and last > first:
+        text = text[first: last + 1]
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError as e:
+        raise ValueError(f"could not parse JSON from judge for {stem} ({e})") from None
+
+
 def judge_one(client, provider: str, model: str, stem: str, pdf_dir: Path,
               candidates_root: Path, model_tags: list[str], max_tokens: int = 64000) -> dict:
     md_path = pdf_dir / f"{stem}.docling.md"
@@ -329,45 +359,25 @@ def judge_one(client, provider: str, model: str, stem: str, pdf_dir: Path,
         },
     ]
 
-    text, usage = call_judge(client, provider, model, system_blocks, user_msg, max_tokens=max_tokens)
-    raw = text
-    text = text.strip()
-    # Strip leading prose / fences if present
-    if text.startswith("```"):
-        # remove first fence line
-        lines = text.split("\n", 1)
-        text = lines[1] if len(lines) > 1 else ""
-    # Always strip a trailing fence too (Haiku sometimes emits ``` only at the
-    # end, even when no opening fence is present).
-    text = text.strip()
-    if text.endswith("```"):
-        text = text.rsplit("```", 1)[0].strip()
-    if not text:
-        raise RuntimeError(
-            f"empty response from judge for {stem} "
-            f"(in_tokens={usage['input_tokens']}, out_tokens={usage['output_tokens']})"
-        )
-    # Find first { and last } if there's surrounding prose
-    if not text.startswith("{"):
-        first = text.find("{")
-        last = text.rfind("}")
-        if first >= 0 and last > first:
-            text = text[first : last + 1]
-    elif not text.endswith("}"):
-        # Trim trailing prose
-        last = text.rfind("}")
-        if last > 0:
-            text = text[: last + 1]
-    try:
-        parsed = json.loads(text)
-    except json.JSONDecodeError:
-        # Save raw for inspection
-        debug_path = Path(f"/tmp/judge_raw_{stem}.txt")
-        debug_path.write_text(raw)
-        raise RuntimeError(
-            f"could not parse JSON from judge for {stem}; "
-            f"raw saved to {debug_path}"
-        )
+    # A malformed reply (e.g. a missing comma deep in the JSON) happens now and
+    # then; ask once more before giving up on the paper.
+    spent = {"input_tokens": 0, "output_tokens": 0}
+    for attempt in (1, 2):
+        text, usage = call_judge(client, provider, model, system_blocks, user_msg,
+                                 max_tokens=max_tokens)
+        try:
+            parsed = _extract_json(text, stem, usage)
+            break
+        except ValueError as e:
+            if attempt == 2:
+                debug_path = Path(f"/tmp/judge_raw_{stem}.txt")
+                debug_path.write_text(text)
+                raise RuntimeError(f"{e}; raw saved to {debug_path}") from None
+            print(f"  [judge] {stem}: {e}; asking again", flush=True)
+            for k in spent:
+                spent[k] += usage.get(k, 0)
+    for k in spent:
+        usage[k] = usage.get(k, 0) + spent[k]
     parsed = normalize_keys(parsed)
 
     filter_non_behavioural_assays(parsed)

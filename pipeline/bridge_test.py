@@ -187,9 +187,29 @@ def _fmt(x, nd=2):
     return "–" if x is None or (isinstance(x, float) and np.isnan(x)) else f"{x:.{nd}f}"
 
 
+def judged_with(stems: list[str], trio: list[str]) -> list[str]:
+    """Papers whose new consensus was judged from exactly these candidates."""
+    out = []
+    for s in stems:
+        path = NEW_CONSENSUS / f"{s}.json"
+        if path.exists():
+            used = json.loads(path.read_text()).get("judge_input_models") or []
+            if sorted(used) == sorted(trio):
+                out.append(s)
+    return out
+
+
+def coverage(stems: list[str], tags: list[str]) -> dict[str, list[str]]:
+    """Papers each candidate model has scored."""
+    return {t: [s for s in stems if (CANDIDATES / t / f"{s}.json").exists()] for t in tags}
+
+
 def report(stems: list[str], sources: dict, tags: list[str], third: str,
-           choice_scores: dict, judge_model: str, effort: str) -> Path:
-    judged = [s for s in stems if (NEW_CONSENSUS / f"{s}.json").exists()]
+           choice_scores: dict, judge_model: str, effort: str,
+           problems: list[str] | None = None) -> Path:
+    trio = BASE_TRIO + [third]
+    judged = judged_with(stems, trio)
+    cov = coverage(stems, tags)
     slots = {"published": CONSENSUS_DIR, "new": NEW_CONSENSUS,
              **{t: CANDIDATES / t for t in tags}}
     pairs = build_pairs(judged, slots)
@@ -205,22 +225,28 @@ def report(stems: list[str], sources: dict, tags: list[str], third: str,
     today = date.today().isoformat()
     payload = {
         "date": today, "judge_model": judge_model, "judge_effort": effort,
-        "candidates": tags, "ensemble": BASE_TRIO + [third], "third_model_choice": choice_scores,
-        "papers": {s: {"input": sources.get(s), "judged": s in judged} for s in stems},
+        "candidates": tags, "ensemble": trio, "third_model_choice": choice_scores,
+        "complete": not problems, "problems": problems or [],
+        "papers": {s: {"input": sources.get(s), "judged": s in judged,
+                       "scored_by": [t for t in tags if s in cov[t]]} for s in stems},
         "n_rater2_assays": len(pairs), "assay_agreement": results,
         "study_level_published_vs_new": study_level(judged),
     }
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     (OUT_DIR / f"bridge_{today}.json").write_text(json.dumps(payload, indent=2, default=float))
 
-    L = [f"# Bridge test {today}", "",
-         f"Re-scored {len(judged)} of the {len(stems)} human-rated papers with "
-         f"`{', '.join(BASE_TRIO + [third])}` judged by `{judge_model}` (effort `{effort}`), "
+    L = [f"# Bridge test {today}", ""]
+    if problems:
+        L += ["> **Incomplete run: don't use these numbers to choose models.**", ">"]
+        L += [f"> - {p}" for p in problems] + [""]
+    L += [f"Re-scored {len(judged)} of the {len(stems)} human-rated papers with "
+         f"`{', '.join(trio)}` judged by `{judge_model}` (effort `{effort}`), "
          "and compared per assay with the published consensus (qwen3.5-397b-a17b, glm-4.7, "
          "openai-gpt-oss-120b; judge claude-opus-4-7) and the two human raters. Statistics as in "
          "`figures/plot_three_way.py`: B/E/D assay totals, exact agreement, mean difference "
          "(first minus second), Spearman ρ, ICC(2,1).", "",
          "## Assay-level agreement", "",
+         "Candidate rows cover the papers that model scored (see *Papers*).", "",
          "| comparison | dim | n | exact | mean diff | ρ | ICC |", "|---|---|---|---|---|---|---|"]
     for label, _, _ in comparisons:
         for dim in ("B", "E", "D"):
@@ -229,7 +255,8 @@ def report(stems: list[str], sources: dict, tags: list[str], third: str,
                 L.append(f"| {label} | {dim} | {r['n']} | {r['pct']:.0f}% | "
                          f"{r['mean_diff']:+.2f} | {_fmt(r['spearman'])} | {_fmt(r['icc'])} |")
     L += ["", "## Choice of the third candidate", "",
-          "Agreement with human rater 2, averaged over B/E/D:", "",
+          "Agreement with human rater 2, averaged over B/E/D, on the papers every "
+          "model in the choice scored:", "",
           "| model | mean ICC | mean exact | n |", "|---|---|---|---|"]
     for t, s in choice_scores.items():
         L.append(f"| `{t}`{' (chosen)' if t == third else ''} | {_fmt(s['icc'])} | "
@@ -240,9 +267,12 @@ def report(stems: list[str], sources: dict, tags: list[str], third: str,
               "| score | n | mean |difference| | ρ |", "|---|---|---|---|"]
         for k, v in sl.items():
             L.append(f"| {k} | {v['n']} | {v['mean_abs_diff']:.2f} | {_fmt(v['spearman'])} |")
-    L += ["", "## Papers", "", "| paper | input | judged |", "|---|---|---|"]
+    L += ["", "## Papers", "",
+          "| paper | input | " + " | ".join(tags) + " | judged |",
+          "|---|---|" + "---|" * len(tags) + "---|"]
     for s in stems:
-        L.append(f"| `{s}` | {sources.get(s, '–')} | {'yes' if s in judged else 'no'} |")
+        marks = " | ".join("✓" if s in cov[t] else "–" for t in tags)
+        L.append(f"| `{s}` | {sources.get(s, '–')} | {marks} | {'✓' if s in judged else '–'} |")
     out = OUT_DIR / f"bridge_{today}.md"
     out.write_text("\n".join(L) + "\n")
     return out
@@ -256,7 +286,9 @@ def main() -> None:
     ap.add_argument("--candidates", default="qwen,glm53,deepseek4,gemma4")
     ap.add_argument("--choose-from", default="deepseek4,gemma4")
     ap.add_argument("--judge-provider", default=os.environ.get("JUDGE_PROVIDER", "foundry"))
-    ap.add_argument("--workers", type=int, default=8)
+    ap.add_argument("--workers", type=int, default=4)
+    ap.add_argument("--allow-missing", type=int, default=1,
+                    help="papers a model or the judge may miss before the run counts as failed")
     ap.add_argument("--compare-only", action="store_true",
                     help="skip scoring; compare what is already in WORK_DIR/bridge")
     args = ap.parse_args()
@@ -272,31 +304,53 @@ def main() -> None:
         sources_file.write_text(json.dumps(sources, indent=2))
         if any(v in ("supplied PDF", "open access") for v in sources.values()):
             run_script("bulk_docling.py", "--pdf-dir", str(PDFS))
-        run_script("triple_score.py", "--pdf-dir", str(PDFS), "--output-root", str(CANDIDATES),
-                   "--models", ",".join(tags), "--workers", str(args.workers), "--limit", "1000")
+        for _ in range(2):  # second pass retries whatever failed (results are cached)
+            run_script("triple_score.py", "--pdf-dir", str(PDFS),
+                       "--output-root", str(CANDIDATES), "--models", ",".join(tags),
+                       "--workers", str(args.workers), "--limit", "1000")
+            if all(len(v) == len(stems) for v in coverage(stems, tags).values()):
+                break
 
-    scored = [s for s in stems if any((CANDIDATES / t / f"{s}.json").exists() for t in tags)]
-    pairs = build_pairs(scored, {t: CANDIDATES / t for t in choose_from})
+    cov = coverage(stems, tags)
+    problems = [f"`{t}` scored {len(v)} of {len(stems)} papers"
+                for t, v in cov.items() if len(v) < len(stems) - args.allow_missing]
+    for t, v in cov.items():
+        log(f"{t}: scored {len(v)}/{len(stems)}")
+
+    # Compare the choices on the same papers only.
+    common = [s for s in stems if all(s in cov.get(t, []) for t in choose_from)]
+    pairs = build_pairs(common, {t: CANDIDATES / t for t in choose_from})
     third, choice_scores = choose_third(pairs, choose_from)
-    log(f"third candidate: {third} ({choice_scores})")
+    log(f"third candidate: {third} ({choice_scores}) on {len(common)} papers")
+    trio = BASE_TRIO + [third]
 
     if not args.compare_only:
-        trio = ",".join(BASE_TRIO + [third])
-        for stem in scored:
+        ready = [s for s in stems if all(s in cov.get(t, []) for t in trio)]
+        for stem in ready:
+            path = NEW_CONSENSUS / f"{stem}.json"
+            if path.exists() and stem not in judged_with([stem], trio):
+                path.unlink()  # judged from other candidates: judge again
             run_script("judge_consensus.py", "--pdf-dir", str(PDFS),
                        "--candidates-root", str(CANDIDATES), "--output-dir", str(NEW_CONSENSUS),
-                       "--judge-provider", args.judge_provider, "--models", trio,
+                       "--judge-provider", args.judge_provider, "--models", ",".join(trio),
                        "--stem", stem, "--resume")
+    judged = judged_with(stems, trio)
+    if len(judged) < len(stems) - args.allow_missing:
+        problems.append(f"the judge produced {len(judged)} of {len(stems)} consensus scores")
 
     judge_model = os.environ.get("AZURE_FOUNDRY_MODEL", "") if args.judge_provider == "foundry" \
         else args.judge_provider
     out = report(stems, sources, tags, third, choice_scores, judge_model,
-                 os.environ.get("JUDGE_EFFORT", "high"))
+                 os.environ.get("JUDGE_EFFORT", "high"), problems)
     log(f"report: {out}")
     print(out.read_text())
     if os.environ.get("GITHUB_OUTPUT"):
         with open(os.environ["GITHUB_OUTPUT"], "a") as f:
             f.write(f"report={out.relative_to(HERE.parent)}\nthird={third}\n")
+    if problems:
+        for p in problems:
+            print(f"::error::Bridge test incomplete: {p}")
+        sys.exit(1)
 
 
 if __name__ == "__main__":

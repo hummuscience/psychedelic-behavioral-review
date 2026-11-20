@@ -11,7 +11,11 @@ from __future__ import annotations
 
 import json
 import os
+import random
+import re
+import threading
 import time
+from collections import deque
 from abc import ABC, abstractmethod
 from pathlib import Path
 
@@ -21,6 +25,12 @@ import requests
 SAIA_BASE_URL = "https://chat-ai.academiccloud.de/v1"
 DOCLING_TIMEOUT = 600  # PDF conversion can take ~100s for typical papers
 SAIA_CHAT_TIMEOUT = 1200  # 20 min cap for a single chat completion call.
+# SAIA allows 10 requests per user per 10 s; stay under it across all threads.
+SAIA_MAX_REQUESTS_PER_10S = int(os.environ.get("SAIA_MAX_REQUESTS_PER_10S", "8"))
+# Waits (s) before retrying a busy model (503 "at max capacity") or a dropped
+# connection: ~16 min in all, after which the paper counts as failed.
+SAIA_BUSY_WAITS = (30, 60, 120, 240, 480)
+SAIA_MAX_RATE_LIMITED = 30  # 429 retries per call (each waits a few seconds)
 # The v2 schema's reasoning trace + JSON response can push qwen3.5-397b past
 # the old 8-min limit on long papers (~30% of qwen calls were timing out).
 # 1200s is long enough for nearly all real completions to finish; if a call
@@ -147,11 +157,22 @@ def _docling_call(pdf_path: Path, api_key: str) -> str:
         "accept": "application/json",
         "Authorization": f"Bearer {api_key}",
     }
-    with pdf_path.open("rb") as fh:
-        files = {"document": (pdf_path.name, fh, "application/pdf")}
-        params = {"response_type": "markdown"}
-        r = requests.post(url, headers=headers, params=params, files=files,
-                          timeout=DOCLING_TIMEOUT)
+    busy = rate_limited = 0
+    while True:
+        _saia_throttle()
+        with pdf_path.open("rb") as fh:
+            files = {"document": (pdf_path.name, fh, "application/pdf")}
+            params = {"response_type": "markdown"}
+            r = requests.post(url, headers=headers, params=params, files=files,
+                              timeout=DOCLING_TIMEOUT)
+        if r.status_code == 429 and rate_limited < SAIA_MAX_RATE_LIMITED:
+            rate_limited += 1
+            time.sleep(_retry_after(r) + random.uniform(0.5, 3))
+        elif r.status_code in (502, 503, 504) and busy < len(SAIA_BUSY_WAITS):
+            time.sleep(SAIA_BUSY_WAITS[busy] * random.uniform(0.8, 1.2))
+            busy += 1
+        else:
+            break
     if r.status_code != 200:
         raise ProviderError(
             f"Docling conversion failed for {pdf_path.name}: "
@@ -273,6 +294,63 @@ def docling_convert(pdf_path: Path, api_key: str, cache: bool = True) -> str:
     return main_md + SUPP_DELIMITER + supp_md
 
 
+_saia_lock = threading.Lock()
+_saia_recent: deque = deque()
+
+
+def _saia_throttle() -> None:
+    """Block until a request fits in SAIA's per-user rate limit."""
+    while True:
+        with _saia_lock:
+            now = time.monotonic()
+            while _saia_recent and now - _saia_recent[0] >= 10:
+                _saia_recent.popleft()
+            if len(_saia_recent) < SAIA_MAX_REQUESTS_PER_10S:
+                _saia_recent.append(now)
+                return
+            wait = 10 - (now - _saia_recent[0]) + 0.05
+        time.sleep(wait)
+
+
+def _retry_after(err) -> float:
+    """Seconds SAIA asks us to wait after a 429 (header, else message, else 5)."""
+    resp = getattr(err, "response", err)
+    headers = getattr(resp, "headers", None)
+    header = headers.get("retry-after") if headers is not None else None
+    try:
+        return float(header)
+    except (TypeError, ValueError):
+        m = re.search(r"[Rr]etry after (\d+(?:\.\d+)?)", getattr(err, "text", None) or str(err))
+        return float(m.group(1)) if m else 5.0
+
+
+def saia_chat(client, sleep=time.sleep, **kwargs):
+    """chat.completions.create with SAIA's rate limit, busy models and dropped
+    connections handled: waits and tries again; one retry after a timeout."""
+    import openai
+    busy = rate_limited = timeouts = 0
+    while True:
+        _saia_throttle()
+        try:
+            return client.chat.completions.create(**kwargs)
+        except openai.RateLimitError as e:
+            rate_limited += 1
+            if rate_limited > SAIA_MAX_RATE_LIMITED:
+                raise
+            wait = _retry_after(e) + random.uniform(0.5, 3)
+        except openai.APITimeoutError:
+            timeouts += 1
+            if timeouts > 1:
+                raise
+            wait = 0
+        except (openai.InternalServerError, openai.APIConnectionError):
+            if busy >= len(SAIA_BUSY_WAITS):
+                raise
+            wait = SAIA_BUSY_WAITS[busy] * random.uniform(0.8, 1.2)
+            busy += 1
+        sleep(wait)
+
+
 class SaiaProvider(Provider):
     name = "saia"
 
@@ -302,7 +380,8 @@ class SaiaProvider(Provider):
             "=== PAPER END ==="
         )
         try:
-            resp = self.client.chat.completions.create(
+            resp = saia_chat(
+                self.client,
                 model=self.model,
                 messages=[
                     {"role": "system", "content": prompt},
