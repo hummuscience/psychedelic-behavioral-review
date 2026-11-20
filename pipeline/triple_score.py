@@ -132,9 +132,11 @@ def main():
 
     tasks: list[tuple[str, str, Path, Path]] = []
     skipped = 0
-    for tag, model_id in selected:
-        out_dir = args.output_root / tag
-        for pdf in cached_pdfs:
+    # Paper by paper, every model in turn: the workers then spread over the
+    # models, so one slow or overloaded model doesn't hold up the others.
+    for pdf in cached_pdfs:
+        for tag, model_id in selected:
+            out_dir = args.output_root / tag
             json_path = out_dir / f"{pdf.stem}.json"
             if json_path.exists():
                 skipped += 1

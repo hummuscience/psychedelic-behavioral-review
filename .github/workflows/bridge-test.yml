@@ -75,6 +75,8 @@ jobs:
 
       - name: Run the bridge test
         id: run
+        # Below the job's limit, so the scores so far are still saved below.
+        timeout-minutes: 300
         env:
           SAIA_API_KEY: ${{ secrets.SAIA_API_KEY }}
           AZURE_FOUNDRY_API_KEY: ${{ secrets.AZURE_FOUNDRY_API_KEY }}
