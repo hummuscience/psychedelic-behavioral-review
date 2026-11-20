@@ -27,6 +27,7 @@ import traceback
 from pathlib import Path
 
 import anthropic
+from provenance import judge_stamp
 from dotenv import load_dotenv
 from openai import OpenAI, AzureOpenAI
 
@@ -403,6 +404,10 @@ def judge_one(client, provider: str, model: str, stem: str, pdf_dir: Path,
     if provider in ("anthropic", "foundry") and _supports_effort(model):
         parsed["judge_effort"] = JUDGE_EFFORT
     parsed["judge_input_models"] = list(candidates.keys())
+    parsed["scoring"] = judge_stamp(
+        model_tags, candidates, judge=model, judged_by=parsed["judge_model"],
+        provider=provider, effort=parsed.get("judge_effort"),
+        declined=usage.get("fallback_from"), judge_instructions=JUDGE_INSTRUCTIONS)
     parsed["judge_usage"] = usage
     return parsed
 

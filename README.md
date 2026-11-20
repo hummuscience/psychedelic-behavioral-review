@@ -209,6 +209,7 @@ in the `SCORING_MODELS` variable (default `qwen,glm53,deepseek4`).
 | Path | What it is |
 |---|---|
 | `results_v2_full_consensus/*.json` | One judge-consensus record per paper (287 papers): scored assays, dosing, sex, age, evidence |
+| `scoring_provenance.csv` | Which models scored each paper: the ensemble asked for, the candidates the judge actually had, the judge (and the fallback, if it declined), effort, rubric and code versions, and a `setup_id` to group papers scored the same way. Built from the `scoring` block in each consensus JSON (`pipeline/provenance.py`); the published papers are `v2 (published)` |
 | `paper_registry.json` | Canonical per-paper metadata (DOI, title, authors, year, journal) |
 | `prisma_accounting.csv` | PRISMA flow: every screened record with its disposition |
 | `pubmed_expansion.csv` | Every PubMed record screened, with its title-classifier label; monthly additions have `source = update:<date>` |
