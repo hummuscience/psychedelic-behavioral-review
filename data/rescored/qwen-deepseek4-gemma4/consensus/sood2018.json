@@ -1,0 +1,311 @@
+{
+  "study_id": "Sood2017",
+  "doi": "10.1016/j.ijdevneu.2017.10.005",
+  "species": "rat",
+  "strain": "Sprague-Dawley",
+  "age": {
+    "value": "juvenile",
+    "age_min_days": 21,
+    "age_max_days": 21,
+    "evidence": "examined 5-HT2A receptor agonist, DOI ... evoked responses, namely stereotypical head-twitch behaviors in control and MS Sprague-Dawley rat pups at postnatal day 21 (P21)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Within each experimental cohort, the individual experimental groups had animals derived from a minimum of three litters ... and included both male and female pups.",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        2.0
+      ],
+      "doses_raw": "2 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Control and MS rat pups (P21) were intraperitoneally administered the 5-HT2A receptor agonist DOI ... (2 mg/kg) (Sigma-Aldrich, USA) or vehicle (0.9% saline)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Dams and their litters were assigned at random to either control or MS groups on postnatal day (P1). All litter sizes ranged between 10 and 12 pups per litter. (Pups were housed with litter; individually placed in a separate cage only during behavioural analysis.)",
+      "confidence": "medium"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "Sprague-Dawley rat pups maintained on a 12 h light/dark cycle (lights on at 7:00 a.m.)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head-Twitch Response (HTR)",
+      "assay_description": "P21 control and maternally separated rat pups received DOI (2 mg/kg i.p.) or saline and were placed individually in a separate cage; head-twitch events were manually counted by a blinded experimenter for 30 min starting 20 min after injection.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "intraperitoneally administered the 5-HT2A receptor agonist DOI",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "During behavioral analysis rat pups were individually housed in a separate cage.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Testing in a separate cage; no food in test cage mentioned (paper states ad libitum food in home housing only)",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Testing in a separate cage; no water in test cage mentioned (paper states ad libitum water in home housing only)",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 20,
+          "evidence": "Head twitch behavior was recorded in rat pups administered vehicle or DOI commencing twenty minutes after drug treatment for a thirty minute duration.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 22,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 5,
+        "evidence": "Treatment groups: Control + Vehicle, Control + DOI, MS + Vehicle and MS + DOI, (n = 5 -7 per group); F(1.18) error df implies N = 22",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "DOI (2 mg/kg) increased head-twitch counts in P21 rat pups, and this effect was markedly potentiated in pups with a history of maternal separation relative to DOI-treated controls. Baseline head-twitch events did not differ between vehicle-treated control and MS pups.",
+        "statistics": "Two-way ANOVA: DOI treatment F(1,18) = 10.545, p = 0.0045; MS F(1,18) = 117.22, p < 0.0001; MS x DOI interaction F(1,18) = 15.14, p = 0.001; Bonferroni post hoc MS+DOI vs Control+DOI p < 0.05",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "Bonferroni post hoc comparisons indicated that the head-twitch behavior was significantly potentiated in DOI treated P21 MS animals as compared to DOI treated control groups. Baseline head-twitch events in vehicle treated controls and MS animals did not differ.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The number of head-twitch events was manually scored by an experimenter blind to the experimental treatment groups.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only total head-twitch counts over the 30 min session reported; no time-binned analysis.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition or bout analysis reported; only event counts.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-twitch response is excluded from ethological behaviours per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "During behavioral analysis rat pups were individually housed in a separate cage.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is a drug-evoked stereotyped behaviour requiring no learning.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The number of head-twitch events was manually scored by an experimenter",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Experiments were subjected to a two-way ANOVA followed by a Bonferroni post hoc test (univariate only).",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "During behavioral analysis rat pups were individually housed in a separate cage.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "individually housed in a separate cage",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "During behavioral analysis rat pups were individually housed in a separate cage.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Head twitch behavior was recorded ... commencing twenty minutes after drug treatment for a thirty minute duration.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "for a thirty minute duration",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Head-twitch behavior was recorded and analyzed on postnatal day 21 (P21)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug behavioural recording reported; vehicle group used as control.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "For all experiments (behavioral and molecular), rat pups were sacrificed at P21.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "thirty minute duration",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "All three candidates identified a single behavioural assay (head-twitch response); c-Fos immunohistochemistry and qPCR are ex vivo endpoints and excluded.",
+    "study_id set to Sood2017 (modal; DOI suffix 2017.10.005).",
+    "n_total set to 22, derived from the two-way ANOVA error df F(1,18) with 4 groups (candidates gave 20, 24, 28 inconsistently); n_per_group_min = 5 from 'n = 5-7 per group'.",
+    "group_housing = yes based on pups housed with litters; individual cage placement only during the 30-min behavioural session.",
+    "food/water_restriction = 'during' per rubric default for a separate test cage; confidence medium since not explicitly stated.",
+    "Confidence raised to high for B2/B3/B6/B8/D4/D5/D6 where the paper's methods clearly indicate absence (single count total, univariate ANOVA, sacrifice at P21).",
+    "sex_dependent kept as 'not_reported' (modal): both sexes included but sex not analysed as a factor."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0.0,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 0.0,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 1.36
+  },
+  "low_confidence_count": 8,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-20T18:08:14+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "d7368ca2f4",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 43767,
+    "output_tokens": 3931,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

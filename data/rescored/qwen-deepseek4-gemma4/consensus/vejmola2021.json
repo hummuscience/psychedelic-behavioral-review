@@ -1,0 +1,150 @@
+{
+  "study_id": "Vejmola2021",
+  "doi": "10.1038/s41398-021-01603-4",
+  "species": "rat",
+  "strain": "Wistar",
+  "age": {
+    "value": "adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Experiments were outperformed on adult male Wistar rats (SPF, Velaz s.r.o., Prague, Czechia). The animals weighed 280 -300 g at the time of surgery, and 300 -350 g at the time of registration.",
+    "confidence": "medium"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 50,
+    "n_female": null,
+    "evidence": "adult male Wistar rats ... 10 rats for saline, nine rats for LSD, eight for psilocin, 12 for mescaline, and 11 for DOB were selected for signal analysis",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocin, LSD, Mescaline, DOB",
+  "dosing": [
+    {
+      "compound": "Psilocin",
+      "doses_mg_per_kg": [
+        4.0
+      ],
+      "doses_raw": "psilocin (4 mg/kg dissolved in 2 ml of saline (0.9% NaCl), acidified with 10 μl of glacial acetic acid)",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "psilocin (4 mg/kg dissolved in 2 ml of saline (0.9% NaCl), acidified with 10 μl of glacial acetic acid) ... All of the substances were administered subcutaneously in a dose of 2 ml/kg of animal weight. ... Each rat was recorded only once.",
+      "confidence": "high"
+    },
+    {
+      "compound": "LSD",
+      "doses_mg_per_kg": [
+        0.2
+      ],
+      "doses_raw": "LSD (in a form of freebase, 0.2 mg/kg dissolved in 20 μl of 96% ethanol and then adjusted to the required volume of 5 ml by saline (0.9% NaCl w/v)",
+      "vehicle": "ethanol",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "LSD (in a form of freebase, 0.2 mg/kg dissolved in 20 μl of 96% ethanol and then adjusted to the required volume of 5 ml by saline (0.9% NaCl w/v) ... All of the substances were administered subcutaneously",
+      "confidence": "high"
+    },
+    {
+      "compound": "Mescaline",
+      "doses_mg_per_kg": [
+        100.0
+      ],
+      "doses_raw": "mescaline hydrochloride (100 mg/kg)",
+      "vehicle": "not_reported",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "mescaline hydrochloride (100 mg/kg) ... All of the substances were administered subcutaneously in a dose of 2 ml/kg of animal weight. Saline (0.9% NaCl w/v) was used as a placebo in the control group.",
+      "confidence": "medium"
+    },
+    {
+      "compound": "DOB",
+      "doses_mg_per_kg": [
+        5.0
+      ],
+      "doses_raw": "2,5-dimethoxy-4-bromoamphetamine (DOB, 5 mg/kg)",
+      "vehicle": "not_reported",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "2,5-dimethoxy-4-bromoamphetamine (DOB, 5 mg/kg) ... All of the substances were administered subcutaneously in a dose of 2 ml/kg of animal weight.",
+      "confidence": "medium"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "No pre-test handling protocol described; only: 'The animals were handled for a few seconds if a suspicion of sleep was observed' during recording.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "Rats were kept in pairs in standard plastic breeding containers ... After the surgery, the rats were individually separated (to prevent biting of the implant) until the day of registration.",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "regular twelve-hour (6:00 -18:00) light/dark cycle ... The experiments were conducted during the daytime, between 7:30 and 13:00",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Rats were kept in pairs in standard plastic breeding containers; home-cage enrichment not mentioned.",
+      "confidence": "low"
+    }
+  },
+  "assays": [],
+  "judge_notes": [
+    "The study is an EEG (pharmaco-EEG power spectra and coherence) study; EEG is a neural recording and is excluded by the rubric.",
+    "Two of three candidates (qwen, deepseek4) scored no behavioural assays. gemma4 proposed 'Behavioral Activity Scoring' (active/inactive ratio). This was dropped because the observer scoring of active vs inactive states served mainly to select resting-state-like EEG segments. It is a state annotation for the neural recording, not a behavioural test whose primary outcome is behaviour. The activity ratio was reported briefly, with no significant drug vs control post hoc effects.",
+    "group_housing set to 'no': rats were pair-housed initially but were individually housed after surgery through the day of registration. Recording took place in their home cages while they were single-housed.",
+    "LSD vehicle set to 'ethanol' because the rubric says to use the first-listed solvent of a mix; LSD was dissolved in ethanol and then diluted with saline.",
+    "Mescaline and DOB vehicles set to 'not_reported'. The paper names saline only as the placebo and as the psilocin and LSD diluent; it never states the solvent for these two drugs.",
+    "n_male = 50 is the number of animals analysed. Groups of 12 were operated, giving 60 implanted rats.",
+    "The DOI is taken from the paper text (Translational Psychiatry (2021) 11:506)."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0,
+    "environmental_complexity_max": 0,
+    "recording_duration_max": 0,
+    "behavioural_complexity_mean": 0,
+    "environmental_complexity_mean": 0,
+    "recording_duration_mean": 0
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-20T18:26:47+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "d7368ca2f4",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 38505,
+    "output_tokens": 2837,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

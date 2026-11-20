@@ -1,0 +1,114 @@
+{
+  "study_id": "Tyls2023",
+  "doi": "10.3389/fnins.2023.1152578",
+  "species": "rat",
+  "strain": "Wistar",
+  "age": {
+    "value": "adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "The experiments were performed on adult male Wistar rats (SPF Velaz, s.r.o., Czechia) weighing 280-300 g at the time of surgery.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "The experiments were performed on adult male Wistar rats",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocin",
+  "dosing": [
+    {
+      "compound": "Psilocin",
+      "doses_mg_per_kg": [
+        4.0
+      ],
+      "doses_raw": "4 mg/kg subcutaneously (SC)",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "Psilocin (PSI, THC-Pharm GmbH, Germany) was dissolved in 2 ml of saline (0.9% NaCl) acidified by 10 μl of glacial acetic acid, subsequently adjusted to a volume of 5 ml with saline and administrated in a dose of 4 mg/kg subcutaneously (SC). Each rat was recorded only once with a specific treatment.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "The animals were housed in pairs and were regularly handled every second day.",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "The animals were housed in pairs... The rats were then housed individually in cages in order to prevent damage to implanted electrodes (individually housed after surgery, i.e., during testing).",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "Constant housing conditions were guaranteed during the entire period: 12-h light/dark regime... The experiments were conducted during the daytime between 8:00 and 14:00.",
+      "confidence": "medium"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [],
+  "judge_notes": [
+    "Included the home-cage behavioural activity (active/inactive ratio) as the single assay (2 of 3 candidates); it is a behavioural outcome co-registered with EEG and statistically analysed. EEG power/coherence/GFC excluded as neural recordings.",
+    "B1 scored 0 (single measure); gemma's score of 1 was inconsistent with its own value '1'.",
+    "D2 scored 2: session = 10 min baseline + 90 min post-drug (>60 min); gemma's 15-60 min category was incorrect.",
+    "application_type set to s.c. (route of the psychedelic psilocin); clozapine i.p. noted in evidence.",
+    "day_night_flipped set to 'no' (modal) with medium confidence: standard 12-h light/dark with testing during daytime 08:00-14:00.",
+    "time_dependent set to n/a per rubric (single post-dose session start), though within-session epochs were analysed (captured in B2).",
+    "n_total left null: only 'at least 8 animals' per group stated."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0,
+    "environmental_complexity_max": 0,
+    "recording_duration_max": 0,
+    "behavioural_complexity_mean": 0,
+    "environmental_complexity_mean": 0,
+    "recording_duration_mean": 0
+  },
+  "low_confidence_count": 1,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-20T18:23:14+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "d7368ca2f4",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 89360,
+    "output_tokens": 9339,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

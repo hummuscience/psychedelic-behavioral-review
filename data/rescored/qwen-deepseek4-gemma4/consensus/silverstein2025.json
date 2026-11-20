@@ -1,0 +1,510 @@
+{
+  "study_id": "Silverstein2025",
+  "doi": "10.1038/s41398-025-03308-4",
+  "species": "rat",
+  "strain": "Sprague Dawley",
+  "age": {
+    "value": "adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Adult Sprague Dawley rats ( n = 12, 6 male, 6 female, weight 300 -350 g, Charles River Laboratories Inc., Wilmington, MA)",
+    "confidence": "medium"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": 6,
+    "n_female": 6,
+    "evidence": "Adult Sprague Dawley rats ( n = 12, 6 male, 6 female, weight 300 -350 g ...)",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        0.1,
+        1.0,
+        10.0
+      ],
+      "doses_raw": "0.1, 1, and 10 mg/kg",
+      "vehicle": "saline",
+      "route": "i.v.",
+      "schedule": "repeated",
+      "evidence": "Each rat ( n = 12, 6 male, 6 female) received 0.9% saline and three doses of psilocybin (0.1, 1, and 10 mg/kg) as a continuous infusion over the course of an hour. Each infusion session was separated by 5 -7 days and was conducted in a random order.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "maintained on 12 h: 12 h light: dark cycle (lights ON at 8:00 am) ... rats were connected to the EEG acquisition system between 9:00 and 9:30am",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head Twitch Response (HTR)",
+      "assay_description": "Video-recorded HTR in EEG recording chamber (tethered rat with jugular catheter), counted by blinded visual analysis for 5 min before and throughout a 60-min continuous i.v. infusion of saline or psilocybin (0.1, 1, 10 mg/kg); counts binned in 5-min epochs and summed over 60 min. Within-subject design, 4 sessions separated by 5-7 days.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.v.",
+          "evidence": "one of the three doses of psilocybin (0.1, 1, or 10 mg/kg) was delivered (intravenous) over an hour",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "All rats were allowed at least 7 -10 days of post-surgical recovery, during which they were conditioned to the recording chambers and EEG acquisition system.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Rats were tethered to the EEG acquisition system; no restraint described and HTR/locomotion were freely expressed (\"Rat activity and locomotion were captured using a 3-axis gyroscope sensor\").",
+          "confidence": "medium"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food described in the recording chamber; home-cage food ad libitum ('with ad libitum food and water').",
+          "confidence": "low"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water described in the recording chamber; home-cage water ad libitum.",
+          "confidence": "low"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "The HTR was quantified ... for the 5-min period prior to the start of intravenous infusion of either saline or psilocybin, and for the entirety of 60-min infusion period.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 12,
+        "n_male": 6,
+        "n_female": 6,
+        "n_per_group_min": 11,
+        "evidence": "n = 12, 6 male and 6 female rats for all treatment groups except for 10 mg/kg group which had 5 male rats",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin dose-dependently induced HTR with an inverted U-shaped dose-effect curve over the infusion; 10 mg/kg produced more twitches early (0-10 min), 1 mg/kg peaked at 5-15 min. Total 60-min HTR count was significantly increased by 1 and 10 mg/kg but not 0.1 mg/kg versus saline.",
+        "statistics": "0-5 min: 10 mg/kg vs saline, 0.1, 1 mg/kg all p ≤ 0.0001; 5-10 min: 10 mg/kg vs saline p ≤ 0.0001, vs 0.1 p ≤ 0.0001, vs 1 mg/kg p = 0.0028; 1 mg/kg vs saline p = 0.0004, vs 0.1 p = 0.0097; 10-15 min: 1 mg/kg vs saline p ≤ 0.0001, vs 0.1 p = 0.0046, vs 10 mg/kg p ≤ 0.0001; total HTR: 1 mg/kg p = 0.0362, 10 mg/kg p = 0.0308 (Tukey post-hoc, linear mixed model)",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "no",
+        "time_dependent": "n/a",
+        "evidence": "Analysis of the total number of headtwitches recorded throughout the entire 60-min infusion (Fig. 2B) revealed that as compared to saline infusion, infusion of both 1 mg/kg ( p = 0.0362) and 10 mg/kg (p = 0.0308) psilocybin produced significant increases in head-twitches.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "HTR counts were either binned in 5-min epochs or summed for the entire 60-min infusion. (single variable: HTR count)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "HTR count data are presented as group means ± standard error of the means in 5-min bins.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of transitions, sequences or bout structure reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is explicitly excluded as an ethological behaviour by the rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component; rats tested individually.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning or memory component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The HTR was quantified using visual analysis of video recordings",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Linear mixed models with dose and time as fixed factors; no multivariate behavioural analysis.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "they were conditioned to the recording chambers and EEG acquisition system",
+          "confidence": "medium"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "recording chamber; no compartments described",
+          "confidence": "medium"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each rat individually tethered to the EEG acquisition system in a recording chamber; no conspecific described.",
+          "confidence": "medium"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Each infusion session (0.9% saline or one of three psilocybin doses) was performed on a separate day with an interval of 5 -7 days between sessions.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "The HTR was quantified ... for the 5-min period prior to the start of intravenous infusion ... and for the entirety of 60-min infusion period (contiguous 65-min scored bout).",
+          "confidence": "medium"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "All rats received, on separate days, each of the three doses of psilocybin and vehicle control (4 recording days).",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The HTR was quantified using visual analysis of video recordings for the 5-min period prior to the start of intravenous infusion",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR scored only during the acute infusion window; no recording ≥24 h after drug as follow-up.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Scored bout ~65 min, far below 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      }
+    },
+    {
+      "assay_name": "Locomotor Activity (head-stage gyroscope)",
+      "assay_description": "Rat activity/movement measured as mean 3D angular velocity from a 3-axis gyroscope built into the EEG head-stage, binned in 10-min epochs across baseline, 60-min i.v. infusion (saline, 0.1, 1, 10 mg/kg psilocybin) and post-infusion period in the EEG recording chamber; 4 sessions per rat on separate days.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.v.",
+          "evidence": "one of the three doses of psilocybin (0.1, 1, or 10 mg/kg) was delivered (intravenous) over an hour",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "All rats were allowed at least 7 -10 days of post-surgical recovery, during which they were conditioned to the recording chambers and EEG acquisition system.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Rat activity and locomotion were captured using a 3-axis gyroscope sensor built into the EEG acquisition head-stage (tethered, freely moving; no restraint described).",
+          "confidence": "medium"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food described in the recording chamber; home-cage food ad libitum.",
+          "confidence": "low"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water described in the recording chamber; home-cage water ad libitum.",
+          "confidence": "low"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Analysis of the mean 3D angular velocity throughout the recording session ... (gyroscope recorded continuously from before infusion onset).",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 12,
+        "n_male": 6,
+        "n_female": 6,
+        "n_per_group_min": 11,
+        "evidence": "n = 12, 6 male and 6 female rats for all treatment groups except for 10 mg/kg group which had 5 male rats (Fig. 2 caption; gyroscope-specific n not separately stated)",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "0.1 mg/kg psilocybin had no effect on movement; 1 mg/kg briefly (~10 min) increased movement after 10 min of infusion; 10 mg/kg decreased movement at 30-50 min and at 70 min, producing a quiescent state (inverted-U relationship with dose).",
+        "statistics": "0.1 mg/kg vs saline p > 0.05; 1 mg/kg vs saline p = 0.0069; 10 mg/kg vs saline all p ≤ 0.023 (FDR-corrected post-hoc, linear mixed model)",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "no",
+        "time_dependent": "n/a",
+        "evidence": "The 1 mg/kg dose induced a brief period (~10 min) of increased movements after 10 min of infusion ( p = 0.0069)... The 10 mg/kg psilocybin produced a significant decrease in rat movements 30 -50 min and at 70 min in the infusion period (all p ≤ 0.023).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Analysis of the mean 3D angular velocity throughout the recording session",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The gyroscope data were binned in 10-min epochs.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence or transition analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "General movement/angular velocity only; locomotor measures not ethological per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning or memory component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Rat activity and locomotion were captured using a 3-axis gyroscope sensor (motion signal, no behavioural classification).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate linear mixed models only.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "they were conditioned to the recording chambers and EEG acquisition system",
+          "confidence": "medium"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "recording chamber; no compartments described",
+          "confidence": "medium"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each rat individually tethered to the EEG acquisition system; no conspecific described.",
+          "confidence": "medium"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Each infusion session ... was performed on a separate day with an interval of 5 -7 days between sessions.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "We focused our analysis on 90 min of EEG data comprising a 10-min pre-psilocybin infusion baseline period, 60 min ... and 20 min immediately after the end of ... infusion; gyroscope effects reported 'at 70 min in the infusion period'.",
+          "confidence": "medium"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "All rats received, on separate days, each of the three doses of psilocybin and vehicle control (4 recording days).",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "90 min of data comprising a 10-min pre-psilocybin infusion baseline period; mean 3D angular velocity analysed 'throughout the recording session'.",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No recording ≥24 h after drug as follow-up.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Analysed session ~90 min, below 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      }
+    }
+  ],
+  "judge_notes": [
+    "Kept HTR and gyroscope locomotion as two separate assays (2 of 3 candidates); they measure different behavioural domains with different methods (video scoring vs head-stage gyroscope). EEG/PAC/wPLI analyses excluded as neural recordings.",
+    "B1 overridden to 0 for both assays: HTR binned vs summed is the same single variable (HTR count); locomotion is a single variable (mean 3D angular velocity).",
+    "D2 set to 2 for HTR (contiguous 5-min pre-infusion + 60-min infusion = 65 min scored bout) and locomotion (90-min analysed window incl. post-infusion, effect reported at 70 min).",
+    "D3 set to 1 (4 recording days = 2-7 category); gemma's score of 2 was inconsistent with its own category.",
+    "n_per_group_min set to 11 (10 mg/kg group missing one male session) rather than candidates' 5, which reflected male count only.",
+    "time_dependent set to n/a per rubric (single time_to_assay; within-session bins are not distinct timepoints). sex_dependent 'no': sex included as fixed factor with no main effect.",
+    "setup_habituation 'yes': rats were conditioned to the recording chambers during recovery and habituated ≥1 h before baseline.",
+    "Dosing schedule 'repeated' (modal): each rat received three psilocybin doses across sessions 5-7 days apart in a within-subject design."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 6.82,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 6.82
+  },
+  "low_confidence_count": 17,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-20T18:03:20+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "d7368ca2f4",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 51567,
+    "output_tokens": 9199,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

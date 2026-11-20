@@ -1,0 +1,314 @@
+{
+  "study_id": "Vargas-Perez2024",
+  "doi": null,
+  "species": "rat",
+  "strain": "Wistar",
+  "age": {
+    "value": "adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Male Wistar rats (Charles River), ranging from 350 to 500 g",
+    "confidence": "medium"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 88,
+    "n_female": null,
+    "evidence": "Male Wistar rats (Charles River), ranging from 350 to 500 g, were individually housed",
+    "confidence": "high"
+  },
+  "psychedelic": "4-AcO-DMT",
+  "dosing": [
+    {
+      "compound": "4-AcO-DMT",
+      "doses_mg_per_kg": [
+        2.0,
+        4.0,
+        10.0
+      ],
+      "doses_raw": "4-AcO-DMT (2, 4 or 10 mg/kg)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "repeated",
+      "evidence": "4-AcO-DMT ... was dissolved in 0.9 % sodium chloride (saline) and administered intraperitoneally (i.p.). The conditioning phase consisted of four sessions (procedures D and W) or eight sessions (B procedure) of 40 min each.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "Male Wistar rats ... were individually housed in Plexiglas cages",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12-hour light cycle (7:00 A.M. to 7:00 P.M.)... All place conditioning and tests were conducted between 08:30 and 19:00 h.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Conditioned Place Preference",
+      "assay_description": "Unbiased, counterbalanced place conditioning in two distinct wooden environments (41 × 41 × 38 cm; white/wire mesh vs black/Plexiglas) separated by a neutral gray area. Three conditioning procedures (B: drug vs saline 24 h later; D: drug vs non-paired; W: 24-h withdrawal vs non-paired) with 4-AcO-DMT 2, 4, 10 mg/kg i.p.; 40-min conditioning sessions; 10-min drug-free test ≥48 h after last injection. Outcome: preference index.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered intraperitoneally (i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "The pre-exposure phase involved a single 20-minute session in separate wooden boxes (41 × 41 × 38 cm) painted gray with a gray floor",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "each rat was placed in the neutral gray area ... and could explore both environments freely for 10 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Free access to food in home cage ('during the entire experiment'); no food described in the test apparatus",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Free access to water in home cage; no water described in the test apparatus",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "short_term_1to7d",
+          "value_minutes": 2880,
+          "evidence": "Testing was performed in a drug-free state, at least 2 days after the final conditioning session; the preference test was done at least 48 h after the last injection",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 88,
+        "n_male": 88,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "n = 8 per group; F(3,28) for each procedure; two control groups (one for B, one shared for D and W)",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "In the standard counterbalanced procedure (B), 4 mg/kg 4-AcO-DMT produced place aversion vs saline control while 2 and 10 mg/kg had no effect. In the acute-only procedure (D), 2 mg/kg produced place preference; in the withdrawal-only procedure (W), the 24-h aftereffect of 2 and 4 mg/kg produced place preference. 10 mg/kg had no effect in any procedure.",
+        "statistics": "Control comparison t(14, 28) = 0.57, p > 0.05; Procedure B: F(3,28) = 5.48, P < 0.05, Tukey 4 mg/kg vs control P < 0.05; Procedure D: F(3,28) = 5.48, P < 0.05, Tukey 2 mg/kg vs control P < 0.05; Procedure W: F(3,28) = 4.81, P < 0.05, Tukey 2 and 4 mg/kg vs control P < 0.05",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "(B) 4-AcO-DMT (4 mg/kg) induced aversion (*p < 0.05), while 2 and 10 mg/kg had no effect. (C) 4-AcO-DMT (2 mg/kg) induced reward (*p < 0.05), while 4 and 10 mg/kg had no effect. (D) Withdrawal from 4-AcO-DMT (2 and 4 mg/kg) induced reward (*p < 0.05), while 10 mg/kg had no effects.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The preference index for each animal was calculated by subtracting the time spent in the saline-paired environment from the time spent in the drug-paired environment, divided by the total time and multiplied by 100",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single preference index over the 10-min test; no within-session analysis",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition or sequence analysis reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only time in compartments (spatial preference) measured",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual rat tested in place conditioning apparatus",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The conditioned place preference paradigm is a well-established model utilized to investigate the role of context associations in reward-related behaviors",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No automated behavioural classification described",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "One-way ANOVA per procedure on preference index",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "two distinct wooden environments (41 × 41 × 38 cm) that differed in color, texture, and smell",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enclosed refuge described in CPP apparatus",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "One environment was white with a wire mesh floor, and the other was black with a smooth Plexiglas floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described in apparatus",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects described in apparatus",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "the neutral gray (#788199) area (41 × 10 cm) that separated the two wooden compartments",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "each rat was placed in the neutral gray area ... and could explore both environments freely for 10 min",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water described in test apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "The preference place employed in this study was unbiased ... and devoid of any test session before conditioning; test lasted 10 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "could explore both environments freely for 10 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single drug-free test session at least 2 days after the final conditioning session",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "devoid of any test session before conditioning (pre-exposure in separate gray boxes, no data reported)",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "the preference test was done at least 48 h after the last injection",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Test session 10 min",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Merged deepseek4's three CPP entries (Procedures B, D, W) into a single CPP assay: same apparatus, same 10-min test, same preference-index outcome; procedures differ only in conditioning schedule.",
+    "Excluded VTA BDNF Western blot (ex vivo molecular work).",
+    "B1 scored 0: only the preference index is reported as a result; gemma4's score of 1 with value '1' was internally inconsistent and deepseek4's 'implicit' compartment times are not reported.",
+    "D1/D3/D4 scored 0: the paper states the procedure was 'devoid of any test session before conditioning'; the 20-min pre-exposure in separate gray boxes had no reported data.",
+    "D5 scored 1 (overriding gemma4): test was ≥48 h after last injection.",
+    "time_to_assay binned as short_term_1to7d (2880 min); candidates' early_2to24h and long_term_over7d bins were inconsistent with the stated ≥48 h.",
+    "n_total = 88 assumes 32 animals in B (incl. control) plus 24 drug-treated each in D and W plus one shared 8-animal control for D/W, per 'two control groups'; medium confidence.",
+    "setup_habituation kept as 'yes' (modal) at medium confidence since pre-exposure was in separate gray boxes rather than the conditioning apparatus itself."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 1.36,
+    "recording_duration_mean": 1.36
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-20T18:23:51+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "d7368ca2f4",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 49426,
+    "output_tokens": 4453,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

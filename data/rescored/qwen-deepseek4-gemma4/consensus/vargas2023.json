@@ -1,0 +1,719 @@
+{
+  "study_id": "Vargas2023",
+  "doi": "10.1126/science.adf0435",
+  "species": "mouse",
+  "strain": "C57BL/6J (also Thy1-EGFP and 5-HT2AR KO lines)",
+  "age": {
+    "value": "adult",
+    "age_min_days": 77,
+    "age_max_days": 84,
+    "evidence": "Candidates consistently report '11-12 weeks old' from the methods; age is not stated in the available main-text markdown.",
+    "confidence": "medium"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "'Golgi-Cox staining revealed that 5-MeO increased spine density in both male and female animals'; candidates report 'All behavior and Thy1-EGFP imaging experiments were performed using both males and females.'",
+    "confidence": "medium"
+  },
+  "psychedelic": "5-MeO-DMT (in vivo); DMT, psilocin, psilocybin, TMT, serotonin congeners used in vitro",
+  "dosing": [
+    {
+      "compound": "5-MeO-DMT",
+      "doses_mg_per_kg": [],
+      "doses_raw": "Dose not stated in the available text; candidates report either '10 mg/kg' (HTR positive control) or '50 mg/kg' (spine density/ephys), i.p.",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "'we administered 5-methoxy-N,N-dimethyltryptamine (5-MeO) to wild-type (WT) and 5-HT2AR knockout (KO) mice and assessed structural and functional changes in layer 5 pyramidal neurons of the prefrontal cortex (PFC) 24 hours later'",
+      "confidence": "low"
+    },
+    {
+      "compound": "PCA (para-chloroamphetamine)",
+      "doses_mg_per_kg": [
+        5.0
+      ],
+      "doses_raw": "5 mg/kg intraperitoneally (ip)",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "'both groups were administered (±)-para-chloroamphetamine [PCA, 5 mg/kg intraperitoneally (ip)], a selective serotonin-releasing agent'",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "Candidates quote methods: 'each mouse was handled for approximately 1 min by a male experimenter for three consecutive days leading up to the first day of behavioral testing' (not present in the available main-text markdown).",
+      "confidence": "medium"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Candidates quote methods: 'Mice were group housed (2-5 mice per cage)' (not present in the available main-text markdown).",
+      "confidence": "medium"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "Candidates quote methods: '12 h light/dark cycle (7:00 AM to 7:00 PM)' with testing during the light phase; a reversed cycle is not described.",
+      "confidence": "medium"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Novelty Induced Locomotion (NIL)",
+      "assay_description": "Mice expressing CaMKII-SERT-EYFP or CaMKII-GFP in the mPFC were placed in a novel open arena (reported by candidates as 40 x 40 cm, 60 min) and locomotor activity was tracked automatically (AnyMaze). Conducted 3 weeks after viral injection, prior to PCA administration.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "The only systemic drug given in this cohort was PCA (5 mg/kg ip); NIL was performed before PCA administration.",
+          "confidence": "medium"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported in the available text",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Animals moved freely in an open arena during the locomotion test.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food was present in the open arena during the locomotor session.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water was present in the open arena during the locomotor session.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "not_reported",
+          "value_minutes": null,
+          "evidence": "'both groups of mice underwent a novelty induced locomotion (NIL) test' — performed before PCA administration; no psychedelic given prior to this session.",
+          "confidence": "medium"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "not reported",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "Locomotor activity in a novel arena did not differ between mice expressing SERT in the mPFC and GFP controls, indicating no baseline motor confound.",
+        "statistics": "ns (two-tailed unpaired Student's t test)",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "'both groups of mice underwent a novelty induced locomotion (NIL) test, and no differences in locomotion were observed'",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Only locomotion was reported: 'NIL demonstrates no difference between CaMKII-SERT-EYFP- and CaMKII-GFP-expressing mice.'",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only a single summary locomotion value is reported; no within-session time bins.",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor distance only; no natural behaviours scored.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component; animals tested individually.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Novelty-induced locomotion requires no learning or memory.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Candidates report AnyMaze position tracking, which is a SCORE-0 tool.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Simple group comparison only (t test).",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Standard open arena (reported as 40 cm x 40 cm).",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open arena with no refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single square open arena.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice tested individually in the arena.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the arena.",
+          "confidence": "medium"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "A single NIL session was performed before the FST sequence.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "Candidates report a 60-min session in the 40 x 40 cm arena (not stated in main text).",
+          "confidence": "medium"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "NIL was conducted on one day only.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug recording session within this assay for comparison (single session).",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "NIL was not repeated after drug administration.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session <6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Forced Swim Test (FST)",
+      "assay_description": "Mice expressing CaMKII-SERT-EYFP or CaMKII-GFP in the mPFC were swum in a water-filled cylinder; immobility was scored. A pre-drug FST was run first, and a second FST was run 24 h after PCA (5 mg/kg ip).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "'we administered PCA (5 mg/ kg ip), waited 24 hours, and then performed a second FST'",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported in the available text",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "FST cylinder — per rubric, forced swim cylinders count as restraint.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food accessible in the swim cylinder.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No drinking water accessible in the swim cylinder.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "'we administered PCA (5 mg/ kg ip), waited 24 hours, and then performed a second FST'",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "not reported",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "Before drug, SERT- and GFP-expressing mice did not differ in FST immobility. Twenty-four hours after PCA (5 mg/kg ip), mice expressing SERT in the mPFC showed a significant reduction in immobility relative to GFP controls, interpreted as a sustained antidepressant-like effect of intracellular serotonin.",
+        "statistics": "ns, *p < 0.05, **p < 0.01 (two-way repeated measures ANOVA followed by Šídák's multiple comparisons test)",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "yes",
+        "evidence": "'CaMKII-SERT-EYFP- and CaMKII-GFP-expressing mice exhibit no differences in the FST. After PCA (5 mg/kg ip) administration, CaMKII-SERT-EYFP-expressing mice display a sustained antidepressant-like effect.'",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Only immobility time is reported ('a significant reduction in immobility in the FST').",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "A single immobility total is reported per session, not within-session time bins.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST immobility is explicitly excluded as an ethological measure.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice tested individually; no social construct.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST does not require learning or memory.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Candidates report manual offline scoring by a blinded experimenter.",
+          "confidence": "medium"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVA only.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Standard FST cylinder.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent in an FST cylinder.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Water-filled cylinder; no substrate.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No objects in the cylinder.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single cylinder.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice swum individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or drinking water available in the cylinder.",
+          "confidence": "medium"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "'mice were subjected to a forced swim test (FST)... Two days later, we administered PCA... and then performed a second FST'",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Candidates report a 6-min swim with the last 4 min scored.",
+          "confidence": "medium"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Two FST sessions on separate days (pre-drug FST and FST 24 h after PCA).",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "'Again, we observed no differences between the mice that expressed SERT and those that expressed the GFP control' — pre-drug FST data reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "'they also displayed a significant reduction in immobility in the FST 24 hours after administration'",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sessions were minutes long.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    },
+    {
+      "assay_name": "Head-Twitch Response (HTR)",
+      "assay_description": "Mice were placed in an open arena (reported as 40 x 40 cm, ~20 min) immediately after injection and head twitches were videotaped and scored offline. Conditions included PCA (5 mg/kg ip) in WT mice, PCA in mice expressing CaMKII-SERT in mPFC vs GFP controls, and 5-MeO-DMT as a psychedelic positive control.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "'PCA... does not induce a head-twitch response (HTR) in WT mice' with PCA given at '5 mg/kg intraperitoneally (ip)'; 5-MeO-DMT also given i.p.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported in the available text",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Animals were freely moving in an open arena during HTR scoring.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food present in the observation arena.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water present in the observation arena.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "'The SERT-expressing mice exhibited a statistically significant HTR immediately after the administration of PCA'",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "not reported",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "PCA (5 mg/kg ip) did not elicit head twitches in WT mice, but produced a significant HTR in mice expressing SERT in mPFC pyramidal neurons relative to GFP controls; 5-MeO-DMT served as the psychedelic positive control.",
+        "statistics": "*p < 0.05 (reported for the SERT vs GFP comparison in fig. S10E)",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "'Notably, PCA is not a 5-HT2AR agonist (fig. S10A)... and does not induce a head-twitch response (HTR) in WT mice (fig. S10C).' 'The SERT-expressing mice exhibited a statistically significant HTR immediately after the administration of PCA as compared with the GFP control mice (fig. S10E).'",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Only head-twitch counts were measured.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total head twitches reported; no within-session time course described.",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is explicitly excluded as an ethological behaviour.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is a drug-induced reflexive behaviour, not learned.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Behaviour was videotaped and scored manually offline by a blinded experimenter.",
+          "confidence": "medium"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single-measure group comparison.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Standard square observation arena.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No refuge in the arena.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single open arena.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice tested individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the arena.",
+          "confidence": "medium"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "A single post-injection observation session per animal.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "Candidates report a 20-min observation session immediately after injection.",
+          "confidence": "medium"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "HTR recorded on a single day.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug HTR recording reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR measured only acutely after injection.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session <6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "The supplied markdown contains only the main text (no methods/supplementary); several candidate evidence quotes (arena size, 60-min NIL, 6-min FST, 20-min HTR, handling, housing, light cycle) could not be verified against the provided text. Where all candidates agreed on the same specific value, it was accepted with medium confidence; otherwise items were scored not_reported with low confidence.",
+    "Three behavioural assays retained: Novelty Induced Locomotion, Forced Swim Test (pre-drug + 24 h post-PCA sessions merged as one assay with 2 recording days), and Head-Twitch Response (PCA in WT, PCA in SERT- vs GFP-expressing mice, and 5-MeO-DMT positive control merged as one assay per the 'same paradigm, different manipulation' rule).",
+    "Dropped all non-behavioural endpoints: Golgi-Cox spine density, ex vivo electrophysiology (sEPSCs), Sholl analysis in cultured neurons, live-cell imaging/colocalization, psychLight biosensor assays, radioligand binding, IP/IP1 accumulation, and BRET assays.",
+    "Dosing for 5-MeO-DMT could not be resolved (candidates reported 10 vs 50 mg/kg); doses_mg_per_kg left empty with low confidence. PCA 5 mg/kg ip is verbatim in the main text.",
+    "B1 corrected to score 0 (single measure) for all three assays: only locomotion (NIL), only immobility (FST), and only head-twitch counts (HTR) are reported; candidates who scored '2-3' provided no evidence of additional measures.",
+    "D5 for FST corrected to Yes (second FST was run 24 h after PCA), overriding one candidate's 'No'. D2 for NIL set to 15–60 min (60 min inclusive), overriding a candidate who scored 60 min as '61 min–6 h'. D2 for HTR set to 15–60 min (20 min), overriding a candidate who scored 20 min as '<15 min'."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0.0,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 5.45,
+    "behavioural_complexity_mean": 0.0,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 2.72
+  },
+  "low_confidence_count": 10,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-20T18:26:21+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "claude-opus-5-5",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "d7368ca2f4",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 51528,
+    "output_tokens": 12052,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0,
+    "fallback_from": {
+      "model": "claude-opus-5-5",
+      "category": null,
+      "explanation": null,
+      "request_id": "msg_011ChEeWJNkPeyM7Kh3X5kWG",
+      "output_tokens": 1375
+    }
+  }
+}

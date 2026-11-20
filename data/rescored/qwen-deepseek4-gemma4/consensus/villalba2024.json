@@ -1,0 +1,312 @@
+{
+  "study_id": "Villalba2024",
+  "doi": "10.3390/ijms25020687",
+  "species": "mouse",
+  "strain": "129S6/SvEv",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 56,
+    "age_max_days": 84,
+    "evidence": "Males and females (8-12-week-old) were housed in a light- and temperature-controlled room throughout the experimental procedures",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "we used male and female, 5-HT 2A R knockout (KO) and wild type (WT) mice injected with a single noribo dose (10 or 40 mg/kg; i.p.)",
+    "confidence": "high"
+  },
+  "psychedelic": "Noribogaine",
+  "dosing": [
+    {
+      "compound": "Noribogaine",
+      "doses_mg_per_kg": [
+        10.0,
+        40.0
+      ],
+      "doses_raw": "10 or 40 mg/kg; i.p.",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Then, they were administered a single intraperitoneal injection of the corresponding treatment: vehicle (saline solution), noribogaine 10 mg/kg, or 40 mg/kg.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "Males and females (8-12-week-old) were housed in a light- and temperature-controlled room (cage density not stated)",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "under a 12 h light/dark cycle (lights on at 8:00 a.m.)... Behavioral recordings were made... from 9 a.m. to 4 p.m. of the light period of the photocycle",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Open Field Test (locomotor activity)",
+      "assay_description": "Custom open-field plastic compartment (19 cm x 40 cm x 40 cm) in a sound-attenuated room, video-tracked with EthoVision XT. 15 min pre-injection baseline recording, then i.p. vehicle or noribogaine (10 or 40 mg/kg) and 30 min post-injection recording; total distance traveled (cm). Male and female 5-HT2A KO and WT mice.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "they were administered a single intraperitoneal injection of the corresponding treatment: vehicle (saline solution), noribogaine 10 mg/kg, or 40 mg/kg",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Animals were placed in open-field boxes for 15 min (recorded as baseline) and later injected with drugs or saline. The 15-min 'habituation' period was recorded and analysed, so it is a baseline session, not a separate no-data habituation exposure.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice locomotor activity (total distance, in cm) was recorded using a CCD camera on custom-designed open-field boxes",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Each box consisted of an open-field plastic compartment (19 cm × 40 cm × 40 cm); no food in the apparatus (home cage: food ad libitum)",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Each box consisted of an open-field plastic compartment (19 cm × 40 cm × 40 cm); no water in the apparatus (home cage: water ad libitum)",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Total distance traveled (in cm) was quantified for a total of 30 min after injections. The paper also states 'we measured locomotor activity thirty minutes after a single noribo administration', but the Methods and Figure 1 describe recording starting immediately post-injection.",
+          "confidence": "medium"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 7,
+        "evidence": "For male mice... N = 9-12... Female mice injected with noribo... N = 7-11",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "Noribogaine 40 mg/kg decreased total distance traveled in WT male mice and in KO female mice, but not in WT females. Noribogaine 10 mg/kg had no significant effect in either sex. Baseline locomotion differed by sex but not genotype.",
+        "statistics": "Habituation: sex F(1,120)=21.11, p<0.0001; genotype F(1,120)=2.72, p>0.05; interaction F(1,120)=0.90, p>0.05. Males: treatment F(2,57)=8.7, p<0.001; genotype F(1,57)=0.52, p>0.05; interaction F(2,57)=1.5, p>0.05; WT Noribo 40 vs vehicle Tukey p<0.05. Females: treatment F(2,52)=6.42, p<0.001; genotype F(1,52)=0.01, p>0.05; interaction F(2,52)=1.74, p>0.05; KO Noribo 40 vs vehicle KO Tukey p<0.05.",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "yes",
+        "time_dependent": "n/a",
+        "evidence": "As shown in Figure 2A, WT male mice injected with Noribo 40 showed decreased locomotion, compared to the vehicle (Tukey post-hoc; p < 0.05)... female KO mice injected with Noribo 40 showed less locomotion compared to vehicle KO (Tukey post-hoc; p < 0.05).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Mice locomotor activity (total distance, in cm) was recorded",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total distance traveled (in cm) was quantified for a total of 30 min after injections; no within-session time bins reported",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition or sequence analysis reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only locomotor distance measured",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Locomotor activity in open field; no social component",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor activity test; no learning or memory requirement",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "For acquisition and analysis, we used Ethovision XT 11.0 software (Noldus)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Statistics were performed using two-way ANOVAs followed by Tukey post-hoc multiple comparisons tests",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Each box consisted of an open-field plastic compartment (19 cm × 40 cm × 40 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "open-field plastic compartment; no shelter described",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "open-field plastic compartment; bedding not mentioned",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "open-field plastic compartment; no nesting material mentioned",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "open-field plastic compartment; no objects mentioned",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Each box consisted of an open-field plastic compartment",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Behavioral recordings were made simultaneously in four open-field arenas using Ethovison XT 5.1 multiple-arena features (one mouse per arena)",
+          "confidence": "medium"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "open-field plastic compartment; no food/water described in apparatus",
+          "confidence": "medium"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Animals were placed in open-field boxes for 15 min (recorded as baseline) and later injected with drugs or saline. Total distance traveled (in cm) was quantified for a total of 30 min after injections.",
+          "confidence": "medium"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "Mice were recorded for 30 min post-injection.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Baseline and post-injection recording on the same day; tissue samples for qPCR were taken immediately after the experiment",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "First, we evaluated the basal locomotor activity in the habituation sessions prior to drug injections during 15 min",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Tissue samples for qPCR were taken immediately after the experiment; no recording >=24 h post-dose",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Mice were recorded for 30 min post-injection.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    }
+  ],
+  "judge_notes": [
+    "All three candidates identified a single behavioural assay (open-field locomotion). qPCR and slice patch-clamp electrophysiology were excluded as non-behavioural.",
+    "setup_habituation overridden from the modal 'yes' to 'not_reported'. The 15-min 'habituation' was recorded and analysed as baseline. The rubric excludes data-collecting exposures from setup habituation, and no separate pre-test apparatus exposure is described.",
+    "time_to_assay: candidates used 30 min based on the Results phrase 'thirty minutes after'. The Methods and Figure 1 state recording covered the 30 min immediately after injection, so value_minutes was set to 0 (bin unchanged: acute_0to2h).",
+    "Direction set to 'decrease' (2 of 3 candidates). All significant effects were reductions in locomotion; the subgroup differences are captured by sex_dependent rather than labelled 'mixed'.",
+    "n_total left null. The paper gives only per-group ranges (males N=9-12, females N=7-11); n_per_group_min = 7.",
+    "Age set to young_adult (modal) for the 8-12-week behavioural cohort. The 4-8-week mice were used only for electrophysiology, which is not scored.",
+    "Environmental items not explicitly addressed for the plastic open-field compartment (bedding, nesting, objects, food/water) were scored 0 with medium confidence."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0.0,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 4.09,
+    "behavioural_complexity_mean": 0.0,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 4.09
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-20T18:28:14+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "d7368ca2f4",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 55360,
+    "output_tokens": 5396,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

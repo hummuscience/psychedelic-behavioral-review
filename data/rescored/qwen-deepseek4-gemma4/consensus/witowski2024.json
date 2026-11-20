@@ -1,0 +1,311 @@
+{
+  "study_id": "Witowski2024",
+  "doi": null,
+  "species": "mouse",
+  "strain": "Swiss Webster",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 42,
+    "age_max_days": 56,
+    "evidence": "All mice (Swiss-Webster; male and female; 6-8 weeks; 30-40 g; Charles River Laboratories, Wilmington, MA)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "male and female Swiss Webster mice, 6-8 weeks, were separated into two cohorts",
+    "confidence": "high"
+  },
+  "psychedelic": "DMT",
+  "dosing": [
+    {
+      "compound": "DMT",
+      "doses_mg_per_kg": [
+        1.0,
+        5.0
+      ],
+      "doses_raw": "to deliver either 1 or 5 mg/kg of DMT",
+      "vehicle": "not_reported",
+      "route": "multiple",
+      "schedule": "acute",
+      "evidence": "Patches were cut to size prior to application. to deliver either 1 or 5 mg/kg of DMT. Patches containing either GLP DMT or vehicle ... administering an IV tail vein injection of either DMT or vehicle ... active drug was only delivered through one of these routes for each group. (HTR used 5 mg/kg only; transdermal patch route is 'other', IV tail vein is i.v.)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "All mice ... were handled for 7 days prior to experimentation to acclimate to both the experimenter and vivarium.",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Mice were housed in groups of two or three under a 12h reverse light/dark cycle",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "yes",
+      "evidence": "Mice were housed in groups of two or three under a 12h reverse light/dark cycle",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head Twitch Response (HTR)",
+      "assay_description": "Magnet-implanted mice placed in a magnetometer cage (15.24 cm height x 15.24 cm diameter, ~300 rotations of copper wire); 60-min baseline recording with jackets, then IV DMT (5 mg/kg) + vehicle patch, vehicle IV + DMT patch (5 mg/kg), or saline IV + vehicle patch, followed by a 60-min post-treatment recording. Head twitches counted via magnetometer signal (Clampex/MATLAB), analysed in time bins as percent of saline response.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "mice were intravenously or transdermally dosed at 5 mg/kg (or given saline/vehicle); cohort 1: DMT IV + vehicle patch; cohort 2: vehicle IV + DMT patch (i.v. tail vein and transdermal patch)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "All mice were initially analyzed for 60 min with jackets applied for baseline activity. After the initial habituation period, mice were administered the active treatment",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "mice were placed in a magnetometer cage ... and placed immediately back into the magnetometer cage for another 60 min trial period",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Food available ad libitum in home cage ('All food ... and water ... were available to the mice ad libitum unless stated otherwise'); no food described in the magnetometer cage during recording.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Water available ad libitum in home cage; no water described in the magnetometer cage during recording.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "mice were administered the active treatment and placed immediately back into the magnetometer cage for another 60 min trial period",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 17,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 5,
+        "evidence": "Fig. 7. Head Twitch Responses due to intravenously (n = 5) or transdermally (n = 12) administered DMT at 5 mg/kg.",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "IV DMT (5 mg/kg) produced a significant, transient 18-fold increase in head twitches relative to IV saline in the first 10 min post-administration (2.4- and 1.2-fold in the next two bins). Transdermal DMT (5 mg/kg, patch F5) did not significantly alter HTR relative to vehicle patch within 1 h.",
+        "statistics": "IV: Two-Way RM ANOVA: FRoutexTime (11, 99) = 3.69, p = 0.0002; Sidak's Multiple Comparisons 0-10 min p = 0.0214. TD: Two-Way RM ANOVA: FRoutexTime (11, 242) = 0.66, p = 0.77",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "The IV cohort demonstrated significant variation in HTR responding by time (Two-Way RM ANOVA: FRoutexTime (11, 99) = 3.69, p = 0.0002), including a significant 18-fold increase in head twitches relative to animals receiving IV saline at 0-10 min post-administration (Sidak's Multiple Comparisons, p = 0.0214). ... In contrast, the transdermal cohort did not show any significant variation in HTR's ... (Two-Way RM ANOVA: FRoutexTime (11, 242) = 0.66, p = 0.77).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "HTR was assessed at each timepoint as a percent of the corresponding saline response (head twitch count is the only measure)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "significant variation in HTR responding by time ... 18-fold increase ... at 0-10 min post-administration ... only a 2.4 and 1.2-fold increase ... within the next two chronological bins",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural transitions or sequences reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-twitch response only; HTR is excluded from ethological behaviours per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice tested individually in a magnetometer cage; no social construct.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "To measure acute unconditioned responses to DMT",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "automated magnetometer approach to count head twitches ... analyzed with Clampex software ... MATLAB (signal detection, not ML behavioural classification)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate RM ANOVA on HTR counts.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "mice were placed in a magnetometer cage (15.24 cm height × 15.24 cm diameter)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter described in the magnetometer cage.",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described in the magnetometer cage.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described in the magnetometer cage.",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects described in the magnetometer cage.",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "magnetometer cage (15.24 cm height × 15.24 cm diameter) — single cylindrical space",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "mice were placed in a magnetometer cage (individual recording)",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water described inside the magnetometer cage.",
+          "confidence": "medium"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "All mice were initially analyzed for 60 min with jackets applied for baseline activity. After the initial habituation period, mice were administered the active treatment and placed immediately back into the magnetometer cage for another 60 min trial period.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "another 60 min trial period",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "On the experimental day, mice were placed in a magnetometer cage",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "All mice were initially analyzed for 60 min with jackets applied for baseline activity.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR recorded only within 1 h post-administration.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sessions were 60 min each.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    }
+  ],
+  "judge_notes": [
+    "All candidates identified a single behavioural assay (HTR); PK/LC-MS/MS, blood/brain sampling and Franz cell work are non-behavioural and excluded.",
+    "B1 overridden to 0 (1 measure): only head twitch counts are reported; deepseek4/gemma4 scored 1 despite their own evidence indicating a single measure.",
+    "DOI set to null: deepseek4 and gemma4 gave conflicting DOIs and the markdown masthead does not contain a DOI.",
+    "Outcome direction set to 'increase' rather than 'mixed': IV increased HTR while transdermal had no effect — not opposing directions; time_dependent set to n/a since only one post-dose start time (rubric rule), although within-session effect was transient.",
+    "setup_habituation set to 'yes' (modal) with medium confidence: the paper labels the 60-min pre-drug baseline an 'initial habituation period', although baseline data were collected.",
+    "Food/water restriction 'during' based on absence of food/water in the magnetometer cage; home-cage ad libitum access stated."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 4.09,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 4.09
+  },
+  "low_confidence_count": 1,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-20T18:38:46+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "d7368ca2f4",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 52292,
+    "output_tokens": 5338,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

@@ -1,0 +1,1127 @@
+{
+  "study_id": "Tiwari2024",
+  "doi": "10.1016/j.neuron.2024.08.016",
+  "species": "both",
+  "strain": "Sprague-Dawley rats; C57BL/6 mice; 5-HT2ARKO (129S6/SvEv background), PV-Cre, Ai32:ChR2, PV-Cre::5-HT2ARKO-res fl/fl transgenic mice",
+  "age": {
+    "value": "adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Adult Sprague-Dawley rats, C57BL/6 (Jax Strain 00064, 005304; Jackson Laboratories, USA) mice were used for experiments.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "We first examined whether a single administration of DOI can alter anxiety-like behavior on the EPM in both male and female rats, as well as mice.",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI (2,5-dimethoxy-4-iodoamphetamine)",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "1 mg/kg (i.p., systemic); 1 µg/µl per hemisphere (intracerebral cannula infusion)",
+      "vehicle": "saline",
+      "route": "multiple",
+      "schedule": "acute",
+      "evidence": "For systemic experiments, animals received intraperitoneal (i.p.) injections of vehicle (0.9% saline) or DOI... For stereotactic drug delivery, animals received vehicle (phosphate buffered saline - PBS), DOI (1 µg/µl per hemisphere) ... through pre-implanted cannulas.",
+      "confidence": "high"
+    },
+    {
+      "compound": "MDL100907",
+      "doses_mg_per_kg": [],
+      "doses_raw": "1 µg/µl per hemisphere (intra-vHpc CA1/sub infusion)",
+      "vehicle": "PBS",
+      "route": "other",
+      "schedule": "acute",
+      "evidence": "animals received vehicle (phosphate buffered saline - PBS), DOI (1 µg/µl per hemisphere) or MDL100907 (1 µg/µl per hemisphere) (Cat. No. 4173, Tocris, UK) through pre-implanted cannulas.",
+      "confidence": "high"
+    },
+    {
+      "compound": "Clozapine-N-oxide (CNO)",
+      "doses_mg_per_kg": [
+        5.0
+      ],
+      "doses_raw": "CNO, 5 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "For chemogenetic experiments, animals received i.p. Injections of vehicle (1% DMSO in 0.9% saline), or the DREADD ligand clozapine-N-oxide (CNO, 5 mg/kg).",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "No handling/habituation-to-experimenter protocol is described in the methods.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "All animals were maintained in the institutional animal house facility on a 12 hour light-dark cycle (7 am-7 pm) with ad libitum access to food and water. (cage density not stated)",
+      "confidence": "medium"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "All animals were maintained in the institutional animal house facility on a 12 hour light-dark cycle (7 am-7 pm).",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Home-cage enrichment is not mentioned.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Elevated Plus Maze (rats)",
+      "assay_description": "Sprague-Dawley rats placed in the centre of an EPM (open/closed arms 45 x 10 cm, elevated 60 cm; closed-arm walls 60 cm) and allowed to explore freely for 10 min (15 min in the binned-analysis experiment) in the dark; percent time in open arms, percent time in closed arms and total distance moved tracked with Ethovision XT 11. Variants: acute systemic DOI (1 mg/kg i.p.), intra-vHpc / dHpc / PrL / IL / BA DOI infusion (1 µg/µl per hemisphere), intra-vHpc MDL100907 pretreatment, a modified high-light-contrast EPM, and a 24-h post-dose re-test.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "Systemic i.p. DOI (1 mg/kg) and direct intracerebral infusion of DOI (1 µg/µL per hemisphere) using cannula implants.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No pre-test exposure to the EPM apparatus is described.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "animals were placed in the center of the maze ... and were allowed to freely explore the maze for ten minutes in the dark.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Home cage had ad libitum food; no food is present in the elevated plus maze during the 10-min test.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Home cage had ad libitum water; no water is present in the elevated plus maze during the 10-min test.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 20,
+          "evidence": "All animals were placed in the EPM or OFT 20 minutes after i.p. drug injection, or immediately after intracerebral drug infusion through the cannula... animals were placed in the EPM 24 hours after treatment with DOI (Figures S1H-S1J).",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 69,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 7,
+        "evidence": "Systemic: male rats (Veh: n = 10; DOI: n = 7), female rats (Veh: n = 9; DOI: n = 8); vHpc infusion: male (Veh: n = 10, DOI: n = 10), female (Veh: n = 8, DOI: n = 10); MDL study: PBS + Veh: n = 8, MDL + Veh: n = 8, PBS + DOI: n = 7, DOI + MDL: n = 8.",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "Acute systemic DOI (1 mg/kg) produced robust anxiolysis in both male and female rats (increased % time in open arms, decreased % time in closed arms) and reduced total locomotion; the effect was absent 24 h later. Direct DOI infusion into the vHpc CA1/sub (but not dHpc, PrL, IL or BA) phenocopied the anxiolysis without altering locomotion, and intra-vHpc MDL100907 pretreatment blocked the systemic DOI effect.",
+        "statistics": "Systemic: open arms male p < 0.0001 (F(9,6)=1.43), female p = 0.012 (F(7,8)=11.48); closed arms male p < 0.0001 (F(9,6)=4.47), female p = 0.02 (F(7,8)=9.04); locomotion male p < 0.0001, female p < 0.0001. vHpc infusion: open arms male p = 0.004 (F(9,9)=1.23), female p = 0.005 (F(7,9)=1.34); closed arms male p = 0.005 (F(9,9)=1.06), female p = 0.003 (F(7,9)=2.25). MDL: DOI x MDL interaction p = 0.016 (open, F(1,27)=6.48), p = 0.017 (closed, F(1,27)=6.42); main effect MDL F(1,27)=6.59, p=0.016; main effect DOI on locomotion F(1,27)=8.98, p=0.006. Modified EPM p < 0.0001 (Mann-Whitney U).",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "no",
+        "time_dependent": "yes",
+        "evidence": "Both male and female rats acutely administered DOI (1 mg/kg) exhibited robust anxiolytic responses on the EPM... The effects of DOI on anxiety-like behavior on the EPM did not persist 24 h post administration (Figures S1H-S1J).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "percent time spent in the open arms... percent time spent in the closed arms... a significant reduction in locomotion in the EPM in DOI-treated rats",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The robust decline in anxiety-like behavior was noted across all bins (5 min) in a 15-min behavioral paradigm (Figures S1A-S1C).",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural transitions, sequences or bout microstructure is reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only zone occupancy (open/closed arm time) and locomotion were measured; no natural behaviours scored.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "EPM tests innate avoidance in a single animal; no social construct.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EPM is based on innate approach-avoidance, requiring no learning.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "tracked, and analyzed using the automated platform Ethovision XT 11 (Noldus) — position tracking only.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate t tests/ANOVAs reported for behaviour.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "The EPM for rats was built such that the two arms, both open and closed (45 cm x 10 cm each), were elevated 60 cm above the ground.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent — EPM closed arms are not scored as a shelter.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding or substrate described in the maze.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent in the EPM.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in the maze.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "EPM arms are open-ended extensions of a central platform; scored 0 per rubric.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "animals were placed in the center of the maze ... and were allowed to freely explore the maze — tested individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the EPM.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "animals were placed in the EPM 24 hours after treatment with DOI (Figures S1H-S1J) — a second recorded session.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "All behavioral assays for anxiety-like response were recorded for 10 minutes (except Figures S1A-S1C, which was recorded for 15 minutes).",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Test day plus a 24-h post-administration EPM session (Figures S1H-S1J).",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug EPM recording reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "To assess whether the behavioral effects of DOI are persistent, animals were placed in the EPM 24 hours after treatment with DOI.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Longest session was 15 min.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    },
+    {
+      "assay_name": "Elevated Plus Maze (mice)",
+      "assay_description": "C57BL/6 and transgenic mice placed in the centre of an EPM (arms 30 x 5 cm, elevated 50 cm; closed-arm walls 15 cm) and allowed to explore freely for 10 min in the dark; percent time in open arms, percent time in closed arms and total locomotion tracked with Ethovision XT 11. Variants: acute systemic DOI (1 mg/kg i.p.), intra-vHpc CA1/sub DOI infusion in WT and 5-HT2ARKO mice, 5-HT2AR restoration lines (Syn-Cre, CamKII-Cre, PV-Cre::5-HT2ARKO-res fl/fl), chemogenetic hM3Dq/hM4Di activation/inhibition of vHpc PV neurons with CNO, and a modified high-light-contrast EPM.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "Systemic i.p. DOI (1 mg/kg) and direct intracerebral infusion of DOI (1 µg/µL per hemisphere) into the vHpc CA1/sub region via cannula; CNO given i.p.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No pre-test exposure to the EPM apparatus is described.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "animals ... were allowed to freely explore the maze for ten minutes in the dark.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "ad libitum access to food and water in the home cage; no food in the EPM during testing.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "ad libitum access to food and water in the home cage; no water in the EPM during testing.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 20,
+          "evidence": "All animals were placed in the EPM or OFT 20 minutes after i.p. drug injection, or immediately after intracerebral drug infusion through the cannula.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 73,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "Systemic: male mice (Veh: n = 8; DOI: n = 10), female mice (Veh: n = 11; DOI: n = 13); 5-HT2AR WT-Veh: n = 6, DOI: n = 7; 5-HT2AR KO-Veh: n = 9, DOI: n = 9; PV-Cre::5-HT2ARKO-res fl/fl (Veh: n = 10, DOI: n = 10).",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "Acute systemic DOI (1 mg/kg) increased % time in open arms and decreased % time in closed arms in both male and female C57BL/6 mice (with increased locomotion, unlike rats). Intra-vHpc CA1/sub DOI infusion reproduced the anxiolysis in WT but not 5-HT2ARKO mice; restoration of 5-HT2A receptors in neurons generally, or selectively in PV-positive interneurons, reinstated DOI-evoked anxiolysis, whereas restoration in CamKIIα neurons did not. Chemogenetic activation of vHpc PV neurons was anxiolytic and inhibition anxiogenic.",
+        "statistics": "Systemic mice: open arms male p = 0.012 (F(7,9)=1.44), female p < 0.0001 (F(10,12)=1.19); closed arms male p = 0.021 (F(7,9)=2.80), female p = 0.022 (F(10,12)=6.59); locomotion male p = 0.022, female p = 0.005. Modified EPM p < 0.0001 (Mann-Whitney). vHpc infusion mice: open p = 0.034, closed p = 0.022. 5-HT2ARKO x DOI interaction p = 0.037 (open, F(1,27)=4.83), p = 0.032 (closed, F(1,27)=5.13); main effect DOI F(1,27)=10.14, p = 0.004. Syn-Cre rescue: open p = 0.014, closed p = 0.004. PV-Cre::5-HT2ARKO-res: open p = 0.029 (F(9,9)=5.02), closed p = 0.043 (F(9,9)=2.06). hM3Dq+CNO: open p = 0.0005, closed p = 0.002; hM4Di+CNO: open p = 0.005, closed p = 0.021.",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "no",
+        "time_dependent": "n/a",
+        "evidence": "male and female C57BL/6 mice also exhibited a robust reduction in anxiety-like behavior on the EPM following acute DOI (1 mg/kg) treatment, with a significant increase in percent time in the open arms (male mice: p = 0.012; female mice: p < 0.0001).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "significant increase in percent time in the open arms ... decrease in percent time in the closed arms ... C57BL/6 mice exhibited increases in locomotion on the EPM",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The 5-min binned, 15-min analysis (Figures S1A-S1C) applied to the rat experiment; no within-session time-course is reported for mice.",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition or sequence analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only zone occupancy and locomotion measured.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component in the EPM.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate approach-avoidance task; no learning required.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "tracked, and analyzed using the automated platform Ethovision XT 11 (Noldus).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate t tests and two-way ANOVAs on behaviour.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "The elevated plus maze for mice was built such that the two arms, both open and closed (30 cm x 5 cm each), were elevated 50 cm above the ground.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent — EPM closed arms are not scored as shelter.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described in the maze.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent in the EPM.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in the maze.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "EPM scored 0 per rubric.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice were tested individually in the maze.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the EPM.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Mice were tested on the EPM once for ten minutes; the 24-h re-test was reported for rats (Figures S1H-S1J).",
+          "confidence": "medium"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "allowed to freely explore the maze for ten minutes in the dark.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "A single EPM test day per mouse cohort is described.",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug EPM recording for mice reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No ≥24-h post-dose EPM recording reported for mice.",
+          "confidence": "medium"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session duration was 10 min.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "Open Field Test (rats)",
+      "assay_description": "Sprague-Dawley rats explored a 100 x 100 x 60 cm open-field arena for 10 min immediately after bilateral intra-vHpc CA1/sub infusion of DOI (1 µg/µL per hemisphere); percent time in centre, frequency of centre visits and total locomotion tracked with Ethovision XT 11.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "other",
+          "evidence": "Intracerebral (intra-hippocampal) infusion of DOI through pre-implanted guide cannulas into the vHpc CA1/sub region.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No pre-test exposure to the open-field arena is described.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Animals explored the open-field arena freely; no restraint described.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food is present in the open-field arena during the 10-min test.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water is present in the open-field arena during the 10-min test.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "All animals were placed in the EPM or OFT ... immediately after intracerebral drug infusion through the cannula.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "Sample sizes for the rat open-field experiment are reported only in supplementary figures (S3E-S3G), not in the available text.",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "Intra-vHpc CA1/sub infusion of DOI reduced anxiety-like behaviour in the open field in rats, increasing percent time in and frequency of visits to the centre, with no change in total locomotion.",
+        "statistics": "percent time in centre p < 0.0001; frequency of visits to the centre p = 0.008; no change in total locomotion.",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "Direct infusion of DOI into the vHpc CA1/sub region of rats also evoked a decline in anxiety-like behavior on another approach-avoidance behavioral task, the open field (OF) test, with significant increases in percent time (p < 0.0001) and frequency of visits to the center (p = 0.008) of the OF arena, with no change in total locomotion.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "significant increases in percent time (p < 0.0001) and frequency of visits to the center (p = 0.008) of the OF arena, with no change in total locomotion.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only session totals reported; no within-session binning for the OFT.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence or bout-structure analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only zone occupancy, entries and locomotion measured.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component in the open field test.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate approach-avoidance; no learning component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "tracked, and analyzed using the automated platform Ethovision XT 11 (Noldus).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No multivariate analysis of behavioural features.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "the arena consisted of a box with dimensions (L x B x H) as follows: 100 cm x 100 cm x 60 cm for rats.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter in the open-field arena.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described in the arena.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in the arena.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in the arena.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Open field is a single open box with virtual centre zone.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Animals were tested individually in the arena.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the arena.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "A single 10-min open-field session following intracerebral infusion.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "All behavioral assays for anxiety-like response were recorded for 10 minutes.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Open field was run on one day for this cohort.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug open-field recording reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No ≥24-h post-dose open-field recording reported.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session was 10 min.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "Open Field Test (mice)",
+      "assay_description": "C57BL/6 mice explored a 40 x 40 x 40 cm open-field arena for 10 min immediately after bilateral intra-vHpc CA1/sub infusion of DOI (1 µg/µL per hemisphere); percent time in centre, frequency of centre visits and total locomotion tracked with Ethovision XT 11.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "other",
+          "evidence": "Direct intracerebral DOI infusion into the vHpc CA1/sub region via implanted cannula.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No pre-test exposure to the open-field arena is described.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice explored the arena freely; no restraint described.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food present in the open-field arena during the test.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water present in the open-field arena during the test.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "All animals were placed in the EPM or OFT ... immediately after intracerebral drug infusion through the cannula.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "Sample sizes for the mouse open-field experiment are reported only in supplementary figures (S3H-S3N).",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "Intra-vHpc CA1/sub DOI infusion in C57BL/6 mice increased percent time in and frequency of visits to the centre of the open field, indicating reduced anxiety-like behaviour.",
+        "statistics": "percent time in centre p = 0.042; frequency of visits to the centre p = 0.046.",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "Similar anxiolytic effects were noted in C57BL/6 mice following DOI infusion in the vHpc CA1/sub region ... as well as a significant increase in percent time (p = 0.042) and frequency of visits to the center (p = 0.046) of the OF arena.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "significant increase in percent time (p = 0.042) and frequency of visits to the center (p = 0.046) of the OF arena",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only session totals reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only zone occupancy, entries and locomotion measured.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate approach-avoidance task.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "tracked, and analyzed using the automated platform Ethovision XT 11 (Noldus).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No multivariate behavioural analysis.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "the arena consisted of a box with dimensions ... 40 cm x 40 cm x 40 cm for mice.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter in the open-field arena.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described in the arena.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in the arena.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in the arena.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Open field is a single open box.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice were tested individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the arena.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "A single 10-min open-field session after intracerebral infusion.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "All behavioral assays for anxiety-like response were recorded for 10 minutes.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Open field was run on one day for this cohort.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug open-field recording reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No ≥24-h post-dose open-field recording reported.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session was 10 min.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "Head Twitch Response (rats, intra-vHpc DOI)",
+      "assay_description": "Head twitches were manually scored from video for a 45-min baseline period preceding bilateral intra-vHpc CA1/sub DOI infusion and for 45 min after infusion; the number of HTRs per animal was compared between baseline and post-infusion (paired t test).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "other",
+          "evidence": "baselines determined 45 minutes prior to bilateral DOI delivery through the implanted cannula, and for a duration of 45 minutes upon DOI infusion (intracerebral, intra-hippocampal).",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No habituation to the observation chamber described.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Head twitches were scored from video of freely behaving animals; no restraint described.",
+          "confidence": "medium"
+        },
+        "food_restriction": {
+          "value": "not_reported",
+          "evidence": "The observation setup for the HTR is not described in sufficient detail to determine food access.",
+          "confidence": "low"
+        },
+        "water_restriction": {
+          "value": "not_reported",
+          "evidence": "The observation setup for the HTR is not described in sufficient detail to determine water access.",
+          "confidence": "low"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "...and for a duration of 45 minutes upon DOI infusion.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "Sample size for the HTR experiment is reported only in supplementary Figure S3D.",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "Local delivery of DOI into the vHpc CA1/sub region did not increase head twitch responses compared with the animal's own pre-infusion baseline, indicating that this psychedelic-like behavioural signature is not mediated by this region.",
+        "statistics": "Paired t test used comparing baseline HTR and DOI-evoked HTR per animal; no significant effect reported (Figure S3D).",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "Further, we find that local delivery of DOI in the vHpc CA1/sub region does not evoke the classical head twitch response (HTR) evoked by serotonergic psychedelics (Figure S3D).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The number of HTRs were manually scored from recorded videos.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Totals for the 45-min window; no within-session time-course reported.",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence or bout-structure analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-twitch response is explicitly not scored as an ethological behaviour.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Reflexive drug-induced behaviour; no learning.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The number of HTRs were manually scored from recorded videos.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single measure, paired t test only.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "The observation chamber is not described; scored as standard apparatus by default with low confidence.",
+          "confidence": "low"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "No compartmentalised apparatus described.",
+          "confidence": "low"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "HTRs were scored per individual animal; no conspecific described.",
+          "confidence": "medium"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "A single observation period on one day, with a 45-min pre-infusion baseline followed by 45 min post-infusion scoring.",
+          "confidence": "medium"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "...and for a duration of 45 minutes upon DOI infusion.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Baseline and post-infusion scoring occurred on the same day.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "baselines determined 45 minutes prior to bilateral DOI delivery through the implanted cannula ... Paired t test was used to analyze HTR results with comparisons made between baseline HTR and DOI-evoked HTR per animal.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No recording ≥24 h after DOI infusion for HTR.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Longest bout was 45 min.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    }
+  ],
+  "judge_notes": [
+    "Split EPM and OFT by species (rat vs mouse) per rubric rule that the same test in different species = separate assays; deepseek had collapsed across species, qwen had already split EPM but not OFT.",
+    "All drug/route/genotype/chemogenetic/antagonist variants of the EPM (systemic DOI, intra-vHpc/dHpc/PrL/IL/BA infusion, MDL100907 pretreatment, 5-HT2ARKO and rescue lines, hM3Dq/hM4Di CNO, modified high-contrast EPM) were merged into a single EPM assay per species.",
+    "Dropped all non-behavioural work (neuropixels single-unit recordings, opto-tagging electrophysiology, RNAscope, c-Fos immunofluorescence, western blotting) from the assay list.",
+    "B1 corrected to 2-3 (score 1) for EPM and OFT: the reported behavioural measures are % time open arms, % time closed arms and total locomotion (EPM) and % time in centre, centre entries and locomotion (OFT) — deepseek's '4-6' was not supported.",
+    "D2 corrected to <15 min (score 0) for the 10-min OFT and the 10-min mouse EPM; deepseek had mis-binned 10 min as 15–60 min.",
+    "B2 (within-session binning) scored Yes only for the rat EPM, where 5-min bins across a 15-min session are explicitly reported (Figures S1A–S1C); the mouse EPM has no binned analysis.",
+    "D5/D1/D3 follow-up credit given only to the rat EPM, since the 24-h re-test (Figures S1H–S1J) is described in the rat paragraph.",
+    "Intracerebral cannula infusion into the vHpc parenchyma scored as route 'other' (not i.c.v.), overriding deepseek.",
+    "HTR D1 kept as 'Single session' (modal) because the 45-min baseline and 45-min post-infusion scoring occur contiguously on one day; D4 baseline scored Yes.",
+    "gemma4's output was schema-broken (no B/E/D item scores) and contributed only to metadata consensus."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 5.45,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 1.64
+  },
+  "low_confidence_count": 11,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-20T19:56:36+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "claude-opus-5-5",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "c9b5be26eb",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 78753,
+    "output_tokens": 20467,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0,
+    "fallback_from": {
+      "model": "claude-opus-5-5",
+      "category": null,
+      "explanation": null,
+      "request_id": "msg_011ChEmJQfzcvUJeRTkgcQ8J",
+      "output_tokens": 480
+    }
+  }
+}

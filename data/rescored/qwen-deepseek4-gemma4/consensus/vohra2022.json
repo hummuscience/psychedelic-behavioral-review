@@ -1,0 +1,558 @@
+{
+  "study_id": "Vohra2021",
+  "doi": null,
+  "species": "mouse",
+  "strain": "129S6/SvEv",
+  "age": {
+    "value": "adult",
+    "age_min_days": 70,
+    "age_max_days": 119,
+    "evidence": "Experiments were performed on adult (10 -17 weeks old) male and female 129S6/SvEv mice (Taconic).",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Experiments were performed on adult (10 -17 weeks old) male and female 129S6/SvEv mice (Taconic).",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI, LSD",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        0.5
+      ],
+      "doses_raw": "DOI (0.5 mg/kg, i.p.)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "We tested the effect of the psychedelic ... (DOI) (0.5 mg/kg, i.p.) ... Drugs were dissolved in saline (0.9%). All drugs or vehicle were administered intraperitoneally (i.p.), except apomorphine",
+      "confidence": "high"
+    },
+    {
+      "compound": "LSD",
+      "doses_mg_per_kg": [
+        0.24
+      ],
+      "doses_raw": "LSD (0.24 mg/kg, i.p.)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "the effect of the psychedelic LSD (0.24 mg/kg, i.p.) ... In experiments using DOI (0.5 mg/kg) or LSD (0.24 mg/kg), treatment or vehicle was administered to subjects immediately prior to testing.",
+      "confidence": "high"
+    },
+    {
+      "compound": "M100,907 (volinanserin)",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "M100,907 (1 mg/kg, i.p.)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "The 5-HT2AR antagonist volinanserin was administered 10 min before DOI or vehicle as a pretreatment.",
+      "confidence": "high"
+    },
+    {
+      "compound": "Apomorphine",
+      "doses_mg_per_kg": [
+        5.0
+      ],
+      "doses_raw": "apomorphine (5 mg/kg, s.c.)",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "the dopamine agonists apomorphine (5 mg/kg, s.c.) ... SFK82,958 (0.5 mg/kg), apomorphine (5 mg/kg), or vehicle was injected 10 min prior to the onset of testing.",
+      "confidence": "high"
+    },
+    {
+      "compound": "SKF-82,958",
+      "doses_mg_per_kg": [
+        0.5
+      ],
+      "doses_raw": "SKF-82,958 (0.5 mg/kg, i.p.)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "SKF-82,958 (0.5 mg/kg, i.p.) ... injected 10 min prior to the onset of testing.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "Animals were housed on a 12 h light/dark cycle at 23 °C with food and water ad libitum (cage density not stated)",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "Animals were housed on a 12 h light/dark cycle at 23 °C with food and water ad libitum, except during behavioral testing which took place during the light cycle.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head-twitch response (magnetometer-based)",
+      "assay_description": "Magnet ear-tagged mice placed in a plastic container surrounded by a coil immediately after DOI (0.5 mg/kg) or vehicle; 30-min recording; head twitches detected by signal analysis plus CNN classifier with visual verification; male and female mice; time course in 15-min blocks and total counts.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Fig. 2 ... mice injected (i.p.) with DOI (0.5 mg/kg) or vehicle",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "ear-tagged mice were placed inside a plastic container surrounded by a coil",
+          "confidence": "medium"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "food and water ad libitum, except during behavioral testing",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "food and water ad libitum, except during behavioral testing",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "After treatment with DOI (0.5 mg/kg) or vehicle, ear-tagged mice were placed inside a plastic container ... Testing lasted 30 min.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 24,
+        "n_male": 12,
+        "n_female": 12,
+        "n_per_group_min": 6,
+        "evidence": "Head-twitch counts corresponding to the first 30 min after injection of DOI or vehicle ( n = 6 mice per group)",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "DOI (0.5 mg/kg) markedly increased head-twitch counts in both male and female 129S6/SvEv mice relative to vehicle during the first 30 min post-injection, with no sex difference.",
+        "statistics": "Two-way RM ANOVA treatment effect: F[3,20] = 40.00, p < 0.001; total counts vehicle vs DOI F[1,20] = 212.3, p < 0.001; sex F[1,20] = 1.48, p > 0.05; post hoc male p < 0.001, female p < 0.001",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "no",
+        "time_dependent": "n/a",
+        "evidence": "Total head-twitch counts were also increased upon DOI administration (vehicle vs DOI, F [1,20] = 212.3, p < 0.001; sex-related differences, F [1,20] = 1.48, p > 0.05).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Only head-twitch counts reported (total and binned time course of the same variable).",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Time-course showing head-twitch (HTR) counts on 15-min blocks",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence/transition analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-twitch response is excluded as ethological per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component; mice tested individually in a container.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Drug-induced reflexive behaviour; no learning component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "the signal was also processed using a deep learning-based protocol based on scalograms ... The convolutional neural network (CNN) employed was trained using head-twitch (~1200) and non-head-twitch (~600) events",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only ANOVAs reported.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "placed inside a plastic container surrounded by a coil",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter described in the plastic container.",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described.",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described.",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects described.",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "plastic container",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "ear-tagged mice were placed inside a plastic container (individual testing)",
+          "confidence": "medium"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "food and water ad libitum, except during behavioral testing",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Testing lasted 30 min.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "Testing lasted 30 min.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single 30-min test after DOI or vehicle.",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug recording reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recording only during first 30 min post-injection.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Testing lasted 30 min.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Acoustic startle and prepulse inhibition (PPI)",
+      "assay_description": "SR-LAB startle chambers; 5-min acclimation at background noise, then 65 pseudo-random trials (pulse-only, three prepulse+pulse, no-pulse) plus 5 pulse-only trials at start and end; ~30 min session. Four stimulus parameter sets (background 65/69 dB, pulse 20/40 ms at 119/120 dB, prepulse 10/20 ms, ISI 60/80 ms). DOI (male and female), DOI + M100,907 pretreatment, LSD (males), and apomorphine/SKF-82,958 controls (males). Measures: startle amplitude to pulse alone and prepulse+pulse, %PPI, within-session startle habituation, startle–PPI correlation.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs or vehicle were administered intraperitoneally (i.p.), except apomorphine, which as administered subcutaneously (s.c.).",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Only room habituation ('Mice were habituated to the testing room at least 1 h prior') and an in-session 5-min acclimation are described; no separate apparatus exposure.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "recording of the startle magnitude ... was performed using the SR-LAB ™ Startle Response System (startle chamber enclosure; restraint tube not explicitly described)",
+          "confidence": "medium"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "food and water ad libitum, except during behavioral testing",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "food and water ad libitum, except during behavioral testing",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "In experiments using DOI (0.5 mg/kg) or LSD (0.24 mg/kg), treatment or vehicle was administered to subjects immediately prior to testing. The 5-HT2AR antagonist volinanserin was administered 10 min before DOI or vehicle as a pretreatment.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 4,
+        "evidence": "n = 10 mice per group (Figs. 3, 5, 6, 8, 9); n = 9 -10 mice per group (Figs. 4, 7, 10); n = 7 -8 mice per group (LSD, Fig. 13); n = 4 mice per group (apomorphine/SKF, Fig. 14)",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "DOI (0.5 mg/kg) altered startle amplitude in all four parameter sets and increased %PPI in three of four conditions in male mice; this increase was blocked by M100,907. In females DOI increased %PPI more weakly without affecting startle amplitude, with sex differences in startle and %PPI and opposite startle–PPI correlations by sex. LSD (0.24 mg/kg) increased %PPI in males without affecting startle, whereas apomorphine and SKF-82,958 decreased %PPI.",
+        "statistics": "Male DOI %PPI: Fig.4 F[1,51]=7.23, p<0.01; Fig.5 F[1,54]=40.47, p<0.001; Fig.6 F[1,54]=27.87, p<0.001; Fig.3 F[1,54]=0.002, p>0.05. M100,907: Fig.7 F[3,102]=3.93, p<0.05; Fig.8 F[3,108]=5.72, p<0.001. Female DOI %PPI: F[1,54]=4.84, p<0.05; F[1,51]=4.95, p<0.05. Three-way ANOVA 20-80-20: drug × sex %PPI F[1,108]=5.38, p<0.05; startle F[1,180]=10.13, p<0.01. LSD %PPI F[1,39]=31.76, p<0.001; startle F[1,65]=0.0001, p>0.05. Apo/SKF %PPI F[2,27]=37.32, p<0.001. Habituation before vs after F[1,72]=13.33, p<0.001; F[1,69]=16.61, p<0.001.",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "yes",
+        "time_dependent": "n/a",
+        "evidence": "DOI altered startle amplitude with either pulse alone or prepulse + pulse presentations in all PPI conditions, and increased %PPI in three out of four PPI conditions in male mice -an effect that was prevented by M100,907. In female mice, DOI increased %PPI without affecting startle amplitude. ... In male mice, LSD also increased %PPI",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "Startle amplitude to pulse alone, startle amplitude to prepulse+pulse trials, %PPI, and startle habituation (pulse-only blocks at beginning vs end of session) are reported.",
+          "confidence": "medium"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Comparing the startle amplitudes in response to these trials before and after the PPI session, our data show startle habituation in both male and female mice (Table 4; Fig. 11).",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence/transition analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "PPI startle magnitude is excluded as ethological per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "PPI is a reflexive sensorimotor gating measure; no learned task.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "recording of the startle magnitude ... using the SR-LAB ™ Startle Response System (transducer amplitude, not a behavioural classifier)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVAs and Pearson correlations only.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "SR-LAB ™ Startle Response System (San Diego Instruments)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Startle chamber; no refuge described.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described in startle chamber.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in startle chamber.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in startle chamber.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Mice were placed in the testing chambers",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice were placed in the testing chambers (individual startle measurement)",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "food and water ad libitum, except during behavioral testing",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Each session lasted about a total of 30 min.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "Each session lasted about a total of 30 min.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Each drug condition tested in a single session; between-experiment re-testing separated by washout ('Behavioral tests were separated by at least a 1 week wash-out period') not analysed as repeated measures.",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "treatment or vehicle was administered to subjects immediately prior to testing; no pre-drug session reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Testing only immediately after dosing.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Each session lasted about a total of 30 min.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "All candidates agreed on two assays (HTR and PPI); all PPI parameter sets, M100,907 pretreatment, LSD, sexes, and dopamine-agonist control arms collapsed into one PPI assay per rubric.",
+    "DOI set to null: candidates disagreed (deepseek 10.1007/s00213-021-05913-5, gemma 10.1007/s11064-...; qwen null) and the markdown contains no DOI. The s00213 prefix (Psychopharmacology) is plausible but unverified from text.",
+    "HTR B1 set to 0 ('1'): total counts and 15-min binned time course are the same variable; gemma's score 1 with value '1' was internally inconsistent.",
+    "PPI B2 overridden to Yes (following qwen): the paper explicitly analyses within-session startle habituation (pulse-only blocks at start vs end of the same session, Table 4/Fig. 11), which is within-session temporal dynamics, not a between-session pre/post comparison.",
+    "PPI B1 set to 4-6 (modal score 2): pulse-alone startle, prepulse+pulse startle, %PPI, and within-session startle habituation.",
+    "PPI setup_habituation set to not_reported: candidates citing 'yes' relied on testing-room habituation, which the rubric explicitly excludes; the 5-min acclimation is part of the session itself.",
+    "PPI application_type set to i.p. rather than modal 'multiple': the field concerns psychedelic route, and both DOI and LSD (and M100,907) were given i.p. Only the non-psychedelic control apomorphine was s.c.",
+    "HTR setup_restrain set to 'no' (modal); the mouse was free in a plastic container. PPI restraint kept as 'yes' (modal), but at medium confidence because the paper does not explicitly describe a restraint tube.",
+    "Added dosing entries for M100,907, apomorphine and SKF-82,958, because the rubric asks for every drug compound administered in the behavioural experiments. Ketamine/xylazine anesthesia used for ear-tagging was excluded.",
+    "HTR n_total of 24 (12 male, 12 female) is inferred from 'n = 6 mice per group' across a 2 sex × 2 treatment design, consistent with the ANOVA df of 20."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 3.12,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 1.36
+  },
+  "low_confidence_count": 5,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-20T18:29:40+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "d7368ca2f4",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 60036,
+    "output_tokens": 10997,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

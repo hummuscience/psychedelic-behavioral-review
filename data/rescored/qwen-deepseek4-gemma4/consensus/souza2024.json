@@ -1,0 +1,317 @@
+{
+  "study_id": "Souza2024",
+  "doi": null,
+  "species": "rat",
+  "strain": "Wistar",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 60,
+    "age_max_days": 60,
+    "evidence": "A total of 17 adult male rats were used (Rattus norvegicus, Wistar, 250-350 g, ~ 2 months old).",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 17,
+    "n_female": null,
+    "evidence": "A total of 17 adult male rats were used",
+    "confidence": "high"
+  },
+  "psychedelic": "5-MeO-DMT",
+  "dosing": [
+    {
+      "compound": "5-MeO-DMT",
+      "doses_mg_per_kg": [
+        0.333,
+        0.5,
+        0.667,
+        3.33,
+        10.0,
+        33.3
+      ],
+      "doses_raw": "for ICV groups: 100 ug, 150 ug, or 200 ug diluted in 2 ul of saline; for IP groups: 1 mg, 3 mg, or 10 mg diluted in 0.3 ml of saline",
+      "vehicle": "saline",
+      "route": "multiple",
+      "schedule": "acute",
+      "evidence": "The study used 5-MeO-DMT (Merck) dissolved in DMSO (0.27mg/ul), and then diluted in 0.9% saline to final doses... animals were injected with one of the three 5-MeO-DMT doses (for ICV groups: 100 ug, 150 ug, or 200 ug diluted in 2 ul of saline; for IP groups: 1 mg, 3 mg, or 10 mg diluted in 0.3 ml of saline) or saline. Doses are given as absolute amounts, not per kg; mg/kg values approximated using mid-range body weight of 300 g (reported 250-350 g). Single dose per weekly session, with weekly-spaced crossover sessions.",
+      "confidence": "medium"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "Before the first experimental session, animals were handled (~ 20 min) and habituated to the experimental room and box for at least three days (1 h per day).",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "The animals were housed in an appropriate vivarium under controlled temperature and humidity (cage density not stated).",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "with lights on at 6:00 and lights off at 18:00... Experiments were done in the afternoon or beginning of the evening (14-18 h) under dim light.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Open field spontaneous behaviour / locomotion monitoring",
+      "assay_description": "Freely moving rats were video-recorded in an arena (55.5 × 65 × 45 cm) for a 1-h pre-injection baseline, followed by 2-3 h after IP or ICV 5-MeO-DMT or saline. Speed was derived from centre-of-mass tracking (Cineplex/IdTracker). Ten behaviours were scored for time spent and number of events: intermittent uncoordinated gaiting/jumping, backwards gaiting, flat body gaiting, turning on axis, quiet, uncoordinated gaiting, still, jumps, head tremor, and wet-dog shake. These were also grouped as 'still' vs 'altered behaviours'. Concurrent LFP recordings and LFP state-map analyses are neural and are not scored.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "multiple",
+          "evidence": "for ICV groups: 100 ug, 150 ug, or 200 ug diluted in 2 ul of saline; for IP groups: 1 mg, 3 mg, or 10 mg diluted in 0.3 ml of saline",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "habituated to the experimental room and box for at least three days (1 h per day)",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "acute LFP changes in the hippocampus (HP) and medial prefrontal cortex (mPFC) of freely behaving rats",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in the arena is mentioned; standard arena test without accessible food.",
+          "confidence": "low"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in the arena is mentioned; standard arena test without accessible water.",
+          "confidence": "low"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "On the second day, after the baseline recording, animals were injected... and recorded for an additional two to three hours.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 17,
+        "n_male": 17,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "A total of 17 adult male rats were used... 1 to 8 sessions per rat, totalling 54 drug and 20 saline sessions; Supp Table S1 specifies the number of experimental units allocated to each group",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "ICV 5-MeO-DMT significantly decreased the time spent in and number of events of 'still' at every dose compared with saline. It increased the time and number of events of 'altered behaviours' (grouped behaviours 1-6) at 200 ug. Uncoordinated gaiting and intermittent gaiting/jumping were individually increased; wet-dog shake, head tremor, backward gaiting and flat body gaiting were not individually significant. Speed distributions were also shifted after IP and ICV dosing.",
+        "statistics": "ANOVA 'Still': Mean time F(3,20) = 7.6747, Number of events F(3,20) = 5.3164; 'Altered behaviours': Mean time spent F(3,20) = 3.2362, Number of events F(3,20) = 3.8690; # p < 0.05; Tukey-Kramer post hoc * p < 0.05, ** p < 0.01",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "both the mean time spent and the number of events of 'still' are significantly decreased for every dose compared to saline. Conversely, there was an increase of the mean time and number of events of 'altered behaviours' for the dose ICV 200 ug compared to saline",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 3,
+          "value": "7+",
+          "evidence": "we show here the 10 behaviours most observed across animals... For each of those behaviours we measured the average time spent and the number of events (Supp Fig S1); plus speed histograms and the stillness/moving ratio.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Behaviour is reported as session means/totals; no within-session behavioural time course is presented.",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Transition probabilities were computed between LFP spectral states (WK/SWS/REM), not between behaviours.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Scored behaviours are drug-induced 'abnormal behaviours' and stereotypies (e.g. uncoordinated gaiting, backward gaiting, wet-dog shake = HTR); no natural-repertoire acts (grooming, rearing, social investigation) are reported.",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Single freely behaving rat in the arena; no social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "most studies assess behavioural effects of drugs on specific tasks, rather than on spontaneous activity",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The animals were tracked using Cineplex from Plexon or IdTracker to detect the animals' centre of mass... Further behavioural analyses were done using Cineplex Editor.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "PCA was applied only to LFP frequency ratios for state maps, not to behavioural features; behaviour was analysed with univariate ANOVAs.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "a one-hour recording of the animal in the arena (55.5 × 65 × 45 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "arena (55.5 × 65 × 45 cm); 'actively moving across the open field'",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual freely behaving rats recorded in the arena.",
+          "confidence": "medium"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Animals were submitted to four, weekly-spaced experimental sessions... On each experimental session we recorded 1 h of baseline followed by 2 or 3 h after drug injection",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "recorded for an additional two to three hours",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "four, weekly-spaced experimental sessions... All experiments reported here refer to the second day of each experimental week",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "On the second day, after the baseline recording, animals were injected; baseline (1 h) data used as reference/comparison",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Two additional 1-h recordings were made one day before and after the experiment but are not included in this work",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "recorded for an additional two to three hours (no session ≥6 h)",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      }
+    }
+  ],
+  "judge_notes": [
+    "All candidates identified a single behavioural assay (spontaneous behaviour/locomotion in an arena). The LFP spectral, gamma-coupling and state-map/transition analyses are neural recordings and were not scored.",
+    "B1 overridden to 3 (7+). The paper scores 10 behaviours, each for time spent and number of events, plus speed and the stillness ratio. Gemma's score of 3 was paired with an inconsistent value label.",
+    "B4 overridden to 0 against the modal 'Yes'. Wet-dog shake equals HTR, which the rubric excludes, and the other scored items are drug-induced abnormal or stereotyped behaviours rather than natural-repertoire acts.",
+    "D2 set to 2 (2-3 h post-injection recording), following qwen and deepseek; Gemma used the 1-h baseline duration instead.",
+    "D3 kept at modal 1 (2-7). The design is four weekly sessions per rat, but the paper also notes '1 to 8 sessions per rat', so confidence is medium.",
+    "Dosing: the paper reports absolute amounts (1, 3, 10 mg IP; 100-200 ug ICV), not mg/kg. Candidates' 1/3/10 mg/kg values were incorrect, so doses were converted using a ~300 g mid-range body weight (250-350 g reported).",
+    "Vehicle set to saline: the stock was dissolved in DMSO and then diluted in 0.9% saline.",
+    "DOI set to null: only one candidate supplied a DOI and it cannot be verified from the markdown."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 6.82,
+    "behavioural_complexity_mean": 3.75,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 6.82
+  },
+  "low_confidence_count": 9,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-20T18:09:10+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "d7368ca2f4",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 50039,
+    "output_tokens": 6442,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

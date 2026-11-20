@@ -1,0 +1,1321 @@
+{
+  "study_id": "Tsybko2020",
+  "doi": null,
+  "species": "mouse",
+  "strain": "C57Bl/6",
+  "age": {
+    "value": "adult",
+    "age_min_days": 70,
+    "age_max_days": 77,
+    "evidence": "Adult males of C57Bl/6 mice (The Jackson Laboratory, 10-11 weeks, 23-26 g) were used in the experiments.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 64,
+    "n_female": null,
+    "evidence": "Adult males of C57Bl/6 mice... For this reason we chose male mice for our study. ... (16 mice in each group). The control group (16 mice) obtained saline injections",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI, TCB-2, 25CN-NBOH",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "1 mg/ kg of body weight and administered i.p.",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "chronic",
+      "evidence": "For 14 days, the animals were treated with mixed 5-HT 2A/2C agonist DOI (SigmaAldrich, USA)... Drugs were dissolved in saline in the concentration of 1 mg/ kg of body weight and administered i.p.",
+      "confidence": "high"
+    },
+    {
+      "compound": "TCB-2",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "1 mg/ kg of body weight and administered i.p.",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "chronic",
+      "evidence": "For 14 days, the animals were treated with... selective 5-HT 2A agonists TCB-2 (Tocris Bioscience, UK)... Drugs were dissolved in saline in the concentration of 1 mg/ kg of body weight and administered i.p.",
+      "confidence": "high"
+    },
+    {
+      "compound": "25CN-NBOH",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "1 mg/ kg of body weight and administered i.p.; HTR challenge: 'in the dose of 1 mg/kg and administered i.p.'",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "chronic",
+      "evidence": "For 14 days, the animals were treated with... 25CN-NBOH (Tocris Bioscience, UK). Drugs were dissolved in saline in the concentration of 1 mg/ kg of body weight and administered i.p. Also used as an acute 1 mg/kg i.p. challenge for the head-twitch test.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "Two days before the behavioral experiments, the mice were isolated into individual cages to rule out the group effect. (Single-housed during behavioural testing; prior housing density not explicitly stated.)",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "The mice were housed under standard laboratory conditions in a natural light-dark cycle (16 h light and 8 h dark)",
+      "confidence": "medium"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head-Twitch Response",
+      "assay_description": "After all behavioural procedures, chronically treated mice received an acute 25CN-NBOH challenge (1 mg/kg, i.p.); head-twitches counted for 20 min starting 5 min post-injection to assess 5-HT2A functional activity.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "The drug was dissolved in saline in the dose of 1 mg/kg and administered i.p.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "No restraint described during head-twitch observation.",
+          "confidence": "medium"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food described in the observation setting.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water described in the observation setting.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 5,
+          "evidence": "The head-twitches were measured during 20 min, 5 min after drug administration.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 24,
+        "n_male": 24,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "Fig. 2 Head twitches induced by 25CN-NBOH (1 mg/kg) in mice chronically treated with saline, DOI, TCB-2 or 25CN-NBOH (n = 6).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Chronic treatment with DOI, TCB-2 or 25CN-NBOH significantly attenuated the head-twitch response to a 25CN-NBOH challenge, interpreted as 5-HT2A receptor desensitization.",
+        "statistics": "F(3,20) = 11.30, p < 0.001; ***p < 0.001 vs saline-treated mice",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "All the investigated drugs caused significant attenuation in the head-twitch response (F 3, 20 = 11.30, p < 0.001; Fig. 2) suggesting the desensitization of the 5-HT 2A receptors.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "evaluating the number of head-twitches induced by selective 5-HT 2A agonist 25CN-NBOH",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total count over 20 min reported (Fig. 2); no time-binned analysis.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence/transition analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-twitch response is excluded as ethological by rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Drug-induced reflexive behaviour; no learning.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No automated classification described; head-twitches counted.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "One-way ANOVA only.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Observation setting not described beyond standard testing.",
+          "confidence": "medium"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter described.",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "No compartments described.",
+          "confidence": "medium"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice were individually housed/tested; no conspecific during recording described.",
+          "confidence": "medium"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "The head-twitches were measured during 20 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "measured during 20 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "After all behavioral procedures, the functional activity of 5-HT 2A receptors was investigated",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug HTR baseline reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recorded 5 min after challenge dose.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "20-min session.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "5-min test in an open arena after 14-day chronic treatment (saline, DOI, TCB-2, 25CN-NBOH 1 mg/kg). Distance, explored area and time in centre tracked with EthoStudio; rearings and groomings counted manually.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Drugs were dissolved in saline... and administered i.p.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Open Field (OF) test was performed using an open arena",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in the open arena.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in the open arena.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "Injection of the drug was carried out at least 1 h after behavioral experiments (implies last dose given the previous day, ~<24 h before testing; exact interval not stated).",
+          "confidence": "medium"
+        }
+      },
+      "sample_size": {
+        "n_total": 24,
+        "n_male": 24,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "Table 3: Data represent the mean ± SEM; n = 6 per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Chronic treatment had a main effect on time in centre, with 25CN-NBOH showing a trend to decrease centre time (p = 0.06), interpreted as slight anxiogenic effect; no drug affected distance, explored area, rearings or groomings.",
+        "statistics": "Time in centre: F(3,20)=3.92, p<0.05; 25CN-NBOH vs saline tendency p=0.06. Explored area F(3,20)=1.92, n.s.; total distance F(3,20)=0.23, n.s.; rearings F(3,20)=0.83, n.s.; groomings F(3,20)=0.44, n.s.",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Post-hoc analysis revealed that chronic treatment with 25CN-NBOH decreased the time spent in the center of the arena (tendency p = 0.06; Table 3). All the utilized drugs failed to produce any changes in the explored area of the arena (F 3, 20 = 1.92, n.s), total distance (F 3, 20 = 0.23, n.s) and the number of rearings (F 3, 20 = 0.83, n.s) and groomings (F 3, 20 = 0.44, n.s).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "the distance run and the area explored of the arena) and time in the center were measured... The number of rearings and groomings was measured manually. (5 measures)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only totals over the 5-min test reported (Table 3).",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The number of rearings and groomings was measured manually.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate exploration/anxiety test.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "measured automatically during a 5-min test using the original EthoStudio software (position tracking); rearing/grooming scored manually",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "One-way ANOVA per measure.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "using an open arena",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open arena; no shelter.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "open arena",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice tested individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in arena described.",
+          "confidence": "medium"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "during a 5-min test",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "during a 5-min test",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single OF test reported.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Tested during ongoing daily treatment; injection given at least 1 h after behavioral experiments.",
+          "confidence": "medium"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5-min session.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "Light-Dark Box Test",
+      "assay_description": "5-min test in a plastic light-dark box; animal placed in light compartment facing aperture. Time in light/dark compartments and transitions measured with EthoStudio.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Drugs were dissolved in saline... and administered i.p.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "The animal was placed in the light compartment of the device facing the aperture.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in the apparatus.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in the apparatus.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "Injection of the drug was carried out at least 1 h after behavioral experiments (exact interval not stated).",
+          "confidence": "medium"
+        }
+      },
+      "sample_size": {
+        "n_total": 24,
+        "n_male": 24,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "Table 4: Data represent the mean ± SEM; n = 6 per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Chronic treatment with DOI, TCB-2 or 25CN-NBOH did not alter time in light/dark compartments or number of transitions; the slight anxiogenic OF effect of 25CN-NBOH was not confirmed.",
+        "statistics": "Time in dark F(3,20)=1.7, n.s.; time in light F(3,20)=1.7, n.s.; dark-light transitions F(3,20)=0.51, n.s.; light-dark transitions F(3,20)=0.29, n.s.",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "The main treatment effect on the time spent in the dark (F 3, 20 = 1.7, n.s) and light (F 3, 20 = 1.7, n.s) compartments as well as number of dark-light (F 3, 20 = 0.51, n.s) and light-dark (F 3, 20 = 0.29, n.s) transitions was absent in the light-dark box test",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "Table 4: Duration in dark, Duration in light, Dark-light transitions, Light-dark transitions (4 measures)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Totals over 5-min test only.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Zone time and transitions only (spatial measures).",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate avoidance test.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "measured during a 5-min test using EthoStudio software (position tracking)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "One-way ANOVA per measure.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "plastic white-colored device",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "dark compartment of light-dark box",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "number of transitions from the dark compartment to the light one",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice tested individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water described in apparatus.",
+          "confidence": "medium"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "during a 5-min test",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "during a 5-min test",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Tested during ongoing daily treatment.",
+          "confidence": "medium"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5-min session.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "Marble Burying Test",
+      "assay_description": "Mice placed individually in polypropylene cages (42 × 24 × 12 cm) with 20 glass marbles on 5 cm-deep sawdust, no food or water, metal grid ceiling; marbles buried ≥2/3 counted after 30 min.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Drugs were dissolved in saline... and administered i.p.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "placed individually in polypropylene cages",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "evenly spaced on 5 cm-deep sawdust without food or water",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "evenly spaced on 5 cm-deep sawdust without food or water",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "Injection of the drug was carried out at least 1 h after behavioral experiments (exact interval not stated).",
+          "confidence": "medium"
+        }
+      },
+      "sample_size": {
+        "n_total": 24,
+        "n_male": 24,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "Table 4: Data represent the mean ± SEM; n = 6 per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "The main effect of chronic treatment on number of marbles buried was weak and non-significant (p = 0.052); authors conclude the agonists did not affect stereotyped behaviour.",
+        "statistics": "F(3,20) = 3.06, p = 0.052",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "In our study the main effect of chronic treatment on marble-burying behavior was weak (F 3, 20 = 3.06, p = 0.052; Table 4) indicating that hallucinogenic agonists failed to affect stereotyped behavior.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The number of marbles buried by at least two-thirds was counted 30 min later.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single end-point count.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Burying/digging behaviour in sawdust (natural repertoire).",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "placed individually",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Repetitive/anxiety-related behaviour; no learning.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Marbles counted manually.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "One-way ANOVA.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "polypropylene cages (42 × 24 × 12 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter; metal grid ceiling.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "evenly spaced on 5 cm-deep sawdust",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described.",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Marbles are the test stimuli, not enrichment.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single cage.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "placed individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "without food or water",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "counted 30 min later",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "The number of marbles buried... was counted 30 min later.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Tested during ongoing daily treatment.",
+          "confidence": "medium"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30-min session.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Acoustic Startle / Prepulse Inhibition",
+      "assay_description": "TSE Startle Response/PPI system; 65 dB background, 3-min adaptation, 8 signals at 15-s intervals alternating 85 dB pulse and 75 dB prepulse + 110 dB pulse. Startle amplitude and PPI (%) computed.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Drugs were dissolved in saline... and administered i.p.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Only an in-session 'adaptation period (3 min)' is described, which is acclimation within the test session, not separate apparatus habituation.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "The animal was placed in a chamber (TSE Startle Response/PPI test system); restraint holder not explicitly described.",
+          "confidence": "medium"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in startle chamber.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in startle chamber.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "Injection of the drug was carried out at least 1 h after behavioral experiments (exact interval not stated).",
+          "confidence": "medium"
+        }
+      },
+      "sample_size": {
+        "n_total": 24,
+        "n_male": 24,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "Fig. 3 ... in mice chronically treated with saline, DOI, TCB-2 and 25CN-NBOH (n = 6).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "No drug altered PPI, but treatment affected acoustic startle amplitude: chronic 25CN-NBOH increased startle amplitude, interpreted as an enhanced fear reaction.",
+        "statistics": "PPI: F(3,20)=0.75, n.s.; startle: F(3,20)=4.24, p<0.01; 25CN-NBOH vs saline p<0.05",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "We have found that chronic treatment with DOI, TCB-2 and 25CN-NBOH failed to produce any changes in PPI (F 3, 20 = 0.75, n.s; Fig. 3a). However, treatment affected acoustic startle reflex (F 3, 20 = 4.24, p < 0.01). Post-hoc analysis found that 25CN-NBOH caused an increase in the range of acoustic startle reflex (p < 0.05; Fig. 3b)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "startle amplitude and PPI = ((P - PP)/ P)*100%",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "average values... were calculated after four presentations",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "PPI/startle magnitude excluded as ethological by rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sensorimotor gating reflex.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "TSE Startle Response software records response amplitude, not behaviour classification.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "One-way ANOVA.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "TSE Startle Response/PPI test system",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Startle chamber; no shelter.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Startle chamber; no bedding described.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "The animal was placed in a chamber",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Single animal in chamber.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in chamber.",
+          "confidence": "medium"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "After the adaptation period (3 min), sound signals (a total of 8) were fed into the chamber at an interval of 15 sec.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "3-min adaptation + 8 signals at 15-s intervals (~5 min)",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Tested during ongoing daily treatment.",
+          "confidence": "medium"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Short session.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "Morris Water Maze",
+      "assay_description": "Hidden-platform MWM (25°C opaque water, 6-cm platform, visual cue). 4 acquisition days × 3 trials (60 s max, 15 s ITI) measuring escape latency, path, speed, cumulative distance; day 5 probe test (3 × 60 s) measuring % time in target sector. EthoStudio tracking.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Drugs were dissolved in saline... and administered i.p.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "an animal was released into the centers of sectors III or IV (free swimming)",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in the water tank.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No drinking water source in the tank (milk-opaque swimming water is not a water supply).",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "Injection of the drug was carried out at least 1 h after behavioral experiments (exact interval not stated).",
+          "confidence": "medium"
+        }
+      },
+      "sample_size": {
+        "n_total": 32,
+        "n_male": 32,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "half of animals (n = 8) were tested in Morris water-maze; Fig. 4 ... (n = 8)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Chronic DOI, TCB-2 or 25CN-NBOH did not affect acquisition (escape latency, cumulative distance, path, speed) or probe-test memory; all groups learned across days and spent more time in the target sector than chance.",
+        "statistics": "Drug: escape latency F(3,28)=0.91, n.s.; cumulative distance F(3,28)=0.4, n.s.; total path F(3,28)=0.34, n.s.; speed F(3,28)=0.34, n.s. Drug×day: latency F(9,84)=0.44; distance F(9,84)=0.29; path F(9,84)=1.26; speed F(9,84)=1.26, all n.s. Day: latency F(3,28)=9.32, p<0.001; path F(3,28)=36.07, p<0.001. Probe: F(1,56)=64.94, p<0.001; vs chance F(1,56)=23.45, p<0.001.",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "No effect of the drug on escape latency (F 3, 28 = 0.91, n.s), cumulative distance (F 3, 28 = 0.4, n.s), total path (F 3, 28 = 0.34, n.s), and speed (F 3, 28 = 0.34, n.s) was found in the MWM... The latter indicates that all used drugs did not affect both performance and spatial memory in the MWM.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "escape latency time, speed, the path traveled, cumulative distance... time spent (%) in the target sector (5 measures)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The mean values of the day trials were calculated; learning analysed across days (between-session), not within-session.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Escape swimming/spatial measures only.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Chronic treatment with 5-HT 2A agonists failed to affect spatial memory and learning in the MWM",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Mice were tracked automatically with a web camera, and their behavior was analyzed with the EthoStudio program (position tracking)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Repeated-measures ANOVA per measure.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "The tank was filled with water (25°C, layer 15 cm deep).",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open water tank.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent (water tank).",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent (water tank).",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only platform and visual cue present.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "The surface of the tank was virtually divided into four sectors.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice tested individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or drinking water in the maze.",
+          "confidence": "medium"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Mice received three acquisition trials per day for 4 consecutive days... On the fifth consecutive day, a retention test was performed.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Trial duration was limited to 60 s with 15 s inter-trial intervals (3 trials/day).",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "4 consecutive days of acquisition + retention test on fifth day = 5 days",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug MWM recording.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Tested during ongoing daily treatment.",
+          "confidence": "medium"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Short daily sessions.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    }
+  ],
+  "judge_notes": [
+    "All three candidates identified the same six assays (HTR, OFT, light-dark box, marble burying, startle/PPI, MWM); no merging or dropping needed. RT-PCR and Western blot excluded as ex vivo.",
+    "DOI set to null: not present in the markdown and candidates disagreed (null, 10.1007/s11064-020-03145-9, 10.1007/s12034-020-00764-w).",
+    "Age value set to 'adult' following the paper's explicit wording ('Adult males... 10-11 weeks').",
+    "group_housing set to 'no' because the rubric asks for housing during behavioural testing and the paper states mice were isolated into individual cages two days before testing.",
+    "day_night_flipped = 'no' (modal; paper states a natural 16:8 light-dark cycle, i.e., not reversed).",
+    "HTR B1 scored 0 (single measure); gemma's score of 1 for '1 measure' contradicts rubric. HTR time_to_assay = 5 min after the 25CN-NBOH challenge (modal).",
+    "OFT B1 = 4-6 (5 measures; score 2); light-dark box B1 = 4-6 (4 measures in Table 4; score 2, modal score).",
+    "MWM B2 overridden to 0 (deepseek/gemma scored 1): the learning curve uses training day as a between-session factor, which the rubric explicitly excludes; within-trial means were averaged per day.",
+    "MWM D2 = 0 (<15 min): trials 60 s with 15-s ITI; deepseek's score of 1 contradicted its own evidence.",
+    "MWM water_restriction set to 'during' (no drinking water source) for consistency with E8 = No, overriding the modal 'no'.",
+    "Startle/PPI setup_habituation set to not_reported: the 3-min adaptation is within the test session, which the rubric excludes. setup_restrain = 'yes' (modal), medium confidence since restraint holder is not explicitly described.",
+    "Startle direction = 'increase' (modal): 25CN-NBOH increased startle amplitude, and PPI was unchanged.",
+    "time_to_assay for chronic-treatment assays coded early_2to24h / 1440 min (modal), medium confidence; the paper only states injections were given at least 1 h after behavioural experiments."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 2.73,
+    "recording_duration_max": 2.73,
+    "behavioural_complexity_mean": 2.08,
+    "environmental_complexity_mean": 0.68,
+    "recording_duration_mean": 0.91
+  },
+  "low_confidence_count": 17,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-20T18:20:20+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "d7368ca2f4",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 82564,
+    "output_tokens": 17527,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

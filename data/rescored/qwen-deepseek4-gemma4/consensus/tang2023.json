@@ -1,0 +1,111 @@
+{
+  "study_id": "Tang2023",
+  "doi": null,
+  "species": "rat",
+  "strain": "Sprague Dawley",
+  "age": {
+    "value": "adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Acute brain slices containing the OFc of adult male Sprague Dawley rats were used for ex vivo whole-cell recording. ... Male Sprague Dawley rats (280-350 g)",
+    "confidence": "medium"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male Sprague Dawley rats (280-350 g) were group-housed",
+    "confidence": "high"
+  },
+  "psychedelic": "25C-NBOMe",
+  "dosing": [
+    {
+      "compound": "25C-NBOMe",
+      "doses_mg_per_kg": [],
+      "doses_raw": "30 μM (bath application to brain slices)",
+      "vehicle": "not_reported",
+      "route": "other",
+      "schedule": "acute",
+      "evidence": "The bath application of 25C-NBOMe (30 μM) significantly increased the frequencies of sEPSC",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Male Sprague Dawley rats (280-350 g) were group-housed",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "allowed to acclimate to laboratory conditions (12-h light/dark cycles); direction or lights-on time not stated",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [],
+  "judge_notes": [
+    "All three candidates returned zero assays; agreed. The study is entirely ex vivo whole-cell patch-clamp recording in acute OFc slices. It includes no behavioural test, so there is nothing to score under the rubric's exclusion of slice physiology.",
+    "Two candidates gave identity and housing fields; gemma4 gave none. I took species, strain, sex and housing from the paper's Methods ('Male Sprague Dawley rats (280-350 g) were group-housed... 12-h light/dark cycles... unrestricted access to food and water').",
+    "The 25C-NBOMe dosing entry (30 μM, route 'other', acute) is retained because two of the three candidates included it, so it is the modal answer.",
+    "Note on that dosing entry: 25C-NBOMe was bath-applied to brain slices and never given to live animals, so no mg/kg doses exist.",
+    "DOI is set to null because the markdown contains no DOI and neither candidate supplied one.",
+    "Age is set to 'adult' because the Abstract says 'adult male Sprague Dawley rats'. No age in days is given, only body weight of 280-350 g."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0,
+    "environmental_complexity_max": 0,
+    "recording_duration_max": 0,
+    "behavioural_complexity_mean": 0,
+    "environmental_complexity_mean": 0,
+    "recording_duration_mean": 0
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-20T18:11:54+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "d7368ca2f4",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 37362,
+    "output_tokens": 1505,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}
