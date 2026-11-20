@@ -17,7 +17,8 @@ Steps:
        an open-access PDF (converted with Docling).
      The workflow pulls inputs/ from the PDF store's calibration/ folder.
   2. Score with every candidate in --candidates.
-  3. Pick the third model from --choose-from by agreement with human rater 2.
+  3. Pick the third model from --choose-from by agreement with human rater 2
+     (or use --ensemble as given).
   4. Judge with qwen + glm53 + the pick (judge from JUDGE_PROVIDER /
      AZURE_FOUNDRY_MODEL, as in the monthly update).
   5. Write data/calibration/bridge_<date>.md and .json (derived numbers only).
@@ -204,10 +205,9 @@ def coverage(stems: list[str], tags: list[str]) -> dict[str, list[str]]:
     return {t: [s for s in stems if (CANDIDATES / t / f"{s}.json").exists()] for t in tags}
 
 
-def report(stems: list[str], sources: dict, tags: list[str], third: str,
-           choice_scores: dict, judge_model: str, effort: str,
+def report(stems: list[str], sources: dict, tags: list[str], trio: list[str],
+           third: str | None, choice_scores: dict, judge_model: str, effort: str,
            problems: list[str] | None = None) -> Path:
-    trio = BASE_TRIO + [third]
     judged = judged_with(stems, trio)
     cov = coverage(stems, tags)
     slots = {"published": CONSENSUS_DIR, "new": NEW_CONSENSUS,
@@ -254,13 +254,16 @@ def report(stems: list[str], sources: dict, tags: list[str], third: str,
             if r:
                 L.append(f"| {label} | {dim} | {r['n']} | {r['pct']:.0f}% | "
                          f"{r['mean_diff']:+.2f} | {_fmt(r['spearman'])} | {_fmt(r['icc'])} |")
-    L += ["", "## Choice of the third candidate", "",
-          "Agreement with human rater 2, averaged over B/E/D, on the papers every "
-          "model in the choice scored:", "",
-          "| model | mean ICC | mean exact | n |", "|---|---|---|---|"]
-    for t, s in choice_scores.items():
-        L.append(f"| `{t}`{' (chosen)' if t == third else ''} | {_fmt(s['icc'])} | "
-                 f"{_fmt(s['pct'], 0)}% | {s['n']} |")
+    if third:
+        L += ["", "## Choice of the third candidate", "",
+              "Agreement with human rater 2, averaged over B/E/D, on the papers every "
+              "model in the choice scored:", "",
+              "| model | mean ICC | mean exact | n |", "|---|---|---|---|"]
+        for t, s in choice_scores.items():
+            L.append(f"| `{t}`{' (chosen)' if t == third else ''} | {_fmt(s['icc'])} | "
+                     f"{_fmt(s['pct'], 0)}% | {s['n']} |")
+    else:
+        L += ["", f"Ensemble set by hand: `{', '.join(trio)}`."]
     sl = study_level(judged)
     if sl:
         L += ["", "## Study-level maxima, published vs new", "",
@@ -285,6 +288,9 @@ def main() -> None:
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--candidates", default="qwen,glm53,deepseek4,gemma4")
     ap.add_argument("--choose-from", default="deepseek4,gemma4")
+    ap.add_argument("--ensemble", default="",
+                    help="judge from these candidates instead of qwen + glm53 + the "
+                         "chosen third (e.g. when a model is down)")
     ap.add_argument("--judge-provider", default=os.environ.get("JUDGE_PROVIDER", "foundry"))
     ap.add_argument("--workers", type=int, default=4)
     ap.add_argument("--allow-missing", type=int, default=1,
@@ -304,11 +310,19 @@ def main() -> None:
         sources_file.write_text(json.dumps(sources, indent=2))
         if any(v in ("supplied PDF", "open access") for v in sources.values()):
             run_script("bulk_docling.py", "--pdf-dir", str(PDFS))
-        for _ in range(2):  # second pass retries whatever failed (results are cached)
+        todo = tags
+        for _ in range(2):  # second pass retries what failed (results are cached)
             run_script("triple_score.py", "--pdf-dir", str(PDFS),
-                       "--output-root", str(CANDIDATES), "--models", ",".join(tags),
+                       "--output-root", str(CANDIDATES), "--models", ",".join(todo),
                        "--workers", str(args.workers), "--limit", "1000")
-            if all(len(v) == len(stems) for v in coverage(stems, tags).values()):
+            # Retry only models that worked in this pass: one that scored
+            # nothing is down (SAIA gateway errors) and would only waste time.
+            summary = CANDIDATES / "triple_score_summary.json"
+            ran = json.loads(summary.read_text()) if summary.exists() else []
+            cov = coverage(stems, tags)
+            todo = [t for t in todo if len(cov[t]) < len(stems)
+                    and any(e.get("ok") and e.get("model") == t for e in ran)]
+            if not todo:
                 break
 
     cov = coverage(stems, tags)
@@ -317,12 +331,19 @@ def main() -> None:
     for t, v in cov.items():
         log(f"{t}: scored {len(v)}/{len(stems)}")
 
-    # Compare the choices on the same papers only.
-    common = [s for s in stems if all(s in cov.get(t, []) for t in choose_from)]
-    pairs = build_pairs(common, {t: CANDIDATES / t for t in choose_from})
-    third, choice_scores = choose_third(pairs, choose_from)
-    log(f"third candidate: {third} ({choice_scores}) on {len(common)} papers")
-    trio = BASE_TRIO + [third]
+    if args.ensemble:
+        trio, third, choice_scores = [t for t in args.ensemble.split(",") if t], None, {}
+        log(f"ensemble set by hand: {trio}")
+    else:
+        # Compare the choices on the same papers only.
+        common = [s for s in stems if all(s in cov.get(t, []) for t in choose_from)]
+        pairs = build_pairs(common, {t: CANDIDATES / t for t in choose_from})
+        third, choice_scores = choose_third(pairs, choose_from)
+        log(f"third candidate: {third} ({choice_scores}) on {len(common)} papers")
+        trio = BASE_TRIO + [third]
+    missing = [t for t in trio if t not in tags]
+    if missing:
+        sys.exit(f"ensemble model(s) {missing} not among --candidates")
 
     if not args.compare_only:
         ready = [s for s in stems if all(s in cov.get(t, []) for t in trio)]
@@ -340,13 +361,13 @@ def main() -> None:
 
     judge_model = os.environ.get("AZURE_FOUNDRY_MODEL", "") if args.judge_provider == "foundry" \
         else args.judge_provider
-    out = report(stems, sources, tags, third, choice_scores, judge_model,
+    out = report(stems, sources, tags, trio, third, choice_scores, judge_model,
                  os.environ.get("JUDGE_EFFORT", "high"), problems)
     log(f"report: {out}")
     print(out.read_text())
     if os.environ.get("GITHUB_OUTPUT"):
         with open(os.environ["GITHUB_OUTPUT"], "a") as f:
-            f.write(f"report={out.relative_to(HERE.parent)}\nthird={third}\n")
+            f.write(f"report={out.relative_to(HERE.parent)}\nensemble={','.join(trio)}\n")
     if problems:
         for p in problems:
             print(f"::error::Bridge test incomplete: {p}")

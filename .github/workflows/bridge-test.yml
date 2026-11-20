@@ -15,6 +15,9 @@ on:
       choose_from:
         description: "Tags to choose the third ensemble model from"
         default: "deepseek4,gemma4"
+      ensemble:
+        description: "Optional: judge from these tags instead (e.g. qwen,deepseek4,gemma4)"
+        default: ""
 
 permissions:
   contents: write
@@ -75,6 +78,8 @@ jobs:
 
       - name: Run the bridge test
         id: run
+        # Below the job's limit, so the scores so far are still saved below.
+        timeout-minutes: 300
         env:
           SAIA_API_KEY: ${{ secrets.SAIA_API_KEY }}
           AZURE_FOUNDRY_API_KEY: ${{ secrets.AZURE_FOUNDRY_API_KEY }}
@@ -87,7 +92,8 @@ jobs:
           UNPAYWALL_EMAIL: ${{ secrets.CONTACT_EMAIL }}
         run: |
           uv run python pipeline/bridge_test.py \
-            --candidates "${{ inputs.candidates }}" --choose-from "${{ inputs.choose_from }}"
+            --candidates "${{ inputs.candidates }}" --choose-from "${{ inputs.choose_from }}" \
+            --ensemble "${{ inputs.ensemble }}"
 
       - name: Save results to the store
         if: always()
@@ -112,6 +118,6 @@ jobs:
           branch: bridge-test
           base: main
           commit-message: "data: bridge test of scoring models"
-          title: "Bridge test: scoring models (third candidate: ${{ steps.run.outputs.third }})"
+          title: "Bridge test: scoring models (ensemble: ${{ steps.run.outputs.ensemble }})"
           body-path: ${{ steps.run.outputs.report }}
           add-paths: data/calibration/

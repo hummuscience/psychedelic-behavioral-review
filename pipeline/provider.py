@@ -31,6 +31,12 @@ SAIA_MAX_REQUESTS_PER_10S = int(os.environ.get("SAIA_MAX_REQUESTS_PER_10S", "8")
 # connection: ~16 min in all, after which the paper counts as failed.
 SAIA_BUSY_WAITS = (30, 60, 120, 240, 480)
 SAIA_MAX_RATE_LIMITED = 30  # 429 retries per call (each waits a few seconds)
+# A 504 ("Inference registry error") comes after the gateway has waited ~10 min
+# for the model's backend: the model is down, not busy. Retry twice, briefly.
+SAIA_GATEWAY_WAITS = (30, 60)
+# Calls in a row that fail this way (504s, timeouts, dropped connections)
+# before a model is skipped for the rest of the run.
+SAIA_UNAVAILABLE_AFTER = int(os.environ.get("SAIA_UNAVAILABLE_AFTER", "2"))
 # The v2 schema's reasoning trace + JSON response can push qwen3.5-397b past
 # the old 8-min limit on long papers (~30% of qwen calls were timing out).
 # 1200s is long enough for nearly all real completions to finish; if a call
@@ -324,32 +330,60 @@ def _retry_after(err) -> float:
         return float(m.group(1)) if m else 5.0
 
 
+class SaiaModelUnavailable(RuntimeError):
+    """A SAIA model failed too often in a row; skip it for the rest of the run."""
+
+
+_saia_failures: dict[str, int] = {}  # model -> calls in a row that failed
+
+
 def saia_chat(client, sleep=time.sleep, **kwargs):
     """chat.completions.create with SAIA's rate limit, busy models and dropped
-    connections handled: waits and tries again; one retry after a timeout."""
+    connections handled: waits and tries again; one retry after a timeout.
+    A model whose calls keep failing (504s, timeouts) is then skipped."""
     import openai
-    busy = rate_limited = timeouts = 0
-    while True:
-        _saia_throttle()
-        try:
-            return client.chat.completions.create(**kwargs)
-        except openai.RateLimitError as e:
-            rate_limited += 1
-            if rate_limited > SAIA_MAX_RATE_LIMITED:
-                raise
-            wait = _retry_after(e) + random.uniform(0.5, 3)
-        except openai.APITimeoutError:
-            timeouts += 1
-            if timeouts > 1:
-                raise
-            wait = 0
-        except (openai.InternalServerError, openai.APIConnectionError):
-            if busy >= len(SAIA_BUSY_WAITS):
-                raise
-            wait = SAIA_BUSY_WAITS[busy] * random.uniform(0.8, 1.2)
-            busy += 1
-        sleep(wait)
-
+    model = kwargs.get("model", "")
+    with _saia_lock:
+        failed = _saia_failures.get(model, 0)
+    if failed >= SAIA_UNAVAILABLE_AFTER:
+        raise SaiaModelUnavailable(
+            f"{model} looks unavailable on SAIA ({failed} calls in a row failed "
+            "with gateway errors or timeouts); skipping it for the rest of this run")
+    busy = gateway = rate_limited = timeouts = 0
+    try:
+        while True:
+            _saia_throttle()
+            try:
+                resp = client.chat.completions.create(**kwargs)
+                with _saia_lock:
+                    _saia_failures[model] = 0
+                return resp
+            except openai.RateLimitError as e:
+                rate_limited += 1
+                if rate_limited > SAIA_MAX_RATE_LIMITED:
+                    raise
+                wait = _retry_after(e) + random.uniform(0.5, 3)
+            except openai.APITimeoutError:
+                timeouts += 1
+                if timeouts > 1:
+                    raise
+                wait = 0
+            except (openai.InternalServerError, openai.APIConnectionError) as e:
+                if getattr(e, "status_code", None) == 504:
+                    if gateway >= len(SAIA_GATEWAY_WAITS):
+                        raise
+                    wait = SAIA_GATEWAY_WAITS[gateway]
+                    gateway += 1
+                else:
+                    if busy >= len(SAIA_BUSY_WAITS):
+                        raise
+                    wait = SAIA_BUSY_WAITS[busy] * random.uniform(0.8, 1.2)
+                    busy += 1
+            sleep(wait)
+    except (openai.InternalServerError, openai.APIConnectionError):
+        with _saia_lock:
+            _saia_failures[model] = _saia_failures.get(model, 0) + 1
+        raise
 
 class SaiaProvider(Provider):
     name = "saia"
