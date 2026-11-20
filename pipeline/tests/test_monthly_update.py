@@ -472,3 +472,52 @@ def test_judge_json_extraction() -> None:
         _extract_json('{"a": 1 "b": 2}', "x", {})
     with pytest.raises(ValueError, match="empty response"):
         _extract_json("```\n```", "x", {})
+
+
+def test_saia_skips_a_model_that_keeps_failing(monkeypatch) -> None:
+    """504s ("Inference registry error") twice in a row: the model is skipped after."""
+    import openai
+    import provider
+    monkeypatch.setattr(provider, "_saia_throttle", lambda: None)
+    monkeypatch.setattr(provider, "_saia_failures", {})
+
+    class Completions:
+        calls = 0
+
+        def create(self, **kw):
+            Completions.calls += 1
+            raise _saia_error(openai.InternalServerError, 504, "Inference registry error")
+
+    client = type("C", (), {"chat": type("Chat", (), {"completions": Completions()})()})()
+    waits: list[float] = []
+    for _ in range(provider.SAIA_UNAVAILABLE_AFTER):
+        with pytest.raises(openai.InternalServerError):
+            provider.saia_chat(client, sleep=waits.append, model="glm-5.3-flash")
+    # Each call: one try plus a short retry per gateway wait, not the long busy waits
+    assert Completions.calls == provider.SAIA_UNAVAILABLE_AFTER * (len(provider.SAIA_GATEWAY_WAITS) + 1)
+    assert max(waits) <= max(provider.SAIA_GATEWAY_WAITS)
+    with pytest.raises(provider.SaiaModelUnavailable, match="glm-5.3-flash"):
+        provider.saia_chat(client, sleep=waits.append, model="glm-5.3-flash")
+    assert Completions.calls == provider.SAIA_UNAVAILABLE_AFTER * (len(provider.SAIA_GATEWAY_WAITS) + 1)
+
+
+def test_bridge_ensemble_set_by_hand(data_copy: Path) -> None:
+    sys.path.insert(0, str(REPO / "figures"))
+    import rater_lib as rl
+    work = data_copy / "work" / "bridge"
+    (work / "consensus").mkdir(parents=True)
+    trio = ["qwen", "deepseek4", "gemma4"]
+    for s in rl.PAPER_STEMS:
+        res = json.loads((REPO / "data/results_v2_full_consensus" / f"{s}.json").read_text())
+        res["judge_input_models"] = trio
+        (work / "consensus" / f"{s}.json").write_text(json.dumps(res))
+        for t in trio:
+            (work / "candidates" / t).mkdir(parents=True, exist_ok=True)
+            shutil.copy(REPO / "data/results_v2_full_consensus" / f"{s}.json", work / "candidates" / t)
+    run("bridge_test.py", data_copy, "--compare-only", "--candidates", ",".join(trio),
+        "--ensemble", ",".join(trio))
+    payload = json.loads(next((data_copy / "data/calibration").glob("bridge_*.json")).read_text())
+    assert payload["complete"] and payload["ensemble"] == trio
+    assert all(p["judged"] for p in payload["papers"].values())
+    md = next((data_copy / "data/calibration").glob("bridge_*.md")).read_text()
+    assert "Ensemble set by hand" in md and "Choice of the third candidate" not in md
