@@ -568,3 +568,28 @@ def test_provenance_table_covers_every_scored_paper(data_copy: Path) -> None:
     rows = list(csv.DictReader((data_copy / "data/scoring_provenance.csv").open()))
     n = len(list((data_copy / "data/results_v2_full_consensus").glob("*.json")))
     assert len(rows) == n and {r["setup"] for r in rows} == {"v2 (published)"}
+
+
+def test_rescore_comparison(data_copy: Path) -> None:
+    """Rescored = published copies: perfect agreement; published data untouched."""
+    rows = [r for r in csv.DictReader(open(REPO / "data/scoring_provenance.csv"))
+            if r["missing_candidates"]]
+    stems = [r["stem"] for r in rows[:3]]
+    trio = ["qwen", "deepseek4", "gemma4"]
+    new_dir = data_copy / "data/rescored/test/consensus"
+    new_dir.mkdir(parents=True)
+    for s in stems:
+        d = json.loads((REPO / "data/results_v2_full_consensus" / f"{s}.json").read_text())
+        d["judge_input_models"] = trio
+        (new_dir / f"{s}.json").write_text(json.dumps(d))
+    before = {p.name: p.read_bytes() for p in (data_copy / "data/results_v2_full_consensus").glob("*.json")}
+    run("rescore.py", data_copy, "--compare-only", "--stems", ",".join(stems),
+        "--ensemble", ",".join(trio), "--name", "test")
+    out = json.loads((data_copy / "data/rescored/test/comparison.json").read_text())
+    assert out["complete"] and out["papers_judged"] == stems
+    assert all(out["assay_agreement"][d]["pct"] == 100 for d in "BED" if out["assay_agreement"].get(d))
+    assert all(v["mean_abs_diff"] == 0 for v in out["study_level"].values())
+    assert set(out["published_missing"]) >= set(stems)
+    prov = list(csv.DictReader((data_copy / "data/rescored/test/scoring_provenance.csv").open()))
+    assert [r["stem"] for r in prov] == stems
+    assert before == {p.name: p.read_bytes() for p in (data_copy / "data/results_v2_full_consensus").glob("*.json")}

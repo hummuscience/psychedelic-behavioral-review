@@ -202,6 +202,16 @@ access. Scores are kept in `calibration/results/`, so a re-run only pays for
 what's missing. Cost: about $10–15 for the judge, 1–2 hours. Use the chosen tag
 in the `SCORING_MODELS` variable (default `qwen,glm53,deepseek4`).
 
+### Rescoring published papers
+
+61 published papers were judged with only one or two of the three candidate
+models (a model failed on them; see `data/scoring_provenance.csv`). The *Rescore
+published papers* workflow scores such papers again with the current setup and
+writes the results to `data/rescored/<ensemble>/` with a comparison against the
+published scores; `data/results_v2_full_consensus/` is not changed. Inputs: the
+published Docling text in the store's `rescore/inputs/` folder; scores are kept
+in `rescore/results/` so a re-run continues where the last one stopped.
+
 ## The data
 
 `data/` holds the derived (CC-BY-4.0) outputs only — never the source PDFs:

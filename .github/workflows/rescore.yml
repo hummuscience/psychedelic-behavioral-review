@@ -1,0 +1,121 @@
+name: Rescore published papers
+
+# Scores published papers again with the current setup, keeping the published
+# scores; by default the papers that were judged without every candidate model.
+# Results go to data/rescored/<name>/ via a pull request, with a comparison
+# against the published scores. Inputs: the published Docling text in the PDF
+# store's rescore/inputs/ folder. See pipeline/rescore.py.
+
+on:
+  workflow_dispatch:
+    inputs:
+      stems:
+        description: "Papers: 'missing-candidates' or comma-separated stems"
+        default: "missing-candidates"
+      ensemble:
+        description: "Candidate model tags"
+        default: "qwen,deepseek4,gemma4"
+      name:
+        description: "Output folder under data/rescored/ (default: the ensemble tags)"
+        default: ""
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: rescore
+  cancel-in-progress: false
+
+jobs:
+  rescore:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          uv sync --frozen
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq rclone pandoc
+
+      - name: Connect the private PDF store
+        env:
+          STORE_URL: ${{ secrets.STORE_WEBDAV_URL }}
+          STORE_USER: ${{ secrets.STORE_WEBDAV_USER }}
+          STORE_PASS: ${{ secrets.STORE_WEBDAV_PASSWORD }}
+        run: |
+          if [ -z "$STORE_URL" ]; then
+            echo "::error::The PDF store isn't configured; the papers' text comes from it."
+            exit 1
+          fi
+          obscured=$(rclone obscure "$STORE_PASS")
+          echo "::add-mask::$obscured"
+          {
+            echo "STORE_REMOTE=store:"
+            echo "RCLONE_CONFIG_STORE_TYPE=webdav"
+            echo "RCLONE_CONFIG_STORE_VENDOR=${{ vars.STORE_WEBDAV_VENDOR || 'nextcloud' }}"
+            echo "RCLONE_CONFIG_STORE_URL=$STORE_URL"
+            echo "RCLONE_CONFIG_STORE_USER=$STORE_USER"
+            echo "RCLONE_CONFIG_STORE_PASS=$obscured"
+          } >> "$GITHUB_ENV"
+
+      # Inputs, plus scores from earlier attempts so a re-run continues.
+      - name: Pull inputs and earlier results
+        id: pull
+        run: |
+          name="${{ inputs.name }}"
+          [ -n "$name" ] || name=$(echo "${{ inputs.ensemble }}" | tr ',' '-')
+          echo "name=$name" >> "$GITHUB_OUTPUT"
+          mkdir -p work/rescore/inputs "data/rescored/$name/consensus"
+          rclone copy store:rescore/inputs work/rescore/inputs
+          rclone copy store:rescore/results/candidates work/rescore/candidates || true
+          rclone copy "store:rescore/results/$name/consensus" "data/rescored/$name/consensus" || true
+          echo "Inputs: $(ls work/rescore/inputs | wc -l) files"
+
+      - name: Rescore
+        id: run
+        # Below the job's limit, so the scores so far are still saved below.
+        timeout-minutes: 300
+        env:
+          SAIA_API_KEY: ${{ secrets.SAIA_API_KEY }}
+          AZURE_FOUNDRY_API_KEY: ${{ secrets.AZURE_FOUNDRY_API_KEY }}
+          AZURE_FOUNDRY_ENDPOINT: ${{ secrets.AZURE_FOUNDRY_ENDPOINT }}
+          AZURE_FOUNDRY_MODEL: ${{ vars.AZURE_FOUNDRY_MODEL || 'claude-opus-5-5' }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          JUDGE_PROVIDER: ${{ vars.JUDGE_PROVIDER || 'foundry' }}
+          JUDGE_EFFORT: ${{ vars.JUDGE_EFFORT || 'high' }}
+          JUDGE_FALLBACK_MODEL: ${{ vars.JUDGE_FALLBACK_MODEL || 'claude-opus-5' }}
+        run: |
+          uv run python pipeline/rescore.py --stems "${{ inputs.stems }}" \
+            --ensemble "${{ inputs.ensemble }}" --name "${{ steps.pull.outputs.name }}"
+
+      - name: Save results to the store
+        if: always()
+        run: |
+          name="${{ steps.pull.outputs.name }}"
+          [ -d work/rescore/candidates ] && rclone copy work/rescore/candidates store:rescore/results/candidates || true
+          [ -d "data/rescored/$name/consensus" ] && rclone copy "data/rescored/$name/consensus" "store:rescore/results/$name/consensus" || true
+
+      - name: Keep the report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rescore-report
+          path: data/rescored/
+          if-no-files-found: ignore
+
+      - name: Open a pull request with the results
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: rescore
+          base: main
+          commit-message: "data: rescore of published papers (${{ steps.pull.outputs.name }})"
+          title: "Rescore: ${{ steps.run.outputs.judged }} published papers (${{ steps.pull.outputs.name }})"
+          body-path: ${{ steps.run.outputs.report }}
+          add-paths: data/rescored/
