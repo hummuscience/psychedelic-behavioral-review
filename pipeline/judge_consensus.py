@@ -191,19 +191,25 @@ def call_judge(client, provider: str, model: str, system_blocks: list[dict],
         if resp.stop_reason == "refusal":
             details = getattr(resp, "stop_details", None)
             category = getattr(details, "category", None) if details else None
+            # Everything the API says about the decline, for diagnosing it later:
+            # the explanation (not always present), the request id, and how far
+            # it got (0 output tokens = declined before writing anything).
+            declined = {"model": model, "category": category,
+                        "explanation": getattr(details, "explanation", None) if details else None,
+                        "request_id": getattr(resp, "_request_id", None) or getattr(resp, "id", None),
+                        "output_tokens": getattr(resp.usage, "output_tokens", None)}
             fallback = JUDGE_FALLBACK_MODEL if _allow_fallback else ""
             if fallback and fallback != model:
                 # Foundry has no server-side fallback, so retry once on the
                 # fallback deployment and record which model served the result.
-                print(f"  [judge] {model} declined (category={category}); "
+                print(f"  [judge] {model} declined ({declined}); "
                       f"retrying on {fallback}", file=sys.stderr, flush=True)
                 text, usage = call_judge(client, provider, fallback, system_blocks,
                                          user_msg, max_tokens=max_tokens,
                                          _allow_fallback=False)
-                usage["fallback_from"] = {"model": model, "category": category}
+                usage["fallback_from"] = declined
                 return text, usage
-            raise RuntimeError(f"judge {model} declined the request "
-                               f"(stop_reason=refusal, category={category})")
+            raise RuntimeError(f"judge {model} declined the request ({declined})")
         if resp.stop_reason == "max_tokens":
             raise RuntimeError(f"judge output was cut off at max_tokens={max_tokens}; "
                                "raise --max-tokens")
