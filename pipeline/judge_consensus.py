@@ -33,6 +33,7 @@ from openai import OpenAI, AzureOpenAI
 
 from score_studies import (
     SCORING_PROMPT,
+    coerce_types,
     normalize_keys,
     filter_non_behavioural_assays,
     recompute_raw_totals,
@@ -379,7 +380,7 @@ def judge_one(client, provider: str, model: str, stem: str, pdf_dir: Path,
                 spent[k] += usage.get(k, 0)
     for k in spent:
         usage[k] = usage.get(k, 0) + spent[k]
-    parsed = normalize_keys(parsed)
+    parsed = coerce_types(normalize_keys(coerce_types(parsed)))
 
     filter_non_behavioural_assays(parsed)
     recompute_raw_totals(parsed)

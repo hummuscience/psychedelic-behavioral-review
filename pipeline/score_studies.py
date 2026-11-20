@@ -27,6 +27,7 @@ Setup:
 import argparse
 import json
 import os
+import re
 import sys
 import time
 import threading
@@ -1031,6 +1032,82 @@ _KEY_ALIASES = {
     "D6_circadian_scale_coverage": "D6_circadian",
     "D6_circadian_coverage": "D6_circadian",
 }
+
+
+_YES = {"yes", "true", "present", "y"}
+
+
+def _as_score(value) -> tuple[int, bool]:
+    """(integer score, whether it had to be converted) for a model's item score."""
+    if isinstance(value, bool):
+        return int(value), True
+    if isinstance(value, int):
+        return value, False
+    if isinstance(value, float) and value.is_integer():
+        return int(value), True
+    if isinstance(value, str):
+        m = re.search(r"-?\d+", value)
+        if m:
+            return int(m.group(0)), True
+        return (1 if value.strip().lower() in _YES else 0), True
+    return 0, True
+
+
+def coerce_types(result: dict) -> dict:
+    """Repair the shape of a model's JSON where it strays from the schema: item
+    scores given as text ("1", "yes"), items or conditions given as bare values.
+    Repaired items are marked low-confidence and listed in result["format_fixes"],
+    so nothing is changed silently. Assays that aren't objects are dropped."""
+    fixes = []
+    assays = result.get("assays")
+    if not isinstance(assays, list):
+        assays = []
+    kept = []
+    for i, assay in enumerate(assays):
+        if not isinstance(assay, dict):
+            fixes.append(f"assay {i}: not an object, dropped")
+            continue
+        for dim, keys in ITEM_KEYS.items():
+            section = assay.get(dim)
+            if not isinstance(section, dict):
+                if section is not None:
+                    fixes.append(f"assay {i}: {dim} not an object")
+                section = assay[dim] = {}
+            for key in keys:
+                item = section.get(key)
+                if item is None:
+                    continue
+                if not isinstance(item, dict):
+                    score, _ = _as_score(item)
+                    section[key] = {"score": score, "confidence": "low"}
+                    fixes.append(f"assay {i}: {key} {item!r} -> {score}")
+                    continue
+                if "score" in item:
+                    score, changed = _as_score(item["score"])
+                    if changed:
+                        fixes.append(f"assay {i}: {key} score {item['score']!r} -> {score}")
+                        item["score"], item["confidence"] = score, "low"
+        cond = assay.get("experimental_conditions")
+        if cond is not None and not isinstance(cond, dict):
+            fixes.append(f"assay {i}: experimental_conditions not an object")
+            cond = assay["experimental_conditions"] = {}
+        for key, value in list((cond or {}).items()):
+            if not isinstance(value, dict):
+                cond[key] = {"value": value, "confidence": "low"}
+                fixes.append(f"assay {i}: experimental_conditions.{key} {value!r}")
+        kept.append(assay)
+    result["assays"] = kept
+    housing = result.get("housing_conditions")
+    if housing is not None and not isinstance(housing, dict):
+        fixes.append("housing_conditions not an object")
+        housing = result["housing_conditions"] = {}
+    for key, value in list((housing or {}).items()):
+        if not isinstance(value, dict):
+            housing[key] = {"value": value, "confidence": "low"}
+            fixes.append(f"housing_conditions.{key} {value!r}")
+    if fixes:
+        result["format_fixes"] = result.get("format_fixes", []) + fixes
+    return result
 
 
 def normalize_keys(result: dict) -> dict:

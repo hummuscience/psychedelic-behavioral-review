@@ -23,6 +23,7 @@ from dotenv import load_dotenv
 from provider import SaiaProvider, ProviderError
 from score_studies import (
     SCORING_PROMPT,
+    coerce_types,
     normalize_keys,
     filter_non_behavioural_assays,
     recompute_raw_totals,
@@ -53,7 +54,7 @@ def worth_retrying(summary: list[dict], tag: str) -> bool:
 def score_one(provider: SaiaProvider, pdf_path: Path) -> dict:
     """Single run; mirrors score_studies.process_study but no consensus loop."""
     raw = provider.score_pdf(pdf_path, SCORING_PROMPT)
-    result = normalize_keys(raw)
+    result = coerce_types(normalize_keys(coerce_types(raw)))
     filter_non_behavioural_assays(result)
     result["num_runs"] = 1
     result["disagreements"] = []

@@ -679,3 +679,37 @@ def test_inbox_files_are_matched_by_doi_or_title(tmp_path: Path, monkeypatch) ->
                                       ("download (3).pdf", "222.pdf")]
     assert out["unmatched"] == ["mmc1.pdf"]
     assert {p.name for p in inbox.iterdir()} == {"111.pdf", "222.pdf", "111_supp.pdf", "mmc1.pdf"}
+
+
+# ── Model output that strays from the schema is repaired, not fatal ─────────
+
+def test_off_schema_model_output_is_repaired() -> None:
+    from score_studies import (coerce_types, compute_study_scores, normalize_keys,
+                               recompute_raw_totals)
+    raw = {
+        "housing_conditions": {"handling": "not reported"},
+        "assays": [
+            {"assay_name": "Open field",
+             "behavioural_complexity": {"B1_num_measures": {"score": "1", "confidence": "high"},
+                                        "B2_temporal_dynamics": {"score": 1}},
+             "environmental_complexity": {"E1_environment_type": "yes"},
+             "recording_duration": {"D5_follow_up": {"score": "2 (two follow-ups)"}},
+             "experimental_conditions": {"application_type": "i.p.", "setup_restrain": None}},
+            "not an assay",
+        ],
+    }
+    result = coerce_types(normalize_keys(coerce_types(raw)))
+    recompute_raw_totals(result)
+    compute_study_scores(result)
+    a = result["assays"][0]
+    assert len(result["assays"]) == 1
+    assert a["behavioural_complexity"]["raw_total"] == 2
+    assert a["behavioural_complexity"]["B1_num_measures"] == {"score": 1, "confidence": "low"}
+    assert a["environmental_complexity"]["E1_environment_type"] == {"score": 1, "confidence": "low"}
+    assert a["recording_duration"]["D5_followup"]["score"] == 2
+    assert a["experimental_conditions"]["application_type"]["value"] == "i.p."
+    assert result["housing_conditions"]["handling"]["value"] == "not reported"
+    assert len(result["format_fixes"]) >= 6
+    # Well-formed output is left alone
+    clean = {"assays": [{"behavioural_complexity": {"B1_num_measures": {"score": 1}}}]}
+    assert "format_fixes" not in coerce_types(clean)
