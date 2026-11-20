@@ -147,9 +147,16 @@ chosen and validated.
   and the titles the classifier dropped. Merge it to republish the dashboard. If it's
   still open at the next run, that run continues from it (nothing is scored twice)
   and the PR grows to cover both months.
-- **Paywalled papers:** for each item in the *PDFs needed* issue, save the PDF in
-  the folder's `inbox/` as `<pmid>.pdf` (supplement: `<pmid>_supp.pdf` or `.docx`).
-  The next run picks it up; to process it sooner, run the workflow by hand.
+- **Paywalled papers:** for items in the *PDFs needed* issue, save the PDFs in the
+  folder's `inbox/` under **any file name**: each run reads the DOI on a PDF's first
+  page (or its title) and files it under the right paper. Files it can't match are
+  listed in the PR. A supplement needs its name, `<pmid>_supp.pdf` or `.docx`. The
+  next run picks them up; to process them sooner, run the workflow by hand.
+- **Preprints:** new preprints (bioRxiv, medRxiv, Research Square, …) are set aside
+  for now: not fetched or scored, `deferred_preprint` in PRISMA, listed in each PR.
+  Set the repository variable `INCLUDE_PREPRINTS` to `true` to include them, or add
+  one to `data/manual_decisions.json` as `included_in_review`. The published
+  review's preprints are unaffected.
 - **Rescuing a dropped record:** add its DOI to `data/manual_decisions.json` with
   `"disposition": "included_in_review"`; the next run fetches and scores it.
 

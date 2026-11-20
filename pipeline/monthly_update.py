@@ -38,10 +38,12 @@ sys.path.insert(0, str(HERE))
 
 import build_assay_catalog  # noqa: E402
 import fetch_pdfs  # noqa: E402
+import preprints  # noqa: E402
 import search_pubmed  # noqa: E402
 import store  # noqa: E402
-from paths import (CANDIDATES_DIR, CONSENSUS_DIR, PDF_DIR,  # noqa: E402
-                   PDF_INVENTORY_CSV, REGISTRY_JSON, REPORTS_DIR, SUPP_DIR, WORK_DIR)
+from paths import (CANDIDATES_DIR, CONSENSUS_DIR, MANUAL_DECISIONS_JSON,  # noqa: E402
+                   PDF_DIR, PDF_INVENTORY_CSV, PUBMED_CSV, REGISTRY_JSON, REPORTS_DIR,
+                   SUPP_DIR, WORK_DIR)
 
 # Candidate models (tags from triple_score.MODELS). The published v2 ensemble
 # was qwen,glm,gptoss; glm-4.7 and gpt-oss-120b are no longer served on SAIA.
@@ -62,9 +64,12 @@ def run_script(script: str, *args: str) -> int:
 def unfinished_stems() -> list[str]:
     """Papers added by monthly runs that have no consensus JSON yet, oldest first."""
     reg = json.loads(REGISTRY_JSON.read_text())
+    manual = json.loads(MANUAL_DECISIONS_JSON.read_text()) if MANUAL_DECISIONS_JSON.exists() else {}
     todo = [(e.get("added", ""), s) for s, e in reg.items()
             if e.get("match_via") == "monthly_update"
-            and not (CONSENSUS_DIR / f"{s}.json").exists()]
+            and not (CONSENSUS_DIR / f"{s}.json").exists()
+            and not preprints.deferred(e.get("doi"), e.get("journal"),
+                                       (manual.get((e.get("doi") or "").lower()) or {}).get("disposition"))]
     return [s for _, s in sorted(todo)]
 
 
@@ -219,6 +224,19 @@ def _setup_section(scored: list[str]) -> list[str]:
     return lines
 
 
+def deferred_preprints() -> list[dict]:
+    """Relevant preprints from the monthly searches that are set aside for now."""
+    from classify_compounds import decision
+    if not PUBMED_CSV.exists():
+        return []
+    manual = json.loads(MANUAL_DECISIONS_JSON.read_text()) if MANUAL_DECISIONS_JSON.exists() else {}
+    with open(PUBMED_CSV, encoding="utf-8") as f:
+        rows = [r for r in csv.DictReader(f) if (r.get("source") or "").startswith("update:")]
+    return [r for r in rows if decision(r["detected_compounds"]) == "relevant"
+            and preprints.deferred(r["doi"], r.get("journal"),
+                                   (manual.get(r["doi"].strip().lower()) or {}).get("disposition"))]
+
+
 def write_reports(today: date, search: dict, fetched: dict, scored: list[str],
                   unfinished: list[str], scoring_ran: bool,
                   rechecked: list[dict] | None = None, scoring_problem: str = "",
@@ -277,8 +295,26 @@ def write_reports(today: date, search: dict, fetched: dict, scored: list[str],
     lines.append(f"- Papers with a PDF but no consensus yet (retried next run): "
                  f"{len(unfinished)}" + (f" — {', '.join(f'`{s}`' for s in unfinished)}"
                                          if unfinished else ""))
+    inbox = fetched.get("inbox") or {}
+    if inbox.get("matched"):
+        lines.append(f"- Inbox files matched to their paper by DOI or title: "
+                     f"{len(inbox['matched'])}")
+    if inbox.get("unmatched"):
+        lines.append("- **Inbox files that couldn't be matched** (no known DOI or title on "
+                     "the first page; rename to `<pmid>.pdf`): "
+                     + ", ".join(f"`{n}`" for n in inbox["unmatched"]))
     lines.append(f"- Relevant papers waiting for a PDF: {len(fetched['missing'])} "
                  "(see the *Monthly update: PDFs needed* issue)")
+
+    deferred = deferred_preprints()
+    if deferred:
+        lines += ["", f"## Preprints set aside ({len(deferred)})",
+                  "New preprints aren't fetched or scored for now (`deferred_preprint` in "
+                  "PRISMA). Set the repository variable `INCLUDE_PREPRINTS` to `true` to "
+                  "include them all, or add one to `data/manual_decisions.json` as "
+                  "`included_in_review`.", ""]
+        lines += [f"- {r['pmid']} · {_md_escape(r['title'])} · https://doi.org/{r['doi']}"
+                  for r in deferred]
 
     dups = [r for r in recs if r["decision"] == "duplicate"]
     if dups:
@@ -330,9 +366,11 @@ def write_reports(today: date, search: dict, fetched: dict, scored: list[str],
 
     miss = [
         "PDFs for these relevant papers couldn't be found in open access. To add "
-        "one, save it in the store's `inbox/` folder under the name shown "
-        "(`<pmid>.pdf`; a supplement as `<pmid>_supp.pdf` or `.docx`). The next "
-        "run, or a manual run of the *Monthly update* workflow, picks it up.",
+        "one, save it in the store's `inbox/` folder. **Any file name works**: each "
+        "run reads the DOI on the PDF's first page (or its title) and files it under "
+        "the paper. A supplement needs its name: `<pmid>_supp.pdf` or `.docx` (the "
+        "PMID is shown below). The next run, or a manual run of the *Monthly update* "
+        "workflow, picks them up.",
         "",
     ]
     miss += [f"- [ ] `{m['inbox_filename']}` — {_md_escape(m['authors_short'])} "

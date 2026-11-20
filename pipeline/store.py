@@ -79,6 +79,13 @@ def push_stems(stems: list[str]) -> None:
         _copy_filtered(str(WORK_DIR), REMOTE, _stem_patterns(stems))
 
 
+def rename_inbox(old: str, new: str) -> None:
+    """Rename a file in the store's inbox (after it was matched to a paper)."""
+    if enabled():
+        subprocess.run(["rclone", "moveto", _remote(f"inbox/{old}"), _remote(f"inbox/{new}")],
+                       check=False, capture_output=True)
+
+
 def clear_inbox(pmids: list[str]) -> None:
     """Remove inbox files that have been filed under a stem (after push)."""
     for pmid in pmids:
