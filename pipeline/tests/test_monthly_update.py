@@ -299,7 +299,9 @@ def test_judge_refusal_falls_back_and_is_recorded(monkeypatch):
                                 [{"type": "text", "text": "sys"}], "paper")
     assert [c["model"] for c in client.calls] == ["claude-opus-5-5", "claude-opus-5"]
     assert usage["served_by"] == "claude-opus-5"
-    assert usage["fallback_from"] == {"model": "claude-opus-5-5", "category": "bio"}
+    declined = usage["fallback_from"]
+    assert declined["model"] == "claude-opus-5-5" and declined["category"] == "bio"
+    assert {"explanation", "request_id", "output_tokens"} <= set(declined)
 
 
 def test_judge_cut_off_output_is_an_error(monkeypatch):
