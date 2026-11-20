@@ -1,0 +1,521 @@
+{
+  "study_id": "Wojtas2024",
+  "doi": "10.3390/ijms25010100",
+  "species": "rat",
+  "strain": "Wistar-Han",
+  "age": {
+    "value": "adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Adult male Wistar-Han rats (280-350 g; Charles River, Göttingen, Germany) were used in all experiments.",
+    "confidence": "medium"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Adult male Wistar-Han rats (280-350 g; Charles River, Göttingen, Germany) were used in all experiments.",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin (ketamine as comparator)",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        2.0,
+        10.0
+      ],
+      "doses_raw": "doses of psilocybin (2 and 10 mg/kg)",
+      "vehicle": "water",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "both were dissolved in sterile water... doses of psilocybin (2 and 10 mg/kg) were based on work by Jefsen et al. [61]. Psilocybin was given subcutaneously (sc) while ketamine was given intraperitoneally (ip) in the volume of 2 mL/kg.",
+      "confidence": "high"
+    },
+    {
+      "compound": "Ketamine",
+      "doses_mg_per_kg": [
+        10.0
+      ],
+      "doses_raw": "The dose of ketamine (10 mg/kg)",
+      "vehicle": "water",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "both were dissolved in sterile water... The dose of ketamine (10 mg/kg) was based on a report by Popik et al. [63]... ketamine was given intraperitoneally (ip)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "Rats were handled once daily before the beginning of the experiments",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "The animals were initially acclimatized and housed (6 per cage) in environmentally controlled rooms",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "12:12 light:dark cycle (direction/phase of testing not stated)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "no",
+      "evidence": "an enriched environment was not applied",
+      "confidence": "high"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "Round black arena (1 m diameter), virtually divided into eight radiant sections, centre lit by a 75 W bulb in a dimly lit room. Rats placed in the middle 60 min after injection (and tested again at 24 h), behaviour recorded for 5 min. Measures: time of walking, line crossings, peeping, grooming events, rearings, time in central zone. Psilocybin 2 and 10 mg/kg s.c. vs ketamine 10 mg/kg i.p. vs saline.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "Psilocybin was given subcutaneously (sc) while ketamine was given intraperitoneally (ip) in the volume of 2 mL/kg.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Rats were placed in the middle of the arena 60 min after the drug injection. Their behavior was recorded for 5 min.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Open field arena with no food described; home cage: 'free access to tap water and typical laboratory food'",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Open field arena with no water described; home cage: 'free access to tap water'",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 60,
+          "evidence": "Rats were placed in the middle of the arena 60 min after the drug injection... at 1 h (A) and 24 h (C) after administration",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 40,
+        "n_male": 40,
+        "n_female": null,
+        "n_per_group_min": 10,
+        "evidence": "Values are the mean ± SEM (n = 10). [4 groups: control, psilocybin 2, psilocybin 10, ketamine; F3,36]",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "At 1 h, psilocybin (2 and 10 mg/kg) decreased walking time, crossings, peeping and rearing but increased centre exploration; ketamine increased walking time. At 24 h, locomotion and rearing were unchanged, peeping was decreased by psilocybin 2 mg/kg and ketamine, and centre exploration was increased by both psilocybin doses and ketamine, interpreted as an anxiolytic effect persisting to 24 h.",
+        "statistics": "1 h: walking F(3,36)=47, p<0.001; crossings F(3,36)=44, p<0.0001; peeping F(3,36)=10.1, p<0.001; rearing F(3,36)=4.7, p<0.01; centre F(3,36)=98, p<0.0001. 24 h: walking F(3,36)=0.49, p<0.69; crossings F(3,36)=0.02, p<0.99; rearing F(3,36)=1.87, p<0.15; peeping F(3,36)=12.2, p<0.0001; centre F(3,36)=29, p<0.0001 (one-way ANOVA, Tukey)",
+        "direction": "mixed",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "Psilocybin at doses of 2 and 10 mg/kg significantly decreased the time of walking... The center exploration was significantly increased by both doses of psilocybin but not by ketamine in comparison to the control... The time of walking and the number of crossings reflecting ambulatory distance were not changed by both doses of psilocybin and ketamine in comparison to the control 24 h after drug administration",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "time of walking, number of line crossings reflecting ambulatory distance, episodes of looking under the edge of the field (peeping), number of grooming events, number of rearings as vertical activity and time spent in the central zone",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Behaviour recorded for 5 min and reported as session totals; no within-session time-course",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition or sequence analysis reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "episodes of looking under the edge of the field (peeping), number of grooming events, number of rearings as vertical activity",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Open field locomotion/anxiety test; no social component",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate exploratory behaviour; no learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No automated behavioural classification software reported",
+          "confidence": "medium"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The results obtained in the open field test... were analyzed with one-way ANOVA followed by Tukey's post hoc test.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "A round black arena (1 m in diameter)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open arena; no shelter described",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described in the round black arena",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No objects described in the arena",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "A round black arena (1 m in diameter) was virtually divided into eight radiant sections",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Rats were placed in the middle of the arena... Their behavior was recorded for 5 min.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the arena during the 5-min test",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "The time spent on walking and ambulatory distance at 1 h (A) and 24 h (C) after administration",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Their behavior was recorded for 5 min.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Tested 1 h and 24 h after drug administration (two days)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug open field recording reported",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The center exploration was significantly increased... 24 h after drug administration",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Their behavior was recorded for 5 min.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Elevated Plus Maze",
+      "assay_description": "EPM performed after OFT pre-exposure (1 h after the OFT); data only in Supplementary File S2 (Figure S1), which is not available in the text. Procedure, duration and measures not described in main text.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "Psilocybin was given subcutaneously (sc) while ketamine was given intraperitoneally (ip)",
+          "confidence": "medium"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "EPM is a free-movement apparatus; no restraint mentioned",
+          "confidence": "medium"
+        },
+        "food_restriction": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "water_restriction": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "time_to_assay": {
+          "value": "not_reported",
+          "value_minutes": null,
+          "evidence": "Animals that underwent the EPM test... did not display anxiety-like behavior when measured 1 h after preexposure to an open field test. (Exact time from injection not stated)",
+          "confidence": "low"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "not reported (supplementary only)",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "Neither psilocybin nor ketamine altered anxiety-like behaviour in the EPM when tested after open field pre-exposure; authors attribute the null result to OFT pre-exposure and timing.",
+        "statistics": "",
+        "direction": "no_effect",
+        "dose_dependent": "not_reported",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Animals that underwent the EPM test (Supplementary Materials File S2 (Figure S1)) did not display anxiety-like behavior when measured 1 h after preexposure to an open field test.",
+        "confidence": "medium"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "EPM anxiety test; no social component",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EPM based on innate avoidance",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "EPM test",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EPM closed arms are not a shelter (definitionally absent)",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "EPM scored as single space per rubric",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "raw_total": 0
+      }
+    }
+  ],
+  "judge_notes": [
+    "Retained the OFT (all candidates) and kept qwen's EPM: the paper reports a psilocybin-treated EPM result, although the data are only in Supplementary S2, so most EPM items are low confidence / not_reported.",
+    "Microdialysis, Western blot and the FST (published in an earlier paper) were excluded as non-behavioural or not reported here.",
+    "OFT B1 set to 2 (4-6 measures). gemma4's score of 3 contradicts its own '4-6' category.",
+    "Per-assay application_type set to s.c. (the psilocybin route). Ketamine i.p. is noted in evidence.",
+    "Vehicle set to water ('dissolved in sterile water'); qwen's 'saline' refers to the control group's vehicle.",
+    "day_night_flipped set to not_reported (bare 12:12 mention) with high confidence, per rubric.",
+    "Ketamine dosing entry included as comparator compound. The ketamine/xylazine anesthesia used for probe implantation is not counted.",
+    "Repaired gemma4's malformed experimental_conditions structure during consolidation."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 4.09,
+    "behavioural_complexity_mean": 1.88,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 2.04
+  },
+  "low_confidence_count": 21,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-20T20:02:11+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "c9b5be26eb",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 124324,
+    "output_tokens": 13428,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

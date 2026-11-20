@@ -1,0 +1,513 @@
+{
+  "study_id": "Yu2023",
+  "doi": null,
+  "species": "rat",
+  "strain": "Sprague-Dawley",
+  "age": {
+    "value": "adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "25C-NBOMe had significant effects on PPI in adult rats; rats were 'approximately 200-220g upon arrival and 280-320g prior to behavioral testing or electrode implantation'",
+    "confidence": "medium"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male Sprague-Dawley (SD) rats were purchased from ZheJiang Vital River Laboratory Animal Technology Co.",
+    "confidence": "high"
+  },
+  "psychedelic": "25C-NBOMe",
+  "dosing": [
+    {
+      "compound": "25C-NBOMe",
+      "doses_mg_per_kg": [
+        0.03,
+        0.1,
+        0.3,
+        1.0
+      ],
+      "doses_raw": "0.03 -1.0 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "25C-NBOMe (0.03 -1.0 mg/kg) was dissolved in saline ... All drugs were injected intraperitoneally (i.p.) at a volume of 1 mL/kg.",
+      "confidence": "medium"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Rats were group-housed and allowed to acclimate to their new environment for 1 week at least before any experimental procedures were performed. (After surgery, rats were individually housed - applies to electrophysiology cohort only.)",
+      "confidence": "medium"
+    },
+    "day_night_flipped": {
+      "value": "yes",
+      "evidence": "Rats were housed in a temperature- and humidity-controlled environment with a reversed light-dark cycle (12 vs. 12 hr).",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Open Field Locomotor Activity",
+      "assay_description": "Square open field chamber (40x40x40 cm, black matte acrylic); after 3 days habituation, 30 min pre-injection recording, then rats immediately placed in the chamber for 60 min after i.p. 25C-NBOMe (0.03-1.0 mg/kg) or saline. Distance travelled analysed in 5-min bins and as total over 30 min post-injection.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "After injection with 25C-NBOMe or saline (i.p.), rats were immediately placed in the open field chambers for 60 min.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "After habituation for 3 days, rats were placed in open field chambers",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "rats were immediately placed in the open field chambers for 60 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard open field chamber; no food in apparatus described.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard open field chamber; no water in apparatus described.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "After injection with 25C-NBOMe or saline (i.p.), rats were immediately placed in the open field chambers for 60 min.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 40,
+        "n_male": 40,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "N = 8/group (Fig. 1A legend); one-way ANOVA F (4,35)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute 25C-NBOMe affected locomotor activity with an inverted U-shaped dose-response curve, with responses peaking 5-15 min after injection; 0.03 and 0.1 mg/kg were described as effective doses inducing enhanced locomotor activity.",
+        "statistics": "one-way ANOVA, F (4,35) = 2.404, p = 0.0017",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "25C-NBOMe significantly affect locomotor activity with inverted U-Shaped dose-response curve (Fig. 1A; one-way ANOVA, F (4,35) = 2.404 p = 0.0017). ... 0.03 and 0.1 mg/kg, which were effective dose inducing enhanced locomotor activity",
+        "confidence": "medium"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Each point represents the average distance travelled in 5-min bins. ... The total locomotor activity within 30min after injections. (single variable: distance travelled)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The temporal pattern of locomotor response to 25C-NBOMe. Each point represents the average distance travelled in 5-min bins.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural transitions or sequences.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only locomotor distance measured.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Locomotor activity test; no social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor activity does not require learning or memory.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "locomotor activity was recorded through night vision cameras; no behavioural classifier described.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVA only.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "a square open field chamber (40*40*40 CM, made by black matte acrylic)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open field chamber; no shelter described.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "made by black matte acrylic; no bedding mentioned.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects described.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "square open field chamber",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "rats were placed in open field chambers (individual testing)",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the open field described.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "rats were immediately placed in the open field chambers for 60 min; only post-injection data reported (Fig. 1A).",
+          "confidence": "medium"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "rats were immediately placed in the open field chambers for 60 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single post-injection test session reported.",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "A 30-min pre-injection recording is described ('locomotor activity was recorded through night vision cameras for 30 min') but its data are not reported or used in analysis.",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No recording >=24 h after drug administration.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "60 min session.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Prepulse Inhibition (PPI) of Acoustic Startle",
+      "assay_description": "Acrylic cage on a piezoelectric accelerometric platform in a sound-attenuated chamber (AniLab); 5 min acclimatization, five 120 dB pulses, then 5 trial types x10 (pulse alone, prepulse 70/75/80 dB + pulse, no stimulus), ITI 25-35 s, 65 dB background. %PPI and startle amplitude measured after saline, 0.03 or 0.1 mg/kg 25C-NBOMe.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs were injected intraperitoneally (i.p.) at a volume of 1 mL/kg.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Only a within-session '5 min acclimatization period' is described; no separate pre-test apparatus exposure reported.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "not_reported",
+          "evidence": "The apparatus consisted of one acrylic cage and one piezoelectric accelerometric platform inside of a sound attenuated chamber; no restraint tube described.",
+          "confidence": "low"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Startle chamber; no food in apparatus.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Startle chamber; no water in apparatus.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "not_reported",
+          "value_minutes": null,
+          "evidence": "Interval between injection and PPI testing not stated.",
+          "confidence": "low"
+        }
+      },
+      "sample_size": {
+        "n_total": 43,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "N in parentheses corresponds the number of rats per group (values not legible in text); total derived from F (2, 40) with 3 groups.",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "25C-NBOMe (0.1 mg/kg) significantly attenuated PPI at 75 and 80 dB prepulse intensities without affecting startle response; 0.03 mg/kg was not reported as effective.",
+        "statistics": "Two-way RM ANOVA: dosage F (2, 40) = 7.836, p = 0.0013; prepulse intensity F (1.639, 65.54) = 43.56, p < 0.0001; interaction F (4, 80) = 1.967, p = 0.1075; Bonferroni post hoc *p<0.05, **p<0.01 vs saline",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "25C-NBOMe (0.1 mg/kg) significantly attenuated PPI at 75 or 80 dB without affecting startle response.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "The degree of PPI was calculated ... significantly attenuated PPI at 75 or 80 dB without affecting startle response (PPI% and startle amplitude).",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No within-session time-course analysis.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "PPI startle magnitude is not an ethological behaviour per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "PPI; no social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sensorimotor gating; no learning required.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "PPI was measured using Laboratory Animal Behavioral Analysis System (AniLab); piezoelectric startle measurement, no behavioural classifier.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVA only.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "one acrylic cage and one piezoelectric accelerometric platform inside of a sound attenuated chamber",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Startle cage; no shelter.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "acrylic cage on piezoelectric platform; no bedding mentioned.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "one acrylic cage",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual startle cage.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the startle chamber.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Single PPI test session described.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "not reported",
+          "evidence": "Total session duration not explicitly stated (5 min acclimatization, 55 trials with 25-35 s ITIs).",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test session.",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug PPI baseline reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No testing >=24 h after dosing.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session well under 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    }
+  ],
+  "judge_notes": [
+    "Two behavioural assays retained (open field locomotion, PPI); in vivo LFP electrophysiology/coherence experiments (incl. MDL100,907/haloperidol pretreatment) excluded as neural recordings.",
+    "OFT B1 scored 0 (qwen): binned distance and total distance are the same variable; gemma's score of 1 with value '1' was internally inconsistent.",
+    "OFT D1/D3/D4 kept at modal 0: a 30-min pre-injection recording is described but no baseline data are reported (Fig. 1A shows post-injection only).",
+    "OFT direction set to 'increase' rather than modal 'mixed': paper describes 0.03 and 0.1 mg/kg as doses 'inducing enhanced locomotor activity' with an inverted-U curve; no decrease reported.",
+    "PPI setup_habituation overridden to not_reported: the 5-min acclimatization is within the test session, which the rubric excludes.",
+    "PPI setup_restrain set to not_reported (overriding modal 'yes'): paper describes an 'acrylic cage' on a platform with no restraint tube mentioned.",
+    "PPI D2 overridden to 0/low confidence: total session duration is not explicitly stated as a number (rubric rule); qwen's 15-60 min was an estimate.",
+    "PPI n_total 43 derived from F(2,40) df with 3 groups; per-group Ns not legible in text.",
+    "Dose list includes 0.3 mg/kg (modal, consistent with 5 groups in F(4,35)), but intermediate dose not explicitly stated; confidence medium.",
+    "DOI not present in markdown; set to null."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 0.68
+  },
+  "low_confidence_count": 4,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-20T18:45:54+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "d7368ca2f4",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 48517,
+    "output_tokens": 8132,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

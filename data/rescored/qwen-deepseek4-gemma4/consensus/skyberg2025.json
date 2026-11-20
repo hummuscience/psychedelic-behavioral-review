@@ -1,0 +1,311 @@
+{
+  "study_id": "Skyberg2025",
+  "doi": "10.1101/2025.10.14.682230",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "adult",
+    "age_min_days": 120,
+    "age_max_days": 360,
+    "evidence": "4-12 month-old mice (Mus musculus, C57BL/6J, Jackson Laboratories and bred-in house)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": 14,
+    "n_female": 7,
+    "evidence": "In total, 14 male and 7 female mice were used for this study.",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        10.0
+      ],
+      "doses_raw": "10mg/kg in saline",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "DOI (2,5-dimethoxy-4-iodoamphetamine; Sigma, 10mg/kg in saline) or saline (0.9% NaCl) were administered subcutaneously halfway throughout the recording",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "Animals were handled by the experimenter for several days before surgical procedures",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "Mice were housed with sibling cage mates until the beginning of experiments and then they were singly housed.",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "were kept on a 12-h light/dark cycle (direction/phase of testing not stated)",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Freely Moving Arena Active Vision (Gaze Shift / Locomotion) Assay",
+      "assay_description": "Tethered, head-mounted-camera/IMU-equipped mice freely explored a ~48 x 37 x 30 cm arena (visual-stimulus monitor wall, patterned wallpaper, Lego bricks on a silicone mat floor, scattered tortilla chips) for ~45 min before and again after s.c. DOI (10 mg/kg) or saline. Measures: gaze-shift frequency, compensatory movements, head/eye/gaze velocities during gaze shifts, locomotor activity, % time mobile, % time in centre, pupil size. A darkness variant (pilocarpine, ~30 min) was also run in the same arena.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "Mice were then given a subcutaneous injection of either DOI (10mg/kg in saline) or saline (0.9% NaCl)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "subsequently habituated (~45 minutes total) to the spherical treadmill and freely moving arena with hardware tethering attached for several days before experiments.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "animals were first placed in the freely-moving arena which they could explore for 45 minutes",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "no",
+          "evidence": "Small pieces of tortilla chips (Juanita's) were lightly scattered around the arena to encourage foraging during the recording; however, animals were not water or food restricted.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "animals were not water or food restricted. (Presence of water inside the arena is not described.)",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 45,
+          "evidence": "After waiting 15 minutes, experiments were repeated in reverse order (post-injection head-fixed block of ~30 min preceded the arena), i.e. post-drug arena recording began ~45 min after injection.",
+          "confidence": "medium"
+        }
+      },
+      "sample_size": {
+        "n_total": 14,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 4,
+        "evidence": "we first asked if either DOI (n= 10) or saline (n=4) altered the active sampling behaviors (i.e. gaze shifts) of free-moving mice",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI increased gaze-shift frequency (24.39 to 29.95 per minute; highly variable across mice), whereas saline decreased it (27.38 to 17.46 per minute); the DOI vs saline difference was significant. Head/eye velocity profiles of gaze shifts were unchanged, and DOI's effect on gaze-shift frequency correlated strongly with its effect on locomotion.",
+        "statistics": "Z = 1.98, p = 0.04 (Wilcoxon rank-sum test, DOI vs saline change in gaze shift frequency); Pearson r = 0.89, p = 5.2e-4 (gaze shift frequency change vs locomotion change)",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "DOI did alter the frequency of gaze shifts, increasing the average number of gaze shifts per minute by 5.56 (± 3.79; from an average of 24.39 gaze shifts/minute before DOI to 29.95 after DOI)... The difference in saline and DOI's effect on gaze shift frequency was significant ( Z = 1.98, p = 0.04; Wilcoxon rank-sum test).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "Gaze shift frequency, compensatory movement count, locomotor activity, percentage of time mobile, percentage of time in centre, pupil size (Fig 1E, Fig S1).",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Behaviour compared only as pre- vs post-injection totals/averages; no within-session time course of behaviour reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of transitions or behavioural sequences reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "we focus our analyses on gaze-shifting head and eye movements as those are the natural behaviors which result in new retinal input to the visual system.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Assay measures individual active vision and locomotion; no social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Free exploration; no learning or memory requirement.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "eight points around the pupil were tracked with DeepLabCut... The mouse's position in the arena was tracked with DeepLabCut using top-down camera frames.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "PCA/k-means applied only to neural PETHs, not to behavioural features.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 2,
+          "value": "Enriched arena",
+          "evidence": "The floor was a gray silicone mat (Gartful) and was covered with black and white Lego bricks to provide three-dimensional visual contrast. Small pieces of tortilla chips... were lightly scattered around the arena",
+          "confidence": "medium"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter or refuge described in the arena.",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The floor was a gray silicone mat (Gartful)",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described in the arena.",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "covered with black and white Lego bricks to provide three-dimensional visual contrast",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "The arena was approximately 48-cm long by 37-cm wide by 30-cm high",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Single tethered mouse recorded in the arena; no conspecific described.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Small pieces of tortilla chips (Juanita's) were lightly scattered around the arena to encourage foraging during the recording",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Mice were first placed into the freely-moving arena... for ~45 minutes before being head-fixed... experiments were repeated in reverse order",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "animals were first placed in the freely-moving arena which they could explore for 45 minutes",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "In total, recordings took approximately 3 hours.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "we recorded neural activity in primary visual cortex (V1) of mice during free movement, while simultaneously recording eye and head position, before and after administration",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "All recordings within ~3 h session; no recording >=24 h post-drug.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "In total, recordings took approximately 3 hours.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    }
+  ],
+  "judge_notes": [
+    "Dropped deepseek4's 'Head-Fixed Visual Stimulus Assay': its outcomes are V1 neural responses to visual stimuli (electrophysiology), excluded by the rubric; no behavioural outcome was reported for the head-fixed block.",
+    "Darkness free-moving recordings are the same arena paradigm under a different condition; folded into the single freely moving assay (their outcomes are neural anyway).",
+    "B1: set value '4-6' (score 2); gemma's '2-3' label was inconsistent with its score and the paper reports gaze shifts, compensatory movements, locomotion, time mobile, centre time, and pupil size.",
+    "E1: modal 'Enriched arena' (qwen, deepseek) retained given Lego bricks, patterned walls and scattered food; E3: silicone mat not counted as bedding (modal 0).",
+    "D2: ~45 min arena session → 15–60 min (score 1); deepseek's 61 min–6 h rejected.",
+    "time_to_assay: post-injection arena followed a 15 min wait plus ~30 min head-fixed block (reverse order), so ~45 min (qwen); confidence medium since arena start time is not stated explicitly.",
+    "water_restriction: modal 'no' retained from 'animals were not water or food restricted', but water presence inside the arena is not described, so confidence is medium."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 5.0,
+    "environmental_complexity_max": 5.45,
+    "recording_duration_max": 4.09,
+    "behavioural_complexity_mean": 5.0,
+    "environmental_complexity_mean": 5.45,
+    "recording_duration_mean": 4.09
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-20T18:05:33+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "d7368ca2f4",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 67204,
+    "output_tokens": 6073,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

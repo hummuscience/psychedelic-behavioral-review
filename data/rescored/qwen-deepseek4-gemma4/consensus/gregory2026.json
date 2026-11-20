@@ -1,0 +1,1709 @@
+{
+  "study_id": "Gregory2026",
+  "doi": null,
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 70,
+    "age_max_days": 112,
+    "evidence": "Male and female (10-16 wk) C57BL/6 J wild-type mice",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male and female (10-16 wk) C57BL/6 J wild-type mice (The Jackson Laboratory, #000664)",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        0.3,
+        2.0,
+        10.0
+      ],
+      "doses_raw": "Mice were dosed intraperitoneally at 0.3, 2, or 10 mg/kg (psilocybin)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "repeated",
+      "evidence": "Psilocybin was obtained from the NIDA Drug Supply Program and reconstituted ... in sterile saline ... Mice were dosed intraperitoneally at 0.3, 2, or 10 mg/kg (psilocybin). In pain models: 'Two weeks later, a second dose of psilocybin was given' (2 doses total; single dose in HTR, grimace, marble burying, TPP experiments).",
+      "confidence": "medium"
+    },
+    {
+      "compound": "Morphine",
+      "doses_mg_per_kg": [
+        10.0
+      ],
+      "doses_raw": "10 mg/kg (morphine)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Morphine sulfate ... diluted with saline (0.9%) to obtain a working concentration of 1 mg/ml ... Mice were dosed intraperitoneally at ... 10 mg/kg (morphine)",
+      "confidence": "high"
+    },
+    {
+      "compound": "Buprenorphine",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "1 mg/kg (buprenorphine)",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Buprenorphine was obtained at a concentration of 0.3 mg/mL and diluted to 0.1 mg/mL working concentration ... Mice were dosed intraperitoneally at ... 1 mg/kg (buprenorphine)",
+      "confidence": "medium"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "No handling protocol described in Methods.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "were housed 4-5 per cage in sterile ventilated cages by Innovive",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "Animals were maintained on a 12:12 light/dark cycle ... All behavior testing took place during the light cycle.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "yes",
+      "evidence": "containing Alpha-dri bedding, Enviro-dri enrichment material (Shepherd Specialty Papers)",
+      "confidence": "high"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head Twitch Response and Rearing",
+      "assay_description": "Mice injected i.p. with saline or psilocybin (0.3, 2, 10 mg/kg) and immediately placed in a transparent acrylic arena (68 x 22 x 26 cm); trained observer recorded head twitches and rearing bouts in 2-minute intervals over 20 minutes.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "treated with 0.3, 2, or 10 mg/kg of psilocybin or saline (i.p.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Only room acclimation described: 'animals were acclimatized for at least 90 minutes in a dimly lit room'; no apparatus pre-exposure reported.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "immediately placed in a transparent acrylic arena (68 × 22 x 26 cm) for observation over 20 minutes",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food described in the acrylic observation arena.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water described in the acrylic observation arena.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "treated with ... psilocybin or saline (i.p.), and immediately placed in a transparent acrylic arena",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 32,
+        "n_male": 20,
+        "n_female": 12,
+        "n_per_group_min": 6,
+        "evidence": "saline N =10 [7 M/3 F]; 0.3 mg/kg N =6 [3 M/3 F]; 2 mg/kg N =10 [7 M/3 F]; 10 mg/kg N =6 [3 M/3 F]",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin dose-dependently increased head twitch responses and dose-dependently decreased rearing bouts, confirming physiological activity across 0.3-10 mg/kg. Effects seen in both sexes but the study was not powered to detect sex differences.",
+        "statistics": "HTR: One-way ANOVA F(3,28) = 42.98, P < 0.000001, Tukey *P<0.05 vs saline; Rearing: F(3,28) = 15.96, P = 0.000003, Tukey *P<0.05 vs saline",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "We confirmed that psilocybin was physiologically active over the dose range (0.3, 2, and 10 mg/kg) by observing a dose-dependent increase in head twitch response (HTR) ... and a decrease in rearing behaviors",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "A trained observer (A.B.C.) recorded head twitch responses and rearing behaviors",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "recorded head twitch responses and rearing behaviors in 2-minute intervals",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition or bout-structure analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Rearing bouts were defined by an unsupported or supported upward movement of the rostral portion of the animal with its forepaws raised off the ground",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual observation; no social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning or memory component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "A trained observer (A.B.C.) recorded head twitch responses and rearing behaviors",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only one-way ANOVAs reported.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "transparent acrylic arena (68 × 22 x 26 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter described in the arena.",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described in the acrylic arena.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described.",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects described.",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single transparent acrylic arena",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "each animal placed in arena individually and returned to its home cage after testing",
+          "confidence": "medium"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water described in the arena.",
+          "confidence": "medium"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "for observation over 20 minutes",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "for observation over 20 minutes",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single observation session per animal.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug recording; animals placed in arena immediately after injection.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only acute 20-min observation post-injection.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "20-minute session.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Von Frey Mechanical Hypersensitivity",
+      "assay_description": "Calibrated von Frey filaments applied to lateral plantar hind paw (up-down design) in plexiglass enclosures on a perforated metal floor; paw withdrawal threshold measured in naive, CFA, SNI, AIMP (cutaneous) mice at pre-drug and 1, 4, 24 h after psilocybin in acute and chronic pain phases; morphine comparator in CFA.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Mice were dosed intraperitoneally at 0.3, 2, or 10 mg/kg (psilocybin)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Mice were acclimated to the testing chamber for 1 -2days prior to the start of the study (1 h/session).",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "placing mice in plexiglass enclosures mounted onto a testing platform with a metal, perforated floor",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food described in the testing enclosures.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water described in the testing enclosures.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 60,
+          "evidence": "a 3-point dose-response curve at multiple time points (1, 4, and 24 hours after drug injection) during both acute and chronic pain phases",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 5,
+        "evidence": "Fig 1C: N =5/group, all M; SNI (N =12 [6 M/6 F] per group); AIMP (CON N =14; AIMP+PSI 10 mg/kg N =10 [5 M/5 F]); CFA (N =8 [4 M/4 F] per group)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin (0.3, 2, 10 mg/kg) did not alter mechanical sensitivity in naive mice or mechanical hypersensitivity in SNI, AIMP or CFA models at 1, 4 or 24 h in either acute or chronic phase, whereas morphine reversed CFA mechanical hyperalgesia. No sex differences.",
+        "statistics": "Fig1C: F(2.904, 23.2) = 103.0, P<0.000001; SNI: dose F[4,450] = 553.42, time F[8,450] = 121.31, sex F[1,450] = 0.00, P=0.960, dose×time F[32,450] = 8.87; AIMP cutaneous (Fig S2E); CFA: dose F[4,270] = 274.38, time F[8,270] = 66.33, dose×time F[32,270] = 4.25 (effects driven by pain model vs CON)",
+        "direction": "no_effect",
+        "dose_dependent": "no",
+        "sex_dependent": "no",
+        "time_dependent": "no",
+        "evidence": "None of the psilocybin doses administered altered the established thermal or mechanical hypersensitivity at any of the acute time points tested. Two weeks later, a second dose of psilocybin was given, and again, no effect on thermal or mechanical hypersensitivity was observed.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "paw withdrawal threshold (up-down design)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single threshold per testing session.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Reflexive nocifensive withdrawal.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Manual filament application and response scoring.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "ANOVAs only.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "plexiglass enclosures mounted onto a testing platform with a metal, perforated floor",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No refuge in enclosure.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "metal, perforated floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single plexiglass enclosure",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individual enclosures",
+          "confidence": "medium"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in enclosures.",
+          "confidence": "medium"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "multiple time points (1, 4, and 24 hours after drug injection) during both acute and chronic pain phases",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "not reported (testing duration not stated; 1 h acclimation is not recording)",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Testing at acute phase (injection day + 24 h) and chronic phase two weeks later (injection day + 24 h), plus baseline",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Post-hoc Bonferroni test, *P <0.05 across pre-MOR vs 30 m post-MOR for mechanical and thermal tests; Fig 2 includes pre-drug time points",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "1, 4, and 24 hours after drug injection",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Short discrete sessions.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    },
+    {
+      "assay_name": "Hargreaves Plantar Thermal Hypersensitivity",
+      "assay_description": "Radiant heat applied to plantar hind paw in plexiglass enclosures on a glass platform; withdrawal latency (30 s cutoff, 2-3 trials averaged) measured in CFA, SNI, AIMP mice at pre-drug and 1, 4, 24 h after psilocybin in acute and chronic phases; morphine comparator.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Mice were dosed intraperitoneally at 0.3, 2, or 10 mg/kg (psilocybin)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "The animals were acclimatized to the testing environment for 1 -2dayspriorto the start of the study (1 h/session).",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "placing subjects in plexiglass enclosures on top of a glass platform",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food described in the enclosures.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water described in the enclosures.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 60,
+          "evidence": "multiple time points (1, 4, and 24 hours after drug injection) during both acute and chronic pain phases",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 5,
+        "evidence": "Fig 1D: N =5/group, all M; SNI (N =12 [6 M/6 F] per group); AIMP+PSI 10 mg/kg N =10 [5 M/5 F]; CFA (N =8 [4 M/4 F] per group)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin did not alter thermal (heat) hypersensitivity in SNI, AIMP or CFA models at any dose or time point, whereas morphine was antinociceptive. The only exception was a reduction in thermal sensitivity in females at 0.3 mg/kg, 4 h post-injection in the chronic AIMP phase.",
+        "statistics": "Fig1D: F(2.207,39.72) = 89.85, P<0.00001; SNI: dose F[4,450] = 382.52, sex F[1,450] = 2.77, P=0.097; AIMP: dose F[4,450] = 124.46, dose×sex F[4,450] = 3.56, P=0.007; CFA: dose F[4,270] = 152.68, sex F[1,270] = 2.35, P=0.126",
+        "direction": "no_effect",
+        "dose_dependent": "no",
+        "sex_dependent": "yes",
+        "time_dependent": "no",
+        "evidence": "We did observe a reduction in thermal sensitivity at a single dose and time point in females (0.3 mg/kg, 4 hours after psilocybin injection at the chronic time point, Fig S1K), otherwise psilocybin had no effect on thermal sensitivity.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "the time to a nocifensive response was recorded",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Averaged latency per session.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Reflexive withdrawal latency.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Plantar Test Analgesia Meter latency; no behavioural classifier.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "ANOVAs only.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "plexiglass enclosures on top of a glass platform",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "glass platform",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single plexiglass enclosure",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individual enclosures",
+          "confidence": "medium"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in enclosure.",
+          "confidence": "medium"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "multiple time points (1, 4, and 24 hours after drug injection) during both acute and chronic pain phases",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "not reported (session duration not stated; 30 s cutoff per trial)",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Acute phase (injection day + 24 h) and chronic phase two weeks later (injection day + 24 h), plus baseline",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "pre-MOR vs 30 m post-MOR for mechanical and thermal tests; Fig 2 includes pre-drug time points",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "1, 4, and 24 hours after drug injection",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Short discrete sessions.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    },
+    {
+      "assay_name": "Muscle Withdrawal Threshold",
+      "assay_description": "Mouse restrained in a gardening glove; force-sensitive tweezer (Bioseb Rodent Pincher) squeezes gastrocnemius up to 1600 g over 2 s; three trials averaged per session; AIMP model at pre-drug and 1, 4, 24 h after psilocybin in acute and chronic phases.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Mice were dosed intraperitoneally at 0.3, 2, or 10 mg/kg (psilocybin)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Mice were acclimated to the behavior room and restraints in two 5-minute sessions over two days.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "For each trial, the mouse was placed in a gardening glove, and the hind limb was exposed.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food accessible during restrained testing.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water accessible during restrained testing.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 60,
+          "evidence": "multiple time points (1, 4, and 24 hours after drug injection) during both acute and chronic pain phases",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 48,
+        "n_male": 24,
+        "n_female": 24,
+        "n_per_group_min": 10,
+        "evidence": "AIMP (CON N =14 [7 M/7 F]; AIMP + PSI 0.3 mg/kg N =12 [6 M/6 F]; AIMP+PSI 2 mg/kg N =12 [6 M/6 F]; AIMP+PSI 10 mg/kg N =10 [5 M/5 F])",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "Psilocybin did not improve AIMP-induced muscle pressure hypersensitivity at any dose or time point in acute or chronic phases. No sex differences in drug effects.",
+        "statistics": "Mechanical muscle hyperalgesia: dose F[4,450] = 494.16, P<0.000001; time F[8,450] = 109.05, P<0.000001; sex F[1,450] = 8.86, P=0.003; dose×time F[32,450] = 9.77, P<0.000001",
+        "direction": "no_effect",
+        "dose_dependent": "no",
+        "sex_dependent": "no",
+        "time_dependent": "no",
+        "evidence": "None of the psilocybin doses administered improved cutaneous thermal, muscle pressure, or cutaneous mechanical hypersensitivity in the AIMP model in the acute phase ... no effect on any of these behavioral measures was observed at any of the time points tested",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "muscle withdrawal threshold (average of three trials)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Trials averaged per session.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Reflexive limb withdrawal.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Force-sensitive tweezer reading; no behavioural classifier.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "ANOVAs only.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "the mouse was placed in a gardening glove ... force-sensitive tweezer",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Restrained in glove; no refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Hand-held restraint; no bedding.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Restraint, no compartments.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Single mouse restrained per trial.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water during restraint.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Testing sessions consisted of three trials ... at 1, 4, and 24 hours after drug injection in acute and chronic phases",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "not reported (session duration not stated; three ~2 s trials)",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Acute phase and chronic phase two weeks later, each with injection day and 24 h day",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Fig 2 time points include pre-drug measurements establishing AIMP-induced muscle pressure sensitivity",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "24 hours after drug injection",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Short sessions.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    },
+    {
+      "assay_name": "Marble Burying",
+      "assay_description": "Single mouse placed in an empty standard habitat with 5 cm corncob bedding and 25 evenly spaced marbles for 15 min; number of marbles >2/3 buried counted. CFA model with psilocybin 2 mg/kg or buprenorphine; re-tested at 24 h.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Mice were dosed intraperitoneally at 0.3, 2, or 10 mg/kg (psilocybin)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No apparatus habituation described for marble burying.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "One mouse was then placed into each cage and left undisturbed for fifteen minutes.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "an empty standard habitat was filled with 5 cm of ... corncob bedding, and twenty-five marbles (no food described)",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "empty standard habitat (no water described)",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": null,
+          "evidence": "Acute post-injection interval not stated; 'The reduced marble burying effect of psilocybin returned to baseline by 24 hours (Fig. S1F)'",
+          "confidence": "low"
+        }
+      },
+      "sample_size": {
+        "n_total": 65,
+        "n_male": 33,
+        "n_female": 32,
+        "n_per_group_min": 14,
+        "evidence": "CON N =14 [7 M/7F]; CFA N =14 [7 M/7 F]; CFA + BUP N =16 [9 M/ 7F]; CFA + PSI 2 mg/kg N =21 [10 M/11 F]",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin 2 mg/kg further reduced marble burying in CFA mice beyond the effect of CFA alone, while buprenorphine increased burying; the psilocybin effect resolved by 24 h. No sex differences.",
+        "statistics": "One-way ANOVA of buried marbles, F(5,90) = 83.07, P < 0.000001. Post-hoc Tukey *P<0.05 vs control; #P<0.05 vs CFA and control",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "no",
+        "time_dependent": "yes",
+        "evidence": "Psilocybin ... further impaired performance on the marble burying task beyond the effect of CFA alone (Fig. 1E). The reduced marble burying effect of psilocybin returned to baseline by 24 hours (Fig. S1F).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "researchers quantified the number of marbles buried",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single end-of-session count.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "the instinct to bury marbles is opposed by the hyperalgesia triggered by performing the task (burying/digging)",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "researchers quantified the number of marbles buried",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "One-way ANOVA only.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "an empty standard habitat (not the animal's own home cage)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter described.",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "filled with 5 cm of flat ⅛' corncob bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described.",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Marbles are test stimuli, not enrichment.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single standard habitat",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "One mouse was then placed into each cage",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "empty standard habitat with bedding and marbles only",
+          "confidence": "medium"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "acute test (Fig. 1E) and 24-h re-test (Fig. S1F)",
+          "confidence": "medium"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "left undisturbed for fifteen minutes",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "The reduced marble burying effect of psilocybin returned to baseline by 24 hours (Fig. S1F)",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug marble burying data reported.",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "returned to baseline by 24 hours (Fig. S1F)",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "15-minute session.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    },
+    {
+      "assay_name": "Mouse Grimace Scale (PainFace)",
+      "assay_description": "Mice recorded in a plastic enclosure for 10 min at baseline and again for 10 min 30 min after laparotomy plus saline, buprenorphine or psilocybin 2 mg/kg; videos scored automatically by PainFace ML; difference score analysed.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Animals then received i.p. injection of their assigned experimental compound",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No apparatus habituation described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "mice were placed in a plastic enclosure and recorded for 10 minutes",
+          "confidence": "medium"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food described in recording enclosure.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water described in recording enclosure.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "30 minutes after completing laparotomy and receiving saline or drug injection, mice were recorded for a second 10 minute session",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 37,
+        "n_male": 20,
+        "n_female": 17,
+        "n_per_group_min": 11,
+        "evidence": "SAL N =12 [6M/6F]; BUP 1 mg/kg N =11 [7 M/4 F]; PSI 2 mg/kg N =14 [7 M/7 F]",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin 2 mg/kg did not reduce post-laparotomy grimace scores, whereas buprenorphine did. No sex differences observed.",
+        "statistics": "One-way ANOVA of MGS difference score, F(2,33) = 4.535, P = 0.0182; Tukey *P<0.05 BUP vs SAL and PSI 2 mg/kg",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "no",
+        "time_dependent": "n/a",
+        "evidence": "psilocybin had no effect on a non-reflexive (affective) measure of pain, the mouse grimace scale ... No sex differences were observed in ... mouse grimace score after laparotomy (Fig. S1F, G).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "A difference score was calculated by subtracting the baseline score from the post-treatment score.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single score per session; pre vs post is between-session.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Facial pain expression score, not natural repertoire acts.",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The Mouse Grimace Scale was assessed using the automated machine learning analysis tool PainFace",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "One-way ANOVA only.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "mice were placed in a plastic enclosure",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No refuge described.",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described.",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects described.",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "plastic enclosure",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individual recording in enclosure",
+          "confidence": "medium"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water described.",
+          "confidence": "medium"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "recorded for 10 minutes to establish a baseline score. Then ... recorded for a second 10 minute session",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "recorded for 10 minutes",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Baseline then post-laparotomy recording described sequentially on the same day",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "recorded for 10 minutes to establish a baseline score",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only 30 min post-injection recording.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "10-minute sessions.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    },
+    {
+      "assay_name": "Thermal Place Preference",
+      "assay_description": "Mice placed on neutral 30 °C plate of adjacent temperature-controlled plates (30 vs 40 °C or 30 vs 20 °C) and allowed to move freely for 5 min, 60 min after saline, morphine or psilocybin (0.3, 2, 10 mg/kg); CFA and naive mice; location tracked with SLEAP and scored with SimBA.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "mice were injected with either saline, morphine 10 mg, or psilocybin (0.3, 2, or 10 mg/kg) 60 minutes before testing",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No apparatus habituation described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "allowed to move freely for 5 minutes while a video was recorded",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food on the temperature plates.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water on the temperature plates.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 60,
+          "evidence": "psilocybin (0.3, 2, or 10 mg/kg) 60 minutes before testing",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "Fig 3A: CON N =9; CFA N =13; CFA + MOR N =9; PSI groups N =8 [4 M/4 F]; Fig 3B: CON N =6 [3 M/3 F]; PSI N =8; Fig 3C: CON N =8; PSI 0.3 N =10; PSI 2 N =11; PSI 10 N =8",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin dose-dependently produced preference for the 40 °C plate in CFA and naive mice and dose-dependent avoidance of the 20 °C plate, interpreted as warmth-seeking secondary to hypothermia rather than analgesia; morphine blocked CFA-induced heat avoidance. Effect appeared stronger in females at 2 and 10 mg/kg.",
+        "statistics": "Fig 3A: F(5,49) = 9.147, P = 0.000003; Fig 3B: F(3,26) = 10.34, P = 0.000117; Fig 3C: F(3,34) = 7.211, P = 0.0007; Tukey post-hoc vs CON",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "yes",
+        "time_dependent": "n/a",
+        "evidence": "psilocybin-injected mice dose-dependently preferred the 40 °C surface ... psilocybin produced a dose-dependent avoidance of a 20 °C surface ... This effect appears stronger in female mice at the 2 mg/kg and 10 mg/kg doses.",
+        "confidence": "medium"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "preference for the 40 °C / 20 °C plate (time on plates)",
+          "confidence": "medium"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single preference value over 5 min.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Zone preference is a spatial measure.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate temperature preference; no learning.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Animal movement was tracked using SLEAP version 1.3.3, and location was scored using SimBA version 1.93.4",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "One-way ANOVAs only.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "an apparatus consisting of adjacent temperature-controlled plates",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bare temperature-controlled plates.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "adjacent temperature-controlled plates",
+          "confidence": "medium"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individual mice placed on the neutral plate",
+          "confidence": "medium"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water on apparatus.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "allowed to move freely for 5 minutes while a video was recorded",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "5 minutes",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test session per animal.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug preference data reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Tested 60 min post-injection only.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5-minute session.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "Cold Plate Test",
+      "assay_description": "Cold sensitivity on a cold plate in formalin-injected mice (acute) and SNI mice at 1, 4, 24 h after psilocybin (0.3, 2, 10 mg/kg) in acute (day 7) and chronic (day 21) phases.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Mice were dosed intraperitoneally at 0.3, 2, or 10 mg/kg (psilocybin)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No cold-plate habituation described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Cold plate; no restraint described.",
+          "confidence": "medium"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food on cold plate.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water on cold plate.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 60,
+          "evidence": "No dose of PSI had an effect at E 1hour, F 4hours, or G 24hours after injection; formalin: 'Acute cold sensitivity was performed 30 minutes after formalin injection'",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 11,
+        "evidence": "CON, FORM, FORM+PSI 0.3mg/kg, FORM+PSI 10mg/kg N =12 [6 M/6 F]; FORM + PSI 2 mg/kg N =11 [6 M/5 F]; SNI + cold plate test (N =12 [6 M/6 F] per group)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Acute psilocybin dose-dependently decreased formalin-induced cold sensitivity, but had no effect on cold sensitivity in SNI at any time point in acute or chronic phases; the formalin effect was attributed to psilocybin-induced hypothermia.",
+        "statistics": "Formalin: F(5,53) = 8.311, P < 0.000001; SNI acute 1h F[4,55] = 4.840, P = 0.002; 4h F[4,55] = 5.571, P = 0.0008; 24h F[4,55] = 3.520, P = 0.0125; SNI chronic 1h F[4,55] = 5.370, P = 0.0010; 4h F[4,55] = 5.571, P = 0.0008; 24h F[4,55] = 6.190, P = 0.0003",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "not_reported",
+        "time_dependent": "no",
+        "evidence": "acute psilocybin dose-dependently decreased acute formalin-induced cold sensitivity on the cold-plate test (Fig. 3D). Psilocybin had no significant effect on cold sensitivity in our acute neuropathic pain model (SNI) ... or at any time point after injection in the chronic phase of SNI (Fig. 3H-J).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "cold sensitivity (single measure; metric not detailed in methods)",
+          "confidence": "medium"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single value per time point.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Nocifensive response measure.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No automated classification described.",
+          "confidence": "medium"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "One-way ANOVAs only.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "cold-plate test",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No refuge.",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bare cold plate.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material.",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects.",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "single cold plate",
+          "confidence": "medium"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individual testing",
+          "confidence": "medium"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water.",
+          "confidence": "medium"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "SNI + cold plate test ... at acute (7 days after SNI) and chronic phases (21 days after SNI) ... 1 hour, 4 hours, or 24 hours after injection",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "not reported (cold plate session duration not stated)",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "acute (7 days after SNI) and chronic phases (21 days after SNI), each with 24 h follow-up day",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug cold plate data reported.",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "No dose of PSI had an effect at ... G 24hours after injection",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Short sessions.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    }
+  ],
+  "judge_notes": [
+    "Retained 8 behavioural assays agreed by all candidates (HTR+rearing as a single observational session; von Frey; Hargreaves; muscle withdrawal threshold; marble burying; mouse grimace scale; thermal place preference; cold plate). Thermal-camera body temperature excluded as a purely physiological measure.",
+    "HTR/rearing: B1 set to 1 (2 measures; gemma's score 2 inconsistent with 2-3 category); B2=Yes (2-min interval recording, 2/3 candidates); B4=Yes (rearing is natural exploratory act scored as discrete bouts, 2/3 candidates); setup_habituation overridden to not_reported because only room acclimation is described.",
+    "Von Frey/Hargreaves/MWT: D2 scored 0 with low confidence because session duration is not stated; D3 = 2-7 days (modal); D4 set to Yes (medium) because Fig 1C/D report pre-MOR vs post-drug values and Fig 2 analysis includes pre-drug time points (9 time points); D5 = Yes for 24 h post-dose testing.",
+    "Marble burying: E1 kept as Standard apparatus (empty standard habitat, not the animal's own home cage); 24-h re-test (Fig S1F) counted as a second session/day (D1=Multiple, D3=2-7); D2=15 min -> 1 (gemma's 0 was a boundary error).",
+    "Thermal place preference: B1 = 1 measure (preference/zone time); B7 = Yes per rubric (SLEAP pose estimation + SimBA); sex_dependent set to 'yes' (medium) based on 'This effect appears stronger in female mice at the 2 mg/kg and 10 mg/kg doses'.",
+    "Dosing schedule set to 'repeated' because pain-model animals received a second psilocybin dose two weeks later; morphine and buprenorphine comparators added as separate dosing entries.",
+    "Mouse grimace setup_restrain = no (plastic enclosure, freely moving; 2/3 candidates). Cold plate direction = decrease (reduced formalin-induced cold sensitivity; null in SNI)."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 5.45,
+    "behavioural_complexity_mean": 0.94,
+    "environmental_complexity_mean": 0.34,
+    "recording_duration_mean": 3.75
+  },
+  "low_confidence_count": 9,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-20T17:42:38+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "d7368ca2f4",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 97384,
+    "output_tokens": 25089,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

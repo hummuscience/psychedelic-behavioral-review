@@ -1,0 +1,356 @@
+{
+  "study_id": "Smith2014",
+  "doi": null,
+  "species": "mouse",
+  "strain": "NIH Swiss",
+  "age": {
+    "value": "not_reported",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Male NIH Swiss mice (Harlan Laboratories Inc., Indianapolis, IN) weighing 20 -25 g on delivery (no age stated)",
+    "confidence": "low"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male NIH Swiss mice (Harlan Laboratories Inc., Indianapolis, IN)",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI, 2C-T-7, DPT, DIPT",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        0.3,
+        1.0,
+        3.0,
+        10.0
+      ],
+      "doses_raw": "0.3 mg/kg (Q = 4.033), 1.0 mg/kg ... 3.0 mg/kg; DOI (1.0 mg/kg) for tolerance; 0.3, 1.0, 3.0, or 10.0 mg/kg DOI was administered on day 4",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "chronic",
+      "evidence": "Injections were administered every 24 hours for 5 days (all compounds), every other day for five total injections (DOI only), or every 7 days for four total injections (DOI only).",
+      "confidence": "medium"
+    },
+    {
+      "compound": "2C-T-7",
+      "doses_mg_per_kg": [
+        0.3,
+        1.0,
+        3.0,
+        10.0
+      ],
+      "doses_raw": "2C-T-7 (1.0 mg/kg); 0.3, 1.0, 3.0, or 10.0 mg/kg 2C-T-7 was administered on day 4",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "repeated",
+      "evidence": "Each animal was removed from the home cage and injected with ... 2C-T-7 (1.0 mg/kg) ... Injections were administered every 24 hours for 5 days (all compounds)",
+      "confidence": "high"
+    },
+    {
+      "compound": "DPT",
+      "doses_mg_per_kg": [
+        1.0,
+        3.0,
+        10.0,
+        30.0
+      ],
+      "doses_raw": "DPT (3.0 mg/kg); 1.0, 3.0, 10.0, or 30.0 mg/kg DPT was administered on day 4",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "repeated",
+      "evidence": "injected with ... DPT (3.0 mg/kg) ... Injections were administered every 24 hours for 5 days (all compounds)",
+      "confidence": "high"
+    },
+    {
+      "compound": "DIPT",
+      "doses_mg_per_kg": [
+        10.0
+      ],
+      "doses_raw": "DIPT (10.0 mg/kg)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "repeated",
+      "evidence": "injected with ... DIPT (10.0 mg/kg) ... Injections were administered every 24 hours for 5 days (all compounds)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported; only weighing, marking and injection described",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "housed three animals per cage",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "Lights were set to a 12-hour light/dark cycle (experiments were conducted 3 -5 hours into the light phase)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head Twitch Response (HTR)",
+      "assay_description": "Mice injected i.p. and placed individually in an observation cage with fresh bedding; 10 min after injection, overhead camera recorded behaviour for 10 min; videotapes scored for head twitches by blind observer. Covers acute dose-effect curves (DOI, 2C-T-7, DPT, DIPT), tolerance protocols (daily x5, every other day x5, weekly x4), and DOI-induced tolerance surmountability / cross-tolerance tests on day 4.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Doses were then calculated and prepared for intraperitoneal injection.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "placed into an observation cage containing fresh bedding",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food or water was available during experimental sessions.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No food or water was available during experimental sessions.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 10,
+          "evidence": "Ten minutes after this injection, an overhead camera was activated and behavior was recorded for 10 minutes.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 5,
+        "evidence": "Mice were randomly assigned to experimental groups ( n = 5 or 6 per group)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "All four compounds elicited biphasic dose-dependent HTR vs saline (max ~18 for DOI 1 mg/kg, ~16 for 2C-T-7 1 mg/kg, ~15 for DPT 3 mg/kg, <8 for DIPT 10 mg/kg). Daily (and every-other-day) DOI and daily 2C-T-7 produced progressive tolerance, whereas DPT, DIPT and weekly DOI did not. DOI tolerance was insurmountable with higher DOI doses and conferred insurmountable cross-tolerance to 2C-T-7 and DPT.",
+        "statistics": "Dose-effect (Kruskal-Wallis, Dunn's): DOI 0.3 Q=4.033, 1.0 Q=4.427, 3.0 Q=3.864; 2C-T-7 1.0 Q=4.230; DPT 3.0 Q=4.244, 10.0 Q=3.108; DIPT 10.0 Q=3.545 (all P<0.05). Tolerance (RM ANOVA, Tukey): DOI days 2-5 vs day 1 Q=6.786, 11.875, 16.116, 21.205; 2C-T-7 days 2-5 vs day 1 Q=12.623, 16.831, 21.974, 22.909; DOI every other day injections 3-5 vs first Q=5.787, 9.042, 13.201 (P<0.05). Surmountability: saline-pretreated DOI 0.3 Q=3.996, 1.0 Q=5.307, 3.0 Q=4.101; between-group 0.3 Q=4.437, 1.0 Q=5.424, 3.0 Q=4.411. Cross-tolerance: 2C-T-7 1.0 Q=5.628; DPT 3.0 Q=4.491 (P<0.05).",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "Tolerance developed to HTR elicited by daily DOI or 2C-T-7, but not to HTR elicited by DPT or DIPT. DOI-elicited tolerance was not surmountable with dose, and a similar insurmountable cross-tolerance was evident when DOI-tolerant mice were tested with various doses of 2C-T-7 or DPT.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "videotapes were scored for drug-elicited HTR (defined as a rapid rotational jerk of the head...)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Ordinates show the mean head twitches recorded over a 10-minute observation period.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of transitions or bout structure reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is excluded as an ethological behaviour per rubric; only head twitches scored.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "individual animals were removed from the home cage, injected ... and then placed into an observation cage",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Drug-elicited reflexive behaviour; no learning or memory component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "videotapes were scored ... by at least one observer blind to drug treatment",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Kruskal-Wallis and repeated-measures ANOVA only (univariate).",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "placed into an observation cage containing fresh bedding",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter described in the observation cage.",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "placed into an observation cage containing fresh bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "observation cage",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individual animals were removed from the home cage ... and then placed into an observation cage",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water was available during experimental sessions.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Injections were administered every 24 hours for 5 days ... with HTR quantified on days 2 -5 significantly different from that observed on day 1",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "behavior was recorded for 10 minutes",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "every 24 hours for 5 days ... every other day for five total injections ... every 7 days for four total injections (max 5 recording days)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug recording; day 1 HTR recorded after first injection.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Every recording session began 10 min after an injection; no recording >=24 h after last drug administration.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "behavior was recorded for 10 minutes",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    }
+  ],
+  "judge_notes": [
+    "All candidates identified a single HTR assay; dose-effect, tolerance, surmountability and cross-tolerance experiments collapsed into one assay per rubric.",
+    "B1 set to 1 measure (head twitch count only), following qwen/gemma majority; deepseek's counting of saline controls as a second measure is incorrect.",
+    "D3 set to 2-7 (max 5 recording days per animal); gemma's 8-14 conflated study span (day 9) with number of recording days.",
+    "DOI is not in the provided markdown masthead; candidates disagreed (two null, one apparently fabricated), so doi = null.",
+    "Age set to not_reported: paper gives only body weight (20-25 g), no age.",
+    "DOI schedule set to 'chronic' because every-other-day (9 days) and weekly (22 days) regimens exceed 7 days of dosing; other compounds dosed daily x5 = repeated.",
+    "Outcome direction 'increase' reflects significant HTR induction vs saline; tolerance-related decreases captured via time_dependent = yes and summary."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0.0,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 2.73,
+    "behavioural_complexity_mean": 0.0,
+    "environmental_complexity_mean": 1.36,
+    "recording_duration_mean": 2.73
+  },
+  "low_confidence_count": 5,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-20T18:06:19+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "d7368ca2f4",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 44614,
+    "output_tokens": 5436,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

@@ -1,0 +1,910 @@
+{
+  "study_id": "Shao2024",
+  "doi": "10.1101/2024.11.02.621692",
+  "species": "mouse",
+  "strain": "C57BL/6J, Fezf2-2A-CreER, PlexinD1-2A-CreER, Htr2a f/f, CaMKIIa-Cre, Thy1-GFP line M",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 35,
+    "age_max_days": 56,
+    "evidence": "For behavioral and electrophysiological studies involving PT and IT neurons, 5- to 8-week-old homozygous Fezf2-2A-CreER and PlexinD1-2A-CreER mice were used for viral injection, then tested 2 weeks later.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "including 14 mice for psilocybin:mCherry (6 males, 8 females), 13 mice for saline:mCherry (6 males, 7 females)...",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "1 mg/kg, i.p. (the tail suspension methods text states '0.1 mg/kg i.p', likely a typographical error, as 1 mg/kg is used throughout)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "the mouse was injected while awake with either psilocybin (1 mg/kg, i.p.; prepared from working solution... Usona Institute) or saline (10 mL/kg, i.p.).",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "No handling habituation protocol is described in the Methods.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Animals were housed in groups with 2 - 5 mice per cage in a temperature-controlled room",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "operating on a normal 12 hr light - 12 hr dark cycle (8:00 AM to 8:00 PM for light). ... All behavioral assays were conducted between 10:00 AM and 4:00 PM.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Home-cage enrichment is not mentioned.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head-twitch response",
+      "assay_description": "Mice placed individually in a 4'' x 4'' x 4'' plexiglass chamber with transparent lid inside a sound-attenuating cubicle immediately after psilocybin/saline injection; overhead high-speed video recorded for 10 min and head twitches manually scored by a blinded experimenter. Run in chemogenetic (DREADD + DCZ) cohorts and in medial-frontal-cortex 5-HT2A conditional knockout and CaMKII-Cre;Htr2a f/f cohorts.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "deschloroclozapine (DCZ; 0.1 mg/kg, i.p.) or saline... was injected if chemogenetic manipulation was tested, and then psilocybin (1 mg/kg, i.p.) or saline (10 mL/kg, i.p.) was injected 15 min later.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No pre-test exposure to the plexiglass chamber is described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "After the injection, each mouse was immediately placed into its own plexiglass chamber (4'' x 4'' x 4'')",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food was present in the plexiglass recording chamber; 'Food and water were available ad libitum' in the home cage.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water was present in the plexiglass recording chamber; 'Food and water were available ad libitum' in the home cage.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "After the injection, each mouse was immediately placed into its own plexiglass chamber... We recorded videos for 10 min.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 153,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "For head-twitch response, we had 53 Fezf2-2A-CreER mice remaining... 47 PlexinD1-2A-CreER mice remaining... 15 local 5-HT2A receptor knockout mice were tested: 8 mice with saline... 7 mice with psilocybin... 15 littermate controls were tested: 6 with saline... 9 mice with psilocybin... 12 CaMKIICre;Htr2a f/f mice and 11 littermate controls",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "Psilocybin (1 mg/kg) reliably induced head twitches. Chemogenetic silencing of frontal cortical PT or IT neurons did not alter the number of head twitches, nor did medial frontal cortex-specific 5-HT2A receptor knockout; by contrast, constitutive/widespread CaMKII-Cre;Htr2a f/f knockout markedly reduced psilocybin-evoked head twitches.",
+        "statistics": "n = 11-20 mice in each group (PT/IT DREADD cohorts); n = 6-9 mice in each group (Htr2a f/f cohorts); two-factor ANOVA with post hoc t-tests / two-tailed unpaired t-tests (detailed statistics in Supplementary Table 1)",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "Psilocybin induced head twitches in our mice as expected, which was not affected by the DREADD-mediated silencing of frontal cortical PT or IT neurons (n = 11-20 mice in each group; Fig. 2c-e).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The videos were scored for head twitches by a different experimenter blinded to the experimental conditions.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only the total number of head twitches during the 10-min video is reported; no within-session time binning.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of bout structure or behavioural transitions.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-twitch response is explicitly excluded from ethological behaviours by the rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "each mouse was immediately placed into its own plexiglass chamber",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning or memory component; drug-evoked reflexive behaviour.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The videos were scored for head twitches by a different experimenter blinded to the experimental conditions.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only head twitch counts analysed; no dimensionality reduction.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "its own plexiglass chamber (4'' x 4'' x 4''), which had a transparent lid and was positioned within a sound attenuating cubicle",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Small transparent-lidded chamber; no refuge described.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding mentioned; chambers were cleaned with 70% ethanol between measurements.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material mentioned in the chamber.",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No objects described inside the plexiglass chamber.",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "plexiglass chamber (4'' x 4'' x 4'') with a transparent lid — no internal partitions.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Head-twitch response was measured in groups of 2-3 mice... each mouse was immediately placed into its own plexiglass chamber.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water inside the chamber.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "We recorded videos for 10 min. (A subset of 9 Fezf2 and 4 PlexinD1 mice were tested on both psilocybin and saline with 1-week interval, but each is a single drug-test session.)",
+          "confidence": "medium"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "We recorded videos for 10 min.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single 10-min video recording per drug condition.",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug recording in the plexiglass chamber was reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recording started immediately after injection; no recording ≥24 h post-dose in this assay.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "10-min session.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "Learned helplessness (shuttle-box escape)",
+      "assay_description": "Active avoidance shuttle box (8'' x 8'' x 6.29'', stainless-steel grid floor, auto door separating two compartments) in a sound-attenuating cubicle. Two induction sessions of 360 inescapable 0.2 mA footshocks (days 1-2); psilocybin (±DCZ for DREADD cohorts) given 10-15 min after the second induction session; test on day 3 with 30 escapable 10-s shocks, escape failures counted via beam breaks. Run in Fezf2-CreER (PT), PlexinD1-CreER (IT) DREADD cohorts and medial frontal cortex 5-HT2A knockout cohorts.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "DCZ (0.1 mg/kg, i.p.) or saline (10 mL/kg, i.p.) was given..., and then psilocybin (1 mg/kg, i.p.) or saline (10 mL/kg, i.p.) was injected 15 min later.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No pre-test habituation to the shuttle box is described (induction sessions are part of the paradigm).",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "A shock would be terminated early if the mouse moved to the other compartment. Movement of the mouse was captured by beam breaks in the shuttle box.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in the shuttle box; 'Food and water were available ad libitum' in the home cage.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in the shuttle box during the test session.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "At 10-15 min after the end of the second induction session... psilocybin (1 mg/kg, i.p.) or saline... was injected 15 min later. On day 3, one test session was conducted.",
+          "confidence": "medium"
+        }
+      },
+      "sample_size": {
+        "n_total": 144,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "For learned helplessness, we had 57 Fezf2-2A-CreER mice remaining... 47 PlexinD1-2A-CreER mice... For learned helplessness, 16 local 5-HT2A receptor knockout mice were tested: 8 mice with saline... and 8 with psilocybin... 24 littermates injected with control virus were tested: 13 with saline... and 11 with psilocybin.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "A single dose of psilocybin given after the second inescapable-shock induction session reduced escape failures on the day-3 test. This benefit was abolished by chemogenetic silencing of frontal cortical PT neurons (but not IT neurons) during drug administration, and by medial frontal cortex-specific 5-HT2A receptor knockout.",
+        "statistics": "interaction effect of treatment and DREADD: P < 0.001, two-factor ANOVA; n = 13-16 mice in each group (PT); n = 11-14 (IT); n = 8-13 mice in each group (Htr2a f/f); post hoc with Bonferroni correction",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "A single dose of psilocybin reduced escape failures, suggesting that drug-treated animals were less affected by the uncontrollable stress... This psilocybin-induced relief of the stress-induced phenotype was abolished if frontal cortical PT neurons were silenced during drug administration (interaction effect of treatment and DREADD: P < 0.001, two-factor ANOVA).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "A failure was counted when the mouse failed to escape before the end of a shock.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only total escape failures across the test session are reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural sequences or transitions.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Escape failure in a shuttle box is a task-defined measure, not a natural behaviour scored as such.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Single mouse tested in the shuttle box; no social construct.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Mice were exposed to inescapable footshocks during two induction sessions and subsequently tested for avoidance when faced with escapable footshocks during a test session.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Movement of the mouse was captured by beam breaks in the shuttle box (Med Associates) — beam-break system, score 0.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only escape failures analysed with ANOVA/t-tests.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "an active avoidance box with a stainless-steel grid floor and a shuttle box auto door separating the two compartments (8'' x 8'' x 6.29'') inside a sound attenuating cubicle",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Both compartments are shock-capable chambers; no refuge described.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "stainless-steel grid floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in the shuttle box.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in the shuttle box.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "a shuttle box auto door separating the two compartments",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Single mouse per shuttle box; movement captured by beam breaks.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the apparatus.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "On day 1 and day 2, there was one induction session on each day... On day 3, one test session was conducted.",
+          "confidence": "medium"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Session durations are not stated numerically (30 escapable shocks of 10 s with 30 s ITI); no explicit duration reported.",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Induction sessions on day 1 and day 2 and the test session on day 3 in the same shuttle box.",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug escape performance data are reported; induction sessions used inescapable shocks.",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Test on day 3 follows dosing late on day 2; the exact post-dose interval is not stated, so ≥24 h cannot be confirmed.",
+          "confidence": "medium"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sessions are far shorter than 6 h; all behavioural assays conducted between 10:00 AM and 4:00 PM.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    },
+    {
+      "assay_name": "Tail suspension test",
+      "assay_description": "Mice suspended by the tail with tape from a metal bar elevated 30 cm inside a tall sound-attenuating cubicle (plastic tube around tail base to prevent climbing); 6-min video recorded and proportion of time immobile scored by a blinded experimenter. Tested 24 h after psilocybin/saline (DREADD cohorts received DCZ 15 min before drug); also run in medial frontal cortex 5-HT2A knockout cohorts.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Animals were tested 24 hours after administration of psilocybin (0.1 mg/kg i.p) or saline (10 mL/kg, i.p.). For chemogenetic manipulation, DCZ (0.1 mg/kg, i.p.) or saline... was given 15 min before psilocybin or saline administration.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No pre-test exposure to the suspension apparatus is described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "An animal was suspended from the metal bar by securing its tail to the bar using removable tape.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food accessible while the animal is suspended.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water accessible while the animal is suspended.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "Animals were tested 24 hours after administration of psilocybin (0.1 mg/kg i.p) or saline (10 mL/kg, i.p.).",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 125,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "For tail suspension test, we had 49 Fezf2-2A-CreER mice remaining... 41 PlexinD1-2A-CreER mice remaining... For tail suspension test, 17 local 5-HT2A receptor knockout mice were tested: 9 mice with saline and 8 with psilocybin. 18 littermates injected with control virus were tested: 9 mice with saline and 9 with psilocybin.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin given 24 h before testing significantly reduced the proportion of time spent immobile relative to saline. The improvement was abolished by chemogenetic silencing of frontal cortical PT neurons during drug administration (but not IT neurons) and by medial frontal cortex-specific 5-HT2A receptor knockout.",
+        "statistics": "interaction effect of treatment × DREADD: P < 0.001, two-factor ANOVA; n = 10-14 mice in each group (PT); n = 8-9 mice in each group (Htr2a f/f); post hoc with Bonferroni correction",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "Mice treated with psilocybin 24 hours prior to testing showed a significant reduction in immobility time compared to saline-treated animals, an improvement that was likewise abolished specifically by inactivation of frontal cortical PT neurons (interaction effect of treatment and DREADD: P < 0.001, two-factor ANOVA).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "proportion of time spent immobile",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only total/proportion immobility over the 6-min session is reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bout or sequence analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Immobility during tail suspension is not an ethological behaviour per the rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Single animal suspended; no social construct.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning or memory component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "For head-twitch response and tail suspension test, video scoring was done by a different experimenter blinded to condition.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only immobility analysed.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Within a tall sound-attenuating cubicle (Med Associates), the setup included a metal bar elevated 30 cm from the floor.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent — the animal is suspended in the air.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent — the animal is suspended from a bar.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent in the tail suspension setup.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only a metal bar and an anti-climbing tube around the tail base.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Suspension from a single bar within one cubicle; no compartments.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "An animal was suspended from the metal bar... Videos of the suspended animals were recorded for 6 minutes.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water accessible during suspension.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Videos of the suspended animals were recorded for 6 minutes.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Videos of the suspended animals were recorded for 6 minutes.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "One test session, 24 h after dosing.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug tail suspension recording reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Animals were tested 24 hours after administration of psilocybin.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "6-min session.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Cued fear conditioning and extinction (after chronic restraint stress)",
+      "assay_description": "Near-infrared video fear conditioning system (Med Associates, VideoFreeze). After 14 days of chronic restraint stress: day 1 conditioning in context A (3 min habituation, 5 tone CS 4 kHz/80 dB/30 s co-terminating with 0.8 mA/2 s footshock, 90 s ITI); day 3 extinction in context B beginning 45 min after psilocybin (±DCZ) administration; further extinction/retention sessions in context B including day 17. Freezing analysed automatically for different sets of tones within a session.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "On day 3 (fear extinction 1), for each mouse, DCZ (0.1 mg/kg, i.p.) or saline [was given, and psilocybin (1 mg/kg, i.p.) or saline] was injected 15 min later. Then 45 min later, we started test for fear extinction.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Only room habituation (~30 min in the behaviour room) and in-session 3-min acclimation are described; no separate pre-test exposure to the apparatus without data collection.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Each mouse was tested individually in a chamber and given 3 minutes to habituate — freely moving during recording (restraint occurred only during the separate chronic restraint stress phase).",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in the conditioning chamber during sessions.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in the conditioning chamber during sessions.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 45,
+          "evidence": "Then 45 min later, we started test for fear extinction, while the drug is presumably still present in the brain. (Retention sessions were run on later days.)",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 58,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 13,
+        "evidence": "We started, for fear extinction, with 58 Fezf2-2A-CreER mice injected with DREADD or control viruses, including 17 mice for psilocybin:mCherry (9 males, 8 females), 13 mice for saline:mCherry (7 males, 6 females), 13 mice for psilocybin:hM4DGi (8 males, 5 females), and 15 mice for saline:hM4DGi (7 males, 8 females).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "In chronically restrained mice, psilocybin given before the first extinction session facilitated fear extinction (reduced conditioned freezing), and this facilitation required frontal cortical PT neurons — chemogenetic silencing of PT neurons during psilocybin administration abolished the effect.",
+        "statistics": "Two-factor ANOVA testing the interaction between treatment (psilocybin vs. saline) and DREADD (hM4DGi vs. mCherry), with post hoc t-tests comparing psilocybin:mCherry versus saline:mCherry or psilocybin:hM4DGi versus saline:hM4DGi for different sets of tones in a session; Bonferroni correction. Detailed values in Extended Data Fig. 9 / Supplementary Table 1.",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "not_reported",
+        "evidence": "Finally, we found that frontal cortical PT neurons are needed for psilocybin-driven facilitation of fear extinction in chronically stressed mice (Extended Data Fig. 9).",
+        "confidence": "medium"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Freezing (measured with VideoFreeze) is the reported behavioural measure across conditioning, extinction and retention.",
+          "confidence": "medium"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Post hoc t-tests were used to compare psilocybin:mCherry versus saline:mCherry or psilocybin:hM4DGi and saline:hM4DGi for different sets of tones in a session.",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition/sequence or microstructure analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Conditioned freezing is explicitly excluded from ethological behaviours by the rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Each mouse was conditioned individually in a chamber.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "we began fear conditioning and extinction procedures... it received 5 presentations of an auditory tone as the conditioned stimulus (CS)... Each CS co-terminated with a footshock as the unconditioned stimulus (US).",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The fear conditioning system... was controlled by the VideoFreeze software (Med Associates) — Med Associates product, score 0.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "ANOVA and t-tests on freezing only; no dimensionality reduction.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "performed using a near-infrared video fear conditioning system (MED-VFC2-SCT-M, Med Associates)... equipped with stainless-steel grid floor",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Conditioning chamber with blank straight walls or sloped roof inserts; no refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "stainless-steel grid floor (context A) / grid floor covered with a white smooth floor (context B)",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in the chamber.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Context inserts (sloped roof, smooth floor) are contextual cues, not enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "the chamber had blank straight walls and stainless-steel grid floor — single compartment.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each mouse was tested individually in a chamber.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the conditioning chamber.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "On day 1 (fear conditioning)... On day 3 (fear extinction 1)... fear extinction in context B. On day 17 (retention 2), we repeated the test for fear extinction in context B.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Total session durations are not stated numerically (3 min habituation + 5 CS of 30 s with 90-s ITIs for conditioning); extinction session length not given.",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "On day 1 (fear conditioning)... On day 3 (fear extinction 1)... On day 17 (retention 2) — at least 3-4 recording days.",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Fear conditioning on day 1 precedes drug administration on day 3, and 'The same statistical test was used for fear conditioning, extinction and retention'.",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "On day 17 (retention 2), we repeated the test for fear extinction in context B — well beyond 24 h after the day-3 dose.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "All behavioral assays were conducted between 10:00 AM and 4:00 PM; sessions are short.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    }
+  ],
+  "judge_notes": [
+    "Four behavioural assays retained: head-twitch response, learned helplessness, tail suspension test, and cued fear conditioning/extinction. All candidates agreed on this set.",
+    "Dropped all non-behavioural work: two-photon structural and calcium imaging, Neuropixels in vivo electrophysiology with opto-tagging, slice electrophysiology, qPCR/FACS, immunohistochemistry, confocal spine morphometry, and single-cell transcriptomic analysis.",
+    "Collapsed DREADD (Fezf2-CreER PT vs. PlexinD1-CreER IT, hM4DGi vs. mCherry) and Htr2a conditional-knockout cohorts into single assay entries per paradigm, per the rubric's manipulation-not-paradigm rule.",
+    "B1 corrected to 0 (single measure) for all four assays: candidates deepseek4 and gemma4 scored 1 while only one dependent variable (head twitches, escape failures, immobility, freezing) is reported per assay.",
+    "B2 set to 1 for fear conditioning/extinction based on 'Post hoc t-tests were used to compare ... for different sets of tones in a session', i.e. within-session block analysis; no candidate captured this.",
+    "setup_habituation for fear extinction changed from 'yes' (all candidates) to 'not_reported': the paper describes only ~30 min behaviour-room acclimation and a 3-min in-session acclimation, both excluded by the rubric.",
+    "HTR time_to_assay set to 0 min (mouse placed in chamber immediately after psilocybin injection); the 15-min interval cited by one candidate is the DCZ→psilocybin gap.",
+    "D5 for tail suspension set to 1 (explicit '24 hours after administration'); for learned helplessness kept at 0 because the exact interval between the day-2 dose and the day-3 test is not stated.",
+    "D2 scored 0 for learned helplessness and fear extinction because no explicit session duration (in minutes) is given in the paper.",
+    "D3 for fear extinction set to '2-7' (days 1, 3, and 17 plus an intermediate retention session) — gemma4's '8-14' was a miscount of recording days versus calendar span.",
+    "Dose listed as 1 mg/kg i.p.; the tail-suspension methods line '0.1 mg/kg i.p' is noted as a probable typo since 1 mg/kg is used throughout."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 5.45,
+    "behavioural_complexity_mean": 0.94,
+    "environmental_complexity_mean": 0.34,
+    "recording_duration_mean": 2.39
+  },
+  "low_confidence_count": 7,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-20T17:59:39+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "claude-opus-5-5",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "d7368ca2f4",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 111934,
+    "output_tokens": 18751,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0,
+    "fallback_from": {
+      "model": "claude-opus-5-5",
+      "category": null,
+      "explanation": null,
+      "request_id": "msg_011ChEcQAbmxmjKkixJUpzzL",
+      "output_tokens": 394
+    }
+  }
+}

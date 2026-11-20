@@ -1,0 +1,536 @@
+{
+  "study_id": "Fletcher2017",
+  "doi": null,
+  "species": "rat",
+  "strain": "Sprague-Dawley",
+  "age": {
+    "value": "adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Adult male Sprague-Dawley rats (Charles River, Quebec) weighing 280 -320 g at the beginning of each study were used.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Adult male Sprague-Dawley rats",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        0.1,
+        0.3,
+        0.6
+      ],
+      "doses_raw": "DOI (0, 0.1, 0.3, 0.6 mg/kg, SC; n = 10); DOI (0.6 mg/kg) with M100907; DOI (0.1 mg/kg) and methylphenidate (3.5 mg/kg)",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "DOI (Sigma) was dissolved in saline and injected SC 30 min before testing. ... every animal was tested with all doses ... Drug tests were separated by at least 72 h.",
+      "confidence": "high"
+    },
+    {
+      "compound": "Methylphenidate",
+      "doses_mg_per_kg": [
+        2.5,
+        3.5,
+        5.0
+      ],
+      "doses_raw": "methylphenidate (0, 2.5, 3.5 and 5 mg/kg); DOI combined with 3.5 mg/kg methylphenidate",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Methylphenidate HCl (Medisca) was dissolved in saline and injected IP 10 min before testing.",
+      "confidence": "high"
+    },
+    {
+      "compound": "M100907",
+      "doses_mg_per_kg": [
+        0.3
+      ],
+      "doses_raw": "between M100907 (0.3 mg/kg) and DOI (0.6 mg/ kg; n = 9)",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "M100907 HCl ... was dissolved in 0.9% saline solution containing 0.3% Tween and injected SC 30 min before testing",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "Rats were housed individually in a temperature-controlled and humidity-controlled room",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "maintained on a 12h light/dark cycle (lights on at 8:00 a.m.). All training and testing were conducted during the light phase.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Responding for a Conditioned Reinforcer (CRf)",
+      "assay_description": "Med Associates operant chambers with two retractable levers; after 10 Pavlovian CS (light+tone)-water conditioning sessions, rats pressed an active lever delivering the CS (RR2, no water) vs an inactive lever in 40-min test sessions. DOI (0.1-0.6 mg/kg s.c.) tested alone (within-subject Latin square), with M100907 antagonist pretreatment, and with methylphenidate (3.5 mg/kg i.p.); measured responses on CRf and NCRf levers.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "DOI (Sigma) was dissolved in saline and injected SC 30 min before testing (methylphenidate co-treatment given IP 10 min before testing)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "In the habituation phase, subjects were placed in the chambers with the house light on and approximately 2 ml of water in the dish.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Rats were placed in the boxes with both levers present (free-moving operant chamber; no restraint described).",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food available in the operant chamber during test; food restriction not described.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "before",
+          "evidence": "Throughout these experiments, rats were allowed access to water for 2 h per day between 2 and 4 p.m. ... Pressing the left lever delivered the conditioned stimulus ... no water was delivered.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "DOI (Sigma) was dissolved in saline and injected SC 30 min before testing.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 29,
+        "n_male": 29,
+        "n_female": null,
+        "n_per_group_min": 9,
+        "evidence": "DOI (0, 0.1, 0.3, 0.6 mg/kg, SC; n = 10); between M100907 (0.3 mg/kg) and DOI (0.6 mg/ kg; n = 9); DOI (0.1 mg/kg) and methylphenidate (3.5 mg/kg, n = 10)",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "DOI (0.3 and 0.6 mg/kg) reduced responding on the CRf lever only, an effect reversed by M100907. DOI also attenuated the methylphenidate-induced enhancement of CRf responding without affecting the inactive lever.",
+        "statistics": "Dose F(3,27)=7.35, p<0.001; dose × lever F(3,27)=4.76, p<0.01; DOI × M100907 F(1,8)=38.59, p<0.001; DOI × methylphenidate × lever F(1,9)=5.13, p<0.05; DOI × methylphenidate on CRf lever F(1,9)=5.39, p<0.045; NCRf lever F(1,9)=0.22, ns",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "For DOI, the main effect of dose [F3,27 = 7.35, p < 0.001] and the dose × lever interaction [F3,27 = 4.76, p < 0.01] were significant; 0.3 and 0.6 mg/kg DOI reduced responding on the CRf lever only. ... M100907 reversed the suppressant effect of DOI. ... rats treated with DOI and methylphenidate had significantly lower responding on the CRf lever compared to animals treated with methylphenidate alone.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Shaded bars (CRf) show responses on the lever delivering the CRf; open bars depict responses on the inactive lever (NCRf).",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only total responses per 40-min session reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence or bout analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Lever pressing is an operant response, not an ethological behaviour.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual operant testing; no social construct.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "the animals were trained to associate a compound stimulus with the delivery of 0.1 ml of water",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "standard operant conditioning chambers (Med Associates, VT)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "repeated measures two-way analysis of variance with dose and lever as factors",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Testing was conducted in eight standard operant conditioning chambers (Med Associates, VT).",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter described in operant chamber.",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described in operant chamber.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described.",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects described.",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single operant chamber with two levers and a central magazine.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Rats tested individually in operant chambers.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Pressing the left lever delivered the conditioned stimulus ... no water was delivered.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "every animal was tested with all doses ... Drug tests were separated by at least 72 h.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "drug testing was conducted in 40-min sessions",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Within-subject Latin square of vehicle + 3 DOI doses (4 test days), tests separated by at least 72 h.",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Vehicle condition within Latin square; no separate pre-drug baseline reported.",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Tests conducted 30 min post-injection; no follow-up recording reported.",
+          "confidence": "medium"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "40-min sessions",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Operant Responding for Water",
+      "assay_description": "Same operant chambers; right lever delivered 0.1 ml water on RR2 schedule (left lever retracted) in 40-min sessions. Subset of CRf rats (n=8) tested with DOI 0.1-0.6 mg/kg s.c. vs vehicle as a control for non-specific performance effects.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "DOI (Sigma) was dissolved in saline and injected SC 30 min before testing",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Rats were placed in the test chambers for daily 40-min sessions ... Responding for water was acquired rapidly and was stable after five to seven sessions.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Rats were placed in the test chambers (free-moving operant chamber; no restraint described).",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food available in the operant chamber during the session; food restriction not described.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "before",
+          "evidence": "Throughout these experiments, rats were allowed access to water for 2 h per day between 2 and 4 p.m.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "DOI (Sigma) was dissolved in saline and injected SC 30 min before testing",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 8,
+        "n_male": 8,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "d The effects of DOI on responding for water (8).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI did not alter responding for water relative to vehicle; a significant dose main effect reflected only a difference between 0.1 and 0.6 mg/kg.",
+        "statistics": "Main effect of DOI dose F(3,21)=3.49 (reported p>0.05); Dunnett's test: no dose differed from vehicle",
+        "direction": "no_effect",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "In the experiment measuring responding for water, the main effect of DOI dose was significant [F3,21 = 3.49, p > 0.05]. However, this was due to a difference in responding between the 0.1 and 0.6 mg/kg doses; Dunnett's test showed that none of the doses of DOI altered responding when compared to the vehicle condition",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "in which responses on the right lever delivered 0.1 ml of water according to a RR2 schedule. The left lever was retracted.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only total responses per session reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Lever pressing is operant, not ethological.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual operant testing.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Operant task: responses on the right lever delivered 0.1 ml of water ... Responding for water was acquired rapidly and was stable after five to seven sessions.",
+          "confidence": "medium"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Med Associates operant chambers (lever counts).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "repeated measures one-way analysis of variance, followed by post hoc testing with Dunnett's test",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "standard operant conditioning chambers",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter described.",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described.",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects described.",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single-compartment operant chamber.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Rats tested individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "responses on the right lever delivered 0.1 ml of water",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "doses of DOI and vehicle tested within-subject; Drug tests were separated by at least 72 h.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "daily 40-min sessions",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Vehicle + 3 DOI doses tested within-subject (4 drug test days).",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline data reported for drug tests.",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No follow-up recording reported.",
+          "confidence": "medium"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "40-min sessions",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    }
+  ],
+  "judge_notes": [
+    "Two DOI-relevant behavioural assays retained: CRf responding (DOI alone, DOI+M100907, DOI+methylphenidate merged as one assay) and operant responding for water; experiments with other non-psychedelic 5-HT ligands not scored as separate assays.",
+    "DOI set to null: candidates gave conflicting DOIs and the markdown lacks one.",
+    "CRf B1 scored 1 (2-3 measures); gemma's score of 2 was inconsistent with its own category.",
+    "CRf E8 = 0 (modal): only the CS, no water, delivered during test sessions; qwen's 1 rejected.",
+    "Water-responding B6 overridden to Yes per rubric listing operant tasks as cognitive/learned; B1 = 0 for single measure (gemma's 1 inconsistent).",
+    "Water restriction set to 'before' (2 h/day access schedule) per modal candidates; food 'during' since no food was in the chamber and no food restriction was described.",
+    "CRf n_total summed across separate DOI cohorts (10 + 9 + 10 = 29); n_per_group_min = 9 (within-subject designs).",
+    "Dosing list expanded to include methylphenidate and M100907, which were co-administered with DOI in the scored assays; schedule 'acute' (single dose per test session, Latin square with ≥72 h washout)."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 4.09,
+    "behavioural_complexity_mean": 1.88,
+    "environmental_complexity_mean": 0.68,
+    "recording_duration_mean": 4.09
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-20T17:39:35+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "d7368ca2f4",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 53851,
+    "output_tokens": 7511,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

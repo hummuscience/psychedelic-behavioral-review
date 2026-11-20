@@ -1,0 +1,114 @@
+{
+  "study_id": "Thomann2024",
+  "doi": "10.3389/fphar.2024.1391689",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "C57BL/6J adult male mice (Janvier, Le Genest-Saint-Isle, France)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 10,
+    "n_female": null,
+    "evidence": "C57BL/6J adult male mice ... A total of 10 mice were dosed orally with either 3 mg/kg bodyweight psilocybin (n = 5) or saline solution (n = 5).",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        3.0
+      ],
+      "doses_raw": "3 mg/kg bodyweight psilocybin",
+      "vehicle": "not_reported",
+      "route": "p.o.",
+      "schedule": "acute",
+      "evidence": "A total of 10 mice were dosed orally with either 3 mg/kg bodyweight psilocybin (n = 5) or saline solution (n = 5). ... compound administration via oral gavage",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "maintained in littermate pairs in standard cages",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "yes",
+      "evidence": "The colony room was on a reversed light-dark cycle (dark phase 07:00 to 19:00) ... Dosing and blood sampling were conducted between 09:00 and 13:00.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "yes",
+      "evidence": "standard cages (containing sawdust, a sleeping chamber, tissue paper, and a wood stick)",
+      "confidence": "high"
+    }
+  },
+  "assays": [],
+  "judge_notes": [
+    "No behavioural assays were conducted. The only in vivo rodent work is oral psilocybin dosing followed by serial tail blood sampling for pharmacokinetics (baseline, 15, 30, 60, 120 min).",
+    "Dropped deepseek4's 'Blood sampling (pharmacokinetics)' assay. The rubric explicitly lists blood sampling and purely physiological measures as NOT assays. This exclusion agrees with qwen and gemma4.",
+    "The head-twitch response is mentioned only as prior work by Sherwood et al. (2020) in the Discussion. It was not performed in this study, so it is not scored.",
+    "Dosing vehicle set to not_reported. Saline was the control treatment, but the paper never states what psilocybin was dissolved in, so this overrides all three candidates (which said 'saline').",
+    "Reversed light cycle is confirmed: dark phase 07:00–19:00, with dosing and sampling at 09:00–13:00, which falls in the dark phase.",
+    "Home-cage enrichment is yes: the cages contained a sleeping chamber, tissue paper and a wood stick.",
+    "Remaining study-level metadata (species, strain, age, sex, dose, route, schedule, housing) were consistent across candidates and verified against Section 2.7 of the paper."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0,
+    "environmental_complexity_max": 0,
+    "recording_duration_max": 0,
+    "behavioural_complexity_mean": 0,
+    "environmental_complexity_mean": 0,
+    "recording_duration_mean": 0
+  },
+  "low_confidence_count": 1,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-20T18:12:54+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "d7368ca2f4",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 49178,
+    "output_tokens": 1097,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

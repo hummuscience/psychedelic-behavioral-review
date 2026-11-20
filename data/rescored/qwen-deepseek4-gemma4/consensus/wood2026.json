@@ -1,0 +1,345 @@
+{
+  "study_id": "Wood2026",
+  "doi": "10.1021/acsptsci.5c00484",
+  "species": "mouse",
+  "strain": "Swiss-Webster (CFW)",
+  "age": {
+    "value": "adult",
+    "age_min_days": 90,
+    "age_max_days": 120,
+    "evidence": "All mice were housed in groups of 5 and weighed between 35 and 55 g and were 3 -4 months in age.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male Swiss-Webster mice (CFW: Charles River Laboratories, INC Wilmington, MA) served as the subjects in all experiments.",
+    "confidence": "high"
+  },
+  "psychedelic": "R(-)DOI, Psilocybin",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        0.1,
+        0.32,
+        1.0,
+        3.2,
+        10.0
+      ],
+      "doses_raw": "0.1, 0.32, 1.0, 3.2, or 10 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "an injection of either R( -)DOI (0.1, 0.32, 1.0, 3.2, or 10 mg/kg) was administered and subsequent HTR was recorded; All compounds were dissolved in sterile saline and delivered through intraperitoneal injection",
+      "confidence": "high"
+    },
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        0.32,
+        1.0,
+        1.8,
+        3.2,
+        10.0
+      ],
+      "doses_raw": "0.32, 1, 1.8, 3.2, and 10 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "This same acute pretreatment protocol was used to evaluate the effects of fluoxetine on psilocybin-induced HTR (0.32, 1, 1.8, 3.2, and 10 mg/kg).",
+      "confidence": "high"
+    },
+    {
+      "compound": "Fluoxetine",
+      "doses_mg_per_kg": [
+        10.0,
+        32.0
+      ],
+      "doses_raw": "fluoxetine (10 or 32 mg/kg); daily injections of either saline or 10 mg/kg fluoxetine",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "chronic",
+      "evidence": "acute refers to a single administration of fluoxetine 30 min prior to psychedelic administration, while chronic refers to daily fluoxetine administration over 14 days with the final administration occurring 30 min before psychedelic administration.",
+      "confidence": "medium"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Only mention: 'animals were handled repeatedly during testing sessions' — not a pre-test handling habituation protocol.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "All mice were housed in groups of 5",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "The lights were turned off at 7 p.m. and turned back on at 7 a.m. every day. All experiments were conducted during the light phase.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head-Twitch Response (HTR)",
+      "assay_description": "Mice injected i.p. with R(-)DOI or psilocybin and placed individually in acrylic chambers; video recorded for 10 min beginning 10 min post-injection and HTR counted offline by two trained observers. Dose-response functions under acute fluoxetine (10 or 32 mg/kg), chronic fluoxetine (10 mg/kg x14 d), and 14-day discontinuation pretreatment conditions (psilocybin only with acute fluoxetine).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All compounds were dissolved in sterile saline and delivered through intraperitoneal injection",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Only room acclimation described: 'male Swiss-Webster mice were set in a room to acclimate for 30 min.'",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "were placed individually into acrylic chambers, where a video recording system was set up above for subsequent offline scoring",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Test conducted in acrylic chambers separate from home cage; food ad libitum only in home cage ('Mice had access to food ... and water ad libitum').",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Test conducted in acrylic chambers separate from home cage; no water in testing chamber described.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 10,
+          "evidence": "HTR behavior in each subject was recorded 10 min postinjection of each psychedelic and recorded for a duration of 10 min.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 5,
+        "evidence": "N = 5 -14 (Figure 1, 2 captions); Tables 1-2 list group Ns from 5 to 14",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "DOI and psilocybin produced dose-dependent (inverted-U) increases in HTR. Acute 32 mg/kg (but not 10 mg/kg) fluoxetine reduced DOI potency (~10-fold ED50 shift); chronic 10 mg/kg fluoxetine reduced DOI efficacy (Emax) without changing potency, an effect that recovered after 14-day discontinuation. Acute 10 mg/kg fluoxetine reduced psilocybin Emax without altering potency.",
+        "statistics": "Acute DOI: ED50 F(2,93)=6.676, p=0.0020; Emax F(2,93)=0.6660, p=0.5162. Chronic DOI: LogIC50 F(1,69)=0.10, p=0.75; Emax F(1,69)=11.42, p=0.0012. Discontinuation: ED50 F(1,51)=1.43, p=0.2367; Emax F(1,51)=0.28, p=0.6013. Psilocybin: EC50 F(1,64)=1.48, p=0.228; Emax F(1,64)=4.12, p=0.0465.",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Thus, chronic fluoxetine decreases the efficacy but not the potency of DOI-induced HTR. ... Thus, acute fluoxetine attenuates the maximal behavioral response to psilocybin without altering its potency.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "HTR counts (Mean ± SEM); ED50/Emax are curve parameters derived from the single HTR count measure.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR reported as total counts over the 10-min recording; no within-session time course.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural transitions or sequences reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is excluded by rubric; paper describes it as 'distinguishable from species typical grooming and scratching behaviors'.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "placed individually into acrylic chambers",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is a drug-elicited unlearned response.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Each session was scored by two trained observers",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Nonlinear regression of dose-response curves with extra-sum-of-squares F tests; no multivariate behavioural analysis.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "placed individually into acrylic chambers",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter described in the acrylic chambers.",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described in the acrylic chambers.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described.",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects described.",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "acrylic chambers",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "placed individually into acrylic chambers",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water described inside the testing chambers.",
+          "confidence": "medium"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "For chronic and discontinuation doses, mice were tested twice (once at the end of chronic dosing and again at the end of the discontinuation phase).",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "recorded for a duration of 10 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "mice were tested twice (once at the end of chronic dosing and again at the end of the discontinuation phase)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline HTR recording reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Every HTR session, including the discontinuation test, was recorded 10 min after a fresh psychedelic injection ('HTR behavior in each subject was recorded 10 min postinjection of each psychedelic'); no recording >=24 h after last drug administration.",
+          "confidence": "medium"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "recorded for a duration of 10 min",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    }
+  ],
+  "judge_notes": [
+    "All candidates agreed on a single HTR assay; acute, chronic, discontinuation and DOI/psilocybin arms collapsed into one assay per rubric.",
+    "B1 set to 0 (1 measure): ED50/Emax are derived parameters of the single HTR count, not distinct behavioural measures (overrode deepseek4; gemma4's score of 1 conflicted with its own value '1').",
+    "D5 set to 0 against two candidates: the discontinuation-phase recording occurred 10 min after a new DOI injection, so no recording was >=24 h after the last drug administration; the 14-day gap applies only to fluoxetine.",
+    "setup_habituation set to not_reported: only 30-min room acclimation described, which the rubric excludes.",
+    "handling set to not_reported: 'handled repeatedly during testing sessions' is not a pre-test handling protocol.",
+    "Outcome direction set to 'increase' (psychedelics increased HTR); fluoxetine attenuation described in summary. time_dependent set to n/a because time from psychedelic to test was a single 10-min timepoint.",
+    "Fluoxetine added to dosing as a co-administered drug (acute 10/32 mg/kg and chronic 10 mg/kg x14 d); qPCR was excluded as non-behavioural.",
+    "n_total left null: group Ns are listed in the tables, but animal reuse across chronic and discontinuation tests and ambiguous table labels make an exact total uncertain."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0.0,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 2.73,
+    "behavioural_complexity_mean": 0.0,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 2.73
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-20T18:42:27+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "d7368ca2f4",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 51950,
+    "output_tokens": 5604,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}
