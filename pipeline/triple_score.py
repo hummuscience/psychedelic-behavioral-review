@@ -42,6 +42,14 @@ def safe_print(*a, **kw):
 from provenance import MODELS, PUBLISHED_TAGS, candidate_stamp  # noqa: E402
 
 
+def worth_retrying(summary: list[dict], tag: str) -> bool:
+    """A second pass helps a model that worked in this pass, not one that was
+    cut off as unavailable (SAIA gateway errors) after a lucky call or two."""
+    entries = [e for e in summary if e.get("model") == tag]
+    return any(e.get("ok") for e in entries) and not any(
+        "looks unavailable" in (e.get("error") or "") for e in entries)
+
+
 def score_one(provider: SaiaProvider, pdf_path: Path) -> dict:
     """Single run; mirrors score_studies.process_study but no consensus loop."""
     raw = provider.score_pdf(pdf_path, SCORING_PROMPT)

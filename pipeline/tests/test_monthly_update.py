@@ -362,7 +362,7 @@ def test_bridge_comparison_matches_published_validation(data_copy: Path) -> None
             (work / "candidates" / t).mkdir(parents=True, exist_ok=True)
             shutil.copy(REPO / "data/results_v2_full_consensus" / f"{s}.json", work / "candidates" / t)
     run("bridge_test.py", data_copy, "--compare-only", "--candidates", "qwen,glm53,deepseek4",
-        "--choose-from", "deepseek4")
+        "--choose-from", "deepseek4", "--ensemble", "")
     report = next((data_copy / "data/calibration").glob("bridge_*.json"))
     res = json.loads(report.read_text())["assay_agreement"]
     # Same numbers as figures/plot_three_way.py for rater 2 vs the published LLM
@@ -391,7 +391,8 @@ def test_bridge_flags_incomplete_runs(data_copy: Path) -> None:
             shutil.copy(REPO / "data/results_v2_full_consensus" / f"{s}.json", work / "candidates" / t)
     env = {**os.environ, "DATA_DIR": str(data_copy / "data"), "WORK_DIR": str(data_copy / "work")}
     r = subprocess.run([sys.executable, str(PIPELINE / "bridge_test.py"), "--compare-only",
-                        "--candidates", "qwen,glm53,gemma4", "--choose-from", "gemma4"],
+                        "--candidates", "qwen,glm53,gemma4", "--choose-from", "gemma4",
+                        "--ensemble", ""],
                        env=env, capture_output=True, text=True)
     assert r.returncode == 1
     assert "::error::Bridge test incomplete: `glm53` scored 5 of 20 papers" in r.stdout

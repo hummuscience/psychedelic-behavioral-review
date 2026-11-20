@@ -45,7 +45,7 @@ from paths import (CANDIDATES_DIR, CONSENSUS_DIR, PDF_DIR,  # noqa: E402
 
 # Candidate models (tags from triple_score.MODELS). The published v2 ensemble
 # was qwen,glm,gptoss; glm-4.7 and gpt-oss-120b are no longer served on SAIA.
-CANDIDATE_MODELS = os.environ.get("SCORING_MODELS", "qwen,glm53,deepseek4")
+CANDIDATE_MODELS = os.environ.get("SCORING_MODELS", "qwen,deepseek4,gemma4")
 MAX_DROPPED_IN_PR = 100
 
 

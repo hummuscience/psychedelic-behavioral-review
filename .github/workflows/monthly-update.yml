@@ -94,7 +94,7 @@ jobs:
           JUDGE_EFFORT: ${{ vars.JUDGE_EFFORT || 'high' }}
           JUDGE_FALLBACK_MODEL: ${{ vars.JUDGE_FALLBACK_MODEL || 'claude-opus-5' }}
           # Candidate models (tags in pipeline/triple_score.py)
-          SCORING_MODELS: ${{ vars.SCORING_MODELS || 'qwen,glm53,deepseek4' }}
+          SCORING_MODELS: ${{ vars.SCORING_MODELS || 'qwen,deepseek4,gemma4' }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           JUDGE_PROVIDER: ${{ vars.JUDGE_PROVIDER || 'foundry' }}
           NCBI_API_KEY: ${{ secrets.NCBI_API_KEY }}
