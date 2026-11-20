@@ -40,6 +40,7 @@ import provenance  # noqa: E402
 import rater_lib as rl  # noqa: E402
 from bridge_test import _fmt, load_items, run_script  # noqa: E402
 from paths import CONSENSUS_DIR, DATA_DIR, WORK_DIR  # noqa: E402
+from triple_score import worth_retrying  # noqa: E402
 
 WORK = WORK_DIR / "rescore"
 INPUTS = WORK / "inputs"
@@ -218,7 +219,7 @@ def main() -> None:
             ran = json.loads(summary.read_text()) if summary.exists() else []
             cov = coverage(ready, trio)
             todo = [t for t in todo if len(cov[t]) < len(ready)
-                    and any(e.get("ok") and e.get("model") == t for e in ran)]
+                    and worth_retrying(ran, t)]
             if not todo:
                 break
         cov = coverage(ready, trio)

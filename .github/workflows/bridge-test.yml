@@ -11,13 +11,13 @@ on:
     inputs:
       candidates:
         description: "Candidate model tags to score with"
-        default: "qwen,glm53,deepseek4,gemma4"
+        default: "qwen,deepseek4,gemma4"
       choose_from:
         description: "Tags to choose the third ensemble model from"
         default: "deepseek4,gemma4"
       ensemble:
-        description: "Optional: judge from these tags instead (e.g. qwen,deepseek4,gemma4)"
-        default: ""
+        description: "Judge from these tags (empty: qwen + glm53 + the best of choose_from)"
+        default: "qwen,deepseek4,gemma4"
 
 permissions:
   contents: write

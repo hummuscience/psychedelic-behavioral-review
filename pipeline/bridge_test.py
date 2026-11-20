@@ -46,6 +46,7 @@ import numpy as np  # noqa: E402
 import rater_lib as rl  # noqa: E402
 import plot_three_way as tw  # noqa: E402
 from paths import CONSENSUS_DIR, DATA_DIR, REGISTRY_JSON, WORK_DIR  # noqa: E402
+from triple_score import worth_retrying  # noqa: E402
 
 BRIDGE = WORK_DIR / "bridge"
 INPUTS = BRIDGE / "inputs"
@@ -286,9 +287,9 @@ def main() -> None:
     load_dotenv(HERE.parent / ".env")
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--candidates", default="qwen,glm53,deepseek4,gemma4")
+    ap.add_argument("--candidates", default="qwen,deepseek4,gemma4")
     ap.add_argument("--choose-from", default="deepseek4,gemma4")
-    ap.add_argument("--ensemble", default="",
+    ap.add_argument("--ensemble", default="qwen,deepseek4,gemma4",
                     help="judge from these candidates instead of qwen + glm53 + the "
                          "chosen third (e.g. when a model is down)")
     ap.add_argument("--judge-provider", default=os.environ.get("JUDGE_PROVIDER", "foundry"))
@@ -321,7 +322,7 @@ def main() -> None:
             ran = json.loads(summary.read_text()) if summary.exists() else []
             cov = coverage(stems, tags)
             todo = [t for t in todo if len(cov[t]) < len(stems)
-                    and any(e.get("ok") and e.get("model") == t for e in ran)]
+                    and worth_retrying(ran, t)]
             if not todo:
                 break
 
