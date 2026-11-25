@@ -713,3 +713,58 @@ def test_off_schema_model_output_is_repaired() -> None:
     # Well-formed output is left alone
     clean = {"assays": [{"behavioural_complexity": {"B1_num_measures": {"score": 1}}}]}
     assert "format_fixes" not in coerce_types(clean)
+
+
+# ── A reply cut off at max_tokens gets one retry with a little sampling ─────
+
+def test_saia_retries_a_truncated_reply(monkeypatch, tmp_path: Path) -> None:
+    from types import SimpleNamespace as NS
+    import provider
+    monkeypatch.setenv("SAIA_API_KEY", "dummy")
+    monkeypatch.setattr(provider, "docling_convert", lambda pdf, key: "paper text")
+    monkeypatch.setattr(provider, "_saia_throttle", lambda: None)
+    replies = [("length", '{"assays": [{"x": 1'), ("stop", '{"assays": []}')]
+    temps = []
+
+    class Completions:
+        def create(self, **kw):
+            temps.append(kw["temperature"])
+            finish, text = replies.pop(0)
+            return NS(choices=[NS(finish_reason=finish, message=NS(content=text))])
+
+    p = provider.SaiaProvider(model="deepseek-v4-flash-0731")
+    p.client = NS(chat=NS(completions=Completions()))
+    assert p.score_pdf(tmp_path / "x.pdf", "prompt") == {"assays": []}
+    assert temps == [0.0, 0.3] and p.last_temperature == 0.3
+
+
+# ── Papers missing a candidate model wait for it; partial verdicts are redone ─
+
+def test_judging_waits_for_a_missing_model(tmp_path: Path, monkeypatch) -> None:
+    import monthly_update as mu
+    cand, cons = tmp_path / "candidates", tmp_path / "consensus"
+    cons.mkdir()
+    monkeypatch.setattr(mu, "CANDIDATES_DIR", cand)
+    monkeypatch.setattr(mu, "CONSENSUS_DIR", cons)
+    models = ["qwen", "deepseek4", "gemma4"]
+
+    def scored_by(stem: str, *tags: str) -> None:
+        for t in tags:
+            (cand / t).mkdir(parents=True, exist_ok=True)
+            (cand / t / f"{stem}.json").write_text("{}")
+
+    reg = {"a": {}, "b": {}}
+    # New paper, DeepSeek failed: wait one run, then judge with the other two
+    scored_by("a", "qwen", "gemma4")
+    assert mu.plan_judging("a", models, reg) == "hold"
+    assert mu.plan_judging("a", models, reg) == "judge"
+    assert reg["a"]["candidate_attempts"] == 2
+    # Earlier verdict without DeepSeek: kept while DeepSeek still fails...
+    scored_by("b", "qwen", "gemma4")
+    (cons / "b.json").write_text(json.dumps({"judge_input_models": ["qwen", "gemma4"]}))
+    assert mu.plan_judging("b", models, reg) == "hold" and (cons / "b.json").exists()
+    # ...and set aside for a new verdict once DeepSeek has scored it
+    scored_by("b", "deepseek4")
+    assert mu.plan_judging("b", models, reg) == "judge"
+    assert not (cons / "b.json").exists() and (cons / "b.json.partial").exists()
+    assert mu.plan_judging("c", models, reg) == "skip"

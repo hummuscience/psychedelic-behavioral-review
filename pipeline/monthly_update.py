@@ -109,7 +109,59 @@ def saia_key_problem(base_url: str | None = None) -> str:
     return ""
 
 
-def score(stems: list[str], judge_provider: str, workers: int) -> None:
+# Runs in which a paper's missing candidate model is tried again before the paper
+# is judged with the models that did score it.
+MAX_CANDIDATE_ATTEMPTS = 2
+
+
+def incomplete_verdicts() -> list[str]:
+    """Monthly papers judged without every candidate model whose missing model
+    hasn't been retried MAX_CANDIDATE_ATTEMPTS times yet."""
+    reg = json.loads(REGISTRY_JSON.read_text())
+    out = []
+    for s, e in reg.items():
+        path = CONSENSUS_DIR / f"{s}.json"
+        if e.get("match_via") != "monthly_update" or not path.exists():
+            continue
+        if ((json.loads(path.read_text()).get("scoring") or {}).get("missing")
+                and e.get("candidate_attempts", 0) < MAX_CANDIDATE_ATTEMPTS):
+            out.append(s)
+    return out
+
+
+def plan_judging(stem: str, models: list[str], reg: dict) -> str:
+    """What to do with a paper after candidate scoring: "judge", "hold" (wait for
+    a missing model; counts the attempt in reg[stem]) or "skip" (nothing to judge).
+    A verdict judged without a model that has now scored it is moved aside
+    (<stem>.json.partial; score() puts it back if judging fails)."""
+    have = [m for m in models if (CANDIDATES_DIR / m / f"{stem}.json").exists()]
+    if not have:
+        log(f"{stem}: no candidate scores, skipping judge")
+        return "skip"
+    verdict = CONSENSUS_DIR / f"{stem}.json"
+    if len(have) < len(models):
+        entry = reg.setdefault(stem, {"stem": stem})
+        entry["candidate_attempts"] = entry.get("candidate_attempts", 0) + 1
+        missing = ", ".join(m for m in models if m not in have)
+        if verdict.exists():
+            log(f"{stem}: still no score from {missing}; keeping the verdict from the others")
+            return "hold"
+        if entry["candidate_attempts"] < MAX_CANDIDATE_ATTEMPTS:
+            log(f"{stem}: no score from {missing} yet; judged next run")
+            return "hold"
+        log(f"{stem}: no score from {missing} after {entry['candidate_attempts']} runs; "
+            f"judging with {', '.join(have)}")
+        return "judge"
+    if verdict.exists():
+        used = json.loads(verdict.read_text()).get("judge_input_models") or []
+        if sorted(used) != sorted(have):
+            log(f"{stem}: {', '.join(m for m in have if m not in used)} now scored it; "
+                "judging again with every model")
+            verdict.replace(verdict.with_name(verdict.name + ".partial"))
+    return "judge"
+
+
+def score(stems: list[str], judge_provider: str, workers: int) -> list[str]:
     """Docling, candidate scoring and judging for `stems` only (resumable).
 
     The scoring scripts process every PDF in the folder they're given, so this
@@ -139,20 +191,33 @@ def score(stems: list[str], judge_provider: str, workers: int) -> None:
     run_script("triple_score.py", "--pdf-dir", str(run_pdfs),
                "--output-root", str(CANDIDATES_DIR), "--models", CANDIDATE_MODELS,
                "--workers", str(workers), "--limit", str(len(stems)))
+    models = [m for m in CANDIDATE_MODELS.split(",") if m]
+    reg = json.loads(REGISTRY_JSON.read_text())
+    held = []  # waiting for a missing model; tried again next run
     for stem in stems:
         if not (run_pdfs / f"{stem}.docling.md").exists():
             log(f"{stem}: no Docling markdown, skipping judge")
             continue
-        if not any((CANDIDATES_DIR / m / f"{stem}.json").exists()
-                   for m in CANDIDATE_MODELS.split(",")):
-            log(f"{stem}: no candidate scores, skipping judge")
+        plan = plan_judging(stem, models, reg)
+        if plan == "hold":
+            held.append(stem)
+            continue
+        if plan == "skip":
             continue
         run_script("judge_consensus.py", "--pdf-dir", str(run_pdfs),
                    "--candidates-root", str(CANDIDATES_DIR),
                    "--output-dir", str(CONSENSUS_DIR),
                    "--judge-provider", judge_provider,
                    "--models", CANDIDATE_MODELS, "--stem", stem, "--resume")
+        verdict, partial = CONSENSUS_DIR / f"{stem}.json", CONSENSUS_DIR / f"{stem}.json.partial"
+        if partial.exists():
+            if verdict.exists():
+                partial.unlink()
+            else:  # judging again failed: keep the earlier verdict
+                partial.replace(verdict)
+    REGISTRY_JSON.write_text(json.dumps(reg, indent=2, ensure_ascii=False))
     shutil.rmtree(run_dir, ignore_errors=True)
+    return held
 
 
 def mark_docling_in_inventory(stems: list[str]) -> None:
@@ -240,7 +305,8 @@ def deferred_preprints() -> list[dict]:
 def write_reports(today: date, search: dict, fetched: dict, scored: list[str],
                   unfinished: list[str], scoring_ran: bool,
                   rechecked: list[dict] | None = None, scoring_problem: str = "",
-                  scoring_failed: list[str] | None = None) -> dict:
+                  scoring_failed: list[str] | None = None,
+                  held: list[str] | None = None) -> dict:
     REPORTS_DIR.mkdir(parents=True, exist_ok=True)
     reg = json.loads(REGISTRY_JSON.read_text())
     with_assays = [s for s in scored
@@ -295,6 +361,10 @@ def write_reports(today: date, search: dict, fetched: dict, scored: list[str],
     lines.append(f"- Papers with a PDF but no consensus yet (retried next run): "
                  f"{len(unfinished)}" + (f" — {', '.join(f'`{s}`' for s in unfinished)}"
                                          if unfinished else ""))
+    if held:
+        lines.append("- A candidate model didn't score these, so they wait for it (tried "
+                     f"again next run, at most {MAX_CANDIDATE_ATTEMPTS} runs): "
+                     + ", ".join(f"`{s}`" for s in held))
     inbox = fetched.get("inbox") or {}
     if inbox.get("matched"):
         lines.append(f"- Inbox files matched to their paper by DOI or title: "
@@ -423,7 +493,10 @@ def main() -> None:
     store.push_stems([f["stem"] for f in fetched["fetched"]])
     store.clear_inbox([f["pmid"] for f in fetched["fetched"] if f["source"] == "inbox"])
 
-    todo = unfinished_stems()[: args.max_papers]
+    # New papers first, then earlier ones judged without every model (retry it).
+    unfinished = unfinished_stems()
+    todo = (unfinished + [s for s in incomplete_verdicts() if s not in unfinished])[: args.max_papers]
+    held: list[str] = []
     scoring_ran = not args.skip_scoring and bool(os.environ.get("SAIA_API_KEY"))
     scoring_problem = ""
     if todo and not scoring_ran:
@@ -438,10 +511,11 @@ def main() -> None:
     if todo and scoring_ran:
         log(f"scoring {len(todo)} paper(s): {', '.join(todo)}")
         store.pull_stems(todo)  # reuse any earlier candidate scores
-        score(todo, args.judge_provider, args.workers)
+        held = score(todo, args.judge_provider, args.workers)
         store.push_stems(todo)
-    scored = [s for s in todo if (CONSENSUS_DIR / f"{s}.json").exists()]
-    scoring_failed = [s for s in todo if scoring_ran and s not in scored]
+    scored = [s for s in todo if (CONSENSUS_DIR / f"{s}.json").exists() and s not in held]
+    scoring_failed = [s for s in todo if scoring_ran and s not in scored and s not in held
+                      and not (CONSENSUS_DIR / f"{s}.json").exists()]
     if scoring_failed:
         log(f"scoring failed for: {', '.join(scoring_failed)}")
         if os.environ.get("GITHUB_ACTIONS"):
@@ -458,7 +532,7 @@ def main() -> None:
     provenance.build()  # data/scoring_provenance.csv: models behind every score
 
     summary = write_reports(today, search, fetched, scored, unfinished_stems(), scoring_ran,
-                            rechecked, scoring_problem, scoring_failed)
+                            rechecked, scoring_problem, scoring_failed, held)
     log(f"done: {len(summary['added_with_assays'])} studies added; "
         f"reports in {REPORTS_DIR}")
     if os.environ.get("GITHUB_OUTPUT"):
