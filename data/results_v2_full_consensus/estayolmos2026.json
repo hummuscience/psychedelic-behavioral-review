@@ -1,0 +1,105 @@
+{
+  "study_id": "Estay-Olmos2026",
+  "doi": "10.3389/fphar.2026.1916522",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "adolescent",
+    "age_min_days": 30,
+    "age_max_days": 50,
+    "evidence": "Male C57BL/6J mice (postnatal days 30-50) were used in this study",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male C57BL/6J mice (postnatal days 30-50) were used in this study and housed in the animal facility of the Neuronal Plasticity Laboratory",
+    "confidence": "high"
+  },
+  "psychedelic": "TCB-2 (applied ex vivo to brain slices; also serotonin, WIN55,212-2, AM251 and other pharmacological tools)",
+  "dosing": [],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "No handling protocol is described in the methods.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "Animals were 'housed in the animal facility of the Neuronal Plasticity Laboratory, Institute of Physiology, Universidad de Valparaíso' — cage density not stated.",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "Animals were maintained under controlled temperature (22 °C ± 2 °C) and humidity (55% ± 5%), on a 12 h light/dark cycle — direction/phase not specified.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "No mention of home-cage enrichment; only food and water ad libitum reported.",
+      "confidence": "low"
+    }
+  },
+  "assays": [],
+  "judge_notes": [
+    "All three candidates returned an empty assay list; this is correct. The paper is entirely an ex vivo whole-cell patch-clamp slice electrophysiology study in the nucleus accumbens core — no behavioural testing was performed in live rodents.",
+    "The 5-HT2A agonist TCB-2 (and 5-HT, WIN55,212-2, AM251, GDPbetaS, U73122, RHC80267) were bath-applied/dialyzed into acute brain slices, not administered to behaving animals. Per rubric, slice physiology is explicitly excluded from scoring.",
+    "Removed the 'dosing' entry proposed by candidate deepseek4 for TCB-2: the rubric defines dosing as compounds administered to animals in behavioural experiments; TCB-2 was applied in vitro at 10 µM to slices, with no in vivo dose. The compound is still named in the top-level 'psychedelic' field with a clarifying note.",
+    "Retained subject-level metadata (species, strain, age PND30-50, male sex, housing conditions) because it is explicitly reported in the Animals section, even though no assays are scored."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0,
+    "environmental_complexity_max": 0,
+    "recording_duration_max": 0,
+    "behavioural_complexity_mean": 0,
+    "environmental_complexity_mean": 0,
+    "recording_duration_mean": 0
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-25T16:27:20+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "claude-opus-5-5",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "8b6edada1b",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 39214,
+    "output_tokens": 997,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0,
+    "fallback_from": {
+      "model": "claude-opus-5-5",
+      "category": null,
+      "explanation": null,
+      "request_id": "msg_011ChPxdeih3JCsMkTn5HSgg",
+      "output_tokens": 949
+    }
+  }
+}

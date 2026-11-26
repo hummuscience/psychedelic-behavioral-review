@@ -1,0 +1,112 @@
+{
+  "study_id": "Veysi2026",
+  "doi": "10.1017/neu.2026.10075",
+  "species": "rat",
+  "strain": "Wistar",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 70,
+    "age_max_days": 84,
+    "evidence": "The animals were 10-12 weeks upon arrival and weighed 450 ± 50 g on the day of the experiment.",
+    "confidence": "medium"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 24,
+    "n_female": null,
+    "evidence": "A total of 24 male Wistar rats obtained from Envigo, Netherlands",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        2.0
+      ],
+      "doses_raw": "psilocybin (2 mg/kg)",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "animals were injected subcutaneously with either saline or psilocybin (2 mg/kg) (LAB Sweden, Stockholm, Sweden) dissolved in 0.9% saline",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "In the subsequent week, the rats were handled for 15 min every other day, with daily handling during the week leading up to their treatment.",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "were group-housed (2 per cage)",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12-12 h light-dark cycle with light on at 07:00 A.M.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported; only 'kept under standard laboratory conditions' is stated, with no mention of enrichment items",
+      "confidence": "low"
+    }
+  },
+  "assays": [],
+  "judge_notes": [
+    "All three candidates agree that the paper has no behavioural assays to score. The study is a transcriptomic (3'-RNA-seq) analysis of five brain regions collected 90 min after a single s.c. dose of psilocybin (2 mg/kg) or saline. No behavioural testing was performed, so the assays array is empty.",
+    "For age, the modal candidate value (70–84 days, i.e. 10–12 weeks upon arrival) was used. Experiments began roughly 2 weeks after arrival, so confidence is medium.",
+    "enrichment_housing is set to not_reported with low confidence. The paper is silent on home-cage enrichment, so this follows deepseek4 rather than the high confidence given by the other candidates.",
+    "day_night_flipped is set to 'no' because the paper explicitly states a standard cycle with lights on at 07:00.",
+    "DOI and study_id are taken from the citation masthead in the paper: doi 10.1017/neu.2026.10075, published 2026."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0,
+    "environmental_complexity_max": 0,
+    "recording_duration_max": 0,
+    "behavioural_complexity_mean": 0,
+    "environmental_complexity_mean": 0,
+    "recording_duration_mean": 0
+  },
+  "low_confidence_count": 1,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-25T16:46:17+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "8b6edada1b",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 50877,
+    "output_tokens": 1115,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

@@ -1,0 +1,538 @@
+{
+  "study_id": "Du2026",
+  "doi": "10.1097/CM9.0000000000004350",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "adult",
+    "age_min_days": 70,
+    "age_max_days": 70,
+    "evidence": "This study used 10-week-old adult male C57BL/6J mice",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 267,
+    "n_female": null,
+    "evidence": "This study used 10-week-old adult male C57BL/6J mice; Experiment 1: 108 mice; Experiment 2: 159 mice",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        2.5
+      ],
+      "doses_raw": "2.5 mg/kg, intraperitoneal",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Ketanserin (5-HT2A/2C antagonist) or MDL100907 (selective 5-HT2A antagonist) was administered 30 min before a single psilocybin (2.5 mg/kg, intraperitoneal) or vehicle injection... The drug was dissolved in normal saline and administered via intraperitoneal injection (0.1 mL/10 g of mouse body weight).",
+      "confidence": "high"
+    },
+    {
+      "compound": "Ketanserin",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "1 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Ketanserin (Target Mol, Shanghai, China, T1066) was dissolved in normal saline and administered via intraperitoneal injection (1 mg/kg) 0.5 h before psilocybin administration.",
+      "confidence": "high"
+    },
+    {
+      "compound": "MDL100907",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "1 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "MDL100907 (Sigma-Aldrich, St. Louis, MO, USA, M3324) was dissolved in normal saline and administered via intraperitoneal injection (1 mg/kg) 0.5 h before psilocybin administration.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "All mice were acclimated to standardized environmental conditions for 2 weeks before the tests (no deliberate handling protocol described).",
+      "confidence": "medium"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "housed in plastic cages with free access to water and food (number of mice per cage not stated)",
+      "confidence": "medium"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "A 12-h light-dark cycle was maintained (lights on 8:00 AM-8:00 PM) ... All behavioral tests were conducted between 9:00 AM and 5:00 PM.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Auditory-cue fear conditioning and extinction (training + testing)",
+      "assay_description": "Mice were fear-conditioned in Context A (5 CS-US pairings, 14.5 min). Two days later, after ketanserin/MDL100907 (1 mg/kg) and psilocybin (2.5 mg/kg) or vehicle, extinction training with 12 CSs was conducted in Context B (30 min post-psilocybin), and extinction testing with 4 CSs in Context B 24 h later. Percentage of freezing time was measured by automatic video recording and analysis software.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "a single psilocybin (2.5 mg/kg, intraperitoneal) or vehicle injection",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No separate pre-test exposure to Context B is described; mice were placed in Context A for 120 s adaptation during the conditioning session itself.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "the mice were placed in Context A for 120 s and allowed to adapt and explore freely",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Mice were housed with free access to water and food; no food was present in the fear-conditioning chamber during testing.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Mice were housed with free access to water and food; no water was present in the fear-conditioning chamber during testing.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 30,
+          "evidence": "extinction training commenced 30 min after the psilocybin injection, and extinction testing was performed 24 h later",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 267,
+        "n_male": 267,
+        "n_female": null,
+        "n_per_group_min": 27,
+        "evidence": "108 C57BL/6J mice were randomly divided into four groups (n = 27 per group) ... 159 C57BL/6J mice were randomly divided into 4 groups (n = 39-40 per group)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin (2.5 mg/kg) significantly reduced the percentage of freezing time during both extinction training (30 min post-dose) and extinction testing (24 h post-dose) in fear-conditioned mice. Pretreatment with ketanserin or MDL100907 increased freezing during training but did not block psilocybin's extinction-facilitating effect at either timepoint.",
+        "statistics": "Exp 1 training: PSI main effect F1,104=19.140, P<0.001; KET main effect F1,104=8.587, P=0.004; PSI×KET F1,104=0.094, P=0.760; Veh-PSI vs Veh-Veh P=0.020; KET-PSI vs KET-Veh P=0.007. Exp 1 testing: PSI F1,104=18.830, P<0.001; KET F1,104=0.357, P=0.550; interaction F1,104=0.016, P=0.900; Veh-PSI vs Veh-Veh P=0.010; KET-PSI vs KET-Veh P=0.020. Exp 2 training: PSI F1,155=18.380, P<0.001; MDL F1,155=44.140, P<0.001; interaction F1,155=2.177, P=0.140. Exp 2 testing: PSI F1,155=19.610, P<0.001; MDL F1,155=0.489, P=0.490; interaction F1,155=0.322, P=0.570; Veh-PSI vs Veh-Veh P=0.040, vs MDL-Veh P=0.003.",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "psilocybin significantly reduced the percentage of freezing time in fear-conditioned mice (PSI main effect: F1, 104 = 19.140, P <0.001; Figure 1B) ... 24 h after a single administration of psilocybin (D 1), during the four CSs in the fear extinction test, psilocybin significantly reduced the percentage of freezing time (PSI main effect: F1,104 = 18.830, P <0.001; Figure 1D)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The percentage of freezing time (a state of no activity other than breathing lasting at least 1 s) was measured",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Percentage of freezing time during fear extinction training on D 0 reported as a single value per group; no within-session CS-by-CS time course reported.",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only conditioned freezing was measured, which the rubric defines as non-ethological.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Single mice placed in the fear-conditioning chamber; no social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Male C57BL/6J mice underwent auditory-cue fear conditioning ... extinction training ... extinction testing",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "measured with an automatic video recording device and analysis software (Beijing Zhongshidichuang Technology Development Co., Ltd.) — commercial freezing-detection/tracking system, not a pose-estimation or ML behavioural classifier",
+          "confidence": "medium"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Data were analyzed by two-way ANOVA and Tukey's post hoc multiple comparisons test",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Context A was a transparent acrylic box and Context B an opaque black-and-white acrylic triangular box, both equipped with shock and sound generators",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Conditioning boxes are plain acrylic chambers; no shelter described.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Chambers equipped with shock grid floors; no bedding described.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Context B an opaque black-and-white acrylic triangular box (single compartment)",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "the mice were placed in Context A ... and allowed to adapt and explore freely (one mouse per chamber)",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water described in the conditioning chamber.",
+          "confidence": "medium"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "extinction training commenced 30 min after the psilocybin injection, and extinction testing was performed 24 h later",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "fear extinction training ... with 12 CSs (a 30 s auditory stimulus with 30 s intertrial interval) (~12 min); conditioning session total 14.5 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Percentage of freezing time during fear extinction training on D 0 ... fear extinction testing on D 1 (plus fear conditioning 2 days earlier)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Freezing data from the pre-drug conditioning session are not reported or used in analysis.",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Fear extinction testing was performed in the extinction training context (Context B) with 4 CSs 24 h after psilocybin treatment",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sessions lasted ~12 min (training) and ~4 min (testing)",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "Locomotor activity assessed in a 40 × 40 × 40 cm open field (floor divided into 16 equal areas); after 2 min acclimation, total distance travelled over 5 min was recorded with Smart v3.0 video tracking. Conducted 2 h after extinction training (D0) and 2 h after extinction testing (D1), in both the ketanserin and MDL100907 experiments.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "psilocybin (2.5 mg/kg) or vehicle was administered intraperitoneally",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "After 2 min of acclimation, the total distance traveled over the next 5 min was recorded (within-session acclimation only; no separate pre-test apparatus exposure described)",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "The mice were placed in the center of the open field box (40 cm × 40 cm × 40 cm ...) and allowed to move freely",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food was present in the open field box during the 5-min recording.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water was present in the open field box during the 5-min recording.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 162,
+          "evidence": "Total distance traveled in the OFT conducted 2 h after extinction training on D 0 (psilocybin given 30 min before ~12 min training; ≈2.7 h post-dose) and 2 h after extinction testing on D 1 (≈26 h post-dose)",
+          "confidence": "medium"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 12,
+        "evidence": "Total distance traveled in the OFT conducted 2 h after extinction training on D 0, n = 12 per group; ... on D 1, n = 14 per group (Exp 1); n = 14-15 per group (Exp 2)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin had no effect on total distance travelled in the open field at either the day-0 (acute) or day-1 (24 h) timepoint. The 5-HT2A antagonists ketanserin and MDL100907 significantly reduced locomotion on day 0 but not on day 1.",
+        "statistics": "Exp 1 D0: PSI F1,44=0.328, P=0.570; KET F1,44=13.260, P<0.001; interaction F1,44=0.576, P=0.450; KET-Veh vs Veh-Veh P=0.020, vs Veh-PSI P=0.020. Exp 1 D1: PSI F1,52=0.982, P=0.330; KET F1,52=0.279, P=0.600; interaction F1,52=2.489, P=0.120. Exp 2 D0: PSI F1,44=1.019, P=0.320; MDL F1,44=9.844, P=0.003; interaction F1,44=1.523, P=0.220; MDL-Veh vs Veh-Veh P=0.020, vs Veh-PSI P=0.030. Exp 2 D1: PSI F1,55=3.045, P=0.090; MDL F1,55=1.524, P=0.220.",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "psilocybin had no effect on the total distance traveled (PSI main effect: F1, 44 = 0.328, P = 0.570) ... 24 h after administration, psilocybin (PSI main effect: F1, 52 = 0.982, P = 0.330) and ketanserin ... had no effect on the total distance traveled by the mice",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "the total distance traveled over the next 5 min was recorded and analyzed",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only total distance over the 5-min session is reported; no within-session binning.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only locomotor distance was measured, which the rubric classifies as non-ethological.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "The mice were placed in the center of the open field box ... and allowed to move freely (tested alone).",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "An OFT chamber was used to assess locomotor activity",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "recorded and analyzed using an intelligent video tracking system (Smart version 3.0; Panlab, Barcelona, Spain) — position tracking only",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Data were analyzed by two-way ANOVA and Tukey's post hoc multiple comparisons test",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "open field box (40 cm × 40 cm × 40 cm; floor divided into 16 equal areas)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open field box with no enclosed refuge described.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described in the open field box.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "open field box (40 cm × 40 cm × 40 cm; floor divided into 16 equal areas) — virtual zones only",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "The mice were placed in the center of the open field box and allowed to move freely (single animal).",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the open field apparatus.",
+          "confidence": "medium"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "to assess locomotor activity on days 0 and 1 after drug administration",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "After 2 min of acclimation, the total distance traveled over the next 5 min was recorded",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "OFT conducted 2 h after extinction training on D 0 and 2 h after extinction testing on D 1",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug open field recording reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "we conducted an OFT on 14-15 randomly selected mice per group 2 h after the fear extinction test (i.e. ~26 h after psilocybin)",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5-min recording sessions",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    }
+  ],
+  "judge_notes": [
+    "Two behavioural assays retained: (1) auditory-cue fear conditioning/extinction (training + testing collapsed into one assay per rubric: different phases of the same learning paradigm, and ketanserin vs MDL100907 experiments are the same paradigm under different antagonists), and (2) open field locomotor test (D0 and D1 sessions, both experiments, collapsed into one assay).",
+    "Western blot, ELISA, and DCX immunofluorescence were excluded as ex vivo/histological endpoints per rubric.",
+    "D5_followup set to 1 (Yes) for BOTH assays, overriding gemma4: extinction testing occurred 24 h after psilocybin, and the D1 OFT occurred ~26 h after psilocybin.",
+    "OFT setup_habituation set to 'not_reported' (overriding qwen/gemma 'no'): the 2-min within-session acclimation is not a separate habituation session, and the paper never explicitly states that no habituation was performed.",
+    "time_to_assay for OFT recorded as 'multiple' with value_minutes ≈162 (D0: 30 min pre-training dose + ~12 min training + 2 h = ~2.7 h; D1: ~26 h).",
+    "Added ketanserin and MDL100907 to the dosing list as co-administered compounds (non-psychedelic antagonists) for completeness.",
+    "Age scored as 'adult' following the paper's own wording ('10-week-old adult male C57BL/6J mice')."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 4.09,
+    "behavioural_complexity_mean": 0.62,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 4.09
+  },
+  "low_confidence_count": 1,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-26T15:50:47+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "claude-opus-5-5",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "81e220f016",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 62116,
+    "output_tokens": 9558,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0,
+    "fallback_from": {
+      "model": "claude-opus-5-5",
+      "category": null,
+      "explanation": null,
+      "request_id": "msg_011ChRoZRTaQHqjuJAG27MJn",
+      "output_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "study_id": "Dwiel2026",
+  "doi": "10.1016/j.brs.2026.103130",
+  "species": "rat",
+  "strain": "Sprague-Dawley",
+  "age": {
+    "value": "mixed",
+    "age_min_days": 116,
+    "age_max_days": 496,
+    "evidence": "116-496 days old at the time of the experiment",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": 21,
+    "n_female": 17,
+    "evidence": "N = 38; 17 female, 21 male",
+    "confidence": "high"
+  },
+  "psychedelic": "LSD",
+  "dosing": [
+    {
+      "compound": "LSD",
+      "doses_mg_per_kg": [
+        0.2
+      ],
+      "doses_raw": "0.2 mg/kg LSD",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "We delivered 0.2 mg/kg LSD (Sigma Aldrich) or the equivalent volume sterile saline (SAL) via an intraperitoneal injection.",
+      "confidence": "medium"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [],
+  "judge_notes": [
+    "Two of three candidates (qwen, deepseek4) scored no behavioural assays. The consolidated output follows them.",
+    "Dropped gemma4's 'Locomotor Velocity' entry as a misclassification. The primary outcome of the study is LFP neural activity, which the rubric excludes. Velocity was derived with DeepLabCut from video recorded alongside the LFPs. It was used only as a control to show that movement could not explain classifier performance ('to determine whether velocity changes alone could explain model performance'). Its result appears only in supplementary material, as a pre- vs post-stimulation comparison. It is not a distinct behavioural paradigm with behaviour as the primary outcome.",
+    "The immunohistochemistry (pS6/mTOR, WFA/PNN) is ex vivo work and is excluded by the rubric.",
+    "Vehicle is set to saline (modal across candidates): the control was 'equivalent volume sterile saline'. The LSD vehicle is not explicitly stated, so confidence is medium.",
+    "Age is set to 'mixed' (modal across candidates). The 116-496 day range spans young adult through middle-aged rats.",
+    "Schedule is acute: each rat received a single LSD injection. In cohorts 1 and 2, saline was given first and LSD at least one week later."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0,
+    "environmental_complexity_max": 0,
+    "recording_duration_max": 0,
+    "behavioural_complexity_mean": 0,
+    "environmental_complexity_mean": 0,
+    "recording_duration_mean": 0
+  },
+  "low_confidence_count": 4,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-26T15:52:07+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "81e220f016",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 57395,
+    "output_tokens": 1524,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

@@ -1,0 +1,323 @@
+{
+  "study_id": "Ibi2026",
+  "doi": null,
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "adolescent",
+    "age_min_days": 28,
+    "age_max_days": 42,
+    "evidence": "Male C57BL/6J mice (4-6 weeks old; Japan SLC, Shizuoka, Japan)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male C57BL/6J mice (4-6 weeks old; Japan SLC, Shizuoka, Japan) and male ICR mice (8-20 weeks old; Japan SLC) were used in the present study.",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocin",
+  "dosing": [
+    {
+      "compound": "Psilocin",
+      "doses_mg_per_kg": [
+        1.5
+      ],
+      "doses_raw": "psilocin at 1.5 mg/kg",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Mice were intraperitoneally administered psilocin at 1.5 mg/kg 1 day before the onset of social defeat stress or immediately after the last stress exposure.",
+      "confidence": "high"
+    },
+    {
+      "compound": "Volinanserin",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "Volinanserin (Voli: 1.0 mg/kg)",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Volinanserin (Voli: 1.0 mg/kg) was administered intraperitoneally 30 min before psilocin administration.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "Only aggressor ICR mice housing stated: 'Male ICR mice (8 weeks old) were individually housed in plastic cages'; housing of experimental C57BL/6J mice not stated.",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "under a 12-h light/dark cycle (lights on from 07:00 to 19:00)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Social Interaction Test",
+      "assay_description": "Cubic open-field arena (45 × 45 × 45 cm) with a transparent plastic cage against one wall. 30-min no-target session followed 1 min later by a 10-min target session with a novel ICR mouse inside the cage. Time in interaction and corner zones (EthoVision XT), SI ratio and corner zone ratio. Psilocin (1.5 mg/kg i.p.) given 1 day before CSDS onset or immediately after CSDS completion; volinanserin (1.0 mg/kg i.p.) 30 min before psilocin in the post-CSDS experiment.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Mice were intraperitoneally administered psilocin at 1.5 mg/kg",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No separate apparatus habituation described; the 30-min no-target session was recorded and analyzed.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "the C57BL/6J mouse was allowed to explore freely in the arena for 10 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Test performed in an open-field arena; no food described in the apparatus during recording.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Test performed in an open-field arena; no water described in the apparatus during recording.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 1440,
+          "evidence": "Psilocin administered 'immediately after the last stress exposure' (test ~24 h later) or '1 day before the onset of social defeat stress' (test ~11 days later); 'A social interaction test was conducted 1 day after the last stress exposure'.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 86,
+        "n_male": 86,
+        "n_female": null,
+        "n_per_group_min": 9,
+        "evidence": "Figure 2: 'Values indicate the mean ± SEM (n = 9-13)', F(2,32) → 35 mice; Figure 3: '(n = 11-15)', F(3,47) → 51 mice",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "CSDS reduced interaction-zone time and SI ratio and increased corner-zone time/ratio. Psilocin (1.5 mg/kg) given before CSDS onset had no significant preventive effect, whereas psilocin given immediately after CSDS significantly improved the SI ratio, an effect blocked by the 5-HT2A antagonist volinanserin. Corner-zone measures were not significantly reversed by psilocin.",
+        "statistics": "Fig 2B target: F(2,32)=10.24, p=0.0004; Fig 2C SI ratio: F(2,32)=17.58, p<0.0001, CSDS vs CSDS+Psilocin p=0.1666; Fig 2D target: F(2,32)=10.24, p=0.0004, CSDS vs CSDS+Psilocin p=0.0239; Fig 2E: F(2,32)=4.156, p=0.025; Fig 3B target: F(3,47)=19.09, p<0.0001; Fig 3C SI ratio: F(3,47)=31.66, p<0.0001, CSDS vs CSDS+Psilocin p=0.0082, CSDS+Psilocin vs +Volinanserin p=0.0003; Fig 3D target: F(3,47)=27.83, p<0.0001; Fig 3E: F(3,47)=4.790, p=0.0054 (Bonferroni)",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "The CSDS-induced decrease in the SI ratio was improved by psilocin administration; however, this psilocin effect was absent by volinanserin administration (Figure 3C: F (3,47) = 31.66, p < 0.0001).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "the time spent in the interaction and corner zones was recorded and analyzed... A social interaction (SI) ratio and corner zone ratio were then calculated",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Zone times summed per session; no within-session time-course analysis reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition or bout analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "time spent in the interaction and corner zones was recorded (zone occupancy is a spatial measure)",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 2,
+          "value": "Restricted interaction",
+          "evidence": "a novel ICR mouse... was placed inside the transparent cage, and the C57BL/6J mouse was allowed to explore freely in the arena for 10 min",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate social approach/avoidance; no learning requirement during test.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "recorded and analyzed using EthoVision XT (Noldus, Wageningen, the Netherlands)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Data were analyzed using one-way ANOVA, followed by Bonferroni's post hoc test",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "The social interaction test was performed in a cubic open-field arena (45 × 45 × 45 cm; Science Shokai, Nagoya, Japan).",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only a transparent stimulus cage in the arena; no shelter for the subject.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects described; transparent cage is the stimulus enclosure.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "cubic open-field arena with virtually defined interaction and corner zones",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 1,
+          "value": "Stimulus behind barrier",
+          "evidence": "a novel ICR mouse... was placed inside the transparent cage",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water described in the arena.",
+          "confidence": "medium"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "placed in the arena for 30 min in the absence of a target mouse (No-target session)... One minute later... for 10 min (Target session). During both sessions, the time spent... was recorded and analyzed",
+          "confidence": "medium"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "placed in the arena for 30 min in the absence of a target mouse",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The social interaction test was conducted 1 day after the final CSDS session.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Psilocin given before or immediately after CSDS; no behavioural recording before drug administration.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "psilocin administered immediately after CSDS completion (or 1 day before CSDS onset); test conducted 1 day after the final CSDS session",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sessions of 30 min and 10 min.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    }
+  ],
+  "judge_notes": [
+    "All candidates identified a single Social Interaction Test; pre-CSDS and post-CSDS (± volinanserin) experiments collapsed into one assay.",
+    "B1 set to score 2 (4 measures) — gemma's score of 3 inconsistent with its own '4-6' value.",
+    "B4 set to 0 per rubric (zone occupancy is spatial, not ethological), overriding gemma.",
+    "D4 set to 0 (no pre-drug recording; no-target session occurs after drug) and D5 set to 1 (test ≥24 h post-dose) per modal qwen/deepseek.",
+    "Age set to adolescent (4-6 weeks) — candidates split three ways.",
+    "n_total derived from ANOVA df: F(2,32)→35 and F(3,47)→51, total 86; medium confidence.",
+    "Volinanserin included in dosing as an administered compound (antagonist), following deepseek."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 5.0,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 4.09,
+    "behavioural_complexity_mean": 5.0,
+    "environmental_complexity_mean": 1.36,
+    "recording_duration_mean": 4.09
+  },
+  "low_confidence_count": 6,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-25T16:52:13+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "8b6edada1b",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 42248,
+    "output_tokens": 4826,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

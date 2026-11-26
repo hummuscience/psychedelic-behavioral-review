@@ -1,0 +1,309 @@
+{
+  "study_id": "Masukawa2026",
+  "doi": "10.1016/j.jphs.2026.04.002",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 42,
+    "age_max_days": 84,
+    "evidence": "GPR143 KO mice generated in C57BL/6J genetic background, and wild-type (WT) littermates (6-12 weeks old, 20-25 g) were used.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "not_reported",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "GPR143 KO mice generated in C57BL/6J genetic background, and wild-type (WT) littermates (6-12 weeks old, 20-25 g) were used. (No sex stated.)",
+    "confidence": "low"
+  },
+  "psychedelic": "DOI",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "DOI (1 mg/kg) or saline; DOI (1.0 mg/kg, i.p.)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "The traveled distance (cm) was calculated every 5 min, from 60 min before to 120 min after intraperitoneal (i.p.) administration of DOI (1 mg/kg) or saline.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Locomotor Activity Test",
+      "assay_description": "Locomotor activity measured in a 50 × 50 × 40 cm chamber; traveled distance calculated in 5-min bins from 60 min before to 120 min after i.p. DOI (1 mg/kg) or saline in GPR143 KO and WT littermate mice (time course and total reported).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "intraperitoneal (i.p.) administration of DOI (1 mg/kg) or saline",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No separate apparatus habituation described; the 60-min pre-injection period was part of the recorded session.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Locomotor activity was measured in a chamber (50 × 50 × 40 cm3) — freely moving apparatus.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Locomotor activity was measured in a chamber (50 × 50 × 40 cm3); no food in apparatus described.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Locomotor activity was measured in a chamber (50 × 50 × 40 cm3); no water in apparatus described.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "from 60 min before to 120 min after intraperitoneal (i.p.) administration of DOI (1 mg/kg) or saline",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 30,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 7,
+        "evidence": "Fig. 1: \"in GPR143 KO and WT mice (n = 7-8)\"; F(1, 26) error df consistent with 30 animals across 4 groups.",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "DOI (1 mg/kg, i.p.) increased locomotor activity (traveled distance) in both WT and GPR143 KO mice; the hyperlocomotor effect was significantly augmented in GPR143 KO mice compared with WT littermates.",
+        "statistics": "genotype: F(1, 26) = 5.43, P = 0.028; drug: F(1, 26) = 3976, P < 0.001; genotype × time: F(1, 26) = 4.76, P = 0.038 (two-way ANOVA)",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "DOI increased the locomotor activity in both genotypes (Fig. 1A and B). The effect of DOI was augmented in GPR143 KO compared to WT mice (genotype: F(1, 26) = 5.43, P = 0.028; drug: F(1, 26) = 3976, P < 0.001; genotype × time: F(1, 26) = 4.76, P = 0.038; Fig. 1B).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The traveled distance (cm) was calculated every 5 min (time course and total of the same variable).",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The traveled distance (cm) was calculated every 5 min, from 60 min before to 120 min after ... administration; time course shown in Fig. 1A.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only traveled distance measured; no transitions or sequences analysed.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only locomotor distance measured.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Locomotor activity in a chamber; no social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor activity is not a learned/cognitive task.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No behavioural classification software described; traveled distance only.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Data analyzed using two-way ANOVA; no multivariate analysis.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Locomotor activity was measured in a chamber (50 × 50 × 40 cm3)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "chamber (50 × 50 × 40 cm3)",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "No conspecific described in the locomotor chamber during recording.",
+          "confidence": "medium"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "from 60 min before to 120 min after administration — one continuous recording session",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "from 60 min before to 120 min after administration (180 min total)",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single 180-min session; no repeated test days described.",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "traveled distance was calculated every 5 min, from 60 min before ... administration",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recording ended 120 min after DOI; no ≥24 h follow-up.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session duration 180 min < 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    }
+  ],
+  "judge_notes": [
+    "All three candidates identified a single behavioural assay (locomotor activity); c-Fos IHC, microdialysis and CHO-cell immunoblot/co-IP are non-behavioural and excluded.",
+    "B1 set to 0 (modal; qwen and deepseek4): traveled distance time-course and total are the same single measure. gemma4's score of 1 was inconsistent with its own value '1'; behavioural raw_total = 1.",
+    "n_total set to 30 based on n = 7-8 across 4 groups and error df F(1,26) (= N − 4); confidence medium.",
+    "time_dependent set to n/a since time_to_assay is a single timepoint; the reported 'genotype × time' term appears to refer to the interaction in Fig. 1B.",
+    "Sex not stated in paper; strain alone does not imply sex."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 4.09,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 4.09
+  },
+  "low_confidence_count": 10,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-26T16:11:06+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "81e220f016",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 37727,
+    "output_tokens": 3775,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

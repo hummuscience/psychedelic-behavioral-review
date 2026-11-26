@@ -1,0 +1,926 @@
+{
+  "study_id": "King2026",
+  "doi": "10.1038/s41398-026-04174-4",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Adult male and female C57BL/6J mice (Jackson Laboratory, Strain #: 000664) were used.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Adult male and female C57BL/6J mice ... were used. ... both sexes were included in approximately equal numbers unless otherwise noted.",
+    "confidence": "high"
+  },
+  "psychedelic": "LSD, Lisuride",
+  "dosing": [
+    {
+      "compound": "Lisuride",
+      "doses_mg_per_kg": [
+        0.5
+      ],
+      "doses_raw": "0.5 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Lisuride maleate (Tocris) was used at 0.5 mg/kg ... All drugs were delivered intraperitoneally (i.p.) in sterile saline (0.9%).",
+      "confidence": "high"
+    },
+    {
+      "compound": "LSD",
+      "doses_mg_per_kg": [
+        0.1
+      ],
+      "doses_raw": "0.1 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "LSD (NIDA Drug Supply Program) was used at 0.1 mg/kg, corresponding to peak HTR response ... All drugs were delivered intraperitoneally (i.p.) in sterile saline (0.9%).",
+      "confidence": "high"
+    },
+    {
+      "compound": "MDL 100907",
+      "doses_mg_per_kg": [
+        0.5
+      ],
+      "doses_raw": "0.5 mg/kg MDL 100907",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "For 5HT2AR block, 0.5 mg/kg MDL 100907 (MDL, Tocris) was injected 15 minutes before lisuride or LSD; control animals received two saline injections 15 min apart.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "Behavioral and physiological assays were performed during the light phase.",
+      "confidence": "medium"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head Twitch Response",
+      "assay_description": "HTRs recorded with high-speed video (Basler ACE2) for 30 min immediately after i.p. injection of saline, lisuride (0.5 mg/kg), LSD (0.1 mg/kg) or MDL 100907 + LSD; counts scored post hoc in 5-min bins by a blinded observer.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs were delivered intraperitoneally (i.p.) in sterile saline (0.9%).",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "recorded HTRs using high-speed video (Basler ACE2) for 30 min immediately following drug injection; no restraint described",
+          "confidence": "medium"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food described in recording apparatus during the 30-min HTR recording",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water described in recording apparatus during the 30-min HTR recording",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "recorded HTRs using high-speed video (Basler ACE2) for 30 min immediately following drug injection.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 24,
+        "n_male": 12,
+        "n_female": 12,
+        "n_per_group_min": 3,
+        "evidence": "n = 3 for all drug conditions for each sex",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "LSD (0.1 mg/kg) evoked a robust HTR in both sexes, peaking ~10 min after injection; lisuride (0.5 mg/kg) did not elicit HTRs. MDL 100907 pretreatment prevented LSD-induced HTRs. No sex differences.",
+        "statistics": "2-way RM ANOVA: time F(6,72) = 36.54, p < 0.001, ηp2 = 0.75; time*drug F(6,72) = 36.18, p < 0.001, ηp2 = 0.86; time*sex F(6,48) = 1.24, p = 0.31; time*sex*drug F(6,48) = 1.27, p = 0.31.",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "no",
+        "time_dependent": "n/a",
+        "evidence": "LSD evoked a robust HTR, with peak HTRs occurring 10 minutes after LSD administration, but lisuride did not ... Post-hoc analyses showed that significant increases in head twitch frequency were elicited by LSD in both sexes, but not by saline or LSD+MDL.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Counts were scored post hoc in 5-min bins by a blinded observer (single measure: HTR count)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Data is presented in 5-minute bins ... A 2-way repeated measures ANOVA revealed a main effect of time",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is excluded as an ethological behaviour by rubric definition",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "HTR does not target social behaviour",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is a drug-induced reflexive response; no learning required",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Counts were scored post hoc in 5-min bins by a blinded observer",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "not reported (recording chamber not described)",
+          "confidence": "low"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "not reported; individual recording implied",
+          "confidence": "low"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "recorded HTRs ... for 30 min immediately following drug injection",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "for 30 min immediately following drug injection",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "single 30-min post-injection recording",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recording only in the 30 min after injection",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30 min recording",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "Locomotor activity in a 44 × 44 × 25 cm arena tracked with EthoVision XT. Mice injected with saline or MDL 100907, explored 30 min, then injected again (saline, lisuride, LSD) and monitored for another 30 min; total distance traveled reported.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs were delivered intraperitoneally (i.p.) in sterile saline (0.9%).",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Mice were injected with saline or antagonist, allowed to explore for 30 min, then injected again ... and monitored for another 30 min.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "allowed to explore ... open field arena (free-moving apparatus)",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food described in the open field arena",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water described in the open field arena",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "then injected again (saline, lisuride, LSD, or antagonist) and monitored for another 30 min",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 132,
+        "n_male": 65,
+        "n_female": 67,
+        "n_per_group_min": 8,
+        "evidence": "lisuride (n = 8 females, 8 males); saline (n = 9 females, 8 males); LSD (n = 13 females, 13 males); MDL+lisuride (n = 12 females, 11 males); MDL+LSD (n = 13 females, 13 males); MDL+saline (n = 12 for both females and males)",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "Lisuride (0.5 mg/kg) decreased total distance traveled (~80%) vs saline in both sexes; LSD (0.1 mg/kg) had no effect. MDL pretreatment did not block lisuride hypolocomotion, and MDL+LSD also reduced locomotion vs saline or LSD alone.",
+        "statistics": "Two-way ANOVA: sex F(1,141) = 4.37, p = 0.04, ηp2 = 0.03; drug F(5,141) = 49.83, p < 0.001, ηp2 = 0.64; lisuride vs saline p < 0.001; LSD vs saline p = 1; MDL+lisuride vs saline p < 0.001; MDL+LSD vs saline/LSD p < 0.001.",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "no",
+        "time_dependent": "n/a",
+        "evidence": "Lisuride significantly decreased distance traveled (n = 8 females, 8 males) compared to saline (n = 9 females, 8 males, p <0.001), as reported previously, whereas LSD had no effect (n = 13 females, 13 males, p = 1).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Total distance traveled (m) over 30 min is shown",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total distance traveled (m) over 30 min (single total)",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "locomotor distance only",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "OFT locomotion does not target social behaviour",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor activity assay",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Behavioral data was collected using EthoVision XT software (position tracking)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Locomotor activity was assessed in a 44 × 44 × 25 cm arena.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "open field arena; no shelter described",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "44 × 44 × 25 cm arena",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "not reported; individual testing implied",
+          "confidence": "low"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "monitored for another 30 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "monitored for another 30 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "single test day",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "First 30-min exploration followed saline/antagonist injection and its data were not reported; only post-drug total distance shown",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Acute testing only",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30 min recording",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Rotarod",
+      "assay_description": "Accelerating rotarod (3.5 cm diameter, 4–27 rpm over 180 s); after injections (saline/MDL then saline, lisuride or LSD) mice were placed on the rod at various time intervals and latency to fall recorded (max 240 s).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs were delivered intraperitoneally (i.p.) in sterile saline (0.9%).",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "mice were placed on the rod ... latency to fall was recorded",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food on rotarod apparatus",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water on rotarod apparatus",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": null,
+          "evidence": "After injections, mice were placed on the rod at various time intervals and latency to fall was recorded (specific intervals not stated in text)",
+          "confidence": "medium"
+        }
+      },
+      "sample_size": {
+        "n_total": 59,
+        "n_male": 29,
+        "n_female": 30,
+        "n_per_group_min": 4,
+        "evidence": "All conditions and sexes had five animals, except for MDL+LSD which had only four males.",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "Lisuride (0.5 mg/kg) significantly impaired rotarod performance (reduced latency to fall) in both sexes; LSD (0.1 mg/kg) had no effect. MDL did not block lisuride's impairment (MDL+lisuride even worse than lisuride), and MDL+LSD did not differ from saline.",
+        "statistics": "Two-way RM ANOVA: time F(4,142) = 3.68, p = 0.007; time*sex F(4,128) = 3.23, p = 0.023; time*drug F(20,128) = 4.26, p < 0.001, ηp2 = 0.316; time*sex*drug F(12,128) = 1.77, p = 0.043; lisuride vs saline p < 0.001; LSD vs saline p = 1; MDL+lisuride vs lisuride p = 0.047; MDL+LSD vs saline p = 0.66.",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "no",
+        "time_dependent": "yes",
+        "evidence": "Lisuride significantly impaired the ability of both females and males to stay on the rod, compared to animals who were injected with saline (p < 0.001). Conversely, LSD had no effect on either sex (p = 1).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "latency to fall was recorded (max 240 sec)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Latency measured in separate trials 'at various time intervals' after injection (between-trial comparison, not within-session dynamics)",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Motor coordination task (latency to fall)",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "rotarod does not target social behaviour",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Motor coordination was measured on a rotating rod",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "latency to fall recorded; no behavioural classifier",
+          "confidence": "medium"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "rotating rod (3.5 cm diameter)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent on rotarod",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent on rotarod",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent on rotarod",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent on rotarod",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "rotating rod",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "not reported; individual testing implied",
+          "confidence": "low"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent on rotarod",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "mice were placed on the rod at various time intervals",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "latency to fall was recorded (max 240 sec)",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "After injections, mice were placed on the rod at various time intervals (same day as injection)",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Acute post-injection testing only",
+          "confidence": "medium"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "max 240 sec per trial",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Puzzle Box",
+      "assay_description": "Two-chamber puzzle box (brightly lit chamber, preferred dark chamber connected by door/tunnel progressively obstructed). Nine trials over 3 days (3/day, 20 min apart); training trials 1-6 on days 1-2; on day 3 saline/MDL then saline, lisuride (trial 7 at 60 min) or LSD (trial 7 at 15 min) before trials 7-9. Latency to enter dark chamber; derived overnight recall (6→7), problem solving (7→8), short-term recall (8→9).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs were delivered intraperitoneally (i.p.) in sterile saline (0.9%).",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Mice were trained over two days (trials 1-6) — these are data-collecting training trials, not a separate no-data apparatus habituation",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice moved from a brightly lit chamber to a preferred dark chamber",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food described in the puzzle box",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water described in the puzzle box",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 15,
+          "evidence": "Based on locomotion data, lisuride groups began trial 7 one-hour post-injection; LSD groups began 15 min after.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 5,
+        "evidence": "lisuride (n = 12 females, 11 males); saline (n = 10 females, 9 males); LSD (n = 8 females, 11 males); MDL followed by LSD (n = 7 females, 7 males); MDL alone (n = 5 females, 5 males); MDL+lisuride n not stated",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "Lisuride (0.5 mg/kg) significantly worsened puzzle box performance (longer latencies) and impaired overnight recall and problem solving; LSD (0.1 mg/kg) had no overall effect and produced a small improvement in short-term recall. MDL did not block lisuride's impairment, while MDL+LSD impaired performance vs saline and LSD alone.",
+        "statistics": "Two-way RM ANOVA: trial F(3,261) = 81.24, p < 0.001, ηp2 = 0.48; trial*drug F(15,261) = 6.6, p < 0.001, ηp2 = 0.28; trial*sex F(3,261) = 1.4, p = 0.24; lisuride vs saline p < 0.001; LSD vs saline p = 1; MDL+LSD vs saline p < 0.001, vs LSD p = 0.002. Overnight recall: lisuride vs saline p = 0.012, vs LSD p < 0.001. Problem solving: lisuride vs saline p < 0.001, LSD p = 0.074. Short-term recall: lisuride p = 0.14, LSD p = 0.044.",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "no",
+        "time_dependent": "n/a",
+        "evidence": "Contrary to our prediction, lisuride (n = 12 females, 11 males) significantly worsened puzzle box performance compared to saline (n = 10 females, 9 males; p < 0.001), whereas LSD had no significant effect (n = 8 females, 11 males; p = 1).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "Latency to enter the dark chamber; overnight recall (trials 6-7), problem solving (7-8), short-term recall (8-9) reported separately",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Comparisons are across discrete trials, not within a single session",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Outcome is escape latency, not scored natural behaviours",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "puzzle box does not involve social behaviour",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Identical trials separated by 20 min or 24 h assessed short- and long-term memory, while shifts in barrier configuration assessed problem solving.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Behavioral data was collected using EthoVision XT software (position tracking)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Cognition was tested in a two-chamber puzzle box",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Mice moved from a brightly lit chamber to a preferred dark chamber",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported; door/tunnel/barriers are task elements, not enrichment",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "brightly lit and dark chambers of the arena, with the tunnel and door connecting them",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "not reported; individual testing implied",
+          "confidence": "low"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "There are 3 trials each day, separated by 20 min.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Animals that did not complete trials 1-6 within 180 seconds were excluded; individual trials last minutes",
+          "confidence": "medium"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Mice were trained over two days (trials 1-6). Drugs were administered on day 3 before trial 7",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Two-way repeated measures ANOVA were performed with data from both sexes and trials 6-9 ... time differences between trials 6 and 7 to quantify drug effects on overnight recall",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "All post-drug trials (7-9) on day 3 within ~2 h of injection",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "short trials",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    }
+  ],
+  "judge_notes": [
+    "Four behavioural assays retained (HTR, Open Field, Rotarod, Puzzle Box); plasma corticosterone (HPA axis) and PFC EEG excluded as physiological/neural endpoints per rubric — all candidates agreed.",
+    "B1 for HTR, OFT and Rotarod set to 0 (single measure); gemma's score of 1 for a single measure was inconsistent with the rubric point mapping. Puzzle box B1 = 2 (4 measures: latency + three derived recall/problem-solving scores); gemma's score of 4 corrected to 2.",
+    "Rotarod B2 overridden to 0: latency was measured in separate trials at intervals after injection (scored as multiple discrete sessions in D1 by all candidates), which is between-trial, not within-session dynamics.",
+    "HTR D2 set to 1 (30 min falls in 15–60 min); gemma's <15 min was an error.",
+    "OFT D4 set to 0: the pre-psychedelic 30-min exploration followed saline/MDL injection and its data were not reported. OFT setup_habituation = yes (modal), based on the 30-min apparatus exposure before the second injection.",
+    "Puzzle box setup_habituation set to not_reported: trials 1-6 are data-collecting training trials (trial 6 used in analysis), not a no-data habituation per rubric.",
+    "Puzzle box time_to_assay set to acute_0to2h (15 min LSD, 60 min lisuride, all within 2 h) rather than 'multiple', since the rubric reserves 'multiple' for the same assay at distinct timepoints such as 30 min vs 24 h.",
+    "Rotarod n reconstructed as 6 drug conditions (including MDL+saline, n = 5/sex) × 2 sexes × 5 minus one MDL+LSD male = 59; OFT n summed from text (132) including MDL+saline.",
+    "LSD 1 mg/kg excluded from dosing because it was used only in the EEG experiment; MDL 100907 (0.5 mg/kg i.p.) added as a dosing entry since it was administered in the behavioural experiments.",
+    "day_night_flipped = no (modal), based on explicit statement that testing occurred during the light phase."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 2.73,
+    "recording_duration_max": 4.09,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 0.68,
+    "recording_duration_mean": 2.04
+  },
+  "low_confidence_count": 34,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-25T16:34:39+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "8b6edada1b",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 74597,
+    "output_tokens": 13803,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

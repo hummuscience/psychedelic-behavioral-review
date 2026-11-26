@@ -1,0 +1,915 @@
+{
+  "study_id": "Qiao2026",
+  "doi": "10.1016/j.pnpbp.2026.111698",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "not_reported",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Male C57BL/6 J mice (18-20 g) — only body weight is given, not age",
+    "confidence": "low"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male C57BL/6 J mice (18-20 g)",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        1.0,
+        2.5,
+        5.0
+      ],
+      "doses_raw": "CRS + psilocybin (1, 2.5, 5 mg/kg); psilocybin (2.5 mg/kg, ip) in AAV experiment",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Psilocybin, psilocin, and ketamine were dissolved in 0.9% sterile saline solution before use. Psilocybin and ketamine were administered intraperitoneally (ip) in a volume of 10 ml/kg. ... Effects of single injection of psilocybin (1, 2.5, 5 mg/kg, ip)",
+      "confidence": "high"
+    },
+    {
+      "compound": "Ketamine",
+      "doses_mg_per_kg": [
+        10.0
+      ],
+      "doses_raw": "CRS + ketamine (10 mg/kg)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Effects of single injection of psilocybin (1, 2.5, 5 mg/kg, ip) and ketamine (10 mg/kg, ip)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "The male C57 mice were housed in groups of 5 per cage under a 12 h light/dark cycle (note: mice were housed individually for the SPT)",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "under a 12 h light/dark cycle at a temperature of 22 ± 2 °C — direction of cycle not stated",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "40 × 40 × 40 cm open field with 16 floor squares; 5 min video recording analysed by SMART software. CRS experiment: total distance 12 h after psilocybin (1, 2.5, 5 mg/kg) or ketamine. AAV astrocyte-depletion experiment: total distance and central-area duration 24 h after psilocybin 2.5 mg/kg.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Psilocybin and ketamine were administered intraperitoneally (ip) in a volume of 10 ml/kg.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Before testing, the mice were acclimated in the experimental room for 1 h. (room acclimation only, no apparatus pre-exposure)",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "The mice were placed separately in the fixed corner of an open-field apparatus (40 × 40 × 40 cm)",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in open-field apparatus",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in open-field apparatus",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 720,
+          "evidence": "The OFT was assessed 12 h post-drug administration. ... OFT was performed 24 h after the drug treatments.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 7,
+        "evidence": "Means ± SEM, n = 7 (Fig. 1); Means ± SEM, n = 8-10 (Fig. 4)",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "In CRS mice, psilocybin (1, 2.5, 5 mg/kg) and ketamine did not alter total distance 12 h after injection. In the AAV experiment, psilocybin (2.5 mg/kg) increased central-area duration in sham mice (anxiolytic-like), an effect attenuated by PrL astrocyte depletion; total distance was unaffected.",
+        "statistics": "t12 = 0.2798, P > 0.05 (control vs CRS); t12 = 0.7913, P > 0.05 (CRS-veh vs CRS-ket); F(3,24) = 0.1270, P > 0.05 (CRS-veh vs CRS-psilocybin); F(1,28) = 9.106, P < 0.05 (central duration, Sham+Veh vs Sham+Psilocybin); F(1,28) = 9.106, P < 0.01 (AAV depletion effect)",
+        "direction": "increase",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "not_reported",
+        "evidence": "Acute administrations of psilocybin (1.0, 2.5, and 5.0 mg/kg) or ketamine (10 mg/kg) did not show significant impacts on the locomotor activity... Compared with the Sham+Veh group, the duration in the central area was significantly prolonged with single treatment of psilocybin (2.5 mg/kg, ip) (F(1,28) = 9.106, P < 0.05, Fig. 4E)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "the total distance (D) and the duration of central area (E) in the OFT",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only session totals over 5 min reported",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor distance and central-zone time are spatial measures",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "The mice were placed separately in the fixed corner of an open-field apparatus",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The spontaneous locomotor activity of mice was videotaped for 5 min",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "analyzed by SMART video software (position tracking)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate t-tests/ANOVAs only",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "open-field apparatus (40 × 40 × 40 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "with 16 identical squares delineated on the floor — no bedding mentioned",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "open-field apparatus with 16 identical squares delineated on the floor",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "The mice were placed separately",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "The OFT was assessed 12 h post-drug administration. ... OFT was performed 24 h after the drug treatments.",
+          "confidence": "medium"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "videotaped for 5 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "OFT at 12 h (CRS experiment, 7 pm same day) and 24 h post-drug (AAV experiment)",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "OFT was performed 24 h after the drug treatments.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "videotaped for 5 min",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Sucrose Preference Test",
+      "assay_description": "Individually housed mice trained for 24 h with two bottles (water vs 1% sucrose), water-deprived 24 h, then given both bottles for 8 h (positions swapped after 4 h). Sucrose preference (%) calculated from consumption. CRS mice treated with single psilocybin (1, 2.5, 5 mg/kg) or ketamine.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Psilocybin and ketamine were administered intraperitoneally (ip) in a volume of 10 ml/kg.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "The mice were housed individually and trained to drink from two bottles containing water or 1% sucrose solution (w/v) for 24 h.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "the mice were given access to two identical bottles containing water and 1%sucrose solution separately",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "water_restriction": {
+          "value": "before",
+          "evidence": "The mice were then deprived of water for 24 h.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "not_reported",
+          "value_minutes": null,
+          "evidence": "Only 'all behavioral tests were performed at least 12 h after psilocybin treatment'; exact timing of SPT shown only in Fig. 1A schematic",
+          "confidence": "low"
+        }
+      },
+      "sample_size": {
+        "n_total": 42,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 7,
+        "evidence": "Means ± SEM, n = 7 (Fig. 1 legend); six treatment groups",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "CRS reduced sucrose preference. Single psilocybin at 2.5 and 5 mg/kg (but not 1 mg/kg) and ketamine significantly increased sucrose preference in CRS mice.",
+        "statistics": "t12 = 3.890, P < 0.01 (control vs CRS); t12 = 3.250, P < 0.01 (CRS-veh vs CRS-ket); F(3,24) = 3.884, P < 0.05 (CRS-veh vs CRS-psilocybin)",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Compared to the CRS group, both single treatment of ketamine or psilocybin (2.5 and 5.0 mg/kg) performed significant antidepressant effect, increasing sucrose preference in SPT",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Sucrose preference was defined as sucrose solution consumption / (sucrose solution consumption +drinking water consumption) ×100%",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The consumption of water and sucrose solution was recorded after the SPT.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Preference ratio from bottle consumption only",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "The mice were housed individually",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate sweet-taste preference, no learning requirement",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Consumption measured manually",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "The mice were housed individually and trained to drink from two bottles... On the test day, the mice were given access to two identical bottles",
+          "confidence": "medium"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single cage with two bottles",
+          "confidence": "medium"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "The mice were housed individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "the mice were given access to two identical bottles containing water and 1%sucrose solution separately",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 2,
+          "value": "Continuous monitoring",
+          "evidence": "The positions of the two bottles were replaced after 4 h to avoid place preference, and the test continued for another 4 h. (single uninterrupted 8 h test)",
+          "confidence": "medium"
+        },
+        "D2_session_duration": {
+          "score": 3,
+          "value": ">6 h",
+          "evidence": "replaced after 4 h ... the test continued for another 4 h (8 h total)",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "On the test day, the mice were given access to two identical bottles",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Training-phase consumption not reported",
+          "confidence": "low"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Timing relative to dosing not explicitly stated",
+          "confidence": "low"
+        },
+        "D6_circadian": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "8 h test (4 h + 4 h) spans >=6 h",
+          "confidence": "high"
+        },
+        "raw_total": 6
+      }
+    },
+    {
+      "assay_name": "Forced Swim Test",
+      "assay_description": "Clear cylinder (20 cm high, 12 cm diameter), water 24 ± 0.5 °C, 10 cm depth; 6 min swim, immobility scored in last 4 min by two blinded observers. CRS experiment: 1 d and 3 d after psilocybin (1, 2.5, 5 mg/kg) or ketamine; AAV experiment: 1, 3, 7 d after psilocybin 2.5 mg/kg.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Psilocybin and ketamine were administered intraperitoneally (ip) in a volume of 10 ml/kg.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "The mice were allowed to adapt in the test room for at least 1 h before the test. (room acclimation only)",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "The mice were individually forced to swim in a clear cylinder (FST cylinder)",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in water-filled cylinder",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No drinking water accessible in FST cylinder",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 1440,
+          "evidence": "Mice were tested in the FST 1d and 3d post-psilocybin injection separately. ... FSTs were performed 1 d, 3 d, and 7 d after the drug treatments, respectively.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 7,
+        "evidence": "Means ± SEM, n = 7 (Fig. 1); Means ± SEM, n = 8-10 (Fig. 4)",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "CRS increased immobility; single psilocybin (1, 2.5, 5 mg/kg) and ketamine reduced immobility at 1 d and 3 d. In the AAV experiment psilocybin (2.5 mg/kg) reduced immobility at 1, 3 and 7 d in sham mice, and PrL astrocyte depletion attenuated this effect.",
+        "statistics": "1d: t12 = 2.963, P < 0.05 (control vs CRS); t12 = 9.281, P < 0.001 (CRS-veh vs CRS-ket); F(3,24) = 47.49, P < 0.001 (CRS-veh vs CRS-psilocybin). 3d: t12 = 2.728, P < 0.05; t12 = 11.24, P < 0.001; F(3,24) = 34.45, P < 0.001. AAV: 1d F(1,36) = 10.81, P < 0.05; 3d F(1,36) = 12.31, P < 0.01; 7d F(1,36) = 8.128, P < 0.001",
+        "direction": "decrease",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "no",
+        "evidence": "the increased immobility durations were clearly reversed on the first and third days after single administration of psilocybin (1, 2.5 and 5.0 mg/kg) or ketamine ... the immobility durations in FST (1 d, 3 d, and 7 d after the psilocybin treatments) were significantly reduced by psilocybin (2.5 mg/kg, ip) treatment",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The duration of immobility was recorded and measured during the last 4 min",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single immobility total for last 4 min",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST immobility is excluded by rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "The mice were individually forced to swim",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning requirement",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "measured ... by two observers who were unaware of the treatments",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "clear cylinder (height: 20 cm, diameter: 12 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent (water-filled cylinder)",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "a clear cylinder",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "The mice were individually forced to swim",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Mice were tested in the FST 1d and 3d post-psilocybin injection separately; FSTs were performed 1 d, 3 d, and 7 d after the drug treatments",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "forced to swim ... for 6 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "1 d, 3 d, and 7 d after the drug treatments",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "FSTs were performed 1 d, 3 d, and 7 d after the drug treatments",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "6 min session",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Novelty-Suppressed Feeding Test",
+      "assay_description": "Mice food-deprived 24 h, placed in a 50 × 40 × 20 cm white Plexiglas arena with 1 cm sawdust and chow pellets at centre; latency to start chewing/biting recorded within 5 min by two blinded observers. CRS mice treated with single psilocybin (1, 2.5, 5 mg/kg) or ketamine.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Psilocybin and ketamine were administered intraperitoneally (ip) in a volume of 10 ml/kg.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "The mice were food-deprived for 24 h before the test and acclimated in the experimental room for 1 h. (room acclimation only)",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Each mouse was introduced into a fixed corner of the testing apparatus and allowed to move freely for 5 min.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "The mice were food-deprived for 24 h before the test",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in NSFT apparatus",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "not_reported",
+          "value_minutes": null,
+          "evidence": "Only 'all behavioral tests were performed at least 12 h after psilocybin treatment'; exact timing shown only in Fig. 1A schematic",
+          "confidence": "low"
+        }
+      },
+      "sample_size": {
+        "n_total": 42,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 7,
+        "evidence": "Means ± SEM, n = 7 (Fig. 1 legend); six treatment groups",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "CRS increased latency to feed; single psilocybin (1, 2.5, 5 mg/kg) and ketamine significantly decreased latency to feed in CRS mice.",
+        "statistics": "t12 = 14.50, P < 0.001 (control vs CRS); t12 = 16.15, P < 0.001 (CRS-veh vs CRS-ket); F(3,24) = 97.30, P < 0.001 (CRS-veh vs CRS-psilocybin)",
+        "direction": "decrease",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Acute treatments with psilocybin (1.0, 2.5, and 5.0 mg/kg) or ketamine clearly decreased the latency to feed compared with the CRS group",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The latency to start chewing or biting the pellets was recorded within 5 min.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single latency measure",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only latency to feed recorded",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Each mouse was introduced into a fixed corner of the testing apparatus",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate conflict test, no learning requirement",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The latency to feed was evaluated by two observers who were unaware of the treatments.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "The apparatus for NSFT (50 × 40 × 20 cm) was made of white opaque nonreflective Plexiglas.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter described",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The floor was covered with 1 cm of sawdust",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only test pellets at center",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single Plexiglas box",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each mouse was introduced into a fixed corner of the testing apparatus",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "chow diet pellets of the same shape and size were placed at the center of the apparatus",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "allowed to move freely for 5 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "allowed to move freely for 5 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test session",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Timing relative to dosing not explicitly stated",
+          "confidence": "low"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5 min session",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    }
+  ],
+  "judge_notes": [
+    "All three candidates identified the same 4 behavioural assays (OFT, SPT, FST, NSFT); Western blot, primary astrocyte in vitro work, calcium imaging and immunofluorescence excluded as non-behavioural.",
+    "Corrected gemma's B1 scores: 2-3 measures = 1 point (OFT), single measure = 0 points (SPT, FST, NSFT).",
+    "OFT collapsed across CRS (12 h) and AAV (24 h) experiments per rubric; scored D1 multiple, D3 2-7, D5 yes, time_to_assay multiple (following deepseek with evidence from Sections 2.5 and 2.15).",
+    "setup_habituation set to not_reported for OFT/FST/NSFT because only room acclimation is described; SPT habituation = yes (24 h bottle training).",
+    "SPT: 8 h single uninterrupted test scored D2 >6 h and D6 yes (modal); D1 set to Continuous for internal consistency with D2/D6 (candidates split 0/1/2). E1 Home cage (2 of 3 candidates). Water restriction = before (24 h water deprivation).",
+    "Time_to_assay for SPT and NSFT set to not_reported: paper only states tests were 'at least 12 h' after dosing, specifics only in Fig. 1A schematic.",
+    "Age set to not_reported since only body weight (18-20 g) is given.",
+    "Ketamine (positive control) added as a separate dosing entry; psilocin used only in vitro, not included.",
+    "n_total left null for OFT and FST because AAV-experiment group sizes are only given as a range (n = 8-10)."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 2.73,
+    "recording_duration_max": 8.18,
+    "behavioural_complexity_mean": 0.31,
+    "environmental_complexity_mean": 1.36,
+    "recording_duration_mean": 4.09
+  },
+  "low_confidence_count": 13,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-26T16:13:30+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "81e220f016",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 76673,
+    "output_tokens": 12449,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

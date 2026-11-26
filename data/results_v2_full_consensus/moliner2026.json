@@ -1,0 +1,99 @@
+{
+  "study_id": "Moliner2026",
+  "doi": null,
+  "species": "mouse",
+  "strain": "C57BL/6",
+  "age": {
+    "value": "not_reported",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "not reported",
+    "confidence": "low"
+  },
+  "sex": {
+    "value": "not_reported",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "not reported; 'Four C57BL/6 mice were fasted overnight before imaging.' (sex not stated)",
+    "confidence": "low"
+  },
+  "psychedelic": "none",
+  "dosing": [],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [],
+  "judge_notes": [
+    "All three candidates agree that no behavioural assays qualify. This paper evaluates the performance of the Bruker PET/CT Si78 scanner. It uses NEMA phantoms, 22Na point sources, GATE simulations, and 18F-FDG PET imaging of four anaesthetised C57BL/6 mice.",
+    "No psychedelic compound was given. 18F-FDG is a radiotracer, and isoflurane was used only for anaesthesia. The only rodent work is PET/CT imaging, which the rubric excludes as an imaging-only readout. As a result, the assays and dosing lists are empty.",
+    "DOI is set to null. Gemma4's DOI (10.1088/1361-6560/ab18b2) comes from a 'You may also like' link to a different paper. The markdown does not contain this article's own DOI (citation: Phys. Med. Biol. 71 195009).",
+    "Study ID Moliner2026 is taken from the citation line 'Laura Moliner et al 2026 Phys. Med. Biol. 71 195009'. Strain C57BL/6 is taken from Methods section 2.5. Sex and age are not reported.",
+    "Housing items are not_reported. The overnight fast before imaging is a procedural detail and does not map to any housing_conditions field."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0,
+    "environmental_complexity_max": 0,
+    "recording_duration_max": 0,
+    "behavioural_complexity_mean": 0,
+    "environmental_complexity_mean": 0,
+    "recording_duration_mean": 0
+  },
+  "low_confidence_count": 4,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-26T16:34:18+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "81e220f016",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 42964,
+    "output_tokens": 1146,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

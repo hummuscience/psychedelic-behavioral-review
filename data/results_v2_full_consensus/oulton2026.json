@@ -1,0 +1,111 @@
+{
+  "study_id": "Oulton2025",
+  "doi": null,
+  "species": "mouse",
+  "strain": "C57Bl/6",
+  "age": {
+    "value": "not_reported",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Female C57Bl/6 mice (20 g; Charles River) — only body weight given, no age stated",
+    "confidence": "low"
+  },
+  "sex": {
+    "value": "female",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Female C57Bl/6 mice (20 g; Charles River) were housed in the Life Sciences Research Institute Animal Care Facility",
+    "confidence": "high"
+  },
+  "psychedelic": "Ibogaine",
+  "dosing": [
+    {
+      "compound": "Ibogaine",
+      "doses_mg_per_kg": [
+        100.0
+      ],
+      "doses_raw": "ibogaine (100 mg/kg)",
+      "vehicle": "not_reported",
+      "route": "p.o.",
+      "schedule": "acute",
+      "evidence": "Mice were euthanized 0.25, 4, 24, or 72 hr following oral administration of vehicle (150 µL) or ibogaine (100 mg/kg)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "not reported; paper states only that mice 'were housed in the Life Sciences Research Institute Animal Care Facility at Dalhousie University'",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [],
+  "judge_notes": [
+    "All three candidates agree: no behavioural assays were conducted. The paper contains in vitro work (Seahorse XFe96 extracellular flux, RT-qPCR, TMRM/MitoSOX fluorescence microscopy in primary neuron/astrocyte cultures and C8-B4 microglia) and in vivo ex vivo molecular endpoints (mass spectrometric ibogaine pharmacokinetics, spinal cord proteomics with IPA). All of these are excluded by the rubric, so the assays list is empty.",
+    "Dosing: one acute oral dose of ibogaine (100 mg/kg) was given to female mice. The vehicle volume (150 µL) is stated but its identity is not, so vehicle is not_reported. The PBS stock applies only to the in vitro cell culture work.",
+    "Housing: ad libitum food and water is stated. Handling, cage density, light-cycle direction and enrichment are not reported.",
+    "DOI: not present in the markdown and no candidate supplied one, so it is set to null. study_id Oulton2025 is the modal value across candidates."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0,
+    "environmental_complexity_max": 0,
+    "recording_duration_max": 0,
+    "behavioural_complexity_mean": 0,
+    "environmental_complexity_mean": 0,
+    "recording_duration_mean": 0
+  },
+  "low_confidence_count": 4,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-25T16:36:23+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "8b6edada1b",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 63754,
+    "output_tokens": 936,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

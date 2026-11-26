@@ -1,0 +1,112 @@
+{
+  "study_id": "McIntosh2026",
+  "doi": "10.1016/j.jpba.2026.117630",
+  "species": "rat",
+  "strain": "Sprague Dawley",
+  "age": {
+    "value": "adult",
+    "age_min_days": 90,
+    "age_max_days": 90,
+    "evidence": "Male Sprague Dawley rats (90 days; 250-270 g; Charles River, Wilmington, MA, USA)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 4,
+    "n_female": null,
+    "evidence": "Male Sprague-Dawley rats (n = 4) received a single intraperitoneal dose of noribogaine (10 mg/kg)",
+    "confidence": "high"
+  },
+  "psychedelic": "Noribogaine",
+  "dosing": [
+    {
+      "compound": "Noribogaine",
+      "doses_mg_per_kg": [
+        10.0
+      ],
+      "doses_raw": "10 mg/kg of ibogaine, noribogaine, ibogamine, or oxa-noribogaine (5 mg/mL in 2 mEq acetic acid; 2 mL/kg)",
+      "vehicle": "other",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Male Sprague-Dawley rats (n = 4) received a single intraperitoneal dose of noribogaine (10 mg/kg). Vehicle: 2 mEq acetic acid; 2 mL/kg.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "housed in polycarbonate cages, two per cage",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "yes",
+      "evidence": "maintained in a temperature- and humidity-controlled vivarium on a 12-hr reversed light/dark cycle (lights on: 6:00 PM)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [],
+  "judge_notes": [
+    "All three candidates returned zero assays. This is correct: the paper validates a bioanalytical UPLC-MS/MS method and applies it to in vivo brain microdialysis (pharmacokinetic Cmax, Tmax, AUC of noribogaine in nucleus accumbens ECF). No behavioural outcome was measured, so per the rubric there is nothing to score.",
+    "Age set to 'adult', the modal candidate value (2 of 3). Gemma4 gave 'young_adult'. The paper states 90 days.",
+    "Dosing lists only noribogaine. The methods mention random assignment to vehicle, ibogaine, noribogaine, ibogamine or oxa-noribogaine, but results are reported only for noribogaine (n = 4). This matches all candidates.",
+    "Vehicle coded 'other' because the vehicle is 2 mEq acetic acid. All candidates agreed.",
+    "Housing values were unanimous across candidates and match the paper text. The reversed cycle is explicitly stated (lights on 6:00 PM)."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0,
+    "environmental_complexity_max": 0,
+    "recording_duration_max": 0,
+    "behavioural_complexity_mean": 0,
+    "environmental_complexity_mean": 0,
+    "recording_duration_mean": 0
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-26T16:11:21+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "81e220f016",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 55341,
+    "output_tokens": 1413,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

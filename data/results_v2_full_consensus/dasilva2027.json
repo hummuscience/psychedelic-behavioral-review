@@ -1,0 +1,903 @@
+{
+  "study_id": "daSilva2026",
+  "doi": "10.1016/j.jep.2026.122602",
+  "species": "mouse",
+  "strain": "C57BL/6",
+  "age": {
+    "value": "not_reported",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Only body weight is given: 'male C57BL/6 mice weighing 25-30 g'. Age is not stated.",
+    "confidence": "low"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 120,
+    "n_female": null,
+    "evidence": "groups of 8 (n =8) male C57BL/6 mice weighing 25-30 g were used. A total of 120 animals were used throughout the study.",
+    "confidence": "high"
+  },
+  "psychedelic": "Mimosa tenuiflora root-bark alkaloid fraction AF II (containing DMT, bufotenine, yuremamine)",
+  "dosing": [
+    {
+      "compound": "Mimosa tenuiflora alkaloid fraction AF II (DMT/bufotenine-rich)",
+      "doses_mg_per_kg": [
+        3.0,
+        6.0,
+        9.0
+      ],
+      "doses_raw": "AF II (3, 6, or 9 mg/ kg, s.c.)",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "Mice were treated subcutaneously (s.c.) in the following groups: vehicle (0.9% NaCl) and AF II at doses of 3, 6, and 9 mg/kg ... treated with vehicle or AF II in three groups, at doses of 3, 6 or 9 mg/kg (s.c.). In Experiment 3, 'on days 9 and 10 ... the animals were treated as in the previous section'.",
+      "confidence": "medium"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "with a light/dark cycle of 12 h each day (7 a. m. and 7 p.m.)",
+      "confidence": "medium"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Acetic acid-induced writhing test",
+      "assay_description": "AF II (3, 6, 9 mg/kg s.c.) or vehicle was given, followed 30 min later by morphine (10 mg/kg i.p.). Acetic acid (0.6%, 10 mL/kg i.p.) was given 30 min after morphine. Starting 5 min after acetic acid, abdominal writhes were counted for 20 min.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "Mice were treated subcutaneously (s.c.) in the following groups: vehicle (0.9% NaCl) and AF II at doses of 3, 6, and 9 mg/kg; and intraperitoneally (i.p.) in the morphine group",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "No restraint described during the writhing count; restraint is only implied for injections.",
+          "confidence": "medium"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food described in the observation setup (short standard test).",
+          "confidence": "low"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water described in the observation setup (short standard test).",
+          "confidence": "low"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 65,
+          "evidence": "Thirty minutes after AF II administration, the animals received 10 mg/kg of morphine... The AF II-treated groups received acetic acid (0.6%) i.p. 30 min after morphine administration. Five minutes after acetic acid administration, the number of writhing movements was recorded for 20 min.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 40,
+        "n_male": 40,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "For each experiment in this study, groups of 8 (n =8) male C57BL/6 mice ... were used (5 groups: vehicle, morphine, AF II 3/6/9 + morphine).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Morphine reduced writhing by ~99% versus vehicle. Pre-treatment with AF II (3, 6, 9 mg/kg) did not interfere with morphine analgesia, with writhing still reduced by ~97% at all doses.",
+        "statistics": "ANOVA followed by Dunnett's post-hoc test: ***p < 0.001 vs vehicle for morphine and all AF II + morphine groups",
+        "direction": "no_effect",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Preadministration of AF II at doses of 3, 6, and 9 mg/kg did not interfere with the analgesic effect of morphine.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "the number of writhing movements was recorded for 20 min",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only a total count is reported (Table 2).",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "A writhe was operationally defined as a contraction of the abdomen followed by stretching of the hind limbs (nociceptive response).",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Nociceptive test, no learning involved.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Writhes counted by blinded observers ('Group 2 was tasked with assessing the animals' behavior').",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Single univariate measure.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Observation setup not described.",
+          "confidence": "low"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "the number of writhing movements was recorded for 20 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "recorded for 20 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test session (Experiment 1).",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug writhing recording.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recording began ~65 min post-dose only.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "20-min session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Naloxone-precipitated morphine withdrawal somatic signs",
+      "assay_description": "Mice received escalating morphine (25–100 mg/kg s.c., twice daily) for 8 days, plus a further 100 mg/kg dose on the morning of day 9. Two hours after the last morphine dose, AF II (3, 6, 9 mg/kg s.c.) or vehicle was given. Naloxone (1 mg/kg s.c.) followed 30 min later. Jumping, paw tremor and walk in reverse were counted for 30 min immediately after naloxone.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "treated with vehicle or AF II in three groups, at doses of 3, 6 or 9 mg/kg (s.c.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Behavioural observation of jumping, paw tremor and walk in reverse; no restraint described.",
+          "confidence": "medium"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food described in the observation setup.",
+          "confidence": "low"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water described in the observation setup.",
+          "confidence": "low"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "30 min after treatment, the animals received an injection of naloxone (1 mg/kg, s.c.)... Immediately after naloxone administration, behavioral observation began for a period of 30 min.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 40,
+        "n_male": 40,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "groups of 8 (n =8) male C57BL/6 mice (vehicle, morphine, AF II 3/6/9 mg/kg)",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "Morphine withdrawal increased jumping, paw tremor and walk in reverse versus vehicle. AF II at 3 and 6 mg/kg reduced jumping (by 80% and 55%). Only 9 mg/kg reduced paw tremor (by 91%), and no dose affected walk in reverse.",
+        "statistics": "Morphine vs vehicle: ***p < 0.001 (unpaired t-test). Jumps: AF II 3 mg/kg ***p < 0.001, 6 mg/kg *p < 0.05 vs morphine. Paw tremor: 9 mg/kg ***p < 0.001 vs morphine (one-way ANOVA + Dunnett).",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "doses of 3 and 6 mg/kg were significant (***p < 0.001 and *p < 0.05, respectively) in reducing the number of jumps by 79.87% and 55.40%... Only the treatment with the 9 mg/kg dose was significant (***p < 0.001) in reducing the paw tremor sign by 91.04%... None of the AF II doses showed a significant reduction in the walk in reverse withdrawal sign.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "The effects of AF II on the somatic signs of withdrawal (jumping, paw tremors, and walk in reverse) were recorded.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only totals over 30 min are reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Somatic manifestations include stereotyped behaviors such as jumping, paw tremors, and walk in reverse.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Signs counted by blinded observers.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Separate univariate tests.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Observation arena not described.",
+          "confidence": "low"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "behavioral observation began for a period of 30 min (day 9)",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "behavioral observation began for a period of 30 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Recorded on day 9 only.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline recorded.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recording only ~30 min post-dose.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30-min session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "Day 9 of the withdrawal protocol. AF II (3, 6, 9 mg/kg s.c.) or vehicle was followed 30 min later by naloxone. Immediately afterwards, mice were placed in an acrylic box (30×30×15 cm, black floor, 9 virtual squares) for 5 min. Four-paw line crossings and rearing were counted.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "the animals were treated as in the previous section ... AF II ... 3, 6 or 9 mg/kg (s.c.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Paper only states 'Each animal was placed individually in the middle of the field'; prior apparatus exposure is not addressed.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Each animal was placed individually in the middle of the field to count the number of four-legged crossings (a spontaneous locomotor activity)",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Empty acrylic box; no food in the apparatus.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Empty acrylic box; no water in the apparatus.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "30 min after treatment, the animals received an injection of naloxone (1 mg/kg, s.c.)... Immediately after naloxone administration, the animals were observed for 5 min in the OFT.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 40,
+        "n_male": 40,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "A new experiment involving five groups (n =8/group) was conducted.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "During withdrawal, AF II at 3 and 6 mg/kg increased crossings (~76–77%) and rearing (~163–195%) versus the morphine group. 9 mg/kg showed reduced activity, which the authors describe as a descriptive inverted-U pattern.",
+        "statistics": "Crossings: *p < 0.05 for 3 and 6 mg/kg vs morphine. Rearing: ***p < 0.001 for 3 and 6 mg/kg vs morphine (ANOVA + Dunnett).",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Treatment with AF II at doses of 3 and 6 mg/kg showed a significant result (*p < 0.05) by increasing the number of crossings... Doses of 3 and 6 mg/kg also showed a significant effect (***p < 0.001) by increasing rearing",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "count the number of four-legged crossings ... and the number of rearing actions",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only 5-min totals are reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "the number of rearing actions that did not involve abutting the wall (exploratory act scored distinctly)",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Each animal was placed individually",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate exploration/anxiety test.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Manual counting by blinded observers.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Separate univariate tests.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "acrylic box (transparent walls and black floor, 30 x 30 ×15 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open arena; definitionally absent.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "black floor (acrylic box)",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent in open field.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No objects described.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "divided into nine squares of equal areas (virtual zones)",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each animal was placed individually in the middle of the field",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Empty acrylic box.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "observed for 5 min in the OFT (day 9)",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "over 5 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The open-field test (OFT) was performed on that day [day 9]",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug OFT recording.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Tested ~30 min post-dose only.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5-min session",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "Light-Dark Box Test",
+      "assay_description": "Day 10 of the withdrawal protocol. Mice were re-treated with AF II (3, 6, 9 mg/kg s.c.) or vehicle, followed 30 min later by naloxone. Mice were then placed in the light compartment of a two-compartment acrylic box (each compartment 27×18×29 cm, joined by a small opening) for 5 min. Latency to leave the light side and time in the light area were measured.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "on days 9 and 10 ... the animals were treated as in the previous section ... AF II ... (s.c.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Each animal was placed individually in the light compartment.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in the apparatus.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in the apparatus.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "on days 9 and 10 ... 30 min after treatment, the animals received an injection of naloxone ... On day 10, the animals were observed for 5 min in the LDBT.",
+          "confidence": "medium"
+        }
+      },
+      "sample_size": {
+        "n_total": 40,
+        "n_male": 40,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "A new experiment involving five groups (n =8/group) was conducted.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Only AF II 9 mg/kg significantly increased latency in the light compartment (by ~174%) versus the morphine group. Time in the light area showed a non-significant dose-related trend. The authors caution that prior OFT and naloxone exposure may confound these results.",
+        "statistics": "Latency: *p < 0.05 for 9 mg/kg vs morphine (ANOVA + Dunnett). Time in light: n.s.",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "In the light-dark box tes, only the 9 mg/kg dose showed a significant effect (*p < 0.05) by increasing latency (45.16 ± 15.23 s) by 173.69% when compared to the morphine group (16.50 ± 6.75 s)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "The parameters were latency in seconds (s) and time spent in the light area in seconds (s).",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only session totals are reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Latency and zone time are spatial measures.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate light/dark avoidance test.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Manual scoring by blinded observers.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Separate univariate tests.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "The acrylic device used is divided into two parts, called the light and dark areas",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The dark compartment (black acrylic, 27 x 18 ×29 cm) is poorly lit.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "divided into two parts, called the light and dark areas, and connected by a small opening",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each animal was placed individually in the light compartment.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Standard LDBT apparatus with no food or water described.",
+          "confidence": "medium"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "On day 10, the animals were observed for 5 min in the LDBT.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "observed for 5 min in the LDBT",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The light-dark box (LDBT) test was conducted on day 10.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug LDBT recording.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "AF II was re-administered on day 10 ~30 min before testing.",
+          "confidence": "medium"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5-min session",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    }
+  ],
+  "judge_notes": [
+    "All three candidates identified the same four assays (writhing, somatic withdrawal signs, OFT, LDBT). All were retained as distinct behavioural paradigms in which AF II was administered.",
+    "Writhing test: corrected gemma4's B1 score (1 measure = 0 points) and D2 score (20 min = 15–60 min = 1 point), following qwen/deepseek4.",
+    "Corrected gemma4's B1 scores of 2 for the 2–3-measure category to 1 point (somatic, OFT, LDBT).",
+    "OFT B4: followed the qwen/deepseek4 majority (rearing scored as a distinct exploratory act = Yes).",
+    "OFT setup_habituation: set to not_reported (deepseek4/gemma4 majority). qwen's 'no' is not supported by an explicit statement in the paper.",
+    "Age set to not_reported: the paper gives only body weight (25–30 g) and the rubric forbids inferring age.",
+    "Writhing application_type set to s.c. (route of the psychedelic fraction). Morphine and acetic acid were i.p. but are not psychedelics.",
+    "Dosing schedule kept as 'acute' (modal) with medium confidence. Note that Experiment 3 animals were re-dosed with AF II on day 10 before the LDBT ('treated as in the previous section').",
+    "Somatic n_total set to 40 (5 groups × 8) following the qwen/deepseek4 majority over gemma4's 32."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 2.73,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 0.68,
+    "recording_duration_mean": 0.68
+  },
+  "low_confidence_count": 30,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-26T15:47:34+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "81e220f016",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 73136,
+    "output_tokens": 10748,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

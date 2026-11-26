@@ -1,0 +1,127 @@
+{
+  "study_id": "Khajavinia2026",
+  "doi": "10.1039/d6ay01614f",
+  "species": "mouse",
+  "strain": "C57BL/6",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 56,
+    "age_max_days": 84,
+    "evidence": "Male and female C57BL/6 mice aged 8-12 weeks (Charles River, Senneville, Canada)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": 16,
+    "n_female": 18,
+    "evidence": "A 3 mg kg-1 body weight psilocybin or co-crystal solution was orally administered to 3 males and 3 females for each time point, except for 10 min when only 1 male was treated with psilocybin. Fig. 4 caption: 'n = 6 per group, except for the 10 min time point in the psilocybin group, where 4 animal received psilocybin'",
+    "confidence": "medium"
+  },
+  "psychedelic": "Psilocybin; Psilocin-Psilocybin co-crystal",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        3.0
+      ],
+      "doses_raw": "3 mg kg-1 body weight psilocybin",
+      "vehicle": "other",
+      "route": "p.o.",
+      "schedule": "acute",
+      "evidence": "received either oral psilocybin or co-crystal formulation (both at a total formulation mass of 3 mg kg-1 body weight) ... the resulting powder was dissolved in a vehicle solution (Kolliphor™, 70% ethanol, PBS, in ratios of 1 : 1 : 18) in 10% dimethyl sulfoxide (DMSO)",
+      "confidence": "high"
+    },
+    {
+      "compound": "Psilocin-Psilocybin co-crystal",
+      "doses_mg_per_kg": [
+        3.0
+      ],
+      "doses_raw": "3 mg kg-1 of total mass formulation",
+      "vehicle": "PBS",
+      "route": "p.o.",
+      "schedule": "acute",
+      "evidence": "The powder was dissolved in a vehicle solution of PBS to obtain a 1 mg mL-1 solution, which was further diluted in PBS as necessary ... Oral gavage for psilocybin and co-crystal was performed with a maximum volume of 200 mL per animal.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "After arrival, the mice were left to acclimate for one week and were subsequently conditioned daily for 7 days to adapt to the researcher and the oral gavage procedure.",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [],
+  "judge_notes": [
+    "All three candidates agreed that there are no behavioural assays. The paper is an LC-MS/MS bioanalytical method validation paper. Its only in vivo component is destructive brain sampling for pharmacokinetics at 10 min, 1 h and 3 h after oral dosing. That is ex vivo tissue quantification, which the rubric excludes, so the assays array is empty.",
+    "The paper mentions behavioural effects only in passing ('ongoing parallel studies, which will be reported upon completion'). No behavioural data are reported here.",
+    "Age: two of three candidates gave 'young_adult' for 8-12 weeks, so the modal value was used.",
+    "Sex counts: I used qwen's n_male = 16 and n_female = 18 even though the modal candidate value was null. These are my arithmetic reconstruction rather than counts the paper states as totals, which is why confidence is medium.",
+    "How the sex counts were derived: 3 males and 3 females per time point per compound, except 1 male at 10 min for psilocybin. The Fig. 4 caption says 4 animals in that group, consistent with 3 females plus 1 male.",
+    "Psilocybin vehicle was set to 'other'. It was a Kolliphor/70% ethanol/PBS mixture (1:1:18) in 10% DMSO.",
+    "Co-crystal vehicle was set to 'PBS', as stated in the paper.",
+    "Handling was set to 'yes' because the paper explicitly describes 7 days of daily conditioning to the researcher and the gavage procedure."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0,
+    "environmental_complexity_max": 0,
+    "recording_duration_max": 0,
+    "behavioural_complexity_mean": 0,
+    "environmental_complexity_mean": 0,
+    "recording_duration_mean": 0
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-26T16:03:46+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "81e220f016",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 50059,
+    "output_tokens": 2253,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

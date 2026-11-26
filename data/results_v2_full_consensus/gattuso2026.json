@@ -1,0 +1,311 @@
+{
+  "study_id": "Gattuso2026",
+  "doi": "10.1038/s41380-026-03879-8",
+  "species": "mouse",
+  "strain": "C57BL/6J background (SAPAP3 KO and WT littermates)",
+  "age": {
+    "value": "adult",
+    "age_min_days": 150,
+    "age_max_days": 210,
+    "evidence": "5-7-month-old male and female SAPAP3 knockout (KO) mice and their wild-type (WT) littermates, all maintained on a C57BL/6J background",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "5-7-month-old male and female SAPAP3 knockout (KO) mice and their wild-type (WT) littermates",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "1 mg/kg of psilocybin",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Psilocybin (Usona Institute Inc.) was dissolved in 0.9% saline and adjusted to pH 7... All solutions were administered intraperitoneally (i.p.) at a volume of 10 mL/kg body weight... Animals were treated with 1 mg/kg of psilocybin. Mice received a single dose of psilocybin or vehicle",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "Mice were acclimated to handling before drug administration and behavioral testing.",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "separated into non-sibling groups of the same sex and genotype (n = 2-6 per box).",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "12:12 h light-dark cycle (lights on from 07:00-19:00)... All behavioral testing was conducted during the light phase (09:00-17:00 h).",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Mice were housed in standard open-top boxes (34 × 16 × 16 cm); no mention of enrichment items.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Three-chamber social interaction test (sociability and social recognition/novelty)",
+      "assay_description": "Standard three-chamber apparatus (San Diego Instruments), 7 days after a single i.p. dose of psilocybin (1 mg/kg) or vehicle in male and female SAPAP3 KO and WT mice. 5-min habituation to empty apparatus (distance travelled and empty-cage sniffing reported), 10-min sociability trial (Stranger 1 in wire cage vs empty wire cage), 10-min social recognition/novelty trial (Stranger 2 vs familiar Stranger 1). Measures: nose-point sniffing duration (TopScan), chamber time, social indices, bout number and mean bout duration, latency to first sniff, habituation locomotion.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All solutions were administered intraperitoneally (i.p.) at a volume of 10 mL/kg body weight.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Mice were first habituated to the empty apparatus for 5 min.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "psilocybin-treated male SAPAP3 KO mice traveled less than vehicle-treated KO mice while freely exploring the empty social testing apparatus",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard three-chamber apparatus; no food present in the apparatus during testing (ad libitum chow only in home cage).",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard three-chamber apparatus; no water present in the apparatus during testing (ad libitum water only in home cage).",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "short_term_1to7d",
+          "value_minutes": 10080,
+          "evidence": "Mice received a single dose of psilocybin or vehicle and underwent behavioral assessment in the three-chamber social interaction test 7 days later",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 91,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "(n = 91; Fig. 1)... n = 11-14 per group for females and n = 8-13 per group for males.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Sociability was intact across all groups. Vehicle-treated male SAPAP3 KO mice showed reduced investigation of the novel mouse, and a single 1 mg/kg psilocybin dose given 7 days earlier increased Stranger 2 sniffing and chamber time in male KOs, restoring WT-like levels. Psilocybin did not alter social behaviour in females except reducing latency to first sniff the novel mouse.",
+        "statistics": "Male social novelty sniffing: treatment × cage × genotype F(1,37)=4.24, p=0.047, η²=0.045; vehicle KO vs vehicle WT p=0.007; psilocybin KO vs vehicle KO p=0.032; psilocybin KO vs vehicle WT p=0.570. Male novelty chamber time: cage × genotype × treatment F(1,37)=4.25, p=0.046, η²=0.068; psilocybin KO vs vehicle KO p=0.026. Male sociability treatment F(1,37)=2.45, p=0.126. Female novelty treatment F(1,46)=0.155, p=0.696.",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "yes",
+        "time_dependent": "n/a",
+        "evidence": "Psilocybin significantly increased interaction time with the novel mouse in SAPAP3 KO males compared with vehicle treatment (p = 0.032).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 3,
+          "value": "7+",
+          "evidence": "Sniffing toward Stranger 1/empty cage/Stranger 2, chamber time, sociability and novelty indices, latency to first sniff, total distance traveled, empty-cage sniffing during habituation, number of bouts and mean bout duration.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "sniffing duration (%) = time with nose point in the relevant interaction zone / total trial duration × 100; no within-session time-course reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "To further characterize this male KO-specific rescue, we examined the total number of bouts and mean bout duration (Supplementary Figure 3)... Follow-up analyses of male social-investigation microstructure",
+          "confidence": "medium"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Direct stimulus-directed sniffing was treated in the present study as the primary and more socially specific behavioral outcome.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 2,
+          "value": "Restricted social interaction",
+          "evidence": "an age- and sex-matched C57BL/6 intruder mouse, designated Stranger 1, was enclosed in a wire cage in one side chamber",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "the social recognition/novelty phase tests whether mice preferentially investigate an unfamiliar conspecific over a familiar one",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sniffing behavior was quantified using automated nose-point tracking in TopScan 2.00 (CleverSys Inc., USA).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Behavioral data were analyzed using repeated-measures three-way ANOVAs; no multivariate behavioural analysis.",
+          "confidence": "high"
+        },
+        "raw_total": 8
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "standard three-chamber apparatus (San Diego Instruments)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter or refuge described in the three-chamber apparatus.",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only wire stimulus cages described in the apparatus; no enrichment objects.",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "standard three-chamber apparatus... enclosed in a wire cage in one side chamber... opposite side chamber",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 1,
+          "value": "Stimulus behind barrier",
+          "evidence": "Stranger 1, was enclosed in a wire cage in one side chamber",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water described in the testing apparatus.",
+          "confidence": "medium"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Mice were first habituated to the empty apparatus for 5 min. Sociability was then assessed during a 10-min trial... In the subsequent 10-min social recognition/novelty trial (all phases in one test session on one day)",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Sociability was then assessed during a 10-min trial... subsequent 10min social recognition/novelty trial",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "underwent behavioral assessment in the three-chamber social interaction test 7 days later",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The 'baseline/habituation session' occurred 7 days after drug administration; no pre-drug behavioural recording.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Mice received a single dose of psilocybin or vehicle and underwent behavioral assessment in the three-chamber social interaction test 7 days later",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Longest recording bout was 10 min.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "All candidates identified a single behavioural assay (three-chamber SIT); c-Fos immunohistochemistry excluded as non-behavioural.",
+    "B3 overridden to Yes (1) against 2/3 candidates: the paper explicitly analyses bout number and mean bout duration as 'social-investigation microstructure', which the rubric lists under bout structure/microstructure.",
+    "D1 kept as Single session (modal): habituation, sociability and novelty phases form one same-day test session; gemma's 'Multiple' rejected.",
+    "D4 scored 0: the habituation 'baseline' was recorded 7 days post-drug, not before drug administration; qwen's Yes rejected.",
+    "D5 scored 1 (modal): testing occurred 7 days after the single dose.",
+    "B1 value set to '7+' (score 3) per enumerated measures; gemma's '4-6' label inconsistent with its score.",
+    "setup_habituation kept 'yes' (unanimous) but confidence medium because locomotion/empty-cage sniffing data from the habituation phase were reported."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 10.0,
+    "environmental_complexity_max": 2.73,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 10.0,
+    "environmental_complexity_mean": 2.73,
+    "recording_duration_mean": 1.36
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-25T16:28:00+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "8b6edada1b",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 60038,
+    "output_tokens": 4917,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

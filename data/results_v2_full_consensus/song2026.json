@@ -1,0 +1,913 @@
+{
+  "study_id": "Song2026",
+  "doi": "10.1038/s41467-026-77238-0",
+  "species": "mouse",
+  "strain": "Cntnap2 knockout (JAX017482) on C57BL/6J background; isogenic Cntnap2+/+ wild-type and Cntnap2+/- heterozygous mice from the same colony",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 56,
+    "age_max_days": 70,
+    "evidence": "8-10 weeks old mice of both genders were used for behavioural experiments.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "8-10 weeks old mice of both genders were used for behavioural experiments. Male and female mice of the same genotype were first analysed separately to assess potential sex-related differences in behaviours in our dataset.",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "psilocybin (1 mg/kg)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Psilocybin (Usona Institute US) was dissolved in sterile saline solution (0.9% NaCl)... 8-week old offspring were intraperitoneally injected either with saline or psilocybin (1 mg/kg) 24 hours prior to behavioural testing.",
+      "confidence": "high"
+    },
+    {
+      "compound": "MDL100907 (volinanserin)",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "One dose of 1 mg/kg MDL",
+      "vehicle": "DMSO",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "MDL was first dissolved in 10% DMSO then diluted using saline. One dose of 1 mg/kg MDL or vehicle was systemically administered via intraperitoneal injections per test animal at 15 min prior to psilocybin or saline treatment.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "housed in groups of up to five animals per cage after weaning... Mice were group-housed where possible, with the same littermate mice both before and after treatments.",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "on a 12/12 h light/dark cycle (light on between 07:00 and 19:00)... All experiments were conducted during the light phase.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Three-chamber social behaviour test (sociability)",
+      "assay_description": "Custom Plexiglass three-chamber box (60x40x22 cm; three 20x40x22 cm chambers connected by 4x4 cm doors), acrylic floor, transparent slotted cylinders as cups. After 3 days of 10-min habituation and a 10-min empty-chamber phase, the test mouse explored for 10 min with an unfamiliar sex-matched mouse in one cup vs an empty cup. Measures: sociability index, total interaction time (manual scoring of sniffing/exploring cup), locomotion. Tested 1 day, 1 week and 2 weeks after a single 1 mg/kg i.p. psilocybin dose across cohorts (Cntnap2 KO, WT, heterozygous, independent 2-week cohort, MDL100907 pretreatment, treatment under isoflurane anaesthesia).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "8-week old offspring were intraperitoneally injected either with saline or psilocybin (1 mg/kg); MDL100907 also given via intraperitoneal injections",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Each test mouse was placed into the centre chamber and allowed to freely explore and habituate to the three-chamber setup for 10 minutes over 3 consecutive days",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "The test mouse was then allowed to freely explore chambers for 10 min.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food described in the three-chamber apparatus; home cage 'Water and food were provided ad libitum.'",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water described in the three-chamber apparatus; home cage 'Water and food were provided ad libitum.'",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 1440,
+          "evidence": "we assessed the social behaviour of these mice using the three-chamber social behaviour test at 1 day, and also at 1 week and 2 weeks after the single injection",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 126,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "N = 15 for Cntnap2 -/- Psilocybin, 15 for Cntnap2 -/- Vehicle (Fig. 1c); N = 10 / 9 (Fig. 1d); N = 7 / 11 (Fig. 2); N = 10, 10, 9, 9, 7 (Fig. 4a); N = 8 for Cntnap2 -/- Psilocybin, 6 for Cntnap2 +/+ Vehicle (Fig. 5); heterozygous cohort n not given",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "A single 1 mg/kg psilocybin injection increased sociability in Cntnap2 -/- KO mice at 1 day, 1 week and 2 weeks, restoring it to wild-type levels, without changing total interaction time or locomotion. No enhancement occurred in WT or heterozygous mice (WT showed reduced sociability at 1 day). The effect was blocked by MDL100907 pretreatment and was preserved when psilocybin was given under isoflurane anaesthesia.",
+        "statistics": "RMANOVA F2/15 = 544.501, p < 0.001; measures x session F4/13 = 8.763, p = 0.001; sex F1/16 = 0.347, p = 0.564; sociability F1/16 = 9.144, p = 0.008; 1 day F1/26 = 6.826, p = 0.015; 1 week F1/26 = 27.366, p < 0.001; 2 weeks F1/26 = 4.217, p = 0.050 (Bonferroni); independent cohort T = 2.243, p = 0.019; WT RMANOVA F2/15 = 1.970, p = 0.174; pretreatment x treatment F1/34 = 14.751, p < 0.001; anaesthesia RMANOVA F1/10 = 10.629, p = 0.009",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "no",
+        "time_dependent": "no",
+        "evidence": "The significant increase in sociability of psilocybin-treated Cntnap2 -/- KO group compared to the vehicle-treated Cntnap2 -/- KO control group was sustained for at least two weeks following the single psilocybin administration",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "combining sociability, total interaction time, and locomotion of the test mice during the testing session",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Interaction durations summed over the 10-min session; no within-session time course reported",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "we manually quantified the actual interaction duration of the test mouse with the cup, quantified as either sniffing or exploring the cup",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 2,
+          "value": "Restricted social interaction",
+          "evidence": "an age-, size-, and gendermatched unfamiliar non-littermate mouse (S) was placed into a cup in one side chamber, and an empty cup (C) was placed in the opposite side chamber",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate social preference test; no learning or memory requirement",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Video recordings were used to track the position of the body of the animal in each chamber, as well as to manually time the duration of the test mouse's social exploratory behaviour by a blinded, well-trained observer",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "RMANOVA with follow-up univariate analyses; no dimensionality reduction or clustering",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Social behaviour was tested in a custom-built Plexiglass three-chamber box",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enclosed refuge; transparent cylinders used as stimulus cups",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "three-chamber box with a matt white acrylic floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described in the apparatus",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only stimulus cups present; no enrichment objects",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "The total arena (60 × 40 x 22 cm) was divided in three smaller, evenly sized chambers... interconnected by 4 × 4 cm doors",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 1,
+          "value": "Stimulus behind barrier",
+          "evidence": "unfamiliar non-littermate mouse (S) was placed into a cup... Transparent cylinders... with 1-cm slits were used as cups",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water described in the apparatus",
+          "confidence": "medium"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "at 1 day, and also at 1 week and 2 weeks after the single injection",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "The test mouse was then allowed to freely explore chambers for 10 min.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "at 1 day, and also at 1 week and 2 weeks after the single injection",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Pre-drug habituation sessions had no social partner; no pre-drug sociability measure reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Re-testing sessions at day 7 and day 14 after administration",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "10-min sessions",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Head-twitch response (HTR)",
+      "assay_description": "Immediately after i.p. psilocybin or saline, mice were placed in a customised 40x20x20 cm box with clean bedding and head twitches counted by direct observation in 5-min bins for 20 min. Included KO vs WT comparison and MDL100907 pretreatment.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Head-twitch events were evaluated immediately after intraperitoneal administration of either saline or psilocybin",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "The mouse was placed into a customised behavioural box immediately after injection and was free to explore.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food described in the behavioural box",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water described in the behavioural box",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Head-twitch events were evaluated immediately after intraperitoneal administration of either saline or psilocybin for a period of 20 minutes.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 38,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 9,
+        "evidence": "N = 10 for Cntnap2 -/- Vehicle+Psilocybin, 10 for Cntnap2 -/- Vehicle+Vehicle, 9 for Cntnap2 -/- Ant-5HT2AR+Psilocybin, 9 for Cntnap2 -/- Ant-5HT2AR+Vehicle (Fig. 4b); additional KO vs WT comparison reported (F1/18)",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "Psilocybin robustly increased head twitches in Cntnap2 -/- KO mice, with no difference between KO and WT and no sex effect. MDL100907 abolished the psilocybin-induced HTR. HTR did not correlate with later sociability. No HTR was observed under isoflurane anaesthesia.",
+        "statistics": "F1/26 = 99.822, p < 0.001 (two-way ANOVA); sex F1/26 = 2.482, p = 0.127; KO vs WT F1/18 = 0.352, p = 0.560; antagonist F1/15 = 144.126, p < 0.001; HTR-sociability Spearman rho = -0.397 (p = 0.143), 0.085 (p = 0.763), 0.084 (p = 0.766)",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "no",
+        "time_dependent": "n/a",
+        "evidence": "Psilocybin significantly increased HTR in Cntnap2 -/- KO mice (F1/26 = 99.822, p < 0.001, Two-way ANOVA) with no significant effect of sex detected in our dataset",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The number of head-twitch events was counted",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Counted in 5-minute bins, but no within-session time-course analysis is reported",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is excluded from ethological behaviours per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing in a behavioural box",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Drug-induced reflexive behaviour",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "counted by direct observation",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Two-way ANOVA only",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "customised behavioural box... 40 ×20 X 20 cm",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter described",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "the floor was covered with clean bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Clean bedding only; no nesting material described",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects described",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "The box is of size 40 ×20 X 20 cm",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "each mouse was placed in a separate chamber to assess the head-twitch response",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water described in the box",
+          "confidence": "medium"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "for a period of 20 minutes",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "we assayed the HTR for a 20 min observation period",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Immediately after psilocybin application, we assayed the HTR",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recording began immediately after injection; no pre-drug baseline",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR measured only during the acute 20-min window",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "20-min session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Self-grooming (repetitive behaviour) during three-chamber habituation",
+      "assay_description": "Self-grooming episodes manually scored (blind observer) during the 10-min empty-apparatus habituation phases of the three-chamber test: the final habituation before drug treatment and the habituation phases of post-treatment tests at 1 day and 1 week.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "intraperitoneally injected either with saline or psilocybin (1 mg/kg)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "allowed to freely explore and habituate to the three-chamber setup for 10 minutes over 3 consecutive days",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "allowed to freely explore all three empty chambers for 10 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food described in the three-chamber apparatus",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water described in the three-chamber apparatus",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 1440,
+          "evidence": "no significant difference in the number of self-grooming episodes displayed by Cntnap2 -/- KO mice at 1 day after psilocybin treatment... or at 1 week after treatment",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "a; N = 11 for Cntnap2 -/- , 14 for Cntnap2 +/+ ... b; N = 6 for Cntnap2 -/- Psilocybin, 6 for Cntnap2 +/+ Vehicle",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "Cntnap2 -/- KO mice showed more self-grooming episodes than WT mice before treatment; psilocybin did not alter grooming in KO mice at 1 day or 1 week after treatment.",
+        "statistics": "Baseline KO vs WT U = 26, p = 0.005 (Mann-Whitney); 1 day KW = 0.235, p = 0.628; 1 week KW = 0.021, p = 0.886",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "no",
+        "evidence": "We therefore concluded that repetitive behaviour, although increased in Cntnap2 -/- KO mice, was not affected by psilocybin under our treatment conditions.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "number of self-grooming episodes",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Episode counts per session only",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "We examined repetitive behaviour by quantifying self-grooming activity during habituation phases",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "habituation phase of post-treatment three-chamber tests prior to the introduction of a social partner",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Spontaneous innate behaviour",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Episodes of grooming behaviour were manually scored by an experimenter who was blind to the genotyping and treatment conditions.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Non-parametric univariate tests only",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "custom-built Plexiglass three-chamber box",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enclosed refuge in the three-chamber box",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "matt white acrylic floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "explore all three empty chambers",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "divided in three smaller, evenly sized chambers... interconnected by 4 × 4 cm doors",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "habituation phase... prior to the introduction of a social partner",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water described in the apparatus",
+          "confidence": "medium"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "the final habituation prior to drug treatment and the habituation phase of post-treatment three-chamber tests",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "each test animal was allowed to freely explore all three empty chambers for 10 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "pre-treatment final habituation, 1 day and 1 week after treatment",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Cntnap2 -/- KO mice displayed a significantly higher number of selfgrooming episodes compared to Cntnap2 +/+ WT mice during the final habituation session prior to drug treatments (Fig. 3a; U = 26, p = 0.005)",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "at 1 week after treatment (Fig. 3b, KW = 0.021, p = 0.886)",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "10-min sessions",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    },
+    {
+      "assay_name": "Locomotor activity (distance travelled) during three-chamber habituation",
+      "assay_description": "Distance travelled during the 10-min empty-apparatus habituation phases of the three-chamber test, tracked with DeepLabCut pose estimation (snout, ears, tail base) and MATLAB; genotype comparison and post-treatment comparisons at 1 day and 1 week.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "intraperitoneally injected either with saline or psilocybin (1 mg/kg)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "allowed to freely explore and habituate to the three-chamber setup for 10 minutes over 3 consecutive days",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "allowed to freely explore all three empty chambers for 10 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food described in the three-chamber apparatus",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water described in the three-chamber apparatus",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 1440,
+          "evidence": "no significant difference was detected in the distance travelled by Cntnap2 -/- KO mice at 1 day after drug treatment... or at 1 week after drug treatment",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 11,
+        "evidence": "c; N = 22 for Cntnap2 -/- , 15 for Cntnap2 +/+ ... d; N = 12 for Cntnap2 -/- Psilocybin, 11 for Cntnap2 +/+ Vehicle",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "Cntnap2 -/- KO mice travelled more distance than WT mice (hyperactivity); psilocybin did not alter distance travelled in KO mice at 1 day or 1 week after treatment.",
+        "statistics": "KO vs WT U = 52, p < 0.001 (Mann-Whitney); 1 day KW = 0.458, p = 0.498; 1 week KW = 0.004, p = 0.951",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "no",
+        "evidence": "We therefore concluded that psilocybin has no effect on spontaneous locomotor drive under our treatment conditions.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "distance travelled during the 10 min observation period",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total distance per session only",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor distance is not an ethological measure per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Measured during habituation without a social partner",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Spontaneous locomotion",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "We used DeepLabCut to track the positions of the randomly selected test mouse during the habituation phase. Each mouse was labelled by a trained network to identify at least four body parts",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Non-parametric univariate tests only",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "custom-built Plexiglass three-chamber box",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enclosed refuge in the three-chamber box",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "matt white acrylic floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "explore all three empty chambers",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "divided in three smaller, evenly sized chambers... interconnected by 4 × 4 cm doors",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "habituation phases prior to the introduction of a social partner",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water described in the apparatus",
+          "confidence": "medium"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "we tracked the positions of the test mice during the habituation phases... at 1 day after drug treatment... or at 1 week after drug treatment",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "distance travelled during the 10 min observation period",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "habituation phases (pre-treatment genotype comparison), 1 day and 1 week after treatment",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Cntnap2 -/- KO mice displayed significantly higher distance travelled during the 10 min observation period compared to Cntnap2 +/+ isogenic wild-type mice (Fig. 3c) — genotype comparison during habituation phases including pre-treatment habituation",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "or at 1 week after drug treatment (Fig. 3d, KW = 0.004, p = 0.951)",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "10-min sessions",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    }
+  ],
+  "judge_notes": [
+    "Collapsed all sociability cohorts (KO, WT, heterozygous, independent 2-week cohort, MDL100907 pretreatment, anaesthesia treatment) into one three-chamber sociability assay per rubric.",
+    "Kept self-grooming and habituation-phase locomotion as separate assays (modal across deepseek4/gemma4): measured during the social-partner-free habituation phase and representing distinct behavioural domains (repetitive behaviour, hyperactivity).",
+    "Three-chamber B1 set to 1 (3 measures = 2-3 category); corrected gemma4's score of 2. B4 = Yes (manual scoring of sniffing/exploring the cup; 2/3 candidates).",
+    "HTR D2 corrected to 1 (20 min falls in 15-60 min); gemma4's 0 was an error. HTR B2 = 0 (5-min bins recorded but no time-course analysis reported; 2/3 candidates).",
+    "Grooming D4 = Yes: paper explicitly reports grooming data from the final habituation session prior to drug treatment. Locomotion D4 = Yes (medium confidence) by the same habituation-phase genotype comparison.",
+    "Locomotion B7 = 1 because DeepLabCut pose estimation is explicitly listed as score-1 in the rubric; the three-chamber test phase used position tracking plus manual timing, so B7 = 0 there.",
+    "application_type set to i.p. for the sociability assay (psilocybin and MDL100907 were both given i.p.); gemma4's 'multiple' rejected.",
+    "Added MDL100907 dosing entry (1 mg/kg i.p., 10% DMSO diluted in saline) since it was administered in behavioural experiments; isoflurane anaesthesia not listed as a dosing compound.",
+    "Three-chamber n_total of 126 sums the reported figure cohorts; overlap between groups (e.g., WT vehicle) is possible, so confidence is medium."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 5.0,
+    "environmental_complexity_max": 2.73,
+    "recording_duration_max": 5.45,
+    "behavioural_complexity_mean": 1.88,
+    "environmental_complexity_mean": 1.7,
+    "recording_duration_mean": 4.09
+  },
+  "low_confidence_count": 7,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-25T16:44:59+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "8b6edada1b",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 71708,
+    "output_tokens": 14946,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

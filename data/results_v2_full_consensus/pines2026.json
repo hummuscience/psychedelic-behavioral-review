@@ -1,0 +1,114 @@
+{
+  "study_id": "Pines2026",
+  "doi": "10.1073/pnas.2522000123",
+  "species": "mouse",
+  "strain": "Tg(Thy1-GCaMP6s)GP4.3Dkim (Thy1-GCaMP6s, JAX, 024275)",
+  "age": {
+    "value": "mixed",
+    "age_min_days": 42,
+    "age_max_days": 168,
+    "evidence": "14 male and female mice were evaluated (6 to 24 wk old at the time of surgery)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "14 male and female mice were evaluated (6 to 24 wk old at the time of surgery)",
+    "confidence": "high"
+  },
+  "psychedelic": "LSD",
+  "dosing": [
+    {
+      "compound": "LSD",
+      "doses_mg_per_kg": [
+        0.3
+      ],
+      "doses_raw": "0.3 mg kg -1",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Experimental drugs included LSD [(+)-LSD (+)-tartrate (2:1), 0.3 mg kg -1 ], diazepam (2 mg kg -1 ), and dexmedetomidine (0.35 to 1.5 mg kg -1 ). Drugs were injected intraperitoneally with a 26-gauge needle immediately after predrug scans and prior to postdrug scans.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [],
+  "judge_notes": [
+    "All three candidates returned zero assays. The judge agrees.",
+    "The only rodent work is widefield calcium imaging of cortical propagations in head-plated Thy1-GCaMP6s mice given LSD (study 4). Calcium imaging is a neural recording, which the rubric explicitly excludes as a behavioural assay.",
+    "No behavioural test (OFT, HTR, etc.) was run on the mice. The remaining datasets are human fMRI and self-report (MDMA, psilocybin, LSD), which fall outside the rodent scope.",
+    "Age set to 'mixed' with 42-168 days, the modal choice (2/3 candidates). This is the literal conversion of '6 to 24 wk old at the time of surgery'.",
+    "Route recorded as i.p. per the Methods text ('injected intraperitoneally'). Table 1 lists 'Cannula' for study 4 administration, which is an internal inconsistency in the paper.",
+    "Diazepam and dexmedetomidine were active controls in the imaging study. They were not given dosing entries because no behavioural experiment exists; this is consistent with all candidates.",
+    "Housing conditions are not described in this paper (details are deferred to ref. 62), so all housing fields are not_reported."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0,
+    "environmental_complexity_max": 0,
+    "recording_duration_max": 0,
+    "behavioural_complexity_mean": 0,
+    "environmental_complexity_mean": 0,
+    "recording_duration_mean": 0
+  },
+  "low_confidence_count": 4,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-26T16:11:58+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "81e220f016",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 52418,
+    "output_tokens": 1399,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "study_id": "Eliasen2026",
+  "doi": "10.1111/jnc.70463",
+  "species": "mouse",
+  "strain": "NMRI (Crl:NMRI)",
+  "age": {
+    "value": "juvenile",
+    "age_min_days": 14,
+    "age_max_days": 25,
+    "evidence": "pups aged postnatal day (PND) 14-25 were used for the present study",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": 29,
+    "n_female": 37,
+    "evidence": "In total, data from 66 animals were included in the study (37 females and 29 males).",
+    "confidence": "high"
+  },
+  "psychedelic": "DMT",
+  "dosing": [
+    {
+      "compound": "DMT",
+      "doses_mg_per_kg": [],
+      "doses_raw": "500 nM, 10 μM, or 90 μM",
+      "vehicle": "ethanol",
+      "route": "other",
+      "schedule": "acute",
+      "evidence": "DMT (Cayman chemical; Ann Arbor, MI, USA) was dissolved in 96% ethanol to a final stock solution of 500 μM, 10 μM, or 90 mM. On the experiment day, the stock solution was diluted ×1000 in ACSF to a final concentration of 500 nM, 10 μM, or 90 μM... bath applying DMT (5 mL). DMT was applied with a duration of 250-300 s.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "Mice were transferred through handling tunnels to the transport box. (Tunnel transfer only; no habituation handling protocol described.)",
+      "confidence": "medium"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "All pups were housed with the mother until PND 21, where females and males were weaned and separated with a maximum of five same-sex mice per cage.",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "illuminated under a 12-h light/dark cycle (Lights on from 07:00 AM).",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "yes",
+      "evidence": "Cages were enriched with hiding places.",
+      "confidence": "high"
+    }
+  },
+  "assays": [],
+  "judge_notes": [
+    "All three candidates agreed that no behavioural assays are present. The study is entirely ex vivo: whole-cell patch-clamp electrophysiology and Fura-2 calcium imaging in VTA brain slices. Both of these are excluded under the rubric as slice physiology and imaging, so the assays array is empty.",
+    "DMT was never administered to live animals. It was bath-applied to brain slices at 500 nM, 10 μM and 90 μM. The dosing entry follows the 2/3 candidate majority, which retained it for context with route 'other', no mg/kg conversion, and ethanol stock diluted in ACSF as the vehicle.",
+    "Handling is set to not_reported, following the 2/3 majority. The paper only describes moving mice to the transport box with handling tunnels, and this is not a habituation handling protocol.",
+    "Age is classified as juvenile (PND 14-25), following the 2/3 majority over 'adolescent'.",
+    "The DOI 10.1111/jnc.70463 was used unanimously by all candidates and is consistent with the peer-review link in the paper."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0,
+    "environmental_complexity_max": 0,
+    "recording_duration_max": 0,
+    "behavioural_complexity_mean": 0,
+    "environmental_complexity_mean": 0,
+    "recording_duration_mean": 0
+  },
+  "low_confidence_count": 0,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-25T16:47:46+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "8b6edada1b",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 67007,
+    "output_tokens": 1643,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}
