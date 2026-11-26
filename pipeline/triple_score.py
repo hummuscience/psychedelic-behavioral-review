@@ -143,6 +143,7 @@ def main():
         try:
             result = score_one(provider, pdf)
             result["scoring"] = candidate_stamp(tag, model_id)
+            result["scoring"]["temperature"] = getattr(provider, "last_temperature", 0.0)
             json_path.write_text(json.dumps(result, indent=2, ensure_ascii=False))
             dt = time.time() - t0
             sc = result["study_level_scores"]

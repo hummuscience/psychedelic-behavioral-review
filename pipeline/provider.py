@@ -31,6 +31,8 @@ SAIA_MAX_REQUESTS_PER_10S = int(os.environ.get("SAIA_MAX_REQUESTS_PER_10S", "8")
 # connection: ~16 min in all, after which the paper counts as failed.
 SAIA_BUSY_WAITS = (30, 60, 120, 240, 480)
 SAIA_MAX_RATE_LIMITED = 30  # 429 retries per call (each waits a few seconds)
+# Sampling temperature per attempt: greedy first; one retry if the reply is cut off.
+SAIA_TEMPERATURES = (0.0, 0.3)
 # A 504 ("Inference registry error") comes after the gateway has waited ~10 min
 # for the model's backend: the model is down, not busy. Retry twice, briefly.
 SAIA_GATEWAY_WAITS = (30, 60)
@@ -413,22 +415,28 @@ class SaiaProvider(Provider):
             f"{markdown}\n"
             "=== PAPER END ==="
         )
-        try:
-            resp = saia_chat(
-                self.client,
-                model=self.model,
-                messages=[
-                    {"role": "system", "content": prompt},
-                    {"role": "user", "content": user_content},
-                ],
-                temperature=0.0,
-                max_tokens=65536,
-                response_format={"type": "json_object"},
-            )
-        except Exception as e:
-            raise ProviderError(f"SAIA chat completion failed: {e}") from e
+        # A reply cut off at max_tokens is usually the model repeating itself;
+        # greedy decoding repeats it again, so the second try samples a little.
+        for temperature in SAIA_TEMPERATURES:
+            try:
+                resp = saia_chat(
+                    self.client,
+                    model=self.model,
+                    messages=[
+                        {"role": "system", "content": prompt},
+                        {"role": "user", "content": user_content},
+                    ],
+                    temperature=temperature,
+                    max_tokens=65536,
+                    response_format={"type": "json_object"},
+                )
+            except Exception as e:
+                raise ProviderError(f"SAIA chat completion failed: {e}") from e
+            finish = resp.choices[0].finish_reason
+            if finish != "length":
+                break
+        self.last_temperature = temperature
 
-        finish = resp.choices[0].finish_reason
         text = resp.choices[0].message.content or ""
         if finish == "length":
             raise ProviderError(
