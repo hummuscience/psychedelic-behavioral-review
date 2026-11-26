@@ -363,7 +363,7 @@ def test_bridge_comparison_matches_published_validation(data_copy: Path) -> None
             shutil.copy(REPO / "data/results_v2_full_consensus" / f"{s}.json", work / "candidates" / t)
     run("bridge_test.py", data_copy, "--compare-only", "--candidates", "qwen,glm53,deepseek4",
         "--choose-from", "deepseek4", "--ensemble", "")
-    report = next((data_copy / "data/calibration").glob("bridge_*.json"))
+    report = max((data_copy / "data/calibration").glob("bridge_*.json"))
     res = json.loads(report.read_text())["assay_agreement"]
     # Same numbers as figures/plot_three_way.py for rater 2 vs the published LLM
     assert res["rater 2 vs published LLM"]["B"]["n"] == 49
@@ -396,10 +396,10 @@ def test_bridge_flags_incomplete_runs(data_copy: Path) -> None:
                        env=env, capture_output=True, text=True)
     assert r.returncode == 1
     assert "::error::Bridge test incomplete: `glm53` scored 5 of 20 papers" in r.stdout
-    payload = json.loads(next((data_copy / "data/calibration").glob("bridge_*.json")).read_text())
+    payload = json.loads(max((data_copy / "data/calibration").glob("bridge_*.json")).read_text())
     assert not payload["complete"]
     assert not any(p["judged"] for p in payload["papers"].values())
-    md = next((data_copy / "data/calibration").glob("bridge_*.md")).read_text()
+    md = max((data_copy / "data/calibration").glob("bridge_*.md")).read_text()
     assert "Incomplete run" in md
 
 
@@ -517,10 +517,10 @@ def test_bridge_ensemble_set_by_hand(data_copy: Path) -> None:
             shutil.copy(REPO / "data/results_v2_full_consensus" / f"{s}.json", work / "candidates" / t)
     run("bridge_test.py", data_copy, "--compare-only", "--candidates", ",".join(trio),
         "--ensemble", ",".join(trio))
-    payload = json.loads(next((data_copy / "data/calibration").glob("bridge_*.json")).read_text())
+    payload = json.loads(max((data_copy / "data/calibration").glob("bridge_*.json")).read_text())
     assert payload["complete"] and payload["ensemble"] == trio
     assert all(p["judged"] for p in payload["papers"].values())
-    md = next((data_copy / "data/calibration").glob("bridge_*.md")).read_text()
+    md = max((data_copy / "data/calibration").glob("bridge_*.md")).read_text()
     assert "Ensemble set by hand" in md and "Choice of the third candidate" not in md
 
 
@@ -768,3 +768,20 @@ def test_judging_waits_for_a_missing_model(tmp_path: Path, monkeypatch) -> None:
     assert mu.plan_judging("b", models, reg) == "judge"
     assert not (cons / "b.json").exists() and (cons / "b.json.partial").exists()
     assert mu.plan_judging("c", models, reg) == "skip"
+
+
+def test_low_confidence_items_are_split() -> None:
+    import monthly_update as mu
+    d = {"assays": [{"assay_name": "Pain test",
+                     "behavioural_complexity": {"B1_num_measures": {"score": 1, "confidence": "high"},
+                                                "B3_sequential_structure": {"score": 0, "confidence": "low"}},
+                     "environmental_complexity": {"E4_nesting": {"score": 0, "confidence": "low",
+                                                                 "evidence": "not reported"}},
+                     "recording_duration": {"D3_recording_days": {"score": 3, "confidence": "low",
+                                                                  "evidence": "inferred from D13 to D65"}},
+                     "experimental_conditions": {"setup_habituation": {"value": "not_reported",
+                                                                       "confidence": "low"}}}]}
+    at_zero, with_points = mu.low_confidence_items(d)
+    assert at_zero == 2  # B3 and E4; conditions and housing aren't scored items
+    assert with_points == [{"assay": "Pain test", "item": "D3_recording_days", "score": 3,
+                            "evidence": "inferred from D13 to D65"}]

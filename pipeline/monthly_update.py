@@ -245,18 +245,41 @@ def _md_escape(s: str) -> str:
     return (s or "").replace("|", "\\|").replace("\n", " ")
 
 
+def low_confidence_items(d: dict) -> tuple[int, list[dict]]:
+    """Scored items (B/E/D) the judge rated low confidence, split in two:
+    the number scored 0 (mostly details the paper doesn't report; the rubric
+    asks for low confidence there) and the list of those that add points."""
+    from score_studies import ITEM_KEYS
+    at_zero, with_points = 0, []
+    for a in d.get("assays") or []:
+        for dim, keys in ITEM_KEYS.items():
+            for key in keys:
+                item = (a.get(dim) or {}).get(key)
+                if not isinstance(item, dict) or item.get("confidence") != "low":
+                    continue
+                if (item.get("score") or 0) > 0:
+                    with_points.append({"assay": a.get("assay_name", ""), "item": key,
+                                        "score": item.get("score"),
+                                        "evidence": item.get("evidence", "")})
+                else:
+                    at_zero += 1
+    return at_zero, with_points
+
+
 def _consensus_row(stem: str, reg: dict) -> str:
     d = json.loads((CONSENSUS_DIR / f"{stem}.json").read_text())
     e = reg.get(stem, {})
     compounds = ", ".join(sorted({x.get("compound", "?") for x in d.get("dosing") or []})) or "—"
     sc = d.get("study_level_scores") or {}
     link = f"[{e.get('year', '')}]({e['url']})" if e.get("url") else e.get("year", "")
+    at_zero, with_points = low_confidence_items(d)
     return (f"| `{stem}` | {_md_escape((e.get('authors') or [''])[0])} {link} | "
             f"{_md_escape(e.get('title', ''))[:110]} | {_md_escape(compounds)} | "
             f"{len(d.get('assays') or [])} | "
             f"{sc.get('behavioural_complexity_max', 0):.1f} / "
             f"{sc.get('environmental_complexity_max', 0):.1f} / "
-            f"{sc.get('recording_duration_max', 0):.1f} | {d.get('low_confidence_count', 0)} |")
+            f"{sc.get('recording_duration_max', 0):.1f} | {at_zero} | "
+            f"{len(with_points) if with_points else '—'} |")
 
 
 def _route_multiple(stem: str) -> bool:
@@ -343,9 +366,13 @@ def write_reports(today: date, search: dict, fetched: dict, scored: list[str],
     ]
     if with_assays:
         lines += ["Scores are B / E / D maxima (behavioural complexity, environmental "
-                  "complexity, recording duration).", "",
-                  "| stem | first author, year | title | compounds dosed | assays | B / E / D | low-conf items |",
-                  "|---|---|---|---|---|---|---|"]
+                  "complexity, recording duration). Low-confidence scored items: *at 0* "
+                  "are mostly details the paper doesn't report (the rubric asks for low "
+                  "confidence there) and add nothing; *with points* add to the score "
+                  "and are listed in the review checklist.", "",
+                  "| stem | first author, year | title | compounds dosed | assays | B / E / D "
+                  "| low-conf at 0 | low-conf with points |",
+                  "|---|---|---|---|---|---|---|---|"]
         lines += [_consensus_row(s, reg) for s in with_assays]
     else:
         lines.append("None this run.")
@@ -410,6 +437,12 @@ def write_reports(today: date, search: dict, fetched: dict, scored: list[str],
                       + ": add them to `MULTI_ROUTE_MAP` in "
                       "`figures/plot_application_donut.py` and regenerate "
                       "`data/multi_route_map.json`, or the applications page drops them.")
+    uncertain = [(s, x) for s in with_assays for x in low_confidence_items(
+        json.loads((CONSENSUS_DIR / f"{s}.json").read_text()))[1]]
+    if uncertain:
+        checks.append("- [ ] Check these low-confidence items that add points:")
+        checks += [f"  - `{s}` {x['item']} = {x['score']} ({_md_escape(x['assay'])[:60]}): "
+                   f"{_md_escape(str(x['evidence']))[:160]}" for s, x in uncertain]
     checks.append("- [ ] Check the dropped titles below for anything the classifier missed.")
     lines += ["", "## Review checklist", *checks]
 
