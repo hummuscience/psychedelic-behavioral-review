@@ -1,0 +1,1098 @@
+{
+  "study_id": "Shamsedin2026",
+  "doi": "10.1016/j.neures.2026.105117",
+  "species": "rat",
+  "strain": "Sprague-Dawley",
+  "age": {
+    "value": "adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Adult male Sprague-Dawley rats weighing 250-280 g at the start of the study were used.",
+    "confidence": "medium"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 50,
+    "n_female": null,
+    "evidence": "Adult male Sprague-Dawley rats weighing 250-280 g at the start of the study were used... Rats were randomly assigned to five experimental cohorts (n = 10 per group).",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        2.5,
+        5.0,
+        10.0
+      ],
+      "doses_raw": "a single intraperitoneal (i.p.) injection of PSY at 2.5, 5, or 10 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "PSY was dissolved in sterile normal saline (0.9% w/v NaCl)... followed by a single intraperitoneal (i.p.) injection of PSY at 2.5, 5, or 10 mg/kg. This single dose was given on Day 15. (5 and 10 mg/kg groups died; only 2.5 mg/kg entered behavioural testing.)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "No handling protocol described.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "The animals were housed in pairs in standard polycarbonate cages... (Post-surgery: 'Animals were housed individually and provided a 13-day postoperative recovery'; however during the testing period 'companion rats were temporarily transferred to an identical adjacent holding cage' for LFP recordings, implying pair housing during testing.)",
+      "confidence": "medium"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "a 12-hour light/dark cycle (lights on at 07:00 AM)... All drug administrations, across every cohort, took place during the light phase of the diurnal cycle",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Standard polycarbonate cages; no enrichment items mentioned.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Y-maze spontaneous alternation test",
+      "assay_description": "Day 20; symmetric acrylic Y-maze (arms 40×15×30 cm, 120°); 8-min free exploration; spontaneous alternation percentage and total arm entries. Groups: Control, STZ, STZ+PSY 2.5 mg/kg (single i.p. dose Day 15).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "a single intraperitoneal (i.p.) injection of PSY",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No pre-test apparatus habituation described for the Y-maze.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Each rat was placed at the central junction and allowed to explore freely for 8 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in the Y-maze apparatus during the test; chow ad libitum in home cage.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in the Y-maze apparatus during the test.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "short_term_1to7d",
+          "value_minutes": 7200,
+          "evidence": "single dose was given on Day 15... the Y-maze on Day 20",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 30,
+        "n_male": 30,
+        "n_female": null,
+        "n_per_group_min": 10,
+        "evidence": "Data are expressed as mean ± SEM (n = 10 rats per group) (Fig. 4)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "ICV-STZ reduced spontaneous alternation below chance; a single 2.5 mg/kg psilocybin dose restored alternation to Control levels. Total arm entries did not differ among groups.",
+        "statistics": "SAP: F(2,27)=48.40, p<0.0001; STZ vs Control p<0.0001; STZ+PSY vs STZ p<0.0001; STZ+PSY vs Control p>0.05. Total arm entries: F(2,27)=0.85, p=0.44.",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "PSY reversed much of that deficit: STZ + PSY animals alternated significantly more often than untreated STZ rats (p < 0.0001), and their performance no longer differed from Control (p > 0.05).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Spontaneous alternation percentage (SAP)... Total arm entries were also recorded on their own",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only session totals reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "An alternation was scored as correct when an animal entered all three arms consecutively within an overlapping triad.",
+          "confidence": "medium"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Arm entries/alternation, not ethological acts.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Rats tested individually.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Spatial working memory was assessed on Day 20",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "tracked by a synchronized digital tracking system",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Separate one-way ANOVAs.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "symmetric Y-maze made of three identical acrylic arms (40 × 15 × 30 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No refuge in the Y-maze.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Acrylic arms; no bedding mentioned.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Three arms branching from a central junction; open extensions, not enclosed compartments (analogous to EPM rule).",
+          "confidence": "medium"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Each rat was placed at the central junction",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in apparatus.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Spatial working memory was assessed on Day 20",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "allowed to explore freely for 8 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "the Y-maze on Day 20",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug Y-maze session reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "single dose was given on Day 15... Y-maze on Day 20 (5 days post-dose)",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "8-min session.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Novel object recognition (NOR)",
+      "assay_description": "Days 25-26; open-field enclosure (48×48×42 cm) lined with bedding; 5-min familiarization with two identical objects, 80-min ITI, 3-min retention test with one novel object; discrimination index and novel/familiar exploration times.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "a single intraperitoneal (i.p.) injection of PSY",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No pre-exposure to the arena described beyond the familiarization trial.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "the animal was returned to the arena for a 3-minute retention test",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in NOR arena.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in NOR arena.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "long_term_over7d",
+          "value_minutes": 14400,
+          "evidence": "single dose was given on Day 15... novel object recognition (NOR) across Days 25-26",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 30,
+        "n_male": 30,
+        "n_female": null,
+        "n_per_group_min": 10,
+        "evidence": "Data are expressed as mean ± SEM (n = 10 rats per group) (Fig. 5)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "The discrimination index did not differ significantly among groups (STZ numerically lower, PSY numerically higher). Exploration times showed a Group×Object interaction: Control and STZ+PSY explored the novel object more than the familiar one, whereas STZ did not.",
+        "statistics": "DI: F(2,27)=2.00, p=0.155; Tukey Control vs STZ p=0.55, STZ vs STZ+PSY p=0.13; one-sample t vs 0.5: Control p=0.022, STZ+PSY p=0.0005, STZ p=0.63. Exploration: Object F(1,27)=12.12, p=0.0017; Group×Object F(2,27)=6.01, p=0.0069; Sidak Control p=0.025, STZ+PSY p=0.010, STZ p=0.94.",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "one-way ANOVA using the corrected, ratio-based DI values did not show a significant overall effect of treatment (F(2,27)= 2.00, p = 0.155)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "two complementary readouts: the DI and the raw time spent exploring each object",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No within-session time bins.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Exploration time and ratio only.",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Tested individually.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Recognition memory was assayed between Days 25-26",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Snout-contact criterion; no classifier reported.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Separate ANOVAs.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "openfield enclosure (48 × 48 × 42 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter in open field.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "openfield enclosure (48 × 48 × 42 cm) lined with standard bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material mentioned.",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Objects are test stimuli.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "openfield enclosure",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Tested individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in arena.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "5-minute familiarization trial... 3-minute retention test... Animals exhibiting total exploration durations below 10 s across trials were excluded",
+          "confidence": "medium"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "5-minute familiarization trial... 3-minute retention test",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Following a strict 80-minute inter-trial interval (both trials same day per animal)",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug NOR session.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "single dose on Day 15; NOR Days 25-26",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sessions ≤5 min.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    },
+    {
+      "assay_name": "Barnes maze spatial learning and memory task",
+      "assay_description": "Days 27-31; elevated circular platform (122 cm, 20 holes) with hidden escape box, 90-dB white noise + 500-W light; 4 acquisition days (trials ≤120 s) + Day-5 probe; escape latency, errors, GS/NGS entries and ratio, search-strategy classification.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "a single intraperitoneal (i.p.) injection of PSY",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "After a brief habituation period, animals underwent a series of acquisition trials",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Free movement on elevated platform; no restraint described.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food on the maze.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water on the maze.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "long_term_over7d",
+          "value_minutes": 17280,
+          "evidence": "single dose was given on Day 15... Barnes maze test (BMT) from Days 27-31",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 30,
+        "n_male": 30,
+        "n_female": null,
+        "n_per_group_min": 10,
+        "evidence": "Data are presented as mean ± SEM (n = 10 rats per group) (Fig. 6)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "ICV-STZ increased escape latency and errors; psilocybin 2.5 mg/kg normalized latency and reduced errors relative to STZ, increased probe-trial goal-sector entries, and shifted search strategy from random toward spatial on Days 3-4. GS/NGS ratio did not differ.",
+        "statistics": "Latency: Day F(2.79,75.23)=26.48, p<0.0001; Group F(2,27)=55.23, p<0.0001; Group×Day F(5.57,75.23)=8.03, p<0.0001; Day 5 STZ vs STZ+PSY p<0.0001, Control vs STZ+PSY p=0.86. Errors: Day F(1.79,48.25)=22.89, p<0.0001; Group F(2,27)=24.85, p<0.0001; interaction F(3.57,48.25)=1.75, p=0.16. GS: F(2,27)=7.09, p=0.0034 (STZ+PSY vs STZ p=0.0176); NGS: F(2,27)=11.47, p=0.0002; GS/NGS: F(2,27)=1.34, p=0.28.",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "by Day 5, STZ-treated rats exhibited significantly longer latencies (47.17 ± 1.81 s) than the Control (15.70 ± 2.70 s; p < 0.0001) and STZ + 2.5 PSY groups (17.43 ± 2.52 s; p < 0.0001)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 3,
+          "value": "7+",
+          "evidence": "we derived escape latency, total errors (incorrect nose pokes), the balance of goal-sector (GS) versus non-goal-sector (NGS) exploration, and the resulting GS/NGS ratio... classified each animal's search behavior... into one of three strategies",
+          "confidence": "medium"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Learning curves across days (between-session), not within-session.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "serial search (sequential exploration of adjacent holes...), and random search (non-localized exploration, frequent direction changes, or central maze crossings)",
+          "confidence": "medium"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Navigation latencies/errors and strategy categories.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Tested individually.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Spatial learning and reference memory retention were assessed",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No automated behavioural classifier reported.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Separate ANOVAs per measure.",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "elevated circular platform (122 cm diameter) containing 20 evenly spaced peripheral holes",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Escape box is the task goal (trial endpoint), not a freely available refuge.",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Elevated platform; no bedding.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single circular platform.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Tested individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water on maze.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Acquisition trials took place across Days 1-4; on the last day of testing (Day 5), we ran a probe trial",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "acquisition trials, each capped at 120 s",
+          "confidence": "medium"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "assessed between Days 27 and 31 (5 days)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug Barnes maze session.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "single dose Day 15; BMT Days 27-31",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Trials ≤120 s.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Elevated plus maze (EPM)",
+      "assay_description": "Day 22; plus maze 50 cm high, arms 30×5 cm, closed walls 15 cm; 5-min test; open/closed arm time and entries via automated video tracking.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "a single intraperitoneal (i.p.) injection of PSY",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No apparatus habituation described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "The rats were released facing an open arm and monitored for 5 min.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food on EPM.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water on EPM.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "short_term_1to7d",
+          "value_minutes": 10080,
+          "evidence": "single dose was given on Day 15... the elevated plus maze (EPM) on Day 22",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 30,
+        "n_male": 30,
+        "n_female": null,
+        "n_per_group_min": 10,
+        "evidence": "Control (n = 10) STZ (n = 10) STZ + PSY 2.5 (n = 10) (Table 2)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "No group differences on any EPM parameter; neither ICV-STZ nor psilocybin altered anxiety-like behaviour or closed-arm locomotion.",
+        "statistics": "Open arm entries (%) F(2,27)=0.2420, p=0.7867; open arm time (%) F=1.254, p=0.3016; open arm entries F=0.4607, p=0.6357; open arm time (s) F=1.356, p=0.2746; closed arm entries F=0.3156, p=0.7320; closed arm time F=0.7514, p=0.4813.",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "One-way ANOVA found no significant group differences on any EPM parameter (p > 0.05).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "Table 2: open arm entries (%), open arm time (%), open arm entries (No.), open arm time (s), closed arm entries (No.), closed arm time (s)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session totals only.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Zone time and entries.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Tested individually.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "a standard conflict-based test of anxiety-like behavior",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "extracted using automated videotracking modules (position tracking)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Separate one-way ANOVAs.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "elevated plus-maze apparatus situated 50 cm above the room floor",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EPM closed arms are not a shelter per rubric.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding on maze.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "EPM arms are open-ended extensions of a central platform (rubric).",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Tested individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "tracked on day 22",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "monitored for 5 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "on day 22",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug EPM.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Dose Day 15; EPM Day 22 (7 days post).",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5-min session.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Forced swim test (FST)",
+      "assay_description": "Day 33; glass cylinder (30×50×60 cm), water 25±1 °C, 25 cm depth; 15-min pretest Day 32; 6-min test measuring latency to first immobility (first 2 min) and total immobility (final 4 min).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "a single intraperitoneal (i.p.) injection of PSY",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "all animals underwent a 15-minute pretest habituation trial 24 h earlier (Day 32)",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "FST cylinder: transparent glass cylinder... filled with water",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in FST cylinder.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Swim water is not a drinking source; no water bottle.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "long_term_over7d",
+          "value_minutes": 25920,
+          "evidence": "single dose was given on Day 15... forced swim test (FST) on Day 33",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 30,
+        "n_male": 30,
+        "n_female": null,
+        "n_per_group_min": 10,
+        "evidence": "Data are presented as mean ± SEM (n = 10 rats per group) (Fig. 7)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "STZ lengthened latency to first immobility vs Control; psilocybin shortened it back toward Control. Psilocybin significantly reduced total immobility relative to STZ (STZ vs Control difference not significant, p=0.068).",
+        "statistics": "Latency: F(2,27)=13.63, p<0.0001; STZ vs Control p<0.0001; STZ+PSY vs STZ p<0.01; STZ+PSY vs Control p=0.43. Total immobility: F(2,27)=11.22, p=0.0003; STZ vs Control p=0.068; STZ+PSY vs STZ p<0.001; STZ+PSY vs Control p=0.059.",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "PSY treatment significantly reduced total immobility time in the STZ + 2.5 PSY group (91.80 ± 4.85 s) relative to the STZ-alone group (p < 0.001)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "The initial 2 min were used to measure the latency to the first immobility event, while the final 4 min were used to calculate the total immobility duration.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Fixed epoch split for two separate measures, not a within-session time-course analysis.",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST immobility excluded per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Tested individually.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Behavioral despair was measured",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No automated classifier reported.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Separate one-way ANOVAs.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "transparent glass cylinder (30 × 50 × 60 cm) filled with water",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter in cylinder.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Water-filled cylinder; definitionally absent.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single cylinder.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Tested individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water access.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "The assessment session lasted for 6 min (pretest data not reported).",
+          "confidence": "medium"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "The assessment session lasted for 6 min.",
+          "confidence": "medium"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Behavioral despair was measured on day 33",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Day 32 pretest occurred after drug dosing (Day 15), not a pre-drug baseline.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Dose Day 15; FST Day 33 (18 days post).",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "6-min session.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Five behavioural assays retained (Y-maze, NOR, Barnes maze, EPM, FST); all candidates agreed. LFP recordings and rectal-temperature/survival monitoring excluded as non-behavioural.",
+    "Dosing lists 2.5, 5 and 10 mg/kg (all administered); only 2.5 mg/kg survived into behavioural testing.",
+    "group_housing set to 'yes' (medium): paper states pair housing and individual housing during post-op recovery, but LFP methods describe companion rats being moved out of the home cage during Days 14-34 recordings, implying pair housing during testing.",
+    "Corrected gemma's B1 scores (score must match category: 2-3 measures = 1) and its erroneous time_to_assay minutes and D5=No (all tests ≥5 days post-dose → D5=1).",
+    "Barnes B1 set to 7+ (latency, errors, GS, NGS, GS/NGS ratio, three strategy percentages); B2=0 (across-day, not within-session; modal); B3=1 (strategy classification of sequential search; modal); E2=0 for escape box (task goal, modal).",
+    "Y-maze B3=1 (modal; alternation scored from consecutive arm-entry triads); E6=0 (modal; arms treated as open extensions like EPM).",
+    "NOR: D1=1 (modal; familiarization exploration quantified for exclusion), D3 overridden to 1 day because the 80-min ITI places both trials on the same day for each animal; B4=0 (modal).",
+    "FST: Day-32 pretest data not reported, so D1/D2/D3 based on the 6-min test (modal); B2=0 (modal); water_restriction 'during' (modal)."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 6.25,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 4.09,
+    "behavioural_complexity_mean": 3.25,
+    "environmental_complexity_mean": 0.27,
+    "recording_duration_mean": 2.18
+  },
+  "low_confidence_count": 5,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-26T16:19:34+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "81e220f016",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 93821,
+    "output_tokens": 14663,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

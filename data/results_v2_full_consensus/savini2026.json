@@ -1,0 +1,722 @@
+{
+  "study_id": "Savini2026",
+  "doi": null,
+  "species": "rat",
+  "strain": "Sprague-Dawley",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 56,
+    "age_max_days": 70,
+    "evidence": "Adult male and female Sprague-Dawley rats (8-10 weeks of age)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Adult male and female Sprague-Dawley rats (8-10 weeks of age) from an established breeding colony at Ohio Northern University",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin, Norbaeocystin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        0.3,
+        0.6,
+        1.0
+      ],
+      "doses_raw": "PSIL (0.3, 0.6, or 1 mg/kg)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Rats were given intraperitoneal injections of PSIL (0.3, 0.6, or 1 mg/kg), NOR (0.3, 0.6, or 1 mg/kg), or vehicle (0.9% saline) at a volume of 1 ml/kg. (Exp 3: 0.6 mg/kg given on Day 11 and again on Day 14.)",
+      "confidence": "medium"
+    },
+    {
+      "compound": "Norbaeocystin",
+      "doses_mg_per_kg": [
+        0.3,
+        0.6,
+        1.0
+      ],
+      "doses_raw": "NOR (0.3, 0.6, or 1 mg/kg)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Rats were given intraperitoneal injections of PSIL (0.3, 0.6, or 1 mg/kg), NOR (0.3, 0.6, or 1 mg/kg), or vehicle (0.9% saline) at a volume of 1 ml/kg. (Exp 3: 0.6 mg/kg given on Day 11 and again on Day 14.)",
+      "confidence": "medium"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "handled for 2-3 min daily for a period of 1 week prior to any experimental manipulations",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "housed in standard Plexiglas cages with 2-3 rats per cage",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "Animals were housed on a 12-h light/dark schedule (lights on at 0700)... All experimental manipulations... took place during the light cycle",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "each cage included ¼\" corncob bedding and free access to food and water; no enrichment items mentioned",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Elevated Plus Maze",
+      "assay_description": "5-min test on EPM (two open and two closed arms, 115 cm each, 51.5 cm above ground, ~4 lux), videotaped and scored with LimeLight; open arm time, open arm entries, distance traveled. Tested 30 min after PSIL/NOR/vehicle (0.3-1 mg/kg) in Exp 1, 24 h after 1 mg/kg in Exp 2, and 30 min after 0.6 mg/kg in estrous-tracked females in Exp 3; males and females.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Rats were given intraperitoneal injections of PSIL (0.3, 0.6, or 1 mg/kg), NOR (0.3, 0.6, or 1 mg/kg), or vehicle (0.9% saline)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No pre-test exposure to the EPM apparatus described",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "rats were placed in the intersection of the open and closed arms, facing an open arm",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard EPM apparatus; no food in the apparatus during the 5-min test",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard EPM apparatus; no water in the apparatus during the 5-min test",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 30,
+          "evidence": "30 min prior to being tested on the EPM (Exp 1); 'The next day, the rats were tested on the EPM' (Exp 2, ~24 h); 'Thirty minutes later, the rats were placed on the EPM for 5 min' (Exp 3)",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "Group n not explicitly reported; only ANOVA df given (e.g., males Exp1 F(6,58); females Exp1 F(6,64); Exp3 F(2,118)). Discussion notes 'over 40 females administered PSIL' in Exp 3.",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "Acutely, 0.6 and 1 mg/kg PSIL and 1 mg/kg NOR reduced open-arm time in males, whereas only 1 mg/kg PSIL did so in females; 1 mg/kg PSIL also reduced distance traveled in both sexes. No effects 24 h after 1 mg/kg (Exp 2). In Exp 3, 0.6 mg/kg PSIL (but not NOR) reduced open-arm time and distance in females independent of estrous stage.",
+        "statistics": "Exp1 males: open arm time F(6,58)=2.94, p=0.014 (0.6 PSIL p=0.049, 1 PSIL p=0.041, 1 NOR p=0.015 vs vehicle); entries F(6,58)=3.32, p=0.007; distance F(6,59)=9.61, p<0.001. Exp1 females: open arm time F(6,64)=3.36, p=0.006 (1 PSIL vs vehicle p=0.017); entries F(6,65)=2.22, p=0.052; distance F(6,65)=13.16, p<0.001. Exp2 males: time F(2,25)=0.08, p=0.93; entries F(2,25)=0.07, p=0.93; distance F(2,24)=1.58, p=0.23; females: time F(2,24)=0.47, p=0.63; entries F(2,25)=0.94, p=0.40; distance F(2,23)=0.81, p=0.46. Exp3: estrus F(3,118)=3.87, p=0.011; drug F(2,118)=5.27, p=0.006 (PSIL vs vehicle p=0.038, vs NOR p=0.007); entries F(2,117)=2.92, p=0.058; distance F(2,117)=11.43, p<0.001.",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "yes",
+        "time_dependent": "yes",
+        "evidence": "Males treated with 0.6 mg/kg PSIL (p = 0.049), 1 mg/kg PSIL (p = 0.041), or 1 mg/kg NOR (p = 0.015) spent less time in the open arms of the EPM than vehicle-treated males... In Experiment 2, neither PSIL nor NOR impacted EPM behavior the next day.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "We calculated the time rats spent in the open arms, the number of entries rats made into the open arms, and the overall distance rats traveled on the maze.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only whole-session totals reported; no within-session time course.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition/sequence analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Measures are spatial/locomotor (open arm time, entries, distance).",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "EPM anxiety test; animals tested individually.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EPM is an innate-avoidance anxiety test.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "scored using the LimeLight software program (Lafayette Instrument Co.) — position tracking.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Each measure from the EPM and OFT was analyzed with a one-way ANOVA",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "The EPM (San Diego Instruments, San Diego, CA) consisted of two open arms (115-cm length) and two closed arms",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent — EPM closed arms are not a shelter per rubric",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent — no bedding on EPM",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "EPM arms are extensions of a central platform; scored as single space per rubric",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "rats were placed in the intersection of the open and closed arms — tested individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water on EPM during 5-min test",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "EPM run in Exp 1 (30 min post-injection), Exp 2 (next day), and Exp 3 (Day 11).",
+          "confidence": "medium"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "assessing rat behavior on an elevated plus maze (EPM) for 5 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "EPM data collected across separate experiments/days (Exp 1, Exp 2, Exp 3 Day 11).",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug EPM session described.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Male and female rats were injected with PSIL (1 mg/kg), NOR (1 mg/kg), or vehicle and then returned to their home cage. The next day, the rats were tested on the EPM",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5-min sessions",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "10-min test in a 61×61×61 cm opaque Plexiglas open field with gridded floor (9 grids), ~4 lux, videotaped and scored with LimeLight; center time, distance traveled, grid crossings. Tested 30 min after PSIL/NOR/vehicle (0.3-1 mg/kg), males and females (Exp 1).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Rats were given intraperitoneal injections of PSIL (0.3, 0.6, or 1 mg/kg), NOR (0.3, 0.6, or 1 mg/kg), or vehicle",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No pre-test exposure to the open field described",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "locomotor activity and anxiety-like behavior were examined by placing rats in an open field (OFT) for 10 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Standard open field; no food in apparatus during test",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Standard open field; no water in apparatus during test",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "injected with PSIL... NOR..., or vehicle 30 min prior to being tested on the EPM or in the OFT",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "Group n not explicitly reported; ANOVA df only (males F(6,66), females F(6,60)). 'Separate groups of animals were tested in the EPM and OFT.'",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "Lower doses (especially 0.3 mg/kg NOR) increased center time and locomotion, whereas higher doses (notably 1 mg/kg PSIL) reduced center time, distance and grid crossings; 0.3 mg/kg NOR increased center time in males vs vehicle, and 1 mg/kg PSIL reduced center time in females vs low-dose NOR.",
+        "statistics": "Males: center time F(6,66)=5.75, p<0.001; distance F(6,66)=14.28, p<0.001; grid crossings F(6,68)=7.21, p<0.001. Females: center time F(6,60)=3.50, p=0.005; distance F(6,62)=21.32, p<0.001; grid crossings F(6,64)=8.90, p<0.001.",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "yes",
+        "time_dependent": "n/a",
+        "evidence": "In both sexes, there appeared to be a linear relationship between drug dose and each dependent measure; the higher the dose of each drug, the less time spent in the center area, the less distance traveled, and the fewer grids crossed.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "We calculated the time rats spent in the center of the open field (centermost grid), total distance traveled, and the number of grids crossed.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only whole-session totals reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Spatial/locomotor measures only.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual OFT testing.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate locomotion/anxiety test.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "scored using the LimeLight software program (Lafayette Instrument Co.) — position tracking.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Each measure from the EPM and OFT was analyzed with a one-way ANOVA",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "The open field (61 × 61 × 61 cm) was made of four opaque Plexiglas sides and a gridded Plexiglas bottom",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "gridded Plexiglas bottom",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Grids are scoring zones, not physical compartments",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Rats tested individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in open field",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "OFT run once, Exp 1 only",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "placing rats in an open field (OFT) for 10 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "OFT conducted once in Experiment 1",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug OFT session",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "OFT only at 30 min post-injection",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "10-min session",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "Acoustic Startle Response",
+      "assay_description": "Females (Exp 3) placed in a Plexiglas cylinder in a soundproof SR-LAB startle chamber; 5-min acclimation (68 dB) then 30 × 110-dB, 40-ms white-noise bursts at 30-45 s ISI; peak startle averaged in blocks of 5 trials. Tested 30 min after 0.6 mg/kg PSIL/NOR/vehicle on Day 14, with estrous stage as a factor.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "On Day 14, the rats were injected with the same treatment they received on Day 11. Thirty minutes later, the rats were tested for their acoustic startle response (ASR).",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Each session began with a 5-min acclimation period (68-dB background noise) — within-session acclimation, not separate apparatus habituation",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "Inside the chamber, rats were placed in a Plexiglas cylinder",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Startle chamber; no food during session",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Startle chamber; no water during session",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 30,
+          "evidence": "Thirty minutes later, the rats were tested for their acoustic startle response (ASR).",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "Group n not explicitly reported; only ANOVA df given (e.g., F(5,565)).",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "Startle declined across trial blocks (habituation). PSIL lowered startle vs vehicle in the 5th block in diestrus (p=0.02), with a trend in estrus (p=0.07), suggesting enhanced habituation; NOR effects were not significant.",
+        "statistics": "Trial block F(5,565)=3.99, p=0.001; Drug x Trial Block F(10,565)=2.55, p=0.005; Estrus x Drug x Trial Block F(30,565)=1.49, p=0.047; diestrus PSIL vs vehicle p=0.02; estrus p=0.07.",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "When rats were in estrus (p = 0.07) or diestrus (p = 0.02), PSIL led to lower startle responses than vehicle, particularly during the 5th block of trials, although the post hoc comparison for rats in estrus was only a trend",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The peak startle responses from blocks of 5 trials were averaged and used for statistical analysis.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Female startle responses decreased as trials progressed [effect of trial block: F(5,565) = 3.99, p = 0.001]",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence analysis reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Startle magnitude is a reflex measure",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual startle testing",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Reflexive startle/habituation, not a learned task",
+          "confidence": "medium"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "movement... was detected via a piezoelectric accelerometer",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "ASR data from Experiment 3 were analyzed with a mixed-model ANOVA",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "soundproof startle chamber (SR-LAB system, San Diego Instruments)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Plexiglas cylinder; no bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "definitionally absent",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Plexiglas cylinder — single compartment",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Rats tested individually in cylinder",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food/water in startle chamber",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "ASR tested once on Day 14",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "5-min acclimation period... followed by 30 noise bursts... presented at 30-45 s inter-stimulus intervals (≥~19.5 min total by these stated parameters)",
+          "confidence": "medium"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Day 14 only",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug ASR session",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Tested 30 min post-injection only",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session well under 6 h",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "All three candidates identified the same three assays (EPM, OFT, ASR); EPM across Experiments 1–3 collapsed into one assay per rubric (same paradigm, different timepoints/doses/cohorts). Vaginal lavage/estrous staging is not a behavioural assay and was excluded.",
+    "EPM and OFT B1 set to score 1 (3 measures = 2-3 category); gemma4's score of 2 was inconsistent with its own category.",
+    "ASR B1 set to 0 (single measure: peak startle); gemma4's score of 1 overridden.",
+    "OFT D2 set to 0 (10 min < 15 min); qwen's score of 1 was a boundary error.",
+    "ASR D2 scored 1 (modal): total not stated but stated parameters (5-min acclimation + 30 bursts at ≥30 s ISI) give ≥~19.5 min; confidence medium.",
+    "ASR setup_habituation set to not_reported: the 5-min acclimation is within-session, which the rubric explicitly excludes from setup habituation (overrides modal 'yes').",
+    "ASR time_dependent set to n/a (single timepoint); trial-block effects are within-session, captured in B2.",
+    "Sample sizes left null: group n's are not explicitly reported, only ANOVA degrees of freedom; qwen's df-derived estimates were not adopted.",
+    "Dosing schedule kept as 'acute' (modal) though Exp 3 animals received the same dose twice (Days 11 and 14); noted in evidence.",
+    "enrichment_housing set to not_reported (modal); corncob bedding alone is not enrichment and absence of enrichment was not explicitly stated."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 1.25,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 4.09,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 1.82
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-26T16:32:53+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "81e220f016",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 69286,
+    "output_tokens": 10087,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

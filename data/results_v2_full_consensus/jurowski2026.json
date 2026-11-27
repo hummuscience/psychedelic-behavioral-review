@@ -1,0 +1,107 @@
+{
+  "study_id": "Jurowski2026",
+  "doi": "10.1007/s00204-025-04255-1",
+  "species": "not_applicable",
+  "strain": null,
+  "age": {
+    "value": "not_reported",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Purely computational (in silico) study; no live animals were used — 'These tools enabled the high-throughput screening of ADMET parameters and hazards depending on the organ, without the need for animal testing'.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "not_reported",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "No animal subjects; only QSAR-predicted rat/mouse LD50 values are reported.",
+    "confidence": "high"
+  },
+  "psychedelic": "ALD-52, 1P-LSD, 1B-LSD, 1V-LSD, 1cP-LSD (in silico predictions only; no compound administered to animals)",
+  "dosing": [],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "No in vivo experiments were conducted; in silico study only.",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "No in vivo experiments were conducted; in silico study only.",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "No in vivo experiments were conducted; in silico study only.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "No in vivo experiments were conducted; in silico study only.",
+      "confidence": "high"
+    }
+  },
+  "assays": [],
+  "judge_notes": [
+    "All three candidates agreed that this paper contains no rodent behavioural assays — it is an entirely in silico/QSAR toxicological prediction study (ADMETlab 3.0, Percepta, STopTox, ProTox 3.0, VEGA, TEST 5.1.2, admetSAR 3.0, OCHEM).",
+    "Rat/mouse LD50 values in Table 3 are model-predicted, not experimentally measured; no compound was administered to any animal. Therefore `assays` is empty.",
+    "Head-twitch responses mentioned in the Introduction are citations of prior work (Halberstadt et al. 2020; Brandt et al. 2016, 2019, 2022), not experiments performed in this paper — not scored.",
+    "`dosing` left empty (candidate 'qwen' listed compounds with empty dose arrays, but the rubric restricts dosing entries to compounds actually administered to animals).",
+    "DOI taken from the Supplementary Information statement in the paper itself: https://doi.org/10.1007/s00204-025-04255-1.",
+    "species set to 'not_applicable' (candidates split between 'not_applicable', 'not_reported', and null); no live species was studied."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0,
+    "environmental_complexity_max": 0,
+    "recording_duration_max": 0,
+    "behavioural_complexity_mean": 0,
+    "environmental_complexity_mean": 0,
+    "recording_duration_mean": 0
+  },
+  "low_confidence_count": 0,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-25T16:32:52+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "claude-opus-5-5",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "8b6edada1b",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 55940,
+    "output_tokens": 918,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0,
+    "fallback_from": {
+      "model": "claude-opus-5-5",
+      "category": null,
+      "explanation": null,
+      "request_id": "msg_011ChPy4fgBZi3V5EujEhyPt",
+      "output_tokens": 0
+    }
+  }
+}

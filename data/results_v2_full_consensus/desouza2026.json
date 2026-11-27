@@ -1,0 +1,509 @@
+{
+  "study_id": "DeSouza2026",
+  "doi": "10.1016/j.pbb.2026.174274",
+  "species": "rat",
+  "strain": "Wistar",
+  "age": {
+    "value": "adult",
+    "age_min_days": 60,
+    "age_max_days": 90,
+    "evidence": "This study used adult male Wistar rats (2-3 months old)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 48,
+    "n_female": null,
+    "evidence": "adult male Wistar rats (2-3 months old)... USV and locomotion were recorded for 20 min (n = 12/group)",
+    "confidence": "high"
+  },
+  "psychedelic": "Ayahuasca",
+  "dosing": [
+    {
+      "compound": "Ayahuasca",
+      "doses_mg_per_kg": [
+        240.0
+      ],
+      "doses_raw": "AYA (240 mg/kg) corresponds to 1.0 mg of DMT, 1.6 mg of tetrahydroharmaline, 0.2 mg of harmaline, and 1.5 mg of harmine",
+      "vehicle": "water",
+      "route": "p.o.",
+      "schedule": "acute",
+      "evidence": "The dose of AYA (240 mg/kg) corresponds to 1.0 mg of DMT... AYA was diluted in water and administered by gavage (p.o.)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "The acclimatization period, including habituation to experimenter handling, lasted at least seven days before the behavioral experiments began.",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "The animals were housed in groups of five in polycarbonate cages (480 × 375 × 210 mm)",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "a 12 h/12 h light/dark cycle (lights on at 7:00 a.m.)... All experiments were conducted between 1:00 and 5:00 PM",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Housing described (groups of five, polycarbonate cages, ad libitum chow and water) but no mention of enrichment items.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "50-kHz Ultrasonic Vocalization Recording",
+      "assay_description": "Rats tested individually for 20 min in an acrylic activity box with fresh bedding under 4 lx; 50-kHz USVs recorded via Avisoft CM16 microphone, detected with DeepSqueak 2.6.1 (Faster R-CNN) and manually classified into total, trill, flat and step calls (mixed and 22-kHz excluded from stats). 2x2 design: VEH or LDX (10 mg/kg s.c.) pretreatment 1 h before, VEH or AYA (240 mg/kg p.o.) 20 min before testing. Basal recording on 2nd habituation day.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "p.o.",
+          "evidence": "AYA was diluted in water and administered by gavage (p.o.) (LDX co-treatment was s.c., but LDX is not the psychedelic)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "On two consecutive days, the rats were habituated to the activity box for 20 min.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Rats were placed in a clear acrylic activity box (40 × 40 × 40 cm) containing fresh bedding",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "They had ad libitum access to standard rat chow and water (home cage); no food described in the activity box during testing.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "They had ad libitum access to standard rat chow and water (home cage); no water described in the activity box during testing.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 20,
+          "evidence": "followed by either AYA or VEH (oral) 20 min before behavioral testing in the activity box",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 47,
+        "n_male": 47,
+        "n_female": null,
+        "n_per_group_min": 11,
+        "evidence": "n = 12/group; One animal from the LDX +AYA group (total calls =2118) was excluded as a statistically significant outlier from the analysis and graphs.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "LDX increased total 50-kHz USVs ~10-fold. AYA reduced total, trill, flat and step USVs both under basal conditions and after LDX pretreatment, with the largest reduction in trill calls (LDX-AYA ~18% of LDX-VEH); no pretreatment × treatment interaction.",
+        "statistics": "Total: pre-treatment LR χ2(1)=46.20, p<0.0001; treatment LR χ2(1)=12.03, p<0.0001; interaction LR χ2(1)=0.66, p=0.415. Trill: pre-treatment LR χ2(1)=34.56, p<0.0001; treatment LR χ2(1)=20.53, p<0.0001; interaction LR χ2(1)=0.22, p=0.639. Flat: pre-treatment LR χ2(1)=46.65, p<0.0001; treatment LR χ2(1)=13.39, p=0.0002; interaction LR χ2(1)=1.09, p=0.296. Step: pre-treatment LR χ2(1)=24.33, p<0.0001; treatment LR χ2(1)=7.18, p=0.0070; interaction LR χ2(1)=0.014, p=0.905. IRR LDX-AYA vs LDX-VEH: total 0.372, trill 0.182, flat 0.457, step 0.360; VEH-AYA vs VEH-VEH: total 0.237, trill 0.131, flat 0.260, step 0.391.",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "AYA treatment reduced the numbers of total 50kHz, trill and flat USV in VEH and LDX-pretreated groups, with a greater effect size in trill calls.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "Separate models were fitted for each USV subtype (total, flat, trill, step...); total, trill, flat and step calls reported in Fig. 2A-D",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only total call counts per 20-min session are reported; no within-session time bins.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No call-sequence or transition analysis described.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Rats emit 50-kHz ultrasonic vocalizations (USVs), a widely used measure of drug-induced motivational and affective effects",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Rats were placed in a clear acrylic activity box individually; no conspecific present.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning or memory requirement in the recording session.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "analyzed using DeepSqueak 2.6.1 software, a deep learning-based system for USVs spectrogram detection... detects vocalizations using a Faster R-CNN",
+          "confidence": "medium"
+        },
+        "B8_multivariate": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Two-way multivariate ANOVA (MANOVA) was used to evaluate the effects of pretreatment and treatment on crossings and USVs.",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "clear acrylic activity box (40 × 40 × 40 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter or refuge described in the activity box.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Rats were placed in a clear acrylic activity box (40 × 40 × 40 cm) containing fresh bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described in the activity box.",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects described in the activity box.",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "The floor was divided into nine virtual squares",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Rats were placed individually in the activity box; no conspecific described.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water described in the activity box during the 20-min session.",
+          "confidence": "medium"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "On the second day... basal USV and locomotor activity were recorded for subsequent analysis... USV and locomotion were recorded for 20 min (test day)",
+          "confidence": "medium"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "USV and locomotion were recorded for 20 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Basal recording on second habituation day; test session 24 h later (2 recording days)",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "In this session, basal USV and locomotor activity were recorded for subsequent analysis (no significant differences were observed; data are not shown).",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Immediately following the session, brain samples were collected for monoamine analysis by HPLC.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "recorded for 20 min",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    },
+    {
+      "assay_name": "Locomotor Activity (crossings and rearings)",
+      "assay_description": "Same 20-min session in the 40 × 40 × 40 cm acrylic activity box with fresh bedding; crossings of nine virtual squares and rearings manually counted from infrared video by a blinded experimenter. 2x2 design: VEH/LDX (10 mg/kg s.c.) pretreatment and VEH/AYA (240 mg/kg p.o.) 20 min before testing; correlation and MANOVA with USVs.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "p.o.",
+          "evidence": "AYA was diluted in water and administered by gavage (p.o.) (LDX co-treatment s.c.)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "On two consecutive days, the rats were habituated to the activity box for 20 min.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Rats were placed in a clear acrylic activity box... Rat activity was recorded by a 2 MP digital infrared camera",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "They had ad libitum access to standard rat chow and water (home cage); no food described in the activity box during testing.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "They had ad libitum access to standard rat chow and water (home cage); no water described in the activity box during testing.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 20,
+          "evidence": "followed by either AYA or VEH (oral) 20 min before behavioral testing in the activity box",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 48,
+        "n_male": 48,
+        "n_female": null,
+        "n_per_group_min": 12,
+        "evidence": "Data expressed as mean ± S.E.M. and analyzed by two-way ANOVA, n = 12/group.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "LDX increased crossings and rearings. AYA significantly reduced crossings overall (main effect) but did not attenuate LDX-induced hyperlocomotion and had no significant effect on rearing. Crossings correlated positively with USV counts.",
+        "statistics": "Crossings: LDX F(1,44)=66.80, p<0.001, η2=0.60; AYA F(1,44)=8.80, p=0.005, η2=0.17; interaction F(1,44)=0.709, p=0.404. Rearings: LDX F(1,44)=13.15, p<0.001, η2=0.23; AYA F(1,44)=2.83, p=0.100, η2=0.06; interaction F(1,44)=1.07, p=0.307. Spearman crossings vs total USVs r=0.67, p<0.001. MANOVA crossings×total USVs Wilks' λ=0.69, F(2,43)=9.76, p=0.025; crossings×trill Wilks' λ=0.81, F(2,43)=4.92, p=0.012.",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Although AYA treatment significantly reduced the number of crossings, it did not attenuate the hyperlocomotion induced by LDX pretreatment.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "recorded as the total number of squares crossed... and the number of rearings",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only session totals reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence or transition analysis described.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "the number of rearings (standing on its hind legs for exploration)",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Individual testing in activity box.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning or memory requirement.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor activity was manually counted by an experimenter blind to group assignment",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Two-way multivariate ANOVA (MANOVA) was used to evaluate the effects of pretreatment and treatment on crossings and USVs.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "clear acrylic activity box (40 × 40 × 40 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter or refuge described.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "containing fresh bedding",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described in the activity box.",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects described in the activity box.",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "The floor was divided into nine virtual squares",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Rats tested individually; no conspecific described.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water described in the activity box.",
+          "confidence": "medium"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "basal USV and locomotor activity were recorded for subsequent analysis (habituation day 2) plus 20-min test session",
+          "confidence": "medium"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "USV and locomotion were recorded for 20 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Basal recording on second habituation day and test 24 h later",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "In this session, basal USV and locomotor activity were recorded for subsequent analysis (no significant differences were observed; data are not shown).",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Immediately following the session, brain samples were collected",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "recorded for 20 min",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    }
+  ],
+  "judge_notes": [
+    "Kept two assays (USV recording and locomotor/rearing) as all candidates did: same session and apparatus but distinct behavioural domains (affective vocalization vs locomotion/exploration). HPLC neurochemistry excluded as ex vivo.",
+    "B1 for USV set to 4-6 (score 2): total, trill, flat, step; gemma's score 3 was inconsistent with its own category.",
+    "D2 set to 15-60 min (score 1) for 20-min sessions; gemma's '<15 min' was an error.",
+    "D1/D3/D4 scored as multiple sessions/2 days/baseline yes (deepseek4 + gemma majority): paper states basal USV and locomotion were recorded on habituation day 2 'for subsequent analysis' and statistically compared (no differences; data not shown). Confidence medium because data not displayed.",
+    "B4 for locomotor assay = Yes (modal): rearing explicitly defined as exploratory behaviour scored as distinct act.",
+    "B7 for USV = Yes (unanimous): DeepSqueak Faster R-CNN deep-learning call detection; note subtype classification was manual, so confidence medium.",
+    "application_type set to p.o. (AYA route); LDX s.c. is a non-psychedelic co-treatment. Gemma's malformed experimental_conditions block repaired.",
+    "USV sample size 47 (min 11) reflects one outlier excluded from LDX+AYA group; locomotor n=48.",
+    "Note: paper inconsistently gives box size as 40×40×40 cm (locomotor section) and 30×30×30 cm (USV section); 40 cm used."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 6.25,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 5.45,
+    "behavioural_complexity_mean": 5.0,
+    "environmental_complexity_mean": 1.36,
+    "recording_duration_mean": 5.45
+  },
+  "low_confidence_count": 1,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-26T15:48:35+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "81e220f016",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 74327,
+    "output_tokens": 8049,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

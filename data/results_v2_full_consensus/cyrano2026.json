@@ -1,0 +1,743 @@
+{
+  "study_id": "Cyrano2026",
+  "doi": "10.1016/j.pnpbp.2026.111940",
+  "species": "rat",
+  "strain": "Wistar",
+  "age": {
+    "value": "not_reported",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Only body weight given: '151-175 g at delivery'; no explicit age stated",
+    "confidence": "low"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 68,
+    "n_female": null,
+    "evidence": "Sixty-eight drug-naive male Wistar rats (Charles River Laboratories, Germany; 151-175 g at delivery)",
+    "confidence": "high"
+  },
+  "psychedelic": "DOI, LSD (with non-hallucinogenic lisuride and amphetamine as comparators)",
+  "dosing": [
+    {
+      "compound": "DOI",
+      "doses_mg_per_kg": [
+        1.25,
+        2.5
+      ],
+      "doses_raw": "DOI (1.25 or 2.5 mg/kg)",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Treatments were vehicle, amphetamine (1 mg/kg), DOI (1.25 or 2.5 mg/kg), LSD (0.04 or 0.08 mg/kg), or lisuride (0.03 or 0.3 mg/kg), administered intraperitoneally immediately before testing.",
+      "confidence": "high"
+    },
+    {
+      "compound": "LSD",
+      "doses_mg_per_kg": [
+        0.04,
+        0.08
+      ],
+      "doses_raw": "LSD (0.04 or 0.08 mg/kg)",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Treatments were vehicle, amphetamine (1 mg/kg), DOI (1.25 or 2.5 mg/kg), LSD (0.04 or 0.08 mg/kg), or lisuride (0.03 or 0.3 mg/kg), administered intraperitoneally immediately before testing.",
+      "confidence": "high"
+    },
+    {
+      "compound": "Lisuride",
+      "doses_mg_per_kg": [
+        0.03,
+        0.3
+      ],
+      "doses_raw": "lisuride (0.03 or 0.3 mg/kg)",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Treatments were vehicle, amphetamine (1 mg/kg), DOI (1.25 or 2.5 mg/kg), LSD (0.04 or 0.08 mg/kg), or lisuride (0.03 or 0.3 mg/kg), administered intraperitoneally immediately before testing.",
+      "confidence": "high"
+    },
+    {
+      "compound": "Amphetamine",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "amphetamine (1 mg/kg)",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Treatments were vehicle, amphetamine (1 mg/kg), DOI (1.25 or 2.5 mg/kg), LSD (0.04 or 0.08 mg/kg), or lisuride (0.03 or 0.3 mg/kg), administered intraperitoneally immediately before testing.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "Only 'housed under standard conditions'; cage density not stated",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "Only 'housed under standard conditions'; light cycle not described",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head-Twitch Response (HTR)",
+      "assay_description": "Rats tested individually for 45 min in glass aquaria immediately after i.p. drug administration (8 treatment groups); HTR episodes quantified from video with DeepLabCut/SimBA classifiers. USVs recorded in this phase were too few for statistical analysis and were used only for clustering.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered intraperitoneally immediately before testing",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Rats were first tested individually for HTR and USVs in glass aquaria",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food described in the glass aquaria during the 45-min test",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water described in the glass aquaria during the 45-min test",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "administered intraperitoneally immediately before testing",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 68,
+        "n_male": 68,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "Sixty-eight drug-naive male Wistar rats; group sizes 8-9 (e.g., AMPH 1 9/9, LSD 0.04 5/8, VEH 7/8)",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "DOI 2.5 mg/kg and LSD 0.08 mg/kg significantly increased HTR episodes versus vehicle; the lower doses of DOI and LSD, lisuride, and amphetamine did not induce HTR.",
+        "statistics": "Kruskal-Wallis KW = 38.24, p < 0.0001; Dunn's post-hoc: DOI 2.5 p < 0.01, LSD 0.08 p < 0.05 vs VEH",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Kruskal-Wallis test demonstrated differences between 8 treatments (KW = 38.24, p < 0.0001) and the post-hoc Dunn's multiple comparisons test showed that DOI 2.5 (p < 0.01) and LSD 0.08 (p < 0.05) induced HTR.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Total number of head-twitch response (HTR) episodes recorded during the 45-min test",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only total HTR counts over the 45-min session reported (median and IQR)",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transitions or sequences analysed",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR (wet-dog shake) is excluded as ethological per rubric; HTR-phase USVs not analysed as outcome",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Rats were first tested individually for HTR and USVs in glass aquaria",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Acute drug-induced unconditioned response; no learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Video recordings were analyzed using DeepLabCut and SimBA; SimBA-derived classifiers quantified HTR episodes",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR analysed univariately with Kruskal-Wallis",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "tested individually for HTR and USVs in glass aquaria",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter described in glass aquaria",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "glass aquaria (single container)",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Rats were first tested individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported; no food/water described in apparatus",
+          "confidence": "low"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Total number of HTR episodes recorded during the 45-min test after drug administration",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "The study included two 45-min phases",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "HTR tested once in the first phase",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported; drug given immediately before testing",
+          "confidence": "low"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Testing began immediately after injection; no recording >=24 h post-dose",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "45-min session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Locomotor Activity (Open Field)",
+      "assay_description": "Two weeks after the HTR phase, rats were tested individually for 45 min in black Plexiglas open-field boxes immediately after i.p. drug administration under the same treatment conditions; total distance traveled quantified with DeepLabCut/SimBA.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered intraperitoneally immediately before testing",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "for locomotor activity and USVs in black Plexiglass open-field boxes",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food described in open-field boxes during the test",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water described in open-field boxes during the test",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "administered intraperitoneally immediately before testing",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 68,
+        "n_male": 68,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "One-way ANOVA F(7,60) (68 rats, 8 groups of 8-9)",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "Only amphetamine (1 mg/kg) increased total distance traveled; DOI, LSD and lisuride did not significantly alter locomotor activity (lisuride showed a non-significant tendency to reduce it).",
+        "statistics": "One-way ANOVA F(7,60) = 10.93, p < 0.0001; Holm-Sidak: AMPH 1 p < 0.0001 vs VEH",
+        "direction": "no_effect",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "One-way ANOVA demonstrated significant treatment effects: F(7,60) = 10.93; p < 0.0001 and the Holm-Sidak's multiple comparisons test found increased activity (p < 0.0001) only for the AMPH 1 group.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Total distance traveled during the 45-min locomotor activity test",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only total distance over 45 min reported",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transitions or sequences analysed",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor distance is not an ethological behaviour per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Rats tested individually",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Video recordings were analyzed using DeepLabCut and SimBA; SimBA-derived classifiers quantified HTR episodes and distance traveled",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Distance analysed by one-way ANOVA",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "black Plexiglass open-field boxes",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open-field box; no shelter described",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "open-field boxes",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Rats tested individually (Discussion: 'In singly tested rats')",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported; no food/water described in apparatus",
+          "confidence": "low"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Total distance traveled during the 45-min locomotor activity test",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "45-min locomotor activity test",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Open-field tested once in the second phase",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported; drug given immediately before testing",
+          "confidence": "low"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Drug readministered immediately before OF test; no recording >=24 h after last dose",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "45-min session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Ultrasonic Vocalization (USV) Recording",
+      "assay_description": "USVs recorded with Avisoft ultrasonic microphones during the 45-min open-field session, detected with DeepSqueak (50-kHz and 22-kHz detectors) and clustered (UMAP-based k-means on 48 VAE/frequency features) into flat, alarm, step-up/trill and upward-ramp clusters. Outcomes: total calls, cluster-specific counts, binary calling, cluster occupancy. HTR-phase USVs were pooled only for clustering.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered intraperitoneally immediately before testing",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "for locomotor activity and USVs in black Plexiglass open-field boxes",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food described in open-field boxes during recording",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water described in open-field boxes during recording",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "administered intraperitoneally immediately before testing",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 68,
+        "n_male": 68,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "Across all 68 rats... AMPH 1 group (9/9), LSD 0.08 group (9/9)... LIS 0.03 group (7/8; 87.5%), LIS 0.3 group (5/8)... LSD 0.04 (5/8), VEH (7/8)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Amphetamine and both DOI doses increased total call emission versus vehicle. Occupancy analysis showed DOI (1.25, 2.5 mg/kg) and LSD 0.04 reduced occupancy of the flat-call cluster, whereas LSD 0.08, lisuride 0.03 and amphetamine increased occupancy of frequency-modulated (step-up/trill, upward-ramp) clusters; alarm-call occupancy was unaffected. Cluster-specific count increases reached significance only for amphetamine.",
+        "statistics": "Total calls NB-GLM: LR chi2(7) = 26.86, p < 0.001; AMPH 1 ratio = 59.16 p < 0.01, DOI 1.25 ratio = 16.52 p < 0.05, DOI 2.5 ratio = 30.48 p < 0.01 (Holm). Group x cluster interaction (counts): chi2(21) = 74.08, p < 0.001; AMPH cluster 1 ratio = 64.18 p < 0.05, cluster 3 ratio = 285.15 p < 0.01, cluster 4 ratio = 204.35 p < 0.01. Binary calling Fisher p = 0.05132. Occupancy interaction chi2(21) = 39.62, p < 0.01; cluster 1 lower for DOI 1.25, DOI 2.5, LSD 0.04 (p < 0.01); cluster 3 higher for AMPH 1, LIS 0.03, LSD 0.08 (p < 0.001); cluster 4 higher for LIS 0.03 (p < 0.01), LSD 0.08 (p < 0.001).",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Total call emission increased after amphetamine and both DOI doses... DOI and LSD (0.04 mg/kg) reduced occupancy of the flat-call cluster... In contrast, LSD (0.08 mg/kg), lisuride (0.03 mg/kg), and amphetamine increased occupancy of frequency-modulated clusters",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 3,
+          "value": "7+",
+          "evidence": "Total calls, cluster-specific call counts (4 clusters), binary calling, and cluster occupancy (4 clusters) reported",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Calls summed over the 45-min session; no within-session time course",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No call-sequence or transition analysis",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "USVs are species-typical vocalizations directly measured (22-kHz alarm and 50-kHz calls)",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "In singly tested rats... calls cannot be determined to reflect any specific communicative signal",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning component",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "USVs were detected using DeepSqueak and clustered in a custom, unsupervised manner using variational autoencoder-based, and frequency-based embeddings",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "UMAP-based k-means, PCA, t-SNE, HDBSCAN, hierarchical clustering and Bray-Curtis PCoA of occupancy profiles",
+          "confidence": "high"
+        },
+        "raw_total": 6
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "black Plexiglass open-field boxes",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open-field box; no shelter described",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "open-field boxes",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "In singly tested rats LSD, lisuride, and amphetamine increased occupancy of frequency-modulated clusters",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported; no food/water described in apparatus",
+          "confidence": "low"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Treatment-effect USV analyses derive from the open-field session; 'calling during HTR testing was too low to be examined statistically... served only for clustering'",
+          "confidence": "medium"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15-60 min",
+          "evidence": "two 45-min phases",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "USV outcomes analysed from one open-field session per rat",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported; drug given immediately before testing",
+          "confidence": "low"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recording began immediately after injection",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "45-min session",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Retained three assays (modal across deepseek4 and gemma4): HTR in glass aquaria, locomotor activity in open field, and USV recording; USVs are a distinct behavioural domain (vocal) from locomotion even though recorded in the same apparatus. Rejected qwen's merging of USV outcomes into both HTR and locomotor assays (inflated B1/B4/B8 there).",
+    "USV assay scored as single session/1 day (deepseek4) rather than multiple sessions (gemma4): HTR-phase USVs were pooled only for clustering and not analysed for treatment effects, and that phase used a different apparatus.",
+    "Corrected gemma4's USV B1 value label to '7+' to match score 3 (total calls, 4 cluster counts, 4 occupancies, binary calling).",
+    "B7=1 for HTR and locomotion because DeepLabCut pose estimation + SimBA classifiers were used; B7=1 for USVs because DeepSqueak deep-learning detection plus unsupervised call-type clustering classifies vocal behaviour.",
+    "Age set to not_reported: only body weight at delivery (151-175 g) given; qwen's juvenile inference rejected per no-inference rule.",
+    "Dosing includes lisuride and amphetamine as administered comparator compounds (modal across deepseek4 and gemma4).",
+    "Locomotor direction set to no_effect for psychedelics (only amphetamine increased activity); USV direction 'mixed' since DOI increased total calls but reduced flat-call occupancy while LSD 0.08 increased FM-call occupancy.",
+    "Food/water restriction set to 'during' per rubric default for standard short-test apparatus; confidence medium since not explicitly stated."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 7.5,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 3.33,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 1.36
+  },
+  "low_confidence_count": 22,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-26T15:46:13+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "81e220f016",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 72085,
+    "output_tokens": 9949,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

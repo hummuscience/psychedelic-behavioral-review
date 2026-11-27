@@ -1,0 +1,311 @@
+{
+  "study_id": "Dong2026",
+  "doi": "10.1080/01677063.2026.2695462",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 63,
+    "age_max_days": 63,
+    "evidence": "Male C57BL/6J mice at the age of 9 weeks (purchased from Jackson Laboratories, Bar Harbor, ME, USA) were used for all experiments.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male C57BL/6J mice at the age of 9 weeks (purchased from Jackson Laboratories, Bar Harbor, ME, USA) were used for all experiments.",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        3.0
+      ],
+      "doses_raw": "3 mg/kg",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Psilocybin (obtained from Sigma-Aldrich, St. Louis, MO, USA) was diluted with 0.9% sterile saline and administered to each mouse via i.p. injection at 3 mg/kg.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "We initiated the procedure by acclimating the mice to the experimenter's handling for 3 days to reduce nonspecific effects.",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "Mice were housed under standard laboratory conditions (lights on from 07:00 to 19:00; temperature at 23 ± 2 °C; humidity at 55-60%) with ad libitum access to food pellets and water. Cage density not stated.",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "Mice were housed under standard laboratory conditions (lights on from 07:00 to 19:00...)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Mice were housed under standard laboratory conditions; no enrichment items described.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Open Field Test (locomotor activity)",
+      "assay_description": "After i.p. saline or psilocybin (3 mg/kg), mice were placed in an open-field arena/behavioral chamber and video-recorded for 120 min. DeepLabCut pose estimation (ResNet-50) tracked body points; total distance traveled and per-minute locomotor speed were computed from the mid-back point.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered to each mouse via i.p. injection at 3 mg/kg",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Only handling acclimation described: 'acclimating the mice to the experimenter's handling for 3 days'; no apparatus pre-exposure described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "We then placed the mice in the behavioral chambers to video-record locomotor activities for 120 min.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Open-field arena/behavioral chamber; no food described in the testing apparatus (ad libitum food in home cage).",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Open-field arena/behavioral chamber; no water described in the testing apparatus (ad libitum water in home cage).",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "On the experimental day, we randomly assigned the mice to receive either saline or psilocybin (3 mg/kg) injection. ... We then placed the mice in the behavioral chambers to video-record locomotor activities for 120 min.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 14,
+        "n_male": 14,
+        "n_female": null,
+        "n_per_group_min": 7,
+        "evidence": "n = 7 each, 2-way Repeated-Measure ANOVA with Sidak's post hoc tests (Figure 1 legend).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Psilocybin (3 mg/kg, i.p.) acutely reduced locomotor activity in male mice: cumulative distance traveled and per-minute speed were significantly lower than in saline controls. The speed effect emerged ~15 min, peaked ~20 min, and largely resolved by ~60 min after injection.",
+        "statistics": "Total distance: psilocybin x time interaction F(118, 1416) = 21.58, p < 0.0001; 38-120 min post-psilocybin vs. saline, p < 0.05 or 0.01. Speed: psilocybin x time interaction F(118, 1416) = 3.660, p < 0.0001; 15-55 min post-psilocybin vs. saline, p < 0.05 or 0.01 (two-way repeated-measures ANOVA with Sidak post-test).",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "These results suggest that psilocybin administered at the dose of 3 mg/kg acutely decreases the locomotor activity in mice.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Total distance (pixels) traveled ... Locomotor speed (pixels per frame per min) measured by the 'middle back' coordinates for the 2-h period.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "For per-minute locomotor metrics, speed values were averaged within each minute ... this effect emerged rapidly (~15 min), peaked at ~20 min, and largely resolved by ~60 min after injection.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequential, transitional, or bout-structure analyses described; only distance and speed computed.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only locomotor distance and speed were measured.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Open-field locomotion assay; no social component.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor activity; no learning or memory requirement.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Behavioral tracking was performed using DeepLabCut ... trained using 90 manually labeled frames to detect the following body points: head, neck, ears, middle back, tail root, and mid-tail.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No dimensionality reduction or multivariate analysis across behavioural features reported.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Mice were either placed in an open field arena to monitor locomotion or placed back into their home cage.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported; no shelter described in the open field arena",
+          "confidence": "low"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "open field arena",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "We then placed the mice in the behavioral chambers to video-record locomotor activities; no conspecific described as present.",
+          "confidence": "medium"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water described in the open-field arena during recording.",
+          "confidence": "medium"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "video-record locomotor activities for 120 min",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 2,
+          "value": "61 min–6 h",
+          "evidence": "video-record locomotor activities for 120 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "On the experimental day ... placed the mice in the behavioral chambers to video-record locomotor activities for 120 min.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline recording described; mice were injected and then placed in the chambers.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only the 2-h post-injection session is reported for behaviour.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recording session was 120 min (<6 h).",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    }
+  ],
+  "judge_notes": [
+    "Single behavioural assay (open-field locomotion); c-Fos immunohistochemistry time-course and antagonist experiments excluded as histological endpoints.",
+    "B1 set to 1 (2-3 measures: distance, speed); gemma4's score of 2 inconsistent with its own '2-3' category.",
+    "D2 set to 2 for the 120-min session; gemma4's score of 1 contradicts the stated 120 min.",
+    "B7 = 1: DeepLabCut pose estimation is explicitly listed as a score-1 tool.",
+    "time_dependent set to n/a (single test timepoint; within-session time course is captured by B2), following 2 of 3 candidates.",
+    "Age 'young_adult' (9 weeks) per modal candidate value.",
+    "Study-level n_male left null because total animals across all experiments not explicitly reported; assay n_male = 14 (all male, n = 7 per group)."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 2.73,
+    "behavioural_complexity_mean": 3.75,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 2.73
+  },
+  "low_confidence_count": 7,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-26T15:49:07+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "81e220f016",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 48216,
+    "output_tokens": 3870,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

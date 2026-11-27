@@ -1,0 +1,320 @@
+{
+  "study_id": "Effinger2026",
+  "doi": "10.1038/s41467-026-71481-1",
+  "species": "rat",
+  "strain": "Sprague Dawley",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 56,
+    "age_max_days": 84,
+    "evidence": "All experiments utilized male and female Sprague Dawley rats (200-400 g, ~8-weeks old at arrival...); Animals underwent FP recordings at ~12 weeks of age.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "All experiments utilized male and female Sprague Dawley rats (200-400 g, ~8-weeks old at arrival, Envigo, Indianapolis, IN)",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocin",
+  "dosing": [
+    {
+      "compound": "Psilocin",
+      "doses_mg_per_kg": [
+        2.0
+      ],
+      "doses_raw": "psilocin (2 mg/kg), s.c.",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "On the day of injection animals received subcutaneous (s.c.) injections of either vehicle (2% glacial acetic acid in 0.9% saline) or psilocin (2 mg/kg) and were returned to their home cage for 30min before being placed into open field box for a 10min habituation prior to air-puff administration.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "group-housed prior to surgery followed by individual housing with nestlet enrichment",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "in a humidity- and temperature-controlled (22°C) vivarium on a 12hr light/dark cycle — direction of cycle / testing phase not stated",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "yes",
+      "evidence": "individual housing with nestlet enrichment",
+      "confidence": "high"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Open Field Air-Puff Threat Responding (locomotor) Assay",
+      "assay_description": "Rats freely explored a 50 x 50 cm clear plexiglass open field within a sound-dampened cabinet. Each session comprised a 10-min habituation/baseline period followed by two 500-ms, 85-psi air-puffs delivered to the face with a 5-min inter-stimulus interval. Behaviour (distance travelled, max speed, % time in centre, time immobile; active vs. passive threat-responding classification) was recorded with ANY-maze at 1-min and 1-s resolution. Sessions were run at baseline, on the day of vehicle/psilocin injection (30 min post-dose), and at 2- and 14-day follow-ups, in male and female rats across the standard PVT GCaMP and intersectional PVT→CeA cohorts (fiber photometry recorded concurrently but not scored).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "animals received subcutaneous (s.c.) injections of either vehicle (2% glacial acetic acid in 0.9% saline) or psilocin (2 mg/kg)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "On the day of recording, animals were habituated to the room for 1 hr after which they were placed in chambers for 10min habituation and baseline recording; prior to the air-puff session animals received '10 min habituation' in the open field box.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Locomotor activity was assessed in a clear, plexiglass open field apparatus (50 cm×50 cm); animals moved freely and no restraint is described.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "ad libitum access to food and water in the home cage; no food was present in the open field apparatus during recording.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "ad libitum access to food and water in the home cage; no water was present in the open field apparatus during recording.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 30,
+          "evidence": "animals were given an injection of either vehicle or psilocin (2mg/kg, s.c.) and placed in home cage for 20 min prior to 10 min habituation for a total of 30 min prior to the beginning of the air-puff session. Follow-up recordings were collected at 2- and 14-days post administration.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 49,
+        "n_male": 13,
+        "n_female": 36,
+        "n_per_group_min": 2,
+        "evidence": "Fig. 2 (female PVT): Vehicle: n = 8; Psilocin: n=6. Fig. 6 (female PVT→CeA): Vehicle: n = 11; Psilocin: n=11. Fig. 8 (male PVT→CeA): Vehicle: n=7; Psilocin: n=6. Fig. 9: Passive Psilocin: n=2.",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "Behaviourally, acute psilocin (2 mg/kg, s.c.) reduced the proportion of females displaying an active (escape/darting) response to the air-puff on the day of injection, and was associated with decreased maximum speed and increased time immobile after the air-puff in the female PVT cohort. These behavioural effects were not present at the 2- and 14-day follow-ups, and males showed no comparable psilocin-induced changes (with scattered subgroup effects on max speed and immobility).",
+        "statistics": "Fisher's exact test: p=0.0256 (active responding, day of injection, vehicle vs psilocin). Max speed: 2-way ANOVA Finteraction(9,117)=5.212, p<0.0001; Finjection(1,13)=5.181, p=0.0404. Time immobile: Finteraction(9,117)=2.377, p=0.0166; Finjection(1,13)=1.832, p=0.1989. Psilocin active responders max speed: Finteraction(9,63)=7.357, p<0.0001; Fsession(1,7)=6.749, p=0.0355. Female PVT→CeA passive responders at injection: max speed Ftreatment(1,7)=8.270, p=0.0238; time immobile Ftreatment(1,7)=6.034, p=0.0437.",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "yes",
+        "time_dependent": "yes",
+        "evidence": "On the day of injection, active responding was reduced in psilocin treated animals (Fig. 3C), with a significant difference between vehicle and psilocin treated groups (Fisher's exact test: p=0.0256). The increase in PVT reactivity was associated with a decrease in max speed ... and an increase in time immobile in the first 3 seconds following air-puff.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "Measures of locomotor activity included distance traveled (m), max speed (m/s), % time spent in the center zone, and time immobile; animals were additionally classified as active vs. passive responders.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Analysis across time were calculated at 1 min resolution for the overall locomotor behaviors, and additionally at 1 s for the immediate post puff behavioral analysis to correspond with fiber photometry time points.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "medium"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Active responders were defined as animals that employed evasive locomotor behavior in response to the air-puff and actively moved away from the quadrant where the air-puff occurred... passive responders were defined as rats that did not display enhanced locomotor behavior or actively try to escape the air-puff.",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Animals were tested individually in the open field; no social construct or conspecific involved.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Air-puff reactivity is an innate defensive/threat response; no learning or memory requirement is described.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Behavioral sessions were recorded and analyzed with ANY-maze video tracking system (Stoelting Co, IL, USA).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "All data were graphed and statistically analyzed with Prism 10.0.3; only univariate t-tests and ANOVAs reported.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Locomotor activity was assessed in a clear, plexiglass open field apparatus (50 cm×50 cm) which was located within a sound dampened activity cabinet.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open field apparatus with no enclosed refuge; definitionally absent.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Clear plexiglass open field apparatus; no bedding reported in the testing chamber.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Nestlet enrichment was in the home cage only; no nesting material described in the open field.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects described in the open field apparatus during recording.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Open field apparatus (50 cm×50 cm) with a virtual centre zone defined within the tracking software; no physical compartments.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Focal rat was placed alone into the open field box; no conspecific present during recording.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Ad libitum food and water were available in the home cage only; none in the open field during recording.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Baseline recordings were used to demonstrate changes... prior to drug administration. Followup recordings were collected at 2- and 14-days post administration.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "Each session consisted of a 10min habituation baseline period before the delivery of two air-puff administrations with a 5min inter-stimulus interval (ISI); behavioural measurements were collected within the 10-min habituation and the 5-min ISI (≥15 min total).",
+          "confidence": "medium"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Timeline: BL, 0d (day of injection), 2d, 14d — four distinct recording days for this assay.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Baseline recordings were used to demonstrate changes in fluorescence (ΔF/F) prior to drug administration; baseline behavioural responding was used to classify active vs. passive responders.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Followup recordings were collected at 2- and 14-days post administration.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sessions lasted ~15 min; no recording spanned ≥6 hours.",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      }
+    }
+  ],
+  "judge_notes": [
+    "All three candidates identified a single behavioural paradigm (open field + air-puff); these were merged into one assay entry ('Open Field Air-Puff Threat Responding'). Candidate names differed ('Open Field Test (with air-puff stimulus)', 'Aversive Air-Puff Response') but describe the same apparatus/protocol.",
+    "Fiber photometry (GCaMP calcium signals), c-Fos immunohistochemistry and retrograde tracing were excluded per the rubric (neural recordings / histology are not behavioural assays). Only the locomotor/threat-responding behaviour measured with ANY-maze was scored.",
+    "Male and female cohorts, standard-GCaMP vs. intersectional PVT→CeA cohorts, active vs. passive responder splits, and the BL/0d/2d/14d timepoints were collapsed into one assay per the rubric's assay-identity rules.",
+    "B1 scored 2 (4-6): the Methods explicitly list four locomotor measures (distance travelled, max speed, % centre time, time immobile), overriding candidates that counted only the two measures shown in figures.",
+    "B4 scored 1 (Yes): active/passive threat-responding (evasive darting/escape vs. freezing) is a directly scored natural defensive behaviour, not merely locomotor distance; two of three candidates missed this.",
+    "D2 scored 1 (15-60 min): the session comprises a 10-min habituation baseline plus two air-puffs separated by a 5-min ISI, with behaviour analysed in both windows, totalling ≥15 min; this overrides gemma4's <15 min.",
+    "D3 scored 1 (2-7 days): four recording days (BL, injection, 2d, 14d) — gemma4's score of 2 was inconsistent with its own '2-7' category label.",
+    "setup_habituation = yes: a 1-h room acclimation plus a 10-min in-chamber habituation is described; the in-chamber habituation also overlaps with baseline recording, so confidence set to medium.",
+    "DOI taken from the masthead text of the paper (10.1038/s41467-026-71481-1)."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 5.0,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 6.82,
+    "behavioural_complexity_mean": 5.0,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 6.82
+  },
+  "low_confidence_count": 1,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-25T16:26:54+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "claude-opus-5-5",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "8b6edada1b",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 71667,
+    "output_tokens": 5486,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0,
+    "fallback_from": {
+      "model": "claude-opus-5-5",
+      "category": null,
+      "explanation": null,
+      "request_id": "msg_011ChPxWwZGBNMtzDxgH3rbc",
+      "output_tokens": 3607
+    }
+  }
+}

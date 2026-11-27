@@ -1,0 +1,559 @@
+{
+  "study_id": "Bray2026",
+  "doi": "10.1021/acsomega.6c02996",
+  "species": "mouse",
+  "strain": "C57BL/6J",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 56,
+    "age_max_days": 56,
+    "evidence": "groups of 24 C57BL/6J mice (12 male, 12 female; 8 weeks; Jackson #000664)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": 12,
+    "n_female": 12,
+    "evidence": "groups of 24 C57BL/6J mice (12 male, 12 female; 8 weeks; Jackson #000664)",
+    "confidence": "high"
+  },
+  "psychedelic": "4-Br-DMT, Psilocin, DMT",
+  "dosing": [
+    {
+      "compound": "4-Br-DMT",
+      "doses_mg_per_kg": [],
+      "doses_raw": "0.03-30 mg/kg subcutaneously or s.c.",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "C57BL/6J mice received injections of 4-Br-DMT, psilocin, or DMT (0.03-30 mg/kg subcutaneously or s.c.) and acute drug effects were recorded for 30 min; vehicle (saline or 90:5:5 saline:DMSO:Tween 80)",
+      "confidence": "high"
+    },
+    {
+      "compound": "Psilocin",
+      "doses_mg_per_kg": [],
+      "doses_raw": "0.03-30 mg/kg subcutaneously or s.c.",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "C57BL/6J mice received injections of 4-Br-DMT, psilocin, or DMT (0.03-30 mg/kg subcutaneously or s.c.)",
+      "confidence": "high"
+    },
+    {
+      "compound": "DMT",
+      "doses_mg_per_kg": [],
+      "doses_raw": "0.03-30 mg/kg subcutaneously or s.c.",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "C57BL/6J mice received injections of 4-Br-DMT, psilocin, or DMT (0.03-30 mg/kg subcutaneously or s.c.)",
+      "confidence": "high"
+    },
+    {
+      "compound": "WAY100635",
+      "doses_mg_per_kg": [
+        3.0
+      ],
+      "doses_raw": "3 mg/kg of WAY100635",
+      "vehicle": "not_reported",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "mice were pretreated 30 min prior with the 5-HT1A antagonist, WAY100635 (3 mg/kg)",
+      "confidence": "high"
+    },
+    {
+      "compound": "SB242084",
+      "doses_mg_per_kg": [
+        3.0
+      ],
+      "doses_raw": "3 mg/kg each of WAY100635 and the 5-HT2C antagonist, SB242084",
+      "vehicle": "not_reported",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "cotreatment with 3 mg/kg each of WAY100635 and the 5-HT2C antagonist, SB242084, also did not reveal elevations in HTRs",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported — no handling habituation protocol described in Mouse Studies methods",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "no",
+      "evidence": "Mice were singlehoused postimplantation for the remainder of the experiments.",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "housed 4/cage at NIDA IRP (Baltimore) on a 12/12 h light/dark cycle (lights on 6-7 AM)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported — home-cage enrichment is not addressed",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head-Twitch Response (HTR)",
+      "assay_description": "Mice received s.c. 4-Br-DMT, psilocin, DMT (0.03-30 mg/kg) or vehicle (with or without WAY100635 / SB242084 pretreatment) and were video-recorded in a test chamber for 30 min; HTR counts were quantified with a DeepLabCut pose-estimation model plus a SimBA classifier, with time-course and dose-response analyses.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "mice received subcutaneous test drug (0.03-30 mg/kg) or vehicle (saline or 90:5:5 saline:DMSO:Tween 80)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Baseline temperature was recorded after brief chamber acclimation and compared to post-session body temperature readings",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "behavior was video-recorded for 30 min ... Motor activity (distance traveled) was determined using the head pose-estimation key point (animals freely moving in chamber)",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Not explicitly stated; 30-min recording in a test chamber with no food described",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Not explicitly stated; 30-min recording in a test chamber with no water described",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "mice received subcutaneous test drug (0.03-30 mg/kg) or vehicle ... and behavior was video-recorded for 30 min",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 1,
+        "evidence": "All values are mean ± SEM for n = 5-6 mice, except for the 30 mg/kg dose of 4-Br-DMT (n = 1 due to lethality post-session, marked with X through the symbol).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "4-Br-DMT (0.03-30 mg/kg, s.c.) did not significantly increase head-twitch counts at any dose, whereas psilocin (0.3-10 mg/kg) and DMT (3-10 mg/kg) significantly increased HTRs vs vehicle over the first 10 min post-injection (ED50 = 0.15 and 2.24 mg/kg, respectively). Pretreatment with WAY100635 alone or combined with SB242084 did not unmask latent HTR activity of 4-Br-DMT.",
+        "statistics": "Group comparisons were made via Welch's ANOVA with Dunnett's T3 vs vehicle, alpha = 0.05; ED50 psilocin = 0.15 mg/kg, DMT = 2.24 mg/kg; HTR dose-response visualized with biphasic nonlinear fits.",
+        "direction": "mixed",
+        "dose_dependent": "yes",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "Relative to psilocin and DMT, 4-Br-DMT did not induce significant increases in the number of HTRs observed (Figure 5A-D). Conversely, psilocin and DMT induced increases in the HTR counts of mice treated with 0.3-10 mg/kg and 3-10 mg/kg relative to vehicle controls over the first 10 min post-injection.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "HTR counts were the only behavioural variable for this assay (time-course and dose-response of the same measure)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Time-course plots (A-C) ... for psychedelic-like effects on the HTR; increases observed 'over the first 10 min post-injection'",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is explicitly excluded from ethological behaviours per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice tested individually in the HTR chamber; no social construct measured",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR is a drug-elicited unconditioned response requiring no learning",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "A DeepLabCut (DLC) pose-estimation model ... A SimBA classifier (13 body parts; 32 features) was trained on historical HTR videos",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate group comparisons (Welch's ANOVA) and curve fits reported",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Behaviour recorded in a test chamber ('brief chamber acclimation'; 'pixels/mm set from chamber width')",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter or refuge described in the test chamber",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding or substrate described in the test chamber",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described in the test chamber",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects described in the test chamber",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single observation chamber; no compartments described",
+          "confidence": "medium"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual mice video-recorded for 30 min; no conspecific in the chamber",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water described in the test chamber during the 30-min session",
+          "confidence": "medium"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "behavior was video-recorded for 30 min (one acute session per drug test described)",
+          "confidence": "medium"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "acute drug effects were recorded for 30 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Only a single 30-min acute recording session described; no multi-day testing schedule reported",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only baseline body temperature (a physiological measure) was recorded before dosing; no pre-drug behavioural recording reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No behavioural recording ≥24 h after drug administration reported",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session duration was 30 min, far below 6 h",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Locomotor Activity (distance traveled in test chamber)",
+      "assay_description": "Total distance traveled (cm, % vehicle) measured over the same 30-min video-recorded session following s.c. 4-Br-DMT, psilocin, DMT (0.03-30 mg/kg) or vehicle; determined from the DeepLabCut head pose-estimation key point, with four-parameter dose-response fits.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "s.c.",
+          "evidence": "mice received subcutaneous test drug (0.03-30 mg/kg) or vehicle (saline or 90:5:5 saline:DMSO:Tween 80)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Baseline temperature was recorded after brief chamber acclimation",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Motor activity (distance traveled) was determined using the head pose-estimation key point (freely moving animal)",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Not explicitly stated; 30-min recording in a test chamber with no food described",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Not explicitly stated; 30-min recording in a test chamber with no water described",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "acute drug effects were recorded for 30 min following injection",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 1,
+        "evidence": "All values are mean ± SEM for n = 5-6 mice, except for the 30 mg/kg dose of 4-Br-DMT (n = 1 due to lethality post-session).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "All three tryptamines (4-Br-DMT, psilocin, DMT) reduced total distance traveled over the 30-min session at the highest doses tested (3-30 mg/kg), indicating hypolocomotion. At 30 mg/kg, 4-Br-DMT produced seizure-like activity and lethality (only one mouse tested at that dose).",
+        "statistics": "Four-parameter nonlinear fits for motor activity; group comparisons via Welch's ANOVA with Dunnett's T3 vs vehicle, alpha = 0.05.",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "4-Br-DMT, psilocin, and DMT all induced hypolocomotor effects (Figure 5E) and reduced body temperature (Figure 5F) at the highest doses tested (i.e., 3-30 mg/kg).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Dose-response curves for total distance traveled (cm, % vehicle; E) — single behavioural measure",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total distance traveled reported as a cumulative value 'over the 30 min session'; no within-session binning reported",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor distance is explicitly excluded from ethological behaviours per rubric",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice tested individually; no social construct",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Spontaneous locomotion requires no learning or memory",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Motor activity (distance traveled) was determined using the head pose-estimation key point ... a DeepLabCut (DLC) pose-estimation model was trained",
+          "confidence": "medium"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate analyses and dose-response curve fits reported",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Recording took place in the same standard test chamber ('pixels/mm set from chamber width')",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter or refuge described in the test chamber",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding or substrate described in the test chamber",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described in the test chamber",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects described in the test chamber",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single observation chamber; no compartments described",
+          "confidence": "medium"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual mice video-recorded; no conspecific in the chamber",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water described in the test chamber during the 30-min session",
+          "confidence": "medium"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "behavior was video-recorded for 30 min (single acute session)",
+          "confidence": "medium"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "Dose-response curves for total distance traveled (cm, % vehicle; E) ... over the 30 min session",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Only a single 30-min acute recording session described for this measure",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only pre-dose body temperature was recorded; no pre-drug locomotor recording reported",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No behavioural recording ≥24 h after drug administration reported",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session duration was 30 min",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Candidate 'qwen' returned an empty assays list despite the paper containing in vivo mouse behaviour; its assay-level omission was overridden using the other two candidates and the paper text.",
+    "Retained two assays: HTR and locomotor distance. Although both were measured in the same 30-min session and chamber, they are different behavioural domains, which the rubric treats as separate assays.",
+    "Body-temperature change (Figure 5F) was NOT scored — purely physiological measure, excluded per rubric.",
+    "Radioligand binding and synaptosome monoamine transporter assays (ex vivo/in vitro) excluded.",
+    "Antagonist (WAY100635 / SB242084) HTR experiments were merged into the single HTR assay per the 'same test with added antagonists = 1 assay' rule.",
+    "B1 corrected to 0 for both assays (single behavioural measure each); gemma4 incorrectly assigned 1 point for a single measure.",
+    "D2 corrected to 1 (15–60 min) for both assays: the paper explicitly states 30-min recordings; gemma4's '<15 min' contradicted its own evidence quote.",
+    "B2: scored Yes for HTR (explicit time-course plots, Figure 5A-C and 'first 10 min post-injection' analysis) but No for locomotion (only total distance over the 30-min session reported).",
+    "doses_mg_per_kg left empty for the tryptamines: only the range '0.03-30 mg/kg' is stated in text, individual dose levels are not enumerated; gemma4's enumerated list was an inference and was dropped.",
+    "setup_habituation scored 'yes' (medium confidence) based on 'Baseline temperature was recorded after brief chamber acclimation', which indicates apparatus exposure before the recorded session."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 1.88,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 1.36
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-26T15:41:23+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "claude-opus-5-5",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "81e220f016",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 65668,
+    "output_tokens": 9668,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0,
+    "fallback_from": {
+      "model": "claude-opus-5-5",
+      "category": null,
+      "explanation": null,
+      "request_id": "msg_011ChRnqdBLicJsjiQoFDXVu",
+      "output_tokens": 0
+    }
+  }
+}

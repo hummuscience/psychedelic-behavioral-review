@@ -1,0 +1,138 @@
+{
+  "study_id": "Gudmundsen2026",
+  "doi": "10.1038/s41467-026-75890-0",
+  "species": "rat",
+  "strain": "Long Evans",
+  "age": {
+    "value": "not_reported",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "not reported (only body weight given: 'weight = 244 ± 33g'; '307 ± 55g' for the [18F]MHMZ cohort)",
+    "confidence": "low"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": 35,
+    "n_female": 22,
+    "evidence": "Fifty-seven Long Evans rats (48 = [18F]FDG study, both sexes, 9 = [18F]MHMZ study, males only) ... forty-eight Long Evans rats (males = 26, females=22, weight = 244 ± 33g)",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin, LSD, 2C-B",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "psilocybin (base, 1 mg/kg)",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "The rats received either a subcutaneous (s.c.) injection of saline (baseline and one week post condition) or psilocybin (base, 1 mg/kg) / LSD (base, 0.3 mg/kg) / 2C-B (HBr salt, 3 mg/kg), in saline solution (acute condition)",
+      "confidence": "high"
+    },
+    {
+      "compound": "LSD",
+      "doses_mg_per_kg": [
+        0.3
+      ],
+      "doses_raw": "LSD (base, 0.3 mg/kg)",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "The rats received either a subcutaneous (s.c.) injection of saline (baseline and one week post condition) or psilocybin (base, 1 mg/kg) / LSD (base, 0.3 mg/kg) / 2C-B (HBr salt, 3 mg/kg), in saline solution (acute condition)",
+      "confidence": "high"
+    },
+    {
+      "compound": "2C-B",
+      "doses_mg_per_kg": [
+        3.0
+      ],
+      "doses_raw": "2C-B (HBr salt, 3 mg/kg)",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "acute",
+      "evidence": "The rats received either a subcutaneous (s.c.) injection of saline (baseline and one week post condition) or psilocybin (base, 1 mg/kg) / LSD (base, 0.3 mg/kg) / 2C-B (HBr salt, 3 mg/kg), in saline solution (acute condition)",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "No handling protocol described; only 'For acclimation and habituation, rats arrived at least one week before experiments.'",
+      "confidence": "medium"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "We housed the rats in groups of four in ventilated cages (IVCs)",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "maintained under a 12 h light/dark cycle (lights on from 6 a.m. to 6 p.m.)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "yes",
+      "evidence": "provision of environmental enrichment such as red-colored shelter, wooden sticks, and bedding (Classic Aspen Bedding 2-5mm, Scanbur)",
+      "confidence": "high"
+    }
+  },
+  "assays": [],
+  "judge_notes": [
+    "All three candidates returned an empty assay list. Confirmed against the paper: the only in vivo readouts are [18F]FDG-PET (regional glucose metabolism, metabolic covariance, voxel-wise analysis) and [18F]MHMZ-PET (5-HT2AR occupancy). Both were acquired under isoflurane anaesthesia, so the animal performs no behavioural task. Under the rubric these are imaging-only endpoints and are excluded. No behavioural assays are scored.",
+    "Identity and metadata fields come from the paper text, consistent with the qwen and deepseek4 candidates. gemma4 supplied no metadata.",
+    "Sex is 'both'. n_male = 35 (26 in the FDG study plus 9 in the MHMZ study); n_female = 22.",
+    "Age is not reported (only body weight), so confidence is low. qwen marked this 'high'; that was not inherited.",
+    "Handling is set to not_reported because the paper describes only arrival acclimation, not a handling protocol.",
+    "day_night_flipped is 'no' because the paper explicitly states a standard cycle with lights on 6 a.m. to 6 p.m.",
+    "Overnight fasting before PET scans relates to the imaging protocol, not a behavioural assay, so it is not recorded as a per-assay condition."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0,
+    "environmental_complexity_max": 0,
+    "recording_duration_max": 0,
+    "behavioural_complexity_mean": 0,
+    "environmental_complexity_mean": 0,
+    "recording_duration_mean": 0
+  },
+  "low_confidence_count": 0,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-25T16:30:00+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "8b6edada1b",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 56433,
+    "output_tokens": 2165,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

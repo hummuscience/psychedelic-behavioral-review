@@ -1,0 +1,1889 @@
+{
+  "study_id": "Yu2026",
+  "doi": "10.1038/s41593-026-02369-y",
+  "species": "rat",
+  "strain": "Sprague-Dawley",
+  "age": {
+    "value": "mixed",
+    "age_min_days": 21,
+    "age_max_days": 74,
+    "evidence": "Rats in groups 1 and 2 were 21 days old on arrival, whereas those in group 3 were 49 days old... exposure during PND 35-48 (adolescent) or PND 60-74 (adult); behaviour quantified in adulthood (group foraging PND 65-70).",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Male Sprague-Dawley rats were used for experiments... We used male rats in this study.",
+    "confidence": "high"
+  },
+  "psychedelic": "25C-NBOMe",
+  "dosing": [
+    {
+      "compound": "25C-NBOMe",
+      "doses_mg_per_kg": [
+        0.1
+      ],
+      "doses_raw": "0.1 mg kg-1, intraperitoneal",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "chronic",
+      "evidence": "It was administered intraperitoneally at a dosage of 0.1 mg kg-1... the co-housed rats were randomly selected to receive either 25C-NBOMe or saline (1.0 ml kg-1) during PND 35-48 [group 1] ... or at PND 60-74 [group 3].",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "The methods describe housing, light cycle and feeding but never mention a handling/habituation-to-experimenter protocol.",
+      "confidence": "medium"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Rats were housed four per cage, constructed from polyphenylene sulfone resin (dimensions: L 465 mm × W 285 mm × H 230 mm)",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "yes",
+      "evidence": "under standard conditions (22 °C, 55% humidity) with a reversed 12-hour light/dark cycle",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Home-cage enrichment items are not mentioned anywhere in the Methods.",
+      "confidence": "medium"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Group Foraging Task (competitive corridor, incl. solitary foraging control)",
+      "assay_description": "Four co-housed rats compete serially for access to a single-occupancy food chamber reached through a one-rat-wide tubular corridor from a waiting chamber; 5 consecutive daily sessions (each ≤5 min), followed on day 6 by solitary foraging in the same apparatus. Measures: corridor entry latency, food-chamber occupancy, push success rate, pellet consumption and the derived competitive avoidance (CA) index. Variants include adolescent-exposed, adult-exposed and saline-only cohorts and bidirectional chemogenetic (hM3Dq/hM4Di + CNO) manipulation of the vHPC→OFC projection.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "25C-NBOMe ... administered intraperitoneally at a dosage of 0.1 mg kg-1; CNO (5.0 mg kg-1, intraperitoneal) 30 minutes before each behavioral test.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Prior to the daily training sessions, the rats were given 30 minutes of free exploration to familiarize themselves with the apparatus.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "four co-housed rats in the waiting chamber, upon the shutter opening, would traverse the tubular corridor and enter the food chamber",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "During the foraging task (6 days), food was restricted to 20 g of standard chow per rat per day (food pellets were present inside the food chamber during the session).",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Rats received food and water ad libitum except during specified experimental procedures; no water source is described in the foraging apparatus.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "long_term_over7d",
+          "value_minutes": 24480,
+          "evidence": "Drug exposure PND 35-48; After group foraging (PND 65-70) ... behaviour quantified in adulthood.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 28,
+        "n_male": 28,
+        "n_female": null,
+        "n_per_group_min": 14,
+        "evidence": "Group 1: clusters 'predominantly composed of saline-treated rats (13 of 14)' and '25C-NBOMe-treated rats (11 of 14)'; group 2 n = 40 and group 3 n = 28 were run through the same paradigm.",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "On day 5, rats exposed to 25C-NBOMe during adolescence showed longer corridor entry latency, shorter food-chamber occupancy, lower push success rate, reduced pellet consumption and a higher competitive avoidance index than their saline cage mates; no differences appeared during solitary foraging, and adult exposure produced no effect. Chemogenetic activation of the vHPC→OFC projection in drug-exposed rats, or inhibition in saline controls, abolished the group differences.",
+        "statistics": "Day × drug exposure interactions (repeated-measures LMM): latency F1,26=12.038, P=0.002; occupancy F1,26=11.016, P=0.003; push success F1,26=6.522, P=0.029; pellet consumption F1,26=15.584, P=0.001; CA index F1,52=32.525, P<0.001. Solitary foraging: U=83, P=0.511; t26=0.095, P=0.92. Clustering vs treatment: Yates-corrected χ2=11.81, df=1, P<0.001. Adult exposure: CA index days F1,26<0.01, P>0.99; drug F1,26=0.556, P=0.463; interaction F1,26=0.332, P=0.569. Chemogenetics: drug × CNO interactions latency F1,28=6.177, P=0.019; occupancy F1,14=5.531, P=0.034; CA index F1,28=8.964, P=0.006; hM4Di: χ2(1)=10.667, P=0.001; occupancy F1,14=6.346, P=0.025; CA index F1,13.33=13.958, P=0.002.",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "On day 5 of group foraging training, adolescent 25C-NBOMe-exposed rats displayed a longer entry latency into the corridor ... shorter occupancy time in the food chamber ... lower push success rate ... and reduced food pellet consumption compared to their saline counterparts.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "longer entry latency, shorter occupancy time, lower push success rate, reduced food pellet consumption, and the CA index",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Analyses compare day 1 vs day 5 totals (between-session), not within-session time bins.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition/bout-structure analysis reported.",
+          "confidence": "medium"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "lower push success rates (percentage of pushes displacing an opponent) — direct scoring of agonistic social acts",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 3,
+          "value": "Free interaction",
+          "evidence": "four co-housed rats in the waiting chamber ... compete serially for access to a single-occupancy food chamber",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Paradigm indexes competitive decision-making; no learning/memory outcome is the measured endpoint.",
+          "confidence": "medium"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "All behavioral scoring across social behavior tests was conducted manually and in a blinded manner.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "we applied unsupervised k-means clustering to latency, push success rate and food consumption on day 5",
+          "confidence": "high"
+        },
+        "raw_total": 7
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "The apparatus for foraging training comprised a waiting chamber ... a tubular corridor ... and a food chamber, all made from custom acrylic.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enclosed refuge is provided; the corridor is a transit tube of the apparatus.",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "all made from custom acrylic",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "a waiting chamber with a shutter, a tubular corridor ... and a food chamber",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 2,
+          "value": "Free social group",
+          "evidence": "four co-housed rats in the waiting chamber ... compete",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "enter the food chamber, in which 40 food particles were presented, each weighing approximately 50 mg",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "For five consecutive days of group training ... Solitary foraging was conducted on the next day after group training.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Group foraging training was conducted once daily, with each session not exceeding 5 minutes.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "five consecutive days of group training plus solitary foraging on day 6 (plus CNO/vehicle test sessions)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug foraging recording; exposure occurred PND 35-48 and foraging began PND 65.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Behaviour tested in adulthood (PND 65-70), weeks after the last 25C-NBOMe dose at PND 48.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "each session not exceeding 5 minutes",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Open-field Drip Feeder Assay",
+      "assay_description": "Four co-housed, water-deprived rats compete for a single water drip feeder mounted on one wall of a 300 × 300 mm open arena divided (virtually) into a competition zone (radius 100 mm) and an avoidance zone; 7 daily sessions. Measures: feeder occupancy time, time in avoidance zone, push success rate, push frequency, open-field CA index.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "25C-NBOMe ... administered intraperitoneally at a dosage of 0.1 mg kg-1",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No pre-test apparatus habituation is described for the drip feeder assay.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "four co-housed rats competed for access to a water drip feeder in an unrestricted arena",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food is described in the drip-feeder arena; only a water drip feeder was present.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "before",
+          "evidence": "During open-field drip feeder assay (7 days), rats were deprived of water 12 hours immediately prior to each training session.",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "long_term_over7d",
+          "value_minutes": null,
+          "evidence": "Adolescent exposure PND 35-48; assay performed in adulthood (exact interval not stated).",
+          "confidence": "medium"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "LMM: treatment F(1,17) = 22.01 (exact n per subset shown only in Extended Data Fig. 3 panel labels)",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "On day 7, adolescent 25C-NBOMe-exposed rats spent less time on the feeder and more time in the avoidance zone than saline cage mates, with no differences in push frequency or push success rate; the open-field CA index correlated with the corridor-task CA index.",
+        "statistics": "Feeder occupancy: LMM treatment F(1,17)=22.01, p<0.001; avoidance zone: F(1,17)=18.09, p<0.001; push frequency F(1,17)=1.171, p=0.294; push success rate F(1,17)=2.367, p=0.142; two-sided Spearman correlation between corridor and open-field CA indices.",
+        "direction": "mixed",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "On Day 7, adolescent 25C-NBOMe-exposed rats displayed a shorter occupancy time on feeder (LMM: treatment F(1,17) = 22.01, p < 0.001), longer duration in avoidance zone (LMM: treatment F(1,17) = 18.09, p < 0.001) ... no differences were observed in push frequency ... and push-success rate.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "The observed parameters included (1) occupancy time at the feeder, (2) time spent in the avoidance zone, (3) push success rate ... and (4) push frequency",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only session totals (day 7) are reported; no within-session binning.",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "medium"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "push success rate (fraction of pushes that displaced an opponent) and push frequency",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 3,
+          "value": "Free interaction",
+          "evidence": "Four co-housed water-restricted rats compete for access to a single drip-feeder.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Competitive resource access; no learning/memory endpoint measured.",
+          "confidence": "medium"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "All behavioral scoring across social behavior tests was conducted manually and in a blinded manner.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate LMMs and a bivariate correlation reported for this assay.",
+          "confidence": "medium"
+        },
+        "raw_total": 6
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "a square open-field arena (L 300 mm × W 300 mm) equipped with a single water drip feeder mounted on one wall",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Unrestricted open arena with no refuge described.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "The arena was divided into a competition zone surrounding the feeder (radius, 100 mm) and an avoidance zone comprising the remaining space — virtual zones in one open arena.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 2,
+          "value": "Free social group",
+          "evidence": "Four co-housed water-restricted rats compete for access to a single drip-feeder.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "equipped with a single water drip feeder mounted on one wall",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "During open-field drip feeder assay (7 days), rats were deprived of water 12 hours immediately prior to each training session.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Session duration is not explicitly stated for this assay.",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "During open-field drip feeder assay (7 days)",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug recording in this apparatus.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Tested in adulthood, long after the last adolescent dose (PND 48).",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Daily training sessions; no session ≥6 h reported.",
+          "confidence": "medium"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Tube Confrontation Test",
+      "assay_description": "Social dominance hierarchy assessed in each four-rat cage with a transparent acrylic tube (⌀6.0 × 100 cm, open ends); two rats placed at opposite ends, all six dyads tested daily for 5 consecutive days with balanced start positions. Measures: wins/dominance rank (day 5) and push latency.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "25C-NBOMe ... administered intraperitoneally at a dosage of 0.1 mg kg-1",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No habituation to the tube is described.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "In each trial, two rats were placed at opposite ends and allowed to approach.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food is present in the confrontation tube.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water is present in the confrontation tube.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "long_term_over7d",
+          "value_minutes": null,
+          "evidence": "After group foraging (PND 65-70), all rats completed a counterbalanced battery — weeks after the last adolescent dose.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 28,
+        "n_male": 28,
+        "n_female": null,
+        "n_per_group_min": 14,
+        "evidence": "drug-exposed rats won fewer encounters against saline cage mates (7/28; χ2 1 = 14.0, P < 0.01); ordinal mixed model F1,26 = 6.50",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "Adolescent 25C-NBOMe-exposed rats won fewer tube confrontations against their saline cage mates and had lower social dominance ranks, with no difference in push latency. Adult exposure did not affect dominance rank.",
+        "statistics": "Wins: χ2(1)=14.0, P<0.01; ordinal logistic mixed-effects analysis F1,26=6.50, P=0.017; push latency: no difference (Supplementary Fig. 3).",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "In the tube confrontation test, drug-exposed rats won fewer encounters against saline cage mates (7/28; χ2 1 = 14.0, P < 0.01), with no difference in push latency.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "wins/dominance rank and push latency were measured",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only per-trial/day outcomes reported.",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "medium"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "upon meeting, the dominant rat typically forced its opponent to retreat — direct scoring of agonistic pushing/retreat",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 3,
+          "value": "Free interaction",
+          "evidence": "two rats were placed at opposite ends and allowed to approach",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Dominance contest; no learning/memory endpoint.",
+          "confidence": "medium"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "All behavioral scoring across social behavior tests was conducted manually and in a blinded manner.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Rank entered into study-level MANOVA/GLM, but no multivariate analysis across measures within this assay.",
+          "confidence": "medium"
+        },
+        "raw_total": 5
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "a transparent acrylic tube (⌀ 6.0 ×100 cm) with open ends",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open-ended tube; no refuge.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "transparent acrylic tube — no substrate described",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "a single straight tube with open ends",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 2,
+          "value": "Free social group",
+          "evidence": "two rats were placed at opposite ends and allowed to approach",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the tube.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "Testing was conducted for five consecutive days to assess hierarchy stability.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Trial/session duration is not explicitly stated.",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Testing was conducted for five consecutive days.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug tube testing reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Tested in adulthood after adolescent (PND 35-48) exposure.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Brief daily trials; no ≥6 h session.",
+          "confidence": "medium"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Social Interaction Test (sociability)",
+      "assay_description": "Open-field chamber (400 × 400 × 400 mm) with two restraint boxes in opposite corners, one holding an unfamiliar age-matched rat and one a toy rat; time spent sniffing each box within the designated exploration area was scored for 10 min.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "25C-NBOMe ... administered intraperitoneally at a dosage of 0.1 mg kg-1",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No pre-test habituation to the sociability chamber is described.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "The test rat explores freely; only the stimulus animals are in restraint boxes.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food is present in the open-field chamber during the 10-min test.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water is present in the open-field chamber during the 10-min test.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "long_term_over7d",
+          "value_minutes": null,
+          "evidence": "After group foraging (PND 65-70), all rats completed a counterbalanced battery.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 28,
+        "n_male": 28,
+        "n_female": null,
+        "n_per_group_min": 14,
+        "evidence": "Group 1 MANOVA: Pillai's trace = 0.748, F5,22 = 13.057 (n = 28 rats, 14 per subset)",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "Adolescent 25C-NBOMe exposure did not significantly alter sociability (time sniffing the stimulus rat) in group 1 (P = 0.074), whereas adult exposure (group 3) significantly promoted sociability.",
+        "statistics": "Group 1 between-subject effect after MANOVA: P = 0.074; group 3: unpaired t-test, significant increase (Supplementary Fig. 4).",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "there was no significant effect in the social interaction test (P = 0.074; Fig. 4c) ... In group 3, repeated exposure to 25C-NBOMe in adulthood significantly promoted sociability.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "recording the time spent sniffing each restraint box (social and toy)",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session totals only.",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "medium"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "time spent sniffing each restraint box — direct measurement of social investigation",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 2,
+          "value": "Restricted interaction",
+          "evidence": "Two restraint boxes were randomly placed in opposite corners of the chamber, one containing an unfamiliar age-matched adult rat and the other housing a toy rat.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sociability preference; no learning/memory requirement.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "All behavioral scoring across social behavior tests was conducted manually and in a blinded manner.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No multivariate analysis within this assay.",
+          "confidence": "medium"
+        },
+        "raw_total": 4
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Sociability was assessed in an open-field chamber (L 400 mm × W 400 mm × H 400 mm).",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No refuge described.",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Toy rat serves as the test stimulus, not enrichment.",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single open-field chamber with a designated (virtual) exploration area.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 1,
+          "value": "Stimulus behind barrier",
+          "evidence": "Two restraint boxes ... one containing an unfamiliar age-matched adult rat",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the chamber.",
+          "confidence": "medium"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "quantified by recording the time spent sniffing each restraint box ... for 10 minutes",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "for 10 minutes",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "A single 10-minute test session is described.",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug sociability test reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Tested in adulthood, weeks after the last dose.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "for 10 minutes",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Delayed Nonmatch-to-Place T-Maze (DNMT)",
+      "assay_description": "Food-rewarded delayed nonmatch-to-place task in a T-maze (arms 50 × 10 × 30 cm); 10 trials/day with sample, delay and choice phases; days to reach ≥70% accuracy criterion and choice accuracy across delay-defined test sessions were recorded.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "25C-NBOMe ... administered intraperitoneally at a dosage of 0.1 mg kg-1",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Rats were acclimated to the T-maze ... for 3 days prior to training by adapting them to a dark environment for 20 minutes daily, followed by 10 minutes of free movement in the maze",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "10 minutes of free movement in the maze",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "before",
+          "evidence": "A week before training, the rat's daily feed was restricted to reduce their weight to 80-85% of the initial weight.",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water is available inside the T-maze.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "long_term_over7d",
+          "value_minutes": null,
+          "evidence": "Cohort 2 underwent group foraging and solitary foraging followed by a counterbalanced sequence of delayed nonmatch-to-place T-maze ... in adulthood.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 16,
+        "n_male": 16,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "two-way ANOVA, drug exposure F(1, 14) = 0.102, p = 0.754 (df implies n = 16)",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "Adolescent 25C-NBOMe exposure did not affect learning curves or choice accuracy in the delayed nonmatch-to-place T-maze, indicating intact spatial learning and working memory in adulthood.",
+        "statistics": "two-way ANOVA: session F(3.210, 44.94) = 19.99, p < 0.001; drug exposure F(1, 14) = 0.102, p = 0.754; interaction F(6, 84) = 0.389, p = 0.884",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "No significant differences between the two subsets from Group One in learning curves or choice accuracy as tested by the DNMT.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "The number of days required to reach the training criterion and the accuracy rate during testing were recorded and analyzed.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Learning curves are across sessions/days, not within a single session.",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "medium"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Choice accuracy in a maze task; no natural behaviours scored.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Each rat tested individually; no social construct.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "T-maze test was performed to assess spatial learning and memory function.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No behavioural classifier described; scoring of arm choice.",
+          "confidence": "medium"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVA only.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "T-maze (arm L 50 cm × W 10 cm × H 30 cm)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "T-maze with a start arm and two walled choice arms (30 cm walls) used in sample and choice phases",
+          "confidence": "medium"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "each rat undergoing 10 trials per day individually",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "A correct choice was made when the rat visited the opposite arm from the sample part to obtain a food reward.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "each rat undergoing 10 trials per day ... over repeated training sessions",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Daily session duration is not explicitly stated.",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Rats reaching an accuracy rate of ≥70% for three consecutive days were considered to have reached the training criterion; testing then proceeded across sessions.",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug T-maze recording.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Tested in adulthood after adolescent exposure.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Short daily trial blocks.",
+          "confidence": "medium"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Prepulse Inhibition of Acoustic Startle (PPI)",
+      "assay_description": "Acoustic startle/PPI in an AniLab startle system (acrylic cage on a piezoelectric platform in a sound-attenuated chamber); 5-min acclimatization, five 120-dB pulses, then 5 trial types × 10 presentations (pulse alone, 70/75/80-dB prepulse + pulse, no-stimulus), ITI 25-35 s, 65-dB background. Measures: startle amplitude and %PPI.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "25C-NBOMe ... administered intraperitoneally at a dosage of 0.1 mg kg-1",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Only a within-session '5-minute acclimatization period' is described; no separate prior apparatus exposure.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "not_reported",
+          "evidence": "The apparatus consisted of one acrylic cage and one piezoelectric accelerometric platform inside of a sound-attenuated chamber (restraint not specified).",
+          "confidence": "medium"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in the startle chamber.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in the startle chamber.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "long_term_over7d",
+          "value_minutes": null,
+          "evidence": "Cohort 2 ... counterbalanced sequence of delayed nonmatch-to-place T-maze, prepulse Inhibition, and elevated plus maze, in adulthood.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 16,
+        "n_male": 16,
+        "n_female": null,
+        "n_per_group_min": 7,
+        "evidence": "startle: t(12) = 0.437; PPI two-way ANOVA drug exposure F(1, 14) = 1.004",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "Adolescent 25C-NBOMe exposure did not alter baseline startle amplitude or prepulse inhibition of the acoustic startle response in adulthood.",
+        "statistics": "startle: two-sided unpaired t-test t(12) = 0.437, p = 0.670; PPI: two-way ANOVA prepulse voice F(2, 28) = 8.857, p = 0.001; drug exposure F(1, 14) = 1.004, p = 0.333; interaction F(2, 28) = 1.171, p = 0.325",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "rats exposed to 25C-NBOMe in adolescence did not exhibit impairments in PPI (Extended Data Fig. 4b)",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "startle response ... and prepulse inhibition of startle response",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No within-session time-course analysis reported.",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "medium"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "PPI startle magnitude is explicitly not an ethological measure.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Single animal, non-social assay.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sensorimotor gating; no learning requirement.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "PPI was measured using an acoustic startle response system (AniLab) — transducer-based amplitude measurement.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVA only.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "The apparatus consisted of one acrylic cage and one piezoelectric accelerometric platform inside of a sound-attenuated chamber.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent in a startle enclosure.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "one acrylic cage",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Single animal in the startle enclosure.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the chamber.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "The testing schedule included a 5-minute acclimatization period followed by ... trial types.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Total session duration is not explicitly stated as a number.",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "A single testing schedule is described.",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug PPI session reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Tested in adulthood after adolescent (PND 35-48) exposure.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Short single session.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Elevated Plus Maze (EPM)",
+      "assay_description": "5-min EPM test (two open arms 40 × 15 cm, two enclosed arms 40 × 15 × 15 cm, central 15 × 15 cm platform, elevated 60 cm); time spent in open and closed arms quantified with ANY-maze v5.3.0.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "25C-NBOMe ... administered intraperitoneally at a dosage of 0.1 mg kg-1",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No habituation to the EPM is described.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "each rat was individually placed onto the central platform facing a designated open arm",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in the EPM during the 5-min test.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in the EPM during the 5-min test.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "long_term_over7d",
+          "value_minutes": null,
+          "evidence": "Cohort 2 ... counterbalanced sequence of ... elevated plus maze, performed in adulthood.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 16,
+        "n_male": 16,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "two-way ANOVA, drug exposure F(1, 14) = 0.0652 (df implies n = 16)",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "No anxiety-like phenotype was detected after adolescent 25C-NBOMe exposure; time spent in open and closed arms did not differ from saline controls.",
+        "statistics": "two-way ANOVA, arm F(1, 14) = 7.434, p = 0.016; drug exposure F(1, 14) = 0.0652, p = 0.433; interaction F(1, 14) = 0.056, p = 0.817",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "No anxiety-like behaviors was observed in 25C-NBOMe-exposed subset via measuring time spent in the open and closed arms of elevated plus maze.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "the time spent exploring the open and closed arms was quantified",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session totals only.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "medium"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Time in zones is a spatial measure, not an ethological behaviour.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "each rat was individually placed onto the central platform",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate-avoidance anxiety test.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "quantified automatically with automated tracking software (ANY-maze, v.5.3.0; Stoelting)",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Univariate ANOVA only.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "The apparatus for the EPM test, elevated 60 cm above the floor, consists of two open arms ... and two enclosed arms",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EPM closed arms are part of the apparatus design, not a shelter (per rubric).",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent in the EPM.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent in the EPM.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No objects in the maze.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Arms arranged in a plus configuration with a central square platform (EPM scored 0 per rubric).",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "each rat was individually placed onto the central platform",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the maze.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "During the 5-minute test, each rat was individually placed onto the central platform.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "During the 5-minute test",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single 5-minute test.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug EPM recording.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Tested in adulthood after adolescent exposure (PND 35-48).",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5-minute test.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Locomotor Activity Test",
+      "assay_description": "Rats individually placed in a 40 × 40 × 40 cm black matte acrylic chamber and allowed to explore freely for 30 min; total distance traveled quantified with ANY-maze v5.3.0.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "25C-NBOMe ... administered intraperitoneally at a dosage of 0.1 mg kg-1",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "no",
+          "evidence": "Each rat was allowed to freely explore the novel environment for 30 minutes (novel = no prior exposure).",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Each rat was allowed to freely explore the novel environment",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food in the locomotor chamber.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water in the locomotor chamber.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "long_term_over7d",
+          "value_minutes": null,
+          "evidence": "After group foraging (PND 65-70), all rats completed a counterbalanced battery including locomotor activity.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 28,
+        "n_male": 28,
+        "n_female": null,
+        "n_per_group_min": 14,
+        "evidence": "Group 1 MANOVA: Pillai's trace = 0.748, F5,22 = 13.057 (n = 28, 14 per subset)",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "Total distance traveled over 30 min did not differ significantly between adolescent 25C-NBOMe-exposed rats and saline controls, and locomotor activity contributed <3% of variance in the CA index GLM; adult exposure also had no effect.",
+        "statistics": "MANOVA between-subject effects: no significant effect of adolescent exposure on locomotor activity; GLM contribution <3%.",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "The tests of between-subject effects indicated that this influence is primarily driven by significant changes in foraging competition and social dominance rank ... all other variables contributed less than 3%.",
+        "confidence": "medium"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Total distance traveled (m) was quantified ... to assess overall locomotor activity levels.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only total distance reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "medium"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor distance is explicitly not an ethological measure.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Rats were individually placed in a square chamber.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "quantified using automated tracking software (ANY-maze, v.5.3.0) — position tracking only",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotion entered into study-level MANOVA/GLM but no multivariate analysis of locomotor features.",
+          "confidence": "medium"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Rats were individually placed in a square chamber (40 × 40 × 40 cm) constructed from black matte acrylic.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Bare open chamber.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "black matte acrylic floor",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No objects described in the chamber.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "a square chamber (40 × 40 × 40 cm)",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Rats were individually placed in a square chamber.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the chamber.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Each rat was allowed to freely explore the novel environment for 30 minutes.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "for 30 minutes",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single 30-minute session described.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug locomotor recording.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Tested in adulthood after adolescent exposure (PND 35-48).",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30-minute session.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    },
+    {
+      "assay_name": "Sucrose Preference Test",
+      "assay_description": "Rats individually housed in cages for 1 h with free access to two bottles (sucrose solution and water), positions switched every 30 min; consumption measured in grams and sucrose preference calculated.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "25C-NBOMe ... administered intraperitoneally at a dosage of 0.1 mg kg-1",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No habituation to the two-bottle test cage is described.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Rats were individually housed in cages for 1 hour, with free access to two bottles.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Only two bottles are described in the test cage; food availability during the 1-h test is not described.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "no",
+          "evidence": "free access to two bottles: one containing the sucrose solution and the other containing water",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "long_term_over7d",
+          "value_minutes": null,
+          "evidence": "After group foraging (PND 65-70), all rats completed a counterbalanced battery including sucrose preference.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 28,
+        "n_male": 28,
+        "n_female": null,
+        "n_per_group_min": 14,
+        "evidence": "Group 1 MANOVA: Pillai's trace = 0.748, F5,22 = 13.057 (n = 28, 14 per subset)",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "Sucrose preference was unaffected by adolescent 25C-NBOMe exposure and contributed less than 3% of the variance in the CA index GLM.",
+        "statistics": "No specific test statistic reported for this measure; GLM predictor contribution <3%.",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Adolescent 25C-NBOMe exposure emerged as the most influential predictor ... followed by a modest contribution from dominance rank (14.5%) ...; all other variables contributed less than 3%.",
+        "confidence": "medium"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "the sucrose preference was calculated (a preference score derived from sucrose and water consumption)",
+          "confidence": "medium"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only total 1-h consumption/preference reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "medium"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Consumption-derived preference measure only.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Rats were individually housed in cages for 1 hour.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Hedonic preference, no learning requirement.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sucrose and water consumption were measured in grams.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No multivariate analysis within this assay.",
+          "confidence": "medium"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Rats were individually housed in cages for 1 hour, with free access to two bottles (test cage, not stated to be the home cage).",
+          "confidence": "medium"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "a single cage with two bottles",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Rats were individually housed in cages for 1 hour.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "free access to two bottles: one containing the sucrose solution and the other containing water",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Rats were individually housed in cages for 1 hour.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "for 1 hour",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single 1-hour test described.",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug sucrose preference measurement reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Tested in adulthood after adolescent exposure (PND 35-48).",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "1-hour session.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    }
+  ],
+  "judge_notes": [
+    "Merged the solitary-foraging control (day 6, same corridor apparatus, same latency/occupancy measures) into the Group Foraging Task entry, following 2/3 candidates; it is the same apparatus and measures under a different social condition and is reported as part of the same paradigm. Noted in assay_description and D3 (6 recording days).",
+    "Chemogenetic (hM3Dq/hM4Di + CNO) and CNO-only control foraging experiments were folded into the single Group Foraging assay per the rubric's 'same test under optogenetic/chemogenetic manipulation = 1 assay' rule.",
+    "Excluded all in vivo multisite LFP/coherence recordings, in vitro slice electrophysiology, histology and viral-expression validation as non-behavioural.",
+    "B1 for Group Foraging corrected to 2 points (4-6 measures); gemma assigned 3 points with the '4-6' label, which is inconsistent with the rubric.",
+    "B2 scored 0 for Group Foraging and DNMT: day-to-day/session-to-session learning curves are between-session comparisons, not within-session temporal dynamics.",
+    "E1 for Group Foraging set to Standard apparatus (0) per 2/3 candidates — the corridor/chamber system is a custom acrylic test apparatus, not an enriched or semi-naturalistic environment; E2 shelter set to 0 (the corridor is a transit tube, not a refuge).",
+    "D5 (post-acute follow-up) scored 1 for every assay: all behavioural testing occurred weeks after the last 25C-NBOMe dose (exposure PND 35-48 or PND 60-74; testing from PND 65 onward). gemma's 0s were overridden.",
+    "D2 scored 0 with low confidence where session duration is not explicitly numerically stated (drip feeder, tube confrontation, DNMT, PPI), per the no-inference rule; qwen's estimated ~30 min PPI session was rejected.",
+    "Dosing schedule set to 'chronic' (14 consecutive daily i.p. doses, >7 days), overriding gemma's 'repeated'.",
+    "PPI setup_restrain set to not_reported: the apparatus is described only as 'one acrylic cage and one piezoelectric accelerometric platform', which is ambiguous about body restraint."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 8.75,
+    "environmental_complexity_max": 5.45,
+    "recording_duration_max": 4.09,
+    "behavioural_complexity_mean": 3.61,
+    "environmental_complexity_mean": 1.97,
+    "recording_duration_mean": 2.88
+  },
+  "low_confidence_count": 5,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-26T16:31:37+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "claude-opus-5-5",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "81e220f016",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 121824,
+    "output_tokens": 30961,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0,
+    "fallback_from": {
+      "model": "claude-opus-5-5",
+      "category": null,
+      "explanation": null,
+      "request_id": "msg_011ChRrQ5z9YDhAHTCW9PyVn",
+      "output_tokens": 404
+    }
+  }
+}

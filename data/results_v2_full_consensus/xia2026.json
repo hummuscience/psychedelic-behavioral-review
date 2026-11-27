@@ -1,0 +1,1367 @@
+{
+  "study_id": "Xia2026",
+  "doi": "10.1038/s41380-026-03894-9",
+  "species": "mouse",
+  "strain": "C57BL/6J (plus transgenic lines: β-arrestin 2 KO, PV-Cre, SOM-Cre, VIP-Cre, CaMKIIα-Cre, 5-HT2A flox/flox)",
+  "age": {
+    "value": "adult",
+    "age_min_days": 56,
+    "age_max_days": 56,
+    "evidence": "Eight-week-old adult C57BL/6 J mice (19-21 g)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "We also compared the effects of 4-AcO-DMT between male and female mice and found no sex difference in its pharmacological effect (Fig. S4A-C). ... the subsequent mechanistic experiments ... were performed exclusively in male mice.",
+    "confidence": "high"
+  },
+  "psychedelic": "4-AcO-DMT (comparators: S-MDMA, R-MDMA, TBG, IHCH-7086, ketamine)",
+  "dosing": [
+    {
+      "compound": "4-AcO-DMT",
+      "doses_mg_per_kg": [
+        0.5,
+        1.0
+      ],
+      "doses_raw": "0.5 mg/kg (optimal looming dose); 1 mg/kg (maximal HTR dose); 'different doses of 4-AcO-DMT'",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "The 4-AcO-DMT, R-MDMA, S-MDMA, TBG, IHCH-7086, caffeine, and ketamine were dissolved in 0.9% saline... All drugs were prepared on the day of the experiment and administered intraperitoneally... all drugs were administered 5 min before the experiment.",
+      "confidence": "high"
+    },
+    {
+      "compound": "S-MDMA",
+      "doses_mg_per_kg": [
+        0.5,
+        1.0,
+        2.0,
+        5.0
+      ],
+      "doses_raw": "n = 16 mice in the 0.5 and 5 mg/kg S-MDMA group, n = 15 mice in 1 mg/kg S-MDMA group, n = 17 mice in 2 mg/kg S-MDMA group",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "S-MDMA ... dissolved in 0.9% saline ... administered intraperitoneally; 'The maximum HTR-inducing effects of S-MDMA and R-MDMA were observed at 2 and 1 mg/kg, respectively.'",
+      "confidence": "high"
+    },
+    {
+      "compound": "R-MDMA",
+      "doses_mg_per_kg": [
+        0.5,
+        1.0,
+        2.0,
+        5.0
+      ],
+      "doses_raw": "0.5, 1, 2, 5 mg/kg (as per Fig. 1D/F group descriptions)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "R-MDMA ... dissolved in 0.9% saline ... administered intraperitoneally; '5 mg/kg R-MDMA increased spontaneous locomotor activity'",
+      "confidence": "medium"
+    },
+    {
+      "compound": "TBG",
+      "doses_mg_per_kg": [],
+      "doses_raw": "Different doses of TBG and IHCH7086 (specific values not stated in main text; Fig. S2K-R)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "The 4-AcO-DMT, R-MDMA, S-MDMA, TBG, IHCH-7086, caffeine, and ketamine were dissolved in 0.9% saline... Different doses of TBG and IHCH7086 had no effect on shortening freezing time",
+      "confidence": "medium"
+    },
+    {
+      "compound": "IHCH-7086",
+      "doses_mg_per_kg": [],
+      "doses_raw": "Different doses of IHCH7086 (specific values not stated in main text; Fig. S2K-R)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "IHCH-7086 was synthesized by Dr. Zhibing Zheng... dissolved in 0.9% saline... Different doses of TBG and IHCH7086 had no effect on shortening freezing time",
+      "confidence": "medium"
+    },
+    {
+      "compound": "Ketamine",
+      "doses_mg_per_kg": [
+        50.0
+      ],
+      "doses_raw": "ketamine, which has been proven to induce dissociation at a dose of 50 mg/kg; 'different doses of ketamine'",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Then, we tested ketamine, which has been proven to induce dissociation at a dose of 50 mg/kg [42]. In the looming paradigm, different doses of ketamine did not affect looming-induced freezing time",
+      "confidence": "medium"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "No deliberate handling habituation protocol is described in the Methods.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "All mice had free access to food and water in cages and were housed under a 12-h light/dark cycle ... cage density is not stated.",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "housed under a 12-h light/dark cycle (lights on 08:00 a.m. to 08:00 p.m.)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "yes",
+      "evidence": "Shelters were placed in animal cages for a week to acclimatize the mice to the shelter before the looming experiment.",
+      "confidence": "high"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head-Twitch Response (HTR)",
+      "assay_description": "Mice placed individually in transparent plastic cages (10 × 20 × 20 cm) containing bedding; number of head twitches counted by a trained observer for 30 min, divided into six 5-min blocks immediately after injection. Includes 4-AcO-DMT, S-MDMA, R-MDMA dose-response plus PCPA depletion, M100907 antagonism, and β-arrestin 2 KO variants.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs were prepared on the day of the experiment and administered intraperitoneally.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No habituation to the HTR observation cage is described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "The mice were placed individually in transparent plastic cages (10 × 20 × 20 cm 3 ) containing bedding material to observe the HTRs.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Test cage contained only bedding material; no food in apparatus during recording.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water bottle described in the HTR observation cage.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "The number of HTRs induced by the different substances was measured for a 30-min period divided into six 5-min blocks immediately after injection.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 12,
+        "evidence": "n = 15 mice per group (Fig. 1A); n = 12 mice per group in PCPA experiments (Fig. 2A-C); n = 13 mice per group (Fig. 2J).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "4-AcO-DMT increased HTR counts with a U-shaped dose-effect curve, maximal at 1 mg/kg; S-MDMA and R-MDMA produced similar U-shaped HTR curves (maxima at 2 and 1 mg/kg). M100907 (0.02 mg/kg) blocked HTR for all three compounds. PCPA depletion blocked only S-MDMA-induced HTR; β-arrestin 2 KO abolished R-MDMA- but not 4-AcO-DMT-induced HTR.",
+        "statistics": "one-way ANOVA with Dunnett's multiple comparisons, **P<0.01, ***P<0.001 (Fig. 1A, C, D); two-way ANOVA with Tukey's multiple comparisons, ***P<0.001, ns (Fig. 2A-C, E, G-J)",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Compared with vehicle group, 4-AcO-DMT increased the HTR counts in mice, with a U-shaped dose-effect curve (Fig. 1A). The maximal HTR-inducing effect was observed at 1 mg/kg.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The number of HTRs was scored by a trained observer using a tally counter.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "measured for a 30-min period divided into six 5-min blocks immediately after injection",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition, sequence or bout-structure analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-twitch response is explicitly excluded from ethological behaviours by the rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "The mice were placed individually in transparent plastic cages.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning or memory component; HTR is a reflexive drug-induced behaviour.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The number of HTRs was scored by a trained observer using a tally counter.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate ANOVA analyses reported.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "placed individually in transparent plastic cages (10 × 20 × 20 cm 3 )",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter or refuge described in the HTR observation cage.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "transparent plastic cages (10 × 20 × 20 cm 3 ) containing bedding material",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material mentioned in the observation cage.",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects mentioned in the observation cage.",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single undivided plastic cage.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "The mice were placed individually in transparent plastic cages.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water described in the observation cage.",
+          "confidence": "medium"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "One 30-min observation period immediately after injection.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "measured for a 30-min period divided into six 5-min blocks",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single acute test session; no repeated HTR days reported.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline HTR recording reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No HTR recording ≥24 h after dosing reported.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session is 30 min, well under 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Looming visual threat test",
+      "assay_description": "Mice freely explore a looming chamber containing a shelter; after 5-min acclimation, three expanding black-disk looming stimuli (0–24 cm in 1 s, repeated 15 times in 15 s) are triggered with >5-min intervals. Measures: freezing time in shelter, escape latency, time in shelter, return time, locomotion. Run across 4-AcO-DMT/S-MDMA/R-MDMA/TBG/IHCH-7086/ketamine/caffeine doses, with PCPA or M100907 pretreatment, β-arrestin 2 KO, IBO lesions, DREADD chemogenetics, caspase ablation, 5-HT2A cKO/re-expression, in both sexes, and at 5 min, 24 h and 7 days post-dose.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs were prepared on the day of the experiment and administered intraperitoneally. CNO was injected intraperitoneally 30 min before behavioral tests.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "The day before the behavioral experiment, mice were transferred to the chamber for habituation for 15 min.",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "mice with a miniature camera were placed into a looming device and moved freely; behaviour recorded with an infrared camera.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food described in the looming chamber during the test.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water described in the looming chamber during the test.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 5,
+          "evidence": "all drugs were administered 5 min before the experiment; 'At 24 h or 7 days after 4-AcO-DMT injection, its anti-innate fear effect was no longer detectable (Fig. S4D-I).'",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 7,
+        "evidence": "n = 16 mice per group (Fig. 1B); n = 15 mice per group for many mechanistic groups; n = 7 mice per group for the MD IBO experiment (Fig. 7C); n = 8 mice per group (Fig. 7J, K).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "4-AcO-DMT reduced looming-induced freezing time in the shelter with a U-shaped dose-response (optimal 0.5 mg/kg) and no effect on escape latency; S-MDMA, R-MDMA, TBG, IHCH-7086, ketamine and caffeine did not reduce freezing (5 mg/kg S-MDMA increased it). The anti-fear effect was blocked by M100907, unaffected by PCPA depletion or β-arrestin 2 KO, required PrL CaMKIIα 5-HT2A receptors and the PrL–MD projection, showed no sex difference, and was absent 24 h and 7 days after dosing.",
+        "statistics": "one-way ANOVA with Dunnett's multiple comparisons versus vehicle group, *P<0.05, ***P<0.001 (Fig. 1B); two-way ANOVA with Tukey's multiple comparisons, *P<0.05, **P<0.01, ***P<0.001, ###P<0.001, ns (Figs. 2D, F, K; 5C-L; 6A-H; 7C-K)",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "no",
+        "time_dependent": "yes",
+        "evidence": "Compared with vehicle group, 4-AcO-DMT reduced the looming-induced freezing time in the shelter, showing a U-shaped dose-response curve (Fig. 1B, videos 1 and 2). The optimal dose of 4-AcO-DMT that attenuated looming-induced freezing was 0.5 mg/kg. ... At 24 h or 7 days after 4-AcO-DMT injection, its anti-innate fear effect was no longer detectable.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 2,
+          "value": "4-6",
+          "evidence": "Freezing time in shelter (Fig. 1B), escape latency (Fig. S1A), time in shelter (Fig. S1B), return time after looming (Fig. S2H-J), and locomotor activity within the looming test are reported.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Data reported as totals per session; no within-session time-course binning of behaviour reported.",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No transition or bout-structure analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "looming visual stimulation ... presenting visual threat cues that elicit instinctive defensive responses such as escape, shelter seeking, and freezing — escape and shelter seeking are directly measured natural defensive acts.",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Single mouse tested per session; no social construct.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "This model does not require prior training and offers a simpler and shorter experimental process than conditioned fear paradigms.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Mouse behavior was recorded during the experiment using an infrared camera; no pose-estimation or ML behavioural classifier described.",
+          "confidence": "medium"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only univariate ANOVA/t-test analyses reported.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "The apparatus consisted of a looming visual stimulus behavior test chamber and its operating system.",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "4-AcO-DMT reduced the looming-induced freezing time in the shelter ... Shelters were placed in animal cages for a week to acclimatize the mice to the shelter before the looming experiment.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described; the chamber was wiped with 75% ethanol after each experiment.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described in the looming chamber.",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects described (the shelter is scored as refuge, not enrichment).",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "a looming stimulus was triggered when the mice chanced to stop in the center area ... residence time for each mouse was calculated for the shelter area — distinct shelter compartment plus open arena.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "After each experiment, the chamber was wiped with 75% ethanol to eliminate the odor of the other mouse — mice tested one at a time.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water described in the looming chamber.",
+          "confidence": "medium"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "At 24 h or 7 days after 4-AcO-DMT injection, its anti-innate fear effect was no longer detectable (Fig. S4D-I) — looming retested on separate days.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "Mice were acclimated to the box for 5 min at the beginning of the experiment ... There were three looming stimuli in the whole experiment, and the interval between each stimulus was more than 5 min (total >15 min).",
+          "confidence": "medium"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "Acute test day plus 24-h and 7-day follow-up looming tests (Fig. S4D-I).",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "The day before the behavioral experiment, mice were transferred to the chamber for habituation for 15 min — habituation only, no data collected pre-drug.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "At 24 h or 7 days after 4-AcO-DMT injection, its anti-innate fear effect was no longer detectable (Fig. S4D-I).",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session well under 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 4
+      }
+    },
+    {
+      "assay_name": "Open Field Test",
+      "assay_description": "Each mouse placed in a 40 × 40 × 40 cm chamber and allowed to explore freely for 30 min; movement trajectory and locomotor activity recorded with DigBehv software. Used as locomotor/anxiety control for 4-AcO-DMT, S-MDMA, R-MDMA, TBG, IHCH-7086, ketamine, caffeine and chemogenetic/cKO groups.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs were prepared on the day of the experiment and administered intraperitoneally.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No habituation to the open-field chamber is described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "each mouse was placed in an operational chamber (40 × 40 × 40 cm 3 ) and allowed to explore freely for 30 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food described in the open-field chamber.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water described in the open-field chamber.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 5,
+          "evidence": "Except for M100907 and PCPA, all drugs were administered 5 min before the experiment.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": null,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": null,
+        "evidence": "Sample sizes for the OFT locomotion controls are not stated in the main text (Fig. S1G-I, S6A-B).",
+        "confidence": "low"
+      },
+      "outcomes": {
+        "summary": "Different doses of 4-AcO-DMT and S-MDMA had no significant effect on locomotor activity, whereas 5 mg/kg R-MDMA increased spontaneous locomotion; high doses of TBG/IHCH-7086 reduced, and 10/50 mg/kg caffeine increased, locomotion. Chemogenetic manipulation of PrL CaMKIIα neurons with 4-AcO-DMT did not alter spontaneous locomotion.",
+        "statistics": "Statistics not reported in main text for these supplementary panels (Fig. S1G-I, S3D, S3H, S6A-B).",
+        "direction": "no_effect",
+        "dose_dependent": "no",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Different doses of 4-AcO-DMT and S-MDMA had no significant effect on locomotion activity, whereas 5 mg/kg R-MDMA increased spontaneous locomotor activity (Fig. S1G-I).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "The movement trajectory and activity of the mice within 30 min were recorded — locomotor activity/total distance is the reported measure.",
+          "confidence": "medium"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No within-session time-course analysis reported.",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequential or bout analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor distance is explicitly non-ethological per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "each mouse was placed in an operational chamber — tested alone.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Free exploration; no learning component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "recorded using DigBehv software (Jiliang Software Technology, China) — position tracking, not behavioural classification.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No multivariate analysis reported.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "an operational chamber (40 × 40 × 40 cm 3 )",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter described in the open field.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described in the open-field chamber.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described.",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects described.",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single undivided 40 × 40 × 40 cm chamber.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "each mouse was placed in an operational chamber",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the chamber.",
+          "confidence": "medium"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "allowed to explore freely for 30 min — one session.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "allowed to explore freely for 30 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single OFT test day described.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline OFT recording reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No OFT recording ≥24 h after dosing reported.",
+          "confidence": "medium"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30-min session, well under 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Visual cliff test",
+      "assay_description": "Mice placed on a central platform and allowed to step down to the shallow or deep side; each mouse performed the task five times in a day. Measures: percentage of shallow-side choices and latency to leave the platform, after vehicle or 0.5 mg/kg 4-AcO-DMT.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "The vehicle and 0.5 mg/kg 4-AcO-DMT groups were injected intraperitoneally with saline or 4-AcO-DMT.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No habituation to the visual cliff apparatus is described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "the mouse was placed on the platform and allowed to step down between the two sides",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food described in the visual cliff apparatus.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water described in the visual cliff apparatus.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 5,
+          "evidence": "After 5 min, the mouse was placed on the platform and allowed to step down between the two sides.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 30,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 15,
+        "evidence": "The experimental animals were randomly divided into two groups of 15 mice each.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "0.5 mg/kg 4-AcO-DMT did not alter the percentage of shallow-side choices or the latency to leave the platform, indicating no gross impairment of visual depth perception.",
+        "statistics": "n = 15 mice per group, unpaired two-tailed t-test, versus vehicle group, ns: no significance (Fig. 3D, E)",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Percentage of shallow choice between vehicle treatment and 0.5 mg/kg 4-AcO-DMT treatment (n = 15 mice per group, unpaired two-tailed t-test, versus vehicle group, ns: no significance).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Percentage of shallow choice (Fig. 3D) and latency of mice leaving the platform (Fig. 3E).",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No within-session time-course analysis reported.",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequence/transition analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Side choice and latency are choice/spatial measures, not scored natural behavioural acts.",
+          "confidence": "medium"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mouse tested individually.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate depth-avoidance test; no training or learned association required.",
+          "confidence": "medium"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No automated behavioural classification described.",
+          "confidence": "medium"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only unpaired t-tests reported.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Schematic representation of the visual cliff device (Fig. 3C).",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter in the visual cliff apparatus.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described.",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects described.",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "A central platform with shallow and deep visual sides on a continuous surface; no walled compartments described.",
+          "confidence": "medium"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "the mouse was placed on the platform — tested individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the apparatus.",
+          "confidence": "medium"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Each mouse performed the task five times per day for a total score of the percentage choosing the shallow side — five trials within one day, scored as one session.",
+          "confidence": "medium"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Session duration is not stated as a number; scored 0 per rubric default.",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Each mouse performed the task five times per day — single test day.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline recording reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No recording ≥24 h after dosing reported for this assay.",
+          "confidence": "medium"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session well under 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    },
+    {
+      "assay_name": "Place aversion (shelter preference without looming)",
+      "assay_description": "After vehicle or 0.5 mg/kg 4-AcO-DMT (5 min pre-test), mice were placed in the looming device for 30 min of free movement with no looming stimulation; residence time in the shelter area and number of shelter entries were measured.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "After intraperitoneal injection of saline or 4-AcO-DMT for 5 min, the mice were placed in a looming device for free movement for 30 min.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No explicit habituation described for the place aversion test (the 15-min chamber habituation is described under the looming procedure).",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "the mice were placed in a looming device for free movement for 30 min",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food described in the looming device during the 30-min session.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water described in the looming device during the 30-min session.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 5,
+          "evidence": "After intraperitoneal injection of saline or 4-AcO-DMT for 5 min, the mice were placed in a looming device.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 32,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 16,
+        "evidence": "Time in shelter in place aversion without looming stimulation (n = 16 mice per group, unpaired two-tailed t-test versus vehicle group, ns: no significance).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "0.5 mg/kg 4-AcO-DMT had no significant effect on time spent in the shelter or number of shelter entries in the looming device without looming stimulation, indicating no intrinsic place aversion/preference effect.",
+        "statistics": "n = 16 mice per group, unpaired two-tailed t-test, versus vehicle group, ns: no significance (Fig. 3K, L)",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "the administration of 4-AcO-DMT did not affect place aversion in the looming experiment and anxiety-like behavior in the open field test (Fig. 3J-N).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Time in shelter (Fig. 3K) and entry number in shelter (Fig. 3L).",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total residence time over 30 min reported; no within-session binning.",
+          "confidence": "medium"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequential/transition analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Time in zone is a spatial measure, not an ethological behaviour per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mouse tested individually.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No conditioning or learned association; unconditioned shelter occupancy.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No automated behavioural classification described (infrared camera recording of the looming chamber).",
+          "confidence": "medium"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only unpaired t-tests reported.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "the mice were placed in a looming device for free movement for 30 min",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "The residence time for each mouse was calculated for the shelter area.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No bedding described in the looming device.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described.",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects described.",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "Shelter area distinct from the open arena within the looming device.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice were tested individually in the looming device.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the apparatus.",
+          "confidence": "medium"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "One 30-min session without looming stimulation.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "the mice were placed in a looming device for free movement for 30 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test day described.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline recording reported for this assay.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No recording ≥24 h after dosing reported for this assay.",
+          "confidence": "medium"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "30-min session, well under 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Elevated Plus Maze",
+      "assay_description": "Mice placed at the intersection of the arms of an elevated cross-maze for 6 min after vehicle or 0.5 mg/kg 4-AcO-DMT; time in the open arms measured.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "All drugs were prepared on the day of the experiment and administered intraperitoneally; 'After the drug injection, the mice were placed at the intersection of their arms in an elevated cross-maze.'",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No habituation to the elevated plus maze is described.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "the mice were placed at the intersection of their arms in an elevated cross-maze — freely moving apparatus, no restraint described.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food described in the elevated plus maze.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water described in the elevated plus maze.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 5,
+          "evidence": "Except for M100907 and PCPA, all drugs were administered 5 min before the experiment; 'After the drug injection, the mice were placed at the intersection of their arms'.",
+          "confidence": "medium"
+        }
+      },
+      "sample_size": {
+        "n_total": 32,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 16,
+        "evidence": "Time in the open arm between vehicle or 0.5 mg/kg 4-AcO-DMT treatment (n = 16 mice per group...).",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "0.5 mg/kg 4-AcO-DMT did not significantly change time spent in the open arms of the elevated plus maze, indicating no acute anxiolytic or anxiogenic effect.",
+        "statistics": "n = 16 mice per group, unpaired two-tailed t-test, versus vehicle group, ns: no significance (Fig. 3N)",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "N, Time in the open arm between vehicle or 0.5 mg/kg 4-AcO-DMT treatment (n = 16 mice per group, unpaired two-tailed t-test, versus vehicle group, ns: no significance).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "the residence time of the mice in the open arms was counted within 6 min",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total open-arm time over 6 min; no within-session binning.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No sequential analysis reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Open-arm time is a spatial measure, not an ethological behaviour per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mouse tested individually.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate avoidance-based anxiety test; no learning component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No behavioural classification software described for EPM.",
+          "confidence": "medium"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only unpaired t-test reported.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "an elevated cross-maze",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "EPM closed arms are not scored as shelter per rubric.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent in an elevated plus maze; no bedding described.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent; no nesting material described.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in the maze.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "EPM arms are open-ended extensions of a central platform; scored 0 per rubric.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Mice tested individually.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the maze.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Each experiment lasted 6 min.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Each experiment lasted 6 min, and the residence time of the mice in the open arms was counted within 6 min.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single EPM test day described.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug baseline EPM recording reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No EPM recording ≥24 h after dosing reported.",
+          "confidence": "medium"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "6-min session.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      }
+    }
+  ],
+  "judge_notes": [
+    "All three candidates converged on the same six behavioural assays: HTR, looming test, OFT, visual cliff, place aversion, and EPM. No duplicates or misclassifications needed to be dropped.",
+    "Excluded non-behavioural endpoints: fiber photometry GCaMP recording, pupil-size eye-tracking (physiological/imaging readout, not a behavioural task), heart-rate telemetry, EGR1 immunofluorescence, 5-HT ELISA, hormone radioimmunoassay, and anterograde tracing.",
+    "Place aversion is kept separate from the looming test: although it uses the same apparatus, no looming stimulus is delivered and a different behavioural construct (unconditioned shelter/place preference) is measured over a 30-min free-exploration session.",
+    "All DREADD/chemogenetic, lesion, caspase-ablation, 5-HT2A cKO/re-expression, β-arrestin 2 KO, PCPA and M100907 variants of the looming test were collapsed into one Looming assay entry per the rubric's assay-identity rules.",
+    "B1 for the looming assay set to 2 (4-6 measures): freezing time, escape latency, time in shelter, return time, and in-test locomotion are all reported (Figs. 1B, S1A-B, S2H-J).",
+    "B2 for HTR scored 1 (Yes): the paper explicitly states HTRs were measured in six 5-min blocks within the 30-min session, i.e. within-session binning (qwen and gemma4 agreed; deepseek4 overridden).",
+    "D2 for the looming test scored 1 (15–60 min): 5-min acclimation plus three stimuli separated by >5-min intervals necessarily exceeds 15 min (gemma4's <15 min overridden).",
+    "D1/D3/D5 for the looming test reflect the 24-h and 7-day retests reported in Fig. S4D-I (multiple discrete sessions, 2-7 recording days, post-acute follow-up = Yes).",
+    "D5 follow-up scored 0 for HTR, OFT, visual cliff, place aversion and EPM — the 24 h / 7 d retests are explicitly only described for the looming freezing measure.",
+    "B1 corrections applied where candidates mis-mapped category to points: '1 measure' = 0 points (gemma4 had assigned 1 point); '2-3 measures' = 1 point (gemma4 had assigned 2).",
+    "Sex set to 'both' (deepseek4/gemma4): the paper explicitly compared male and female mice in the looming test (Fig. S4A-C), although mechanistic work was male-only.",
+    "enrichment_housing = yes based on 'Shelters were placed in animal cages for a week', an explicit home-cage enrichment item.",
+    "Dosing list expanded to include all administered comparator compounds (S-MDMA, R-MDMA, TBG, IHCH-7086, ketamine); exact dose arrays for TBG/IHCH-7086 are not given in the main text so arrays left empty."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 2.73,
+    "recording_duration_max": 5.45,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 1.14,
+    "recording_duration_mean": 1.59
+  },
+  "low_confidence_count": 8,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-26T16:23:49+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "claude-opus-5-5",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "81e220f016",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 102637,
+    "output_tokens": 20048,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0,
+    "fallback_from": {
+      "model": "claude-opus-5-5",
+      "category": null,
+      "explanation": null,
+      "request_id": "msg_011ChRqxfyp7q3NCtZ6ZmqcD",
+      "output_tokens": 0
+    }
+  }
+}

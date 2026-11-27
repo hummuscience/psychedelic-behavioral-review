@@ -1,0 +1,113 @@
+{
+  "study_id": "Ekins2026",
+  "doi": null,
+  "species": "mouse",
+  "strain": "C57BL/6",
+  "age": {
+    "value": "adolescent",
+    "age_min_days": 29,
+    "age_max_days": 49,
+    "evidence": "Eighty-four total neurons from 19 (seven female, 12 male) adolescent mice, postnatal days 29-49 (P29-49), were used for this study.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": 12,
+    "n_female": 7,
+    "evidence": "Eighty-four total neurons from 19 (seven female, 12 male) adolescent mice, postnatal days 29-49 (P29-49), were used for this study.",
+    "confidence": "high"
+  },
+  "psychedelic": "25CN-NBOH",
+  "dosing": [
+    {
+      "compound": "25CN-NBOH",
+      "doses_mg_per_kg": [
+        10.0
+      ],
+      "doses_raw": "10 mg/kg",
+      "vehicle": "water",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "25CN-NBOH... was dissolved in sterile water before mixing with sterile saline for in vivo injections... 25CN-NBOH was administered via intraperitoneal injection at 10 mg/kg. Adolescent PAE mice... received a single intraperitoneal injection of either saline or the psychedelic drug 25CN-NBOH (NBOH; 10 mg/kg).",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [],
+  "judge_notes": [
+    "All three candidates agreed on zero behavioural assays. The paper reports only ex vivo whole-cell patch-clamp slice electrophysiology: intrinsic excitability, sEPSCs, and biocytin morphology. These are excluded as non-behavioural endpoints under the rubric, so the assays array is empty.",
+    "Reversal learning is mentioned only as prior work (Brouns et al. 2025) and as a future direction. No behavioural testing was performed in this study.",
+    "Vehicle was set to 'water' (deepseek4) rather than 'saline' (qwen, gemma4). The paper states the drug was 'dissolved in sterile water before mixing with sterile saline', and the rubric says to choose the primary solvent listed first.",
+    "DOI is not present in the markdown and no candidate supplied one, so doi is null. Gemma4 used the string \"null\"; this was normalised to JSON null.",
+    "Sex and n are based on the 19 PAE experimental mice (7 female, 12 male). Control neurons were drawn from mice in prior studies and are not counted.",
+    "All housing fields are not_reported because the paper is silent on handling, cage density, light cycle and enrichment; all candidates agreed."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0,
+    "environmental_complexity_max": 0,
+    "recording_duration_max": 0,
+    "behavioural_complexity_mean": 0,
+    "environmental_complexity_mean": 0,
+    "recording_duration_mean": 0
+  },
+  "low_confidence_count": 4,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-25T16:47:29+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "8b6edada1b",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 48428,
+    "output_tokens": 1235,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "study_id": "Wang2026",
+  "doi": "10.1016/j.neuroscience.2026.08.049",
+  "species": "mouse",
+  "strain": "NMRI (Naval Medical Research Institute) outbred",
+  "age": {
+    "value": "juvenile",
+    "age_min_days": 14,
+    "age_max_days": 30,
+    "evidence": "Mice of both sexes were used at postnatal days 14-30 (P14-P30).",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Mice of both sexes were used at postnatal days 14-30 (P14-P30).",
+    "confidence": "high"
+  },
+  "psychedelic": "25CN-NBOH",
+  "dosing": [
+    {
+      "compound": "25CN-NBOH",
+      "doses_mg_per_kg": [],
+      "doses_raw": "10 µM (and 1 µM) bath application to acute brain slices",
+      "vehicle": "other",
+      "route": "other",
+      "schedule": "acute",
+      "evidence": "All drugs were applied via the bath... 25CN-NBOH was diluted in artificial cerebrospinal fluid (ACSF) to the final working concentration of 10 µM. A lower concentration of 25CN-NBOH (1 µM) produced no significant change.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "Mice were handled using the tunnel method to minimize handling-induced stress and promote animal welfare.",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Animals were group-housed (3-5 per cage) under controlled environmental conditions",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "a 12-hour light/dark cycle (lights on at 7:00 h)... experiments were performed during the light phase (between 09:00 and 17:00 h).",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [],
+  "judge_notes": [
+    "All three candidates returned zero assays. This is correct: the study uses only ex vivo work, namely whole-cell patch-clamp electrophysiology and Fura-2 AM calcium imaging in acute hippocampal slices. The rubric excludes both methods.",
+    "25CN-NBOH was applied only by bath to brain slices. It was never given to living animals, and no behavioural test was run. The study therefore has no scorable behavioural assays under the rubric.",
+    "The dosing entry is kept for descriptive completeness. Its route is 'other' (bath application in vitro) and its vehicle is 'other' (ACSF), and no mg/kg conversion is possible. Deepseek4 left dosing empty; qwen listed the bath concentration.",
+    "Identity fields follow the qwen and deepseek4 candidates and match the paper: the DOI appears in the markdown, and NMRI mice of both sexes were used at P14-30. The gemma4 candidate gave no metadata.",
+    "Enrichment_housing is set to not_reported with low confidence because the paper never mentions home-cage enrichment."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0,
+    "environmental_complexity_max": 0,
+    "recording_duration_max": 0,
+    "behavioural_complexity_mean": 0,
+    "environmental_complexity_mean": 0,
+    "recording_duration_mean": 0
+  },
+  "low_confidence_count": 1,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-26T16:20:35+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "81e220f016",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 56077,
+    "output_tokens": 1028,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

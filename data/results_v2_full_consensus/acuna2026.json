@@ -1,0 +1,311 @@
+{
+  "study_id": "Acuña2025",
+  "doi": "10.21203/rs.3.rs-8387313/v1",
+  "species": "mouse",
+  "strain": "C57BL6/J",
+  "age": {
+    "value": "adult",
+    "age_min_days": 60,
+    "age_max_days": 60,
+    "evidence": "A total of 42 C57BL6/J mice (both sexes) at postnatal (P) day 60 (P60)",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "both",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "A total of 42 C57BL6/J mice (both sexes)",
+    "confidence": "high"
+  },
+  "psychedelic": "Ibogaine",
+  "dosing": [
+    {
+      "compound": "Ibogaine",
+      "doses_mg_per_kg": [
+        40.0
+      ],
+      "doses_raw": "40 mg/kg, i.p.",
+      "vehicle": "ethanol",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "ibogaine-HCl was dissolved at 4 mg/ml in EtOH 10%, and administered intraperitoneally (i.p.) at a dose of 40 mg/kg. Control animals were administered with vehicle (VEH; EtOH 10%).",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "All animals were habituated prior to testing through gentle handling and by being placed on the arena platform for 30 s to 1 min before stimulus presentation began.",
+      "confidence": "medium"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "housed (6 per cage) in ventilated cages with positive pressure",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "14/10 h light-dark cycle (direction/timing of lights not specified)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "not reported",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Optomotor Response Test",
+      "assay_description": "Unrestrained mouse placed on a circular platform (5 cm diameter, 13 cm high) in a 35 cm square arena of four monitors with mirrors on roof and floor; vertical sine-wave gratings (0.1–0.8 c/d) drifted clockwise then counterclockwise (30 s each, 12°/s, 100% contrast). Head movements matching grating direction/speed were scored from video; visual acuity = highest spatial frequency eliciting a response, measured for each eye. Run in non-deprived vehicle/ibogaine mice and in vehicle/ibogaine mice after 4 days of monocular deprivation (collapsed into one assay).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "administered intraperitoneally (i.p.) at a dose of 40 mg/kg",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "All animals were habituated prior to testing through gentle handling and by being placed on the arena platform for 30 s to 1 min before stimulus presentation began.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "A circular platform ... was secured on the center of the bottom mirror, where the mouse was placed unrestrained.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "No food described in the OMR arena (platform within monitor/mirror arena); home-cage diet ad libitum.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "No water described in the OMR arena; home-cage water freely available.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "short_term_1to7d",
+          "value_minutes": 8640,
+          "evidence": "Adult (P60) mice were treated with vehicle or ibogaine (40 mg/Kg) and 6 days later visual acuity was measured; MD cohort: MD 24 h after ibogaine, kept for four days, eyelids reopened the day before the optomotor test (~6 days post-dose).",
+          "confidence": "medium"
+        }
+      },
+      "sample_size": {
+        "n_total": 30,
+        "n_male": null,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "VEH ... n=6; IBO ... n=6 (Fig. 1); VEH MD ... n=10; IBO MD ... n=8 (Fig. 2)",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Ibogaine (40 mg/kg) alone did not change visual acuity of either eye. After 4 days of monocular deprivation, ibogaine-treated adult mice showed reduced visual acuity in the deprived eye relative to the non-deprived eye, whereas vehicle-treated mice showed no interocular difference, indicating restored juvenile-like plasticity.",
+        "statistics": "No MD: treatment χ²1=0.004, p=0.948; VEH L vs R t26=-0.190, p=0.851; IBO L vs R t26=-0.379, p=0.707. MD: IBO L vs R t26=7.221, p<0.001; VEH L vs R t26=-0.734, p=0.469",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "not_reported",
+        "time_dependent": "n/a",
+        "evidence": "in ibogaine-treated mice, visual acuity of the right (R) deprived eye was reduced in comparison to the left (L) un-deprived eye (IBO L: 0.393±0.016 (c/d) vs. IBO R: 0.256±0.022 (c/d), n=8, t26=7.221, p< 0.001). On the contrary, visual acuity of R deprived and L un-deprived eye was similar in vehicle-treated mice",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Visual acuity was determined as the highest spatial frequency of the stimulus at which the mouse gave a response.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No within-session temporal analysis; frequencies presented in random order to avoid confounding effects of time or fatigue.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural transitions or sequences reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Videos were analyzed by quantifying head movements and comparing them to the direction of the stimulus (reflexive optomotor tracking).",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mouse tested alone on the platform; no social construct.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Optomotor response is an innate reflex; no learning or memory required.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Videos were analyzed by quantifying head movements; no automated behavioural classifier reported.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only linear mixed model on visual acuity (univariate).",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "Mice were put in an arena that consisted of four monitors arranged in a quadrangle (square, 35 cm side length), and two mirrors",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Mouse on an open circular platform; no shelter described.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "A circular platform ... was secured on the center of the bottom mirror; no bedding.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material in the arena.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects in the arena.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "Single circular platform at the centre of the arena; no compartments.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "where the mouse was placed unrestrained (single animal on platform)",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the OMR arena.",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Each cohort tested once on the optomotor test (6 days after treatment or after MD reopening).",
+          "confidence": "medium"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Total session duration not explicitly stated (each trial 30 s clockwise + 30 s counterclockwise).",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Each animal tested on one day; number of testing days not explicitly reported.",
+          "confidence": "low"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug OMR baseline reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Adult (P60) mice were treated with vehicle or ibogaine (40 mg/Kg) and 6 days later visual acuity was measured",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No session spanned ≥6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Single behavioural assay (OMR); Golgi spine density, WFA/PV and vGAT immunostaining are histological and excluded. Non-deprived and MD cohorts collapsed into one OMR assay.",
+    "B1 set to score 0: one measure (visual acuity) maps to 0 points; gemma4's score of 1 was a scoring error.",
+    "n_total = 6+6+10+8 = 30 (qwen/deepseek4); gemma4's 34 does not match figure n's.",
+    "D2 kept at 0 but low confidence because total session length is not explicitly stated; D3 = 1 (modal), low confidence since per-animal testing days not reported; deepseek4's 2-7 counted cohorts rather than recording days per assay.",
+    "D5 = Yes (modal qwen/deepseek4): testing ~6 days post-dose. time_to_assay set to short_term_1to7d (both cohorts ~6 days post-injection) rather than gemma4's 'multiple'.",
+    "sex_dependent set to not_reported: both sexes used but sex not analysed as a factor, so n/a (one sex only) does not apply.",
+    "Handling = yes (modal) based on 'habituated prior to testing through gentle handling', though no detailed protocol given (medium confidence)."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0.0,
+    "environmental_complexity_max": 0.0,
+    "recording_duration_max": 1.36,
+    "behavioural_complexity_mean": 0.0,
+    "environmental_complexity_mean": 0.0,
+    "recording_duration_mean": 1.36
+  },
+  "low_confidence_count": 3,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-25T16:21:21+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "8b6edada1b",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 59499,
+    "output_tokens": 4939,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

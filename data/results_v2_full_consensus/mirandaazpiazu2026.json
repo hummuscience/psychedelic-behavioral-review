@@ -1,0 +1,107 @@
+{
+  "study_id": "Miranda-Azpiazu2026",
+  "doi": "10.1016/j.neuint.2026.106285",
+  "species": "mouse",
+  "strain": "129S6/SvEv backcrossed onto C57BL/6J (5-HT2AR KO and WT littermates)",
+  "psychedelic": "(±)DOI, TCB-2, LSD (plus non-hallucinogenic comparators Ariadne, 2-Br-LSD, lisuride) — applied ex vivo to brain membranes only",
+  "age": {
+    "value": "adult",
+    "age_min_days": null,
+    "age_max_days": null,
+    "evidence": "Adult mice with a final weight of 30-40 g were housed five per cage on a 12 h light/dark cycle at 22°C and 60% humidity with food and water available ad libitum.",
+    "confidence": "medium"
+  },
+  "sex": {
+    "value": "not_reported",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "The methods describe '5-HT2AR KO and WT mice' and 'Adult mice with a final weight of 30-40 g' but never state the sex of the animals.",
+    "confidence": "high"
+  },
+  "dosing": [],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "No handling protocol is described anywhere in the methods.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Adult mice with a final weight of 30-40 g were housed five per cage on a 12 h light/dark cycle at 22°C and 60% humidity with food and water available ad libitum.",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "'on a 12 h light/dark cycle at 22°C and 60% humidity' — the direction of the cycle (lights-on time) is not stated.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Home-cage enrichment is not addressed; only cage density, light cycle, temperature, humidity and ad libitum food/water are described.",
+      "confidence": "low"
+    }
+  },
+  "assays": [],
+  "judge_notes": [
+    "All three candidates independently returned an empty `assays` array; this is correct. The paper is entirely an ex vivo/in vitro [35S]GTPγS antibody-capture scintillation proximity assay study on post-mortem human prefrontal cortex membranes and on brain cortex membranes from 5-HT2AR KO/WT mice. No behavioural test was performed on any rodent.",
+    "No psychedelic was administered to a living rodent: mice were killed by cervical dislocation and drugs (10 μM) were applied to membrane preparations in 96-well plates. Per the rubric, ex vivo/in vitro work is explicitly non-scorable.",
+    "Dropped gemma4's `dosing` entries: the 10 μM concentrations are in-vitro bath concentrations applied to membrane homogenates, not in vivo doses administered to animals. Per the rubric, `dosing` captures compounds administered to animals in behavioural experiments — none were. `dosing` set to an empty array.",
+    "Head-twitch response, prepulse inhibition and antidepressant-like paradigms are discussed only in the Discussion as citations to prior literature (e.g. Halberstadt & Geyer 2013; Cunningham et al. 2023) and were not performed in this study.",
+    "Species/strain/age/housing retained at study level because transgenic mice were used as tissue donors and husbandry is described, but these fields carry no scored assay.",
+    "Sex scored not_reported (overriding qwen/gemma4 confidence ambiguity): the paper states only 'Adult mice', and the 85%-male figure refers to the human post-mortem donors, not the mice."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 0,
+    "environmental_complexity_max": 0,
+    "recording_duration_max": 0,
+    "behavioural_complexity_mean": 0,
+    "environmental_complexity_mean": 0,
+    "recording_duration_mean": 0
+  },
+  "low_confidence_count": 2,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-26T16:11:43+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "claude-opus-5-5",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "81e220f016",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 79942,
+    "output_tokens": 1227,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0,
+    "fallback_from": {
+      "model": "claude-opus-5-5",
+      "category": null,
+      "explanation": null,
+      "request_id": "msg_011ChRqFkp8j9ofZMDhAiYUA",
+      "output_tokens": 0
+    }
+  }
+}

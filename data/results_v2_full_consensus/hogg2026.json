@@ -1,0 +1,520 @@
+{
+  "study_id": "Hogg2026",
+  "doi": "10.3389/fphar.2026.1918182",
+  "species": "mouse",
+  "strain": "C57BL/6JRj",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 70,
+    "age_max_days": 84,
+    "evidence": "Experiments were conducted with male C57BL/6JRj mice aged 10-12 weeks at experiment onset.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Experiments were conducted with male C57BL/6JRj mice aged 10-12 weeks at experiment onset.",
+    "confidence": "high"
+  },
+  "psychedelic": "Psilocybin, Ethocybin",
+  "dosing": [
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        3.0
+      ],
+      "doses_raw": "3 mg/kg per os",
+      "vehicle": "other",
+      "route": "p.o.",
+      "schedule": "acute",
+      "evidence": "The vehicle (VEH) was 0.5% hydroxyethyl cellulose (Sigma-Aldrich, #09368) in ddH2O. Each compound was prepared on each day of use and administered to mice using an oral gavage in a volume of 5 mL/kg body weight. The study dose of 3 mg/kg...",
+      "confidence": "high"
+    },
+    {
+      "compound": "Ethocybin",
+      "doses_mg_per_kg": [
+        3.0
+      ],
+      "doses_raw": "3 mg/kg per os",
+      "vehicle": "other",
+      "route": "p.o.",
+      "schedule": "acute",
+      "evidence": "The vehicle (VEH) was 0.5% hydroxyethyl cellulose (Sigma-Aldrich, #09368) in ddH2O. Each compound was prepared on each day of use and administered to mice using an oral gavage in a volume of 5 mL/kg body weight.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "The first phase of each experiment involved handling each mouse for 5 min per day on three consecutive days to adjust them to human contact.",
+      "confidence": "high"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "After weaning, mice were maintained in littermate pairs, unless single housing was necessary for the purpose of the experiment. (HTR mice were caged singly from 2 days before testing; CSS mice lived with a CD-1 mouse behind a perforated divider; CON mice were kept as pairs of littermates.)",
+      "confidence": "medium"
+    },
+    "day_night_flipped": {
+      "value": "yes",
+      "evidence": "Mice were maintained under a 12 h: 12 h inverted day-night cycle with lights off at 07.00-19.00 h... Experiments were conducted between 09:00-16:00 h.",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "yes",
+      "evidence": "Cages (33 × 21 × 14 cm, containing sawdust, sleeping house, tissue bedding) were ventilated individually",
+      "confidence": "high"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head Twitch Response (HTR)",
+      "assay_description": "Counterbalanced crossover (VEH vs PSY or VEH vs ETH, 3 mg/kg p.o., 3-4 day washout); singly caged mice observed in their cage base with a transparent PVC sheet replacing the grid/lid; HTRs scored continuously by a blinded experimenter for 60 min post-administration, analysed in 4 × 15-min blocks.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "p.o.",
+          "evidence": "were administered per os either PSY at 3 mg/kg and VEH or ETH at 3 mg/kg and VEH",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "At 2 days prior to the onset of testing, mice (n = 6 per compound or VEH) were caged singly and were adjusted to the cage set up used for testing: rather than the usual cage grid and lid, a sheet of transparent PVC was placed on top of the cage base for 60 min",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Directly after administration, the transparent PVC lid was placed on the cage base situated directly beneath a video camera.",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "not_reported",
+          "evidence": "Food access during the HTR session is not stated; the usual cage grid and lid were replaced by a transparent PVC sheet. General statement 'food and water were available continuously' refers to housing.",
+          "confidence": "low"
+        },
+        "water_restriction": {
+          "value": "not_reported",
+          "evidence": "Water access during the HTR session is not stated; the usual cage grid and lid were replaced by a transparent PVC sheet.",
+          "confidence": "low"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Directly after administration, the transparent PVC lid was placed on the cage base... For 60 min postadministration, an experimenter blinded to compound/VEH scored head twitch responses (HTRs) continuously",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 12,
+        "n_male": 12,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "Mice (n = 6 per experiment), using a cross-over, counter-balanced design with a 3-4-day washout period, were administered per os either PSY at 3 mg/kg and VEH or ETH at 3 mg/kg and VEH",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "A single 3 mg/kg oral dose of psilocybin or ethocybin increased HTR frequency over 60 min relative to vehicle in male mice; ethocybin produced more HTRs than psilocybin. HTR frequency showed a small monotonic decrease across 15-min blocks for both psychedelics (descriptive).",
+        "statistics": "PSY vs VEH paired t-test: t = 6.77, df = 5, p = 0.001; ETH vs VEH paired t-test: t = 5.93, df = 5, p = 0.002; ETH vs PSY unpaired t-test: t = 4.00, df = 10, p = 0.003",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "PSY induced an increase in the acute frequency of HTRs (paired t-test: t = 6.77, df = 5, p = 0.001), as did ETH (paired t-test: t = 5.93, df = 5, p = 0.002). Furthermore, ETH induced a higher HTR frequency than did PSY (unpaired t-test: t = 4.00, df = 10, p = 0.003).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "each discrete and brief HTR was given a score of 1",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "For analysis, the 60 min were divided into 4 × 15 min periods... there was a small monotonic decrease across blocks in the case of PSY... and ETH",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only head twitch responses scored; HTR is excluded as ethological per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "mice (n = 6 per compound or VEH) were caged singly",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "HTR scoring involves no learning or memory component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "an experimenter blinded to compound/VEH scored head twitch responses (HTRs) continuously",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Compound effects on HTRs were analyzed using paired and unpaired t tests",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 1,
+          "value": "Home cage",
+          "evidence": "mice... were caged singly and were adjusted to the cage set up used for testing: rather than the usual cage grid and lid, a sheet of transparent PVC was placed on top of the cage base",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Presence of the sleeping house during HTR recording is not stated.",
+          "confidence": "low"
+        },
+        "E3_bedding": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Cages (33 × 21 × 14 cm, containing sawdust, sleeping house, tissue bedding); testing occurred in the cage base.",
+          "confidence": "medium"
+        },
+        "E4_nesting": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Cages (33 × 21 × 14 cm, containing sawdust, sleeping house, tissue bedding); testing occurred in the cage base.",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects described for the HTR test setup.",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "the transparent PVC lid was placed on the cage base",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "mice (n = 6 per compound or VEH) were caged singly",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Not reported for the test session; the usual cage grid and lid (which hold food/water) were replaced by a PVC sheet.",
+          "confidence": "low"
+        },
+        "raw_total": 3
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "A counterbalanced crossover design was used in which each mouse received both VEH and one of PSY or ETH... with a washout interval of 3-4 days.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "For 60 min postadministration, an experimenter... scored head twitch responses (HTRs) continuously",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "each mouse received both VEH and one of PSY or ETH... with a washout interval of 3-4 days",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Counterbalanced crossover; VEH session is a control condition, not a pre-drug baseline.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recording limited to 60 min post-administration.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "60-min sessions.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      }
+    },
+    {
+      "assay_name": "Pavlovian Aversion Learning and Memory (tone/context fear conditioning)",
+      "assay_description": "TSE MultiConditioning System (steel-rod floor, 10 lux). Day 17: 6-min context habituation then PAL (6 tone-footshock pairings, 120 s ITIs); day 18: VEH, PSY or ETH 3 mg/kg p.o.; day 21: PAM expression/extinction test (2-min adjustment, 10 × 30 s tone-CS trials with 90 s ITIs) in same context. % time freezing (IR beam) during CS and ITIs; CON vs chronic social stress (CSS) cohorts.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "p.o.",
+          "evidence": "VEH, PSY, ETH per os: oral administration of PSY or ETH at 3 mg/kg in 5 mL/kg VEH",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "On day 17, mice were placed in the context for 6 min habituation without CS or US. Directly thereafter PAL testing was conducted (freezing during this habituation was also reported, Supplementary Figure S1B).",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "a test arena (context) with lid; a floor comprising stainless steel rods... an infra-red beam system for detection of activity or inactivity including... running and jumping",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "Conditioning arena (steel-rod floor test arena) contains no food source.",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "Conditioning arena (steel-rod floor test arena) contains no water source.",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "short_term_1to7d",
+          "value_minutes": 4320,
+          "evidence": "On day 21, at 72 h after compound administration, PAM expression testing was conducted.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 80,
+        "n_male": 80,
+        "n_female": null,
+        "n_per_group_min": 12,
+        "evidence": "Mice littermate pairs were assigned randomly and equably to stressor group (CON, CSS) such that n = 40 mice per group... such that n = 12-14 mice per study arm.",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "A single 3 mg/kg oral dose of psilocybin or ethocybin given 24 h after conditioning increased freezing to tone-CS/context at the memory test 72 h later relative to vehicle, in both control and chronically stressed male mice (no Stressor × Compound interaction). Psychedelics had no significant effect on context-only (ITI) freezing; CSS increased freezing in PAL and PAM.",
+        "statistics": "PAM CS/context: Compound main effect F2,74 = 6.13, p = 0.003, η2 = 0.14; Sidak PSY vs VEH p = 0.041, ETH vs VEH p = 0.004; Stressor F1,74 = 7.12, p = 0.009; Stressor × Compound F2,74 = 1.04, p = 0.36. ANCOVA (PAL CS 5-6): F2,73 = 5.61, p = 0.005. ANCOVA (PAL ITI 4-5): F2,73 = 5.47, p = 0.006. Trials 1-4: Compound F2,74 = 7.11, p = 0.002. PAM ITI: Compound F2,74 = 2.17, p = 0.12. Mixed model with litter: Compound F2,34 = 4.06, p = 0.026.",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Relative to mice that received VEH, mice that received psychedelic demonstrated increased CS/context PAM expression (Compound main effect: F2, 74 = 6.13, p = 0.003, η2 = 0.14; post hoc Sidak's test: PSY vs. VEH, p = 0.041; ETH vs. VEH, p = 0.004).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Expression of aversive CS/context and context memory were measured, respectively, as percentage of the 30 s CS and 90 s ITI spent in the state of freezing (plus habituation freezing).",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "time spent freezing remained stable between trials 1-2 and 7-8 and then decreased at trials 9-10 (Trial main effect: F4, 296 = 13.09, p < 0.001)",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "freezing behavior constitutes the conditioned response — conditioned freezing excluded per rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice tested individually in the conditioning context; no social construct.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Pavlovian aversion learning-memory (PALM) testing... tone CS paired with foot-shock US",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "an infra-red beam system for detection of activity or inactivity",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "ANOVA/ANCOVA on separate freezing measures; no multivariate analysis.",
+          "confidence": "high"
+        },
+        "raw_total": 3
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "4-unit MultiConditioning System (TSE Systems)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "a test arena (context) with lid — no refuge described",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "a floor comprising stainless steel rods for delivery of electrified foot-shocks",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described in the conditioning arena.",
+          "confidence": "medium"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects described in the conditioning arena.",
+          "confidence": "medium"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "a test arena (context) with lid",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "mice were placed in the context; no conspecific present during recording",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No food or water in the conditioning arena.",
+          "confidence": "medium"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "PAL testing on day 17... On day 21, at 72 h after compound administration, PAM expression testing was conducted.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "adjustment to the context for 2 min... followed by presentation of ten 30 s CS/context trials interspersed with ITIs of 90 s (~20 min); PAL: 6 min habituation + 6 trials with 120 s ITIs (~18 min)",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 1,
+          "value": "2-7",
+          "evidence": "PAL on day 17 and PAM on day 21",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "On day 17, all mice underwent PAL... On day 18, at 24 h post-PAL testing, compound was administered (PAL freezing reported and used as covariate).",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "On day 21, at 72 h after compound administration, PAM expression testing was conducted.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Sessions ~20 min.",
+          "confidence": "high"
+        },
+        "raw_total": 5
+      }
+    }
+  ],
+  "judge_notes": [
+    "Two behavioural assays retained (HTR, Pavlovian aversion learning-memory); LC-MS/MS pharmacokinetics and vGluT1/Homer1 immunofluorescence excluded as non-behavioural.",
+    "Gemma's PAM-only assay merged with PAL+PAM into one fear-conditioning assay per rubric (acquisition + memory phases = 1 assay); D5 set to Yes (PAM 72 h post-dose) and time_to_assay corrected to short_term_1to7d (4320 min).",
+    "B1 scores corrected for internal consistency: HTR = 1 measure (score 0); PALM = 2-3 measures (score 1); gemma's scores mismatched its own categories.",
+    "HTR D1/D3: crossover design with VEH and drug sessions 3-4 days apart = multiple sessions on 2 days (modal qwen/deepseek).",
+    "HTR E8 and food/water restriction: overrode modal 'yes/no restriction' because the cited 'available continuously' statement describes housing, and the test replaced the cage grid/lid (which holds food/water) with a PVC sheet; scored 0 / not_reported with low confidence.",
+    "HTR E3/E4 kept as modal Yes (medium confidence) since testing occurred in the cage base of cages described as containing sawdust and tissue bedding; shelter (sleeping house) presence during test not stated, scored 0.",
+    "PALM setup_habituation = yes (modal) based on explicit 6-min context habituation before conditioning, though freezing during it was reported; medium confidence.",
+    "Vehicle coded 'other' (0.5% hydroxyethyl cellulose in ddH2O); n_male at study level left null as paper does not give a total."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 3.75,
+    "environmental_complexity_max": 4.09,
+    "recording_duration_max": 6.82,
+    "behavioural_complexity_mean": 2.5,
+    "environmental_complexity_mean": 2.04,
+    "recording_duration_mean": 5.46
+  },
+  "low_confidence_count": 7,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-26T16:34:06+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "81e220f016",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 81295,
+    "output_tokens": 9493,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+  }
+}

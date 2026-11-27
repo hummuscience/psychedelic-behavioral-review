@@ -1,0 +1,335 @@
+{
+  "study_id": "Crupi2026",
+  "doi": "10.1037/pha0000876",
+  "species": "rat",
+  "strain": "Sprague-Dawley",
+  "age": {
+    "value": "young_adult",
+    "age_min_days": 32,
+    "age_max_days": 35,
+    "evidence": "Upon arrival at the American University Animal Facility on postnatal day 32-35 ... Until training, subjects were allowed to mature undisturbed except for general husbandry and handling.",
+    "confidence": "medium"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": 80,
+    "n_female": null,
+    "evidence": "Subjects were 40 experimentally naïve male Sprague-Dawley rats ... Subjects were experimentally naive male Sprague-Dawley rats (n = 40).",
+    "confidence": "high"
+  },
+  "psychedelic": "LSD",
+  "dosing": [
+    {
+      "compound": "LSD",
+      "doses_mg_per_kg": [
+        0.025,
+        0.05,
+        0.1,
+        0.2
+      ],
+      "doses_raw": "25, 50, 100, or 200 ug/kg (Experiment 1); 50 ug/kg (Experiment 2)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "repeated",
+      "evidence": "LSD was dissolved in sterile saline (0.9%) and administered intraperitoneally at a dose of 25, 50, 100, or 200 ug/kg at a concentration of 100 ug/ml ... repeated for a total of five complete cycles.",
+      "confidence": "high"
+    },
+    {
+      "compound": "Fluoxetine",
+      "doses_mg_per_kg": [
+        10.0
+      ],
+      "doses_raw": "10 mg/kg, s.c.",
+      "vehicle": "saline",
+      "route": "s.c.",
+      "schedule": "repeated",
+      "evidence": "Fluoxetine hydrochloride ... was dissolved in sterile saline at a concentration of 5 mg/ml and administered subcutaneously at a dose of 10 mg/kg ... repeated for a total of five complete cycles.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "yes",
+      "evidence": "subjects were allowed to mature undisturbed except for general husbandry and handling during the lights-on phase of the light/dark trial to minimize stress during subsequent procedures",
+      "confidence": "medium"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "they were housed in Optirat Plus cages (38.9 × 56.9 × 26.2 cm; 1,181 cm2 floor space) with two rats per cage",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "no",
+      "evidence": "maintained on a 12-hr light-dark cycle with lights on between 08:00 and 20:00 hr",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Housing described only as Optirat Plus cages with two rats per cage; no mention of enrichment items.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Conditioned Taste Avoidance (saccharin consumption)",
+      "assay_description": "Rats received 20-min access to a novel 0.1% saccharin solution in individual hanging wire-mesh test cages (24.3 × 19 × 18 cm) with graduated Nalgene tubes; saccharin intake (ml) measured across repeated conditioning trials. Experiment 1: 5 conditioning trials with LSD 25, 50, 100, 200 µg/kg i.p. or vehicle. Experiment 2: after fluoxetine (10 mg/kg s.c.) or vehicle pre-exposure (5 injections every 4th day), 6 acquisition trials with LSD 50 µg/kg or vehicle, followed by 6 extinction trials with saccharin alone.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "LSD was dissolved in sterile saline (0.9%) and administered intraperitoneally ... (fluoxetine pre-exposure was given subcutaneously)",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "Following 24-hr water deprivation, animals were weighed and then placed in the test cages where they were given 20-min access to water. This procedure was repeated for 14 days (Exp 1) / 5 days (Exp 2).",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "subjects were weighed, placed in the test cages, and given 20-min access to a novel saccharin solution; no restraint described",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "they were maintained on ad libitum food and 20-min daily access to fluids; no food was present in the test cages during the 20-min fluid sessions",
+          "confidence": "medium"
+        },
+        "water_restriction": {
+          "value": "before",
+          "evidence": "Following 24-hr water deprivation, animals were weighed and then placed in the test cages ... subjects were deprived of water for 23⅔ hr",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "multiple",
+          "value_minutes": 5760,
+          "evidence": "Immediately following saccharin access, animals were ... injected; this procedure of a conditioning trial followed by 3 water-recovery days was repeated, so each subsequent saccharin session occurred ~4 days after the previous LSD injection; extinction trials occurred weeks after the last injection.",
+          "confidence": "medium"
+        }
+      },
+      "sample_size": {
+        "n_total": 80,
+        "n_male": 80,
+        "n_female": null,
+        "n_per_group_min": 8,
+        "evidence": "divided into five groups (n = 8 per group) [Experiment 1]; Groups VV, FV, VL, and FL (n = 10 per group) [Experiment 2]",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "LSD produced dose-dependent conditioned taste avoidance of saccharin, with near-complete suppression at 100 and 200 µg/kg and intermediate suppression at 25 and 50 µg/kg (Experiment 1). In Experiment 2, fluoxetine pre-exposure (10 mg/kg, five injections) had no significant overall effect on acquisition or extinction of avoidance induced by 50 µg/kg LSD, although subgroup analyses of animals drinking below their group mean suggested attenuated avoidance in fluoxetine-pretreated rats.",
+        "statistics": "Exp 1: dose F(4,35)=16.304, p<.001; trial F(4,140)=70.020, p<.001; Dose × Trial F(16,140)=14.135, p<.001. Exp 2 acquisition: conditioning drug F(1,36)=89.382, p<.001; trial F(5,180)=11.117, p<.001; Drug × Trial F(5,180)=40.398, p<.001; no effect of pre-exposure (all ps>.05). Exp 2 extinction: F(1,36)=44.594, p<.001; F(5,180)=38.517, p<.001; F(5,180)=22.675, p<.001; no effect of pre-exposure (all ps>.05).",
+        "direction": "decrease",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "yes",
+        "evidence": "LSD induced dose-dependent taste avoidance ... There was no effect of pre-exposure alone or in interaction with any other factor (all ps > .05).",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "A 5 × 5 mixed model analysis of variance (ANOVA) was run on consumption of saccharin ... water consumption on water-recovery sessions remained high throughout the study.",
+          "confidence": "medium"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only total 20-min consumption per session is reported; trial-to-trial changes are between-session comparisons, not within-session dynamics.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No analysis of behavioural transitions, sequences, or bout microstructure reported.",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only fluid consumption volume (ml) was measured; no natural behaviours scored as distinct acts.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "conducted in individual hanging stainless-steel, wire-mesh test cages",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "animals come to avoid consumption of the drug-associated solution, indexing aversive effects of the drug examined (Pavlovian taste avoidance learning).",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Total water consumption was calculated by subtracting pre- from postconsumption volumes.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Mixed model ANOVAs on saccharin consumption only; no dimensionality reduction or multivariate behavioural analysis.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "conducted in individual hanging stainless-steel, wire-mesh test cages measuring 24.3 × 19 × 18 cm",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Wire-mesh test cage with a fluid tube; no enclosed refuge described.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "individual hanging stainless-steel, wire-mesh test cages (no bedding/substrate)",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No nesting material described in the test cages.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No enrichment objects described in the test cages.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "test cages measuring 24.3 × 19 × 18 cm; single undivided compartment",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "conducted in individual hanging stainless-steel, wire-mesh test cages",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Fifty-ml graduated Nalgene tubes were positioned on the front of each cage for fluid access; subjects were given 20-min access to a novel saccharin solution during the recording session.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 1,
+          "value": "Multiple discrete sessions",
+          "evidence": "This procedure of a conditioning trial followed by 3 water-recovery days was repeated for a total of five complete cycles (20 days) ... six complete extinction cycles.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "given 20-min access to a novel saccharin solution",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 3,
+          "value": "15+",
+          "evidence": "Experiment 1: five conditioning (saccharin) trials; Experiment 2: six acquisition trials plus six extinction trials, in addition to water habituation sessions in the same cages.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "On the day following water habituation, subjects were ... given 20-min access to a novel saccharin solution. Immediately following saccharin access, animals were ranked on saccharin consumption (Trial 1 consumption recorded prior to any injection).",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "On the final conditioning day (Trial 5), subjects were given 20-min access to saccharin but were not injected ... extinction phase commenced with no injections given.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "All recording sessions were 20 min; none spanned ≥6 hr.",
+          "confidence": "high"
+        },
+        "raw_total": 7
+      }
+    }
+  ],
+  "judge_notes": [
+    "All candidates agreed there is a single behavioural paradigm; Experiment 1 (LSD dose-response) and Experiment 2 (fluoxetine pre-exposure, acquisition + extinction) were merged into ONE conditioned taste avoidance assay per the rubric (same apparatus/protocol; different doses, pre-treatments and learning phases).",
+    "B1: set to 1 (2-3 measures) — saccharin consumption plus water consumption on recovery sessions are both reported behavioural variables; body weight is physiological and excluded.",
+    "B2: overrode gemma4's 'Yes' — trial-to-trial changes are between-session comparisons, not within-session temporal dynamics.",
+    "E8: scored 1 (overriding gemma4) — the saccharin/water tube is physically accessible inside the test cage during the recorded 20-min session.",
+    "D2: 20-min session falls in the 15–60 min bin → score 1 (gemma4's score of 0 contradicted its own evidence).",
+    "D5: scored 1 — non-injected final conditioning trial and six extinction trials occurred ≥24 h after the last LSD injection.",
+    "application_type set to i.p. (route of the psychedelic, LSD); fluoxetine s.c. noted in evidence rather than coding 'multiple'.",
+    "time_to_assay set to 'multiple': the recorded saccharin session precedes injection on Trial 1, while later trials/extinction occur days to weeks after the last LSD dose.",
+    "Fluoxetine added as a second dosing entry per rubric instruction to capture every compound administered."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 1.36,
+    "recording_duration_max": 9.55,
+    "behavioural_complexity_mean": 2.5,
+    "environmental_complexity_mean": 1.36,
+    "recording_duration_mean": 9.55
+  },
+  "low_confidence_count": 1,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-26T15:44:57+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "claude-opus-5-5",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "81e220f016",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 56835,
+    "output_tokens": 7718,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0,
+    "fallback_from": {
+      "model": "claude-opus-5-5",
+      "category": null,
+      "explanation": null,
+      "request_id": "msg_011ChRo8UtFfrKL5zgCBsRFo",
+      "output_tokens": 0
+    }
+  }
+}

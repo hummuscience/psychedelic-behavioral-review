@@ -1,0 +1,935 @@
+{
+  "study_id": "Younkin2026",
+  "doi": "10.1126/scisignal.adw6055",
+  "species": "mouse",
+  "strain": "C57BL/6J (including 5-HT2AR WT and KO littermates on C57BL/6J background)",
+  "age": {
+    "value": "adult",
+    "age_min_days": 56,
+    "age_max_days": 98,
+    "evidence": "Experiments were performed on adult (8- to 14-week-old) C57BL/6J (Jackson Labs) male mice.",
+    "confidence": "high"
+  },
+  "sex": {
+    "value": "male",
+    "n_male": null,
+    "n_female": null,
+    "evidence": "Experiments were performed on adult (8- to 14-week-old) C57BL/6J (Jackson Labs) male mice.",
+    "confidence": "high"
+  },
+  "psychedelic": "VCU-1012, VCU-1021, Psilocybin (quipazine used only in non-behavioural GI motility/in vitro work)",
+  "dosing": [
+    {
+      "compound": "VCU-1012",
+      "doses_mg_per_kg": [
+        0.1,
+        0.5,
+        1.0
+      ],
+      "doses_raw": "0.1, 0.5, or 1.0 mg/kg (HTR); 1 mg/kg (FST, locomotor, light-dark box)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Time course showing HTR counts in 15-min blocks corresponding to different doses of VCU-1012 (15) (0.1, 0.5, or 1.0 mg/kg) or vehicle; 'vehicle (0.9% saline; 5 μl/g)' is stated for intraperitoneal administration.",
+      "confidence": "high"
+    },
+    {
+      "compound": "VCU-1021",
+      "doses_mg_per_kg": [
+        1.0,
+        10.0
+      ],
+      "doses_raw": "VCU-1021 (8) (1 mg/kg) ... required higher doses (up to 10 mg/kg)",
+      "vehicle": "saline",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "Mice were intraperitoneally injected with the corresponding dose of VCU-1021 (8) (1 mg/kg), VCU-1012 (15), or vehicle ... the effect of VCU-1021 (8) on HTR was weaker and required higher doses (up to 10 mg/kg).",
+      "confidence": "medium"
+    },
+    {
+      "compound": "Psilocybin",
+      "doses_mg_per_kg": [
+        1.0
+      ],
+      "doses_raw": "psilocybin (1 mg/kg)",
+      "vehicle": "not_reported",
+      "route": "i.p.",
+      "schedule": "acute",
+      "evidence": "The immobility time in the FST was tested 24 hours after a single injection of psilocybin (1 mg/kg), VCU-1012 (15) (1 mg/kg), or vehicle in WT mice.",
+      "confidence": "high"
+    }
+  ],
+  "housing_conditions": {
+    "handling": {
+      "value": "not_reported",
+      "evidence": "The methods describe injections and ear tagging but no deliberate handling/habituation protocol is mentioned.",
+      "confidence": "low"
+    },
+    "group_housing": {
+      "value": "yes",
+      "evidence": "Animals were housed in cages with up to four littermates",
+      "confidence": "high"
+    },
+    "day_night_flipped": {
+      "value": "not_reported",
+      "evidence": "Animals were housed ... at 12-hour light/dark cycle at 23°C (direction of cycle / phase of testing not specified)",
+      "confidence": "high"
+    },
+    "enrichment_housing": {
+      "value": "not_reported",
+      "evidence": "Home-cage enrichment is not addressed in the methods.",
+      "confidence": "low"
+    }
+  },
+  "assays": [
+    {
+      "assay_name": "Head Twitch Response",
+      "assay_description": "Automated magnetometer-based HTR detection (neodymium ear-tag magnets) in a monitoring chamber; 15-min acclimation/baseline, then i.p. VCU-1012 (0.1, 0.5, 1.0 mg/kg), VCU-1021 (1-10 mg/kg) or vehicle, with HTR recorded for 60 min; a separate cohort was pretreated with volinanserin (0.1 mg/kg).",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Mice were intraperitoneally injected with the corresponding dose of VCU-1021 (8) (1 mg/kg), VCU-1012 (15), or vehicle.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "On test days, mice were placed individually into the monitoring chamber for 15 min to acclimate to the environment and determine baseline HTR.",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "mice were placed individually into the monitoring chamber",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "food and water ad libitum, except during behavioral testing",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "food and water ad libitum, except during behavioral testing",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "acute_0to2h",
+          "value_minutes": 0,
+          "evidence": "Mice were intraperitoneally injected ... HTRs were recorded for 60 min.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 24,
+        "n_male": 24,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "n = 6 animals per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "VCU-1012 produced a robust, dose-related increase in HTR counts that peaked during the first 15 min post-administration and lasted more than 45 min; pretreatment with volinanserin (0.1 mg/kg) fully prevented the response. VCU-1021 produced a weaker HTR requiring higher doses (up to 10 mg/kg).",
+        "statistics": "F3,20 = 13.11, P < 0.001 (30-min cumulative HTR across doses); F3,20 = 103.3, P < 0.001 (volinanserin blockade); one-way ANOVA with Bonferroni's post hoc",
+        "direction": "increase",
+        "dose_dependent": "yes",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "VCU-1012 (15) produced a robust increase in HTR counts that peaked during the first 15 min postadministration and lasted for more than 45 min ... preadministration of volinanserin fully prevented HTR behavior induced upon VCU-1012 (15) treatment.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "HTR counts (reported in 15-min blocks and as a 30-min cumulative sum of the same measure).",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Time course showing HTR counts in 15-min blocks corresponding to different doses of VCU-1012 (15).",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Head-twitch response is explicitly excluded from ethological behaviours by the rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "mice were placed individually into the monitoring chamber",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning or memory component; reflexive drug-induced behaviour.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Detection via neodymium magnet ear tags coupled with magnetometer-based biphasic detection; not a pose-estimation or ML behavioural classifier.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "mice were placed individually into the monitoring chamber",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter described in the monitoring chamber.",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "monitoring chamber (single compartment)",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "mice were placed individually into the monitoring chamber",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "food and water ad libitum, except during behavioral testing",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "On test days ... HTRs were recorded for 60 min (one continuous bout on one day).",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 1,
+          "value": "15–60 min",
+          "evidence": "HTRs were recorded for 60 min.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test day per animal.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "mice were placed individually into the monitoring chamber for 15 min to acclimate to the environment and determine baseline HTR",
+          "confidence": "medium"
+        },
+        "D5_followup": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Recording took place immediately after injection; no recording ≥24 h post-dose.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "60-min session, less than 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      }
+    },
+    {
+      "assay_name": "Forced Swim Test",
+      "assay_description": "Repeated FST: 6-min swim in a 2-liter beaker with 1.7 L water on day 1 as pretreatment stressor; i.p. psilocybin (1 mg/kg), VCU-1012 (1 mg/kg) or vehicle on day 2; 6-min video-recorded test on day 3 with immobility scored over the final 4 min. Run in WT and 5-HT2AR KO mice.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "Mice were intraperitoneally injected on day 2 with either psilocybin, VCU-1012 (15), or vehicle.",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "yes",
+          "evidence": "on day 1, mice were placed in a 2-liter beaker containing 1.7-liter water ... for a duration of 6 min to serve as an initial pretreatment stressor (prior apparatus exposure without reported data)",
+          "confidence": "medium"
+        },
+        "setup_restrain": {
+          "value": "yes",
+          "evidence": "mice were placed in a 2-liter beaker containing 1.7-liter water (FST cylinder, counted as restraint per rubric)",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "food and water ad libitum, except during behavioral testing",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "food and water ad libitum, except during behavioral testing; no drinking water accessible in the swim beaker",
+          "confidence": "medium"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "Twenty-four hours after treatment (on day 3), mice were subjected to the same conditions as day 1 and video recorded for 6 min.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 48,
+        "n_male": 48,
+        "n_female": null,
+        "n_per_group_min": 6,
+        "evidence": "n = 6 or 7 WT mice per group ... n = 8 to 10 5-HT2AR KO mice per group",
+        "confidence": "medium"
+      },
+      "outcomes": {
+        "summary": "Both psilocybin (1 mg/kg) and VCU-1012 (1 mg/kg) reduced immobility time in the FST 24 h after a single injection in WT mice. In 5-HT2AR KO mice VCU-1012 had no effect, whereas psilocybin still reduced immobility.",
+        "statistics": "WT: F2,17 = 7.25, P < 0.01; KO: F2,25 = 3.50, P < 0.05; one-way ANOVA followed by Bonferroni's multiple comparison test",
+        "direction": "decrease",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Both psilocybin and VCU-1012 (15) reduced immobility time in the FST as compared with vehicle-injected wild-type (WT) mice. Moreover, VCU-1012 (15) did not affect passive coping behavior in 5-HT2AR knockout (KO) mice, whereas psilocybin still reduced immobility in these mice.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Immobility, which was defined as the absence of active movements necessary to maintain buoyancy, was quantified.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Immobility ... was quantified from the recordings during the final 4 min of the session (single total).",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "FST immobility is explicitly excluded from ethological behaviours by the rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Single mouse per beaker; no social construct.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning or memory requirement.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "video recorded for 6 min. Immobility ... was quantified from the recordings (manual scoring).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "mice were placed in a 2-liter beaker containing 1.7-liter water",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent in a water-filled swim beaker.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent; water-filled beaker.",
+          "confidence": "high"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Definitionally absent.",
+          "confidence": "high"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "2-liter beaker (single compartment).",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Individual mouse in the beaker during recording.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "food and water ad libitum, except during behavioral testing",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Only the day-3 session was video recorded and quantified; the day-1 swim served as an initial pretreatment stressor with no data reported.",
+          "confidence": "medium"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "mice were subjected to the same conditions as day 1 and video recorded for 6 min",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Behavioural data were collected only on the day-3 test session.",
+          "confidence": "medium"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Day 1 swim served as an initial pretreatment stressor; no day-1 immobility data reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Twenty-four hours after treatment (on day 3), mice were subjected to the same conditions as day 1 and video recorded.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "6-min session.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Open Field / Locomotor Activity Test",
+      "assay_description": "Individual locomotion chambers (25 x 25 x 20 cm open-field Plexiglas cages) with 16 infrared beam arrays; horizontal activity measured in 5-min increments and centre time quantified 24 h after a single i.p. injection of VCU-1012 (1 mg/kg) or vehicle.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "animals were intraperitoneally administered either VCU-1012 (15) (1 mg/kg) or vehicle and immediately returned to their home cage",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "Mice were allowed to acclimate to the behavioral room for 1 hour before their individual locomotor activity was monitored (room acclimation only; no apparatus pre-exposure reported).",
+          "confidence": "high"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Mice were placed in individual locomotion chambers (freely moving open-field cages).",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "food and water ad libitum, except during behavioral testing",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "food and water ad libitum, except during behavioral testing",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "Evaluation of locomotor activity was conducted 24 hours after drug or vehicle administration.",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 8,
+        "n_male": 8,
+        "n_female": null,
+        "n_per_group_min": 4,
+        "evidence": "n = 4 animals per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Twenty-four hours after a single dose of VCU-1012 (1 mg/kg), total horizontal activity and time spent in the centre of the arena did not differ from vehicle-treated WT mice.",
+        "statistics": "n.s., not significant by Student's t test in (I) and (J)",
+        "direction": "no_effect",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "Locomotor activity in a novel environment (Fig. 4, H and I) and the time spent in the center of the arena during the open field exploratory test (Fig. 4J) were similar between WT animals 24 hours after treatment with VCU-1012 (15) or vehicle.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "Total horizontal activity ... and the time spent in the center of the arena.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Horizontal activity was measured as the collapsed amount of beam interruptions in the x-y planes in 5-min increments; Fig. 4H shows the within-session time course.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Locomotor distance and centre time are locomotor/spatial measures, excluded by the rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "Mice were placed in individual locomotion chambers.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No learning or memory component.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "automated detection system composed of 16 infrared light beam rays ... (Fusion version 5.3; Omnitech Electronics Inc.) — beam-break system.",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "individual locomotion chambers (25 by 25 by 20-cm open-field Plexiglas cages)",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No shelter described in the open-field chamber.",
+          "confidence": "medium"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 0,
+          "value": "Single open space",
+          "evidence": "open-field Plexiglas cages (single open arena).",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "individual locomotor activity was monitored",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "food and water ad libitum, except during behavioral testing",
+          "confidence": "high"
+        },
+        "raw_total": 0
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "Evaluation of locomotor activity was conducted 24 hours after drug or vehicle administration (one session).",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "Session duration is not stated numerically in the text (activity recorded in 5-min increments); scored 0 per rubric for unreported duration.",
+          "confidence": "low"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single test session, 24 h post-injection.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug locomotor recording reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Evaluation of locomotor activity was conducted 24 hours after drug or vehicle administration.",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Session far shorter than 6 h.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    },
+    {
+      "assay_name": "Light-Dark Box Test",
+      "assay_description": "5-min light-dark box test recorded by video with ANY-MAZE software, measuring time in the light compartment and number of light-dark crosses; conducted 24 h after i.p. VCU-1012 (1 mg/kg) or vehicle in paclitaxel- or vehicle-pretreated mice.",
+      "experimental_conditions": {
+        "application_type": {
+          "value": "i.p.",
+          "evidence": "mice were intraperitoneally injected with VCU-1012 (15) (1 mg/kg) or vehicle and were tested 24 hours later in the LDB test",
+          "confidence": "high"
+        },
+        "setup_habituation": {
+          "value": "not_reported",
+          "evidence": "No apparatus habituation described for the LDB test.",
+          "confidence": "low"
+        },
+        "setup_restrain": {
+          "value": "no",
+          "evidence": "Light-dark box test with free movement between compartments (number of crosses counted).",
+          "confidence": "high"
+        },
+        "food_restriction": {
+          "value": "during",
+          "evidence": "food and water ad libitum, except during behavioral testing",
+          "confidence": "high"
+        },
+        "water_restriction": {
+          "value": "during",
+          "evidence": "food and water ad libitum, except during behavioral testing",
+          "confidence": "high"
+        },
+        "time_to_assay": {
+          "value": "early_2to24h",
+          "value_minutes": 1440,
+          "evidence": "mice were intraperitoneally injected with VCU-1012 (15) (1 mg/kg) or vehicle and were tested 24 hours later in the LDB test",
+          "confidence": "high"
+        }
+      },
+      "sample_size": {
+        "n_total": 30,
+        "n_male": 30,
+        "n_female": null,
+        "n_per_group_min": 7,
+        "evidence": "n = 7 or 8 animals per group",
+        "confidence": "high"
+      },
+      "outcomes": {
+        "summary": "Paclitaxel-treated mice spent significantly less time in the light compartment; this anxiety-like phenotype was no longer observed 24 h after VCU-1012 (1 mg/kg), which had no effect when given alone. Number of light-dark crosses was unaffected by either treatment.",
+        "statistics": "Time in light: Paclitaxel F1,26 = 5.30, P < 0.05; VCU-1012 F1,26 = 0.24, P > 0.05; interaction F1,26 = 1.79, P > 0.05. Crosses: Paclitaxel F1,26 = 0.02, P > 0.05; VCU-1012 F1,26 = 0.94, P > 0.05; interaction P > 0.05. Two-way ANOVA with Bonferroni's post hoc.",
+        "direction": "increase",
+        "dose_dependent": "n/a",
+        "sex_dependent": "n/a",
+        "time_dependent": "n/a",
+        "evidence": "mice treated with paclitaxel ... spent significantly less time in the light compartment 16 days after the final injection ... This behavioral change was no longer observed 24 hours after administration of VCU-1012 (15), which did not affect anxiety-like behavior when administered alone.",
+        "confidence": "high"
+      },
+      "behavioural_complexity": {
+        "B1_num_measures": {
+          "score": 1,
+          "value": "2-3",
+          "evidence": "The total time spent in the light compartment (5-min test period) was recorded ... The number of crosses between compartments was also counted.",
+          "confidence": "high"
+        },
+        "B2_temporal_dynamics": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Only total time in light over the 5-min test is reported.",
+          "confidence": "high"
+        },
+        "B3_sequential_structure": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "B4_ethological": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Time in light compartment is a zone-preference spatial measure, excluded by the rubric.",
+          "confidence": "high"
+        },
+        "B5_social": {
+          "score": 0,
+          "value": "None",
+          "evidence": "No social component in the LDB test.",
+          "confidence": "high"
+        },
+        "B6_cognitive": {
+          "score": 0,
+          "value": "No",
+          "evidence": "Innate avoidance-based anxiety test.",
+          "confidence": "high"
+        },
+        "B7_automated_classification": {
+          "score": 0,
+          "value": "No",
+          "evidence": "recorded using a video monitoring technique and ANY-MAZE software (position tracking).",
+          "confidence": "high"
+        },
+        "B8_multivariate": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      },
+      "environmental_complexity": {
+        "E1_environment_type": {
+          "score": 0,
+          "value": "Standard apparatus",
+          "evidence": "LDB test for anxiety-like behavior",
+          "confidence": "high"
+        },
+        "E2_shelter": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "Dark compartment of the light-dark box is a fully enclosed refuge the animal can enter by choice.",
+          "confidence": "high"
+        },
+        "E3_bedding": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E4_nesting": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E5_enrichment": {
+          "score": 0,
+          "value": "No",
+          "evidence": "not reported",
+          "confidence": "low"
+        },
+        "E6_spatial": {
+          "score": 1,
+          "value": "Multiple zones or compartments",
+          "evidence": "The number of crosses between the light and dark compartments was counted.",
+          "confidence": "high"
+        },
+        "E7_social_context": {
+          "score": 0,
+          "value": "Alone",
+          "evidence": "Single mouse tested in the LDB apparatus.",
+          "confidence": "high"
+        },
+        "E8_food_water": {
+          "score": 0,
+          "value": "No",
+          "evidence": "food and water ad libitum, except during behavioral testing",
+          "confidence": "high"
+        },
+        "raw_total": 2
+      },
+      "recording_duration": {
+        "D1_continuity": {
+          "score": 0,
+          "value": "Single session",
+          "evidence": "5-min test period on a single day.",
+          "confidence": "high"
+        },
+        "D2_session_duration": {
+          "score": 0,
+          "value": "<15 min",
+          "evidence": "The total time spent in the light compartment (5-min test period) was recorded.",
+          "confidence": "high"
+        },
+        "D3_recording_days": {
+          "score": 0,
+          "value": "1",
+          "evidence": "Single LDB test day.",
+          "confidence": "high"
+        },
+        "D4_baseline": {
+          "score": 0,
+          "value": "No",
+          "evidence": "No pre-drug LDB recording reported.",
+          "confidence": "high"
+        },
+        "D5_followup": {
+          "score": 1,
+          "value": "Yes",
+          "evidence": "mice were intraperitoneally injected with VCU-1012 (15) (1 mg/kg) or vehicle and were tested 24 hours later in the LDB test",
+          "confidence": "high"
+        },
+        "D6_circadian": {
+          "score": 0,
+          "value": "No",
+          "evidence": "5-min session.",
+          "confidence": "high"
+        },
+        "raw_total": 1
+      }
+    }
+  ],
+  "judge_notes": [
+    "Four behavioural assays retained: HTR, FST, open-field/locomotor activity, light-dark box. All candidates agreed on this set.",
+    "Gastrointestinal charcoal transit (Fig. 3E), 5-HT3R voltage-clamp electrophysiology, Ca2+/BRET assays, radioligand binding, docking and dendritic spine analyses were excluded as non-behavioural (physiological, ex vivo, in silico, or histological).",
+    "B1 for HTR and FST corrected to score 0 ('1 measure'): gemma assigned score 1 while labelling the value as '1 measure'; the rubric gives 0 points for a single measure.",
+    "B1 for open field and LDB set to score 1 ('2-3 measures'): gemma assigned score 2, which is the 4-6 band; both assays report exactly two measures.",
+    "HTR D4 scored 1 (baseline): the methods explicitly state the 15-min pre-injection chamber period was used 'to determine baseline HTR' (qwen scored 0; deepseek and gemma scored 1).",
+    "FST D1/D3/D4: the day-1 swim is described only as a pretreatment stressor with no immobility data reported, and only the day-3 session was video recorded and quantified — scored as a single session, 1 recording day, no pre-drug baseline (gemma's 'multiple sessions' not adopted).",
+    "Open field D2 scored 0 with low confidence: the text never states the total session length numerically (only that activity was binned in 5-min increments), so no duration could be assigned per the no-inference rule.",
+    "FST setup_restrain set to 'yes' per the rubric's explicit inclusion of the FST cylinder as restraint; FST water_restriction set to 'during' (swim water is not drinking water).",
+    "Open-field setup_habituation set to 'not_reported' — the 1-h acclimation was to the behavioural room, not to the apparatus."
+  ],
+  "study_level_scores": {
+    "behavioural_complexity_max": 2.5,
+    "environmental_complexity_max": 2.73,
+    "recording_duration_max": 2.73,
+    "behavioural_complexity_mean": 1.25,
+    "environmental_complexity_mean": 0.68,
+    "recording_duration_mean": 1.7
+  },
+  "low_confidence_count": 13,
+  "judge_provider": "foundry",
+  "judge_model": "claude-opus-5",
+  "judge_effort": "high",
+  "judge_input_models": [
+    "qwen",
+    "deepseek4",
+    "gemma4"
+  ],
+  "scoring": {
+    "scored_at": "2026-11-26T16:26:20+00:00",
+    "ensemble": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "candidates": {
+      "qwen": "qwen3.5-397b-a17b",
+      "deepseek4": "deepseek-v4-flash-0731",
+      "gemma4": "gemma-4-31b-it"
+    },
+    "missing": [],
+    "judge": "claude-opus-5-5",
+    "judged_by": "claude-opus-5",
+    "judge_provider": "foundry",
+    "judge_effort": "high",
+    "declined_by": "claude-opus-5-5",
+    "rubric": "5958a59b26",
+    "judge_rubric": "b88b1ef8be",
+    "code": "81e220f016",
+    "setup_id": "a8f573ea",
+    "setup": "deepseek-v4-flash-0731 + gemma-4-31b-it + qwen3.5-397b-a17b | judge claude-opus-5-5 (high)"
+  },
+  "judge_usage": {
+    "input_tokens": 96023,
+    "output_tokens": 14736,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0,
+    "fallback_from": {
+      "model": "claude-opus-5-5",
+      "category": null,
+      "explanation": null,
+      "request_id": "msg_011ChRrCuYn7YGnFc7eo4r3n",
+      "output_tokens": 0
+    }
+  }
+}
