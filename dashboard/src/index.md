@@ -5,7 +5,7 @@ toc: false
 
 <div class="pub-banner">
   This is the accompanying dashboard for the publication
-  <a href="https://doi.org/10.64898/2026.01.14.699469" target="_blank" rel="noopener"><em>Animal Models in Psychedelic Research — Tripping over Translation</em></a> (bioRxiv, 2026).
+  <a href="https://doi.org/10.1038/s41398-026-04589-z" target="_blank" rel="noopener"><em>Animal models in psychedelic research – Tripping over translation</em></a> (Abd El Hay et al., <em>Translational Psychiatry</em> 16, 659; 2026).
 </div>
 
 ```js

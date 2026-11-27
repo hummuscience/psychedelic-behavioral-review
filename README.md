@@ -257,5 +257,9 @@ in `rescore/results/` so a re-run continues where the last one stopped.
 ## Citation
 
 See [`CITATION.cff`](CITATION.cff) (GitHub renders a "Cite this repository" button).
-Please cite **both** the *Translational Psychiatry* paper and the Zenodo archive
-DOI for the dataset version you used.
+Please cite **both** the paper and the Zenodo archive DOI for the dataset version
+you used:
+
+> Abd El Hay MY, Cukić A, Schölvinck ML, Havenith MN (2026). Animal models in
+> psychedelic research – Tripping over translation. *Translational Psychiatry* 16, 659.
+> https://doi.org/10.1038/s41398-026-04589-z
