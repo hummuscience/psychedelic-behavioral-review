@@ -72,9 +72,14 @@ MULTI_ROUTE_MAP = {
     ("hammo2025", "doi"):                     ["i.p.", "i.c."],  # local cortical
     ("havel2024", "oxanoribogaine"):          ["i.p.", "s.c."],
     ("havel2024", "epioxanoribogaine"):       ["i.p.", "s.c."],
+    # he2026: i.p. in mice; the i.v. doses were given to monkeys (out of scope)
+    ("he2026", "lsd"):                        ["i.p."],
+    ("he2026", "psilocybin"):                 ["i.p."],
+    ("he2026", "ihch8134"):                   ["i.p."],
     ("higgins2025", "psilocybin"):            ["s.c.", "p.o."],
     ("higgins2025", "5meodmt"):               ["s.c.", "p.o."],
     ("jeanblanc2024", "psilocybin"):          ["i.p.", "i.c."],  # intra-NAcc/VTA
+    ("klein2026", "doi"):                     ["i.p.", "i.c."],  # intra-mPFC infusion
     ("liao2019", "doi"):                      ["i.v.", "i.p."],
     ("nogueira2025", "5meodmt"):              ["i.p.", "i.c."],  # i.c.v.
     ("pedzich2022", "doi"):                   ["i.p.", "i.c."],  # intra-amygdala
