@@ -167,6 +167,12 @@ function renderCube(div) {
     const items = filteredStudies;
     const pos = (k) => s => (s.study_level_scores?.[k] ?? 0) + jit(s._stem, k === "environmental_complexity_max" ? "x" : k.startsWith("rec") ? "y" : "z");
     if (colorMode === "Year") {
+      // The gradient spans the years of the studies currently shown, so
+      // filtering (e.g. to the last five years) re-spreads the colours.
+      const shownYears = items.map(yearOf).filter(Boolean);
+      let cmin = shownYears.length ? Math.min(...shownYears) : Math.min(...allYears);
+      let cmax = shownYears.length ? Math.max(...shownYears) : Math.max(...allYears);
+      if (cmin === cmax) { cmin -= 0.5; cmax += 0.5; }  // a single year: mid-gradient colour
       traces = [{
         type: "scatter3d", mode: "markers",
         x: items.map(pos("environmental_complexity_max")),
@@ -177,10 +183,11 @@ function renderCube(div) {
         hovertemplate: "<b>%{text}</b><br>E=%{x:.1f}  D=%{y:.1f}  B=%{z:.1f}<extra></extra>",
         marker: {
           size: 5, line: {color: "#222", width: 0.3},
-          color: items.map(s => yearOf(s) ?? 2020),
+          color: items.map(s => yearOf(s) ?? cmin),
           colorscale: [[0,'#00e5ff'],[0.17,'#00bcd4'],[0.33,'#5c6bc0'],[0.50,'#9c27b0'],[0.67,'#d81b9c'],[0.83,'#e91e90'],[1,'#ff4081']],
-          cmin: Math.min(...allYears), cmax: Math.max(...allYears),
-          colorbar: {title: "Year", thickness: 12, len: 0.6},
+          cmin, cmax,
+          colorbar: {title: "Year", thickness: 12, len: 0.6, tickformat: "d",
+                     ...(cmax - cmin <= 10 ? {dtick: 1} : {})},
         },
       }];
     } else {
