@@ -39,6 +39,12 @@ display(html`<ul>
 If you use this dataset, please cite both the paper and (when archived to Zenodo) the dataset DOI.
 
 ```
+Abd El Hay MY, Cukić A, Schölvinck ML, Havenith MN (2026). Animal models in
+psychedelic research – Tripping over translation. Translational Psychiatry 16, 659.
+https://doi.org/10.1038/s41398-026-04589-z
+```
+
+```
 Abd El Hay et al. (2026). Behavioural complexity in psychedelic rodent studies:
 a systematic-review companion dataset.
 Zenodo (DOI assigned upon archival — see the repository's CITATION.cff).
